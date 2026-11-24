@@ -106,6 +106,8 @@
     "initial_scan_limit": "The initial release scan covered OpenRouter, GitHub PAT and private-key patterns; the follow-up additionally checked AWS access-key identifiers, Google keys, OpenAI-like keys, classic GitHub tokens, Slack tokens and JWTs.",
     "expanded_prior_zip_member_count_including_nested_archive": 2047,
     "expanded_prior_zip_credential_hits": 0,
-    "template_zip_members_clean": true
+    "template_zip_members_clean": true,
+    "expanded_current_zip_member_count_including_nested_archive": 2048,
+    "expanded_current_zip_credential_hits": 0
   }
 }
