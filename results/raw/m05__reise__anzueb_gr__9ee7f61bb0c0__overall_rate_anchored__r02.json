@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzueb_gr__9ee7f61bb0c0__overall_rate_anchored__r02",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzueb_gr__9ee7f61bb0c0",
+  "feature": "anzueb_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 2,
+  "request_sha256": "185b333bdd7128eac2879c7615ef93f29be40a3576f045f107bb99629f91e8c5",
+  "started_utc": "2026-11-24T21:47:13.206906+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:47:16.457899+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001552,
+  "response": {
+    "id": "gen-1795556833-4muisV6zG0s62hjtORjS",
+    "object": "chat.completion",
+    "created": 1795556833,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.39,\n  \"local_pt\": 0.23,\n  \"long_distance_rail\": 0.13,\n  \"rationale\": \"Three-night trips may skew toward leisure and nonlocal airports, increasing multimodal access needs. Such journeys might slightly raise car and public transport use for airport access relative to the average aircraft-journey cohort.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 452,
+      "completion_tokens": 81,
+      "total_tokens": 533,
+      "cost": 0.001552,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001552,
+        "upstream_inference_prompt_cost": 0.000904,
+        "upstream_inference_completions_cost": 0.000648
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "f977d4b9cacfba176fdb37d98ec75f9e68f35bb1f07921a9ab95d7504ffa69a5",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.39,
+    "local_pt": 0.23,
+    "long_distance_rail": 0.13,
+    "rationale": "Three-night trips may skew toward leisure and nonlocal airports, increasing multimodal access needs. Such journeys might slightly raise car and public transport use for airport access relative to the average aircraft-journey cohort."
+  },
+  "finished_utc": "2026-11-24T21:47:16.457899+00:00",
+  "elapsed_seconds": 3.25
+}

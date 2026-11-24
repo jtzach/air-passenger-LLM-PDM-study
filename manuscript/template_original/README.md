@@ -1,0 +1,11 @@
+# Official Findings template provenance
+
+The unmodified `main.tex` is the source published by David Levinson in the [official Overleaf Findings template](https://www.overleaf.com/latex/templates/findings-template/bmhtkwbzvvcx), linked by the journal's [author instructions](https://findingspress.org/for-authors). It was extracted from the gallery's source-code element, not reconstructed from its appearance. The gallery identifies the license as [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). David Levinson is credited as the template author.
+
+`provenance.json` records retrieval URLs, timestamps, extraction method, and SHA-256 checksums. The actual template LaTeX source and official preview PDF are retained unchanged. The downloaded gallery and author-guidelines HTML remain local and are excluded from distribution. The gallery HTML contains transient CSRF metadata and signed S3 asset URLs carrying credential identifiers and signatures; these are unnecessary for verifying the template. Their original retrieval hashes are retained only as evidence of the non-distributed source downloads. This README summarises the public requirements without embedding that page metadata.
+
+`../main.tex` retains the official article class, page geometry, author-year citation scheme, caption style, and three-section structure. Duplicate and unused packages were removed; an emergency line-stretch allowance and conditional figure-loading helper were added. The supplementary document uses the same page geometry.
+
+Current requirements checked on November 24, 2026: no more than 1,000 words of text excluding references; abstract at most 100 words; three to eight keywords; three main sections (Questions, Methods, Findings); up to three figures and three tables. Submission requires a PDF, editable text, separately supplied JPEG figures, and bibliography data. Supplements may provide supporting technical detail but should not contain material essential to understanding the main result. AI used in the research is disclosed in Methods, and manuscript assistance in acknowledgments.
+
+Visual-reading and layout checks are stored separately in `../qa/`; they are not part of the journal template or proposed manuscript figures.

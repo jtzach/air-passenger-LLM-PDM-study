@@ -1,0 +1,76 @@
+{
+  "task_id": "m02__reise__anzauto_gr1__296e9849dc3d__unanchored__r02",
+  "model_id": "google/gemma-3-12b-it",
+  "model_label": "Gemma 3 12B",
+  "persona_id": "reise__anzauto_gr1__296e9849dc3d",
+  "feature": "anzauto_gr1",
+  "arm": "unanchored",
+  "replicate": 2,
+  "request_sha256": "f7e6b8c7104cb33b49944176958db17dcb2eb2cd0d8ac83c1a240c6bec1bc7bf",
+  "started_utc": "2026-11-24T21:43:12.705350+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:43:14.219333+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 3.155e-05,
+  "response": {
+    "id": "gen-1795556592-DoBisb1DJfrqIAHNvVRx",
+    "object": "chat.completion",
+    "created": 1795556592,
+    "model": "google/gemma-3-12b-it",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.6, \"local_pt\": 0.4, \"long_distance_rail\": 0.05, \"rationale\": \"No household car suggests reliance on others for airport access. Many will be driven, while some may use public transport. Long-distance rail is unlikely given the flight focus.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 412,
+      "completion_tokens": 73,
+      "total_tokens": 485,
+      "cost": 3.155e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 3.155e-05,
+        "upstream_inference_prompt_cost": 2.06e-05,
+        "upstream_inference_completions_cost": 1.095e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "d3d3b23e23a466bbc12b0643c888aa08c72e1c497985d5293a9c76ce3d8d81a2",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.6,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.05,
+    "rationale": "No household car suggests reliance on others for airport access. Many will be driven, while some may use public transport. Long-distance rail is unlikely given the flight focus."
+  },
+  "finished_utc": "2026-11-24T21:43:14.219333+00:00",
+  "elapsed_seconds": 1.515
+}

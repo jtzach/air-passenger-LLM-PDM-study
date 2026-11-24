@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzauto_gr1__bee31b0e88ae__overall_rate_anchored__r03",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzauto_gr1__bee31b0e88ae",
+  "feature": "anzauto_gr1",
+  "arm": "overall_rate_anchored",
+  "replicate": 3,
+  "request_sha256": "d112acd4b8a6b9866fe99504044392cd2a3d84416537082a0e92ed7520c5cc06",
+  "started_utc": "2026-11-24T21:45:55.603428+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:45:56.680407+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001542,
+  "response": {
+    "id": "gen-1795556755-R5T2h5owHo3yCkW4329P",
+    "object": "chat.completion",
+    "created": 1795556755,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.56,\n  \"local_pt\": 0.17,\n  \"long_distance_rail\": 0.08,\n  \"rationale\": \"Households with 3 cars likely prefer private car for airport access, increasing car use. High car ownership reduces reliance on local public transport and long-distance rail compared to the general aircraft-using population.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 451,
+      "completion_tokens": 80,
+      "total_tokens": 531,
+      "cost": 0.001542,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001542,
+        "upstream_inference_prompt_cost": 0.000902,
+        "upstream_inference_completions_cost": 0.00064
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "6b1f782c6dbb8d9481408560cfb8f2e4ce091ecd2ea5b655bbf0ebda81cf244f",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.56,
+    "local_pt": 0.17,
+    "long_distance_rail": 0.08,
+    "rationale": "Households with 3 cars likely prefer private car for airport access, increasing car use. High car ownership reduces reliance on local public transport and long-distance rail compared to the general aircraft-using population."
+  },
+  "finished_utc": "2026-11-24T21:45:56.680407+00:00",
+  "elapsed_seconds": 1.078
+}

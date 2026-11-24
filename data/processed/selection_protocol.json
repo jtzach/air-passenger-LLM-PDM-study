@@ -1,0 +1,99 @@
+{
+  "specified_utc": "2026-11-24T21:37:26.530520+00:00",
+  "sha256": "3d98497b0a3382659b589fbde81242e4c68b9e476690ad64a9cdb73b8a579723",
+  "protocol": {
+    "version": "1.0",
+    "primary_dataset": "reise",
+    "candidate_features": [
+      {
+        "feature_id": "alter_gr4",
+        "label": "Age group",
+        "family": "traveller"
+      },
+      {
+        "feature_id": "HP_SEX",
+        "label": "Gender category",
+        "family": "traveller"
+      },
+      {
+        "feature_id": "bildung",
+        "label": "Educational attainment",
+        "family": "traveller"
+      },
+      {
+        "feature_id": "erwerb",
+        "label": "Employment status",
+        "family": "traveller"
+      },
+      {
+        "feature_id": "hheink_gr2",
+        "label": "Monthly net household income",
+        "family": "traveller"
+      },
+      {
+        "feature_id": "anzauto_gr1",
+        "label": "Number of household cars",
+        "family": "traveller"
+      },
+      {
+        "feature_id": "hhgr_gr",
+        "label": "Household size",
+        "family": "traveller"
+      },
+      {
+        "feature_id": "RegioStaR7",
+        "label": "Residential spatial type",
+        "family": "traveller"
+      },
+      {
+        "feature_id": "P_FS_PKW",
+        "label": "Car driving licence held",
+        "family": "traveller"
+      },
+      {
+        "feature_id": "R_ZWECK",
+        "label": "Main journey purpose",
+        "family": "journey"
+      },
+      {
+        "feature_id": "R_ZIEL",
+        "label": "Journey destination region",
+        "family": "journey"
+      },
+      {
+        "feature_id": "entf_gr",
+        "label": "One-way journey distance",
+        "family": "journey"
+      },
+      {
+        "feature_id": "anzueb_gr",
+        "label": "Number of nights away",
+        "family": "journey"
+      },
+      {
+        "feature_id": "anzbegl_gr",
+        "label": "Number of household companions",
+        "family": "journey"
+      }
+    ],
+    "outcomes": [
+      "car",
+      "local_pt",
+      "long_distance_rail"
+    ],
+    "minimum_unweighted_stratum_n": 100,
+    "minimum_feature_weighted_coverage": 0.8,
+    "minimum_eligible_strata": 2,
+    "selected_features_per_family": {
+      "traveller": 2,
+      "journey": 2
+    },
+    "feature_score": "Arithmetic mean across outcomes of weighted Bernoulli information gain divided by entropy of the eligible-strata pooled prevalence.",
+    "tie_break": "Feature identifier in ascending lexical order.",
+    "stratum_selection": "All eligible substantive strata of each selected feature; no post-selection preference for large contrasts.",
+    "missing_category_rule": "Exclude response/design-missing categories; preserve substantive negative categories, such as not employed or no household car.",
+    "scope": "Single-attribute cohort profiles, never joint personas or pseudoindividual records.",
+    "interpretation": "Descriptive in-sample separation, not causal importance, independent validation, or statistical significance.",
+    "disclosure": "Protocol specified after earlier exploratory public age tables were inspected, but before fresh candidate-feature queries and before any study LLM predictions. This is not an externally registered preregistration."
+  }
+}

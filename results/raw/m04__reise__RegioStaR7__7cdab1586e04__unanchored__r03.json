@@ -1,0 +1,76 @@
+{
+  "task_id": "m04__reise__RegioStaR7__7cdab1586e04__unanchored__r03",
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "model_label": "Qwen3 235B A22B",
+  "persona_id": "reise__RegioStaR7__7cdab1586e04",
+  "feature": "RegioStaR7",
+  "arm": "unanchored",
+  "replicate": 3,
+  "request_sha256": "eb5a7c71f93f9b7437eab976eaef0bc6586d4e23e2c41f23613bffd5646e9487",
+  "started_utc": "2026-11-24T21:50:54.885030+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:50:59.749930+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 8.292e-05,
+  "response": {
+    "id": "gen-1795557054-G4yMaS2Ookheg89z7JBc",
+    "object": "chat.completion",
+    "created": 1795557054,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.75,\n  \"local_pt\": 0.4,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"In large urban areas, car use is common for flexible access; public transit is viable but less dominant for door-to-airport trips. Long-distance rail competes less when flights are chosen, reducing its overlap.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 408,
+      "completion_tokens": 84,
+      "total_tokens": 492,
+      "cost": 8.292e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.292e-05,
+        "upstream_inference_prompt_cost": 3.672e-05,
+        "upstream_inference_completions_cost": 4.62e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "fc6b8bf1afdbf2d9db9f8c17241f34a2c9757c40bcee7094323038ad7aec7e23",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.75,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.25,
+    "rationale": "In large urban areas, car use is common for flexible access; public transit is viable but less dominant for door-to-airport trips. Long-distance rail competes less when flights are chosen, reducing its overlap."
+  },
+  "finished_utc": "2026-11-24T21:50:59.749930+00:00",
+  "elapsed_seconds": 4.875
+}

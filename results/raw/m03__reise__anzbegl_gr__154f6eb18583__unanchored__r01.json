@@ -1,0 +1,76 @@
+{
+  "task_id": "m03__reise__anzbegl_gr__154f6eb18583__unanchored__r01",
+  "model_id": "openai/gpt-4.1-mini",
+  "model_label": "GPT-4.1 mini",
+  "persona_id": "reise__anzbegl_gr__154f6eb18583",
+  "feature": "anzbegl_gr",
+  "arm": "unanchored",
+  "replicate": 1,
+  "request_sha256": "8f81d1c65444da9f2bcc8062fd43a72d630956b6e956ff7f158058131101204f",
+  "started_utc": "2026-11-24T21:48:46.015131+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:48:47.449608+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002652,
+  "response": {
+    "id": "gen-1795556926-bi4Oq2onkwuebiRPNZ2f",
+    "object": "chat.completion",
+    "created": 1795556926,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.70,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"Solo air travelers likely use car or local public transit for airport access; long-distance rail is less common due to flight choice and no companions.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 391,
+      "completion_tokens": 68,
+      "total_tokens": 459,
+      "cost": 0.0002652,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002652,
+        "upstream_inference_prompt_cost": 0.0001564,
+        "upstream_inference_completions_cost": 0.0001088
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "53e2a6aeb95b7382ab6e3e376bb4d0e2bcc5f5218049258c7eb64e2f53b90bf5",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.7,
+    "long_distance_rail": 0.15,
+    "rationale": "Solo air travelers likely use car or local public transit for airport access; long-distance rail is less common due to flight choice and no companions."
+  },
+  "finished_utc": "2026-11-24T21:48:47.449608+00:00",
+  "elapsed_seconds": 1.438
+}

@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzauto_gr1__79ed954bbe2c__overall_rate_anchored__r03",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzauto_gr1__79ed954bbe2c",
+  "feature": "anzauto_gr1",
+  "arm": "overall_rate_anchored",
+  "replicate": 3,
+  "request_sha256": "8844407f2723f1a82d32cfd2508974f32d18e55d802549f8b4a11f0bf75d0b56",
+  "started_utc": "2026-11-24T21:43:14.227244+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:43:15.542276+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00157,
+  "response": {
+    "id": "gen-1795556594-eUhz5swCvo4LvHwc2443",
+    "object": "chat.completion",
+    "created": 1795556594,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.62,\n  \"local_pt\": 0.14,\n  \"long_distance_rail\": 0.08,\n  \"rationale\": \"Households with 4+ cars likely prefer driving to/from airports, reducing reliance on public transport or long-distance rail, compared to the general population. High car ownership signals car accessibility and habitual use for such journeys.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 453,
+      "completion_tokens": 83,
+      "total_tokens": 536,
+      "cost": 0.00157,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00157,
+        "upstream_inference_prompt_cost": 0.000906,
+        "upstream_inference_completions_cost": 0.000664
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "da277284c4390071345bf771303f748af7608c95dc36211edb5b59bbe311992f",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.62,
+    "local_pt": 0.14,
+    "long_distance_rail": 0.08,
+    "rationale": "Households with 4+ cars likely prefer driving to/from airports, reducing reliance on public transport or long-distance rail, compared to the general population. High car ownership signals car accessibility and habitual use for such journeys."
+  },
+  "finished_utc": "2026-11-24T21:43:15.542276+00:00",
+  "elapsed_seconds": 1.313
+}

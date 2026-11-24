@@ -1,0 +1,76 @@
+{
+  "task_id": "m04__reise__anzueb_gr__f6e4375535d4__unanchored__r03",
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "model_label": "Qwen3 235B A22B",
+  "persona_id": "reise__anzueb_gr__f6e4375535d4",
+  "feature": "anzueb_gr",
+  "arm": "unanchored",
+  "replicate": 3,
+  "request_sha256": "cf5303563cb076ca68b70d073315c864da7f31c4028d36f10a596025ad0eeb40",
+  "started_utc": "2026-11-24T21:49:02.030761+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:49:08.327711+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 7.88e-05,
+  "response": {
+    "id": "gen-1795556942-4cnlTnNLnO7oWrfsmjVv",
+    "object": "chat.completion",
+    "created": 1795556942,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.75,\n  \"local_pt\": 0.4,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"Car use is likely for flexible access to airports; local public transport serves urban connectivity; long-distance rail competes less for mid-week, week-long trips likely involving distant destinations.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 405,
+      "completion_tokens": 77,
+      "total_tokens": 482,
+      "cost": 7.88e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 7.88e-05,
+        "upstream_inference_prompt_cost": 3.645e-05,
+        "upstream_inference_completions_cost": 4.235e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "d9a79b0770f1484b8b3d14a8e7760daeed828ad0a31ec4218e44af75f2d548b1",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.75,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.25,
+    "rationale": "Car use is likely for flexible access to airports; local public transport serves urban connectivity; long-distance rail competes less for mid-week, week-long trips likely involving distant destinations."
+  },
+  "finished_utc": "2026-11-24T21:49:08.327711+00:00",
+  "elapsed_seconds": 6.36
+}

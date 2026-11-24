@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__anzbegl_gr__154f6eb18583__unanchored__r03",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__anzbegl_gr__154f6eb18583",
+  "feature": "anzbegl_gr",
+  "arm": "unanchored",
+  "replicate": 3,
+  "request_sha256": "7129ebacf0262731a6ff9960dd57505a435128d672a90ba51d1fded23f6393c8",
+  "started_utc": "2026-11-24T21:43:23.992263+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:43:26.287151+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 1.773e-05,
+  "response": {
+    "id": "gen-1795556604-uXUU75II7TC3Rkm7kujQ",
+    "object": "chat.completion",
+    "created": 1795556604,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.1,\n  \"local_pt\": 0.2,\n  \"long_distance_rail\": 0.05,\n  \"rationale\": \"Given no companions, the traveler likely utilized a combination of modes. Car and local public transport are plausible for connecting to/from the airport, while long-distance rail is less probable for a solo trip.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 412,
+      "completion_tokens": 89,
+      "total_tokens": 501,
+      "cost": 1.773e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.773e-05,
+        "upstream_inference_prompt_cost": 1.328e-05,
+        "upstream_inference_completions_cost": 4.45e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "8165c152e2a5ea3b7338918dd7f946f42c1a49c3ed77e5a2bca8f80e4fa20d6e",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.1,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.05,
+    "rationale": "Given no companions, the traveler likely utilized a combination of modes. Car and local public transport are plausible for connecting to/from the airport, while long-distance rail is less probable for a solo trip."
+  },
+  "finished_utc": "2026-11-24T21:43:26.287151+00:00",
+  "elapsed_seconds": 2.297
+}

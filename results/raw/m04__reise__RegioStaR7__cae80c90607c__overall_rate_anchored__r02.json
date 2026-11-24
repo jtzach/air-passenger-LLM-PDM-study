@@ -1,0 +1,76 @@
+{
+  "task_id": "m04__reise__RegioStaR7__cae80c90607c__overall_rate_anchored__r02",
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "model_label": "Qwen3 235B A22B",
+  "persona_id": "reise__RegioStaR7__cae80c90607c",
+  "feature": "RegioStaR7",
+  "arm": "overall_rate_anchored",
+  "replicate": 2,
+  "request_sha256": "0ca5494cb6683fb235e9818b2eb04487df32cb4454b1fc4cf95a9aaa946bf559",
+  "started_utc": "2026-11-24T21:47:25.407207+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:47:30.127617+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 8.317e-05,
+  "response": {
+    "id": "gen-1795556845-M7ABi1qz73gIAT7Pqbvm",
+    "object": "chat.completion",
+    "created": 1795556845,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.15,\n  \"long_distance_rail\": 0.08,\n  \"rationale\": \"Rural and medium-sized town residents may rely more on cars for airport access due to limited public transport, reducing reliance on local and long-distance rail.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 478,
+      "completion_tokens": 73,
+      "total_tokens": 551,
+      "cost": 8.317e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.317e-05,
+        "upstream_inference_prompt_cost": 4.302e-05,
+        "upstream_inference_completions_cost": 4.015e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "9e1eb8793057679046423b2f79b8f3c54bdb1b9f6ca02220ecf2b9973c994290",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.15,
+    "long_distance_rail": 0.08,
+    "rationale": "Rural and medium-sized town residents may rely more on cars for airport access due to limited public transport, reducing reliance on local and long-distance rail."
+  },
+  "finished_utc": "2026-11-24T21:47:30.127617+00:00",
+  "elapsed_seconds": 4.719
+}

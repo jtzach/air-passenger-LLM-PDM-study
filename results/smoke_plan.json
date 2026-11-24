@@ -1,0 +1,58 @@
+{
+  "created_utc": "2026-11-24T21:37:29.451042+00:00",
+  "config_sha256": "754e97423b38f9dff910eb01b85f724cf3348c9fbfd1bfa87ad059b85777fb33",
+  "task_count": 5,
+  "persona_file_sha256": null,
+  "tasks": [
+    {
+      "task_id": "m04__smoke_generic__unanchored__r01",
+      "model_id": "qwen/qwen3-235b-a22b-2507",
+      "model_label": "Qwen3 235B A22B",
+      "persona_id": "smoke_generic",
+      "feature": "none",
+      "arm": "unanchored",
+      "replicate": 1,
+      "request_sha256": "bf24898e905265979c0bd823641ed65165e7e42bc4e7b82596957c795a4f427e"
+    },
+    {
+      "task_id": "m02__smoke_generic__unanchored__r01",
+      "model_id": "google/gemma-3-12b-it",
+      "model_label": "Gemma 3 12B",
+      "persona_id": "smoke_generic",
+      "feature": "none",
+      "arm": "unanchored",
+      "replicate": 1,
+      "request_sha256": "997a5d01dfffe6cd6d0cbc232c34f162ec60a539b44a3bf2f2b2b8cd0ab0c778"
+    },
+    {
+      "task_id": "m05__smoke_generic__unanchored__r01",
+      "model_id": "openai/gpt-4.1",
+      "model_label": "GPT-4.1",
+      "persona_id": "smoke_generic",
+      "feature": "none",
+      "arm": "unanchored",
+      "replicate": 1,
+      "request_sha256": "b57ede0911e3f4e48af40b6a11eb3038269b2dbca574f8b69d78d3591fe5de2e"
+    },
+    {
+      "task_id": "m01__smoke_generic__unanchored__r01",
+      "model_id": "google/gemma-3-4b-it",
+      "model_label": "Gemma 3 4B",
+      "persona_id": "smoke_generic",
+      "feature": "none",
+      "arm": "unanchored",
+      "replicate": 1,
+      "request_sha256": "59849f42fe4467fd8fb959d1020b924abe92c939dd59493b630620b3b39d7fc2"
+    },
+    {
+      "task_id": "m03__smoke_generic__unanchored__r01",
+      "model_id": "openai/gpt-4.1-mini",
+      "model_label": "GPT-4.1 mini",
+      "persona_id": "smoke_generic",
+      "feature": "none",
+      "arm": "unanchored",
+      "replicate": 1,
+      "request_sha256": "bd38fdde910429635f34130516e6d93c2d98ea64eee286dda7ccee133a7d050c"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "dataset": {
+    "id": "reise"
+  },
+  "weight_var": "R_GEW",
+  "mean_of": null,
+  "percent": "col",
+  "row": "ms_verkehrsmittel-der-reise-mehrfachantworten-set_e054e270",
+  "col": "hvm_r",
+  "breakdown_by": "R_ZWECK"
+}

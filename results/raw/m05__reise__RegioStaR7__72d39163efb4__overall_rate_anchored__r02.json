@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__RegioStaR7__72d39163efb4__overall_rate_anchored__r02",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__RegioStaR7__72d39163efb4",
+  "feature": "RegioStaR7",
+  "arm": "overall_rate_anchored",
+  "replicate": 2,
+  "request_sha256": "6aa1aecc67498edaba8dc879384cae09f62412aed975d7926f6939df2655d9a6",
+  "started_utc": "2026-11-24T21:50:16.724272+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:50:18.467656+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001526,
+  "response": {
+    "id": "gen-1795557017-YAkNPybAT6i5DowvxjuX",
+    "object": "chat.completion",
+    "created": 1795557017,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.50,\n  \"local_pt\": 0.15,\n  \"long_distance_rail\": 0.08,\n  \"rationale\": \"Rural residents likely have limited public transport and rail access, increasing car use. Local and long-distance rail use likely falls below average due to lower service density and weaker connectivity to airports.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 455,
+      "completion_tokens": 77,
+      "total_tokens": 532,
+      "cost": 0.001526,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001526,
+        "upstream_inference_prompt_cost": 0.00091,
+        "upstream_inference_completions_cost": 0.000616
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "0ef1378f75adaf2a223761fcb3b46c04299795b1f5c0a514c62bb9ee13c5bca7",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.5,
+    "local_pt": 0.15,
+    "long_distance_rail": 0.08,
+    "rationale": "Rural residents likely have limited public transport and rail access, increasing car use. Local and long-distance rail use likely falls below average due to lower service density and weaker connectivity to airports."
+  },
+  "finished_utc": "2026-11-24T21:50:18.467656+00:00",
+  "elapsed_seconds": 1.75
+}

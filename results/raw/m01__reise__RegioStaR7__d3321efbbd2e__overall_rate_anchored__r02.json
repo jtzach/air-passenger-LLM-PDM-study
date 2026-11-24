@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__RegioStaR7__d3321efbbd2e__overall_rate_anchored__r02",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__RegioStaR7__d3321efbbd2e",
+  "feature": "RegioStaR7",
+  "arm": "overall_rate_anchored",
+  "replicate": 2,
+  "request_sha256": "8fd8fb4a098dee3be3b08aa47dd2fafb5e6f82a233c6119c63cd8dfe8483e577",
+  "started_utc": "2026-11-24T21:45:33.267600+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:45:35.737345+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.092e-05,
+  "response": {
+    "id": "gen-1795556733-joEaqONvtVgXlPdY5LSB",
+    "object": "chat.completion",
+    "created": 1795556733,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.3,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.09,\n  \"rationale\": \"Rural to central city suggests a need to combine air travel with ground transport. Car use remains relatively high, while local public transport and long-distance rail are likely lower due to distance and potential lack of direct connections.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 488,
+      "completion_tokens": 92,
+      "total_tokens": 580,
+      "cost": 2.092e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.092e-05,
+        "upstream_inference_prompt_cost": 1.632e-05,
+        "upstream_inference_completions_cost": 4.6e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "bf8e00ac5a27670db75580aa21d871c1fea765ce9370fe7622faff1476c64a2a",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.3,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.09,
+    "rationale": "Rural to central city suggests a need to combine air travel with ground transport. Car use remains relatively high, while local public transport and long-distance rail are likely lower due to distance and potential lack of direct connections."
+  },
+  "finished_utc": "2026-11-24T21:45:35.737345+00:00",
+  "elapsed_seconds": 2.469
+}

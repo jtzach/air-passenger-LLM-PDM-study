@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__no_persona__overall_rate_anchored__r02",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "no_persona",
+  "feature": "none",
+  "arm": "overall_rate_anchored",
+  "replicate": 2,
+  "request_sha256": "015eb35781e2c60a893c53232a7b6c69d490c0e63ac53f64e9047ebe2b57c2db",
+  "started_utc": "2026-11-24T21:42:59.986733+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:43:01.308863+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001484,
+  "response": {
+    "id": "gen-1795556579-fpuW42bWOK2y7ww71Agy",
+    "object": "chat.completion",
+    "created": 1795556579,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.38,\n  \"local_pt\": 0.22,\n  \"long_distance_rail\": 0.12,\n  \"rationale\": \"With no specific demographic or trip context, behaviour likely aligns with the general population. Mode shares reflect typical German access/egress patterns for air travel, with no strong reason to expect deviation from population-level rates.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 414,
+      "completion_tokens": 82,
+      "total_tokens": 496,
+      "cost": 0.001484,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001484,
+        "upstream_inference_prompt_cost": 0.000828,
+        "upstream_inference_completions_cost": 0.000656
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "f6bc6a6edb4fb1e955b4082daf1157aa38ad3165a587f0e438b05fe435021196",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.38,
+    "local_pt": 0.22,
+    "long_distance_rail": 0.12,
+    "rationale": "With no specific demographic or trip context, behaviour likely aligns with the general population. Mode shares reflect typical German access/egress patterns for air travel, with no strong reason to expect deviation from population-level rates."
+  },
+  "finished_utc": "2026-11-24T21:43:01.308863+00:00",
+  "elapsed_seconds": 1.328
+}

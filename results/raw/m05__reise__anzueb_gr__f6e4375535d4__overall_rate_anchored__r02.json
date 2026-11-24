@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzueb_gr__f6e4375535d4__overall_rate_anchored__r02",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzueb_gr__f6e4375535d4",
+  "feature": "anzueb_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 2,
+  "request_sha256": "a40e4943d8f7f4abcdea4b2c66f3c74b8597c0af0a15f0558a18e7a1850571a8",
+  "started_utc": "2026-11-24T21:43:33.856407+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:43:35.180319+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001604,
+  "response": {
+    "id": "gen-1795556613-rCtuNf1XlnYk0DVzCJfO",
+    "object": "chat.completion",
+    "created": 1795556613,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.41,\n  \"local_pt\": 0.23,\n  \"long_distance_rail\": 0.14,\n  \"rationale\": \"6-7 night trips suggest longer, possibly intercity journeys, increasing likelihood of airport access/egress by car and long-distance rail. Extended stays may also involve more luggage, slightly raising car and train use over the aggregate rate.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 454,
+      "completion_tokens": 87,
+      "total_tokens": 541,
+      "cost": 0.001604,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001604,
+        "upstream_inference_prompt_cost": 0.000908,
+        "upstream_inference_completions_cost": 0.000696
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "5fd564b78b7f2d0898c9b5978ae5715e16d40bc3c0df363c613228853b0375ff",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.41,
+    "local_pt": 0.23,
+    "long_distance_rail": 0.14,
+    "rationale": "6-7 night trips suggest longer, possibly intercity journeys, increasing likelihood of airport access/egress by car and long-distance rail. Extended stays may also involve more luggage, slightly raising car and train use over the aggregate rate."
+  },
+  "finished_utc": "2026-11-24T21:43:35.180319+00:00",
+  "elapsed_seconds": 1.312
+}

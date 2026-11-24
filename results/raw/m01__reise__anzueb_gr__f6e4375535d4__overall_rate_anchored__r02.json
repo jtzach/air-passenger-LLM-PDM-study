@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__anzueb_gr__f6e4375535d4__overall_rate_anchored__r02",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__anzueb_gr__f6e4375535d4",
+  "feature": "anzueb_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 2,
+  "request_sha256": "022f38bed40e2ed466ff5ddf83b1241f3b41826e0c3cee64d790d0a097a6ff13",
+  "started_utc": "2026-11-24T21:45:16.527959+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:45:18.859519+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.115e-05,
+  "response": {
+    "id": "gen-1795556716-KIfRyPOx78Yo3M7P1oGK",
+    "object": "chat.completion",
+    "created": 1795556716,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.25,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.08,\n  \"rationale\": \"Given the cohort's 6-7 overnight trips, a significant portion likely combined air travel with ground transport for onward or return journeys. Car use would be lower than overall, and local/regional public transport more common.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 490,
+      "completion_tokens": 95,
+      "total_tokens": 585,
+      "cost": 2.115e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.115e-05,
+        "upstream_inference_prompt_cost": 1.64e-05,
+        "upstream_inference_completions_cost": 4.75e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "ef3e08f4d4873f57045b50d66dcd07c43a742f77b3e5addda130aa12592fd9f3",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.25,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.08,
+    "rationale": "Given the cohort's 6-7 overnight trips, a significant portion likely combined air travel with ground transport for onward or return journeys. Car use would be lower than overall, and local/regional public transport more common."
+  },
+  "finished_utc": "2026-11-24T21:45:18.859519+00:00",
+  "elapsed_seconds": 2.328
+}

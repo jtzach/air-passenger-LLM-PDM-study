@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__RegioStaR7__cae80c90607c__overall_rate_anchored__r03",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__RegioStaR7__cae80c90607c",
+  "feature": "RegioStaR7",
+  "arm": "overall_rate_anchored",
+  "replicate": 3,
+  "request_sha256": "efda9bc7f8f409e0d68ae0aff37e6fe38837a2178ecd9a3baedefca8013c731c",
+  "started_utc": "2026-11-24T21:43:43.981075+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:43:45.873831+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.072e-05,
+  "response": {
+    "id": "gen-1795556623-CXtzS11Y1Z9CIYtUnhQg",
+    "object": "chat.completion",
+    "created": 1795556623,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.4, \"local_pt\": 0.25, \"long_distance_rail\": 0.15, \"rationale\": \"Rural-urban split suggests a higher likelihood of car use for this group compared to overall rates. Local public transport and rail use will likely be slightly elevated due to limited alternative transport options in medium-sized towns and rural regions.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 493,
+      "completion_tokens": 84,
+      "total_tokens": 577,
+      "cost": 2.072e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.072e-05,
+        "upstream_inference_prompt_cost": 1.652e-05,
+        "upstream_inference_completions_cost": 4.2e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "1992fa4815e50367b068b1efb8d9333f36cc2e203e036d935b62f59f8262d364",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.4,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "Rural-urban split suggests a higher likelihood of car use for this group compared to overall rates. Local public transport and rail use will likely be slightly elevated due to limited alternative transport options in medium-sized towns and rural regions."
+  },
+  "finished_utc": "2026-11-24T21:43:45.873831+00:00",
+  "elapsed_seconds": 1.907
+}

@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__RegioStaR7__5febbfe6f6bc__overall_rate_anchored__r02",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__RegioStaR7__5febbfe6f6bc",
+  "feature": "RegioStaR7",
+  "arm": "overall_rate_anchored",
+  "replicate": 2,
+  "request_sha256": "7212bf732187423455b524a4fa8ff9654fad703f913b49e7683ab8a6cca5877b",
+  "started_utc": "2026-11-24T21:43:27.306682+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:43:28.617117+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00151,
+  "response": {
+    "id": "gen-1795556607-3ssJqWoIMbk5V01V1SVs",
+    "object": "chat.completion",
+    "created": 1795556607,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.19,\n  \"long_distance_rail\": 0.09,\n  \"rationale\": \"Small-town/village residents likely have less public transport and rail access, making car use higher and local/long-distance public transport use lower than the national average for aircraft journeys.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 455,
+      "completion_tokens": 75,
+      "total_tokens": 530,
+      "cost": 0.00151,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00151,
+        "upstream_inference_prompt_cost": 0.00091,
+        "upstream_inference_completions_cost": 0.0006
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "9984248b6aaa52000cb636a2a70f1a5c75f3f0fa046a739f45e4c7d0904c366f",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.19,
+    "long_distance_rail": 0.09,
+    "rationale": "Small-town/village residents likely have less public transport and rail access, making car use higher and local/long-distance public transport use lower than the national average for aircraft journeys."
+  },
+  "finished_utc": "2026-11-24T21:43:28.617117+00:00",
+  "elapsed_seconds": 1.313
+}

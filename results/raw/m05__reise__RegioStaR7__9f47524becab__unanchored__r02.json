@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__RegioStaR7__9f47524becab__unanchored__r02",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__RegioStaR7__9f47524becab",
+  "feature": "RegioStaR7",
+  "arm": "unanchored",
+  "replicate": 2,
+  "request_sha256": "ddd9cd91acf7246acd234e24ae5d53302ae2d0bdd9a5a83c49771f48a672d000",
+  "started_utc": "2026-11-24T21:46:09.955716+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:46:12.563850+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001482,
+  "response": {
+    "id": "gen-1795556771-97gG9cQJbIwEdB6nRDFq",
+    "object": "chat.completion",
+    "created": 1795556771,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.45,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"Medium urban areas have moderate car ownership, local public transport access, and reasonable rail but not as strong as big cities. Mixed mode use is likely; car slightly exceeds local PT, with some rail for longer or airport-access journeys.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 397,
+      "completion_tokens": 86,
+      "total_tokens": 483,
+      "cost": 0.001482,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001482,
+        "upstream_inference_prompt_cost": 0.000794,
+        "upstream_inference_completions_cost": 0.000688
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "83118fa535183170512b1cac32b40707a3b4902ac8806544285397d12601feb4",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.45,
+    "long_distance_rail": 0.25,
+    "rationale": "Medium urban areas have moderate car ownership, local public transport access, and reasonable rail but not as strong as big cities. Mixed mode use is likely; car slightly exceeds local PT, with some rail for longer or airport-access journeys."
+  },
+  "finished_utc": "2026-11-24T21:46:12.563850+00:00",
+  "elapsed_seconds": 2.609
+}

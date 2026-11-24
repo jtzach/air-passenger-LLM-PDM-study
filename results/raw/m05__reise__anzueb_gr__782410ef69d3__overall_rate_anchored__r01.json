@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzueb_gr__782410ef69d3__overall_rate_anchored__r01",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzueb_gr__782410ef69d3",
+  "feature": "anzueb_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 1,
+  "request_sha256": "d1ea9a3ba273189a85f9865752f8ee4f70f364b4e85c17165f959a6e78b073c9",
+  "started_utc": "2026-11-24T21:43:00.808210+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:43:02.341326+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001612,
+  "response": {
+    "id": "gen-1795556580-jKCbTUXnJJfL2mBqewNY",
+    "object": "chat.completion",
+    "created": 1795556580,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.42,\n  \"local_pt\": 0.19,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"Longer trips (8-14 nights) likely mean more luggage and less flexibility, modestly increasing car and long-distance rail use, but slightly reducing local PT. Extended stays may encourage private or intercity ground modes for comfort and practicality.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 454,
+      "completion_tokens": 88,
+      "total_tokens": 542,
+      "cost": 0.001612,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001612,
+        "upstream_inference_prompt_cost": 0.000908,
+        "upstream_inference_completions_cost": 0.000704
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "7a32007f935abc8444c2292baff94553423d6deb32beeebe296fa73b860522a1",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.42,
+    "local_pt": 0.19,
+    "long_distance_rail": 0.15,
+    "rationale": "Longer trips (8-14 nights) likely mean more luggage and less flexibility, modestly increasing car and long-distance rail use, but slightly reducing local PT. Extended stays may encourage private or intercity ground modes for comfort and practicality."
+  },
+  "finished_utc": "2026-11-24T21:43:02.341326+00:00",
+  "elapsed_seconds": 1.547
+}

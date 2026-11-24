@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzbegl_gr__07f355b725cf__unanchored__r03",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzbegl_gr__07f355b725cf",
+  "feature": "anzbegl_gr",
+  "arm": "unanchored",
+  "replicate": 3,
+  "request_sha256": "f86e34ca0295eb8a3938aad8ed7f425155caddb3f6e58d62adc8c674d5fe2cd6",
+  "started_utc": "2026-11-24T21:45:42.093018+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:45:43.497628+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001448,
+  "response": {
+    "id": "gen-1795556742-Uj912BphS1N3yusHZgck",
+    "object": "chat.completion",
+    "created": 1795556742,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.30,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"With two household companions, car use is attractive for convenience and cost-sharing, especially with luggage. Local public transport is possible but less likely for groups. Long-distance rail is less common for airport access with a group.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 392,
+      "completion_tokens": 83,
+      "total_tokens": 475,
+      "cost": 0.001448,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001448,
+        "upstream_inference_prompt_cost": 0.000784,
+        "upstream_inference_completions_cost": 0.000664
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "5cac672ba021dffeb5e1807a3837dce4d7039fc25fb0ed3d6db4c3dd2d3da745",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.15,
+    "rationale": "With two household companions, car use is attractive for convenience and cost-sharing, especially with luggage. Local public transport is possible but less likely for groups. Long-distance rail is less common for airport access with a group."
+  },
+  "finished_utc": "2026-11-24T21:45:43.497628+00:00",
+  "elapsed_seconds": 1.407
+}

@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__RegioStaR7__9f47524becab__overall_rate_anchored__r03",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__RegioStaR7__9f47524becab",
+  "feature": "RegioStaR7",
+  "arm": "overall_rate_anchored",
+  "replicate": 3,
+  "request_sha256": "bd8d72708fd57bd5ce6d67055f66ad510fbc6f08b622e4ac769a2a9d131d52b7",
+  "started_utc": "2026-11-24T21:45:52.052162+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:45:54.362457+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.372e-05,
+  "response": {
+    "id": "gen-1795556752-HyprSjYUXnKLPTVL0oK6",
+    "object": "chat.completion",
+    "created": 1795556752,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.4, \"local_pt\": 0.25, \"long_distance_rail\": 0.15, \"rationale\": \"Medium-sized towns often have less convenient public transport than major cities. Car use is likely higher due to limited alternatives, while local rail use would still be present, though lower than in an urban area.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 493,
+      "completion_tokens": 80,
+      "total_tokens": 573,
+      "cost": 2.372e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.372e-05,
+        "upstream_inference_prompt_cost": 1.972e-05,
+        "upstream_inference_completions_cost": 4e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "29b678d0d6dee99e9c00e27eb2edf23d6d7b89e6aead2bad6980e3e8ebef43e4",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.4,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "Medium-sized towns often have less convenient public transport than major cities. Car use is likely higher due to limited alternatives, while local rail use would still be present, though lower than in an urban area."
+  },
+  "finished_utc": "2026-11-24T21:45:54.362457+00:00",
+  "elapsed_seconds": 2.313
+}

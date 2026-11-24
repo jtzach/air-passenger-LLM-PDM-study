@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__RegioStaR7__d3321efbbd2e__overall_rate_anchored__r01",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__RegioStaR7__d3321efbbd2e",
+  "feature": "RegioStaR7",
+  "arm": "overall_rate_anchored",
+  "replicate": 1,
+  "request_sha256": "d58838a6e94b85da796d6070158b57346ff8652d8ec876efcf4982a2c49f67a9",
+  "started_utc": "2026-11-24T21:44:18.527043+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:44:20.437035+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.037e-05,
+  "response": {
+    "id": "gen-1795556658-HhzwHGYqhIxGGqezrvKa",
+    "object": "chat.completion",
+    "created": 1795556658,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.4, \"local_pt\": 0.25, \"long_distance_rail\": 0.15, \"rationale\": \"Rural-to-central city journeys often involve a car for initial travel, but may transition to rail for the final leg. Local public transport use is likely moderate, and long-distance rail use relatively low.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 488,
+      "completion_tokens": 81,
+      "total_tokens": 569,
+      "cost": 2.037e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.037e-05,
+        "upstream_inference_prompt_cost": 1.632e-05,
+        "upstream_inference_completions_cost": 4.05e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "29be2eb1b849060998e52a352afe92bd4dbd51dd1c23c61ee94ac37ee5af7a60",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.4,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "Rural-to-central city journeys often involve a car for initial travel, but may transition to rail for the final leg. Local public transport use is likely moderate, and long-distance rail use relatively low."
+  },
+  "finished_utc": "2026-11-24T21:44:20.437035+00:00",
+  "elapsed_seconds": 1.922
+}

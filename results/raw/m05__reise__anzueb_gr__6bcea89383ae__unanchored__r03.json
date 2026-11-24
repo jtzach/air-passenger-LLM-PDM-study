@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzueb_gr__6bcea89383ae__unanchored__r03",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzueb_gr__6bcea89383ae",
+  "feature": "anzueb_gr",
+  "arm": "unanchored",
+  "replicate": 3,
+  "request_sha256": "0ad1fee35fa740d78655a3300f9e4502dc7686ee0f0894e7c0589f19493ba91f",
+  "started_utc": "2026-11-24T21:47:37.368365+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:47:38.691921+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001466,
+  "response": {
+    "id": "gen-1795556857-WTGogj0kTlKhkVzGUKv6",
+    "object": "chat.completion",
+    "created": 1795556857,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.18,\n  \"rationale\": \"Short trips (2 nights) often involve regional airports or intra-Germany flights. Car is common for airport access, but local public transport is also plausible. Long-distance rail is less likely unless the airport is far from home.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 393,
+      "completion_tokens": 85,
+      "total_tokens": 478,
+      "cost": 0.001466,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001466,
+        "upstream_inference_prompt_cost": 0.000786,
+        "upstream_inference_completions_cost": 0.00068
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "3a64e3cd84697144ffd1b60f414bcb6ca82d9461ed6346dd61c8946a865cf211",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.18,
+    "rationale": "Short trips (2 nights) often involve regional airports or intra-Germany flights. Car is common for airport access, but local public transport is also plausible. Long-distance rail is less likely unless the airport is far from home."
+  },
+  "finished_utc": "2026-11-24T21:47:38.691921+00:00",
+  "elapsed_seconds": 1.328
+}

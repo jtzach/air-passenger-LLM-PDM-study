@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__anzbegl_gr__b61cbc7c0dd2__unanchored__r02",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__anzbegl_gr__b61cbc7c0dd2",
+  "feature": "anzbegl_gr",
+  "arm": "unanchored",
+  "replicate": 2,
+  "request_sha256": "9d54e28105be6fa77804df966defddcc68e05f30ce49d7a3f4b49cdfc0d68686",
+  "started_utc": "2026-11-24T21:49:06.685349+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:49:08.963392+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 1.847e-05,
+  "response": {
+    "id": "gen-1795556946-oHjOMgtIV7UGhEWjA29o",
+    "object": "chat.completion",
+    "created": 1795556946,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.15,\n  \"local_pt\": 0.25,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Given a single companion, it's plausible some used a car for part of the trip (e.g., to/from the airport). Local public transport and long-distance rail are also likely options for onward or return travel, especially given the overnight journey.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 413,
+      "completion_tokens": 103,
+      "total_tokens": 516,
+      "cost": 1.847e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.847e-05,
+        "upstream_inference_prompt_cost": 1.332e-05,
+        "upstream_inference_completions_cost": 5.15e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "e78721b6578602009bab058da15114b84903db545099bcb9685905eaeab17384",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.15,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.1,
+    "rationale": "Given a single companion, it's plausible some used a car for part of the trip (e.g., to/from the airport). Local public transport and long-distance rail are also likely options for onward or return travel, especially given the overnight journey."
+  },
+  "finished_utc": "2026-11-24T21:49:08.963392+00:00",
+  "elapsed_seconds": 2.266
+}

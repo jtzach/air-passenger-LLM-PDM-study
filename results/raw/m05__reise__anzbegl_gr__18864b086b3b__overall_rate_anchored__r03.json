@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzbegl_gr__18864b086b3b__overall_rate_anchored__r03",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzbegl_gr__18864b086b3b",
+  "feature": "anzbegl_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 3,
+  "request_sha256": "1f56f0ce3b94d954dfe9bf1be2787d00d0db7bb180af1a990acd28fffa375975",
+  "started_utc": "2026-11-24T21:51:44.695984+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:51:46.132078+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001566,
+  "response": {
+    "id": "gen-1795557104-zot9SlIqtOt0CuJfVgkw",
+    "object": "chat.completion",
+    "created": 1795557104,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.48,\n  \"local_pt\": 0.17,\n  \"long_distance_rail\": 0.09,\n  \"rationale\": \"With 3 household companions, shared car use to/from airports is more likely due to cost and convenience, while public/local and long-distance rail are less practical for groups, leading to lower usage than the overall population.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 451,
+      "completion_tokens": 83,
+      "total_tokens": 534,
+      "cost": 0.001566,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001566,
+        "upstream_inference_prompt_cost": 0.000902,
+        "upstream_inference_completions_cost": 0.000664
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "a90549679741c05e06e58fb40bb251f99e9e7fbad8793530826ed4bf08b2c650",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.48,
+    "local_pt": 0.17,
+    "long_distance_rail": 0.09,
+    "rationale": "With 3 household companions, shared car use to/from airports is more likely due to cost and convenience, while public/local and long-distance rail are less practical for groups, leading to lower usage than the overall population."
+  },
+  "finished_utc": "2026-11-24T21:51:46.132078+00:00",
+  "elapsed_seconds": 1.438
+}

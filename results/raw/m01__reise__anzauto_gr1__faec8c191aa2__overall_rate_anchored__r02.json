@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__anzauto_gr1__faec8c191aa2__overall_rate_anchored__r02",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__anzauto_gr1__faec8c191aa2",
+  "feature": "anzauto_gr1",
+  "arm": "overall_rate_anchored",
+  "replicate": 2,
+  "request_sha256": "d7d2a4299ccc33a52b5998a472c955a4abecf712730c4617effdf6d3477bd5c9",
+  "started_utc": "2026-11-24T21:48:12.330462+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:48:15.120923+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.071e-05,
+  "response": {
+    "id": "gen-1795556892-2vIvsMCO9E7OT2578uhv",
+    "object": "chat.completion",
+    "created": 1795556892,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.4,\n  \"local_pt\": 0.25,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"A household with two cars suggests a higher likelihood of car use for part of the journey, particularly for shorter distances or connecting to/from airports. Public transport and rail are likely used for portions of the trip beyond immediate airport access.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 487,
+      "completion_tokens": 95,
+      "total_tokens": 582,
+      "cost": 2.071e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 176,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.071e-05,
+        "upstream_inference_prompt_cost": 1.596e-05,
+        "upstream_inference_completions_cost": 4.75e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "1e137252164db9ef9e25c90800444c946efeff7765a947243ba3ce67e5f8d531",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.4,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "A household with two cars suggests a higher likelihood of car use for part of the journey, particularly for shorter distances or connecting to/from airports. Public transport and rail are likely used for portions of the trip beyond immediate airport access."
+  },
+  "finished_utc": "2026-11-24T21:48:15.120923+00:00",
+  "elapsed_seconds": 2.781
+}

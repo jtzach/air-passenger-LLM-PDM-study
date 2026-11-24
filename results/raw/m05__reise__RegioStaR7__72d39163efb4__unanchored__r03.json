@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__RegioStaR7__72d39163efb4__unanchored__r03",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__RegioStaR7__72d39163efb4",
+  "feature": "RegioStaR7",
+  "arm": "unanchored",
+  "replicate": 3,
+  "request_sha256": "2a9f35da6e1a3aead8aa0b8f308a99125ac5ced0791bc4dc227b2d284468e08c",
+  "started_utc": "2026-11-24T21:50:15.123503+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:50:16.727363+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001432,
+  "response": {
+    "id": "gen-1795557015-8NI6YZZb482lORbkAOj9",
+    "object": "chat.completion",
+    "created": 1795557015,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.80,\n  \"local_pt\": 0.25,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"Rural residents typically rely on cars due to limited public transport. Some may use local PT to reach rail hubs or airports, with fewer opting for long-distance rail, reflecting rural–airport connectivity challenges.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 396,
+      "completion_tokens": 80,
+      "total_tokens": 476,
+      "cost": 0.001432,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001432,
+        "upstream_inference_prompt_cost": 0.000792,
+        "upstream_inference_completions_cost": 0.00064
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "eadcbd160ff24d384bed5a3d84aea1bccbd1b79b2b0b83cddd7af62bec914c83",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.8,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "Rural residents typically rely on cars due to limited public transport. Some may use local PT to reach rail hubs or airports, with fewer opting for long-distance rail, reflecting rural–airport connectivity challenges."
+  },
+  "finished_utc": "2026-11-24T21:50:16.727363+00:00",
+  "elapsed_seconds": 1.593
+}

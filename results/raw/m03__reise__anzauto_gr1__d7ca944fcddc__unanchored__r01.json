@@ -1,0 +1,76 @@
+{
+  "task_id": "m03__reise__anzauto_gr1__d7ca944fcddc__unanchored__r01",
+  "model_id": "openai/gpt-4.1-mini",
+  "model_label": "GPT-4.1 mini",
+  "persona_id": "reise__anzauto_gr1__d7ca944fcddc",
+  "feature": "anzauto_gr1",
+  "arm": "unanchored",
+  "replicate": 1,
+  "request_sha256": "dc5d5ac2d6d53f75a6ea332bea7780c8b3deca8e6e30e26c3acd960a0891c74f",
+  "started_utc": "2026-11-24T21:44:21.402360+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:44:22.766876+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002816,
+  "response": {
+    "id": "gen-1795556661-87YvEjp02Zck3bC7QC6i",
+    "object": "chat.completion",
+    "created": 1795556661,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.55,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"One-car households likely use their car for airport access or egress; local public transport is common for urban connections; long-distance rail is less common alongside flights but possible for multimodal trips.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 392,
+      "completion_tokens": 78,
+      "total_tokens": 470,
+      "cost": 0.0002816,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002816,
+        "upstream_inference_prompt_cost": 0.0001568,
+        "upstream_inference_completions_cost": 0.0001248
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "5b968b40020d565923d2389b8a194dd97bb92f7ceb1b0845300663c1e99c310d",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.55,
+    "long_distance_rail": 0.15,
+    "rationale": "One-car households likely use their car for airport access or egress; local public transport is common for urban connections; long-distance rail is less common alongside flights but possible for multimodal trips."
+  },
+  "finished_utc": "2026-11-24T21:44:22.766876+00:00",
+  "elapsed_seconds": 1.359
+}

@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__anzauto_gr1__79ed954bbe2c__overall_rate_anchored__r02",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__anzauto_gr1__79ed954bbe2c",
+  "feature": "anzauto_gr1",
+  "arm": "overall_rate_anchored",
+  "replicate": 2,
+  "request_sha256": "70b1cb55c9f9239c7661ea2054c7b03919a60e4f10f0bbed6c2e536e5bd66b22",
+  "started_utc": "2026-11-24T21:47:16.282007+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:47:18.907015+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.086e-05,
+  "response": {
+    "id": "gen-1795556836-iqtHfzrCcegn8UwDG6lJ",
+    "object": "chat.completion",
+    "created": 1795556836,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.4,\n  \"local_pt\": 0.25,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"A household with 4+ cars likely utilizes cars for shorter trips and travel within Germany. Combining this with an aircraft journey suggests continued car use for parts of the overall trip, alongside some public transport options.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 489,
+      "completion_tokens": 90,
+      "total_tokens": 579,
+      "cost": 2.086e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.086e-05,
+        "upstream_inference_prompt_cost": 1.636e-05,
+        "upstream_inference_completions_cost": 4.5e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "9542cc8254545afc0e64a3368d3629ad08cd3639b3408d54ecc00928f4458231",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.4,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "A household with 4+ cars likely utilizes cars for shorter trips and travel within Germany. Combining this with an aircraft journey suggests continued car use for parts of the overall trip, alongside some public transport options."
+  },
+  "finished_utc": "2026-11-24T21:47:18.907015+00:00",
+  "elapsed_seconds": 2.625
+}

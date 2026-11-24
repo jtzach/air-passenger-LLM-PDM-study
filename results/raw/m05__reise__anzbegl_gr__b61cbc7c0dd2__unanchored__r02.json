@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzbegl_gr__b61cbc7c0dd2__unanchored__r02",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzbegl_gr__b61cbc7c0dd2",
+  "feature": "anzbegl_gr",
+  "arm": "unanchored",
+  "replicate": 2,
+  "request_sha256": "3150915c71a2da05f4e7abaf1057a73ae6b69dcc2127836066b2a30feead4bd9",
+  "started_utc": "2026-11-24T21:50:03.849630+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:50:05.052919+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001448,
+  "response": {
+    "id": "gen-1795557003-SQuLERa1ad0A9BUjkekb",
+    "object": "chat.completion",
+    "created": 1795557003,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.18,\n  \"rationale\": \"With one household companion, car access is common for airport trips, but public/local transport is still relevant. Long-distance rail is less likely for airport access, especially when two travelers coordinate, but remains a minority option.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 392,
+      "completion_tokens": 83,
+      "total_tokens": 475,
+      "cost": 0.001448,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001448,
+        "upstream_inference_prompt_cost": 0.000784,
+        "upstream_inference_completions_cost": 0.000664
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "51c6945630211134847d304e75bd6f03351fdf17eec963baf900b9bd13356482",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.18,
+    "rationale": "With one household companion, car access is common for airport trips, but public/local transport is still relevant. Long-distance rail is less likely for airport access, especially when two travelers coordinate, but remains a minority option."
+  },
+  "finished_utc": "2026-11-24T21:50:05.052919+00:00",
+  "elapsed_seconds": 1.203
+}

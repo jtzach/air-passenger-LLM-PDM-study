@@ -1,0 +1,8 @@
+# Preparation, selection, API calls and evaluation use Python's standard library.
+# Exact plotting versions used for the archived figures:
+numpy==2.5.5
+matplotlib==3.11.2
+
+# Read-only workbook validation and PDF inspection:
+openpyxl>=3.1,<4
+pypdf>=5,<7

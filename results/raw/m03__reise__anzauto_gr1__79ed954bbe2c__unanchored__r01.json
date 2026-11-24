@@ -1,0 +1,76 @@
+{
+  "task_id": "m03__reise__anzauto_gr1__79ed954bbe2c__unanchored__r01",
+  "model_id": "openai/gpt-4.1-mini",
+  "model_label": "GPT-4.1 mini",
+  "persona_id": "reise__anzauto_gr1__79ed954bbe2c",
+  "feature": "anzauto_gr1",
+  "arm": "unanchored",
+  "replicate": 1,
+  "request_sha256": "c1939773567f3071663b51e553e84ad1c89c46e1afd9434b378f017446046e8a",
+  "started_utc": "2026-11-24T21:46:03.022232+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:46:04.405066+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002776,
+  "response": {
+    "id": "gen-1795556762-71yhr1Jb3pvr1QT5bbjS",
+    "object": "chat.completion",
+    "created": 1795556762,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.85,\n  \"local_pt\": 0.70,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Large car ownership suggests high car use for airport access; local public transport is common for urban connections; long-distance rail less likely combined due to air travel preference and journey duplication.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 394,
+      "completion_tokens": 75,
+      "total_tokens": 469,
+      "cost": 0.0002776,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002776,
+        "upstream_inference_prompt_cost": 0.0001576,
+        "upstream_inference_completions_cost": 0.00012
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "cb38bcbd305a22a5fa8e882f23b0f8cac8567e3ee2e885b72ec3ff5bc9f3cafe",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.85,
+    "local_pt": 0.7,
+    "long_distance_rail": 0.1,
+    "rationale": "Large car ownership suggests high car use for airport access; local public transport is common for urban connections; long-distance rail less likely combined due to air travel preference and journey duplication."
+  },
+  "finished_utc": "2026-11-24T21:46:04.405066+00:00",
+  "elapsed_seconds": 1.391
+}

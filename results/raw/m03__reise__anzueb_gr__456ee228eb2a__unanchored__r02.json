@@ -1,0 +1,76 @@
+{
+  "task_id": "m03__reise__anzueb_gr__456ee228eb2a__unanchored__r02",
+  "model_id": "openai/gpt-4.1-mini",
+  "model_label": "GPT-4.1 mini",
+  "persona_id": "reise__anzueb_gr__456ee228eb2a",
+  "feature": "anzueb_gr",
+  "arm": "unanchored",
+  "replicate": 2,
+  "request_sha256": "910b059d0bd647a9b2c34b30bb530210b886047bc6e473ac6d600f5f8368276b",
+  "started_utc": "2026-11-24T21:46:14.064546+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:46:15.431758+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002716,
+  "response": {
+    "id": "gen-1795556774-edz5WI9ZVnrc884o2dHT",
+    "object": "chat.completion",
+    "created": 1795556774,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.7,\n  \"local_pt\": 0.6,\n  \"long_distance_rail\": 0.3,\n  \"rationale\": \"4-5 night trips with flights often involve car or local public transport access, while long-distance rail is less common but possible for airport or city transfers.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 395,
+      "completion_tokens": 71,
+      "total_tokens": 466,
+      "cost": 0.0002716,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002716,
+        "upstream_inference_prompt_cost": 0.000158,
+        "upstream_inference_completions_cost": 0.0001136
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "5d96d91ba0ccb2be880636125ada43f53997b17ea930096c170a7a5dbeba8f89",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.7,
+    "local_pt": 0.6,
+    "long_distance_rail": 0.3,
+    "rationale": "4-5 night trips with flights often involve car or local public transport access, while long-distance rail is less common but possible for airport or city transfers."
+  },
+  "finished_utc": "2026-11-24T21:46:15.431758+00:00",
+  "elapsed_seconds": 1.359
+}

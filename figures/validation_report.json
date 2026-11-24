@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "raw_terminal_records": 720,
+  "prediction_summary_rows_checked": 1173,
+  "numeric_summary_fields_per_row": 6,
+  "summary_max_abs_difference": 0,
+  "metric_rows_checked": 17,
+  "metric_columns_checked": [
+    "mae",
+    "rmse",
+    "bias_pp",
+    "centred_mae_pp",
+    "bernoulli_jsd_bits"
+  ],
+  "metric_max_abs_difference": 7.105427357601002e-15,
+  "figure_vector_checks": [
+    {
+      "file": "01_framework.pdf",
+      "pages": 1,
+      "width_inches": 7.064,
+      "height_inches": 4.352,
+      "embedded_raster_images": 0,
+      "svg_image_tags": 0,
+      "extractable_text_characters": 1077
+    },
+    {
+      "file": "02_persona_selection.pdf",
+      "pages": 1,
+      "width_inches": 7.171012152777777,
+      "height_inches": 6.827734400000001,
+      "embedded_raster_images": 0,
+      "svg_image_tags": 0,
+      "extractable_text_characters": 1632
+    },
+    {
+      "file": "03_model_results.pdf",
+      "pages": 1,
+      "width_inches": 6.981472222222222,
+      "height_inches": 6.120771484375,
+      "embedded_raster_images": 0,
+      "svg_image_tags": 0,
+      "extractable_text_characters": 944
+    }
+  ],
+  "errors": [],
+  "scope": "Independent recalculation from archived terminal model responses and fixed public cohort targets; no API calls or study-data edits.",
+  "latest_pdf_render_checks": "PASS: all three final PDFs visually inspected; vector colourbar seams suppressed in final figure 2."
+}

@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__anzueb_gr__ef1ad3950de1__overall_rate_anchored__r03",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__anzueb_gr__ef1ad3950de1",
+  "feature": "anzueb_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 3,
+  "request_sha256": "3b54df50ff6864463399cfa0cdbb5526bb28c81dfb2c6fc31cff70faf5d029dc",
+  "started_utc": "2026-11-24T21:47:44.062316+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:47:46.101414+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.042e-05,
+  "response": {
+    "id": "gen-1795556864-lGtijpEna9AM1Ic24fSF",
+    "object": "chat.completion",
+    "created": 1795556864,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.3, \"local_pt\": 0.18, \"long_distance_rail\": 0.11, \"rationale\": \"Given the single overnight journey, respondents likely combined air travel with a short ground trip. Car use would be common for the initial leg, local transport for connecting, and rail for longer distances, mirroring overall population rates.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 488,
+      "completion_tokens": 82,
+      "total_tokens": 570,
+      "cost": 2.042e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.042e-05,
+        "upstream_inference_prompt_cost": 1.632e-05,
+        "upstream_inference_completions_cost": 4.1e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "e179f7a5266bd1aa347e2ac99d8a174f168397299b49a0aaf8a5d0a727770824",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.3,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.11,
+    "rationale": "Given the single overnight journey, respondents likely combined air travel with a short ground trip. Car use would be common for the initial leg, local transport for connecting, and rail for longer distances, mirroring overall population rates."
+  },
+  "finished_utc": "2026-11-24T21:47:46.101414+00:00",
+  "elapsed_seconds": 2.031
+}

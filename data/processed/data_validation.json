@@ -1,0 +1,128 @@
+{
+  "dataset": "reise",
+  "response_hashes_verified": true,
+  "percentage_scale_valid": true,
+  "denominator_scope": "aircraft column only",
+  "feature_checks": [
+    {
+      "feature_id": "__all__",
+      "returned_strata": 1,
+      "summed_returned_unweighted_n": 9475,
+      "summed_returned_weighted_base": 9069,
+      "absent_aircraft_columns": 0,
+      "note": "Returned categories may omit variable-specific invalid/missing cases."
+    },
+    {
+      "feature_id": "alter_gr4",
+      "returned_strata": 9,
+      "summed_returned_unweighted_n": 9475,
+      "summed_returned_weighted_base": 9069,
+      "absent_aircraft_columns": 0,
+      "note": "Returned categories may omit variable-specific invalid/missing cases."
+    },
+    {
+      "feature_id": "HP_SEX",
+      "returned_strata": 4,
+      "summed_returned_unweighted_n": 9475,
+      "summed_returned_weighted_base": 9069,
+      "absent_aircraft_columns": 0,
+      "note": "Returned categories may omit variable-specific invalid/missing cases."
+    },
+    {
+      "feature_id": "bildung",
+      "returned_strata": 7,
+      "summed_returned_unweighted_n": 9475,
+      "summed_returned_weighted_base": 9069,
+      "absent_aircraft_columns": 0,
+      "note": "Returned categories may omit variable-specific invalid/missing cases."
+    },
+    {
+      "feature_id": "erwerb",
+      "returned_strata": 3,
+      "summed_returned_unweighted_n": 9475,
+      "summed_returned_weighted_base": 9070,
+      "absent_aircraft_columns": 1,
+      "note": "Returned categories may omit variable-specific invalid/missing cases."
+    },
+    {
+      "feature_id": "hheink_gr2",
+      "returned_strata": 10,
+      "summed_returned_unweighted_n": 9475,
+      "summed_returned_weighted_base": 9069,
+      "absent_aircraft_columns": 0,
+      "note": "Returned categories may omit variable-specific invalid/missing cases."
+    },
+    {
+      "feature_id": "anzauto_gr1",
+      "returned_strata": 5,
+      "summed_returned_unweighted_n": 9475,
+      "summed_returned_weighted_base": 9069,
+      "absent_aircraft_columns": 0,
+      "note": "Returned categories may omit variable-specific invalid/missing cases."
+    },
+    {
+      "feature_id": "hhgr_gr",
+      "returned_strata": 5,
+      "summed_returned_unweighted_n": 9475,
+      "summed_returned_weighted_base": 9070,
+      "absent_aircraft_columns": 0,
+      "note": "Returned categories may omit variable-specific invalid/missing cases."
+    },
+    {
+      "feature_id": "RegioStaR7",
+      "returned_strata": 7,
+      "summed_returned_unweighted_n": 9475,
+      "summed_returned_weighted_base": 9069,
+      "absent_aircraft_columns": 0,
+      "note": "Returned categories may omit variable-specific invalid/missing cases."
+    },
+    {
+      "feature_id": "P_FS_PKW",
+      "returned_strata": 3,
+      "summed_returned_unweighted_n": 9374,
+      "summed_returned_weighted_base": 8940,
+      "absent_aircraft_columns": 0,
+      "note": "Returned categories may omit variable-specific invalid/missing cases."
+    },
+    {
+      "feature_id": "R_ZWECK",
+      "returned_strata": 7,
+      "summed_returned_unweighted_n": 9475,
+      "summed_returned_weighted_base": 9069,
+      "absent_aircraft_columns": 0,
+      "note": "Returned categories may omit variable-specific invalid/missing cases."
+    },
+    {
+      "feature_id": "R_ZIEL",
+      "returned_strata": 4,
+      "summed_returned_unweighted_n": 9475,
+      "summed_returned_weighted_base": 9069,
+      "absent_aircraft_columns": 0,
+      "note": "Returned categories may omit variable-specific invalid/missing cases."
+    },
+    {
+      "feature_id": "entf_gr",
+      "returned_strata": 9,
+      "summed_returned_unweighted_n": 9290,
+      "summed_returned_weighted_base": 8844,
+      "absent_aircraft_columns": 1,
+      "note": "Returned categories may omit variable-specific invalid/missing cases."
+    },
+    {
+      "feature_id": "anzueb_gr",
+      "returned_strata": 7,
+      "summed_returned_unweighted_n": 9335,
+      "summed_returned_weighted_base": 8707,
+      "absent_aircraft_columns": 0,
+      "note": "Returned categories may omit variable-specific invalid/missing cases."
+    },
+    {
+      "feature_id": "anzbegl_gr",
+      "returned_strata": 5,
+      "summed_returned_unweighted_n": 8897,
+      "summed_returned_weighted_base": 8512,
+      "absent_aircraft_columns": 0,
+      "note": "Returned categories may omit variable-specific invalid/missing cases."
+    }
+  ]
+}

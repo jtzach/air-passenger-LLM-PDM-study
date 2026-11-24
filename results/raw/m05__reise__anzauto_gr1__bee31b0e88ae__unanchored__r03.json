@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzauto_gr1__bee31b0e88ae__unanchored__r03",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzauto_gr1__bee31b0e88ae",
+  "feature": "anzauto_gr1",
+  "arm": "unanchored",
+  "replicate": 3,
+  "request_sha256": "5ef405d83ad893c9d3fe87d07013bf364bfb01b595a9cd11a5976255b4e50b62",
+  "started_utc": "2026-11-24T21:43:28.568476+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:43:30.061287+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001448,
+  "response": {
+    "id": "gen-1795556608-mccvm7fsqe4APoPNtFPB",
+    "object": "chat.completion",
+    "created": 1795556608,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.85,\n  \"local_pt\": 0.25,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Households with 3 cars likely prefer car access to airports for flexibility and luggage. Local PT is less attractive for high-car households, while long-distance rail is rarely combined with air unless intercity airports are far.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 392,
+      "completion_tokens": 83,
+      "total_tokens": 475,
+      "cost": 0.001448,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001448,
+        "upstream_inference_prompt_cost": 0.000784,
+        "upstream_inference_completions_cost": 0.000664
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "0429cbd1323206d2f928f687ee9d5757e4b69d7c2938096f35519a5f12b3fd48",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.85,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.1,
+    "rationale": "Households with 3 cars likely prefer car access to airports for flexibility and luggage. Local PT is less attractive for high-car households, while long-distance rail is rarely combined with air unless intercity airports are far."
+  },
+  "finished_utc": "2026-11-24T21:43:30.061287+00:00",
+  "elapsed_seconds": 1.5
+}

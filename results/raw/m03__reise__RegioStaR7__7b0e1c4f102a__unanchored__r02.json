@@ -1,0 +1,76 @@
+{
+  "task_id": "m03__reise__RegioStaR7__7b0e1c4f102a__unanchored__r02",
+  "model_id": "openai/gpt-4.1-mini",
+  "model_label": "GPT-4.1 mini",
+  "persona_id": "reise__RegioStaR7__7b0e1c4f102a",
+  "feature": "RegioStaR7",
+  "arm": "unanchored",
+  "replicate": 2,
+  "request_sha256": "ab962caf995b0b5aabd68f66246aee7ab33859b03da02c478e8fe62b5e06f599",
+  "started_utc": "2026-11-24T21:45:38.649247+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:45:40.256049+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002704,
+  "response": {
+    "id": "gen-1795556738-3OegOB5vWUOGoTd5W5Ee",
+    "object": "chat.completion",
+    "created": 1795556738,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.70,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"Urban residents often use public transit to access airports; some use cars for convenience. Long-distance rail is less common but possible for airport transfer or connecting trips.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 392,
+      "completion_tokens": 71,
+      "total_tokens": 463,
+      "cost": 0.0002704,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002704,
+        "upstream_inference_prompt_cost": 0.0001568,
+        "upstream_inference_completions_cost": 0.0001136
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "4564413a17167dd6e8f179d8a5b46d07f3f11dd66947b9272ee1b124acf70774",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.7,
+    "long_distance_rail": 0.25,
+    "rationale": "Urban residents often use public transit to access airports; some use cars for convenience. Long-distance rail is less common but possible for airport transfer or connecting trips."
+  },
+  "finished_utc": "2026-11-24T21:45:40.256049+00:00",
+  "elapsed_seconds": 1.61
+}

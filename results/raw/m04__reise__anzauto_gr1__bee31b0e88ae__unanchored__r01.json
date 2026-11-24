@@ -1,0 +1,76 @@
+{
+  "task_id": "m04__reise__anzauto_gr1__bee31b0e88ae__unanchored__r01",
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "model_label": "Qwen3 235B A22B",
+  "persona_id": "reise__anzauto_gr1__bee31b0e88ae",
+  "feature": "anzauto_gr1",
+  "arm": "unanchored",
+  "replicate": 1,
+  "request_sha256": "f00909746383296b0d64c9d6fc59d8ba1f72303b71a69d34ea6f958c5caf7e61",
+  "started_utc": "2026-11-24T21:48:42.350283+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:48:46.968654+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 7.633e-05,
+  "response": {
+    "id": "gen-1795556922-1tuMGW2ZVSHxfOkcfGMY",
+    "object": "chat.completion",
+    "created": 1795556922,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.95,\n  \"local_pt\": 0.3,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"High car access suggests reliance on private vehicles for airport access; public transport use is secondary, with long-distance rail competing less for those with abundant car availability.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 402,
+      "completion_tokens": 73,
+      "total_tokens": 475,
+      "cost": 7.633e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 7.633e-05,
+        "upstream_inference_prompt_cost": 3.618e-05,
+        "upstream_inference_completions_cost": 4.015e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "8d1ad22677ce974240936ac06607f7d9a9ac1dd1c4cd6eb738adb81d3d09cdd7",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.95,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.15,
+    "rationale": "High car access suggests reliance on private vehicles for airport access; public transport use is secondary, with long-distance rail competing less for those with abundant car availability."
+  },
+  "finished_utc": "2026-11-24T21:48:46.968654+00:00",
+  "elapsed_seconds": 4.625
+}

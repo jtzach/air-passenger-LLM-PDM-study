@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__RegioStaR7__9f47524becab__unanchored__r01",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__RegioStaR7__9f47524becab",
+  "feature": "RegioStaR7",
+  "arm": "unanchored",
+  "replicate": 1,
+  "request_sha256": "90dd045f5dce3e42c5adbcc7f9a3e4467282a98769d314a6b3371f7238ba62b7",
+  "started_utc": "2026-11-24T21:44:41.159386+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:44:43.033240+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 1.766e-05,
+  "response": {
+    "id": "gen-1795556681-bek0ZI80RZti7DGzaMvD",
+    "object": "chat.completion",
+    "created": 1795556681,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.2,\n  \"local_pt\": 0.3,\n  \"long_distance_rail\": 0.1,\n  \"rationale\": \"Given the origin is a medium-sized urban town, people likely combined flight with local public transport for onward travel. Car use is plausible but less probable due to urban density.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 419,
+      "completion_tokens": 82,
+      "total_tokens": 501,
+      "cost": 1.766e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.766e-05,
+        "upstream_inference_prompt_cost": 1.356e-05,
+        "upstream_inference_completions_cost": 4.1e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "8053ae3bb9754ecf7ef1854684cad342a6493f8df695ad21f888226a886d077a",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.2,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "Given the origin is a medium-sized urban town, people likely combined flight with local public transport for onward travel. Car use is plausible but less probable due to urban density."
+  },
+  "finished_utc": "2026-11-24T21:44:43.033240+00:00",
+  "elapsed_seconds": 1.875
+}

@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__no_persona__overall_rate_anchored__r02",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "no_persona",
+  "feature": "none",
+  "arm": "overall_rate_anchored",
+  "replicate": 2,
+  "request_sha256": "b0a72b698de5e25068a5ee91fc557d5df73a967d738a25a4df0e25acd21cbc13",
+  "started_utc": "2026-11-24T21:46:34.211146+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:46:37.478764+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 1.986e-05,
+  "response": {
+    "id": "gen-1795556794-rudWvsS7u2CzbyH6xXpX",
+    "object": "chat.completion",
+    "created": 1795556794,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.25,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.08,\n  \"rationale\": \"Given the overnight flight, respondents likely combined it with ground transport. Car use is plausible for shorter distances, while local bus/rail and long-distance rail are expected for connecting to/from airports.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 448,
+      "completion_tokens": 90,
+      "total_tokens": 538,
+      "cost": 1.986e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 128,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.986e-05,
+        "upstream_inference_prompt_cost": 1.536e-05,
+        "upstream_inference_completions_cost": 4.5e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "5b9bc63ae92303059ef3e9826089a7d97dbd0956393e6c22f52ab94e97be65fe",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.25,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.08,
+    "rationale": "Given the overnight flight, respondents likely combined it with ground transport. Car use is plausible for shorter distances, while local bus/rail and long-distance rail are expected for connecting to/from airports."
+  },
+  "finished_utc": "2026-11-24T21:46:37.478764+00:00",
+  "elapsed_seconds": 3.265
+}

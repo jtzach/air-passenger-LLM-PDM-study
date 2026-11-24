@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__RegioStaR7__5febbfe6f6bc__overall_rate_anchored__r01",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__RegioStaR7__5febbfe6f6bc",
+  "feature": "RegioStaR7",
+  "arm": "overall_rate_anchored",
+  "replicate": 1,
+  "request_sha256": "2cab0d25c6ade7420bbfccf3ef9fb12cb5f6571b034173ec4c589194294231e1",
+  "started_utc": "2026-11-24T21:44:24.847799+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:44:26.816064+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.068e-05,
+  "response": {
+    "id": "gen-1795556664-RRnN090p1F4sUMy7wlXg",
+    "object": "chat.completion",
+    "created": 1795556664,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.45, \"local_pt\": 0.28, \"long_distance_rail\": 0.15, \"rationale\": \"Small-town/village residents may rely more on cars for shorter trips, increasing car use compared to urban populations. Local public transport use will be lower, and long-distance rail slightly less common, reflecting reduced connectivity.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 492,
+      "completion_tokens": 84,
+      "total_tokens": 576,
+      "cost": 2.068e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.068e-05,
+        "upstream_inference_prompt_cost": 1.648e-05,
+        "upstream_inference_completions_cost": 4.2e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "c60a4a4778a177d95df118f7acbd32b9fe12e1673f3a098bf9c24550931dad2f",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.28,
+    "long_distance_rail": 0.15,
+    "rationale": "Small-town/village residents may rely more on cars for shorter trips, increasing car use compared to urban populations. Local public transport use will be lower, and long-distance rail slightly less common, reflecting reduced connectivity."
+  },
+  "finished_utc": "2026-11-24T21:44:26.816064+00:00",
+  "elapsed_seconds": 1.969
+}

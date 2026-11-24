@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__RegioStaR7__72d39163efb4__overall_rate_anchored__r03",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__RegioStaR7__72d39163efb4",
+  "feature": "RegioStaR7",
+  "arm": "overall_rate_anchored",
+  "replicate": 3,
+  "request_sha256": "714637097247beab706014c62ac2468a9ef1c81141cefd97d017a0c950211b1b",
+  "started_utc": "2026-11-24T21:48:11.007296+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:48:12.511062+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00155,
+  "response": {
+    "id": "gen-1795556891-RXHMUZ8jjC2FHHD1dhCT",
+    "object": "chat.completion",
+    "created": 1795556891,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.50,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.09,\n  \"rationale\": \"Rural residents face limited public transport, so car use is higher than the population average, while access to local and long-distance rail is lower, reflecting spatial constraints common in small-town and village areas.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 455,
+      "completion_tokens": 80,
+      "total_tokens": 535,
+      "cost": 0.00155,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00155,
+        "upstream_inference_prompt_cost": 0.00091,
+        "upstream_inference_completions_cost": 0.00064
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "cb3774d2770c86750189baeae2b8028b1f91ef8d126cab7184518ed2a4756288",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.5,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.09,
+    "rationale": "Rural residents face limited public transport, so car use is higher than the population average, while access to local and long-distance rail is lower, reflecting spatial constraints common in small-town and village areas."
+  },
+  "finished_utc": "2026-11-24T21:48:12.511062+00:00",
+  "elapsed_seconds": 1.5
+}

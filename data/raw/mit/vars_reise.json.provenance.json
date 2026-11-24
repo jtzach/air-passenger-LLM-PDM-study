@@ -1,0 +1,15 @@
+{
+  "url": "https://mobilitaet-in-tabellen-2023.bast.de/api/vars",
+  "method": "POST",
+  "retrieved_utc": "2026-11-24T21:37:27.048220+00:00",
+  "bytes": 46473,
+  "sha256": "37bafe33351d82607f9dfd5118e43bddc60675ff5e0294d962a38aaf9b65ba7e",
+  "request_sha256": "8db9094dbfee8e983c64dd5a0f3b517d0b5c28016df9f6e298f5b0f8420f5893",
+  "request": {
+    "id": "reise"
+  },
+  "response_headers": {
+    "Content-Type": "application/json",
+    "Date": "Tue, 24 Nov 2026 21:37:26 GMT"
+  }
+}

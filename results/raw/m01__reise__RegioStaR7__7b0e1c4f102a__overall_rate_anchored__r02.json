@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__RegioStaR7__7b0e1c4f102a__overall_rate_anchored__r02",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__RegioStaR7__7b0e1c4f102a",
+  "feature": "RegioStaR7",
+  "arm": "overall_rate_anchored",
+  "replicate": 2,
+  "request_sha256": "a0ea79f134ad61ff017edc90f8770b1fb6f257bd4c9d8edddd9baaee80484e0b",
+  "started_utc": "2026-11-24T21:44:51.114092+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:44:53.082835+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.041e-05,
+  "response": {
+    "id": "gen-1795556691-GTh1ifrkeb0WXegc5PS3",
+    "object": "chat.completion",
+    "created": 1795556691,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.3,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.09,\n  \"rationale\": \"Metropolitan residents often combine air travel with ground transport for onward journeys. Car use is expected to be relatively high, while local public transport and long-distance rail usage will be lower than overall rates.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 487,
+      "completion_tokens": 89,
+      "total_tokens": 576,
+      "cost": 2.041e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 176,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.041e-05,
+        "upstream_inference_prompt_cost": 1.596e-05,
+        "upstream_inference_completions_cost": 4.45e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "ecd0d1a366156fd27134b8eaabd558b5ec0501e97d38bca1877a226ab6bff65a",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.3,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.09,
+    "rationale": "Metropolitan residents often combine air travel with ground transport for onward journeys. Car use is expected to be relatively high, while local public transport and long-distance rail usage will be lower than overall rates."
+  },
+  "finished_utc": "2026-11-24T21:44:53.082835+00:00",
+  "elapsed_seconds": 1.969
+}

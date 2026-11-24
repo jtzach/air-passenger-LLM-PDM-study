@@ -1,0 +1,25 @@
+{
+  "source_main_words_including_abstract_captions_keywords_acknowledgments": 805,
+  "abstract_words": 73,
+  "word_count_convention": "Audit local manuscript sources and compiled PDFs; no manuscript mutation.\n\nThe reproducible word convention treats whitespace-separated words containing\nletters/digits as words after removing TeX markup. Captions, keywords, and\nacknowledgments are included; title, bibliography, and embedded figure labels\nare excluded. In-text citation commands count as one token per cited source;\nthe rendered PDF count is also recorded as a deliberately broader check.",
+  "pending_result_markers": 0,
+  "numbered_sections": [
+    "Questions",
+    "Methods",
+    "Findings"
+  ],
+  "figure_count": 3,
+  "bibliography_entries": 8,
+  "main_pdf_pages": 5,
+  "main_pdf_words_before_references_including_figures": 1398,
+  "main_pdf_has_pending_marker": false,
+  "main_rendered_words_excluding_figures_and_references": 859,
+  "rendered_narrative_count_note": "Includes actual rendered citations, abstract, captions, keywords, acknowledgments, title, date, headings, and page numbers. Excludes DejaVu Sans figure text and bibliography. This is a conservative check against the 1,000-word limit.",
+  "main_overfull_boxes": 0,
+  "main_unresolved_citations": false,
+  "supplement_pdf_pages": 5,
+  "supplement_pdf_words_before_references_including_figures": 2274,
+  "supplement_pdf_has_pending_marker": false,
+  "supplement_overfull_boxes": 0,
+  "supplement_unresolved_citations": false
+}

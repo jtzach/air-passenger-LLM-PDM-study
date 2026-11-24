@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzauto_gr1__79ed954bbe2c__overall_rate_anchored__r02",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzauto_gr1__79ed954bbe2c",
+  "feature": "anzauto_gr1",
+  "arm": "overall_rate_anchored",
+  "replicate": 2,
+  "request_sha256": "fe56e436dcfdb9736866ca8c5f14c4e2ad054178b6d687d5cd9c755a93b7df28",
+  "started_utc": "2026-11-24T21:51:00.270163+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:51:02.241401+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001474,
+  "response": {
+    "id": "gen-1795557060-lmghaa2LHHJW0NZOToe1",
+    "object": "chat.completion",
+    "created": 1795557060,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.57,\n  \"local_pt\": 0.16,\n  \"long_distance_rail\": 0.08,\n  \"rationale\": \"Households with 4+ cars likely have high car access and preference, raising car use and lowering public transport or rail use compared to the general population.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 453,
+      "completion_tokens": 71,
+      "total_tokens": 524,
+      "cost": 0.001474,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001474,
+        "upstream_inference_prompt_cost": 0.000906,
+        "upstream_inference_completions_cost": 0.000568
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "1fe1e8b3185e8475657f0832a4d50c54d6d3181394bc2280fd77113499878e66",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.57,
+    "local_pt": 0.16,
+    "long_distance_rail": 0.08,
+    "rationale": "Households with 4+ cars likely have high car access and preference, raising car use and lowering public transport or rail use compared to the general population."
+  },
+  "finished_utc": "2026-11-24T21:51:02.241401+00:00",
+  "elapsed_seconds": 1.969
+}

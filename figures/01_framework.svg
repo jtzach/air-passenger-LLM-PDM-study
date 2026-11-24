@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="508.608pt" height="313.344pt" viewBox="0 0 508.608 313.344" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <title>01 framework</title>
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title>01 framework</dc:title>
+    <dc:description>Study design. Public MiD 2023 aggregate evidence; no synthetic results plotted.</dc:description>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 313.344 
+L 508.608 313.344 
+L 508.608 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 17.96544 176.66496 
+L 146.694528 176.66496 
+Q 155.745792 176.66496 155.745792 171.128448 
+L 155.745792 48.402432 
+Q 155.745792 42.86592 146.694528 42.86592 
+L 17.96544 42.86592 
+Q 8.914176 42.86592 8.914176 48.402432 
+L 8.914176 171.128448 
+Q 8.914176 176.66496 17.96544 176.66496 
+z
+" style="fill: #ffffff; stroke: #dce4e8; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 17.96544 67.47264 
+L 146.694528 67.47264 
+Q 155.745792 67.47264 155.745792 61.936128 
+L 155.745792 48.402432 
+Q 155.745792 42.86592 146.694528 42.86592 
+L 17.96544 42.86592 
+Q 8.914176 42.86592 8.914176 48.402432 
+L 8.914176 61.936128 
+Q 8.914176 67.47264 17.96544 67.47264 
+z
+" style="fill: #0072b2; stroke: #0072b2; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 189.939456 176.66496 
+L 318.668544 176.66496 
+Q 327.719808 176.66496 327.719808 171.128448 
+L 327.719808 48.402432 
+Q 327.719808 42.86592 318.668544 42.86592 
+L 189.939456 42.86592 
+Q 180.888192 42.86592 180.888192 48.402432 
+L 180.888192 171.128448 
+Q 180.888192 176.66496 189.939456 176.66496 
+z
+" style="fill: #ffffff; stroke: #dce4e8; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 189.939456 67.47264 
+L 318.668544 67.47264 
+Q 327.719808 67.47264 327.719808 61.936128 
+L 327.719808 48.402432 
+Q 327.719808 42.86592 318.668544 42.86592 
+L 189.939456 42.86592 
+Q 180.888192 42.86592 180.888192 48.402432 
+L 180.888192 61.936128 
+Q 180.888192 67.47264 189.939456 67.47264 
+z
+" style="fill: #008d80; stroke: #008d80; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 361.913472 176.66496 
+L 490.64256 176.66496 
+Q 499.693824 176.66496 499.693824 171.128448 
+L 499.693824 48.402432 
+Q 499.693824 42.86592 490.64256 42.86592 
+L 361.913472 42.86592 
+Q 352.862208 42.86592 352.862208 48.402432 
+L 352.862208 171.128448 
+Q 352.862208 176.66496 361.913472 176.66496 
+z
+" style="fill: #ffffff; stroke: #dce4e8; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 361.913472 67.47264 
+L 490.64256 67.47264 
+Q 499.693824 67.47264 499.693824 61.936128 
+L 499.693824 48.402432 
+Q 499.693824 42.86592 490.64256 42.86592 
+L 361.913472 42.86592 
+Q 352.862208 42.86592 352.862208 48.402432 
+L 352.862208 61.936128 
+Q 352.862208 67.47264 361.913472 67.47264 
+z
+" style="fill: #8f5b9f; stroke: #8f5b9f; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 160.256569 108.99648 
+Q 168.063988 108.99648 174.529766 108.99648 
+" style="fill: none; stroke: #566a77; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 170.929766 107.19648 
+L 174.529766 108.99648 
+L 170.929766 110.79648 
+z
+" style="fill: #566a77; stroke: #566a77; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 332.230585 108.99648 
+Q 340.038004 108.99648 346.503782 108.99648 
+" style="fill: none; stroke: #566a77; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 342.903782 107.19648 
+L 346.503782 108.99648 
+L 342.903782 110.79648 
+z
+" style="fill: #566a77; stroke: #566a77; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 21.485376 139.75488 
+L 143.174592 139.75488 
+Q 147.197376 139.75488 147.197376 137.294208 
+L 147.197376 106.843392 
+Q 147.197376 104.38272 143.174592 104.38272 
+L 21.485376 104.38272 
+Q 17.462592 104.38272 17.462592 106.843392 
+L 17.462592 137.294208 
+Q 17.462592 139.75488 21.485376 139.75488 
+z
+" style="fill: #f3f7f9; stroke: #dce4e8; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 193.459392 141.907968 
+L 315.148608 141.907968 
+Q 319.171392 141.907968 319.171392 139.447296 
+L 319.171392 121.915008 
+Q 319.171392 119.454336 315.148608 119.454336 
+L 193.459392 119.454336 
+Q 189.436608 119.454336 189.436608 121.915008 
+L 189.436608 139.447296 
+Q 189.436608 141.907968 193.459392 141.907968 
+z
+" style="fill: #eaf5f1; stroke: #bcdcd1; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 365.433408 122.83776 
+L 487.122624 122.83776 
+Q 491.145408 122.83776 491.145408 120.377088 
+L 491.145408 99.461376 
+Q 491.145408 97.000704 487.122624 97.000704 
+L 365.433408 97.000704 
+Q 361.410624 97.000704 361.410624 99.461376 
+L 361.410624 120.377088 
+Q 361.410624 122.83776 365.433408 122.83776 
+z
+" style="fill: #f5f0f7; stroke: #ddcce3; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 365.433408 155.13408 
+L 487.122624 155.13408 
+Q 491.145408 155.13408 491.145408 152.673408 
+L 491.145408 131.757696 
+Q 491.145408 129.297024 487.122624 129.297024 
+L 365.433408 129.297024 
+Q 361.410624 129.297024 361.410624 131.757696 
+L 361.410624 152.673408 
+Q 361.410624 155.13408 365.433408 155.13408 
+z
+" style="fill: #f5f0f7; stroke: #ddcce3; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 82.329984 180.202533 
+Q 82.329984 198.963495 82.329984 216.382816 
+" style="fill: none; stroke: #0072b2; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 84.129984 212.782816 
+L 82.329984 216.382816 
+L 80.529984 212.782816 
+z
+" style="fill: #0072b2; stroke: #0072b2; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 426.278016 180.202533 
+Q 426.278016 198.963495 426.278016 216.382816 
+" style="fill: none; stroke: #8f5b9f; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 428.078016 212.782816 
+L 426.278016 216.382816 
+L 424.478016 212.782816 
+z
+" style="fill: #8f5b9f; stroke: #8f5b9f; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 17.96544 285.85728 
+L 490.64256 285.85728 
+Q 499.693824 285.85728 499.693824 280.320768 
+L 499.693824 226.801152 
+Q 499.693824 221.26464 490.64256 221.26464 
+L 17.96544 221.26464 
+Q 8.914176 221.26464 8.914176 226.801152 
+L 8.914176 280.320768 
+Q 8.914176 285.85728 17.96544 285.85728 
+z
+" style="fill: #f3f7f9; stroke: #dce4e8; stroke-width: 0.8; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 251.78976 275.09184 
+L 251.78976 241.2576 
+" clip-path="url(#p6ee49f1cfb)" style="fill: none; stroke: #dce4e8; stroke-width: 0.8; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #183142" x="8.914176" y="14.151213" transform="rotate(-0 8.914176 14.151213)">From public evidence to a measured persona benchmark</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 8.4px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #566a77" x="8.914176" y="27.717727" transform="rotate(-0 8.914176 27.717727)">Aircraft-containing overnight journeys reported in MiD 2023</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 8.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #ffffff" x="16.456896" y="57.88855" transform="rotate(-0 16.456896 57.88855)">01  PUBLIC EVIDENCE</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 8.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #ffffff" x="188.430912" y="57.88855" transform="rotate(-0 188.430912 57.88855)">02  DATA-DRIVEN PERSONAS</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 8.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #ffffff" x="360.404928" y="57.88855" transform="rotate(-0 360.404928 57.88855)">03  LLM PROBABILITIES</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 8.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #183142" x="16.959744" y="81.316974" transform="rotate(-0 16.959744 81.316974)">Archive raw responses</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 7.8px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #566a77" x="16.959744" y="96.160637" transform="rotate(-0 16.959744 96.160637)">Record query, source and hash</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 6.9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #566a77" x="23.496768" y="117.653013" transform="rotate(-0 23.496768 117.653013)">Cohort | mode | weighted share</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 6.9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #566a77" x="23.496768" y="130.879125" transform="rotate(-0 23.496768 130.879125)">Unweighted support | coverage</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 7.6px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #183142" x="16.959744" y="153.834461" transform="rotate(-0 16.959744 153.834461)">Compute conditional mode rates</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 6.95px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #566a77" x="16.959744" y="166.566674" transform="rotate(-0 16.959744 166.566674)">Car  /  local PT  /  long-distance rail</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 8.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #183142" x="188.93376" y="81.316974" transform="rotate(-0 188.93376 81.316974)">Rank cohort heterogeneity</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 7.7px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #566a77" x="188.93376" y="96.392237" transform="rotate(-0 188.93376 96.392237)">2 traveller + 2 journey features</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #183142" x="188.93376" y="113.157388" transform="rotate(-0 188.93376 113.157388)">Retain adequately supported strata</text>
+   </g>
+   <g id="text_15">
+    <text style="font-weight: 700; font-size: 7.2px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #008d80" x="254.304" y="132.705257" transform="rotate(-0 254.304 132.705257)">ONE ATTRIBUTE PER PERSONA</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 7px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #566a77" x="188.93376" y="153.686138" transform="rotate(-0 188.93376 153.686138)">No invented combinations of attributes</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 6.9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #566a77" x="188.93376" y="167.759018" transform="rotate(-0 188.93376 167.759018)">Withhold cohort rates from prompts</text>
+   </g>
+   <g id="text_18">
+    <text style="font-weight: 700; font-size: 8.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #183142" x="360.907776" y="81.316974" transform="rotate(-0 360.907776 81.316974)">Three co-use probabilities</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #566a77" x="360.907776" y="95.628747" transform="rotate(-0 360.907776 95.628747)">Small + large LLMs / OpenRouter</text>
+   </g>
+   <g id="text_20">
+    <text style="font-weight: 700; font-size: 7.4px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #8f5b9f" x="367.4448" y="108.16006" transform="rotate(-0 367.4448 108.16006)">Unanchored</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 6.7px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #566a77" x="367.4448" y="118.086025" transform="rotate(-0 367.4448 118.086025)">Persona + task definition</text>
+   </g>
+   <g id="text_22">
+    <text style="font-weight: 700; font-size: 7.4px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #8f5b9f" x="367.4448" y="140.45638" transform="rotate(-0 367.4448 140.45638)">Overall-rate anchored</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 6.7px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #566a77" x="367.4448" y="150.382345" transform="rotate(-0 367.4448 150.382345)">Same task + national mode rates</text>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 7px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #566a77" x="425.775168" y="169.98809" transform="rotate(-0 425.775168 169.98809)">3 repeats per model and condition</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 7.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #0072b2" x="90.8784" y="198.528514" transform="rotate(-0 90.8784 198.528514)">Observed weighted rates</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 7.2px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #8f5b9f" x="417.7296" y="198.528514" transform="rotate(-0 417.7296 198.528514)">Predicted probabilities</text>
+   </g>
+   <g id="text_27">
+    <text style="font-weight: 700; font-size: 8.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #183142" x="18.468288" y="237.337406" transform="rotate(-0 18.468288 237.337406)">04  QUANTITATIVE VALIDATION</text>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 7.7px; font-family: 'DejaVu Sans'; fill: #183142" transform="translate(18.468288 254.501331)">Compare persona predictions</text>
+    <text style="font-size: 7.7px; font-family: 'DejaVu Sans'; fill: #183142" transform="translate(18.468288 266.412268)">with a cohort-blind national baseline</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 7.7px; font-family: 'DejaVu Sans'; fill: #183142" transform="translate(266.8752 254.501331)">Absolute error  /  calibration  /  repeat variation</text>
+    <text style="font-size: 7.7px; font-family: 'DejaVu Sans'; fill: #183142" transform="translate(266.8752 265.666331)">Agreement with published cohort marginals</text>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 7.1px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #566a77" x="254.304" y="300.928005" transform="rotate(-0 254.304 300.928005)">Scope: aggregate validation; no individual reconstruction or identification of airport-access legs.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p6ee49f1cfb">
+   <rect x="2.88" y="2.88" width="502.848" height="307.584"/>
+  </clipPath>
+ </defs>
+</svg>

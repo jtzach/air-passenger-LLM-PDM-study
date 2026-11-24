@@ -1,0 +1,85 @@
+{
+  "task_id": "m02__reise__anzueb_gr__ef1ad3950de1__overall_rate_anchored__r02",
+  "model_id": "google/gemma-3-12b-it",
+  "model_label": "Gemma 3 12B",
+  "persona_id": "reise__anzueb_gr__ef1ad3950de1",
+  "feature": "anzueb_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 2,
+  "request_sha256": "5a7302f728c694a910c015d07215fd554ad52c70beaa337d98b88363f2a82e8c",
+  "started_utc": "2026-11-24T21:43:41.692661+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "http_error",
+      "code": 429,
+      "detail": "{\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"google/gemma-3-12b-it is temporarily rate-limited upstream. Please retry shortly, or add your own provider key to use your own limits: https://openrouter.ai/workspaces/default/byok\",\"provider_name\":\"DeepInfra\",\"is_byok\":false,\"provider_error_code\":\"engine_overloaded\",\"limit_source\":\"upstream_provider_shared_pool\",\"remedy_hint\":\"Retry shortly, add your own provider key to use your own limits (https://openrouter.ai/workspaces/default/byok), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing.\"}},\"user_id\":\"[REDACTED_ACCOUNT_ID]\"}",
+      "utc": "2026-11-24T21:43:42.146360+00:00"
+    },
+    {
+      "number": 2,
+      "status": "http_error",
+      "code": 429,
+      "detail": "{\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"google/gemma-3-12b-it is temporarily rate-limited upstream. Please retry shortly, or add your own provider key to use your own limits: https://openrouter.ai/workspaces/default/byok\",\"provider_name\":\"DeepInfra\",\"is_byok\":false,\"provider_error_code\":\"engine_overloaded\",\"limit_source\":\"upstream_provider_shared_pool\",\"remedy_hint\":\"Retry shortly, add your own provider key to use your own limits (https://openrouter.ai/workspaces/default/byok), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing.\"}},\"user_id\":\"[REDACTED_ACCOUNT_ID]\"}",
+      "utc": "2026-11-24T21:43:44.493452+00:00"
+    },
+    {
+      "number": 3,
+      "status": "response",
+      "utc": "2026-11-24T21:43:51.288595+00:00"
+    }
+  ],
+  "status": "invalid_output",
+  "accounted_cost_usd": 3.655e-05,
+  "response": {
+    "id": "gen-1795556628-P2tOv5UYfgALbnlYvbdS",
+    "object": "chat.completion",
+    "created": 1795556628,
+    "model": "google/gemma-3-12b-it",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"+car\": 0.45, \"+local_pt\": 0.28, \"+long_distance_rail\": 0.15, \"rationale\": \"A single overnight stay suggests leisure travel, increasing car use for airport access. Shorter trips may incentivize public transport for convenience, while longer distances might include long-distance rail for part of the journey.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 488,
+      "completion_tokens": 81,
+      "total_tokens": 569,
+      "cost": 3.655e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 3.655e-05,
+        "upstream_inference_prompt_cost": 2.44e-05,
+        "upstream_inference_completions_cost": 1.215e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "05cf0386aaa7422b00a5317ccfc0b83a17f91d8af3dce19431b248147ce798c4",
+  "cost_basis": "OpenRouter usage.cost",
+  "validation_error": "Unexpected output keys",
+  "finished_utc": "2026-11-24T21:43:51.289590+00:00",
+  "elapsed_seconds": 9.594
+}

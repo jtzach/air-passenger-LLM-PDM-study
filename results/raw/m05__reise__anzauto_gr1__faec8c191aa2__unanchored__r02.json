@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzauto_gr1__faec8c191aa2__unanchored__r02",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzauto_gr1__faec8c191aa2",
+  "feature": "anzauto_gr1",
+  "arm": "unanchored",
+  "replicate": 2,
+  "request_sha256": "160b395587a3151ab5e5b932c99ea070c505e17240c9b01825cfc67ad840dd72",
+  "started_utc": "2026-11-24T21:49:04.073273+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:49:05.469667+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001488,
+  "response": {
+    "id": "gen-1795556944-HpQEDygKMCIIouBLDmN0",
+    "object": "chat.completion",
+    "created": 1795556944,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.75,\n  \"local_pt\": 0.30,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"Households with two cars likely use them for airport access, reflecting high car availability. Local public transport is less frequent but plausible for some, while long-distance rail is uncommon, as car use dominates for flexible, door-to-door airport access.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 392,
+      "completion_tokens": 88,
+      "total_tokens": 480,
+      "cost": 0.001488,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001488,
+        "upstream_inference_prompt_cost": 0.000784,
+        "upstream_inference_completions_cost": 0.000704
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "101137a2814f581174710a9f2d2537bf09573e24848c9a45dfb40c724ea2cf92",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.75,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.15,
+    "rationale": "Households with two cars likely use them for airport access, reflecting high car availability. Local public transport is less frequent but plausible for some, while long-distance rail is uncommon, as car use dominates for flexible, door-to-door airport access."
+  },
+  "finished_utc": "2026-11-24T21:49:05.470668+00:00",
+  "elapsed_seconds": 1.406
+}

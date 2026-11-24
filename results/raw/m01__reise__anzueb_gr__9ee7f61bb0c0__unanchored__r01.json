@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__anzueb_gr__9ee7f61bb0c0__unanchored__r01",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__anzueb_gr__9ee7f61bb0c0",
+  "feature": "anzueb_gr",
+  "arm": "unanchored",
+  "replicate": 1,
+  "request_sha256": "2e8630c361f16fc3a1f49bf707e4a10daeca4ef35ade99b51cb3e16dcb0bce23",
+  "started_utc": "2026-11-24T21:48:38.432854+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:48:41.121126+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 1.754e-05,
+  "response": {
+    "id": "gen-1795556918-uHhBFMh080GwnUUwdvNT",
+    "object": "chat.completion",
+    "created": 1795556918,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.2,\n  \"local_pt\": 0.3,\n  \"long_distance_rail\": 0.1,\n  \"rationale\": \"Given three overnight trips, some travelers likely combined air travel with ground transport for onward or return journeys. Car and local public transport are common for shorter distances, while long-distance rail might be used for longer trips.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 414,
+      "completion_tokens": 90,
+      "total_tokens": 504,
+      "cost": 1.754e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 176,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.754e-05,
+        "upstream_inference_prompt_cost": 1.304e-05,
+        "upstream_inference_completions_cost": 4.5e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "23313147f7d5ded46f3f3117d7ff6e7d53b08665392a6d9215c209074c968bb8",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.2,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "Given three overnight trips, some travelers likely combined air travel with ground transport for onward or return journeys. Car and local public transport are common for shorter distances, while long-distance rail might be used for longer trips."
+  },
+  "finished_utc": "2026-11-24T21:48:41.121126+00:00",
+  "elapsed_seconds": 2.704
+}

@@ -1,0 +1,76 @@
+{
+  "task_id": "m03__reise__anzueb_gr__782410ef69d3__overall_rate_anchored__r01",
+  "model_id": "openai/gpt-4.1-mini",
+  "model_label": "GPT-4.1 mini",
+  "persona_id": "reise__anzueb_gr__782410ef69d3",
+  "feature": "anzueb_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 1,
+  "request_sha256": "8bd5f3131de1835323243f151d67ac7fbd5cf97d013291fc3c5a55acd175b81e",
+  "started_utc": "2026-11-24T21:44:02.784633+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:44:04.092919+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002888,
+  "response": {
+    "id": "gen-1795556642-0lJNYsNGIRJzec2t7oZt",
+    "object": "chat.completion",
+    "created": 1795556642,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.25,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"Longer stays increase likelihood of combined car and local public transport use for airport access and regional mobility, slightly raising probabilities above overall averages.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 454,
+      "completion_tokens": 67,
+      "total_tokens": 521,
+      "cost": 0.0002888,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002888,
+        "upstream_inference_prompt_cost": 0.0001816,
+        "upstream_inference_completions_cost": 0.0001072
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "e4d39dcb6b2136ba52f7f6c3fb73d51664e5dff67971d8bd7852028ffad7af43",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "Longer stays increase likelihood of combined car and local public transport use for airport access and regional mobility, slightly raising probabilities above overall averages."
+  },
+  "finished_utc": "2026-11-24T21:44:04.092919+00:00",
+  "elapsed_seconds": 1.312
+}

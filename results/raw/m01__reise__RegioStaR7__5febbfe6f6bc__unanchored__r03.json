@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__RegioStaR7__5febbfe6f6bc__unanchored__r03",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__RegioStaR7__5febbfe6f6bc",
+  "feature": "RegioStaR7",
+  "arm": "unanchored",
+  "replicate": 3,
+  "request_sha256": "6f41857981e82a6f932a532b245c298c0068ff95d1dcc379dfed2f07aaa10c32",
+  "started_utc": "2026-11-24T21:49:13.802187+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:49:15.436817+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 1.792e-05,
+  "response": {
+    "id": "gen-1795556953-vBb5uoBHv5gOwV21jAnp",
+    "object": "chat.completion",
+    "created": 1795556953,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.2,\n  \"local_pt\": 0.3,\n  \"long_distance_rail\": 0.1,\n  \"rationale\": \"Residents in small-town/village areas might use a car for initial transport to the airport, and a train for the return journey, given the limited public transport options and the desire for comfort/speed.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 418,
+      "completion_tokens": 88,
+      "total_tokens": 506,
+      "cost": 1.792e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.792e-05,
+        "upstream_inference_prompt_cost": 1.352e-05,
+        "upstream_inference_completions_cost": 4.4e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "f3d3c56e350fac97e93ec558ce4068fa1fa5184b66e9630758e69b0304a61930",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.2,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "Residents in small-town/village areas might use a car for initial transport to the airport, and a train for the return journey, given the limited public transport options and the desire for comfort/speed."
+  },
+  "finished_utc": "2026-11-24T21:49:15.436817+00:00",
+  "elapsed_seconds": 1.641
+}

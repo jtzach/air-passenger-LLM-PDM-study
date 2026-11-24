@@ -1,0 +1,76 @@
+{
+  "task_id": "m04__reise__anzauto_gr1__79ed954bbe2c__overall_rate_anchored__r03",
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "model_label": "Qwen3 235B A22B",
+  "persona_id": "reise__anzauto_gr1__79ed954bbe2c",
+  "feature": "anzauto_gr1",
+  "arm": "overall_rate_anchored",
+  "replicate": 3,
+  "request_sha256": "b14a9a7412e2e0022d6710ccb166c5e0cb6dc48bc3c28f934d1a6a92b2a4e35d",
+  "started_utc": "2026-11-24T21:43:12.749907+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:43:18.048202+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 8.345e-05,
+  "response": {
+    "id": "gen-1795556592-wFSAU52k0BYjM52Og5LZ",
+    "object": "chat.completion",
+    "created": 1795556592,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.15,\n  \"long_distance_rail\": 0.08,\n  \"rationale\": \"Higher car ownership suggests greater reliance on private vehicles for airport access, reducing need for public transport. Affluence may favor convenience over rail or local transit.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 475,
+      "completion_tokens": 74,
+      "total_tokens": 549,
+      "cost": 8.345e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.345e-05,
+        "upstream_inference_prompt_cost": 4.275e-05,
+        "upstream_inference_completions_cost": 4.07e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "97c2d5e45afdccd748b5d92e300bc006e84972beafdcbc54ce491aea30c61d4a",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.15,
+    "long_distance_rail": 0.08,
+    "rationale": "Higher car ownership suggests greater reliance on private vehicles for airport access, reducing need for public transport. Affluence may favor convenience over rail or local transit."
+  },
+  "finished_utc": "2026-11-24T21:43:18.048202+00:00",
+  "elapsed_seconds": 5.296
+}

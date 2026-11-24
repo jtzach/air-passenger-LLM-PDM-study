@@ -1,0 +1,71 @@
+{
+  "task_id": "m02__reise__RegioStaR7__d3321efbbd2e__overall_rate_anchored__r02",
+  "model_id": "google/gemma-3-12b-it",
+  "model_label": "Gemma 3 12B",
+  "persona_id": "reise__RegioStaR7__d3321efbbd2e",
+  "feature": "RegioStaR7",
+  "arm": "overall_rate_anchored",
+  "replicate": 2,
+  "request_sha256": "e82a762c7ee8e13a2b7acacbca8ec03c5bbac9a117cd6a43ecd1ade1e413d6de",
+  "started_utc": "2026-11-24T21:43:23.773433+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:43:25.715503+00:00"
+    }
+  ],
+  "status": "invalid_output",
+  "accounted_cost_usd": 3.61e-05,
+  "response": {
+    "id": "gen-1795556603-fYiJY2EElq4Ln6BJZi1F",
+    "object": "chat.completion",
+    "created": 1795556603,
+    "model": "google/gemma-3-12b-it",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"+car\": 0.45, \"+local_pt\": 0.28, \"+long_distance_rail\": 0.15, \"rationale\": \"Rural-central city journeys likely involve more car access/egress than urban trips. Increased distance suggests greater potential for long-distance rail and local public transport use to reach the city.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 488,
+      "completion_tokens": 78,
+      "total_tokens": 566,
+      "cost": 3.61e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 3.61e-05,
+        "upstream_inference_prompt_cost": 2.44e-05,
+        "upstream_inference_completions_cost": 1.17e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "17dc6aeb2308456a90579a0459478596da76e3913becf998fd0e1d5669c86ce6",
+  "cost_basis": "OpenRouter usage.cost",
+  "validation_error": "Unexpected output keys",
+  "finished_utc": "2026-11-24T21:43:25.715503+00:00",
+  "elapsed_seconds": 1.953
+}

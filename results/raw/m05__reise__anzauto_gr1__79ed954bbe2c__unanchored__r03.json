@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzauto_gr1__79ed954bbe2c__unanchored__r03",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzauto_gr1__79ed954bbe2c",
+  "feature": "anzauto_gr1",
+  "arm": "unanchored",
+  "replicate": 3,
+  "request_sha256": "c9aff1bec5be7cd64aa67d9afd1e2f15a85b722cdae73274b690d2bc2c0ff87d",
+  "started_utc": "2026-11-24T21:48:50.299716+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:48:51.527430+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00138,
+  "response": {
+    "id": "gen-1795556930-FSIhlzc7DkN1OLA9h95v",
+    "object": "chat.completion",
+    "created": 1795556930,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.85,\n  \"local_pt\": 0.15,\n  \"long_distance_rail\": 0.05,\n  \"rationale\": \"Households with 4+ cars likely prefer car access to airports due to convenience and vehicle availability, reducing reliance on public or long-distance rail transport for flight-related journeys.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 394,
+      "completion_tokens": 74,
+      "total_tokens": 468,
+      "cost": 0.00138,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00138,
+        "upstream_inference_prompt_cost": 0.000788,
+        "upstream_inference_completions_cost": 0.000592
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "2e698b44e0818d576cc9c1d5a2cb85231d4d67861819fc82a92f33f012e256a8",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.85,
+    "local_pt": 0.15,
+    "long_distance_rail": 0.05,
+    "rationale": "Households with 4+ cars likely prefer car access to airports due to convenience and vehicle availability, reducing reliance on public or long-distance rail transport for flight-related journeys."
+  },
+  "finished_utc": "2026-11-24T21:48:51.527430+00:00",
+  "elapsed_seconds": 1.235
+}

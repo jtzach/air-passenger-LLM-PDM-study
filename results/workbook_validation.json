@@ -1,0 +1,19 @@
+{
+  "status": "pass",
+  "checked_utc": "2026-11-24T22:02:39.559834+00:00",
+  "sheets_preserved": 27,
+  "sheets_total": 31,
+  "checks": {
+    "preserved_tables": 23,
+    "original_cells_checked": 359488,
+    "original_numeric_cells_preserved": 101383,
+    "original_formulas_preserved": 1,
+    "formula_caches_preserved": 1,
+    "appendix_cells_checked": 20749,
+    "appendix_tables": 5
+  },
+  "issues": [],
+  "issue_count": 0,
+  "source_sha256": "449253601da5793dba9384ecf739b15516d089783cb3b9b2e9f433a0513e2bd7",
+  "output_sha256": "58eff4edd14599abd439a8eb8bc241421275a20027b9542b3d222fb28be723af"
+}

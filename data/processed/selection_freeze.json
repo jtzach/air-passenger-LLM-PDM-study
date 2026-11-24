@@ -1,0 +1,31 @@
+{
+  "frozen_utc": "2026-11-24T21:41:44.646324+00:00",
+  "fingerprint": {
+    "protocol_sha256": "3d98497b0a3382659b589fbde81242e4c68b9e476690ad64a9cdb73b8a579723",
+    "input_hashes": {
+      "data/raw/mit/reise_modes_by_main_mode____all__.json": "c399c6e0334af31061db4d9054964003bac5c1cdc95cce0c432c262c5bdfbc65",
+      "data/raw/mit/reise_modes_by_main_mode__alter_gr4.json": "691d123d57b12c5b4442a5c3cee0fef666d7d63c4d014e2051f12b4524df2ccf",
+      "data/raw/mit/reise_modes_by_main_mode__HP_SEX.json": "354af88df444ed8a96ffcae5addc485695c5b05b9b35843cd0879e618e863350",
+      "data/raw/mit/reise_modes_by_main_mode__bildung.json": "6b33cfe647ce48aa475713251be6dd736d28866c7a7a817ca85ea516c145e4ef",
+      "data/raw/mit/reise_modes_by_main_mode__erwerb.json": "650ab02adaf7461e9e035cf5a094939a634c46a89bf0eee33f4e77de473ec911",
+      "data/raw/mit/reise_modes_by_main_mode__hheink_gr2.json": "109c49d8de59618c2872b0cdcebedc41e2e5f0e2e17b26dfce6f1e12df16b1f0",
+      "data/raw/mit/reise_modes_by_main_mode__anzauto_gr1.json": "ac3d1eb7ff48be9840c941797a12c305c6f072ec4c0ff8f61eb8ca867c016ed8",
+      "data/raw/mit/reise_modes_by_main_mode__hhgr_gr.json": "090f9b2833adaad0dd77dce45a8bca558deb3653a49167fa51da54dcb1bfd8fe",
+      "data/raw/mit/reise_modes_by_main_mode__RegioStaR7.json": "c74c32cf02a4074d4e5795b59380aa82229d360fc01eb82770b9eb52fe8c901b",
+      "data/raw/mit/reise_modes_by_main_mode__P_FS_PKW.json": "fe293079caf35536b0d1d43133b34e1267dfbb94ecf59f2349202a47b67a42fe",
+      "data/raw/mit/reise_modes_by_main_mode__R_ZWECK.json": "015a7a60b627eef432b39cab86b6478380fcf2d6b1e53635997a621b0ed070e6",
+      "data/raw/mit/reise_modes_by_main_mode__R_ZIEL.json": "d740d0928b1d388891b99a2a35b264b850b26716e3707f53c121e454d4000ce9",
+      "data/raw/mit/reise_modes_by_main_mode__entf_gr.json": "a5c085a6f2c76c54b94736f02e355dbedfba6eb3bb92d80747bbf13f2cae2d71",
+      "data/raw/mit/reise_modes_by_main_mode__anzueb_gr.json": "82e7b2f38d5c6ec6a196a6e4c90fdedbab78284485e80663a2216966d74ae471",
+      "data/raw/mit/reise_modes_by_main_mode__anzbegl_gr.json": "1ea49572c57f656a6e01e863b37801a158f349a3ce9df0bf3246dab0dec89444"
+    },
+    "selected_features": [
+      "anzauto_gr1",
+      "RegioStaR7",
+      "anzbegl_gr",
+      "anzueb_gr"
+    ],
+    "personas_sha256": "e14fcc28fb8870d1f483f3dc56ee05f4acaddf480f315c7e6f45538cd0ce3357"
+  },
+  "note": "Frozen before study LLM predictions; not before all exploratory inspection of public data."
+}

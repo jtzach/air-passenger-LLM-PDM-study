@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__anzbegl_gr__b61cbc7c0dd2__overall_rate_anchored__r03",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__anzbegl_gr__b61cbc7c0dd2",
+  "feature": "anzbegl_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 3,
+  "request_sha256": "7254935c688850be2e6501bd62622a97dd1a666801a05a4f4bd746e9d214538c",
+  "started_utc": "2026-11-24T21:49:15.439677+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:49:17.014178+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 1.721e-05,
+  "response": {
+    "id": "gen-1795556955-gyMdMadVK2ApQuBD0ihc",
+    "object": "chat.completion",
+    "created": 1795556955,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.3, \"local_pt\": 0.18, \"long_distance_rail\": 0.1, \"rationale\": \"The cohort of single travelers on aircraft likely faced the same logistical challenges as the general population regarding onward ground transport. Given the single companion, convenience would be a factor, suggesting a slightly lower probability of car use and local public transport compared to the overall population.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 487,
+      "completion_tokens": 89,
+      "total_tokens": 576,
+      "cost": 1.721e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 336,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.721e-05,
+        "upstream_inference_prompt_cost": 1.276e-05,
+        "upstream_inference_completions_cost": 4.45e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "c69a3ead47da96313a12e4e9bc56508f8bb310f4c230d4685bc2740e3304273f",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.3,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "The cohort of single travelers on aircraft likely faced the same logistical challenges as the general population regarding onward ground transport. Given the single companion, convenience would be a factor, suggesting a slightly lower probability of car use and local public transport compared to the overall population."
+  },
+  "finished_utc": "2026-11-24T21:49:17.014178+00:00",
+  "elapsed_seconds": 1.578
+}

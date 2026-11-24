@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__RegioStaR7__d3321efbbd2e__unanchored__r03",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__RegioStaR7__d3321efbbd2e",
+  "feature": "RegioStaR7",
+  "arm": "unanchored",
+  "replicate": 3,
+  "request_sha256": "fe101822c978830c1cdfde57055170f592e16ad2adbad1cc9f31732ce687228a",
+  "started_utc": "2026-11-24T21:44:19.189117+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:44:21.398499+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 1.494e-05,
+  "response": {
+    "id": "gen-1795556659-bTSYPUQaw8e4uxu2jk8c",
+    "object": "chat.completion",
+    "created": 1795556659,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.2,\n  \"local_pt\": 0.3,\n  \"long_distance_rail\": 0.1,\n  \"rationale\": \"Given the rural-to-central city origin, many journeys likely involved a car for part of the trip. Combining this with overnight flight suggests a desire for efficiency; local public transport or rail could have been used for connecting journeys, but long-distance rail is less probable.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 414,
+      "completion_tokens": 102,
+      "total_tokens": 516,
+      "cost": 1.494e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 336,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.494e-05,
+        "upstream_inference_prompt_cost": 9.84e-06,
+        "upstream_inference_completions_cost": 5.1e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "b8cb127bbbcc9c55fc418dbb4025b811faa6f2916899f5e519b8a9b84d0af3dc",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.2,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "Given the rural-to-central city origin, many journeys likely involved a car for part of the trip. Combining this with overnight flight suggests a desire for efficiency; local public transport or rail could have been used for connecting journeys, but long-distance rail is less probable."
+  },
+  "finished_utc": "2026-11-24T21:44:21.398499+00:00",
+  "elapsed_seconds": 2.203
+}

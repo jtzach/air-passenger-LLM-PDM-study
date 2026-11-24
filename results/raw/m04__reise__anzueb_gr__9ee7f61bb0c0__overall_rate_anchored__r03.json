@@ -1,0 +1,76 @@
+{
+  "task_id": "m04__reise__anzueb_gr__9ee7f61bb0c0__overall_rate_anchored__r03",
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "model_label": "Qwen3 235B A22B",
+  "persona_id": "reise__anzueb_gr__9ee7f61bb0c0",
+  "feature": "anzueb_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 3,
+  "request_sha256": "70c02a2f8d691c6409096b172b9368135851fc287ee27549c98b06ce6e3e4355",
+  "started_utc": "2026-11-24T21:47:38.694044+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:47:42.515107+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 8.116e-05,
+  "response": {
+    "id": "gen-1795556858-axy0GEiQMNYwBFhuOUgM",
+    "object": "chat.completion",
+    "created": 1795556858,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Three-night trips may favor car access for flexibility at destination, reducing reliance on local public transport and long-distance rail compared to longer stays.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 474,
+      "completion_tokens": 70,
+      "total_tokens": 544,
+      "cost": 8.116e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.116e-05,
+        "upstream_inference_prompt_cost": 4.266e-05,
+        "upstream_inference_completions_cost": 3.85e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "8606fe052cdf402b8e0dfcdfb78d68f91e25a7d68b801a9aac1a687534865e95",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Three-night trips may favor car access for flexibility at destination, reducing reliance on local public transport and long-distance rail compared to longer stays."
+  },
+  "finished_utc": "2026-11-24T21:47:42.515107+00:00",
+  "elapsed_seconds": 3.828
+}

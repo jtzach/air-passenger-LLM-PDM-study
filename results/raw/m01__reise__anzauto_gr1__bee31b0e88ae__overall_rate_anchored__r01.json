@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__anzauto_gr1__bee31b0e88ae__overall_rate_anchored__r01",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__anzauto_gr1__bee31b0e88ae",
+  "feature": "anzauto_gr1",
+  "arm": "overall_rate_anchored",
+  "replicate": 1,
+  "request_sha256": "504914f647017e8c068b80cf7a56a3b20b29fb71c8b3b0edae1eea8170bc39ff",
+  "started_utc": "2026-11-24T21:44:51.260381+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:44:53.213059+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.063e-05,
+  "response": {
+    "id": "gen-1795556691-VLQJlhbxRQovvZrFvvtb",
+    "object": "chat.completion",
+    "created": 1795556691,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.4, \"local_pt\": 0.25, \"long_distance_rail\": 0.15, \"rationale\": \"A household with 3 cars suggests a higher likelihood of car use for at least part of the journey, even when flying. Local and long-distance rail use will likely be lower than the population average, reflecting a preference for air travel.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 487,
+      "completion_tokens": 87,
+      "total_tokens": 574,
+      "cost": 2.063e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.063e-05,
+        "upstream_inference_prompt_cost": 1.628e-05,
+        "upstream_inference_completions_cost": 4.35e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "b8d8a8cebd5b2ae1e67a9fff61248b57d1ba11cf9d1e7d86de6727f779477b08",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.4,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "A household with 3 cars suggests a higher likelihood of car use for at least part of the journey, even when flying. Local and long-distance rail use will likely be lower than the population average, reflecting a preference for air travel."
+  },
+  "finished_utc": "2026-11-24T21:44:53.213059+00:00",
+  "elapsed_seconds": 1.953
+}

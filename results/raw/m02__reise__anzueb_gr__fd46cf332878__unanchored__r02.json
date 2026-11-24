@@ -1,0 +1,38 @@
+{
+  "task_id": "m02__reise__anzueb_gr__fd46cf332878__unanchored__r02",
+  "model_id": "google/gemma-3-12b-it",
+  "model_label": "Gemma 3 12B",
+  "persona_id": "reise__anzueb_gr__fd46cf332878",
+  "feature": "anzueb_gr",
+  "arm": "unanchored",
+  "replicate": 2,
+  "request_sha256": "9299e5625f549bfed821eebc4992435a03b94b29b7b4579d9327bf9362c1a2a6",
+  "started_utc": "2026-11-24T21:50:30.255007+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "http_error",
+      "code": 429,
+      "detail": "{\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"google/gemma-3-12b-it is temporarily rate-limited upstream. Please retry shortly, or add your own provider key to use your own limits: https://openrouter.ai/workspaces/default/byok\",\"provider_name\":\"DeepInfra\",\"is_byok\":false,\"provider_error_code\":\"engine_overloaded\",\"limit_source\":\"upstream_provider_shared_pool\",\"remedy_hint\":\"Retry shortly, add your own provider key to use your own limits (https://openrouter.ai/workspaces/default/byok), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing.\"}},\"user_id\":\"[REDACTED_ACCOUNT_ID]\"}",
+      "utc": "2026-11-24T21:50:30.554205+00:00"
+    },
+    {
+      "number": 2,
+      "status": "http_error",
+      "code": 429,
+      "detail": "{\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"google/gemma-3-12b-it is temporarily rate-limited upstream. Please retry shortly, or add your own provider key to use your own limits: https://openrouter.ai/workspaces/default/byok\",\"provider_name\":\"DeepInfra\",\"is_byok\":false,\"provider_error_code\":\"engine_overloaded\",\"limit_source\":\"upstream_provider_shared_pool\",\"remedy_hint\":\"Retry shortly, add your own provider key to use your own limits (https://openrouter.ai/workspaces/default/byok), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing.\"}},\"user_id\":\"[REDACTED_ACCOUNT_ID]\"}",
+      "utc": "2026-11-24T21:50:32.900303+00:00"
+    },
+    {
+      "number": 3,
+      "status": "http_error",
+      "code": 429,
+      "detail": "{\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"google/gemma-3-12b-it is temporarily rate-limited upstream. Please retry shortly, or add your own provider key to use your own limits: https://openrouter.ai/workspaces/default/byok\",\"provider_name\":\"DeepInfra\",\"is_byok\":false,\"provider_error_code\":\"engine_overloaded\",\"limit_source\":\"upstream_provider_shared_pool\",\"remedy_hint\":\"Retry shortly, add your own provider key to use your own limits (https://openrouter.ai/workspaces/default/byok), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing.\"}},\"user_id\":\"[REDACTED_ACCOUNT_ID]\"}",
+      "utc": "2026-11-24T21:50:37.207253+00:00"
+    }
+  ],
+  "status": "failed",
+  "accounted_cost_usd": 0.0,
+  "finished_utc": "2026-11-24T21:50:37.207253+00:00",
+  "elapsed_seconds": 6.953
+}

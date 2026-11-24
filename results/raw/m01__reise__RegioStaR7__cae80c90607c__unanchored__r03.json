@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__RegioStaR7__cae80c90607c__unanchored__r03",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__RegioStaR7__cae80c90607c",
+  "feature": "RegioStaR7",
+  "arm": "unanchored",
+  "replicate": 3,
+  "request_sha256": "0209eb2c0c98cd7e3eaf76cea2e8d5ce7917e259ead6177c388fba8413e2d87f",
+  "started_utc": "2026-11-24T21:48:30.161370+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:48:32.315514+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 1.851e-05,
+  "response": {
+    "id": "gen-1795556910-UEDF8DlIRnebzrXR1jha",
+    "object": "chat.completion",
+    "created": 1795556910,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.2,\n  \"local_pt\": 0.3,\n  \"long_distance_rail\": 0.1,\n  \"rationale\": \"Given the origin as a medium-sized town/rural region and the initial aircraft journey, a likely scenario involves connecting to a larger urban center. Car and local public transport would be plausible for onward travel, while long-distance rail is possible for longer connections.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 419,
+      "completion_tokens": 99,
+      "total_tokens": 518,
+      "cost": 1.851e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.851e-05,
+        "upstream_inference_prompt_cost": 1.356e-05,
+        "upstream_inference_completions_cost": 4.95e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "7286faa325dace212f5b2f6ba7910bb977c8095dd3c9d76842438e0da8892a3e",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.2,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "Given the origin as a medium-sized town/rural region and the initial aircraft journey, a likely scenario involves connecting to a larger urban center. Car and local public transport would be plausible for onward travel, while long-distance rail is possible for longer connections."
+  },
+  "finished_utc": "2026-11-24T21:48:32.315514+00:00",
+  "elapsed_seconds": 2.156
+}

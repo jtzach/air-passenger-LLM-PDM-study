@@ -1,0 +1,78 @@
+{
+  "task_id": "m02__reise__anzueb_gr__9ee7f61bb0c0__unanchored__r03",
+  "model_id": "google/gemma-3-12b-it",
+  "model_label": "Gemma 3 12B",
+  "persona_id": "reise__anzueb_gr__9ee7f61bb0c0",
+  "feature": "anzueb_gr",
+  "arm": "unanchored",
+  "replicate": 3,
+  "request_sha256": "185209b70042877be1389d33b57fd841d48c82dae9163002ad14460db5de601d",
+  "started_utc": "2026-11-24T21:48:35.145594+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "http_error",
+      "code": 429,
+      "detail": "{\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"google/gemma-3-12b-it is temporarily rate-limited upstream. Please retry shortly, or add your own provider key to use your own limits: https://openrouter.ai/workspaces/default/byok\",\"provider_name\":\"DeepInfra\",\"is_byok\":false,\"provider_error_code\":\"engine_overloaded\",\"limit_source\":\"upstream_provider_shared_pool\",\"remedy_hint\":\"Retry shortly, add your own provider key to use your own limits (https://openrouter.ai/workspaces/default/byok), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing.\"}},\"user_id\":\"[REDACTED_ACCOUNT_ID]\"}",
+      "utc": "2026-11-24T21:48:35.510081+00:00"
+    },
+    {
+      "number": 2,
+      "status": "response",
+      "utc": "2026-11-24T21:48:41.802464+00:00"
+    }
+  ],
+  "status": "invalid_output",
+  "accounted_cost_usd": 3.33e-05,
+  "response": {
+    "id": "gen-1795556917-ilU2QPdxoNRJzweT8Csu",
+    "object": "chat.completion",
+    "created": 1795556917,
+    "model": "google/gemma-3-12b-it",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\".car\": 0.6, \".local_pt\": 0.4, \".long_distance_rail\": 0.1, \"rationale\": \"Given a 3-night trip and aircraft as the main mode, car access to/from airports is likely. Local PT is plausible for airport connections or urban destinations. Long-distance rail is less probable for a shorter trip.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 414,
+      "completion_tokens": 84,
+      "total_tokens": 498,
+      "cost": 3.33e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 3.33e-05,
+        "upstream_inference_prompt_cost": 2.07e-05,
+        "upstream_inference_completions_cost": 1.26e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "d66214c576caff1ad5ad00de6021292f8514bcf80d2e8f7bca4abee4ea1ca866",
+  "cost_basis": "OpenRouter usage.cost",
+  "validation_error": "Unexpected output keys",
+  "finished_utc": "2026-11-24T21:48:41.802975+00:00",
+  "elapsed_seconds": 6.656
+}

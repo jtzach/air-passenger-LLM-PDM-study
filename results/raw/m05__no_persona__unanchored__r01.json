@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__no_persona__unanchored__r01",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "no_persona",
+  "feature": "none",
+  "arm": "unanchored",
+  "replicate": 1,
+  "request_sha256": "ec26710fb1d85df508ffb0711deb32d27fb6d74561c26e0bc91f21151e8592e9",
+  "started_utc": "2026-11-24T21:51:37.825531+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:51:39.314371+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001366,
+  "response": {
+    "id": "gen-1795557098-dZYoeIWHlbQyTBkq4AcW",
+    "object": "chat.completion",
+    "created": 1795557098,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.55,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"German flyers likely access airports via private car or taxi due to convenience, especially outside large cities. Public/local transport is common in urban areas; long-distance rail is less frequent but relevant for intercity airport connections.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 355,
+      "completion_tokens": 82,
+      "total_tokens": 437,
+      "cost": 0.001366,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001366,
+        "upstream_inference_prompt_cost": 0.00071,
+        "upstream_inference_completions_cost": 0.000656
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "b94995e4e359e5eac7424070ef055d04cd33b2a720a5edc37c84ae7a9f483e03",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.55,
+    "long_distance_rail": 0.25,
+    "rationale": "German flyers likely access airports via private car or taxi due to convenience, especially outside large cities. Public/local transport is common in urban areas; long-distance rail is less frequent but relevant for intercity airport connections."
+  },
+  "finished_utc": "2026-11-24T21:51:39.314371+00:00",
+  "elapsed_seconds": 1.484
+}

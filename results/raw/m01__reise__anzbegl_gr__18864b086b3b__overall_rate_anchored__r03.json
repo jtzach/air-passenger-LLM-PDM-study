@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__anzbegl_gr__18864b086b3b__overall_rate_anchored__r03",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__anzbegl_gr__18864b086b3b",
+  "feature": "anzbegl_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 3,
+  "request_sha256": "fba0c8c4caf17b38e40dfe38f00205b51bbc06f10afbcd80e6af09e0ce9531c5",
+  "started_utc": "2026-11-24T21:51:00.916342+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:51:03.077701+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.058e-05,
+  "response": {
+    "id": "gen-1795557061-udhuoS38GfBPjlF5H6B6",
+    "object": "chat.completion",
+    "created": 1795557061,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.4, \"local_pt\": 0.25, \"long_distance_rail\": 0.15, \"rationale\": \"With three companions, the group likely prioritized convenience and potentially cost-effectiveness, favoring car travel for part of the journey. Local public transport use would also be common for shorter distances, and long-distance rail is plausible for some segments.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 487,
+      "completion_tokens": 86,
+      "total_tokens": 573,
+      "cost": 2.058e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.058e-05,
+        "upstream_inference_prompt_cost": 1.628e-05,
+        "upstream_inference_completions_cost": 4.3e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "b9588dfaf3e763d0712779624e5df98d6ec704d3aeb820166125eefa354da479",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.4,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "With three companions, the group likely prioritized convenience and potentially cost-effectiveness, favoring car travel for part of the journey. Local public transport use would also be common for shorter distances, and long-distance rail is plausible for some segments."
+  },
+  "finished_utc": "2026-11-24T21:51:03.077701+00:00",
+  "elapsed_seconds": 2.172
+}

@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzueb_gr__6bcea89383ae__unanchored__r01",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzueb_gr__6bcea89383ae",
+  "feature": "anzueb_gr",
+  "arm": "unanchored",
+  "replicate": 1,
+  "request_sha256": "bd37a6b8dbfa69e7b0456906c775583c6881dc25767cdac6e5776a24a89ac4a4",
+  "started_utc": "2026-11-24T21:48:43.057189+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:48:44.870444+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001466,
+  "response": {
+    "id": "gen-1795556923-h7IQ9zpl72oXrGfPcGHv",
+    "object": "chat.completion",
+    "created": 1795556923,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.18,\n  \"rationale\": \"Short 2-night trips suggest convenience matters; many use cars for flexible airport access, but urbanites may use local PT. Long-distance rail is less likely given short stays and time constraints, but possible for some city pairs.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 393,
+      "completion_tokens": 85,
+      "total_tokens": 478,
+      "cost": 0.001466,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001466,
+        "upstream_inference_prompt_cost": 0.000786,
+        "upstream_inference_completions_cost": 0.00068
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "46ad8f3c14a0527ec386c6caffddf11c555bef196f713156ad9907ed08945501",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.18,
+    "rationale": "Short 2-night trips suggest convenience matters; many use cars for flexible airport access, but urbanites may use local PT. Long-distance rail is less likely given short stays and time constraints, but possible for some city pairs."
+  },
+  "finished_utc": "2026-11-24T21:48:44.870444+00:00",
+  "elapsed_seconds": 1.813
+}

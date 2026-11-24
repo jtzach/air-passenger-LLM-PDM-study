@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__RegioStaR7__9f47524becab__overall_rate_anchored__r01",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__RegioStaR7__9f47524becab",
+  "feature": "RegioStaR7",
+  "arm": "overall_rate_anchored",
+  "replicate": 1,
+  "request_sha256": "9f7a8e9c9597d7063aff77af41ded7f3d7e38ea6945bf90b0ea42b1de33c0b3f",
+  "started_utc": "2026-11-24T21:49:00.561252+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:49:01.976666+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00152,
+  "response": {
+    "id": "gen-1795556940-qWZwVdBbAlkf8olWWV5f",
+    "object": "chat.completion",
+    "created": 1795556940,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.39,\n  \"local_pt\": 0.23,\n  \"long_distance_rail\": 0.14,\n  \"rationale\": \"Residents of medium-sized urban areas likely have moderate car access but also better local and regional public transport than rural areas, slightly raising public transport and rail rates compared to the overall average.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 456,
+      "completion_tokens": 76,
+      "total_tokens": 532,
+      "cost": 0.00152,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00152,
+        "upstream_inference_prompt_cost": 0.000912,
+        "upstream_inference_completions_cost": 0.000608
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "0eaf64559cf2023b3d8a2288f803accf0af34dff3d1566aa35d10363714f368f",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.39,
+    "local_pt": 0.23,
+    "long_distance_rail": 0.14,
+    "rationale": "Residents of medium-sized urban areas likely have moderate car access but also better local and regional public transport than rural areas, slightly raising public transport and rail rates compared to the overall average."
+  },
+  "finished_utc": "2026-11-24T21:49:01.977668+00:00",
+  "elapsed_seconds": 1.406
+}

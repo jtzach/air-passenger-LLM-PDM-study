@@ -1,0 +1,76 @@
+{
+  "task_id": "m04__reise__anzauto_gr1__296e9849dc3d__unanchored__r03",
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "model_label": "Qwen3 235B A22B",
+  "persona_id": "reise__anzauto_gr1__296e9849dc3d",
+  "feature": "anzauto_gr1",
+  "arm": "unanchored",
+  "replicate": 3,
+  "request_sha256": "e5eb373332fb669ac9c0b516ac1d69b135ce2a541f3d60fbfcdaca34ae118a9c",
+  "started_utc": "2026-11-24T21:46:07.678207+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:46:16.561108+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 8.339e-05,
+  "response": {
+    "id": "gen-1795556767-Ho5mtY8ySJrCLSx19csS",
+    "object": "chat.completion",
+    "created": 1795556767,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.55,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"Even without household car access, car use may occur via rental, ride-sharing, or family/friends. Public transport remains a common access mode, while long-distance rail competes less frequently with air for such trips.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 401,
+      "completion_tokens": 86,
+      "total_tokens": 487,
+      "cost": 8.339e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.339e-05,
+        "upstream_inference_prompt_cost": 3.609e-05,
+        "upstream_inference_completions_cost": 4.73e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "145229e1b4575c9933de0a298a1a509f43289532d5808679b01dd426ce07f3f0",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.55,
+    "long_distance_rail": 0.25,
+    "rationale": "Even without household car access, car use may occur via rental, ride-sharing, or family/friends. Public transport remains a common access mode, while long-distance rail competes less frequently with air for such trips."
+  },
+  "finished_utc": "2026-11-24T21:46:16.561108+00:00",
+  "elapsed_seconds": 8.891
+}

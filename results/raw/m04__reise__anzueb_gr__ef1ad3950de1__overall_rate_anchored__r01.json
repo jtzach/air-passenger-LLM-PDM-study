@@ -1,0 +1,76 @@
+{
+  "task_id": "m04__reise__anzueb_gr__ef1ad3950de1__overall_rate_anchored__r01",
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "model_label": "Qwen3 235B A22B",
+  "persona_id": "reise__anzueb_gr__ef1ad3950de1",
+  "feature": "anzueb_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 1,
+  "request_sha256": "10eb9b0ff235c0f2a5c0128146fd75a69a2b62f5e52eda0936502f9d95adbd8f",
+  "started_utc": "2026-11-24T21:45:54.368435+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:45:58.777999+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 7.841e-05,
+  "response": {
+    "id": "gen-1795556754-iURWHyYnjUNvJ4g600sN",
+    "object": "chat.completion",
+    "created": 1795556754,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Short stays may favor car access for trip flexibility and direct transfers, reducing reliance on public transport options to airports.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 474,
+      "completion_tokens": 65,
+      "total_tokens": 539,
+      "cost": 7.841e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 7.841e-05,
+        "upstream_inference_prompt_cost": 4.266e-05,
+        "upstream_inference_completions_cost": 3.575e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "63ff50b56c2cfc6f5920dc0926068c5ec0f204f27c9eef22cadbef767b0db6a2",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Short stays may favor car access for trip flexibility and direct transfers, reducing reliance on public transport options to airports."
+  },
+  "finished_utc": "2026-11-24T21:45:58.777999+00:00",
+  "elapsed_seconds": 4.422
+}

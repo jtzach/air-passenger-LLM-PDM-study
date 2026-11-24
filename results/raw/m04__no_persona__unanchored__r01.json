@@ -1,0 +1,76 @@
+{
+  "task_id": "m04__no_persona__unanchored__r01",
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "model_label": "Qwen3 235B A22B",
+  "persona_id": "no_persona",
+  "feature": "none",
+  "arm": "unanchored",
+  "replicate": 1,
+  "request_sha256": "53b4c6f49ba9887b738a920bed5d0b9694db5d0f3d3f6770bf9ba238a16c5dd7",
+  "started_utc": "2026-11-24T21:47:53.556796+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:47:59.097521+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 7.786e-05,
+  "response": {
+    "id": "gen-1795556873-gmcSdbKyGmdIW7d8lesM",
+    "object": "chat.completion",
+    "created": 1795556873,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.75,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.2,\n  \"rationale\": \"Car use is common for airport access in Germany due to flexibility and widespread ownership. Public transport use varies by region. Long-distance rail may substitute for shorter flights or complement air travel for multi-leg trips.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 364,
+      "completion_tokens": 82,
+      "total_tokens": 446,
+      "cost": 7.786e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 7.786e-05,
+        "upstream_inference_prompt_cost": 3.276e-05,
+        "upstream_inference_completions_cost": 4.51e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "c5ea2953ef59f58fe854fcfb486f519d614e8012850d188e92af4546c307f5f2",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.75,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.2,
+    "rationale": "Car use is common for airport access in Germany due to flexibility and widespread ownership. Public transport use varies by region. Long-distance rail may substitute for shorter flights or complement air travel for multi-leg trips."
+  },
+  "finished_utc": "2026-11-24T21:47:59.097521+00:00",
+  "elapsed_seconds": 5.547
+}

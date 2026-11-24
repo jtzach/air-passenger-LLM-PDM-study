@@ -1,0 +1,76 @@
+{
+  "task_id": "m03__reise__anzbegl_gr__07f355b725cf__unanchored__r02",
+  "model_id": "openai/gpt-4.1-mini",
+  "model_label": "GPT-4.1 mini",
+  "persona_id": "reise__anzbegl_gr__07f355b725cf",
+  "feature": "anzbegl_gr",
+  "arm": "unanchored",
+  "replicate": 2,
+  "request_sha256": "871d81c06fc4d67780f0da6040c2b86d7b24b4efdb0521a063a33f44fbb257e4",
+  "started_utc": "2026-11-24T21:44:40.916165+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:44:42.263381+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00028,
+  "response": {
+    "id": "gen-1795556680-cPcUQLLzlvdXa8Hj7XLt",
+    "object": "chat.completion",
+    "created": 1795556680,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.6,\n  \"local_pt\": 0.7,\n  \"long_distance_rail\": 0.3,\n  \"rationale\": \"With two household companions, car use for access/egress is likely; local public transport commonly complements flights; long-distance rail is less frequent but possible for airport links or combined trips.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 392,
+      "completion_tokens": 77,
+      "total_tokens": 469,
+      "cost": 0.00028,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00028,
+        "upstream_inference_prompt_cost": 0.0001568,
+        "upstream_inference_completions_cost": 0.0001232
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "cfb14cffc61afec658c78fb848e3ff146121c02abcf811b5b45431ac339f9fab",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.6,
+    "local_pt": 0.7,
+    "long_distance_rail": 0.3,
+    "rationale": "With two household companions, car use for access/egress is likely; local public transport commonly complements flights; long-distance rail is less frequent but possible for airport links or combined trips."
+  },
+  "finished_utc": "2026-11-24T21:44:42.264382+00:00",
+  "elapsed_seconds": 1.359
+}

@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__anzbegl_gr__b61cbc7c0dd2__overall_rate_anchored__r02",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__anzbegl_gr__b61cbc7c0dd2",
+  "feature": "anzbegl_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 2,
+  "request_sha256": "ef857c44c8f4319c0cc2d3cc939086df6f1cf9d074591a86aa27924f0f92df08",
+  "started_utc": "2026-11-24T21:48:00.149926+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:48:02.998767+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.078e-05,
+  "response": {
+    "id": "gen-1795556880-aAjThUPe8nizKqIepq93",
+    "object": "chat.completion",
+    "created": 1795556880,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.25,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.08,\n  \"rationale\": \"A single companion suggests a leisure trip, potentially involving a mix of modes. Car use is likely lower than the overall average, while local public transport and rail are plausible for connecting to/from airports.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 487,
+      "completion_tokens": 90,
+      "total_tokens": 577,
+      "cost": 2.078e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.078e-05,
+        "upstream_inference_prompt_cost": 1.628e-05,
+        "upstream_inference_completions_cost": 4.5e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "f1dc5fc404c1d9135442fba4eeed0ae3fb464d373551a2801b7bc882f3531086",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.25,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.08,
+    "rationale": "A single companion suggests a leisure trip, potentially involving a mix of modes. Car use is likely lower than the overall average, while local public transport and rail are plausible for connecting to/from airports."
+  },
+  "finished_utc": "2026-11-24T21:48:02.998767+00:00",
+  "elapsed_seconds": 2.86
+}

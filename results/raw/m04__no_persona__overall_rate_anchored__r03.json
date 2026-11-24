@@ -1,0 +1,76 @@
+{
+  "task_id": "m04__no_persona__overall_rate_anchored__r03",
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "model_label": "Qwen3 235B A22B",
+  "persona_id": "no_persona",
+  "feature": "none",
+  "arm": "overall_rate_anchored",
+  "replicate": 3,
+  "request_sha256": "640944db8450ca64dfc0e34df308ceb271e55e48b14af5f0406023507f5a3b74",
+  "started_utc": "2026-11-24T21:49:05.587504+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:49:10.473982+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 8.04e-05,
+  "response": {
+    "id": "gen-1795556945-81RFGKhB5s4y4z02AVha",
+    "object": "chat.completion",
+    "created": 1795556945,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.376769,\n  \"local_pt\": 0.21623,\n  \"long_distance_rail\": 0.124088,\n  \"rationale\": \"No distinguishing attributes specified, so cohort aligns with population baseline; no basis to adjust mode usage probabilities.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 435,
+      "completion_tokens": 75,
+      "total_tokens": 510,
+      "cost": 8.04e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.04e-05,
+        "upstream_inference_prompt_cost": 3.915e-05,
+        "upstream_inference_completions_cost": 4.125e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "97fd36bf3daa30a78897d16ef49a897a9dd351dddee917ffcf531964381ae116",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.376769,
+    "local_pt": 0.21623,
+    "long_distance_rail": 0.124088,
+    "rationale": "No distinguishing attributes specified, so cohort aligns with population baseline; no basis to adjust mode usage probabilities."
+  },
+  "finished_utc": "2026-11-24T21:49:10.473982+00:00",
+  "elapsed_seconds": 4.89
+}

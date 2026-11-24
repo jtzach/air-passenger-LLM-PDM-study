@@ -1,0 +1,74 @@
+{
+  "02_persona_selection": {
+    "canvas_inches": [
+      7.2,
+      6.970799999999998
+    ],
+    "provenance": "Observed public MiD 2023 conditional rates and fixed feature-selection scores; sources: cohort_mode_shares.csv, feature_selection.csv. Not individual or airport-access records.",
+    "formats": {
+      "pdf": {
+        "file": "02_persona_selection.pdf",
+        "sha256": "4c99dd2d357b1e3ca839fba527786cb62a65924a850cc688e5036a6de3f2162d"
+      },
+      "svg": {
+        "file": "02_persona_selection.svg",
+        "sha256": "080127aa726818a2f48bc847084bfad54b4a7559efc4a064d7887371dfb4b6e9"
+      },
+      "png": {
+        "file": "02_persona_selection.png",
+        "sha256": "99b8d8300c888e677a1cb3174765e2bcfc24d75af07a3f889dbd81d331b78ee1"
+      }
+    },
+    "matplotlib_version": "3.11.2",
+    "png_dpi": 300,
+    "pdf_svg_vector": true
+  },
+  "01_framework": {
+    "canvas_inches": [
+      7.2,
+      4.45
+    ],
+    "provenance": "Study design. Public MiD 2023 aggregate evidence; no synthetic results plotted.",
+    "formats": {
+      "pdf": {
+        "file": "01_framework.pdf",
+        "sha256": "7d82721b8fe9e07eb249c0d89e93c268eb6d7967b8652cf85b0616c0b153572d"
+      },
+      "svg": {
+        "file": "01_framework.svg",
+        "sha256": "e46b3f6669a85fbf2880b96ecfe2326bd1ca13bdca4f8673964344ff81e2698f"
+      },
+      "png": {
+        "file": "01_framework.png",
+        "sha256": "33c7cdd17f5d66aa963b691edeebfc116b69cca90a520bdadac6cf16529d2cd9"
+      }
+    },
+    "matplotlib_version": "3.11.2",
+    "png_dpi": 300,
+    "pdf_svg_vector": true
+  },
+  "03_model_results": {
+    "canvas_inches": [
+      7.2,
+      6.25
+    ],
+    "provenance": "Evaluated model outputs from model_metrics.csv and prediction_summary.csv; calibration model fixed before outcomes: openai/gpt-4.1. Main panel excludes no-persona control IDs. Active models: ['google/gemma-3-4b-it', 'openai/gpt-4.1', 'openai/gpt-4.1-mini', 'qwen/qwen3-235b-a22b-2507']; availability exclusions: ['google/gemma-3-12b-it'].",
+    "formats": {
+      "pdf": {
+        "file": "03_model_results.pdf",
+        "sha256": "525c4d947c80dd457e6403c895c647c26b07844d4fe79d9fbd52b904799ab555"
+      },
+      "svg": {
+        "file": "03_model_results.svg",
+        "sha256": "f7112b70f0cacacbccce64afc3f841b45e26dc53db45789e752f12b5274df47c"
+      },
+      "png": {
+        "file": "03_model_results.png",
+        "sha256": "50628ae468f325f72223ae2ff011bebc4a90442c92fa6f54f43c9de6551f80b3"
+      }
+    },
+    "matplotlib_version": "3.11.2",
+    "png_dpi": 300,
+    "pdf_svg_vector": true
+  }
+}

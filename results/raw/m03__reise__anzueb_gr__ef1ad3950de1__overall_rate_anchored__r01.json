@@ -1,0 +1,76 @@
+{
+  "task_id": "m03__reise__anzueb_gr__ef1ad3950de1__overall_rate_anchored__r01",
+  "model_id": "openai/gpt-4.1-mini",
+  "model_label": "GPT-4.1 mini",
+  "persona_id": "reise__anzueb_gr__ef1ad3950de1",
+  "feature": "anzueb_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 1,
+  "request_sha256": "c757329d8757bc848b085de0957eeca0ccda9b2a27e5b7d7a0ae679b484c8a99",
+  "started_utc": "2026-11-24T21:44:59.912901+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:45:01.168801+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000296,
+  "response": {
+    "id": "gen-1795556699-b3GiVLTFzN2tIv2AR024",
+    "object": "chat.completion",
+    "created": 1795556699,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.30,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"One overnight stay suggests shorter trips with likely increased car and local public transport use to/from airports, but less long-distance rail given flight dominance and trip brevity.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 452,
+      "completion_tokens": 72,
+      "total_tokens": 524,
+      "cost": 0.000296,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000296,
+        "upstream_inference_prompt_cost": 0.0001808,
+        "upstream_inference_completions_cost": 0.0001152
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "8ec66e80b8c84995a647ae32388d2e2ca0566791a8e1ba0e9888aa2b41312d90",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "One overnight stay suggests shorter trips with likely increased car and local public transport use to/from airports, but less long-distance rail given flight dominance and trip brevity."
+  },
+  "finished_utc": "2026-11-24T21:45:01.168801+00:00",
+  "elapsed_seconds": 1.265
+}

@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__RegioStaR7__72d39163efb4__unanchored__r03",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__RegioStaR7__72d39163efb4",
+  "feature": "RegioStaR7",
+  "arm": "unanchored",
+  "replicate": 3,
+  "request_sha256": "4a3281ea3ca4bc090cdaba518fdfdf69c9675b3547d8e2ba9f0d4c6c1ffefc6f",
+  "started_utc": "2026-11-24T21:43:28.902540+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:43:31.009293+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 1.787e-05,
+  "response": {
+    "id": "gen-1795556609-UcmztQshefc6qyqmIa79",
+    "object": "chat.completion",
+    "created": 1795556609,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.2,\n  \"local_pt\": 0.3,\n  \"long_distance_rail\": 0.1,\n  \"rationale\": \"Residents in rural small-town/village areas likely combine air travel with car or local public transport for onward/return trips. Long-distance rail is less probable due to distance and limited rural network.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 418,
+      "completion_tokens": 87,
+      "total_tokens": 505,
+      "cost": 1.787e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.787e-05,
+        "upstream_inference_prompt_cost": 1.352e-05,
+        "upstream_inference_completions_cost": 4.35e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "4471b800b9e339ac516e7857aad27125c7753e6b211d41228d8315574d73492b",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.2,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "Residents in rural small-town/village areas likely combine air travel with car or local public transport for onward/return trips. Long-distance rail is less probable due to distance and limited rural network."
+  },
+  "finished_utc": "2026-11-24T21:43:31.009293+00:00",
+  "elapsed_seconds": 2.11
+}

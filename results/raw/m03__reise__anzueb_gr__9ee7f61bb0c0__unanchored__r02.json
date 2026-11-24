@@ -1,0 +1,76 @@
+{
+  "task_id": "m03__reise__anzueb_gr__9ee7f61bb0c0__unanchored__r02",
+  "model_id": "openai/gpt-4.1-mini",
+  "model_label": "GPT-4.1 mini",
+  "persona_id": "reise__anzueb_gr__9ee7f61bb0c0",
+  "feature": "anzueb_gr",
+  "arm": "unanchored",
+  "replicate": 2,
+  "request_sha256": "6ce54c98fceae0b984ffda44605283faf023c5a4123eea37ce24d86234650728",
+  "started_utc": "2026-11-24T21:42:57.884218+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:42:59.984737+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002836,
+  "response": {
+    "id": "gen-1795556578-RQLbqq52qN1C5u4ldE3z",
+    "object": "chat.completion",
+    "created": 1795556578,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.70,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"Moderate car use likely for airport access; high local public transport use common in Germany; low long-distance rail use as flight dominates main travel, but rail may connect to/from airports or stations.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 393,
+      "completion_tokens": 79,
+      "total_tokens": 472,
+      "cost": 0.0002836,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002836,
+        "upstream_inference_prompt_cost": 0.0001572,
+        "upstream_inference_completions_cost": 0.0001264
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "08b63e1a78805122e0527690ffc4b642157f716171f5ec180f3b5dc51ff53447",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.7,
+    "long_distance_rail": 0.15,
+    "rationale": "Moderate car use likely for airport access; high local public transport use common in Germany; low long-distance rail use as flight dominates main travel, but rail may connect to/from airports or stations."
+  },
+  "finished_utc": "2026-11-24T21:42:59.984737+00:00",
+  "elapsed_seconds": 2.109
+}

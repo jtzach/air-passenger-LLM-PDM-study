@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzueb_gr__782410ef69d3__unanchored__r03",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzueb_gr__782410ef69d3",
+  "feature": "anzueb_gr",
+  "arm": "unanchored",
+  "replicate": 3,
+  "request_sha256": "2cd21cad5a057035bab7e4f1c6d28308d47ffc2895129df0860db547eda4bc68",
+  "started_utc": "2026-11-24T21:49:35.486995+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:49:36.809646+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001486,
+  "response": {
+    "id": "gen-1795556975-bwhjXu8FRLioxXpHnw8X",
+    "object": "chat.completion",
+    "created": 1795556975,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"Longer (8–14 night) trips often involve airports farther from home, raising car use for flexibility. Local PT is used by some for airport access, while long-distance rail is plausible but less common in mixed-mode airport trips.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 395,
+      "completion_tokens": 87,
+      "total_tokens": 482,
+      "cost": 0.001486,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001486,
+        "upstream_inference_prompt_cost": 0.00079,
+        "upstream_inference_completions_cost": 0.000696
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "9500d671a4a55dec06c341c3fdc5bbb27286531af114c70efa431f228d7cedfe",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.25,
+    "rationale": "Longer (8–14 night) trips often involve airports farther from home, raising car use for flexibility. Local PT is used by some for airport access, while long-distance rail is plausible but less common in mixed-mode airport trips."
+  },
+  "finished_utc": "2026-11-24T21:49:36.809646+00:00",
+  "elapsed_seconds": 1.328
+}

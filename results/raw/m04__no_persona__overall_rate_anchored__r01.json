@@ -1,0 +1,76 @@
+{
+  "task_id": "m04__no_persona__overall_rate_anchored__r01",
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "model_label": "Qwen3 235B A22B",
+  "persona_id": "no_persona",
+  "feature": "none",
+  "arm": "overall_rate_anchored",
+  "replicate": 1,
+  "request_sha256": "a34f2bc96715d652122e1a1607578fd8cf129c12fa7bc209cd2ea57be19d45d4",
+  "started_utc": "2026-11-24T21:47:03.851499+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:47:10.250705+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 8.04e-05,
+  "response": {
+    "id": "gen-1795556823-MjmB3r5iVTAraJQYeNuM",
+    "object": "chat.completion",
+    "created": 1795556823,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.376769,\n  \"local_pt\": 0.21623,\n  \"long_distance_rail\": 0.124088,\n  \"rationale\": \"No distinguishing attributes suggest deviation from population-level access mode patterns; no basis to assume differing ground transport reliance.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 435,
+      "completion_tokens": 75,
+      "total_tokens": 510,
+      "cost": 8.04e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.04e-05,
+        "upstream_inference_prompt_cost": 3.915e-05,
+        "upstream_inference_completions_cost": 4.125e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "d531bcea88190b229aafe71be9da7a03b7ce14472958f3a2c253ae5eeae908e3",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.376769,
+    "local_pt": 0.21623,
+    "long_distance_rail": 0.124088,
+    "rationale": "No distinguishing attributes suggest deviation from population-level access mode patterns; no basis to assume differing ground transport reliance."
+  },
+  "finished_utc": "2026-11-24T21:47:10.250705+00:00",
+  "elapsed_seconds": 6.407
+}

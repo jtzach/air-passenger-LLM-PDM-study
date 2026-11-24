@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__anzauto_gr1__d7ca944fcddc__overall_rate_anchored__r01",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__anzauto_gr1__d7ca944fcddc",
+  "feature": "anzauto_gr1",
+  "arm": "overall_rate_anchored",
+  "replicate": 1,
+  "request_sha256": "a1003507ac7841d549f788a65637bc753da7d7784f887785bb1adeb5c2104dd2",
+  "started_utc": "2026-11-24T21:44:37.783043+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:44:40.769584+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.003e-05,
+  "response": {
+    "id": "gen-1795556677-DJlfNClmxWKnrw3aFPvl",
+    "object": "chat.completion",
+    "created": 1795556677,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.4, \"local_pt\": 0.25, \"long_distance_rail\": 0.15, \"rationale\": \"A single car suggests a need for flexibility, potentially supplementing air travel for onward journeys. Local public transport and rail use likely mirror broader population trends, though slightly elevated given the flight.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 487,
+      "completion_tokens": 75,
+      "total_tokens": 562,
+      "cost": 2.003e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.003e-05,
+        "upstream_inference_prompt_cost": 1.628e-05,
+        "upstream_inference_completions_cost": 3.75e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "cf394b00711979cc7fd8425fd323a227984770bf44e9931dd98c309860d9b94f",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.4,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "A single car suggests a need for flexibility, potentially supplementing air travel for onward journeys. Local public transport and rail use likely mirror broader population trends, though slightly elevated given the flight."
+  },
+  "finished_utc": "2026-11-24T21:44:40.769584+00:00",
+  "elapsed_seconds": 2.984
+}

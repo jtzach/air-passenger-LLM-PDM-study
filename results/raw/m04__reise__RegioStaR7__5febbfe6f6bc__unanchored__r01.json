@@ -1,0 +1,76 @@
+{
+  "task_id": "m04__reise__RegioStaR7__5febbfe6f6bc__unanchored__r01",
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "model_label": "Qwen3 235B A22B",
+  "persona_id": "reise__RegioStaR7__5febbfe6f6bc",
+  "feature": "RegioStaR7",
+  "arm": "unanchored",
+  "replicate": 1,
+  "request_sha256": "8bc61cbb390b09ae1f737862c212d9c55f064cd8b4e60b5b6962ba1159fd4261",
+  "started_utc": "2026-11-24T21:43:06.070940+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:43:12.695350+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 7.999e-05,
+  "response": {
+    "id": "gen-1795556586-SeLjDPkIUheIJGQCNOpz",
+    "object": "chat.completion",
+    "created": 1795556586,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.75,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.2,\n  \"rationale\": \"In small towns and villages, car use is common for access due to limited public transport. Local PT and long-distance rail are less prevalent but possible, especially near regional hubs or corridors.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 406,
+      "completion_tokens": 79,
+      "total_tokens": 485,
+      "cost": 7.999e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 7.999e-05,
+        "upstream_inference_prompt_cost": 3.654e-05,
+        "upstream_inference_completions_cost": 4.345e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "89caf9ba900b7adcc9e2f676a345eaa69e0d4be2d9c2a79510515b497464ce76",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.75,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.2,
+    "rationale": "In small towns and villages, car use is common for access due to limited public transport. Local PT and long-distance rail are less prevalent but possible, especially near regional hubs or corridors."
+  },
+  "finished_utc": "2026-11-24T21:43:12.695350+00:00",
+  "elapsed_seconds": 6.625
+}

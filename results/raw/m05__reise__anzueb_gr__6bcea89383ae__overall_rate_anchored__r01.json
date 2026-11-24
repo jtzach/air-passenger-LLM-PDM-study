@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzueb_gr__6bcea89383ae__overall_rate_anchored__r01",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzueb_gr__6bcea89383ae",
+  "feature": "anzueb_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 1,
+  "request_sha256": "609fe086dde5210a62fd123dfbd5a61e050718cc40cbfa0d416937deb51ec7ab",
+  "started_utc": "2026-11-24T21:49:14.675877+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:49:16.029249+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001528,
+  "response": {
+    "id": "gen-1795556954-q5kAeyFj2jFhYa3bPh4g",
+    "object": "chat.completion",
+    "created": 1795556954,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.41,\n  \"local_pt\": 0.23,\n  \"long_distance_rail\": 0.12,\n  \"rationale\": \"Shorter trips (2 nights) likely mean closer destinations, so car and local PT use is slightly higher than average; long-distance rail unchanged as major shifts would require explicit longer-trip profiles.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 452,
+      "completion_tokens": 78,
+      "total_tokens": 530,
+      "cost": 0.001528,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001528,
+        "upstream_inference_prompt_cost": 0.000904,
+        "upstream_inference_completions_cost": 0.000624
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "9ceea1307250cdad492bd11629073e0a4e572ccd7625e64a1035ca2baeead558",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.41,
+    "local_pt": 0.23,
+    "long_distance_rail": 0.12,
+    "rationale": "Shorter trips (2 nights) likely mean closer destinations, so car and local PT use is slightly higher than average; long-distance rail unchanged as major shifts would require explicit longer-trip profiles."
+  },
+  "finished_utc": "2026-11-24T21:49:16.029249+00:00",
+  "elapsed_seconds": 1.36
+}

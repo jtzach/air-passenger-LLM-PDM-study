@@ -1,0 +1,76 @@
+{
+  "task_id": "m03__reise__RegioStaR7__cae80c90607c__unanchored__r02",
+  "model_id": "openai/gpt-4.1-mini",
+  "model_label": "GPT-4.1 mini",
+  "persona_id": "reise__RegioStaR7__cae80c90607c",
+  "feature": "RegioStaR7",
+  "arm": "unanchored",
+  "replicate": 2,
+  "request_sha256": "a9811a46197b793dfd404ab5caa2966e2aac002493d683d3b46e241054369d92",
+  "started_utc": "2026-11-24T21:44:07.987345+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:44:09.315926+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002772,
+  "response": {
+    "id": "gen-1795556647-kd4LuoNswZY0hMx02U1d",
+    "object": "chat.completion",
+    "created": 1795556647,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.50,\n  \"long_distance_rail\": 0.20,\n  \"rationale\": \"Medium-town residents likely drive or get driven to airports; moderate local public transport use for access; less frequent long-distance rail combined with flights, reflecting multimodal travel habits.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 397,
+      "completion_tokens": 74,
+      "total_tokens": 471,
+      "cost": 0.0002772,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002772,
+        "upstream_inference_prompt_cost": 0.0001588,
+        "upstream_inference_completions_cost": 0.0001184
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "60cb8208bf6a14886952eee05097a64b0a12a663285570e1cc2a1eb4d9f0eea0",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.5,
+    "long_distance_rail": 0.2,
+    "rationale": "Medium-town residents likely drive or get driven to airports; moderate local public transport use for access; less frequent long-distance rail combined with flights, reflecting multimodal travel habits."
+  },
+  "finished_utc": "2026-11-24T21:44:09.315926+00:00",
+  "elapsed_seconds": 1.328
+}

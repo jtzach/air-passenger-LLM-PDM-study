@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__RegioStaR7__7cdab1586e04__overall_rate_anchored__r03",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__RegioStaR7__7cdab1586e04",
+  "feature": "RegioStaR7",
+  "arm": "overall_rate_anchored",
+  "replicate": 3,
+  "request_sha256": "7255cd8e672e0609be92ff4225adf310c1a81f71385f2de473cfe49ff384927f",
+  "started_utc": "2026-11-24T21:47:05.292970+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:47:07.807314+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 1.716e-05,
+  "response": {
+    "id": "gen-1795556825-qzzqMnhd5XoKHcU5KPuH",
+    "object": "chat.completion",
+    "created": 1795556825,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.4, \"local_pt\": 0.25, \"long_distance_rail\": 0.15, \"rationale\": \"Urban residents often combine air travel with ground transport. Car use is likely higher than the overall rate due to convenient access. Local public transport and rail use will be elevated, reflecting travel within the city to/from the airport.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 492,
+      "completion_tokens": 84,
+      "total_tokens": 576,
+      "cost": 1.716e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 336,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.716e-05,
+        "upstream_inference_prompt_cost": 1.296e-05,
+        "upstream_inference_completions_cost": 4.2e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "b8e0224797796771acb2b703c858ff0bd39afff82a293ea40e2d036cffd3a63d",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.4,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "Urban residents often combine air travel with ground transport. Car use is likely higher than the overall rate due to convenient access. Local public transport and rail use will be elevated, reflecting travel within the city to/from the airport."
+  },
+  "finished_utc": "2026-11-24T21:47:07.807314+00:00",
+  "elapsed_seconds": 2.515
+}

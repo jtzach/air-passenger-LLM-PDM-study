@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__no_persona__unanchored__r03",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "no_persona",
+  "feature": "none",
+  "arm": "unanchored",
+  "replicate": 3,
+  "request_sha256": "f5347aa59ede27666066897d4c01c9d2a7c7be0b169d7a8e35d7b6211ae00539",
+  "started_utc": "2026-11-24T21:50:19.327447+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:50:20.619092+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001382,
+  "response": {
+    "id": "gen-1795557019-7k6dqcXRvtJJ0ClH0YjM",
+    "object": "chat.completion",
+    "created": 1795557019,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.45,\n  \"long_distance_rail\": 0.18,\n  \"rationale\": \"Airport access in Germany is often by car, especially for flexibility. Public transport is widely available, but less used for luggage or off-peak travel. Long-distance rail is practical for some but not dominant for airport access.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 355,
+      "completion_tokens": 84,
+      "total_tokens": 439,
+      "cost": 0.001382,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001382,
+        "upstream_inference_prompt_cost": 0.00071,
+        "upstream_inference_completions_cost": 0.000672
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "b9184cc56e277c5839dfc5fd77dc489ecc21c220fca7a21ae0fcc39ed3f30405",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.45,
+    "long_distance_rail": 0.18,
+    "rationale": "Airport access in Germany is often by car, especially for flexibility. Public transport is widely available, but less used for luggage or off-peak travel. Long-distance rail is practical for some but not dominant for airport access."
+  },
+  "finished_utc": "2026-11-24T21:50:20.619092+00:00",
+  "elapsed_seconds": 1.281
+}

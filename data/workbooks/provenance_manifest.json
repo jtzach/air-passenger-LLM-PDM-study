@@ -1,0 +1,21 @@
+{
+  "workbooks": [
+    {
+      "file": "data/workbooks/MiD2023_Comprehensive_Data.xlsx",
+      "sha256": "4ef1006790ef8a4f42ef2009cc42df19319a2271641337a84da5900b02c2394c",
+      "bytes": 2255251
+    },
+    {
+      "file": "data/workbooks/MiD2023_Comprehensive_Data_EN.xlsx",
+      "sha256": "449253601da5793dba9384ecf739b15516d089783cb3b9b2e9f433a0513e2bd7",
+      "bytes": 2308839
+    }
+  ],
+  "archive": {
+    "file": "data/workbooks/workbook_provenance_20261118.zip",
+    "sha256": "88b45fd2d0c283625748fb8ae8b0d4f5523fb80c2a535d7044676f8bc209c75f",
+    "bytes": 1890011,
+    "entries": 477
+  },
+  "scope": "Original 27-sheet research archive includes labelled non-MiD context. Only public MiD cohort tables enter this paper. No B1 respondent records or hidden airport wishlist are included."
+}

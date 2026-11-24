@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__anzueb_gr__ef1ad3950de1__overall_rate_anchored__r02",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__anzueb_gr__ef1ad3950de1",
+  "feature": "anzueb_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 2,
+  "request_sha256": "c4b4b682475c6a0842dbf62fc96c049e0f4f3df7f23f9971a3511ffc53092ea8",
+  "started_utc": "2026-11-24T21:51:12.126007+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:51:14.381687+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.055e-05,
+  "response": {
+    "id": "gen-1795557072-7ka3se8k15g3valVzqBh",
+    "object": "chat.completion",
+    "created": 1795557072,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.25,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.08,\n  \"rationale\": \"Given the single overnight journey, individuals likely combined air travel with a shorter ground transport leg. Car use would be lower than overall, and local/regional rail likely slightly lower due to the convenience of flying.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 488,
+      "completion_tokens": 91,
+      "total_tokens": 579,
+      "cost": 2.055e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 176,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.055e-05,
+        "upstream_inference_prompt_cost": 1.6e-05,
+        "upstream_inference_completions_cost": 4.55e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "3ffbf9285b9369efb7dc39416e85cf74e901fc3c93c5efe3543aef424f64f472",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.25,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.08,
+    "rationale": "Given the single overnight journey, individuals likely combined air travel with a shorter ground transport leg. Car use would be lower than overall, and local/regional rail likely slightly lower due to the convenience of flying."
+  },
+  "finished_utc": "2026-11-24T21:51:14.381687+00:00",
+  "elapsed_seconds": 2.25
+}

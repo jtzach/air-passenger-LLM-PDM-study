@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzauto_gr1__296e9849dc3d__overall_rate_anchored__r03",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzauto_gr1__296e9849dc3d",
+  "feature": "anzauto_gr1",
+  "arm": "overall_rate_anchored",
+  "replicate": 3,
+  "request_sha256": "889743993d1cee7e40760714b042173c98f1da11630de610e112c1b86176998a",
+  "started_utc": "2026-11-24T21:46:57.563011+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:46:58.785467+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001564,
+  "response": {
+    "id": "gen-1795556817-6RGRoe746GKLSpWnD2rD",
+    "object": "chat.completion",
+    "created": 1795556817,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.20,\n  \"local_pt\": 0.32,\n  \"long_distance_rail\": 0.17,\n  \"rationale\": \"Households without cars are less likely to use cars and more likely to use public/local transport or long-distance rail to access airports, compared to the general population, but some car use remains via lifts/rentals.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 450,
+      "completion_tokens": 83,
+      "total_tokens": 533,
+      "cost": 0.001564,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001564,
+        "upstream_inference_prompt_cost": 0.0009,
+        "upstream_inference_completions_cost": 0.000664
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "90b03b99800303a2722bc771d0def8118553bf4cffc4dd5cbb67e667ed4b4a13",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.2,
+    "local_pt": 0.32,
+    "long_distance_rail": 0.17,
+    "rationale": "Households without cars are less likely to use cars and more likely to use public/local transport or long-distance rail to access airports, compared to the general population, but some car use remains via lifts/rentals."
+  },
+  "finished_utc": "2026-11-24T21:46:58.785467+00:00",
+  "elapsed_seconds": 1.219
+}

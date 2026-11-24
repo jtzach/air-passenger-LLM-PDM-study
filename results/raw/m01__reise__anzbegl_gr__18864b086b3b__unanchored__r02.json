@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__anzbegl_gr__18864b086b3b__unanchored__r02",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__anzbegl_gr__18864b086b3b",
+  "feature": "anzbegl_gr",
+  "arm": "unanchored",
+  "replicate": 2,
+  "request_sha256": "b79574103e6afe4861970caacb7825216f92470a6cc43399a14979b81fcae13a",
+  "started_utc": "2026-11-24T21:48:07.831926+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:48:10.393344+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 1.767e-05,
+  "response": {
+    "id": "gen-1795556887-qNt4blTIAQc9umPlGbcK",
+    "object": "chat.completion",
+    "created": 1795556887,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.2,\n  \"local_pt\": 0.3,\n  \"long_distance_rail\": 0.1,\n  \"rationale\": \"With three companions, a car trip is possible but likely less convenient than flying. Local public transport and long-distance rail are plausible alternatives, especially for part of the journey, given the overnight flight.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 413,
+      "completion_tokens": 87,
+      "total_tokens": 500,
+      "cost": 1.767e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.767e-05,
+        "upstream_inference_prompt_cost": 1.332e-05,
+        "upstream_inference_completions_cost": 4.35e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "e12cee0a514223ee1dbcaa076815a7b6a175540d11fc52bf0d33ccd66aa46d69",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.2,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "With three companions, a car trip is possible but likely less convenient than flying. Local public transport and long-distance rail are plausible alternatives, especially for part of the journey, given the overnight flight."
+  },
+  "finished_utc": "2026-11-24T21:48:10.393344+00:00",
+  "elapsed_seconds": 2.562
+}

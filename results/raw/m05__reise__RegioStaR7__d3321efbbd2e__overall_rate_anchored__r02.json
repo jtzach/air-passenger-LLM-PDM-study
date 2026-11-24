@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__RegioStaR7__d3321efbbd2e__overall_rate_anchored__r02",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__RegioStaR7__d3321efbbd2e",
+  "feature": "RegioStaR7",
+  "arm": "overall_rate_anchored",
+  "replicate": 2,
+  "request_sha256": "193233e93c5bf428ff8a42ede5a2feedf8a3ba010f50d437faa607ad268ee67c",
+  "started_utc": "2026-11-24T21:44:20.441884+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:44:21.569734+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001488,
+  "response": {
+    "id": "gen-1795556660-SrdvI4kKQR3NoD5FJgWt",
+    "object": "chat.completion",
+    "created": 1795556660,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.42,\n  \"local_pt\": 0.19,\n  \"long_distance_rail\": 0.09,\n  \"rationale\": \"Central cities in rural regions likely have higher car use due to less dense public transport, lowering local and long-distance rail probabilities compared to the national average for aircraft journeys.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 452,
+      "completion_tokens": 73,
+      "total_tokens": 525,
+      "cost": 0.001488,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001488,
+        "upstream_inference_prompt_cost": 0.000904,
+        "upstream_inference_completions_cost": 0.000584
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "5e0817797c9280bf8f9ff701df76b11de95d990a18838e7f0c60b8d2bf682efc",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.42,
+    "local_pt": 0.19,
+    "long_distance_rail": 0.09,
+    "rationale": "Central cities in rural regions likely have higher car use due to less dense public transport, lowering local and long-distance rail probabilities compared to the national average for aircraft journeys."
+  },
+  "finished_utc": "2026-11-24T21:44:21.569734+00:00",
+  "elapsed_seconds": 1.125
+}

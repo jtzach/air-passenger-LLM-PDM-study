@@ -1,0 +1,76 @@
+{
+  "task_id": "m03__reise__anzueb_gr__9ee7f61bb0c0__unanchored__r01",
+  "model_id": "openai/gpt-4.1-mini",
+  "model_label": "GPT-4.1 mini",
+  "persona_id": "reise__anzueb_gr__9ee7f61bb0c0",
+  "feature": "anzueb_gr",
+  "arm": "unanchored",
+  "replicate": 1,
+  "request_sha256": "5c0beccb221d008dc6350dd45fcac3fe6e319173df1dd915274ddd5893a0a05b",
+  "started_utc": "2026-11-24T21:51:28.282642+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:51:29.949831+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002772,
+  "response": {
+    "id": "gen-1795557088-TwUpqhRCdRubyMqGivMp",
+    "object": "chat.completion",
+    "created": 1795557088,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.55,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"Three-night trips often involve airport access by car or local public transport; some use long-distance trains for connections or multimodal trips, but less frequently than car or local PT.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 393,
+      "completion_tokens": 75,
+      "total_tokens": 468,
+      "cost": 0.0002772,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002772,
+        "upstream_inference_prompt_cost": 0.0001572,
+        "upstream_inference_completions_cost": 0.00012
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "a1a5e5642e20cffe318c51cd1462133bbfc1215456349e2fde66cbc7f0d8fda0",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.55,
+    "long_distance_rail": 0.25,
+    "rationale": "Three-night trips often involve airport access by car or local public transport; some use long-distance trains for connections or multimodal trips, but less frequently than car or local PT."
+  },
+  "finished_utc": "2026-11-24T21:51:29.949831+00:00",
+  "elapsed_seconds": 1.672
+}

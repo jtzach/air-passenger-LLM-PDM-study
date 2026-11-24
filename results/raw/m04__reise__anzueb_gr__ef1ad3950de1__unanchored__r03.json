@@ -1,0 +1,76 @@
+{
+  "task_id": "m04__reise__anzueb_gr__ef1ad3950de1__unanchored__r03",
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "model_label": "Qwen3 235B A22B",
+  "persona_id": "reise__anzueb_gr__ef1ad3950de1",
+  "feature": "anzueb_gr",
+  "arm": "unanchored",
+  "replicate": 3,
+  "request_sha256": "0f9a9dff1afea24b4279ccff9088790ed9d6f16fcb7e05e309bf050cac0d1bea",
+  "started_utc": "2026-11-24T21:47:53.843753+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:47:58.808609+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 7.587e-05,
+  "response": {
+    "id": "gen-1795556873-6lFSbgkOWJuh0sgcVYI1",
+    "object": "chat.completion",
+    "created": 1795556873,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.75,\n  \"local_pt\": 0.4,\n  \"long_distance_rail\": 0.2,\n  \"rationale\": \"Short trips favor car access to airports; urban transit serves those without cars. Long-distance rail competes less for brief trips, reducing its role in access.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 403,
+      "completion_tokens": 72,
+      "total_tokens": 475,
+      "cost": 7.587e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 7.587e-05,
+        "upstream_inference_prompt_cost": 3.627e-05,
+        "upstream_inference_completions_cost": 3.96e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "7b00844819a08010dac399bc87eb9fd83c46dfd3759a8191557640100d4d486f",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.75,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.2,
+    "rationale": "Short trips favor car access to airports; urban transit serves those without cars. Long-distance rail competes less for brief trips, reducing its role in access."
+  },
+  "finished_utc": "2026-11-24T21:47:58.808609+00:00",
+  "elapsed_seconds": 4.969
+}

@@ -1,0 +1,10 @@
+{
+  "completed_utc": "2026-11-24T21:51:47.459663+00:00",
+  "status_counts": {
+    "valid": 587,
+    "invalid_output": 35,
+    "failed": 98
+  },
+  "accounted_cost_usd": 0.2727941299999999,
+  "task_count": 720
+}

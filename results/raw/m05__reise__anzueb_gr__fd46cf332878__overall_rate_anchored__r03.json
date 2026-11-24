@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzueb_gr__fd46cf332878__overall_rate_anchored__r03",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzueb_gr__fd46cf332878",
+  "feature": "anzueb_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 3,
+  "request_sha256": "1e0f2341d6179b2445d32e6f35d979c9d96dd1e1fdfbafd0b4a671f78433b7da",
+  "started_utc": "2026-11-24T21:51:05.424246+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:51:11.951661+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001596,
+  "response": {
+    "id": "gen-1795557070-HWM9tiL1k1kxK7ozU6FA",
+    "object": "chat.completion",
+    "created": 1795557070,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.42,\n  \"local_pt\": 0.20,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Longer trips (15+ nights) more often involve heavy luggage, distant or rural destinations, or multi-stop itineraries, all favoring car use. Longer stays may reduce reliance on public or long-distance rail for airport access.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 454,
+      "completion_tokens": 86,
+      "total_tokens": 540,
+      "cost": 0.001596,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001596,
+        "upstream_inference_prompt_cost": 0.000908,
+        "upstream_inference_completions_cost": 0.000688
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "5cc0d2e9b8c4b94e18be60bd8455f0e335067655821dc14d0e7b83aff30bf983",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.42,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.1,
+    "rationale": "Longer trips (15+ nights) more often involve heavy luggage, distant or rural destinations, or multi-stop itineraries, all favoring car use. Longer stays may reduce reliance on public or long-distance rail for airport access."
+  },
+  "finished_utc": "2026-11-24T21:51:11.951661+00:00",
+  "elapsed_seconds": 6.532
+}

@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__RegioStaR7__7cdab1586e04__overall_rate_anchored__r03",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__RegioStaR7__7cdab1586e04",
+  "feature": "RegioStaR7",
+  "arm": "overall_rate_anchored",
+  "replicate": 3,
+  "request_sha256": "b366ec4c2b2cd1d1614e4df85aeb833757ff764cb9a311c5ab6a060d93b68688",
+  "started_utc": "2026-11-24T21:50:00.259861+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:50:01.600063+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001574,
+  "response": {
+    "id": "gen-1795557000-TOF7anQbWDZbEGsnZWeo",
+    "object": "chat.completion",
+    "created": 1795557000,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.33,\n  \"local_pt\": 0.28,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"Urban/regiopolis residents likely have better public transport and long-distance rail access, reducing car reliance and raising public/local PT and rail use compared to national averages, but car use remains significant for airport access or luggage.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 455,
+      "completion_tokens": 83,
+      "total_tokens": 538,
+      "cost": 0.001574,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001574,
+        "upstream_inference_prompt_cost": 0.00091,
+        "upstream_inference_completions_cost": 0.000664
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "180b87369fd5e5b8e822560e6f86b1c55c352a07191800c0c247ecebfd5e8f94",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.33,
+    "local_pt": 0.28,
+    "long_distance_rail": 0.15,
+    "rationale": "Urban/regiopolis residents likely have better public transport and long-distance rail access, reducing car reliance and raising public/local PT and rail use compared to national averages, but car use remains significant for airport access or luggage."
+  },
+  "finished_utc": "2026-11-24T21:50:01.600063+00:00",
+  "elapsed_seconds": 1.343
+}

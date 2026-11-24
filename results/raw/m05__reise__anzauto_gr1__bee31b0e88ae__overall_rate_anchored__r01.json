@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzauto_gr1__bee31b0e88ae__overall_rate_anchored__r01",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzauto_gr1__bee31b0e88ae",
+  "feature": "anzauto_gr1",
+  "arm": "overall_rate_anchored",
+  "replicate": 1,
+  "request_sha256": "864f5bcf98dc110c1816bf574ec5e19b644f9ac6e0c290618a80e0e4a59ecc39",
+  "started_utc": "2026-11-24T21:51:42.553768+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:51:44.079254+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00147,
+  "response": {
+    "id": "gen-1795557102-to1dkwtvSeep8JVDBeo6",
+    "object": "chat.completion",
+    "created": 1795557102,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.51,\n  \"local_pt\": 0.16,\n  \"long_distance_rail\": 0.08,\n  \"rationale\": \"Households with 3 cars likely prefer driving to/from airports, increasing car use and slightly lowering public transport and long-distance rail compared to the population average.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 451,
+      "completion_tokens": 71,
+      "total_tokens": 522,
+      "cost": 0.00147,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00147,
+        "upstream_inference_prompt_cost": 0.000902,
+        "upstream_inference_completions_cost": 0.000568
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "79ea9439f446047a4c08d088c336505a36f1d82d1f6c23e48c5b35a33355b9d8",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.51,
+    "local_pt": 0.16,
+    "long_distance_rail": 0.08,
+    "rationale": "Households with 3 cars likely prefer driving to/from airports, increasing car use and slightly lowering public transport and long-distance rail compared to the population average."
+  },
+  "finished_utc": "2026-11-24T21:51:44.079254+00:00",
+  "elapsed_seconds": 1.532
+}

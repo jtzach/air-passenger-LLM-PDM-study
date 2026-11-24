@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzueb_gr__f6e4375535d4__unanchored__r02",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzueb_gr__f6e4375535d4",
+  "feature": "anzueb_gr",
+  "arm": "unanchored",
+  "replicate": 2,
+  "request_sha256": "5b29d8d8acd16b679e770b10c91db9dbf663d1ef34ab4466db5b400222ce2a05",
+  "started_utc": "2026-11-24T21:48:02.761553+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:48:04.216474+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001462,
+  "response": {
+    "id": "gen-1795556882-p1kmjUKIkDBRPm0fwici",
+    "object": "chat.completion",
+    "created": 1795556882,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.42,\n  \"local_pt\": 0.36,\n  \"long_distance_rail\": 0.22,\n  \"rationale\": \"Travellers with 6-7 nights likely take longer trips, often to distant airports. Car and local PT are common for airport access; long-distance rail is less frequent due to connectivity, luggage, and convenience factors.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 395,
+      "completion_tokens": 84,
+      "total_tokens": 479,
+      "cost": 0.001462,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001462,
+        "upstream_inference_prompt_cost": 0.00079,
+        "upstream_inference_completions_cost": 0.000672
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "b3cab9c5fe820e47fb28a4f93a5f08f72686b01f73e66c99ffabe89fd92253ce",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.42,
+    "local_pt": 0.36,
+    "long_distance_rail": 0.22,
+    "rationale": "Travellers with 6-7 nights likely take longer trips, often to distant airports. Car and local PT are common for airport access; long-distance rail is less frequent due to connectivity, luggage, and convenience factors."
+  },
+  "finished_utc": "2026-11-24T21:48:04.216474+00:00",
+  "elapsed_seconds": 1.468
+}

@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzueb_gr__456ee228eb2a__overall_rate_anchored__r03",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzueb_gr__456ee228eb2a",
+  "feature": "anzueb_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 3,
+  "request_sha256": "bd1872abc88aadbebde3d8730da9e7918a7b8e079fba461b13f47cc100928a03",
+  "started_utc": "2026-11-24T21:46:57.510505+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:46:58.781407+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00158,
+  "response": {
+    "id": "gen-1795556817-x1Lz8q2DPCxgO28kNXsz",
+    "object": "chat.completion",
+    "created": 1795556817,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.37,\n  \"local_pt\": 0.22,\n  \"long_distance_rail\": 0.13,\n  \"rationale\": \"4-5 night stays suggest mid/long-distance trips, typical for air travel. Modal shares likely close to population rates; trip length might slightly increase train use for airport access, but not dramatically alter ground mode mix.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 454,
+      "completion_tokens": 84,
+      "total_tokens": 538,
+      "cost": 0.00158,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00158,
+        "upstream_inference_prompt_cost": 0.000908,
+        "upstream_inference_completions_cost": 0.000672
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "0deeb40453b093377747267460fbdf78ba325844dd479a132f9d1db8035e6c96",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.37,
+    "local_pt": 0.22,
+    "long_distance_rail": 0.13,
+    "rationale": "4-5 night stays suggest mid/long-distance trips, typical for air travel. Modal shares likely close to population rates; trip length might slightly increase train use for airport access, but not dramatically alter ground mode mix."
+  },
+  "finished_utc": "2026-11-24T21:46:58.781407+00:00",
+  "elapsed_seconds": 1.281
+}

@@ -1,0 +1,76 @@
+{
+  "task_id": "m04__reise__anzueb_gr__f6e4375535d4__unanchored__r01",
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "model_label": "Qwen3 235B A22B",
+  "persona_id": "reise__anzueb_gr__f6e4375535d4",
+  "feature": "anzueb_gr",
+  "arm": "unanchored",
+  "replicate": 1,
+  "request_sha256": "827c6b05c365b72d39f4adec9f15894217942664f5ab0c050c568cf35c66683c",
+  "started_utc": "2026-11-24T21:49:18.653294+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:49:31.836112+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 8.595e-05,
+  "response": {
+    "id": "gen-1795556958-rRWJwnrQSUKbL2b3rRHe",
+    "object": "chat.completion",
+    "created": 1795556958,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.75,\n  \"local_pt\": 0.4,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"Car use is likely for airport access, especially from suburban or rural areas. Local public transport serves urban travelers. Long-distance rail competes with air, so lower co-occurrence, but some combine rail and air for intermodality.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 405,
+      "completion_tokens": 90,
+      "total_tokens": 495,
+      "cost": 8.595e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.595e-05,
+        "upstream_inference_prompt_cost": 3.645e-05,
+        "upstream_inference_completions_cost": 4.95e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "afad3dc27f26e2ca86675d626065681300c3dc32c7a3dfdae61acab52267bbe9",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.75,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.25,
+    "rationale": "Car use is likely for airport access, especially from suburban or rural areas. Local public transport serves urban travelers. Long-distance rail competes with air, so lower co-occurrence, but some combine rail and air for intermodality."
+  },
+  "finished_utc": "2026-11-24T21:49:31.837105+00:00",
+  "elapsed_seconds": 13.172
+}

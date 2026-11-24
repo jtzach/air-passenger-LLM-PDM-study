@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__anzbegl_gr__18864b086b3b__overall_rate_anchored__r01",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__anzbegl_gr__18864b086b3b",
+  "feature": "anzbegl_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 1,
+  "request_sha256": "593daff0378a2d20bd199d901b57a271240ebb7c778d77150788aad558e86af4",
+  "started_utc": "2026-11-24T21:43:20.274007+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:43:22.055237+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.006e-05,
+  "response": {
+    "id": "gen-1795556600-cx4JogBCvaX5DNQFKvtG",
+    "object": "chat.completion",
+    "created": 1795556600,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.4, \"local_pt\": 0.25, \"long_distance_rail\": 0.15, \"rationale\": \"With 3 companions, the group likely opted for air travel for convenience, but may have used ground transport for initial access to the airport or for onward travel from the destination. Higher car use reflects group travel needs.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 487,
+      "completion_tokens": 82,
+      "total_tokens": 569,
+      "cost": 2.006e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 176,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.006e-05,
+        "upstream_inference_prompt_cost": 1.596e-05,
+        "upstream_inference_completions_cost": 4.1e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "2c0d031e29c07375cfc391e33d3fa95f84b5034c3d4b565938465882fd67c5bb",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.4,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "With 3 companions, the group likely opted for air travel for convenience, but may have used ground transport for initial access to the airport or for onward travel from the destination. Higher car use reflects group travel needs."
+  },
+  "finished_utc": "2026-11-24T21:43:22.055237+00:00",
+  "elapsed_seconds": 1.781
+}

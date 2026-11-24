@@ -1,0 +1,76 @@
+{
+  "task_id": "m03__reise__anzueb_gr__ef1ad3950de1__unanchored__r02",
+  "model_id": "openai/gpt-4.1-mini",
+  "model_label": "GPT-4.1 mini",
+  "persona_id": "reise__anzueb_gr__ef1ad3950de1",
+  "feature": "anzueb_gr",
+  "arm": "unanchored",
+  "replicate": 2,
+  "request_sha256": "9a6fed06c49d37bfcf8be22f59a1e6ba88828ddaeae6afcc4f79fd68db4bd45a",
+  "started_utc": "2026-11-24T21:43:11.788186+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:43:13.300659+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002788,
+  "response": {
+    "id": "gen-1795556591-d2eT6OWiqKebWqYuiwFv",
+    "object": "chat.completion",
+    "created": 1795556591,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.7,\n  \"local_pt\": 0.5,\n  \"long_distance_rail\": 0.3,\n  \"rationale\": \"Short 1-night trips likely involve car access to/from airports; local public transport is common in urban areas; long-distance rail less frequent but plausible for airport transfers or combined travel.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 393,
+      "completion_tokens": 76,
+      "total_tokens": 469,
+      "cost": 0.0002788,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002788,
+        "upstream_inference_prompt_cost": 0.0001572,
+        "upstream_inference_completions_cost": 0.0001216
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "455390991e541a2a64bea418688e2dc76009017fc0d5bebfd98837ff04058fb6",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.7,
+    "local_pt": 0.5,
+    "long_distance_rail": 0.3,
+    "rationale": "Short 1-night trips likely involve car access to/from airports; local public transport is common in urban areas; long-distance rail less frequent but plausible for airport transfers or combined travel."
+  },
+  "finished_utc": "2026-11-24T21:43:13.300659+00:00",
+  "elapsed_seconds": 1.515
+}

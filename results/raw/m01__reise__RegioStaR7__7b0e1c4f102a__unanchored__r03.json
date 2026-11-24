@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__RegioStaR7__7b0e1c4f102a__unanchored__r03",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__RegioStaR7__7b0e1c4f102a",
+  "feature": "RegioStaR7",
+  "arm": "unanchored",
+  "replicate": 3,
+  "request_sha256": "c88a070a4a5e8d7bd12b58c2a237cdbb268b9df8fedfc1c2e87a24abd52684b8",
+  "started_utc": "2026-11-24T21:43:40.393666+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:43:42.383976+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 1.73e-05,
+  "response": {
+    "id": "gen-1795556620-DnwoSPoQI2hOu9Dx3BHX",
+    "object": "chat.completion",
+    "created": 1795556620,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.2,\n  \"local_pt\": 0.3,\n  \"long_distance_rail\": 0.1,\n  \"rationale\": \"Given the cohort is from a metropolis, some use of ground transport for local connections is likely. Car use is plausible for shorter distances before/after flying, but less probable for the entire journey.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 413,
+      "completion_tokens": 86,
+      "total_tokens": 499,
+      "cost": 1.73e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 176,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.73e-05,
+        "upstream_inference_prompt_cost": 1.3e-05,
+        "upstream_inference_completions_cost": 4.3e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "da7950216dd99105f7c29c7bb02026531542346f9241e0f91d0d9e1b35bf723d",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.2,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "Given the cohort is from a metropolis, some use of ground transport for local connections is likely. Car use is plausible for shorter distances before/after flying, but less probable for the entire journey."
+  },
+  "finished_utc": "2026-11-24T21:43:42.384975+00:00",
+  "elapsed_seconds": 1.985
+}

@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__RegioStaR7__7b0e1c4f102a__unanchored__r03",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__RegioStaR7__7b0e1c4f102a",
+  "feature": "RegioStaR7",
+  "arm": "unanchored",
+  "replicate": 3,
+  "request_sha256": "0e00768c8d8ba6fdcb298ff1a7e598d8d0ba0392d64438e288af3e079c654a15",
+  "started_utc": "2026-11-24T21:45:46.452433+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:45:47.588413+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001448,
+  "response": {
+    "id": "gen-1795556746-745kwA6Lb0MTbtRwqFSn",
+    "object": "chat.completion",
+    "created": 1795556746,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.35,\n  \"local_pt\": 0.60,\n  \"long_distance_rail\": 0.30,\n  \"rationale\": \"Urban-metropolis residents have good public transport and rail options but may still use cars, especially for convenience or with luggage. Local PT is likely, but long-distance rail is less common than local PT for airport access.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 392,
+      "completion_tokens": 83,
+      "total_tokens": 475,
+      "cost": 0.001448,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001448,
+        "upstream_inference_prompt_cost": 0.000784,
+        "upstream_inference_completions_cost": 0.000664
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "11cba26be6c9a888d1c94bdc95891b2b9f5795c077a5c7decea83e4103c2d151",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.35,
+    "local_pt": 0.6,
+    "long_distance_rail": 0.3,
+    "rationale": "Urban-metropolis residents have good public transport and rail options but may still use cars, especially for convenience or with luggage. Local PT is likely, but long-distance rail is less common than local PT for airport access."
+  },
+  "finished_utc": "2026-11-24T21:45:47.588413+00:00",
+  "elapsed_seconds": 1.125
+}

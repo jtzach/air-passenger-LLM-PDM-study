@@ -1,0 +1,76 @@
+{
+  "task_id": "m02__reise__RegioStaR7__5febbfe6f6bc__unanchored__r03",
+  "model_id": "google/gemma-3-12b-it",
+  "model_label": "Gemma 3 12B",
+  "persona_id": "reise__RegioStaR7__5febbfe6f6bc",
+  "feature": "RegioStaR7",
+  "arm": "unanchored",
+  "replicate": 3,
+  "request_sha256": "74c4aa32e67188a8f719c324715184e7a0764fec2c0a030e55fa10fedf093acc",
+  "started_utc": "2026-11-24T21:50:58.514978+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:51:00.486107+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 3.26e-05,
+  "response": {
+    "id": "gen-1795557058-ryhAPlZv4JPJX95nZxDG",
+    "object": "chat.completion",
+    "created": 1795557058,
+    "model": "google/gemma-3-12b-it",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.65, \"local_pt\": 0.35, \"long_distance_rail\": 0.10, \"rationale\": \"Small-town/village residents often drive to airports. Return journeys may involve similar car use or local PT. Long-distance rail is less likely due to the flight's presence.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 418,
+      "completion_tokens": 78,
+      "total_tokens": 496,
+      "cost": 3.26e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 3.26e-05,
+        "upstream_inference_prompt_cost": 2.09e-05,
+        "upstream_inference_completions_cost": 1.17e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "bae41de4b158b7a14ae451def22c40d008434b3c4ef81ac8a2274f0078d22869",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.1,
+    "rationale": "Small-town/village residents often drive to airports. Return journeys may involve similar car use or local PT. Long-distance rail is less likely due to the flight's presence."
+  },
+  "finished_utc": "2026-11-24T21:51:00.486107+00:00",
+  "elapsed_seconds": 1.969
+}

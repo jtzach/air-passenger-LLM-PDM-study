@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__RegioStaR7__9f47524becab__overall_rate_anchored__r02",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__RegioStaR7__9f47524becab",
+  "feature": "RegioStaR7",
+  "arm": "overall_rate_anchored",
+  "replicate": 2,
+  "request_sha256": "9fb3f8f5e3cf3dafee22285e238604de608077938f91caab47d99c8c2e68bf63",
+  "started_utc": "2026-11-24T21:47:18.785156+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:47:20.363557+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001576,
+  "response": {
+    "id": "gen-1795556839-rPuHQkNg32QMYHNkkt1J",
+    "object": "chat.completion",
+    "created": 1795556839,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.34,\n  \"local_pt\": 0.26,\n  \"long_distance_rail\": 0.13,\n  \"rationale\": \"Medium-sized urban residents likely have better public transport than rural areas, raising local PT use slightly; car use drops slightly below average, while long-distance rail is near average but not much higher due to limited direct links.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 456,
+      "completion_tokens": 83,
+      "total_tokens": 539,
+      "cost": 0.001576,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001576,
+        "upstream_inference_prompt_cost": 0.000912,
+        "upstream_inference_completions_cost": 0.000664
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "25a2ccda080cbba3c51505782f37e7a66783ec8a99251ae0ad20b1f6baa16f9b",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.34,
+    "local_pt": 0.26,
+    "long_distance_rail": 0.13,
+    "rationale": "Medium-sized urban residents likely have better public transport than rural areas, raising local PT use slightly; car use drops slightly below average, while long-distance rail is near average but not much higher due to limited direct links."
+  },
+  "finished_utc": "2026-11-24T21:47:20.363557+00:00",
+  "elapsed_seconds": 1.578
+}

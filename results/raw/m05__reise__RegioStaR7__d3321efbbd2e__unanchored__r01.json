@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__RegioStaR7__d3321efbbd2e__unanchored__r01",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__RegioStaR7__d3321efbbd2e",
+  "feature": "RegioStaR7",
+  "arm": "unanchored",
+  "replicate": 1,
+  "request_sha256": "eda12bf28e5a5a108f55208e6c81c24ea84864339454b73d8ed7b47bd354f463",
+  "started_utc": "2026-11-24T21:51:32.411661+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:51:34.065444+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001418,
+  "response": {
+    "id": "gen-1795557092-8CdSCDc7DssOBmIMNDkD",
+    "object": "chat.completion",
+    "created": 1795557092,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.18,\n  \"rationale\": \"Central cities in rural regions have limited direct public transport to airports, so car use dominates. Some access by local PT, while long-distance rail is less common but possible for trips to major airports.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 393,
+      "completion_tokens": 79,
+      "total_tokens": 472,
+      "cost": 0.001418,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001418,
+        "upstream_inference_prompt_cost": 0.000786,
+        "upstream_inference_completions_cost": 0.000632
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "599c5c6a4a592a2289191c3e96b356eff340b9132977e87778e5b74943b8217c",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.18,
+    "rationale": "Central cities in rural regions have limited direct public transport to airports, so car use dominates. Some access by local PT, while long-distance rail is less common but possible for trips to major airports."
+  },
+  "finished_utc": "2026-11-24T21:51:34.065444+00:00",
+  "elapsed_seconds": 1.656
+}

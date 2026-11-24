@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzueb_gr__f6e4375535d4__unanchored__r03",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzueb_gr__f6e4375535d4",
+  "feature": "anzueb_gr",
+  "arm": "unanchored",
+  "replicate": 3,
+  "request_sha256": "3e9c6fc6520888ba9c8fc79d8a99e334c519fe48d4f06b208f4ac2c93bdec38a",
+  "started_utc": "2026-11-24T21:48:41.124106+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:48:42.348392+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001494,
+  "response": {
+    "id": "gen-1795556921-FQReKPCkLVMVAcpSRJ7X",
+    "object": "chat.completion",
+    "created": 1795556921,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.35,\n  \"local_pt\": 0.45,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"For 6-7 night trips, both airports and destinations may be distant from home. Cars enable flexibility, local PT serves airport access/egress, and long-distance rail fits intercity connections, but is less common than the others.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 395,
+      "completion_tokens": 88,
+      "total_tokens": 483,
+      "cost": 0.001494,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001494,
+        "upstream_inference_prompt_cost": 0.00079,
+        "upstream_inference_completions_cost": 0.000704
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "0ebe57acf43e13c165baec4ade5dd371d0b58a13ade4fec8407ddf1c641f9d98",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.35,
+    "local_pt": 0.45,
+    "long_distance_rail": 0.25,
+    "rationale": "For 6-7 night trips, both airports and destinations may be distant from home. Cars enable flexibility, local PT serves airport access/egress, and long-distance rail fits intercity connections, but is less common than the others."
+  },
+  "finished_utc": "2026-11-24T21:48:42.348392+00:00",
+  "elapsed_seconds": 1.218
+}

@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzueb_gr__456ee228eb2a__unanchored__r02",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzueb_gr__456ee228eb2a",
+  "feature": "anzueb_gr",
+  "arm": "unanchored",
+  "replicate": 2,
+  "request_sha256": "01951e37070f9dd1369c7584c45a768981168fb1afbe7aa85e03260e68c6e2dd",
+  "started_utc": "2026-11-24T21:48:04.218466+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:48:05.472549+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001494,
+  "response": {
+    "id": "gen-1795556884-iSFMDh0zF7eRljoWIF7G",
+    "object": "chat.completion",
+    "created": 1795556884,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.40,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"Journeys of 4-5 nights may involve airports outside immediate city, so car (private or shared) is likely; local public transport is accessible for airport trips, while long-distance rail is less common but present for intercity access.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 395,
+      "completion_tokens": 88,
+      "total_tokens": 483,
+      "cost": 0.001494,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001494,
+        "upstream_inference_prompt_cost": 0.00079,
+        "upstream_inference_completions_cost": 0.000704
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "f8464e3686fb9cbc93a983d4bde40a3a190630a9e9baedb28388c4c1ba763bdc",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.15,
+    "rationale": "Journeys of 4-5 nights may involve airports outside immediate city, so car (private or shared) is likely; local public transport is accessible for airport trips, while long-distance rail is less common but present for intercity access."
+  },
+  "finished_utc": "2026-11-24T21:48:05.472549+00:00",
+  "elapsed_seconds": 1.25
+}

@@ -1,0 +1,76 @@
+{
+  "task_id": "m03__reise__anzueb_gr__782410ef69d3__unanchored__r03",
+  "model_id": "openai/gpt-4.1-mini",
+  "model_label": "GPT-4.1 mini",
+  "persona_id": "reise__anzueb_gr__782410ef69d3",
+  "feature": "anzueb_gr",
+  "arm": "unanchored",
+  "replicate": 3,
+  "request_sha256": "d27145c72389d504997247f02bdea87e0b6300c36f02af032b63052fda779c6a",
+  "started_utc": "2026-11-24T21:48:29.090029+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:48:30.536881+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002748,
+  "response": {
+    "id": "gen-1795556909-DM4OcyUgYOEK5q2kDQz0",
+    "object": "chat.completion",
+    "created": 1795556909,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.55,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"Medium-stay air travellers likely use cars for airport access and local PT for urban travel; long-distance rail less common due to flight main mode and longer trip duration.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 395,
+      "completion_tokens": 73,
+      "total_tokens": 468,
+      "cost": 0.0002748,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002748,
+        "upstream_inference_prompt_cost": 0.000158,
+        "upstream_inference_completions_cost": 0.0001168
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "18c760df4c9558516b8072793d47744290f7b8cb8ddbb08a59d1c89c2b5c9693",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.55,
+    "long_distance_rail": 0.15,
+    "rationale": "Medium-stay air travellers likely use cars for airport access and local PT for urban travel; long-distance rail less common due to flight main mode and longer trip duration."
+  },
+  "finished_utc": "2026-11-24T21:48:30.536881+00:00",
+  "elapsed_seconds": 1.438
+}

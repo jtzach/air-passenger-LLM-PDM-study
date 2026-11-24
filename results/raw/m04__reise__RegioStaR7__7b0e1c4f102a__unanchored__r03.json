@@ -1,0 +1,76 @@
+{
+  "task_id": "m04__reise__RegioStaR7__7b0e1c4f102a__unanchored__r03",
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "model_label": "Qwen3 235B A22B",
+  "persona_id": "reise__RegioStaR7__7b0e1c4f102a",
+  "feature": "RegioStaR7",
+  "arm": "unanchored",
+  "replicate": 3,
+  "request_sha256": "6c45abc065c3b30486f846c5ef99e4c1de76a1815c38543141e43059671dbea3",
+  "started_utc": "2026-11-24T21:48:53.818272+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:48:59.148762+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 8.357e-05,
+  "response": {
+    "id": "gen-1795556933-3zaO9eyP1HusEJPpUf0x",
+    "object": "chat.completion",
+    "created": 1795556933,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.75,\n  \"local_pt\": 0.4,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"In metropolitan areas, car use is common for airport access due to flexibility. Public transit is widely available but less dominant. Long-distance rail competes less for air-intermodal trips, especially from urban cores with major airports.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 403,
+      "completion_tokens": 86,
+      "total_tokens": 489,
+      "cost": 8.357e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.357e-05,
+        "upstream_inference_prompt_cost": 3.627e-05,
+        "upstream_inference_completions_cost": 4.73e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "cb8a247dec1b891a15f0c4208b045d16528d4a8e6aa288b9c155543ab1b2d601",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.75,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.25,
+    "rationale": "In metropolitan areas, car use is common for airport access due to flexibility. Public transit is widely available but less dominant. Long-distance rail competes less for air-intermodal trips, especially from urban cores with major airports."
+  },
+  "finished_utc": "2026-11-24T21:48:59.148762+00:00",
+  "elapsed_seconds": 5.328
+}

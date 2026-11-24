@@ -1,0 +1,646 @@
+[
+  {
+    "persona_id": "reise__anzauto_gr1__296e9849dc3d",
+    "feature": "anzauto_gr1",
+    "feature_label": "Number of household cars",
+    "feature_family": "traveller",
+    "stratum_id": "anzauto_gr1__296e9849dc3d",
+    "category_code": null,
+    "category_label": "No car",
+    "category_label_de": "kein Auto",
+    "description_en": "Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is number of household cars: No car. All other traveller and journey characteristics are unspecified.",
+    "unweighted_n": 936,
+    "weighted_base": 1552,
+    "observed": {
+      "car": 0.14996851951330345,
+      "local_pt": 0.4005882905932819,
+      "long_distance_rail": 0.16762432059419718
+    },
+    "scope": "single_attribute_cohort_not_an_individual_or_joint_persona",
+    "category_code_note": "Public response provides category labels, not numerical category codes. stratum_id is a derived archive identifier, not a survey code.",
+    "provenance": {
+      "source_file": "data/raw/mit/reise_modes_by_main_mode__anzauto_gr1.json",
+      "source_sha256": "ac3d1eb7ff48be9840c941797a12c305c6f072ec4c0ff8f61eb8ca867c016ed8",
+      "source_table": 1,
+      "source_column": 6,
+      "weight_variable": "R_GEW",
+      "retrieved_utc": "2026-11-24T21:37:32.832236+00:00"
+    }
+  },
+  {
+    "persona_id": "reise__anzauto_gr1__79ed954bbe2c",
+    "feature": "anzauto_gr1",
+    "feature_label": "Number of household cars",
+    "feature_family": "traveller",
+    "stratum_id": "anzauto_gr1__79ed954bbe2c",
+    "category_code": null,
+    "category_label": "4 or more cars",
+    "category_label_de": "4 Autos und mehr",
+    "description_en": "Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is number of household cars: 4 or more cars. All other traveller and journey characteristics are unspecified.",
+    "unweighted_n": 279,
+    "weighted_base": 212,
+    "observed": {
+      "car": 0.5843417508416866,
+      "local_pt": 0.09328591790282008,
+      "long_distance_rail": 0.12984195387277156
+    },
+    "scope": "single_attribute_cohort_not_an_individual_or_joint_persona",
+    "category_code_note": "Public response provides category labels, not numerical category codes. stratum_id is a derived archive identifier, not a survey code.",
+    "provenance": {
+      "source_file": "data/raw/mit/reise_modes_by_main_mode__anzauto_gr1.json",
+      "source_sha256": "ac3d1eb7ff48be9840c941797a12c305c6f072ec4c0ff8f61eb8ca867c016ed8",
+      "source_table": 5,
+      "source_column": 6,
+      "weight_variable": "R_GEW",
+      "retrieved_utc": "2026-11-24T21:37:32.832236+00:00"
+    }
+  },
+  {
+    "persona_id": "reise__anzauto_gr1__bee31b0e88ae",
+    "feature": "anzauto_gr1",
+    "feature_label": "Number of household cars",
+    "feature_family": "traveller",
+    "stratum_id": "anzauto_gr1__bee31b0e88ae",
+    "category_code": null,
+    "category_label": "3 cars",
+    "category_label_de": "3 Autos",
+    "description_en": "Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is number of household cars: 3 cars. All other traveller and journey characteristics are unspecified.",
+    "unweighted_n": 783,
+    "weighted_base": 700,
+    "observed": {
+      "car": 0.5028841848635635,
+      "local_pt": 0.09697719741035281,
+      "long_distance_rail": 0.12166668773499145
+    },
+    "scope": "single_attribute_cohort_not_an_individual_or_joint_persona",
+    "category_code_note": "Public response provides category labels, not numerical category codes. stratum_id is a derived archive identifier, not a survey code.",
+    "provenance": {
+      "source_file": "data/raw/mit/reise_modes_by_main_mode__anzauto_gr1.json",
+      "source_sha256": "ac3d1eb7ff48be9840c941797a12c305c6f072ec4c0ff8f61eb8ca867c016ed8",
+      "source_table": 4,
+      "source_column": 6,
+      "weight_variable": "R_GEW",
+      "retrieved_utc": "2026-11-24T21:37:32.832236+00:00"
+    }
+  },
+  {
+    "persona_id": "reise__anzauto_gr1__d7ca944fcddc",
+    "feature": "anzauto_gr1",
+    "feature_label": "Number of household cars",
+    "feature_family": "traveller",
+    "stratum_id": "anzauto_gr1__d7ca944fcddc",
+    "category_code": null,
+    "category_label": "1 car",
+    "category_label_de": "1 Auto",
+    "description_en": "Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is number of household cars: 1 car. All other traveller and journey characteristics are unspecified.",
+    "unweighted_n": 3788,
+    "weighted_base": 3512,
+    "observed": {
+      "car": 0.3640917625318864,
+      "local_pt": 0.2340510549194951,
+      "long_distance_rail": 0.11762048793683595
+    },
+    "scope": "single_attribute_cohort_not_an_individual_or_joint_persona",
+    "category_code_note": "Public response provides category labels, not numerical category codes. stratum_id is a derived archive identifier, not a survey code.",
+    "provenance": {
+      "source_file": "data/raw/mit/reise_modes_by_main_mode__anzauto_gr1.json",
+      "source_sha256": "ac3d1eb7ff48be9840c941797a12c305c6f072ec4c0ff8f61eb8ca867c016ed8",
+      "source_table": 2,
+      "source_column": 6,
+      "weight_variable": "R_GEW",
+      "retrieved_utc": "2026-11-24T21:37:32.832236+00:00"
+    }
+  },
+  {
+    "persona_id": "reise__anzauto_gr1__faec8c191aa2",
+    "feature": "anzauto_gr1",
+    "feature_label": "Number of household cars",
+    "feature_family": "traveller",
+    "stratum_id": "anzauto_gr1__faec8c191aa2",
+    "category_code": null,
+    "category_label": "2 cars",
+    "category_label_de": "2 Autos",
+    "description_en": "Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is number of household cars: 2 cars. All other traveller and journey characteristics are unspecified.",
+    "unweighted_n": 3689,
+    "weighted_base": 3093,
+    "observed": {
+      "car": 0.4622512988585939,
+      "local_pt": 0.13886084493022968,
+      "long_distance_rail": 0.10973396483037727
+    },
+    "scope": "single_attribute_cohort_not_an_individual_or_joint_persona",
+    "category_code_note": "Public response provides category labels, not numerical category codes. stratum_id is a derived archive identifier, not a survey code.",
+    "provenance": {
+      "source_file": "data/raw/mit/reise_modes_by_main_mode__anzauto_gr1.json",
+      "source_sha256": "ac3d1eb7ff48be9840c941797a12c305c6f072ec4c0ff8f61eb8ca867c016ed8",
+      "source_table": 3,
+      "source_column": 6,
+      "weight_variable": "R_GEW",
+      "retrieved_utc": "2026-11-24T21:37:32.832236+00:00"
+    }
+  },
+  {
+    "persona_id": "reise__RegioStaR7__5febbfe6f6bc",
+    "feature": "RegioStaR7",
+    "feature_label": "Residential spatial type",
+    "feature_family": "traveller",
+    "stratum_id": "RegioStaR7__5febbfe6f6bc",
+    "category_code": null,
+    "category_label": "Urban region - small-town and village area",
+    "category_label_de": "Stadtregion - kleinstädtischer, dörflicher Raum",
+    "description_en": "Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is residential spatial type: Urban region - small-town and village area. All other traveller and journey characteristics are unspecified.",
+    "unweighted_n": 419,
+    "weighted_base": 411,
+    "observed": {
+      "car": 0.5060347270636124,
+      "local_pt": 0.2171218114895392,
+      "long_distance_rail": 0.2325260096359134
+    },
+    "scope": "single_attribute_cohort_not_an_individual_or_joint_persona",
+    "category_code_note": "Public response provides category labels, not numerical category codes. stratum_id is a derived archive identifier, not a survey code.",
+    "provenance": {
+      "source_file": "data/raw/mit/reise_modes_by_main_mode__RegioStaR7.json",
+      "source_sha256": "c74c32cf02a4074d4e5795b59380aa82229d360fc01eb82770b9eb52fe8c901b",
+      "source_table": 4,
+      "source_column": 6,
+      "weight_variable": "R_GEW",
+      "retrieved_utc": "2026-11-24T21:37:35.369528+00:00"
+    }
+  },
+  {
+    "persona_id": "reise__RegioStaR7__72d39163efb4",
+    "feature": "RegioStaR7",
+    "feature_label": "Residential spatial type",
+    "feature_family": "traveller",
+    "stratum_id": "RegioStaR7__72d39163efb4",
+    "category_code": null,
+    "category_label": "Rural region - small-town and village area",
+    "category_label_de": "ländliche Region - kleinstädtischer, dörflicher Raum",
+    "description_en": "Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is residential spatial type: Rural region - small-town and village area. All other traveller and journey characteristics are unspecified.",
+    "unweighted_n": 441,
+    "weighted_base": 921,
+    "observed": {
+      "car": 0.5255538010076296,
+      "local_pt": 0.11900374397383247,
+      "long_distance_rail": 0.09136157652806616
+    },
+    "scope": "single_attribute_cohort_not_an_individual_or_joint_persona",
+    "category_code_note": "Public response provides category labels, not numerical category codes. stratum_id is a derived archive identifier, not a survey code.",
+    "provenance": {
+      "source_file": "data/raw/mit/reise_modes_by_main_mode__RegioStaR7.json",
+      "source_sha256": "c74c32cf02a4074d4e5795b59380aa82229d360fc01eb82770b9eb52fe8c901b",
+      "source_table": 7,
+      "source_column": 6,
+      "weight_variable": "R_GEW",
+      "retrieved_utc": "2026-11-24T21:37:35.369528+00:00"
+    }
+  },
+  {
+    "persona_id": "reise__RegioStaR7__7b0e1c4f102a",
+    "feature": "RegioStaR7",
+    "feature_label": "Residential spatial type",
+    "feature_family": "traveller",
+    "stratum_id": "RegioStaR7__7b0e1c4f102a",
+    "category_code": null,
+    "category_label": "Urban region - metropolis",
+    "category_label_de": "Stadtregion - Metropole",
+    "description_en": "Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is residential spatial type: Urban region - metropolis. All other traveller and journey characteristics are unspecified.",
+    "unweighted_n": 2619,
+    "weighted_base": 2901,
+    "observed": {
+      "car": 0.2429865692411355,
+      "local_pt": 0.2710916103796525,
+      "long_distance_rail": 0.10704030107719302
+    },
+    "scope": "single_attribute_cohort_not_an_individual_or_joint_persona",
+    "category_code_note": "Public response provides category labels, not numerical category codes. stratum_id is a derived archive identifier, not a survey code.",
+    "provenance": {
+      "source_file": "data/raw/mit/reise_modes_by_main_mode__RegioStaR7.json",
+      "source_sha256": "c74c32cf02a4074d4e5795b59380aa82229d360fc01eb82770b9eb52fe8c901b",
+      "source_table": 1,
+      "source_column": 6,
+      "weight_variable": "R_GEW",
+      "retrieved_utc": "2026-11-24T21:37:35.369528+00:00"
+    }
+  },
+  {
+    "persona_id": "reise__RegioStaR7__7cdab1586e04",
+    "feature": "RegioStaR7",
+    "feature_label": "Residential spatial type",
+    "feature_family": "traveller",
+    "stratum_id": "RegioStaR7__7cdab1586e04",
+    "category_code": null,
+    "category_label": "Urban region - regiopolis and large city",
+    "category_label_de": "Stadtregion - Regiopole und Großstadt",
+    "description_en": "Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is residential spatial type: Urban region - regiopolis and large city. All other traveller and journey characteristics are unspecified.",
+    "unweighted_n": 1942,
+    "weighted_base": 1331,
+    "observed": {
+      "car": 0.3807997925472179,
+      "local_pt": 0.2774849985178869,
+      "long_distance_rail": 0.17168351536537008
+    },
+    "scope": "single_attribute_cohort_not_an_individual_or_joint_persona",
+    "category_code_note": "Public response provides category labels, not numerical category codes. stratum_id is a derived archive identifier, not a survey code.",
+    "provenance": {
+      "source_file": "data/raw/mit/reise_modes_by_main_mode__RegioStaR7.json",
+      "source_sha256": "c74c32cf02a4074d4e5795b59380aa82229d360fc01eb82770b9eb52fe8c901b",
+      "source_table": 2,
+      "source_column": 6,
+      "weight_variable": "R_GEW",
+      "retrieved_utc": "2026-11-24T21:37:35.369528+00:00"
+    }
+  },
+  {
+    "persona_id": "reise__RegioStaR7__9f47524becab",
+    "feature": "RegioStaR7",
+    "feature_label": "Residential spatial type",
+    "feature_family": "traveller",
+    "stratum_id": "RegioStaR7__9f47524becab",
+    "category_code": null,
+    "category_label": "Urban region - medium-sized town, urban area",
+    "category_label_de": "Stadtregion - Mittelstadt, städtischer Raum",
+    "description_en": "Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is residential spatial type: Urban region - medium-sized town, urban area. All other traveller and journey characteristics are unspecified.",
+    "unweighted_n": 2830,
+    "weighted_base": 2282,
+    "observed": {
+      "car": 0.37441953909666814,
+      "local_pt": 0.18049232813677385,
+      "long_distance_rail": 0.11155898438313351
+    },
+    "scope": "single_attribute_cohort_not_an_individual_or_joint_persona",
+    "category_code_note": "Public response provides category labels, not numerical category codes. stratum_id is a derived archive identifier, not a survey code.",
+    "provenance": {
+      "source_file": "data/raw/mit/reise_modes_by_main_mode__RegioStaR7.json",
+      "source_sha256": "c74c32cf02a4074d4e5795b59380aa82229d360fc01eb82770b9eb52fe8c901b",
+      "source_table": 3,
+      "source_column": 6,
+      "weight_variable": "R_GEW",
+      "retrieved_utc": "2026-11-24T21:37:35.369528+00:00"
+    }
+  },
+  {
+    "persona_id": "reise__RegioStaR7__cae80c90607c",
+    "feature": "RegioStaR7",
+    "feature_label": "Residential spatial type",
+    "feature_family": "traveller",
+    "stratum_id": "RegioStaR7__cae80c90607c",
+    "category_code": null,
+    "category_label": "Rural region - medium-sized town, urban area",
+    "category_label_de": "ländliche Region - Mittelstadt, städtischer Raum",
+    "description_en": "Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is residential spatial type: Rural region - medium-sized town, urban area. All other traveller and journey characteristics are unspecified.",
+    "unweighted_n": 747,
+    "weighted_base": 847,
+    "observed": {
+      "car": 0.5672460279289009,
+      "local_pt": 0.143894972379347,
+      "long_distance_rail": 0.12254553857552616
+    },
+    "scope": "single_attribute_cohort_not_an_individual_or_joint_persona",
+    "category_code_note": "Public response provides category labels, not numerical category codes. stratum_id is a derived archive identifier, not a survey code.",
+    "provenance": {
+      "source_file": "data/raw/mit/reise_modes_by_main_mode__RegioStaR7.json",
+      "source_sha256": "c74c32cf02a4074d4e5795b59380aa82229d360fc01eb82770b9eb52fe8c901b",
+      "source_table": 6,
+      "source_column": 6,
+      "weight_variable": "R_GEW",
+      "retrieved_utc": "2026-11-24T21:37:35.369528+00:00"
+    }
+  },
+  {
+    "persona_id": "reise__RegioStaR7__d3321efbbd2e",
+    "feature": "RegioStaR7",
+    "feature_label": "Residential spatial type",
+    "feature_family": "traveller",
+    "stratum_id": "RegioStaR7__d3321efbbd2e",
+    "category_code": null,
+    "category_label": "Rural region - central city",
+    "category_label_de": "ländliche Region - zentrale Stadt",
+    "description_en": "Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is residential spatial type: Rural region - central city. All other traveller and journey characteristics are unspecified.",
+    "unweighted_n": 477,
+    "weighted_base": 376,
+    "observed": {
+      "car": 0.47438421925745927,
+      "local_pt": 0.1931829758943986,
+      "long_distance_rail": 0.12848986650500815
+    },
+    "scope": "single_attribute_cohort_not_an_individual_or_joint_persona",
+    "category_code_note": "Public response provides category labels, not numerical category codes. stratum_id is a derived archive identifier, not a survey code.",
+    "provenance": {
+      "source_file": "data/raw/mit/reise_modes_by_main_mode__RegioStaR7.json",
+      "source_sha256": "c74c32cf02a4074d4e5795b59380aa82229d360fc01eb82770b9eb52fe8c901b",
+      "source_table": 5,
+      "source_column": 6,
+      "weight_variable": "R_GEW",
+      "retrieved_utc": "2026-11-24T21:37:35.369528+00:00"
+    }
+  },
+  {
+    "persona_id": "reise__anzbegl_gr__07f355b725cf",
+    "feature": "anzbegl_gr",
+    "feature_label": "Number of household companions",
+    "feature_family": "journey",
+    "stratum_id": "anzbegl_gr__07f355b725cf",
+    "category_code": null,
+    "category_label": "2 companions",
+    "category_label_de": "2 Begleiter/innen",
+    "description_en": "Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is number of household companions: 2 companions. All other traveller and journey characteristics are unspecified.",
+    "unweighted_n": 607,
+    "weighted_base": 614,
+    "observed": {
+      "car": 0.44794166354769904,
+      "local_pt": 0.24063557438031416,
+      "long_distance_rail": 0.08707331484731333
+    },
+    "scope": "single_attribute_cohort_not_an_individual_or_joint_persona",
+    "category_code_note": "Public response provides category labels, not numerical category codes. stratum_id is a derived archive identifier, not a survey code.",
+    "provenance": {
+      "source_file": "data/raw/mit/reise_modes_by_main_mode__anzbegl_gr.json",
+      "source_sha256": "1ea49572c57f656a6e01e863b37801a158f349a3ce9df0bf3246dab0dec89444",
+      "source_table": 3,
+      "source_column": 6,
+      "weight_variable": "R_GEW",
+      "retrieved_utc": "2026-11-24T21:37:38.788453+00:00"
+    }
+  },
+  {
+    "persona_id": "reise__anzbegl_gr__154f6eb18583",
+    "feature": "anzbegl_gr",
+    "feature_label": "Number of household companions",
+    "feature_family": "journey",
+    "stratum_id": "anzbegl_gr__154f6eb18583",
+    "category_code": null,
+    "category_label": "No companion",
+    "category_label_de": "kein/e Begleiter/in",
+    "description_en": "Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is number of household companions: No companion. All other traveller and journey characteristics are unspecified.",
+    "unweighted_n": 4187,
+    "weighted_base": 5010,
+    "observed": {
+      "car": 0.3451017864483797,
+      "local_pt": 0.23169674945662855,
+      "long_distance_rail": 0.14660008123623566
+    },
+    "scope": "single_attribute_cohort_not_an_individual_or_joint_persona",
+    "category_code_note": "Public response provides category labels, not numerical category codes. stratum_id is a derived archive identifier, not a survey code.",
+    "provenance": {
+      "source_file": "data/raw/mit/reise_modes_by_main_mode__anzbegl_gr.json",
+      "source_sha256": "1ea49572c57f656a6e01e863b37801a158f349a3ce9df0bf3246dab0dec89444",
+      "source_table": 1,
+      "source_column": 6,
+      "weight_variable": "R_GEW",
+      "retrieved_utc": "2026-11-24T21:37:38.788453+00:00"
+    }
+  },
+  {
+    "persona_id": "reise__anzbegl_gr__18864b086b3b",
+    "feature": "anzbegl_gr",
+    "feature_label": "Number of household companions",
+    "feature_family": "journey",
+    "stratum_id": "anzbegl_gr__18864b086b3b",
+    "category_code": null,
+    "category_label": "3 companions",
+    "category_label_de": "3 Begleiter/innen",
+    "description_en": "Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is number of household companions: 3 companions. All other traveller and journey characteristics are unspecified.",
+    "unweighted_n": 447,
+    "weighted_base": 446,
+    "observed": {
+      "car": 0.3938611482201271,
+      "local_pt": 0.10896532308011779,
+      "long_distance_rail": 0.0446877775783963
+    },
+    "scope": "single_attribute_cohort_not_an_individual_or_joint_persona",
+    "category_code_note": "Public response provides category labels, not numerical category codes. stratum_id is a derived archive identifier, not a survey code.",
+    "provenance": {
+      "source_file": "data/raw/mit/reise_modes_by_main_mode__anzbegl_gr.json",
+      "source_sha256": "1ea49572c57f656a6e01e863b37801a158f349a3ce9df0bf3246dab0dec89444",
+      "source_table": 4,
+      "source_column": 6,
+      "weight_variable": "R_GEW",
+      "retrieved_utc": "2026-11-24T21:37:38.788453+00:00"
+    }
+  },
+  {
+    "persona_id": "reise__anzbegl_gr__b61cbc7c0dd2",
+    "feature": "anzbegl_gr",
+    "feature_label": "Number of household companions",
+    "feature_family": "journey",
+    "stratum_id": "anzbegl_gr__b61cbc7c0dd2",
+    "category_code": null,
+    "category_label": "1 companion",
+    "category_label_de": "1 Begleiter/in",
+    "description_en": "Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is number of household companions: 1 companion. All other traveller and journey characteristics are unspecified.",
+    "unweighted_n": 3559,
+    "weighted_base": 2318,
+    "observed": {
+      "car": 0.427076523578926,
+      "local_pt": 0.22308945152525342,
+      "long_distance_rail": 0.11118651286187763
+    },
+    "scope": "single_attribute_cohort_not_an_individual_or_joint_persona",
+    "category_code_note": "Public response provides category labels, not numerical category codes. stratum_id is a derived archive identifier, not a survey code.",
+    "provenance": {
+      "source_file": "data/raw/mit/reise_modes_by_main_mode__anzbegl_gr.json",
+      "source_sha256": "1ea49572c57f656a6e01e863b37801a158f349a3ce9df0bf3246dab0dec89444",
+      "source_table": 2,
+      "source_column": 6,
+      "weight_variable": "R_GEW",
+      "retrieved_utc": "2026-11-24T21:37:38.788453+00:00"
+    }
+  },
+  {
+    "persona_id": "reise__anzueb_gr__456ee228eb2a",
+    "feature": "anzueb_gr",
+    "feature_label": "Number of nights away",
+    "feature_family": "journey",
+    "stratum_id": "anzueb_gr__456ee228eb2a",
+    "category_code": null,
+    "category_label": "4-5 overnight stays",
+    "category_label_de": "4-5 Übernachtungen",
+    "description_en": "Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is number of nights away: 4-5 overnight stays. All other traveller and journey characteristics are unspecified.",
+    "unweighted_n": 1373,
+    "weighted_base": 1356,
+    "observed": {
+      "car": 0.3372461357152193,
+      "local_pt": 0.24953465764308425,
+      "long_distance_rail": 0.1138814096613209
+    },
+    "scope": "single_attribute_cohort_not_an_individual_or_joint_persona",
+    "category_code_note": "Public response provides category labels, not numerical category codes. stratum_id is a derived archive identifier, not a survey code.",
+    "provenance": {
+      "source_file": "data/raw/mit/reise_modes_by_main_mode__anzueb_gr.json",
+      "source_sha256": "82e7b2f38d5c6ec6a196a6e4c90fdedbab78284485e80663a2216966d74ae471",
+      "source_table": 4,
+      "source_column": 6,
+      "weight_variable": "R_GEW",
+      "retrieved_utc": "2026-11-24T21:37:38.623656+00:00"
+    }
+  },
+  {
+    "persona_id": "reise__anzueb_gr__6bcea89383ae",
+    "feature": "anzueb_gr",
+    "feature_label": "Number of nights away",
+    "feature_family": "journey",
+    "stratum_id": "anzueb_gr__6bcea89383ae",
+    "category_code": null,
+    "category_label": "2 overnight stays",
+    "category_label_de": "2 Übernachtungen",
+    "description_en": "Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is number of nights away: 2 overnight stays. All other traveller and journey characteristics are unspecified.",
+    "unweighted_n": 683,
+    "weighted_base": 795,
+    "observed": {
+      "car": 0.3968851784719758,
+      "local_pt": 0.20075416158526532,
+      "long_distance_rail": 0.14714494435601383
+    },
+    "scope": "single_attribute_cohort_not_an_individual_or_joint_persona",
+    "category_code_note": "Public response provides category labels, not numerical category codes. stratum_id is a derived archive identifier, not a survey code.",
+    "provenance": {
+      "source_file": "data/raw/mit/reise_modes_by_main_mode__anzueb_gr.json",
+      "source_sha256": "82e7b2f38d5c6ec6a196a6e4c90fdedbab78284485e80663a2216966d74ae471",
+      "source_table": 2,
+      "source_column": 6,
+      "weight_variable": "R_GEW",
+      "retrieved_utc": "2026-11-24T21:37:38.623656+00:00"
+    }
+  },
+  {
+    "persona_id": "reise__anzueb_gr__782410ef69d3",
+    "feature": "anzueb_gr",
+    "feature_label": "Number of nights away",
+    "feature_family": "journey",
+    "stratum_id": "anzueb_gr__782410ef69d3",
+    "category_code": null,
+    "category_label": "8-14 overnight stays",
+    "category_label_de": "8-14 Übernachtungen",
+    "description_en": "Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is number of nights away: 8-14 overnight stays. All other traveller and journey characteristics are unspecified.",
+    "unweighted_n": 2904,
+    "weighted_base": 2485,
+    "observed": {
+      "car": 0.41610378963401906,
+      "local_pt": 0.2134116275161842,
+      "long_distance_rail": 0.11655993298260262
+    },
+    "scope": "single_attribute_cohort_not_an_individual_or_joint_persona",
+    "category_code_note": "Public response provides category labels, not numerical category codes. stratum_id is a derived archive identifier, not a survey code.",
+    "provenance": {
+      "source_file": "data/raw/mit/reise_modes_by_main_mode__anzueb_gr.json",
+      "source_sha256": "82e7b2f38d5c6ec6a196a6e4c90fdedbab78284485e80663a2216966d74ae471",
+      "source_table": 6,
+      "source_column": 6,
+      "weight_variable": "R_GEW",
+      "retrieved_utc": "2026-11-24T21:37:38.623656+00:00"
+    }
+  },
+  {
+    "persona_id": "reise__anzueb_gr__9ee7f61bb0c0",
+    "feature": "anzueb_gr",
+    "feature_label": "Number of nights away",
+    "feature_family": "journey",
+    "stratum_id": "anzueb_gr__9ee7f61bb0c0",
+    "category_code": null,
+    "category_label": "3 overnight stays",
+    "category_label_de": "3 Übernachtungen",
+    "description_en": "Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is number of nights away: 3 overnight stays. All other traveller and journey characteristics are unspecified.",
+    "unweighted_n": 768,
+    "weighted_base": 920,
+    "observed": {
+      "car": 0.39945243059092517,
+      "local_pt": 0.22968241206226367,
+      "long_distance_rail": 0.16398922180872869
+    },
+    "scope": "single_attribute_cohort_not_an_individual_or_joint_persona",
+    "category_code_note": "Public response provides category labels, not numerical category codes. stratum_id is a derived archive identifier, not a survey code.",
+    "provenance": {
+      "source_file": "data/raw/mit/reise_modes_by_main_mode__anzueb_gr.json",
+      "source_sha256": "82e7b2f38d5c6ec6a196a6e4c90fdedbab78284485e80663a2216966d74ae471",
+      "source_table": 3,
+      "source_column": 6,
+      "weight_variable": "R_GEW",
+      "retrieved_utc": "2026-11-24T21:37:38.623656+00:00"
+    }
+  },
+  {
+    "persona_id": "reise__anzueb_gr__ef1ad3950de1",
+    "feature": "anzueb_gr",
+    "feature_label": "Number of nights away",
+    "feature_family": "journey",
+    "stratum_id": "anzueb_gr__ef1ad3950de1",
+    "category_code": null,
+    "category_label": "1 overnight stay",
+    "category_label_de": "1 Übernachtung",
+    "description_en": "Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is number of nights away: 1 overnight stay. All other traveller and journey characteristics are unspecified.",
+    "unweighted_n": 440,
+    "weighted_base": 541,
+    "observed": {
+      "car": 0.2936704447775886,
+      "local_pt": 0.20403631811782044,
+      "long_distance_rail": 0.06703819099050017
+    },
+    "scope": "single_attribute_cohort_not_an_individual_or_joint_persona",
+    "category_code_note": "Public response provides category labels, not numerical category codes. stratum_id is a derived archive identifier, not a survey code.",
+    "provenance": {
+      "source_file": "data/raw/mit/reise_modes_by_main_mode__anzueb_gr.json",
+      "source_sha256": "82e7b2f38d5c6ec6a196a6e4c90fdedbab78284485e80663a2216966d74ae471",
+      "source_table": 1,
+      "source_column": 6,
+      "weight_variable": "R_GEW",
+      "retrieved_utc": "2026-11-24T21:37:38.623656+00:00"
+    }
+  },
+  {
+    "persona_id": "reise__anzueb_gr__f6e4375535d4",
+    "feature": "anzueb_gr",
+    "feature_label": "Number of nights away",
+    "feature_family": "journey",
+    "stratum_id": "anzueb_gr__f6e4375535d4",
+    "category_code": null,
+    "category_label": "6-7 overnight stays",
+    "category_label_de": "6-7 Übernachtungen",
+    "description_en": "Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is number of nights away: 6-7 overnight stays. All other traveller and journey characteristics are unspecified.",
+    "unweighted_n": 1731,
+    "weighted_base": 1600,
+    "observed": {
+      "car": 0.3838901586240857,
+      "local_pt": 0.1904223380181232,
+      "long_distance_rail": 0.09620444492155544
+    },
+    "scope": "single_attribute_cohort_not_an_individual_or_joint_persona",
+    "category_code_note": "Public response provides category labels, not numerical category codes. stratum_id is a derived archive identifier, not a survey code.",
+    "provenance": {
+      "source_file": "data/raw/mit/reise_modes_by_main_mode__anzueb_gr.json",
+      "source_sha256": "82e7b2f38d5c6ec6a196a6e4c90fdedbab78284485e80663a2216966d74ae471",
+      "source_table": 5,
+      "source_column": 6,
+      "weight_variable": "R_GEW",
+      "retrieved_utc": "2026-11-24T21:37:38.623656+00:00"
+    }
+  },
+  {
+    "persona_id": "reise__anzueb_gr__fd46cf332878",
+    "feature": "anzueb_gr",
+    "feature_label": "Number of nights away",
+    "feature_family": "journey",
+    "stratum_id": "anzueb_gr__fd46cf332878",
+    "category_code": null,
+    "category_label": "15 or more overnight stays",
+    "category_label_de": "15 Übernachtungen und mehr",
+    "description_en": "Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is number of nights away: 15 or more overnight stays. All other traveller and journey characteristics are unspecified.",
+    "unweighted_n": 1436,
+    "weighted_base": 1010,
+    "observed": {
+      "car": 0.34576497354298835,
+      "local_pt": 0.23179796411647977,
+      "long_distance_rail": 0.19092917236675536
+    },
+    "scope": "single_attribute_cohort_not_an_individual_or_joint_persona",
+    "category_code_note": "Public response provides category labels, not numerical category codes. stratum_id is a derived archive identifier, not a survey code.",
+    "provenance": {
+      "source_file": "data/raw/mit/reise_modes_by_main_mode__anzueb_gr.json",
+      "source_sha256": "82e7b2f38d5c6ec6a196a6e4c90fdedbab78284485e80663a2216966d74ae471",
+      "source_table": 7,
+      "source_column": 6,
+      "weight_variable": "R_GEW",
+      "retrieved_utc": "2026-11-24T21:37:38.623656+00:00"
+    }
+  }
+]

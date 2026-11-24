@@ -1,0 +1,76 @@
+{
+  "task_id": "m04__reise__anzauto_gr1__d7ca944fcddc__unanchored__r03",
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "model_label": "Qwen3 235B A22B",
+  "persona_id": "reise__anzauto_gr1__d7ca944fcddc",
+  "feature": "anzauto_gr1",
+  "arm": "unanchored",
+  "replicate": 3,
+  "request_sha256": "fd4a466ebd60616ac97a558020f6edfa55b74df8b753fc698ad37d80566460a5",
+  "started_utc": "2026-11-24T21:49:56.869379+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:50:03.846105+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 7.963e-05,
+  "response": {
+    "id": "gen-1795556996-u616kgshDd99ZSexuyod",
+    "object": "chat.completion",
+    "created": 1795556996,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.75,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.2,\n  \"rationale\": \"Households with one car likely use it for airport access. Public transport use depends on proximity to transit hubs. Long-distance rail competes with air, reducing its likelihood as a complement.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 402,
+      "completion_tokens": 79,
+      "total_tokens": 481,
+      "cost": 7.963e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 7.963e-05,
+        "upstream_inference_prompt_cost": 3.618e-05,
+        "upstream_inference_completions_cost": 4.345e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "23fe2c2606eca585f871bf86cfc4a0d9f4da7bc87db9ce9457953926048db3ed",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.75,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.2,
+    "rationale": "Households with one car likely use it for airport access. Public transport use depends on proximity to transit hubs. Long-distance rail competes with air, reducing its likelihood as a complement."
+  },
+  "finished_utc": "2026-11-24T21:50:03.846105+00:00",
+  "elapsed_seconds": 6.984
+}

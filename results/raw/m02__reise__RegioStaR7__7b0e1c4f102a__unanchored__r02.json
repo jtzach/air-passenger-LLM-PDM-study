@@ -1,0 +1,71 @@
+{
+  "task_id": "m02__reise__RegioStaR7__7b0e1c4f102a__unanchored__r02",
+  "model_id": "google/gemma-3-12b-it",
+  "model_label": "Gemma 3 12B",
+  "persona_id": "reise__RegioStaR7__7b0e1c4f102a",
+  "feature": "RegioStaR7",
+  "arm": "unanchored",
+  "replicate": 2,
+  "request_sha256": "a7f25a390286864d53b5908f87feb566d65674380acfc91c42023dd5552497f0",
+  "started_utc": "2026-11-24T21:48:33.660660+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:48:35.915606+00:00"
+    }
+  ],
+  "status": "invalid_output",
+  "accounted_cost_usd": 3.19e-05,
+  "response": {
+    "id": "gen-1795556913-GzLLUKlHJfAzqQxJYB3V",
+    "object": "chat.completion",
+    "created": 1795556913,
+    "model": "google/gemma-3-12b-it",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"+car\": 0.65, \"+local_pt\": 0.55, \"+long_distance_rail\": 0.15, \"rationale\": \"Metropolitan residents often combine air travel with car access to airports and local transport for onward travel. Long-distance rail is less likely given the air journey's purpose.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 413,
+      "completion_tokens": 75,
+      "total_tokens": 488,
+      "cost": 3.19e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 3.19e-05,
+        "upstream_inference_prompt_cost": 2.065e-05,
+        "upstream_inference_completions_cost": 1.125e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "d40b675f6ef0855d3bff2b6e3fadfc81f9db9b926baa41adef720a4a43ea4355",
+  "cost_basis": "OpenRouter usage.cost",
+  "validation_error": "Unexpected output keys",
+  "finished_utc": "2026-11-24T21:48:35.928244+00:00",
+  "elapsed_seconds": 2.265
+}

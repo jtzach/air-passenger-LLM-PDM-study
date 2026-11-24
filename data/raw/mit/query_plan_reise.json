@@ -1,0 +1,227 @@
+[
+  {
+    "feature_id": "__all__",
+    "filename": "reise_modes_by_main_mode____all__.json",
+    "request": {
+      "dataset": {
+        "id": "reise"
+      },
+      "weight_var": "R_GEW",
+      "mean_of": null,
+      "percent": "col",
+      "row": "ms_verkehrsmittel-der-reise-mehrfachantworten-set_e054e270",
+      "col": "hvm_r",
+      "breakdown_by": null
+    }
+  },
+  {
+    "feature_id": "alter_gr4",
+    "filename": "reise_modes_by_main_mode__alter_gr4.json",
+    "request": {
+      "dataset": {
+        "id": "reise"
+      },
+      "weight_var": "R_GEW",
+      "mean_of": null,
+      "percent": "col",
+      "row": "ms_verkehrsmittel-der-reise-mehrfachantworten-set_e054e270",
+      "col": "hvm_r",
+      "breakdown_by": "alter_gr4"
+    }
+  },
+  {
+    "feature_id": "HP_SEX",
+    "filename": "reise_modes_by_main_mode__HP_SEX.json",
+    "request": {
+      "dataset": {
+        "id": "reise"
+      },
+      "weight_var": "R_GEW",
+      "mean_of": null,
+      "percent": "col",
+      "row": "ms_verkehrsmittel-der-reise-mehrfachantworten-set_e054e270",
+      "col": "hvm_r",
+      "breakdown_by": "HP_SEX"
+    }
+  },
+  {
+    "feature_id": "bildung",
+    "filename": "reise_modes_by_main_mode__bildung.json",
+    "request": {
+      "dataset": {
+        "id": "reise"
+      },
+      "weight_var": "R_GEW",
+      "mean_of": null,
+      "percent": "col",
+      "row": "ms_verkehrsmittel-der-reise-mehrfachantworten-set_e054e270",
+      "col": "hvm_r",
+      "breakdown_by": "bildung"
+    }
+  },
+  {
+    "feature_id": "erwerb",
+    "filename": "reise_modes_by_main_mode__erwerb.json",
+    "request": {
+      "dataset": {
+        "id": "reise"
+      },
+      "weight_var": "R_GEW",
+      "mean_of": null,
+      "percent": "col",
+      "row": "ms_verkehrsmittel-der-reise-mehrfachantworten-set_e054e270",
+      "col": "hvm_r",
+      "breakdown_by": "erwerb"
+    }
+  },
+  {
+    "feature_id": "hheink_gr2",
+    "filename": "reise_modes_by_main_mode__hheink_gr2.json",
+    "request": {
+      "dataset": {
+        "id": "reise"
+      },
+      "weight_var": "R_GEW",
+      "mean_of": null,
+      "percent": "col",
+      "row": "ms_verkehrsmittel-der-reise-mehrfachantworten-set_e054e270",
+      "col": "hvm_r",
+      "breakdown_by": "hheink_gr2"
+    }
+  },
+  {
+    "feature_id": "anzauto_gr1",
+    "filename": "reise_modes_by_main_mode__anzauto_gr1.json",
+    "request": {
+      "dataset": {
+        "id": "reise"
+      },
+      "weight_var": "R_GEW",
+      "mean_of": null,
+      "percent": "col",
+      "row": "ms_verkehrsmittel-der-reise-mehrfachantworten-set_e054e270",
+      "col": "hvm_r",
+      "breakdown_by": "anzauto_gr1"
+    }
+  },
+  {
+    "feature_id": "hhgr_gr",
+    "filename": "reise_modes_by_main_mode__hhgr_gr.json",
+    "request": {
+      "dataset": {
+        "id": "reise"
+      },
+      "weight_var": "R_GEW",
+      "mean_of": null,
+      "percent": "col",
+      "row": "ms_verkehrsmittel-der-reise-mehrfachantworten-set_e054e270",
+      "col": "hvm_r",
+      "breakdown_by": "hhgr_gr"
+    }
+  },
+  {
+    "feature_id": "RegioStaR7",
+    "filename": "reise_modes_by_main_mode__RegioStaR7.json",
+    "request": {
+      "dataset": {
+        "id": "reise"
+      },
+      "weight_var": "R_GEW",
+      "mean_of": null,
+      "percent": "col",
+      "row": "ms_verkehrsmittel-der-reise-mehrfachantworten-set_e054e270",
+      "col": "hvm_r",
+      "breakdown_by": "RegioStaR7"
+    }
+  },
+  {
+    "feature_id": "P_FS_PKW",
+    "filename": "reise_modes_by_main_mode__P_FS_PKW.json",
+    "request": {
+      "dataset": {
+        "id": "reise"
+      },
+      "weight_var": "R_GEW",
+      "mean_of": null,
+      "percent": "col",
+      "row": "ms_verkehrsmittel-der-reise-mehrfachantworten-set_e054e270",
+      "col": "hvm_r",
+      "breakdown_by": "P_FS_PKW"
+    }
+  },
+  {
+    "feature_id": "R_ZWECK",
+    "filename": "reise_modes_by_main_mode__R_ZWECK.json",
+    "request": {
+      "dataset": {
+        "id": "reise"
+      },
+      "weight_var": "R_GEW",
+      "mean_of": null,
+      "percent": "col",
+      "row": "ms_verkehrsmittel-der-reise-mehrfachantworten-set_e054e270",
+      "col": "hvm_r",
+      "breakdown_by": "R_ZWECK"
+    }
+  },
+  {
+    "feature_id": "R_ZIEL",
+    "filename": "reise_modes_by_main_mode__R_ZIEL.json",
+    "request": {
+      "dataset": {
+        "id": "reise"
+      },
+      "weight_var": "R_GEW",
+      "mean_of": null,
+      "percent": "col",
+      "row": "ms_verkehrsmittel-der-reise-mehrfachantworten-set_e054e270",
+      "col": "hvm_r",
+      "breakdown_by": "R_ZIEL"
+    }
+  },
+  {
+    "feature_id": "entf_gr",
+    "filename": "reise_modes_by_main_mode__entf_gr.json",
+    "request": {
+      "dataset": {
+        "id": "reise"
+      },
+      "weight_var": "R_GEW",
+      "mean_of": null,
+      "percent": "col",
+      "row": "ms_verkehrsmittel-der-reise-mehrfachantworten-set_e054e270",
+      "col": "hvm_r",
+      "breakdown_by": "entf_gr"
+    }
+  },
+  {
+    "feature_id": "anzueb_gr",
+    "filename": "reise_modes_by_main_mode__anzueb_gr.json",
+    "request": {
+      "dataset": {
+        "id": "reise"
+      },
+      "weight_var": "R_GEW",
+      "mean_of": null,
+      "percent": "col",
+      "row": "ms_verkehrsmittel-der-reise-mehrfachantworten-set_e054e270",
+      "col": "hvm_r",
+      "breakdown_by": "anzueb_gr"
+    }
+  },
+  {
+    "feature_id": "anzbegl_gr",
+    "filename": "reise_modes_by_main_mode__anzbegl_gr.json",
+    "request": {
+      "dataset": {
+        "id": "reise"
+      },
+      "weight_var": "R_GEW",
+      "mean_of": null,
+      "percent": "col",
+      "row": "ms_verkehrsmittel-der-reise-mehrfachantworten-set_e054e270",
+      "col": "hvm_r",
+      "breakdown_by": "anzbegl_gr"
+    }
+  }
+]

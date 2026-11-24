@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzueb_gr__fd46cf332878__unanchored__r02",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzueb_gr__fd46cf332878",
+  "feature": "anzueb_gr",
+  "arm": "unanchored",
+  "replicate": 2,
+  "request_sha256": "7fda3c5d6d460cbeb8d8717b9e4ae46cd50c863ca92040471971baf2c8f6e6f0",
+  "started_utc": "2026-11-24T21:48:41.803993+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:48:43.042129+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001454,
+  "response": {
+    "id": "gen-1795556921-XYZyLs37D17IzD9dY3XE",
+    "object": "chat.completion",
+    "created": 1795556921,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"Long trips (15+ nights) suggest intercity or international flights. Car is common for airport access, but long stays also suit rail or public transport. Extended parking costs and urban access may reduce car use somewhat.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 395,
+      "completion_tokens": 83,
+      "total_tokens": 478,
+      "cost": 0.001454,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001454,
+        "upstream_inference_prompt_cost": 0.00079,
+        "upstream_inference_completions_cost": 0.000664
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "17f1c738f34833ea14ffcdb2f3a8b51d9bfec8c791ea5c9f5c49d3d0b1b70af0",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.25,
+    "rationale": "Long trips (15+ nights) suggest intercity or international flights. Car is common for airport access, but long stays also suit rail or public transport. Extended parking costs and urban access may reduce car use somewhat."
+  },
+  "finished_utc": "2026-11-24T21:48:43.042129+00:00",
+  "elapsed_seconds": 1.235
+}

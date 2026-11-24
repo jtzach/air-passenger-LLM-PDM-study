@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__anzauto_gr1__bee31b0e88ae__overall_rate_anchored__r03",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__anzauto_gr1__bee31b0e88ae",
+  "feature": "anzauto_gr1",
+  "arm": "overall_rate_anchored",
+  "replicate": 3,
+  "request_sha256": "e9dcfee968c6c6e347f7bab00d2e2d6293d84b3291b79ac52c95552e44561caa",
+  "started_utc": "2026-11-24T21:44:28.789652+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:44:30.736772+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.018e-05,
+  "response": {
+    "id": "gen-1795556668-yx6Gy3yltAMHfbwC0ZMY",
+    "object": "chat.completion",
+    "created": 1795556668,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.4, \"local_pt\": 0.25, \"long_distance_rail\": 0.15, \"rationale\": \"A household with 3 cars suggests a higher propensity for car travel. However, an overnight flight implies a desire for speed and convenience, potentially reducing reliance on slower ground modes like trains or buses.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 487,
+      "completion_tokens": 78,
+      "total_tokens": 565,
+      "cost": 2.018e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.018e-05,
+        "upstream_inference_prompt_cost": 1.628e-05,
+        "upstream_inference_completions_cost": 3.9e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "1b2826fe1f5888f1a8212d4caa2716563c6f196b88e7a43a2ff76cb61f2a6fc2",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.4,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "A household with 3 cars suggests a higher propensity for car travel. However, an overnight flight implies a desire for speed and convenience, potentially reducing reliance on slower ground modes like trains or buses."
+  },
+  "finished_utc": "2026-11-24T21:44:30.739764+00:00",
+  "elapsed_seconds": 1.953
+}

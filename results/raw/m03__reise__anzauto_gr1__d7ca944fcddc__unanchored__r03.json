@@ -1,0 +1,76 @@
+{
+  "task_id": "m03__reise__anzauto_gr1__d7ca944fcddc__unanchored__r03",
+  "model_id": "openai/gpt-4.1-mini",
+  "model_label": "GPT-4.1 mini",
+  "persona_id": "reise__anzauto_gr1__d7ca944fcddc",
+  "feature": "anzauto_gr1",
+  "arm": "unanchored",
+  "replicate": 3,
+  "request_sha256": "0e29a2487be5facdf9245af120e9e736339404ac94bdaa0a8a05b269036c3257",
+  "started_utc": "2026-11-24T21:48:33.664312+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:48:35.143599+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002784,
+  "response": {
+    "id": "gen-1795556913-NWOHuVEJ4IzavsON5CDt",
+    "object": "chat.completion",
+    "created": 1795556913,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.65,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"One household car suggests moderate car use for airport access; local public transport is common in Germany for urban connections; long-distance rail less frequent but possible for multi-modal trips involving flights.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 392,
+      "completion_tokens": 76,
+      "total_tokens": 468,
+      "cost": 0.0002784,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002784,
+        "upstream_inference_prompt_cost": 0.0001568,
+        "upstream_inference_completions_cost": 0.0001216
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "a30c1ab1ca7b0ec82e01e98655a332176b0bca3d4141ac6b123b114ad888d95f",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.65,
+    "long_distance_rail": 0.25,
+    "rationale": "One household car suggests moderate car use for airport access; local public transport is common in Germany for urban connections; long-distance rail less frequent but possible for multi-modal trips involving flights."
+  },
+  "finished_utc": "2026-11-24T21:48:35.143599+00:00",
+  "elapsed_seconds": 1.484
+}

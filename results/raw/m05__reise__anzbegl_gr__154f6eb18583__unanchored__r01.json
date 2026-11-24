@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzbegl_gr__154f6eb18583__unanchored__r01",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzbegl_gr__154f6eb18583",
+  "feature": "anzbegl_gr",
+  "arm": "unanchored",
+  "replicate": 1,
+  "request_sha256": "7954336488db672b0929f794e738c415691bd21a86ac465b741c9dd83f5fde3b",
+  "started_utc": "2026-11-24T21:44:35.507523+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:44:37.270789+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001454,
+  "response": {
+    "id": "gen-1795556675-kFCLyLUVNe1Q4qPjRZnp",
+    "object": "chat.completion",
+    "created": 1795556675,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.40,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.18,\n  \"rationale\": \"Solo travellers may prefer convenience and flexibility, making car or local public transport common. Long-distance rail is less frequent but used for airport access, especially from further cities. Mode combinations are shaped by airport location and individual preferences.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 391,
+      "completion_tokens": 84,
+      "total_tokens": 475,
+      "cost": 0.001454,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001454,
+        "upstream_inference_prompt_cost": 0.000782,
+        "upstream_inference_completions_cost": 0.000672
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "f11b4bbceeb52b3ce8533a49dd3bffaa770981592f5436b0c267e3b53b625cef",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.4,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.18,
+    "rationale": "Solo travellers may prefer convenience and flexibility, making car or local public transport common. Long-distance rail is less frequent but used for airport access, especially from further cities. Mode combinations are shaped by airport location and individual preferences."
+  },
+  "finished_utc": "2026-11-24T21:44:37.270789+00:00",
+  "elapsed_seconds": 1.765
+}

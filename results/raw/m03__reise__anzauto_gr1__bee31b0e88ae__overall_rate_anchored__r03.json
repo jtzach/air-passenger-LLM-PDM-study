@@ -1,0 +1,76 @@
+{
+  "task_id": "m03__reise__anzauto_gr1__bee31b0e88ae__overall_rate_anchored__r03",
+  "model_id": "openai/gpt-4.1-mini",
+  "model_label": "GPT-4.1 mini",
+  "persona_id": "reise__anzauto_gr1__bee31b0e88ae",
+  "feature": "anzauto_gr1",
+  "arm": "overall_rate_anchored",
+  "replicate": 3,
+  "request_sha256": "f470e68b46ff12b865b9de96cd4c35aeaa176f14bcb0bf5a3e6232d2e0dd4aad",
+  "started_utc": "2026-11-24T21:44:29.342831+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:44:30.863555+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0003052,
+  "response": {
+    "id": "gen-1795556669-fbuJgjU8Lrj4kB25EAb1",
+    "object": "chat.completion",
+    "created": 1795556669,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.25,\n  \"long_distance_rail\": 0.12,\n  \"rationale\": \"Households with 3 cars likely rely more on cars for airport access, slightly increasing car use; local public transport use remains similar; long-distance rail use unchanged due to aircraft main mode.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 451,
+      "completion_tokens": 78,
+      "total_tokens": 529,
+      "cost": 0.0003052,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003052,
+        "upstream_inference_prompt_cost": 0.0001804,
+        "upstream_inference_completions_cost": 0.0001248
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "d4f120aefb24f5b78ccb687eab130e40476b4dcb1f9f41f224da3904f3d74249",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.12,
+    "rationale": "Households with 3 cars likely rely more on cars for airport access, slightly increasing car use; local public transport use remains similar; long-distance rail use unchanged due to aircraft main mode."
+  },
+  "finished_utc": "2026-11-24T21:44:30.863555+00:00",
+  "elapsed_seconds": 1.516
+}

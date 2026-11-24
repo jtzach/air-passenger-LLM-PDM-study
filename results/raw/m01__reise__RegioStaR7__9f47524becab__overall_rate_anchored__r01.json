@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__RegioStaR7__9f47524becab__overall_rate_anchored__r01",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__RegioStaR7__9f47524becab",
+  "feature": "RegioStaR7",
+  "arm": "overall_rate_anchored",
+  "replicate": 1,
+  "request_sha256": "39384dd8bc6d88bb046255bdf9f4fd7e959d291ec4a4a3a17c553865e3c25b28",
+  "started_utc": "2026-11-24T21:48:34.253219+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:48:37.098542+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.047e-05,
+  "response": {
+    "id": "gen-1795556914-hymq5MxN1CJEgpshEJOU",
+    "object": "chat.completion",
+    "created": 1795556914,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.4, \"local_pt\": 0.25, \"long_distance_rail\": 0.15, \"rationale\": \"Medium-sized towns often have less convenient public transport than major cities. Residents may rely more on cars for onward travel, and long-distance rail use is likely lower than in densely populated urban areas.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 493,
+      "completion_tokens": 79,
+      "total_tokens": 572,
+      "cost": 2.047e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.047e-05,
+        "upstream_inference_prompt_cost": 1.652e-05,
+        "upstream_inference_completions_cost": 3.95e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "0a5f7a4e699ac074428b324f842589f2a3e41116079d2d608997545f82dd3f96",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.4,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "Medium-sized towns often have less convenient public transport than major cities. Residents may rely more on cars for onward travel, and long-distance rail use is likely lower than in densely populated urban areas."
+  },
+  "finished_utc": "2026-11-24T21:48:37.098542+00:00",
+  "elapsed_seconds": 2.843
+}

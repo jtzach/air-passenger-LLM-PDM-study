@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzauto_gr1__faec8c191aa2__unanchored__r03",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzauto_gr1__faec8c191aa2",
+  "feature": "anzauto_gr1",
+  "arm": "unanchored",
+  "replicate": 3,
+  "request_sha256": "b24a5af80bcc1b158c21ee58351ae9f577078a77c818e1aa8bd26837690f991f",
+  "started_utc": "2026-11-24T21:50:59.752482+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:51:01.720830+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001456,
+  "response": {
+    "id": "gen-1795557060-W8JMZIM3C4uQH9Lit4G6",
+    "object": "chat.completion",
+    "created": 1795557060,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.7,\n  \"local_pt\": 0.3,\n  \"long_distance_rail\": 0.1,\n  \"rationale\": \"Two-car households likely drive to/from airports for convenience. Public and long-distance rail are less frequent due to car access, but some use occurs for urban or intercity connections, especially if parking or distance is a concern.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 392,
+      "completion_tokens": 84,
+      "total_tokens": 476,
+      "cost": 0.001456,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001456,
+        "upstream_inference_prompt_cost": 0.000784,
+        "upstream_inference_completions_cost": 0.000672
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "5893ae560fa380e7a9c84dcaa1562e63626209bfd3fa84bdc68be383d0706054",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.7,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "Two-car households likely drive to/from airports for convenience. Public and long-distance rail are less frequent due to car access, but some use occurs for urban or intercity connections, especially if parking or distance is a concern."
+  },
+  "finished_utc": "2026-11-24T21:51:01.720830+00:00",
+  "elapsed_seconds": 1.968
+}

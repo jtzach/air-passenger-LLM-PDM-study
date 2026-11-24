@@ -1,0 +1,76 @@
+{
+  "task_id": "m03__reise__anzueb_gr__f6e4375535d4__overall_rate_anchored__r02",
+  "model_id": "openai/gpt-4.1-mini",
+  "model_label": "GPT-4.1 mini",
+  "persona_id": "reise__anzueb_gr__f6e4375535d4",
+  "feature": "anzueb_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 2,
+  "request_sha256": "9210b1d239039e9428a417a9bfeccd2b50ccc660e69f5b18cf07df6d491fda6f",
+  "started_utc": "2026-11-24T21:48:59.577233+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:49:00.939555+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0003032,
+  "response": {
+    "id": "gen-1795556939-RsT64KKmikpPoLXiJmwi",
+    "object": "chat.completion",
+    "created": 1795556939,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.30,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Longer 6-7 night trips likely involve airport access by car or local transit more than average; long-distance rail less frequent as it competes with flights for long trips.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 454,
+      "completion_tokens": 76,
+      "total_tokens": 530,
+      "cost": 0.0003032,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003032,
+        "upstream_inference_prompt_cost": 0.0001816,
+        "upstream_inference_completions_cost": 0.0001216
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "1812704cfd80c4810eb593647b8e66c894c57b870658d4490a6a9e21d9785bc9",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "Longer 6-7 night trips likely involve airport access by car or local transit more than average; long-distance rail less frequent as it competes with flights for long trips."
+  },
+  "finished_utc": "2026-11-24T21:49:00.939555+00:00",
+  "elapsed_seconds": 1.359
+}

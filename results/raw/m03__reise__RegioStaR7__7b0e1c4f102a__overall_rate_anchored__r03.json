@@ -1,0 +1,76 @@
+{
+  "task_id": "m03__reise__RegioStaR7__7b0e1c4f102a__overall_rate_anchored__r03",
+  "model_id": "openai/gpt-4.1-mini",
+  "model_label": "GPT-4.1 mini",
+  "persona_id": "reise__RegioStaR7__7b0e1c4f102a",
+  "feature": "RegioStaR7",
+  "arm": "overall_rate_anchored",
+  "replicate": 3,
+  "request_sha256": "73636b1d5e64752ebd47f4f198ad5201b22cbb21de52ab8bbcb44b850bd9e06b",
+  "started_utc": "2026-11-24T21:51:22.555675+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:51:23.864965+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000294,
+  "response": {
+    "id": "gen-1795557082-JqkKtWjDPXhOR10igvDW",
+    "object": "chat.completion",
+    "created": 1795557082,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.30,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Urban metropolis residents likely use cars more for airport access but rely more on local public transport; long-distance rail less likely due to air preference and urban connectivity.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 451,
+      "completion_tokens": 71,
+      "total_tokens": 522,
+      "cost": 0.000294,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000294,
+        "upstream_inference_prompt_cost": 0.0001804,
+        "upstream_inference_completions_cost": 0.0001136
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "382932f0be44d6edac13e09f9d645934be608cb4322157cdb7a60ab097b344bf",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "Urban metropolis residents likely use cars more for airport access but rely more on local public transport; long-distance rail less likely due to air preference and urban connectivity."
+  },
+  "finished_utc": "2026-11-24T21:51:23.864965+00:00",
+  "elapsed_seconds": 1.313
+}

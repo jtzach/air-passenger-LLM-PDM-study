@@ -1,0 +1,76 @@
+{
+  "task_id": "m03__reise__anzauto_gr1__296e9849dc3d__overall_rate_anchored__r01",
+  "model_id": "openai/gpt-4.1-mini",
+  "model_label": "GPT-4.1 mini",
+  "persona_id": "reise__anzauto_gr1__296e9849dc3d",
+  "feature": "anzauto_gr1",
+  "arm": "overall_rate_anchored",
+  "replicate": 1,
+  "request_sha256": "268314de192e5b574ae506137b3484cabae1810de774323389e48be088ce9771",
+  "started_utc": "2026-11-24T21:49:01.530446+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:49:02.995468+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002936,
+  "response": {
+    "id": "gen-1795556941-OTydSl7794DUEhb1EeyU",
+    "object": "chat.completion",
+    "created": 1795556941,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.15,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"No household car likely reduces car access, raising local public transport use for airport access; long-distance rail slightly less common but still possible as alternative to car.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 450,
+      "completion_tokens": 71,
+      "total_tokens": 521,
+      "cost": 0.0002936,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002936,
+        "upstream_inference_prompt_cost": 0.00018,
+        "upstream_inference_completions_cost": 0.0001136
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "14bb3d00f8b98841a067419e38d7aec3f64138b44b6404615ed66259055339f2",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.15,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.1,
+    "rationale": "No household car likely reduces car access, raising local public transport use for airport access; long-distance rail slightly less common but still possible as alternative to car."
+  },
+  "finished_utc": "2026-11-24T21:49:02.995468+00:00",
+  "elapsed_seconds": 1.453
+}

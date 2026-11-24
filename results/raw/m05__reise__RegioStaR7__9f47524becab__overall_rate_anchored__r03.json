@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__RegioStaR7__9f47524becab__overall_rate_anchored__r03",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__RegioStaR7__9f47524becab",
+  "feature": "RegioStaR7",
+  "arm": "overall_rate_anchored",
+  "replicate": 3,
+  "request_sha256": "3e4273d8b3ce4b8104e947d879805541471765cf860e25cae1f04bc25f02954f",
+  "started_utc": "2026-11-24T21:44:49.178105+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:44:50.574998+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001528,
+  "response": {
+    "id": "gen-1795556689-4opmOSXBlrO3mS0X6YHi",
+    "object": "chat.completion",
+    "created": 1795556689,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.34,\n  \"local_pt\": 0.29,\n  \"long_distance_rail\": 0.14,\n  \"rationale\": \"Residents of medium-sized urban regions likely have better local public transport access and slightly lower car use than average, but long-distance rail is only marginally higher due to moderate intercity connectivity.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 456,
+      "completion_tokens": 77,
+      "total_tokens": 533,
+      "cost": 0.001528,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001528,
+        "upstream_inference_prompt_cost": 0.000912,
+        "upstream_inference_completions_cost": 0.000616
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "663967fc87c5adb6def2aee7a7768692ca642b96f9947b771ebf9ff54724a8e2",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.34,
+    "local_pt": 0.29,
+    "long_distance_rail": 0.14,
+    "rationale": "Residents of medium-sized urban regions likely have better local public transport access and slightly lower car use than average, but long-distance rail is only marginally higher due to moderate intercity connectivity."
+  },
+  "finished_utc": "2026-11-24T21:44:50.574998+00:00",
+  "elapsed_seconds": 1.407
+}

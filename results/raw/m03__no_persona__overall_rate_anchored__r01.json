@@ -1,0 +1,76 @@
+{
+  "task_id": "m03__no_persona__overall_rate_anchored__r01",
+  "model_id": "openai/gpt-4.1-mini",
+  "model_label": "GPT-4.1 mini",
+  "persona_id": "no_persona",
+  "feature": "none",
+  "arm": "overall_rate_anchored",
+  "replicate": 1,
+  "request_sha256": "702f736b7a8bbe06d5abefae3b605a8d907587f9beaf4bdb27e0afc993f6ded2",
+  "started_utc": "2026-11-24T21:42:57.887217+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:42:59.580767+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002968,
+  "response": {
+    "id": "gen-1795556578-Xg32hU01aeu54uvOkyjX",
+    "object": "chat.completion",
+    "created": 1795556578,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.38,\n  \"local_pt\": 0.22,\n  \"long_distance_rail\": 0.12,\n  \"rationale\": \"With no further specifics, assume typical mixed modal patterns for air travelers in Germany; car likely used for airport access, local PT for urban transit, and long-distance rail less frequent but possible as alternative or feeder.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 414,
+      "completion_tokens": 82,
+      "total_tokens": 496,
+      "cost": 0.0002968,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002968,
+        "upstream_inference_prompt_cost": 0.0001656,
+        "upstream_inference_completions_cost": 0.0001312
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "fb6fbd2a7578289b6594bce7e5986b35aabe82f4dc86eff3072cf5a3472d1e3d",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.38,
+    "local_pt": 0.22,
+    "long_distance_rail": 0.12,
+    "rationale": "With no further specifics, assume typical mixed modal patterns for air travelers in Germany; car likely used for airport access, local PT for urban transit, and long-distance rail less frequent but possible as alternative or feeder."
+  },
+  "finished_utc": "2026-11-24T21:42:59.580767+00:00",
+  "elapsed_seconds": 1.688
+}

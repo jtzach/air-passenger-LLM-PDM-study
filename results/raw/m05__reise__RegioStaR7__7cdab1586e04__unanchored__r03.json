@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__RegioStaR7__7cdab1586e04__unanchored__r03",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__RegioStaR7__7cdab1586e04",
+  "feature": "RegioStaR7",
+  "arm": "unanchored",
+  "replicate": 3,
+  "request_sha256": "26560e1cf18965a60d732c8ca0769ff3cccd80fb5d327ccd6afded100c3cf0d1",
+  "started_utc": "2026-11-24T21:44:14.561798+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:44:15.766582+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00144,
+  "response": {
+    "id": "gen-1795556654-eTNKSwhp0Q8ifMRroksK",
+    "object": "chat.completion",
+    "created": 1795556654,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.65,\n  \"long_distance_rail\": 0.22,\n  \"rationale\": \"Urban residents often access airports via public transport, but cars remain common for flexibility. Long-distance rail is less frequent but relevant for intercity airport access. Mode combinations reflect typical urban travel behaviour and infrastructure availability.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 396,
+      "completion_tokens": 81,
+      "total_tokens": 477,
+      "cost": 0.00144,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00144,
+        "upstream_inference_prompt_cost": 0.000792,
+        "upstream_inference_completions_cost": 0.000648
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "885d1c264fecd0fac125e67bd110ac4901bcccfa83cb0f47138e58fc7f9022b3",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.65,
+    "long_distance_rail": 0.22,
+    "rationale": "Urban residents often access airports via public transport, but cars remain common for flexibility. Long-distance rail is less frequent but relevant for intercity airport access. Mode combinations reflect typical urban travel behaviour and infrastructure availability."
+  },
+  "finished_utc": "2026-11-24T21:44:15.766582+00:00",
+  "elapsed_seconds": 1.203
+}

@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__anzauto_gr1__296e9849dc3d__unanchored__r02",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__anzauto_gr1__296e9849dc3d",
+  "feature": "anzauto_gr1",
+  "arm": "unanchored",
+  "replicate": 2,
+  "request_sha256": "b83bb05d4f792d3ced52e49d3b81ffb5bfa1e41da1ef447ddfb370315539c096",
+  "started_utc": "2026-11-24T21:47:48.382589+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:47:51.330116+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 1.793e-05,
+  "response": {
+    "id": "gen-1795556868-hYJBxN2KnpEX5cZ8a0F5",
+    "object": "chat.completion",
+    "created": 1795556868,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.2,\n  \"local_pt\": 0.3,\n  \"long_distance_rail\": 0.1,\n  \"rationale\": \"Individuals with no car are likely to combine air travel with other modes like car or local public transport to reach their destination, especially for the return journey. Long-distance rail use is less probable due to the journey's nature.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 412,
+      "completion_tokens": 93,
+      "total_tokens": 505,
+      "cost": 1.793e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.793e-05,
+        "upstream_inference_prompt_cost": 1.328e-05,
+        "upstream_inference_completions_cost": 4.65e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "9dafbc82d00b38ce9242691f308429235e75c4614bdc782f4326b39863bb456e",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.2,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "Individuals with no car are likely to combine air travel with other modes like car or local public transport to reach their destination, especially for the return journey. Long-distance rail use is less probable due to the journey's nature."
+  },
+  "finished_utc": "2026-11-24T21:47:51.331222+00:00",
+  "elapsed_seconds": 2.953
+}

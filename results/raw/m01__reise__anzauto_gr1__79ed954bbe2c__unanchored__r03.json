@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__anzauto_gr1__79ed954bbe2c__unanchored__r03",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__anzauto_gr1__79ed954bbe2c",
+  "feature": "anzauto_gr1",
+  "arm": "unanchored",
+  "replicate": 3,
+  "request_sha256": "a321192f19b290bf918e5e1abc385a323857b99abb11113aa89fbb68b3e1db32",
+  "started_utc": "2026-11-24T21:48:09.803189+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:48:12.591207+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 1.808e-05,
+  "response": {
+    "id": "gen-1795556889-pUYpVVPTj0uGmswyTTLM",
+    "object": "chat.completion",
+    "created": 1795556889,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.6,\n  \"local_pt\": 0.4,\n  \"long_distance_rail\": 0.2,\n  \"rationale\": \"Given the cohort's high car ownership (4+ cars), it’s likely many used a car for part of the journey, perhaps for transfers or onward travel from the airport. Local public transport and long-distance rail are also plausible, though less probable.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 415,
+      "completion_tokens": 100,
+      "total_tokens": 515,
+      "cost": 1.808e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 176,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.808e-05,
+        "upstream_inference_prompt_cost": 1.308e-05,
+        "upstream_inference_completions_cost": 5e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "9f9f3bec207d4e8fcb311483f09df9595d7bd74376897b15aa90ce877859d01b",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.6,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.2,
+    "rationale": "Given the cohort's high car ownership (4+ cars), it’s likely many used a car for part of the journey, perhaps for transfers or onward travel from the airport. Local public transport and long-distance rail are also plausible, though less probable."
+  },
+  "finished_utc": "2026-11-24T21:48:12.591207+00:00",
+  "elapsed_seconds": 2.797
+}

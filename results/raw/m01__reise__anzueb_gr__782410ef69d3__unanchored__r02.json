@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__anzueb_gr__782410ef69d3__unanchored__r02",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__anzueb_gr__782410ef69d3",
+  "feature": "anzueb_gr",
+  "arm": "unanchored",
+  "replicate": 2,
+  "request_sha256": "0d34955fe7f6c24f68f66f2a124011b2245707c632800689f8ebbb2a7db9be53",
+  "started_utc": "2026-11-24T21:46:19.450132+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:46:21.712125+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 1.766e-05,
+  "response": {
+    "id": "gen-1795556779-1YC1dzpk04ezzKhrhdRU",
+    "object": "chat.completion",
+    "created": 1795556779,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.2,\n  \"local_pt\": 0.3,\n  \"long_distance_rail\": 0.1,\n  \"rationale\": \"Given the length of the overnight journey (8-14 nights), people likely combined air travel with other modes for convenience or to reach the origin/destination. Car and local public transport are plausible for shorter connections.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 417,
+      "completion_tokens": 90,
+      "total_tokens": 507,
+      "cost": 1.766e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 176,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.766e-05,
+        "upstream_inference_prompt_cost": 1.316e-05,
+        "upstream_inference_completions_cost": 4.5e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "a2c7078f42de987e07721ff5ce62580ed299f4abd59242510d6c4eafba1f11e3",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.2,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "Given the length of the overnight journey (8-14 nights), people likely combined air travel with other modes for convenience or to reach the origin/destination. Car and local public transport are plausible for shorter connections."
+  },
+  "finished_utc": "2026-11-24T21:46:21.712125+00:00",
+  "elapsed_seconds": 2.25
+}

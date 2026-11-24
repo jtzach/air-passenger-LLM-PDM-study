@@ -1,0 +1,76 @@
+{
+  "task_id": "m03__reise__anzauto_gr1__d7ca944fcddc__overall_rate_anchored__r02",
+  "model_id": "openai/gpt-4.1-mini",
+  "model_label": "GPT-4.1 mini",
+  "persona_id": "reise__anzauto_gr1__d7ca944fcddc",
+  "feature": "anzauto_gr1",
+  "arm": "overall_rate_anchored",
+  "replicate": 2,
+  "request_sha256": "ffc935442711e9eb45e49df52b6243cec443a4571eb346ea1aca496b9f30b0a6",
+  "started_utc": "2026-11-24T21:45:41.548513+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:45:43.004054+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0003068,
+  "response": {
+    "id": "gen-1795556741-TZgOdZUknoe8WlckWvon",
+    "object": "chat.completion",
+    "created": 1795556741,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.25,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"One-car households likely use their car more for airport access, slightly increasing car use. Local PT use may be near average; long-distance rail slightly less, as flights often replace long train trips.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 451,
+      "completion_tokens": 79,
+      "total_tokens": 530,
+      "cost": 0.0003068,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003068,
+        "upstream_inference_prompt_cost": 0.0001804,
+        "upstream_inference_completions_cost": 0.0001264
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "21fb5d11974d8a7d39facc2aa74640943c9e6bc164f1843a54a74f4ee641b84f",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.1,
+    "rationale": "One-car households likely use their car more for airport access, slightly increasing car use. Local PT use may be near average; long-distance rail slightly less, as flights often replace long train trips."
+  },
+  "finished_utc": "2026-11-24T21:45:43.004054+00:00",
+  "elapsed_seconds": 1.454
+}

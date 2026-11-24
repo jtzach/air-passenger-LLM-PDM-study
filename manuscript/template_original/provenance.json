@@ -1,0 +1,21 @@
+{
+  "retrieved_utc": "2026-11-24T21:35:34.730868+00:00",
+  "gallery_url": "https://www.overleaf.com/latex/templates/findings-template/bmhtkwbzvvcx",
+  "author_guidelines_url": "https://findingspress.org/for-authors",
+  "template_author": "David Levinson",
+  "license": "CC BY 4.0",
+  "method": "Exact main.tex source extracted from the public Overleaf gallery code block; official preview PDF downloaded. This is the actual published template, not a recreated style.",
+  "distribution": {
+    "unchanged_template_artifacts": ["main.tex", "official_template_preview.pdf"],
+    "local_only_raw_pages": ["author_guidelines.html", "findings_template_gallery.html"],
+    "reason": "Downloaded gallery HTML contains transient CSRF metadata and signed S3 asset URLs with credential identifiers and signatures. Raw HTML is excluded from publication; public URLs and original retrieval hashes remain as non-distributed source evidence.",
+    "plain_text_requirements_summary": "README.md",
+    "secret_values_retained_in_this_record": false
+  },
+  "files": {
+    "author_guidelines.html": "9cc5112e69f865f450aa2730aa0276a3bb645e5e348224e8e3417c3131e2dbdc",
+    "findings_template_gallery.html": "f457c650c794da0c0303c5d9f480493ef01f75857007566c1bd3eb22058ab81b",
+    "main.tex": "ffbdd8fbf26d48d66c2c2a4f860c6596b5cab75808be66b3220d55c23f052406",
+    "official_template_preview.pdf": "d79dc32997f42c495741e8bfe5b69bbd5c455c2145f6f2911050e2317b0f810f"
+  }
+}

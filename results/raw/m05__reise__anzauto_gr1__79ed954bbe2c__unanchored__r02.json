@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzauto_gr1__79ed954bbe2c__unanchored__r02",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzauto_gr1__79ed954bbe2c",
+  "feature": "anzauto_gr1",
+  "arm": "unanchored",
+  "replicate": 2,
+  "request_sha256": "96675c6daa9706f8f33a744ebba304eef9a1e775c582a1be642a89449c9c7698",
+  "started_utc": "2026-11-24T21:48:27.681279+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:48:29.087484+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001412,
+  "response": {
+    "id": "gen-1795556907-8W5l6yTOqWCK9GbeDd4C",
+    "object": "chat.completion",
+    "created": 1795556907,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.90,\n  \"local_pt\": 0.10,\n  \"long_distance_rail\": 0.05,\n  \"rationale\": \"Households with 4+ cars likely prioritize private car use for airport access due to convenience and availability, making car dominant, with limited reliance on public or long-distance rail for these trips.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 394,
+      "completion_tokens": 78,
+      "total_tokens": 472,
+      "cost": 0.001412,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001412,
+        "upstream_inference_prompt_cost": 0.000788,
+        "upstream_inference_completions_cost": 0.000624
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "06ec5d9fe7807ac9c9a5b260c389d8c4de0841b8037a7413dec545e1ee425934",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.9,
+    "local_pt": 0.1,
+    "long_distance_rail": 0.05,
+    "rationale": "Households with 4+ cars likely prioritize private car use for airport access due to convenience and availability, making car dominant, with limited reliance on public or long-distance rail for these trips."
+  },
+  "finished_utc": "2026-11-24T21:48:29.087484+00:00",
+  "elapsed_seconds": 1.407
+}

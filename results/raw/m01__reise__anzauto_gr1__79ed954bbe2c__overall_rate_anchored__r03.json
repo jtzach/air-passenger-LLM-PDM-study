@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__anzauto_gr1__79ed954bbe2c__overall_rate_anchored__r03",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__anzauto_gr1__79ed954bbe2c",
+  "feature": "anzauto_gr1",
+  "arm": "overall_rate_anchored",
+  "replicate": 3,
+  "request_sha256": "f2def475d539f032a9b62a6b398f89c833c4459a711dabd4f820fb054000774d",
+  "started_utc": "2026-11-24T21:43:09.442047+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:43:11.217747+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.041e-05,
+  "response": {
+    "id": "gen-1795556589-n5CPR1BUWD5asyBEUgna",
+    "object": "chat.completion",
+    "created": 1795556589,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.6, \"local_pt\": 0.3, \"long_distance_rail\": 0.15, \"rationale\": \"A household with 4+ cars likely uses them frequently for shorter trips. Combining this with an overnight flight suggests a preference for convenience and potentially a mix of travel needs – longer distances by plane, shorter by car.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 489,
+      "completion_tokens": 81,
+      "total_tokens": 570,
+      "cost": 2.041e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.041e-05,
+        "upstream_inference_prompt_cost": 1.636e-05,
+        "upstream_inference_completions_cost": 4.05e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "61b25f0a9f07aed11b9f42b97a65d76f92361ef69eeb2c9363d2b123836a7316",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.6,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.15,
+    "rationale": "A household with 4+ cars likely uses them frequently for shorter trips. Combining this with an overnight flight suggests a preference for convenience and potentially a mix of travel needs – longer distances by plane, shorter by car."
+  },
+  "finished_utc": "2026-11-24T21:43:11.217747+00:00",
+  "elapsed_seconds": 1.781
+}

@@ -1,0 +1,76 @@
+{
+  "task_id": "m03__reise__RegioStaR7__72d39163efb4__unanchored__r02",
+  "model_id": "openai/gpt-4.1-mini",
+  "model_label": "GPT-4.1 mini",
+  "persona_id": "reise__RegioStaR7__72d39163efb4",
+  "feature": "RegioStaR7",
+  "arm": "unanchored",
+  "replicate": 2,
+  "request_sha256": "5e7df2eeaeb991934c53595bf6dbf8850b21429e5392cdf4b52c60e5d20f0052",
+  "started_utc": "2026-11-24T21:51:20.792755+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:51:22.106094+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002768,
+  "response": {
+    "id": "gen-1795557080-keZjB9c4spdukZzgbrNN",
+    "object": "chat.completion",
+    "created": 1795557080,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.75,\n  \"local_pt\": 0.55,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"Rural residents likely use cars for airport access; local public transport may serve connections; long-distance rail less common due to rural location but possible as an alternative to car.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 396,
+      "completion_tokens": 74,
+      "total_tokens": 470,
+      "cost": 0.0002768,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002768,
+        "upstream_inference_prompt_cost": 0.0001584,
+        "upstream_inference_completions_cost": 0.0001184
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "57f534459db34779fa1c9d22e6a8c9ce28e975f0af97a25a71222373f26489a5",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.75,
+    "local_pt": 0.55,
+    "long_distance_rail": 0.25,
+    "rationale": "Rural residents likely use cars for airport access; local public transport may serve connections; long-distance rail less common due to rural location but possible as an alternative to car."
+  },
+  "finished_utc": "2026-11-24T21:51:22.106094+00:00",
+  "elapsed_seconds": 1.328
+}

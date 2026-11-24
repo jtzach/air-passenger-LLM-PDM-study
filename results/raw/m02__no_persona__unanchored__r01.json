@@ -1,0 +1,85 @@
+{
+  "task_id": "m02__no_persona__unanchored__r01",
+  "model_id": "google/gemma-3-12b-it",
+  "model_label": "Gemma 3 12B",
+  "persona_id": "no_persona",
+  "feature": "none",
+  "arm": "unanchored",
+  "replicate": 1,
+  "request_sha256": "b7e6d3cb0a0e8148338c5e40a0ba9b859b4c460fa44014840f5e1ae9fe15b061",
+  "started_utc": "2026-11-24T21:44:55.215630+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "http_error",
+      "code": 429,
+      "detail": "{\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"google/gemma-3-12b-it is temporarily rate-limited upstream. Please retry shortly, or add your own provider key to use your own limits: https://openrouter.ai/workspaces/default/byok\",\"provider_name\":\"DeepInfra\",\"is_byok\":false,\"provider_error_code\":\"engine_overloaded\",\"limit_source\":\"upstream_provider_shared_pool\",\"remedy_hint\":\"Retry shortly, add your own provider key to use your own limits (https://openrouter.ai/workspaces/default/byok), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing.\"}},\"user_id\":\"[REDACTED_ACCOUNT_ID]\"}",
+      "utc": "2026-11-24T21:44:55.505909+00:00"
+    },
+    {
+      "number": 2,
+      "status": "http_error",
+      "code": 429,
+      "detail": "{\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"google/gemma-3-12b-it is temporarily rate-limited upstream. Please retry shortly, or add your own provider key to use your own limits: https://openrouter.ai/workspaces/default/byok\",\"provider_name\":\"DeepInfra\",\"is_byok\":false,\"provider_error_code\":\"engine_overloaded\",\"limit_source\":\"upstream_provider_shared_pool\",\"remedy_hint\":\"Retry shortly, add your own provider key to use your own limits (https://openrouter.ai/workspaces/default/byok), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing.\"}},\"user_id\":\"[REDACTED_ACCOUNT_ID]\"}",
+      "utc": "2026-11-24T21:44:57.936786+00:00"
+    },
+    {
+      "number": 3,
+      "status": "response",
+      "utc": "2026-11-24T21:45:04.269611+00:00"
+    }
+  ],
+  "status": "invalid_output",
+  "accounted_cost_usd": 2.95e-05,
+  "response": {
+    "id": "gen-1795556701-vvfMdZg4uLZ2uHzcUnoc",
+    "object": "chat.completion",
+    "created": 1795556701,
+    "model": "google/gemma-3-12b-it",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"+car\": 0.6, \"+local_pt\": 0.5, \"+long_distance_rail\": 0.2, \"rationale\": \"Air travel often involves car access/drop-off and local transit. Longer distances might involve rail for some, but it's less common than car or local transport.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 374,
+      "completion_tokens": 72,
+      "total_tokens": 446,
+      "cost": 2.95e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.95e-05,
+        "upstream_inference_prompt_cost": 1.87e-05,
+        "upstream_inference_completions_cost": 1.08e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "64291e0bd0ec5de9da4473bc118d94babc25c44d9f95d9033eb3c3b6eb9d2dfb",
+  "cost_basis": "OpenRouter usage.cost",
+  "validation_error": "Unexpected output keys",
+  "finished_utc": "2026-11-24T21:45:04.269611+00:00",
+  "elapsed_seconds": 9.047
+}

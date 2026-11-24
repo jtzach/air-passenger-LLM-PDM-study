@@ -1,0 +1,76 @@
+{
+  "task_id": "m03__reise__anzueb_gr__782410ef69d3__overall_rate_anchored__r02",
+  "model_id": "openai/gpt-4.1-mini",
+  "model_label": "GPT-4.1 mini",
+  "persona_id": "reise__anzueb_gr__782410ef69d3",
+  "feature": "anzueb_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 2,
+  "request_sha256": "83c2d1c9a1733e6f8ae87bda90b089d0322def41e4cf0c1161b13238f30f9022",
+  "started_utc": "2026-11-24T21:49:51.879174+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:49:53.292069+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0003144,
+  "response": {
+    "id": "gen-1795556991-t1Vlj2X7EcZIgeAt9CGW",
+    "object": "chat.completion",
+    "created": 1795556991,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.25,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Longer trips (8-14 nights) likely increase car use for airport access and local travel; slightly higher local public transit use; long-distance train use may be lower due to longer stays favoring direct flights.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 454,
+      "completion_tokens": 83,
+      "total_tokens": 537,
+      "cost": 0.0003144,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003144,
+        "upstream_inference_prompt_cost": 0.0001816,
+        "upstream_inference_completions_cost": 0.0001328
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "d136a9c1bed3210a1c014a7c3eb0a4951e8efbff7c59b253c51d81ca500f8b05",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.1,
+    "rationale": "Longer trips (8-14 nights) likely increase car use for airport access and local travel; slightly higher local public transit use; long-distance train use may be lower due to longer stays favoring direct flights."
+  },
+  "finished_utc": "2026-11-24T21:49:53.292069+00:00",
+  "elapsed_seconds": 1.406
+}

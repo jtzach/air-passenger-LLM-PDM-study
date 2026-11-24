@@ -1,0 +1,76 @@
+{
+  "task_id": "m02__reise__RegioStaR7__5febbfe6f6bc__overall_rate_anchored__r03",
+  "model_id": "google/gemma-3-12b-it",
+  "model_label": "Gemma 3 12B",
+  "persona_id": "reise__RegioStaR7__5febbfe6f6bc",
+  "feature": "RegioStaR7",
+  "arm": "overall_rate_anchored",
+  "replicate": 3,
+  "request_sha256": "6bc9f9a2e51bffa63661178df274b28c69d37fd9a87b0b03acd93b6580f402f2",
+  "started_utc": "2026-11-24T21:43:00.858843+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:43:02.337341+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 3.795e-05,
+  "response": {
+    "id": "gen-1795556580-ZcnLbrV7q6x0CBtYpXWl",
+    "object": "chat.completion",
+    "created": 1795556580,
+    "model": "google/gemma-3-12b-it",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.30,\n  \"long_distance_rail\": 0.08,\n  \"rationale\": \"Small-town/village residents likely rely on cars for airport access. Local PT is plausible for connecting to regional hubs. Long-distance rail is less likely due to airport convenience and limited connectivity.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 492,
+      "completion_tokens": 89,
+      "total_tokens": 581,
+      "cost": 3.795e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 3.795e-05,
+        "upstream_inference_prompt_cost": 2.46e-05,
+        "upstream_inference_completions_cost": 1.335e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "da46202decd9b4195e7e9760c1ee5654c42ddc445fcf806a001d5a558ba2a59b",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.08,
+    "rationale": "Small-town/village residents likely rely on cars for airport access. Local PT is plausible for connecting to regional hubs. Long-distance rail is less likely due to airport convenience and limited connectivity."
+  },
+  "finished_utc": "2026-11-24T21:43:02.337341+00:00",
+  "elapsed_seconds": 1.469
+}

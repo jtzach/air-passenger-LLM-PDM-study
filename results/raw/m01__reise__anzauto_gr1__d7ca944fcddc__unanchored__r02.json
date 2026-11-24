@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__anzauto_gr1__d7ca944fcddc__unanchored__r02",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__anzauto_gr1__d7ca944fcddc",
+  "feature": "anzauto_gr1",
+  "arm": "unanchored",
+  "replicate": 2,
+  "request_sha256": "9433d3bbc8f412a14cfbc4b0152b1138a819e17454699b2d58aab6beabc5e4cd",
+  "started_utc": "2026-11-24T21:48:04.787696+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:48:07.187320+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 1.772e-05,
+  "response": {
+    "id": "gen-1795556884-LS6T4ErJ4kx1zPTTDfVP",
+    "object": "chat.completion",
+    "created": 1795556884,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.3,\n  \"local_pt\": 0.2,\n  \"long_distance_rail\": 0.1,\n  \"rationale\": \"Given one car per household, and the overnight flight, it’s reasonable to assume some travelers combined air travel with car use for onward or return journeys. Local public transport is also plausible for airport access.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 413,
+      "completion_tokens": 88,
+      "total_tokens": 501,
+      "cost": 1.772e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.772e-05,
+        "upstream_inference_prompt_cost": 1.332e-05,
+        "upstream_inference_completions_cost": 4.4e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "231487c92a1da19922dc7cbcd547eaa74fe257137014c45b0acffe9d346deaa1",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.3,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.1,
+    "rationale": "Given one car per household, and the overnight flight, it’s reasonable to assume some travelers combined air travel with car use for onward or return journeys. Local public transport is also plausible for airport access."
+  },
+  "finished_utc": "2026-11-24T21:48:07.187320+00:00",
+  "elapsed_seconds": 2.406
+}

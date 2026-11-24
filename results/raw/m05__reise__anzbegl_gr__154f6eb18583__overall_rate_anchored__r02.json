@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzbegl_gr__154f6eb18583__overall_rate_anchored__r02",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzbegl_gr__154f6eb18583",
+  "feature": "anzbegl_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 2,
+  "request_sha256": "5dea4ea82ce7939ce407e7299f3d0e5e6c9c36d2b184c20d4ef05dd62038486b",
+  "started_utc": "2026-11-24T21:47:58.810612+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:48:00.171702+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001548,
+  "response": {
+    "id": "gen-1795556878-tOcWE0QHwFqQ4cej4zFc",
+    "object": "chat.completion",
+    "created": 1795556878,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.34,\n  \"local_pt\": 0.25,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"Solo travellers may be less likely to use a car due to no household companions, but more likely to use public/local or long-distance rail. Non-household companions or taxis remain possible but are not specified.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 450,
+      "completion_tokens": 81,
+      "total_tokens": 531,
+      "cost": 0.001548,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001548,
+        "upstream_inference_prompt_cost": 0.0009,
+        "upstream_inference_completions_cost": 0.000648
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "1f9f7a96e83edf8e546029d20fe3ae8925fecdd0c6089da289369e6cd938c528",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.34,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "Solo travellers may be less likely to use a car due to no household companions, but more likely to use public/local or long-distance rail. Non-household companions or taxis remain possible but are not specified."
+  },
+  "finished_utc": "2026-11-24T21:48:00.171702+00:00",
+  "elapsed_seconds": 1.359
+}

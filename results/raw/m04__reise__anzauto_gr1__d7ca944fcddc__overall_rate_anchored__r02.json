@@ -1,0 +1,76 @@
+{
+  "task_id": "m04__reise__anzauto_gr1__d7ca944fcddc__overall_rate_anchored__r02",
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "model_label": "Qwen3 235B A22B",
+  "persona_id": "reise__anzauto_gr1__d7ca944fcddc",
+  "feature": "anzauto_gr1",
+  "arm": "overall_rate_anchored",
+  "replicate": 2,
+  "request_sha256": "644aba7cb8c5e853a46501dfa06b05f17921b565b9aec31df1096bb3aaba79d2",
+  "started_utc": "2026-11-24T21:46:10.203991+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:46:20.393201+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 8.547e-05,
+  "response": {
+    "id": "gen-1795556771-k8KR1ATWvVBX7frqoAbe",
+    "object": "chat.completion",
+    "created": 1795556771,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Households with one car may rely on it for airport access, increasing car use probability. Public transport use may be lower due to car availability, especially for time-sensitive flights.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 473,
+      "completion_tokens": 78,
+      "total_tokens": 551,
+      "cost": 8.547e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.547e-05,
+        "upstream_inference_prompt_cost": 4.257e-05,
+        "upstream_inference_completions_cost": 4.29e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "c014b77d2a9288f057dd4e269d6bedaa0119d1c1f33b0b734792857938ca8de3",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Households with one car may rely on it for airport access, increasing car use probability. Public transport use may be lower due to car availability, especially for time-sensitive flights."
+  },
+  "finished_utc": "2026-11-24T21:46:20.393201+00:00",
+  "elapsed_seconds": 10.187
+}

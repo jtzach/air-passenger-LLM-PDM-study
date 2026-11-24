@@ -1,0 +1,76 @@
+{
+  "task_id": "m04__reise__anzbegl_gr__07f355b725cf__overall_rate_anchored__r03",
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "model_label": "Qwen3 235B A22B",
+  "persona_id": "reise__anzbegl_gr__07f355b725cf",
+  "feature": "anzbegl_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 3,
+  "request_sha256": "5eb147e14d82d5b733045f7467948a1815eea9e59099e10c4f2e664d70189027",
+  "started_utc": "2026-11-24T21:49:36.806654+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:49:42.678152+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 7.942e-05,
+  "response": {
+    "id": "gen-1795556976-w0T0o6LjG8zdXN1gToCO",
+    "object": "chat.completion",
+    "created": 1795556976,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Households with two companions may prefer car travel for group convenience and luggage, reducing reliance on public transport for flight access.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 473,
+      "completion_tokens": 67,
+      "total_tokens": 540,
+      "cost": 7.942e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 7.942e-05,
+        "upstream_inference_prompt_cost": 4.257e-05,
+        "upstream_inference_completions_cost": 3.685e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "e27676268efd18db056fe0bc5c8f6ef3a1daf56cfb733ed6a3b20895b5063e06",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Households with two companions may prefer car travel for group convenience and luggage, reducing reliance on public transport for flight access."
+  },
+  "finished_utc": "2026-11-24T21:49:42.678152+00:00",
+  "elapsed_seconds": 5.875
+}

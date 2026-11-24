@@ -1,0 +1,76 @@
+{
+  "task_id": "m04__reise__RegioStaR7__9f47524becab__overall_rate_anchored__r02",
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "model_label": "Qwen3 235B A22B",
+  "persona_id": "reise__RegioStaR7__9f47524becab",
+  "feature": "RegioStaR7",
+  "arm": "overall_rate_anchored",
+  "replicate": 2,
+  "request_sha256": "0d00db8df4c37ba20d97954cf17c9942f26f7fe95d72fad6155d139da0f71e3d",
+  "started_utc": "2026-11-24T21:44:00.609660+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:44:06.671913+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 8.262e-05,
+  "response": {
+    "id": "gen-1795556640-GpQfodEg6BaC0N4j4Nyu",
+    "object": "chat.completion",
+    "created": 1795556640,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Medium-sized urban residents may rely more on cars for airport access due to limited direct transit, reducing public transport and rail use compared to larger cities.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 478,
+      "completion_tokens": 72,
+      "total_tokens": 550,
+      "cost": 8.262e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.262e-05,
+        "upstream_inference_prompt_cost": 4.302e-05,
+        "upstream_inference_completions_cost": 3.96e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "719428a983e57aef0f92da48cd150860388b7ed5f12012fb7ecd27e7b403422e",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Medium-sized urban residents may rely more on cars for airport access due to limited direct transit, reducing public transport and rail use compared to larger cities."
+  },
+  "finished_utc": "2026-11-24T21:44:06.671913+00:00",
+  "elapsed_seconds": 6.062
+}

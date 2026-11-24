@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzauto_gr1__296e9849dc3d__unanchored__r01",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzauto_gr1__296e9849dc3d",
+  "feature": "anzauto_gr1",
+  "arm": "unanchored",
+  "replicate": 1,
+  "request_sha256": "36f2cd35cb4b003fa6b63142df35050f198a68323fb560eb430d204dbcc8d781",
+  "started_utc": "2026-11-24T21:43:02.358331+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:43:03.749299+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001454,
+  "response": {
+    "id": "gen-1795556582-W9Y5F0oq9d2c7hG8V2lz",
+    "object": "chat.completion",
+    "created": 1795556582,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.18,\n  \"local_pt\": 0.75,\n  \"long_distance_rail\": 0.35,\n  \"rationale\": \"Without a household car, travellers likely rely on public/local transport for airport access. Some use long-distance rail to reach distant airports, while a minority use cars via friends, taxis, or carsharing despite not owning one.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 391,
+      "completion_tokens": 84,
+      "total_tokens": 475,
+      "cost": 0.001454,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001454,
+        "upstream_inference_prompt_cost": 0.000782,
+        "upstream_inference_completions_cost": 0.000672
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "612dad78a3091bb82cbd95ebc8540d6ad4d745b68f6284d1a7a5fd2394a95d22",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.18,
+    "local_pt": 0.75,
+    "long_distance_rail": 0.35,
+    "rationale": "Without a household car, travellers likely rely on public/local transport for airport access. Some use long-distance rail to reach distant airports, while a minority use cars via friends, taxis, or carsharing despite not owning one."
+  },
+  "finished_utc": "2026-11-24T21:43:03.749299+00:00",
+  "elapsed_seconds": 1.391
+}

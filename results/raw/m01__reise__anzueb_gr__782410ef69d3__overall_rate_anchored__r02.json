@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__anzueb_gr__782410ef69d3__overall_rate_anchored__r02",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__anzueb_gr__782410ef69d3",
+  "feature": "anzueb_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 2,
+  "request_sha256": "85c8eaf1ad81d256815beb36eae22844ad225b0ff946282da21ac85dcd1daf56",
+  "started_utc": "2026-11-24T21:48:10.394864+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:48:13.126956+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.099e-05,
+  "response": {
+    "id": "gen-1795556890-2ACXMmBzRTz2lfCbFKhK",
+    "object": "chat.completion",
+    "created": 1795556890,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.25,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.08,\n  \"rationale\": \"Individuals undertaking longer overnight trips (8-14 nights) may combine air travel with ground transport for onward/return journeys, particularly local transport. Ground modes likely represent supplementary travel, not the primary means.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 491,
+      "completion_tokens": 91,
+      "total_tokens": 582,
+      "cost": 2.099e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.099e-05,
+        "upstream_inference_prompt_cost": 1.644e-05,
+        "upstream_inference_completions_cost": 4.55e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "fa16ab12e19d634cf8ca7dc3fe90cce1eeb90b3ec5d240e8e66ebe558be386e0",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.25,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.08,
+    "rationale": "Individuals undertaking longer overnight trips (8-14 nights) may combine air travel with ground transport for onward/return journeys, particularly local transport. Ground modes likely represent supplementary travel, not the primary means."
+  },
+  "finished_utc": "2026-11-24T21:48:13.126956+00:00",
+  "elapsed_seconds": 2.735
+}

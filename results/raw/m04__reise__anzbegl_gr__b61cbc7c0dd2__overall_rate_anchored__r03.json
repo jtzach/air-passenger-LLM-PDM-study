@@ -1,0 +1,76 @@
+{
+  "task_id": "m04__reise__anzbegl_gr__b61cbc7c0dd2__overall_rate_anchored__r03",
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "model_label": "Qwen3 235B A22B",
+  "persona_id": "reise__anzbegl_gr__b61cbc7c0dd2",
+  "feature": "anzbegl_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 3,
+  "request_sha256": "3b340899ee8e53bfc20e0498e5216f5608fe0cc4ff74ea742acc47c39a491aa3",
+  "started_utc": "2026-11-24T21:45:26.604346+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:45:33.277638+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 8.162e-05,
+  "response": {
+    "id": "gen-1795556726-UtVPfJ9spFPkCZkOYpuP",
+    "object": "chat.completion",
+    "created": 1795556726,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Travellers with one companion may prefer car for flexibility and shared costs, reducing reliance on public transport modes compared to solo or larger groups.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 473,
+      "completion_tokens": 71,
+      "total_tokens": 544,
+      "cost": 8.162e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.162e-05,
+        "upstream_inference_prompt_cost": 4.257e-05,
+        "upstream_inference_completions_cost": 3.905e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "f8b96e1b77790cd182c45bcc911dd74d08ea52798d6369568b90f6c3b9f4d1cd",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Travellers with one companion may prefer car for flexibility and shared costs, reducing reliance on public transport modes compared to solo or larger groups."
+  },
+  "finished_utc": "2026-11-24T21:45:33.277638+00:00",
+  "elapsed_seconds": 6.688
+}

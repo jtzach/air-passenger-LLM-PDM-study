@@ -1,0 +1,76 @@
+{
+  "task_id": "m03__reise__anzbegl_gr__07f355b725cf__overall_rate_anchored__r01",
+  "model_id": "openai/gpt-4.1-mini",
+  "model_label": "GPT-4.1 mini",
+  "persona_id": "reise__anzbegl_gr__07f355b725cf",
+  "feature": "anzbegl_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 1,
+  "request_sha256": "69cdce20023494ac5a4656cb5eed357c24bb3579d88709b36e5101fe92052942",
+  "started_utc": "2026-11-24T21:42:57.883216+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:42:59.603769+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002988,
+  "response": {
+    "id": "gen-1795556578-OTyyL5PX8d7f60gyNBzp",
+    "object": "chat.completion",
+    "created": 1795556578,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.25,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Two companions suggest shared car access, raising car use likelihood; local PT slightly above average for airport access; long-distance rail less likely given aircraft main mode and household travel.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 451,
+      "completion_tokens": 74,
+      "total_tokens": 525,
+      "cost": 0.0002988,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002988,
+        "upstream_inference_prompt_cost": 0.0001804,
+        "upstream_inference_completions_cost": 0.0001184
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "b819561a32bb3cc289281657bd04f61c98cc1775b6e83f3f0e4a2c3b36cbd903",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.1,
+    "rationale": "Two companions suggest shared car access, raising car use likelihood; local PT slightly above average for airport access; long-distance rail less likely given aircraft main mode and household travel."
+  },
+  "finished_utc": "2026-11-24T21:42:59.603769+00:00",
+  "elapsed_seconds": 1.718
+}

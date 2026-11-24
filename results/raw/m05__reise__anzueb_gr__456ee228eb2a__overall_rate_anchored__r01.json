@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzueb_gr__456ee228eb2a__overall_rate_anchored__r01",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzueb_gr__456ee228eb2a",
+  "feature": "anzueb_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 1,
+  "request_sha256": "8047e5ea047bfdc71135bf0c8cdcc51b52c42368e17b2111724c19296894e157",
+  "started_utc": "2026-11-24T21:45:06.840616+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:45:08.447323+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001588,
+  "response": {
+    "id": "gen-1795556706-7HZ3FVDFPleY65jk2rAw",
+    "object": "chat.completion",
+    "created": 1795556706,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.36,\n  \"local_pt\": 0.23,\n  \"long_distance_rail\": 0.13,\n  \"rationale\": \"Journeys with 4-5 nights suggest longer, possibly less urban trips, slightly raising local PT and long-distance rail use for airport access, while car use remains near average due to airport-parking cost for longer stays.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 454,
+      "completion_tokens": 85,
+      "total_tokens": 539,
+      "cost": 0.001588,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001588,
+        "upstream_inference_prompt_cost": 0.000908,
+        "upstream_inference_completions_cost": 0.00068
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "9a96aa5b05e35911e118d77a1e334e1d6bc0c947567326db9d3be3ce8ca296a6",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.36,
+    "local_pt": 0.23,
+    "long_distance_rail": 0.13,
+    "rationale": "Journeys with 4-5 nights suggest longer, possibly less urban trips, slightly raising local PT and long-distance rail use for airport access, while car use remains near average due to airport-parking cost for longer stays."
+  },
+  "finished_utc": "2026-11-24T21:45:08.447323+00:00",
+  "elapsed_seconds": 1.594
+}

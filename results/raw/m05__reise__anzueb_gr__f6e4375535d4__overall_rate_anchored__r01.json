@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzueb_gr__f6e4375535d4__overall_rate_anchored__r01",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzueb_gr__f6e4375535d4",
+  "feature": "anzueb_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 1,
+  "request_sha256": "a98ec8a9bd0fb37ed859919135ce068a7046efe5bc06bff0b4d0a30d9d55df43",
+  "started_utc": "2026-11-24T21:50:31.862442+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:50:34.470844+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001588,
+  "response": {
+    "id": "gen-1795557032-qkqLRhGePVVTbSWNx7KN",
+    "object": "chat.completion",
+    "created": 1795557032,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.39,\n  \"local_pt\": 0.24,\n  \"long_distance_rail\": 0.14,\n  \"rationale\": \"Journeys with 6-7 nights likely skew longer or holiday-oriented, increasing car/rail use for airport access and flexibility; local PT may rise slightly for urban airport access. All probabilities modestly above population-level rates.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 454,
+      "completion_tokens": 85,
+      "total_tokens": 539,
+      "cost": 0.001588,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001588,
+        "upstream_inference_prompt_cost": 0.000908,
+        "upstream_inference_completions_cost": 0.00068
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "61caae6e2df4bbcbd168d30006f9ec51713fa074bed41c42000e650b90bfc036",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.39,
+    "local_pt": 0.24,
+    "long_distance_rail": 0.14,
+    "rationale": "Journeys with 6-7 nights likely skew longer or holiday-oriented, increasing car/rail use for airport access and flexibility; local PT may rise slightly for urban airport access. All probabilities modestly above population-level rates."
+  },
+  "finished_utc": "2026-11-24T21:50:34.470844+00:00",
+  "elapsed_seconds": 2.609
+}

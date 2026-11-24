@@ -1,0 +1,76 @@
+{
+  "task_id": "m03__reise__anzbegl_gr__b61cbc7c0dd2__unanchored__r01",
+  "model_id": "openai/gpt-4.1-mini",
+  "model_label": "GPT-4.1 mini",
+  "persona_id": "reise__anzbegl_gr__b61cbc7c0dd2",
+  "feature": "anzbegl_gr",
+  "arm": "unanchored",
+  "replicate": 1,
+  "request_sha256": "c38b40e5815e5897935978a68bab0413b0c8fdea3ffa08543475c8588a1aae4a",
+  "started_utc": "2026-11-24T21:47:13.429202+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:47:14.953144+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002768,
+  "response": {
+    "id": "gen-1795556833-WmegLDtqVuZqBYtJ5Zrd",
+    "object": "chat.completion",
+    "created": 1795556833,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.75,\n  \"long_distance_rail\": 0.20,\n  \"rationale\": \"Moderate car use likely for airport access with one companion. High local public transport use probable for urban connections. Long-distance rail less common due to the main mode being aircraft.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 392,
+      "completion_tokens": 75,
+      "total_tokens": 467,
+      "cost": 0.0002768,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002768,
+        "upstream_inference_prompt_cost": 0.0001568,
+        "upstream_inference_completions_cost": 0.00012
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "b76729751db625b69119adfce4b05639def01ac44b213a58dd44c3c3451a7917",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.75,
+    "long_distance_rail": 0.2,
+    "rationale": "Moderate car use likely for airport access with one companion. High local public transport use probable for urban connections. Long-distance rail less common due to the main mode being aircraft."
+  },
+  "finished_utc": "2026-11-24T21:47:14.953144+00:00",
+  "elapsed_seconds": 1.532
+}

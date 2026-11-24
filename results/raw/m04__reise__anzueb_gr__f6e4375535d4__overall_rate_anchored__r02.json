@@ -1,0 +1,76 @@
+{
+  "task_id": "m04__reise__anzueb_gr__f6e4375535d4__overall_rate_anchored__r02",
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "model_label": "Qwen3 235B A22B",
+  "persona_id": "reise__anzueb_gr__f6e4375535d4",
+  "feature": "anzueb_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 2,
+  "request_sha256": "713e69837eee51bcf2c9d4254006cc002d048695212830cd5c28dbe85952c8ae",
+  "started_utc": "2026-11-24T21:43:21.765145+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:43:31.213575+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 8.409e-05,
+  "response": {
+    "id": "gen-1795556602-57it2FhjSfOPfbE92DDc",
+    "object": "chat.completion",
+    "created": 1795556602,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"Longer stays may favor car use for flexibility at destination, reducing local public transport reliance. Slight increase in rail for access due to convenience over long distances.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 476,
+      "completion_tokens": 75,
+      "total_tokens": 551,
+      "cost": 8.409e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.409e-05,
+        "upstream_inference_prompt_cost": 4.284e-05,
+        "upstream_inference_completions_cost": 4.125e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "33c6110f5963424d8e59b7033b82360d35db336e24cc27ad4cf90e0889956b86",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.15,
+    "rationale": "Longer stays may favor car use for flexibility at destination, reducing local public transport reliance. Slight increase in rail for access due to convenience over long distances."
+  },
+  "finished_utc": "2026-11-24T21:43:31.213575+00:00",
+  "elapsed_seconds": 9.438
+}

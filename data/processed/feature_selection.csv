@@ -1,0 +1,15 @@
+feature_id,feature_label_en,family,eligible_strata,weighted_coverage,eligible_weighted_base,eligible_unweighted_n,score_mean_normalized_ig,score_mean_ig_bits,feature_eligible,rank,rank_within_eligible_family,selected
+anzauto_gr1,Number of household cars,traveller,5,1.0,9069,9475,0.034572152291990864,0.028904689044781457,True,1,1,True
+RegioStaR7,Residential spatial type,traveller,7,1.0,9069,9475,0.0240873714623086,0.020022339323452914,True,2,2,True
+alter_gr4,Age group,traveller,8,0.995809901863491,9031,9378,0.012966406218934133,0.009345474823824973,True,3,3,False
+bildung,Educational attainment,traveller,6,0.9996692027786966,9066,9468,0.009820578753541287,0.00686996098854024,True,4,4,False
+hhgr_gr,Household size,traveller,5,1.0001102657404344,9070,9475,0.008055788075750038,0.006187622592911057,True,5,5,False
+hheink_gr2,Monthly net household income,traveller,7,0.968905061197486,8787,9370,0.007275644376707811,0.005532603165537646,True,6,6,False
+anzbegl_gr,Number of household companions,journey,4,0.9249090307641415,8388,8800,0.006875455510811704,0.004850411606498388,True,7,1,True
+anzueb_gr,Number of nights away,journey,7,0.9600838019627301,8707,9335,0.00649953334187947,0.004281555160045765,True,8,2,True
+R_ZWECK,Main journey purpose,journey,4,0.9944867129782776,9019,9417,0.004810744648538075,0.003020319284174122,True,9,3,False
+entf_gr,One-way journey distance,journey,5,0.9575476899327379,8684,9182,0.0032564452194335596,0.002431018553617492,True,10,4,False
+P_FS_PKW,Car driving licence held,traveller,2,0.9823574815304885,8909,9340,0.002850983029314816,0.0020646514149008275,True,11,7,False
+R_ZIEL,Journey destination region,journey,3,0.9998897342595655,9068,9471,0.0011891026744119924,0.0007466853039231891,True,12,5,False
+HP_SEX,Gender category,traveller,2,0.9926121953908921,9002,9455,0.0009918556365129496,0.000721091453605586,True,13,8,False
+erwerb,Employment status,traveller,2,1.0001102657404344,9070,9475,0.0004383701599047334,0.00028465823073035396,True,14,9,False

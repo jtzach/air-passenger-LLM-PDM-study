@@ -1,0 +1,18 @@
+{
+  "dataset": "reise",
+  "unweighted_n": 9475,
+  "weighted_base": 9069,
+  "observed": {
+    "car": 0.3767688834214988,
+    "local_pt": 0.21622982947913982,
+    "long_distance_rail": 0.12408830346174254
+  },
+  "provenance": [
+    {
+      "source_file": "data/raw/mit/reise_modes_by_main_mode____all__.json",
+      "sha256": "c399c6e0334af31061db4d9054964003bac5c1cdc95cce0c432c262c5bdfbc65",
+      "table": 1
+    }
+  ],
+  "local_pt_note": null
+}

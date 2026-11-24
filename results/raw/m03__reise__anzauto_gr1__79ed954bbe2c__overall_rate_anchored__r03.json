@@ -1,0 +1,76 @@
+{
+  "task_id": "m03__reise__anzauto_gr1__79ed954bbe2c__overall_rate_anchored__r03",
+  "model_id": "openai/gpt-4.1-mini",
+  "model_label": "GPT-4.1 mini",
+  "persona_id": "reise__anzauto_gr1__79ed954bbe2c",
+  "feature": "anzauto_gr1",
+  "arm": "overall_rate_anchored",
+  "replicate": 3,
+  "request_sha256": "581925e9049e858b80576eddba76222298acd1cb2b9c6dfc58e8996e912dc2c7",
+  "started_utc": "2026-11-24T21:51:34.296349+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:51:36.497046+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0003012,
+  "response": {
+    "id": "gen-1795557095-fNIwUaUAcDcOIiwLhw6l",
+    "object": "chat.completion",
+    "created": 1795557095,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.25,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Large car ownership likely increases car use for airport access; local public transport use is slightly above average for urban connections; long-distance rail less common due to preference for air travel.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 453,
+      "completion_tokens": 75,
+      "total_tokens": 528,
+      "cost": 0.0003012,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003012,
+        "upstream_inference_prompt_cost": 0.0001812,
+        "upstream_inference_completions_cost": 0.00012
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "f5920aee7deea10ebca618455f8d6f6e07b406654141a230df0fe05b993e51a0",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.1,
+    "rationale": "Large car ownership likely increases car use for airport access; local public transport use is slightly above average for urban connections; long-distance rail less common due to preference for air travel."
+  },
+  "finished_utc": "2026-11-24T21:51:36.497046+00:00",
+  "elapsed_seconds": 2.204
+}

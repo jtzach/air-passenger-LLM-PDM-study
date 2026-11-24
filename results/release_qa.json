@@ -1,0 +1,111 @@
+{
+  "checked_utc": "2026-11-24T22:13:18.340437+00:00",
+  "status": "PASS",
+  "secret_scan": {
+    "text_files_scanned": 1563,
+    "text_archive_members_scanned": 477,
+    "credential_pattern_hits": [],
+    "unredacted_account_value_hits": [],
+    "redacted_account_values_seen": 319,
+    "excluded_generated_paths": [
+      ".git",
+      "node_modules",
+      "outputs",
+      "build",
+      "__pycache__",
+      "*.inspect.ndjson"
+    ]
+  },
+  "experiment_integrity": {
+    "planned_tasks": 720,
+    "terminal_records": 720,
+    "request_files": 720,
+    "config_hash_matches_plan": true,
+    "persona_hash_matches_plan": true,
+    "status_counts": {
+      "valid": 587,
+      "invalid_output": 35,
+      "failed": 98
+    },
+    "pair_or_hash_errors": []
+  },
+  "data_integrity": {
+    "cohort_rows": 258,
+    "unique_source_file_hash_pairs": 15,
+    "source_hash_errors": [],
+    "primary_file_references_missing": []
+  },
+  "pdf_checks": [
+    {
+      "file": "manuscript/main.pdf",
+      "pages": 5,
+      "scientific_placeholder_markers": [],
+      "sha256": "02cb0915be6aa1b108b16cb024633754d0746f41e78a6e92b5d85e62d32a2596"
+    },
+    {
+      "file": "manuscript/supplement.pdf",
+      "pages": 5,
+      "scientific_placeholder_markers": [],
+      "sha256": "6102b13a62b8a98ffb6f94326a6cb75650a9b1b84ba0da7749f2b2a59ff31c86"
+    }
+  ],
+  "template_attribution": {
+    "author": "David Levinson",
+    "license": "CC BY 4.0",
+    "gallery_url": "https://www.overleaf.com/latex/templates/findings-template/bmhtkwbzvvcx",
+    "main_source_attribution_present": true,
+    "original_template_hash_valid": true
+  },
+  "git_candidates": {
+    "tracked": 75,
+    "untracked_not_ignored": 1504,
+    "inappropriate_candidates": []
+  },
+  "issues": [],
+  "warnings": [],
+  "archive_status": "Rebuilt after excluding token-bearing source HTML from distribution and documenting non-distributed retrieval evidence. Final ZIP SHA-256 and per-member hashes are in the external release manifest.",
+  "archive_policy": {
+    "filename": "air_passenger_llm_pdm_reproducibility_20261124.zip",
+    "included": [
+      "public raw and processed data",
+      "configuration",
+      "source scripts",
+      "terminal results and requests",
+      "documentation and continuation notes",
+      "manuscript TeX/BibTeX and template attribution",
+      "vector PDF/SVG figures and manifests",
+      "archival Excel provenance ZIP",
+      "root environment example and requirements"
+    ],
+    "excluded": [
+      "XLSX workbooks (delivered separately)",
+      "paper PDFs (delivered separately)",
+      "figure PNGs",
+      "template HTML and preview PDF",
+      "build products and previews",
+      "credentials and local environment files"
+    ]
+  },
+  "security_followup": {
+    "trigger": "GitHub create_tree batch 003 returned 422: Secret detected in content.",
+    "identified_non_distributed_source": "manuscript/template_original/findings_template_gallery.html",
+    "field_types_without_values": [
+      "ol-csrfToken HTML meta content",
+      "X-Amz-Credential in signed S3 asset URLs",
+      "X-Amz-Signature in signed S3 asset URLs"
+    ],
+    "aws_access_key_identifier_occurrences": 3,
+    "csrf_meta_occurrences": 1,
+    "remediation": "Exclude both raw template/gallery HTML pages from publication and add explicit ignore entries; retain local files and original retrieval hashes. Actual template TeX and preview PDF remain unchanged.",
+    "excluded_paths": [
+      "manuscript/template_original/author_guidelines.html",
+      "manuscript/template_original/findings_template_gallery.html"
+    ],
+    "local_originals_preserved": true,
+    "no_secret_values_recorded": true,
+    "initial_scan_limit": "The initial release scan covered OpenRouter, GitHub PAT and private-key patterns; the follow-up additionally checked AWS access-key identifiers, Google keys, OpenAI-like keys, classic GitHub tokens, Slack tokens and JWTs.",
+    "expanded_prior_zip_member_count_including_nested_archive": 2047,
+    "expanded_prior_zip_credential_hits": 0,
+    "template_zip_members_clean": true
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__RegioStaR7__72d39163efb4__overall_rate_anchored__r01",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__RegioStaR7__72d39163efb4",
+  "feature": "RegioStaR7",
+  "arm": "overall_rate_anchored",
+  "replicate": 1,
+  "request_sha256": "c50cd17432e0ee203d25d8f453a3e3ef54a907a0730d9025f5d0f75651de51ee",
+  "started_utc": "2026-11-24T21:50:43.925814+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:50:45.616971+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.373e-05,
+  "response": {
+    "id": "gen-1795557043-CzfQdTReNnTJxlQSUwaK",
+    "object": "chat.completion",
+    "created": 1795557043,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.45, \"local_pt\": 0.28, \"long_distance_rail\": 0.11, \"rationale\": \"Rural residents may rely more on cars for shorter trips within the region, supplementing air travel. Local public transport use would likely be lower, and long-distance rail less common, compared to the general population.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 492,
+      "completion_tokens": 81,
+      "total_tokens": 573,
+      "cost": 2.373e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.373e-05,
+        "upstream_inference_prompt_cost": 1.968e-05,
+        "upstream_inference_completions_cost": 4.05e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "10e293db02240faa9f40792e994def4f767d4f91d1c6a357fde76e4be312ec49",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.28,
+    "long_distance_rail": 0.11,
+    "rationale": "Rural residents may rely more on cars for shorter trips within the region, supplementing air travel. Local public transport use would likely be lower, and long-distance rail less common, compared to the general population."
+  },
+  "finished_utc": "2026-11-24T21:50:45.616971+00:00",
+  "elapsed_seconds": 1.688
+}

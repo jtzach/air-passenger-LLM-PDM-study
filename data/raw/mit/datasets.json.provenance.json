@@ -1,0 +1,13 @@
+{
+  "url": "https://mobilitaet-in-tabellen-2023.bast.de/api/datasets",
+  "method": "GET",
+  "retrieved_utc": "2026-11-24T21:37:26.827462+00:00",
+  "bytes": 508,
+  "sha256": "ac935b460db4ef4849d27e3fed2a24134d6d465dc2bd9f2d308e6a04be97abb3",
+  "request_sha256": null,
+  "request": null,
+  "response_headers": {
+    "Content-Type": "application/json",
+    "Date": "Tue, 24 Nov 2026 21:37:26 GMT"
+  }
+}

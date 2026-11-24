@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzbegl_gr__18864b086b3b__unanchored__r03",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzbegl_gr__18864b086b3b",
+  "feature": "anzbegl_gr",
+  "arm": "unanchored",
+  "replicate": 3,
+  "request_sha256": "9a7fdcfaeaa2a9dd239051e9749c76a3697503470aa0cf837422d91b7bb6f025",
+  "started_utc": "2026-11-24T21:43:55.808404+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:43:57.213863+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001464,
+  "response": {
+    "id": "gen-1795556635-yZ4teziy6baGjCZJW9Qz",
+    "object": "chat.completion",
+    "created": 1795556635,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.75,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.18,\n  \"rationale\": \"Larger groups (3 companions) are likely to coordinate travel, making car use for airport access cost-effective and convenient, reducing reliance on public or rail transport, though some still use public modes depending on location or airport access.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 392,
+      "completion_tokens": 85,
+      "total_tokens": 477,
+      "cost": 0.001464,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001464,
+        "upstream_inference_prompt_cost": 0.000784,
+        "upstream_inference_completions_cost": 0.00068
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "6869b8661bee5178ff6f7b4effa3dfa68d7214e864023ba540d44f8b4f821114",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.75,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.18,
+    "rationale": "Larger groups (3 companions) are likely to coordinate travel, making car use for airport access cost-effective and convenient, reducing reliance on public or rail transport, though some still use public modes depending on location or airport access."
+  },
+  "finished_utc": "2026-11-24T21:43:57.213863+00:00",
+  "elapsed_seconds": 1.407
+}

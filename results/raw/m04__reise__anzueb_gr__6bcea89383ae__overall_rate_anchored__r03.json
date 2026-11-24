@@ -1,0 +1,76 @@
+{
+  "task_id": "m04__reise__anzueb_gr__6bcea89383ae__overall_rate_anchored__r03",
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "model_label": "Qwen3 235B A22B",
+  "persona_id": "reise__anzueb_gr__6bcea89383ae",
+  "feature": "anzueb_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 3,
+  "request_sha256": "fb01cdb265bd2cc52a2b7c1a28aa2b9f62bfb599dda0bfa22241b1f70ff3098b",
+  "started_utc": "2026-11-24T21:49:27.684719+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:49:32.794393+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 8.116e-05,
+  "response": {
+    "id": "gen-1795556967-NDg63CmTx3xtb0zLpa7s",
+    "object": "chat.completion",
+    "created": 1795556967,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Shorter stays may favor car use for flexibility upon arrival; reduced local PT and rail use due to time constraints and proximity to airports.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 474,
+      "completion_tokens": 70,
+      "total_tokens": 544,
+      "cost": 8.116e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.116e-05,
+        "upstream_inference_prompt_cost": 4.266e-05,
+        "upstream_inference_completions_cost": 3.85e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "c35e1dcbb559c24b9d9d956a4c72fa613aeeeb80535acc38bd91a8c3bc04ce61",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Shorter stays may favor car use for flexibility upon arrival; reduced local PT and rail use due to time constraints and proximity to airports."
+  },
+  "finished_utc": "2026-11-24T21:49:32.794393+00:00",
+  "elapsed_seconds": 5.109
+}

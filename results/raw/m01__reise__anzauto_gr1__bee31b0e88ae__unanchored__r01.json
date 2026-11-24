@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__anzauto_gr1__bee31b0e88ae__unanchored__r01",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__anzauto_gr1__bee31b0e88ae",
+  "feature": "anzauto_gr1",
+  "arm": "unanchored",
+  "replicate": 1,
+  "request_sha256": "c5c1e19ed6b5ff71f45d432e1da54db84d1b0609cb763e3b4e1f91314f1674ff",
+  "started_utc": "2026-11-24T21:48:42.472049+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:48:44.341374+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 1.792e-05,
+  "response": {
+    "id": "gen-1795556922-IFiNsksCV3XqWjlWSsTT",
+    "object": "chat.completion",
+    "created": 1795556922,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.3,\n  \"local_pt\": 0.2,\n  \"long_distance_rail\": 0.1,\n  \"rationale\": \"Given three cars in the household, a significant portion likely used a car for part of the journey, potentially for transfers or onward travel. Local public transport and long-distance rail are plausible for accessing airports or connecting to destinations.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 413,
+      "completion_tokens": 92,
+      "total_tokens": 505,
+      "cost": 1.792e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.792e-05,
+        "upstream_inference_prompt_cost": 1.332e-05,
+        "upstream_inference_completions_cost": 4.6e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "906d8ac558810c11c5620117ac0d1cf63d21ada61c04bf7d9c58663b29094622",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.3,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.1,
+    "rationale": "Given three cars in the household, a significant portion likely used a car for part of the journey, potentially for transfers or onward travel. Local public transport and long-distance rail are plausible for accessing airports or connecting to destinations."
+  },
+  "finished_utc": "2026-11-24T21:48:44.341374+00:00",
+  "elapsed_seconds": 1.875
+}

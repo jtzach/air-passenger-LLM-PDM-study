@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzueb_gr__fd46cf332878__unanchored__r03",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzueb_gr__fd46cf332878",
+  "feature": "anzueb_gr",
+  "arm": "unanchored",
+  "replicate": 3,
+  "request_sha256": "21ed7d50d28b6b2c011d6f3884c0d0c22764c5093e271f945737d2d69a677ecc",
+  "started_utc": "2026-11-24T21:48:23.472676+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:48:24.819909+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001454,
+  "response": {
+    "id": "gen-1795556903-QCwpMNWRcUbGdsk5nzlF",
+    "object": "chat.completion",
+    "created": 1795556903,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.42,\n  \"local_pt\": 0.38,\n  \"long_distance_rail\": 0.27,\n  \"rationale\": \"Long trips (15+ nights) likely include airport rail links and some car access, but less frequent local PT. Long-distance rail is used, but car remains common for flexibility, especially with luggage or group travel.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 395,
+      "completion_tokens": 83,
+      "total_tokens": 478,
+      "cost": 0.001454,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001454,
+        "upstream_inference_prompt_cost": 0.00079,
+        "upstream_inference_completions_cost": 0.000664
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "4bcdb63c415a0e6cda7edb08454f39f03c4aa5ab0ae8cab912ac650156a705cc",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.42,
+    "local_pt": 0.38,
+    "long_distance_rail": 0.27,
+    "rationale": "Long trips (15+ nights) likely include airport rail links and some car access, but less frequent local PT. Long-distance rail is used, but car remains common for flexibility, especially with luggage or group travel."
+  },
+  "finished_utc": "2026-11-24T21:48:24.819909+00:00",
+  "elapsed_seconds": 1.344
+}

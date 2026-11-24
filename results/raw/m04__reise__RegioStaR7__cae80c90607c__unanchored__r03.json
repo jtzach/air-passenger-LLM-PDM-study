@@ -1,0 +1,76 @@
+{
+  "task_id": "m04__reise__RegioStaR7__cae80c90607c__unanchored__r03",
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "model_label": "Qwen3 235B A22B",
+  "persona_id": "reise__RegioStaR7__cae80c90607c",
+  "feature": "RegioStaR7",
+  "arm": "unanchored",
+  "replicate": 3,
+  "request_sha256": "2fe2640f2769cd02705475c097bbc1e41e802a0366f9015f86bb00e2b53a1b2d",
+  "started_utc": "2026-11-24T21:49:17.306295+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:49:23.698153+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 8.448e-05,
+  "response": {
+    "id": "gen-1795556957-Mnk1hCfNu77xm9NWMDVl",
+    "object": "chat.completion",
+    "created": 1795556957,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.75,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.2,\n  \"rationale\": \"In rural and medium-sized town areas, car use is likely for airport access due to limited public transport. Local public transport may supplement car trips. Long-distance rail competes less directly, reducing its likelihood as a connecting mode.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 407,
+      "completion_tokens": 87,
+      "total_tokens": 494,
+      "cost": 8.448e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.448e-05,
+        "upstream_inference_prompt_cost": 3.663e-05,
+        "upstream_inference_completions_cost": 4.785e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "38ce2413e0f6c740bb480f7de5642b56da5987e1c643d180d70f7c97a358b883",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.75,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.2,
+    "rationale": "In rural and medium-sized town areas, car use is likely for airport access due to limited public transport. Local public transport may supplement car trips. Long-distance rail competes less directly, reducing its likelihood as a connecting mode."
+  },
+  "finished_utc": "2026-11-24T21:49:23.698153+00:00",
+  "elapsed_seconds": 6.391
+}

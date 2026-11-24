@@ -1,0 +1,785 @@
+[
+  {
+    "feature_id": "anzauto_gr1",
+    "feature_label_en": "Number of household cars",
+    "family": "traveller",
+    "eligible_strata": 5,
+    "weighted_coverage": 1.0,
+    "eligible_weighted_base": 9069,
+    "eligible_unweighted_n": 9475,
+    "score_mean_normalized_ig": 0.034572152291990864,
+    "score_mean_ig_bits": 0.028904689044781457,
+    "feature_eligible": true,
+    "mode_scores": {
+      "car": {
+        "pooled_share_eligible": 0.37678730403012406,
+        "entropy_bits": 0.9557413589870096,
+        "information_gain_bits": 0.045312470756665224,
+        "normalized_information_gain": 0.04741080871993644
+      },
+      "local_pt": {
+        "pooled_share_eligible": 0.21621541272796177,
+        "entropy_bits": 0.7531964982008468,
+        "information_gain_bits": 0.03883275907328754,
+        "normalized_information_gain": 0.05155727511485645
+      },
+      "long_distance_rail": {
+        "pooled_share_eligible": 0.12408605447703609,
+        "entropy_bits": 0.540993153257691,
+        "information_gain_bits": 0.0025688373043916135,
+        "normalized_information_gain": 0.004748373041179692
+      }
+    },
+    "eligible_stratum_ids": [
+      "anzauto_gr1__296e9849dc3d",
+      "anzauto_gr1__d7ca944fcddc",
+      "anzauto_gr1__faec8c191aa2",
+      "anzauto_gr1__bee31b0e88ae",
+      "anzauto_gr1__79ed954bbe2c"
+    ],
+    "excluded_strata": [],
+    "rank": 1,
+    "rank_within_eligible_family": 1,
+    "selected": true
+  },
+  {
+    "feature_id": "RegioStaR7",
+    "feature_label_en": "Residential spatial type",
+    "family": "traveller",
+    "eligible_strata": 7,
+    "weighted_coverage": 1.0,
+    "eligible_weighted_base": 9069,
+    "eligible_unweighted_n": 9475,
+    "score_mean_normalized_ig": 0.0240873714623086,
+    "score_mean_ig_bits": 0.020022339323452914,
+    "feature_eligible": true,
+    "mode_scores": {
+      "car": {
+        "pooled_share_eligible": 0.37677970284653584,
+        "entropy_bits": 0.9557358405458098,
+        "information_gain_bits": 0.038866913761114064,
+        "normalized_information_gain": 0.04066700453434666
+      },
+      "local_pt": {
+        "pooled_share_eligible": 0.21623201464444794,
+        "entropy_bits": 0.7532273431865282,
+        "information_gain_bits": 0.014575900008738873,
+        "normalized_information_gain": 0.019351262458257995
+      },
+      "long_distance_rail": {
+        "pooled_share_eligible": 0.12409667412731483,
+        "entropy_bits": 0.5410230940625895,
+        "information_gain_bits": 0.006624204200505801,
+        "normalized_information_gain": 0.012243847394321146
+      }
+    },
+    "eligible_stratum_ids": [
+      "RegioStaR7__7b0e1c4f102a",
+      "RegioStaR7__7cdab1586e04",
+      "RegioStaR7__9f47524becab",
+      "RegioStaR7__5febbfe6f6bc",
+      "RegioStaR7__d3321efbbd2e",
+      "RegioStaR7__cae80c90607c",
+      "RegioStaR7__72d39163efb4"
+    ],
+    "excluded_strata": [],
+    "rank": 2,
+    "rank_within_eligible_family": 2,
+    "selected": true
+  },
+  {
+    "feature_id": "alter_gr4",
+    "feature_label_en": "Age group",
+    "family": "traveller",
+    "eligible_strata": 8,
+    "weighted_coverage": 0.995809901863491,
+    "eligible_weighted_base": 9031,
+    "eligible_unweighted_n": 9378,
+    "score_mean_normalized_ig": 0.012966406218934133,
+    "score_mean_ig_bits": 0.009345474823824973,
+    "feature_eligible": true,
+    "mode_scores": {
+      "car": {
+        "pooled_share_eligible": 0.3774439284437674,
+        "entropy_bits": 0.9562167272383435,
+        "information_gain_bits": 0.004550583860605917,
+        "normalized_information_gain": 0.004758946095566108
+      },
+      "local_pt": {
+        "pooled_share_eligible": 0.21642862897755102,
+        "entropy_bits": 0.7535924579356481,
+        "information_gain_bits": 0.01778105340675118,
+        "normalized_information_gain": 0.02359505223215698
+      },
+      "long_distance_rail": {
+        "pooled_share_eligible": 0.12408252986756245,
+        "entropy_bits": 0.5409832157215725,
+        "information_gain_bits": 0.005704787204117823,
+        "normalized_information_gain": 0.010545220329079308
+      }
+    },
+    "eligible_stratum_ids": [
+      "alter_gr4__f41067db8242",
+      "alter_gr4__f20461f0d358",
+      "alter_gr4__66dab2b8a39b",
+      "alter_gr4__849d9ad59d6d",
+      "alter_gr4__c90aba671c34",
+      "alter_gr4__ead676c3ad34",
+      "alter_gr4__3fb3c31840c1",
+      "alter_gr4__39161a1a724a"
+    ],
+    "excluded_strata": [
+      {
+        "stratum_id": "alter_gr4__e8777e89b9e1",
+        "label": "80 years or older",
+        "reasons": [
+          "unweighted_n_below_100"
+        ],
+        "unweighted_n": 97,
+        "weighted_base": 38
+      }
+    ],
+    "rank": 3,
+    "rank_within_eligible_family": 3,
+    "selected": false
+  },
+  {
+    "feature_id": "bildung",
+    "feature_label_en": "Educational attainment",
+    "family": "traveller",
+    "eligible_strata": 6,
+    "weighted_coverage": 0.9996692027786966,
+    "eligible_weighted_base": 9066,
+    "eligible_unweighted_n": 9468,
+    "score_mean_normalized_ig": 0.009820578753541287,
+    "score_mean_ig_bits": 0.00686996098854024,
+    "feature_eligible": true,
+    "mode_scores": {
+      "car": {
+        "pooled_share_eligible": 0.3767520628445164,
+        "entropy_bits": 0.9557157709777939,
+        "information_gain_bits": 0.0019799258397386055,
+        "normalized_information_gain": 0.0020716680626845165
+      },
+      "local_pt": {
+        "pooled_share_eligible": 0.2163048605016543,
+        "entropy_bits": 0.7533626570231483,
+        "information_gain_bits": 0.013519394349765235,
+        "normalized_information_gain": 0.017945400165155556
+      },
+      "long_distance_rail": {
+        "pooled_share_eligible": 0.12412594126225053,
+        "entropy_bits": 0.5411056014226638,
+        "information_gain_bits": 0.005110562776116878,
+        "normalized_information_gain": 0.009444668032783786
+      }
+    },
+    "eligible_stratum_ids": [
+      "bildung__94202385a225",
+      "bildung__038ea899b784",
+      "bildung__c1d2ca3eff6a",
+      "bildung__410fe6fc68f2",
+      "bildung__a9385d43101b",
+      "bildung__9602ca564c18"
+    ],
+    "excluded_strata": [
+      {
+        "stratum_id": "bildung__3e0b1cbc7525",
+        "label": "No answer",
+        "reasons": [
+          "response_or_design_missing_category",
+          "unweighted_n_below_100"
+        ],
+        "unweighted_n": 7,
+        "weighted_base": 3
+      }
+    ],
+    "rank": 4,
+    "rank_within_eligible_family": 4,
+    "selected": false
+  },
+  {
+    "feature_id": "hhgr_gr",
+    "feature_label_en": "Household size",
+    "family": "traveller",
+    "eligible_strata": 5,
+    "weighted_coverage": 1.0001102657404344,
+    "eligible_weighted_base": 9070,
+    "eligible_unweighted_n": 9475,
+    "score_mean_normalized_ig": 0.008055788075750038,
+    "score_mean_ig_bits": 0.006187622592911057,
+    "feature_eligible": true,
+    "mode_scores": {
+      "car": {
+        "pooled_share_eligible": 0.3767672942103044,
+        "entropy_bits": 0.9557268311426776,
+        "information_gain_bits": 0.009137740007604367,
+        "normalized_information_gain": 0.009561037432295569
+      },
+      "local_pt": {
+        "pooled_share_eligible": 0.21622858766463274,
+        "entropy_bits": 0.7532209763340705,
+        "information_gain_bits": 0.005405846694483518,
+        "normalized_information_gain": 0.007176973111919686
+      },
+      "long_distance_rail": {
+        "pooled_share_eligible": 0.12408851793658955,
+        "entropy_bits": 0.5410000988139021,
+        "information_gain_bits": 0.004019281076645287,
+        "normalized_information_gain": 0.00742935368303486
+      }
+    },
+    "eligible_stratum_ids": [
+      "hhgr_gr__b1ca45475d90",
+      "hhgr_gr__a72c42e2e34d",
+      "hhgr_gr__a0da382d0228",
+      "hhgr_gr__5cbcda4e910f",
+      "hhgr_gr__83cc3e898041"
+    ],
+    "excluded_strata": [],
+    "rank": 5,
+    "rank_within_eligible_family": 5,
+    "selected": false
+  },
+  {
+    "feature_id": "hheink_gr2",
+    "feature_label_en": "Monthly net household income",
+    "family": "traveller",
+    "eligible_strata": 7,
+    "weighted_coverage": 0.968905061197486,
+    "eligible_weighted_base": 8787,
+    "eligible_unweighted_n": 9370,
+    "score_mean_normalized_ig": 0.007275644376707811,
+    "score_mean_ig_bits": 0.005532603165537646,
+    "feature_eligible": true,
+    "mode_scores": {
+      "car": {
+        "pooled_share_eligible": 0.37523170715154275,
+        "entropy_bits": 0.9546045978983404,
+        "information_gain_bits": 0.003806910670273389,
+        "normalized_information_gain": 0.0039879450388723165
+      },
+      "local_pt": {
+        "pooled_share_eligible": 0.2140155638863388,
+        "entropy_bits": 0.7490885559046137,
+        "information_gain_bits": 0.011282982042772671,
+        "normalized_information_gain": 0.015062280626016408
+      },
+      "long_distance_rail": {
+        "pooled_share_eligible": 0.12482013669753445,
+        "entropy_bits": 0.5430592896250294,
+        "information_gain_bits": 0.001507916783566876,
+        "normalized_information_gain": 0.0027767074652347073
+      }
+    },
+    "eligible_stratum_ids": [
+      "hheink_gr2__e471461d3017",
+      "hheink_gr2__1931978a4716",
+      "hheink_gr2__c433d7d01690",
+      "hheink_gr2__670d51e77617",
+      "hheink_gr2__a8e3a1c52d7c",
+      "hheink_gr2__2b4d867aa5cf",
+      "hheink_gr2__91ff4a503c00"
+    ],
+    "excluded_strata": [
+      {
+        "stratum_id": "hheink_gr2__ba3d43ff7e4c",
+        "label": "Under 500 euros",
+        "reasons": [
+          "unweighted_n_below_100"
+        ],
+        "unweighted_n": 4,
+        "weighted_base": 2
+      },
+      {
+        "stratum_id": "hheink_gr2__1b6a669d457c",
+        "label": "500 to under 900 euros",
+        "reasons": [
+          "unweighted_n_below_100"
+        ],
+        "unweighted_n": 18,
+        "weighted_base": 45
+      },
+      {
+        "stratum_id": "hheink_gr2__fdeb935e94b4",
+        "label": "900 to under 1,500 euros",
+        "reasons": [
+          "unweighted_n_below_100"
+        ],
+        "unweighted_n": 83,
+        "weighted_base": 235
+      }
+    ],
+    "rank": 6,
+    "rank_within_eligible_family": 6,
+    "selected": false
+  },
+  {
+    "feature_id": "anzbegl_gr",
+    "feature_label_en": "Number of household companions",
+    "family": "journey",
+    "eligible_strata": 4,
+    "weighted_coverage": 0.9249090307641415,
+    "eligible_weighted_base": 8388,
+    "eligible_unweighted_n": 8800,
+    "score_mean_normalized_ig": 0.006875455510811704,
+    "score_mean_ig_bits": 0.004850411606498388,
+    "feature_eligible": true,
+    "mode_scores": {
+      "car": {
+        "pooled_share_eligible": 0.3778757254752976,
+        "entropy_bits": 0.9565278871311368,
+        "information_gain_bits": 0.005136632481853809,
+        "normalized_information_gain": 0.005370081260526379
+      },
+      "local_pt": {
+        "pooled_share_eligible": 0.22344669053129373,
+        "entropy_bits": 0.7664113060791155,
+        "information_gain_bits": 0.0036527929943305226,
+        "normalized_information_gain": 0.004766100089282152
+      },
+      "long_distance_rail": {
+        "pooled_share_eligible": 0.12703749498373726,
+        "entropy_bits": 0.5492571620997985,
+        "information_gain_bits": 0.005761809343310831,
+        "normalized_information_gain": 0.01049018518262658
+      }
+    },
+    "eligible_stratum_ids": [
+      "anzbegl_gr__154f6eb18583",
+      "anzbegl_gr__b61cbc7c0dd2",
+      "anzbegl_gr__07f355b725cf",
+      "anzbegl_gr__18864b086b3b"
+    ],
+    "excluded_strata": [
+      {
+        "stratum_id": "anzbegl_gr__c64f5d142163",
+        "label": "4 or more companions",
+        "reasons": [
+          "unweighted_n_below_100"
+        ],
+        "unweighted_n": 97,
+        "weighted_base": 124
+      }
+    ],
+    "rank": 7,
+    "rank_within_eligible_family": 1,
+    "selected": true
+  },
+  {
+    "feature_id": "anzueb_gr",
+    "feature_label_en": "Number of nights away",
+    "family": "journey",
+    "eligible_strata": 7,
+    "weighted_coverage": 0.9600838019627301,
+    "eligible_weighted_base": 8707,
+    "eligible_unweighted_n": 9335,
+    "score_mean_normalized_ig": 0.00649953334187947,
+    "score_mean_ig_bits": 0.004281555160045765,
+    "feature_eligible": true,
+    "mode_scores": {
+      "car": {
+        "pooled_share_eligible": 0.3786225126910391,
+        "entropy_bits": 0.9570633336182855,
+        "information_gain_bits": 0.004106939082660133,
+        "normalized_information_gain": 0.004291188407702746
+      },
+      "local_pt": {
+        "pooled_share_eligible": 0.21692656487741943,
+        "entropy_bits": 0.7545156592361282,
+        "information_gain_bits": 0.0015871868743717599,
+        "normalized_information_gain": 0.002103583742686836
+      },
+      "long_distance_rail": {
+        "pooled_share_eligible": 0.12575607868156108,
+        "entropy_bits": 0.5456832607372464,
+        "information_gain_bits": 0.007150539523105404,
+        "normalized_information_gain": 0.013103827875248828
+      }
+    },
+    "eligible_stratum_ids": [
+      "anzueb_gr__ef1ad3950de1",
+      "anzueb_gr__6bcea89383ae",
+      "anzueb_gr__9ee7f61bb0c0",
+      "anzueb_gr__456ee228eb2a",
+      "anzueb_gr__f6e4375535d4",
+      "anzueb_gr__782410ef69d3",
+      "anzueb_gr__fd46cf332878"
+    ],
+    "excluded_strata": [],
+    "rank": 8,
+    "rank_within_eligible_family": 2,
+    "selected": true
+  },
+  {
+    "feature_id": "R_ZWECK",
+    "feature_label_en": "Main journey purpose",
+    "family": "journey",
+    "eligible_strata": 4,
+    "weighted_coverage": 0.9944867129782776,
+    "eligible_weighted_base": 9019,
+    "eligible_unweighted_n": 9417,
+    "score_mean_normalized_ig": 0.004810744648538075,
+    "score_mean_ig_bits": 0.003020319284174122,
+    "feature_eligible": true,
+    "mode_scores": {
+      "car": {
+        "pooled_share_eligible": 0.3768743123298828,
+        "entropy_bits": 0.9558045015187348,
+        "information_gain_bits": 0.000827711571394496,
+        "normalized_information_gain": 0.0008659841736247274
+      },
+      "local_pt": {
+        "pooled_share_eligible": 0.2157664631257387,
+        "entropy_bits": 0.7523614969318427,
+        "information_gain_bits": 0.003165667793541993,
+        "normalized_information_gain": 0.004207641946659552
+      },
+      "long_distance_rail": {
+        "pooled_share_eligible": 0.12426181543997747,
+        "entropy_bits": 0.5414884972388738,
+        "information_gain_bits": 0.005067578487585878,
+        "normalized_information_gain": 0.009358607825329946
+      }
+    },
+    "eligible_stratum_ids": [
+      "R_ZWECK__2a9d5e2e29aa",
+      "R_ZWECK__e925d7530e09",
+      "R_ZWECK__920a4c5c70bf",
+      "R_ZWECK__00456431aac5"
+    ],
+    "excluded_strata": [
+      {
+        "stratum_id": "R_ZWECK__3ea0fccd868c",
+        "label": "Shopping / obtaining supplies",
+        "reasons": [
+          "unweighted_n_below_100"
+        ],
+        "unweighted_n": 6,
+        "weighted_base": 4
+      },
+      {
+        "stratum_id": "R_ZWECK__656942cb8bc6",
+        "label": "Other",
+        "reasons": [
+          "unweighted_n_below_100"
+        ],
+        "unweighted_n": 51,
+        "weighted_base": 46
+      },
+      {
+        "stratum_id": "R_ZWECK__3e0b1cbc7525",
+        "label": "No answer",
+        "reasons": [
+          "response_or_design_missing_category",
+          "unweighted_n_below_100",
+          "no_positive_weighted_base",
+          "incomplete_three_outcome_profile"
+        ],
+        "unweighted_n": 1,
+        "weighted_base": 0
+      }
+    ],
+    "rank": 9,
+    "rank_within_eligible_family": 3,
+    "selected": false
+  },
+  {
+    "feature_id": "entf_gr",
+    "feature_label_en": "One-way journey distance",
+    "family": "journey",
+    "eligible_strata": 5,
+    "weighted_coverage": 0.9575476899327379,
+    "eligible_weighted_base": 8684,
+    "eligible_unweighted_n": 9182,
+    "score_mean_normalized_ig": 0.0032564452194335596,
+    "score_mean_ig_bits": 0.002431018553617492,
+    "feature_eligible": true,
+    "mode_scores": {
+      "car": {
+        "pooled_share_eligible": 0.37412425162321333,
+        "entropy_bits": 0.9537862453310813,
+        "information_gain_bits": 0.0029825619872876352,
+        "normalized_information_gain": 0.0031270759060404766
+      },
+      "local_pt": {
+        "pooled_share_eligible": 0.2150433240520266,
+        "entropy_bits": 0.7510129163643142,
+        "information_gain_bits": 0.00260038642322602,
+        "normalized_information_gain": 0.0034625055928659684
+      },
+      "long_distance_rail": {
+        "pooled_share_eligible": 0.12296045485717909,
+        "entropy_bits": 0.5378111528800106,
+        "information_gain_bits": 0.0017101072503388215,
+        "normalized_information_gain": 0.0031797541593942334
+      }
+    },
+    "eligible_stratum_ids": [
+      "entf_gr__0b04f5ab2946",
+      "entf_gr__b7c4ab88b943",
+      "entf_gr__77731c404f75",
+      "entf_gr__89486a2eeabf",
+      "entf_gr__d9e732b4f030"
+    ],
+    "excluded_strata": [
+      {
+        "stratum_id": "entf_gr__597d20e8c729",
+        "label": "Under 100 km",
+        "reasons": [
+          "unweighted_n_below_100",
+          "no_positive_weighted_base",
+          "incomplete_three_outcome_profile"
+        ],
+        "unweighted_n": null,
+        "weighted_base": null
+      },
+      {
+        "stratum_id": "entf_gr__031ae31f7c12",
+        "label": "100 to under 200 km",
+        "reasons": [
+          "unweighted_n_below_100"
+        ],
+        "unweighted_n": 39,
+        "weighted_base": 51
+      },
+      {
+        "stratum_id": "entf_gr__0ab264be3e5b",
+        "label": "200 to under 300 km",
+        "reasons": [
+          "unweighted_n_below_100"
+        ],
+        "unweighted_n": 24,
+        "weighted_base": 39
+      },
+      {
+        "stratum_id": "entf_gr__09f017e6a28b",
+        "label": "300 to under 400 km",
+        "reasons": [
+          "unweighted_n_below_100"
+        ],
+        "unweighted_n": 45,
+        "weighted_base": 70
+      }
+    ],
+    "rank": 10,
+    "rank_within_eligible_family": 4,
+    "selected": false
+  },
+  {
+    "feature_id": "P_FS_PKW",
+    "feature_label_en": "Car driving licence held",
+    "family": "traveller",
+    "eligible_strata": 2,
+    "weighted_coverage": 0.9823574815304885,
+    "eligible_weighted_base": 8909,
+    "eligible_unweighted_n": 9340,
+    "score_mean_normalized_ig": 0.002850983029314816,
+    "score_mean_ig_bits": 0.0020646514149008275,
+    "feature_eligible": true,
+    "mode_scores": {
+      "car": {
+        "pooled_share_eligible": 0.3751728727628571,
+        "entropy_bits": 0.954561312230493,
+        "information_gain_bits": 0.0001172451623218107,
+        "normalized_information_gain": 0.00012282622480042446
+      },
+      "local_pt": {
+        "pooled_share_eligible": 0.21608237856440213,
+        "entropy_bits": 0.7529492469986798,
+        "information_gain_bits": 0.005377733748042068,
+        "normalized_information_gain": 0.007142226078953097
+      },
+      "long_distance_rail": {
+        "pooled_share_eligible": 0.12470162288438959,
+        "entropy_bits": 0.5427262051731176,
+        "information_gain_bits": 0.0006989753343386029,
+        "normalized_information_gain": 0.001287896784190926
+      }
+    },
+    "eligible_stratum_ids": [
+      "P_FS_PKW__3702fc186663",
+      "P_FS_PKW__4d03db393cf1"
+    ],
+    "excluded_strata": [
+      {
+        "stratum_id": "P_FS_PKW__3e0b1cbc7525",
+        "label": "No answer",
+        "reasons": [
+          "response_or_design_missing_category",
+          "unweighted_n_below_100"
+        ],
+        "unweighted_n": 34,
+        "weighted_base": 31
+      }
+    ],
+    "rank": 11,
+    "rank_within_eligible_family": 7,
+    "selected": false
+  },
+  {
+    "feature_id": "R_ZIEL",
+    "feature_label_en": "Journey destination region",
+    "family": "journey",
+    "eligible_strata": 3,
+    "weighted_coverage": 0.9998897342595655,
+    "eligible_weighted_base": 9068,
+    "eligible_unweighted_n": 9471,
+    "score_mean_normalized_ig": 0.0011891026744119924,
+    "score_mean_ig_bits": 0.0007466853039231891,
+    "feature_eligible": true,
+    "mode_scores": {
+      "car": {
+        "pooled_share_eligible": 0.37672545819551145,
+        "entropy_bits": 0.955696448752235,
+        "information_gain_bits": 0.0005789238623707949,
+        "normalized_information_gain": 0.0006057612363493058
+      },
+      "local_pt": {
+        "pooled_share_eligible": 0.21616697107925387,
+        "entropy_bits": 0.7531064842178122,
+        "information_gain_bits": 0.00020888376675542997,
+        "normalized_information_gain": 0.0002773628578863981
+      },
+      "long_distance_rail": {
+        "pooled_share_eligible": 0.1241023283976987,
+        "entropy_bits": 0.5410390349756075,
+        "information_gain_bits": 0.0014522482826433425,
+        "normalized_information_gain": 0.0026841839290002736
+      }
+    },
+    "eligible_stratum_ids": [
+      "R_ZIEL__df29edc11d87",
+      "R_ZIEL__6679c7be9abc",
+      "R_ZIEL__2bb1e580c7eb"
+    ],
+    "excluded_strata": [
+      {
+        "stratum_id": "R_ZIEL__3e0b1cbc7525",
+        "label": "No answer",
+        "reasons": [
+          "response_or_design_missing_category",
+          "unweighted_n_below_100"
+        ],
+        "unweighted_n": 4,
+        "weighted_base": 1
+      }
+    ],
+    "rank": 12,
+    "rank_within_eligible_family": 5,
+    "selected": false
+  },
+  {
+    "feature_id": "HP_SEX",
+    "feature_label_en": "Gender category",
+    "family": "traveller",
+    "eligible_strata": 2,
+    "weighted_coverage": 0.9926121953908921,
+    "eligible_weighted_base": 9002,
+    "eligible_unweighted_n": 9455,
+    "score_mean_normalized_ig": 0.0009918556365129496,
+    "score_mean_ig_bits": 0.000721091453605586,
+    "feature_eligible": true,
+    "mode_scores": {
+      "car": {
+        "pooled_share_eligible": 0.37721600387970167,
+        "entropy_bits": 0.9560520195609494,
+        "information_gain_bits": 0.00022939402178823176,
+        "normalized_information_gain": 0.000239938849659642
+      },
+      "local_pt": {
+        "pooled_share_eligible": 0.21578998122907975,
+        "entropy_bits": 0.7524052808774266,
+        "information_gain_bits": 0.0016136733186431496,
+        "normalized_information_gain": 0.0021446863275086862
+      },
+      "long_distance_rail": {
+        "pooled_share_eligible": 0.12439332904186935,
+        "entropy_bits": 0.5418588717721617,
+        "information_gain_bits": 0.00032020702038537685,
+        "normalized_information_gain": 0.0005909417323705202
+      }
+    },
+    "eligible_stratum_ids": [
+      "HP_SEX__c1e0a9a9f71d",
+      "HP_SEX__76541c29d1e6"
+    ],
+    "excluded_strata": [
+      {
+        "stratum_id": "HP_SEX__3c6cd65dcba0",
+        "label": "Diverse",
+        "reasons": [
+          "unweighted_n_below_100"
+        ],
+        "unweighted_n": 16,
+        "weighted_base": 66
+      },
+      {
+        "stratum_id": "HP_SEX__3e0b1cbc7525",
+        "label": "No answer",
+        "reasons": [
+          "response_or_design_missing_category",
+          "unweighted_n_below_100"
+        ],
+        "unweighted_n": 4,
+        "weighted_base": 1
+      }
+    ],
+    "rank": 13,
+    "rank_within_eligible_family": 8,
+    "selected": false
+  },
+  {
+    "feature_id": "erwerb",
+    "feature_label_en": "Employment status",
+    "family": "traveller",
+    "eligible_strata": 2,
+    "weighted_coverage": 1.0001102657404344,
+    "eligible_weighted_base": 9070,
+    "eligible_unweighted_n": 9475,
+    "score_mean_normalized_ig": 0.0004383701599047334,
+    "score_mean_ig_bits": 0.00028465823073035396,
+    "feature_eligible": true,
+    "mode_scores": {
+      "car": {
+        "pooled_share_eligible": 0.37676856745421805,
+        "entropy_bits": 0.9557277556365499,
+        "information_gain_bits": 3.450026263707162e-05,
+        "normalized_information_gain": 3.609842074126348e-05
+      },
+      "local_pt": {
+        "pooled_share_eligible": 0.2162308116985612,
+        "entropy_bits": 0.7532251082915582,
+        "information_gain_bits": 0.0004526194310436882,
+        "normalized_information_gain": 0.0006009085810619159
+      },
+      "long_distance_rail": {
+        "pooled_share_eligible": 0.12408901481281137,
+        "entropy_bits": 0.541001499712762,
+        "information_gain_bits": 0.000366854998510302,
+        "normalized_information_gain": 0.0006781034779110208
+      }
+    },
+    "eligible_stratum_ids": [
+      "erwerb__4d03db393cf1",
+      "erwerb__0478411a7b05"
+    ],
+    "excluded_strata": [
+      {
+        "stratum_id": "erwerb__3e0b1cbc7525",
+        "label": "No answer",
+        "reasons": [
+          "response_or_design_missing_category",
+          "unweighted_n_below_100",
+          "no_positive_weighted_base",
+          "incomplete_three_outcome_profile"
+        ],
+        "unweighted_n": null,
+        "weighted_base": null
+      }
+    ],
+    "rank": 14,
+    "rank_within_eligible_family": 9,
+    "selected": false
+  }
+]

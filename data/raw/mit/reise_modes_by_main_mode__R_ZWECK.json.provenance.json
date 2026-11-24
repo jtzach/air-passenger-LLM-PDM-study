@@ -1,0 +1,23 @@
+{
+  "url": "https://mobilitaet-in-tabellen-2023.bast.de/api/table/json",
+  "method": "POST",
+  "retrieved_utc": "2026-11-24T21:37:35.636438+00:00",
+  "bytes": 41958,
+  "sha256": "015a7a60b627eef432b39cab86b6478380fcf2d6b1e53635997a621b0ed070e6",
+  "request_sha256": "1e5ebe91d2cb420c13e7ee44b78322556fbf74431628696512dbfd74ea36d486",
+  "request": {
+    "dataset": {
+      "id": "reise"
+    },
+    "weight_var": "R_GEW",
+    "mean_of": null,
+    "percent": "col",
+    "row": "ms_verkehrsmittel-der-reise-mehrfachantworten-set_e054e270",
+    "col": "hvm_r",
+    "breakdown_by": "R_ZWECK"
+  },
+  "response_headers": {
+    "Content-Type": "application/json",
+    "Date": "Tue, 24 Nov 2026 21:37:32 GMT"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "task_id": "m02__reise__anzueb_gr__456ee228eb2a__unanchored__r01",
+  "model_id": "google/gemma-3-12b-it",
+  "model_label": "Gemma 3 12B",
+  "persona_id": "reise__anzueb_gr__456ee228eb2a",
+  "feature": "anzueb_gr",
+  "arm": "unanchored",
+  "replicate": 1,
+  "request_sha256": "923e88ed35f7ecb37ec03b0cb33d51f3b9868c8b47af2de0ffe7aa8b6c24943a",
+  "started_utc": "2026-11-24T21:50:55.640882+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:50:58.257768+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 3.295e-05,
+  "response": {
+    "id": "gen-1795557055-sjApobhBj5zmE8O1h3fl",
+    "object": "chat.completion",
+    "created": 1795557055,
+    "model": "google/gemma-3-12b-it",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.65, \"local_pt\": 0.4, \"long_distance_rail\": 0.1, \"rationale\": \"Given 4-5 nights away, a longer trip, car access for airport transfers is likely. Local PT may be used at destination. Long-distance rail is less probable, but possible for connecting journeys.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 416,
+      "completion_tokens": 81,
+      "total_tokens": 497,
+      "cost": 3.295e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 3.295e-05,
+        "upstream_inference_prompt_cost": 2.08e-05,
+        "upstream_inference_completions_cost": 1.215e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "04383f1015063095009fb04d45591fc16c60ed5547411d2c3cf5cf4a1ad06bd3",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.1,
+    "rationale": "Given 4-5 nights away, a longer trip, car access for airport transfers is likely. Local PT may be used at destination. Long-distance rail is less probable, but possible for connecting journeys."
+  },
+  "finished_utc": "2026-11-24T21:50:58.257768+00:00",
+  "elapsed_seconds": 2.61
+}

@@ -1,0 +1,76 @@
+{
+  "task_id": "m03__reise__anzueb_gr__782410ef69d3__overall_rate_anchored__r03",
+  "model_id": "openai/gpt-4.1-mini",
+  "model_label": "GPT-4.1 mini",
+  "persona_id": "reise__anzueb_gr__782410ef69d3",
+  "feature": "anzueb_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 3,
+  "request_sha256": "61c2701aea7341ed641e11b054489cff77545db9cd6e1d8bc445903216e416d9",
+  "started_utc": "2026-11-24T21:51:20.802740+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:51:22.544052+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0003048,
+  "response": {
+    "id": "gen-1795557080-XAX0ofAGxZwyvr2mexQl",
+    "object": "chat.completion",
+    "created": 1795557080,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.25,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Longer stays (8-14 nights) suggest more time for car use at destination; local PT slightly higher for urban areas; long-distance rail less likely as air dominates main travel.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 454,
+      "completion_tokens": 77,
+      "total_tokens": 531,
+      "cost": 0.0003048,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003048,
+        "upstream_inference_prompt_cost": 0.0001816,
+        "upstream_inference_completions_cost": 0.0001232
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "128a9fc2f9fac48ca222ef7e0f01a636d6e996ae163ef2afda80ea1b1bb61cb8",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.1,
+    "rationale": "Longer stays (8-14 nights) suggest more time for car use at destination; local PT slightly higher for urban areas; long-distance rail less likely as air dominates main travel."
+  },
+  "finished_utc": "2026-11-24T21:51:22.544052+00:00",
+  "elapsed_seconds": 1.75
+}

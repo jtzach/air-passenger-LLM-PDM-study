@@ -1,0 +1,76 @@
+{
+  "task_id": "m02__smoke_generic__unanchored__r01",
+  "model_id": "google/gemma-3-12b-it",
+  "model_label": "Gemma 3 12B",
+  "persona_id": "smoke_generic",
+  "feature": "none",
+  "arm": "unanchored",
+  "replicate": 1,
+  "request_sha256": "997a5d01dfffe6cd6d0cbc232c34f162ec60a539b44a3bf2f2b2b8cd0ab0c778",
+  "started_utc": "2026-11-24T21:37:58.162352+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:37:59.954319+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.79e-05,
+  "response": {
+    "id": "gen-1795556278-cmGatNflD9jEqgtaMZZN",
+    "object": "chat.completion",
+    "created": 1795556278,
+    "model": "google/gemma-3-12b-it",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.65, \"local_pt\": 0.4, \"long_distance_rail\": 0.15, \"rationale\": \"Air travel often involves car access for airport trips. Local PT is common for urban residents. Long-distance rail is less likely, as air travel typically implies longer distances.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 336,
+      "completion_tokens": 74,
+      "total_tokens": 410,
+      "cost": 2.79e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.79e-05,
+        "upstream_inference_prompt_cost": 1.68e-05,
+        "upstream_inference_completions_cost": 1.11e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "f561ca72d79237caad0714f2a8d7cb2a71f05850c57b30e07f0e1defb8272907",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.15,
+    "rationale": "Air travel often involves car access for airport trips. Local PT is common for urban residents. Long-distance rail is less likely, as air travel typically implies longer distances."
+  },
+  "finished_utc": "2026-11-24T21:37:59.954319+00:00",
+  "elapsed_seconds": 1.797
+}

@@ -1,0 +1,76 @@
+{
+  "task_id": "m03__reise__RegioStaR7__5febbfe6f6bc__overall_rate_anchored__r01",
+  "model_id": "openai/gpt-4.1-mini",
+  "model_label": "GPT-4.1 mini",
+  "persona_id": "reise__RegioStaR7__5febbfe6f6bc",
+  "feature": "RegioStaR7",
+  "arm": "overall_rate_anchored",
+  "replicate": 1,
+  "request_sha256": "52086f238e717bdb1163a08f87396c343ce4ddac24690a024596eea79b7ee07a",
+  "started_utc": "2026-11-24T21:50:51.260083+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:50:52.821301+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00031,
+  "response": {
+    "id": "gen-1795557051-CS4MKJkP39xMdXtAQQYr",
+    "object": "chat.completion",
+    "created": 1795557051,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.25,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Small-town residents likely rely more on car for airport access than average urban dwellers; local public transport use slightly above average due to some regional connections; long-distance rail less common given smaller settlement size.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 455,
+      "completion_tokens": 80,
+      "total_tokens": 535,
+      "cost": 0.00031,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00031,
+        "upstream_inference_prompt_cost": 0.000182,
+        "upstream_inference_completions_cost": 0.000128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "2981bd7c7a92907f0ab94928c0b7e79c728583d2ad4932f7e4d1a75313904ac1",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.1,
+    "rationale": "Small-town residents likely rely more on car for airport access than average urban dwellers; local public transport use slightly above average due to some regional connections; long-distance rail less common given smaller settlement size."
+  },
+  "finished_utc": "2026-11-24T21:50:52.821301+00:00",
+  "elapsed_seconds": 1.562
+}

@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzueb_gr__9ee7f61bb0c0__overall_rate_anchored__r01",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzueb_gr__9ee7f61bb0c0",
+  "feature": "anzueb_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 1,
+  "request_sha256": "3797fdbbd904c0bcb982238e93955b31f336ccd7ae7ec557df0724904244b76f",
+  "started_utc": "2026-11-24T21:47:31.189441+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:47:32.689278+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001584,
+  "response": {
+    "id": "gen-1795556851-2dMJxUsvmYbI5Irbp4FB",
+    "object": "chat.completion",
+    "created": 1795556851,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.38,\n  \"local_pt\": 0.22,\n  \"long_distance_rail\": 0.13,\n  \"rationale\": \"Three-night trips likely include both leisure and business, and the short stay does not skew access mode. Marginally increase train use as short trips may use rail-airport links, but overall, rates remain near population average.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 452,
+      "completion_tokens": 85,
+      "total_tokens": 537,
+      "cost": 0.001584,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001584,
+        "upstream_inference_prompt_cost": 0.000904,
+        "upstream_inference_completions_cost": 0.00068
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "70fc55c0cd9f94b80f9f1423b1715d60543c1cecc172cee7b72611cd7093a232",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.38,
+    "local_pt": 0.22,
+    "long_distance_rail": 0.13,
+    "rationale": "Three-night trips likely include both leisure and business, and the short stay does not skew access mode. Marginally increase train use as short trips may use rail-airport links, but overall, rates remain near population average."
+  },
+  "finished_utc": "2026-11-24T21:47:32.689278+00:00",
+  "elapsed_seconds": 1.5
+}

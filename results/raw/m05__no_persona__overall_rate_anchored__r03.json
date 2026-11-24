@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__no_persona__overall_rate_anchored__r03",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "no_persona",
+  "feature": "none",
+  "arm": "overall_rate_anchored",
+  "replicate": 3,
+  "request_sha256": "fc8b5af56ba5ba009cf961ae0976582ee9a2f911f6b966e350338f5fa38ba50e",
+  "started_utc": "2026-11-24T21:44:39.801344+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:44:41.151835+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001428,
+  "response": {
+    "id": "gen-1795556679-79AczX9C8Rw3sTPQP78e",
+    "object": "chat.completion",
+    "created": 1795556679,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.38,\n  \"local_pt\": 0.22,\n  \"long_distance_rail\": 0.12,\n  \"rationale\": \"With no specific cohort attributes, transport mode use likely mirrors the population average; no subgroup factors (e.g., age, income, region) justify deviation from the reference rates.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 414,
+      "completion_tokens": 75,
+      "total_tokens": 489,
+      "cost": 0.001428,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001428,
+        "upstream_inference_prompt_cost": 0.000828,
+        "upstream_inference_completions_cost": 0.0006
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "b88374a5dbb27a98376ca7e1ff276a8515a7864a5ecfd936b2c286b4e6b46bbd",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.38,
+    "local_pt": 0.22,
+    "long_distance_rail": 0.12,
+    "rationale": "With no specific cohort attributes, transport mode use likely mirrors the population average; no subgroup factors (e.g., age, income, region) justify deviation from the reference rates."
+  },
+  "finished_utc": "2026-11-24T21:44:41.151835+00:00",
+  "elapsed_seconds": 1.344
+}

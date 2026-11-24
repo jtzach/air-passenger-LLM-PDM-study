@@ -1,0 +1,76 @@
+{
+  "task_id": "m03__no_persona__overall_rate_anchored__r03",
+  "model_id": "openai/gpt-4.1-mini",
+  "model_label": "GPT-4.1 mini",
+  "persona_id": "no_persona",
+  "feature": "none",
+  "arm": "overall_rate_anchored",
+  "replicate": 3,
+  "request_sha256": "6f3965cef44ca593248c6bceaa4f6147793089b0a7c473087879810f45f3a5ba",
+  "started_utc": "2026-11-24T21:49:51.228077+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:49:52.971677+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002648,
+  "response": {
+    "id": "gen-1795556991-i93IZfLXH2FOCxfVPB1v",
+    "object": "chat.completion",
+    "created": 1795556991,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.38,\n  \"local_pt\": 0.22,\n  \"long_distance_rail\": 0.12,\n  \"rationale\": \"Without further cohort specifics, assume typical mixed airport access modes and regional travel patterns similar to overall population using aircraft.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 414,
+      "completion_tokens": 62,
+      "total_tokens": 476,
+      "cost": 0.0002648,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002648,
+        "upstream_inference_prompt_cost": 0.0001656,
+        "upstream_inference_completions_cost": 9.92e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "75908d97ee86596dbc63f745676ca98c729f482c4f6465a6a44456cebf88f720",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.38,
+    "local_pt": 0.22,
+    "long_distance_rail": 0.12,
+    "rationale": "Without further cohort specifics, assume typical mixed airport access modes and regional travel patterns similar to overall population using aircraft."
+  },
+  "finished_utc": "2026-11-24T21:49:52.971677+00:00",
+  "elapsed_seconds": 1.75
+}

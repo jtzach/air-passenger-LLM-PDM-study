@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzbegl_gr__07f355b725cf__overall_rate_anchored__r01",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzbegl_gr__07f355b725cf",
+  "feature": "anzbegl_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 1,
+  "request_sha256": "91c67d4e3fe92256d90a5bbc9ed2d6657cd320fcbaf4de6ce88db25eca8569b4",
+  "started_utc": "2026-11-24T21:45:08.450408+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:45:10.860321+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001558,
+  "response": {
+    "id": "gen-1795556708-KtT6XAlwweeOr71rZlj4",
+    "object": "chat.completion",
+    "created": 1795556708,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.09,\n  \"rationale\": \"With two household companions, shared car use is more likely due to convenience and cost-splitting, while public and long-distance rail use may drop slightly as coordination and ticketing for multiple people are less attractive.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 451,
+      "completion_tokens": 82,
+      "total_tokens": 533,
+      "cost": 0.001558,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001558,
+        "upstream_inference_prompt_cost": 0.000902,
+        "upstream_inference_completions_cost": 0.000656
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "5b60d918dab6a0eba3287f2f1b815a0969c11cc58ef6172a168c222905516829",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.09,
+    "rationale": "With two household companions, shared car use is more likely due to convenience and cost-splitting, while public and long-distance rail use may drop slightly as coordination and ticketing for multiple people are less attractive."
+  },
+  "finished_utc": "2026-11-24T21:45:10.860321+00:00",
+  "elapsed_seconds": 2.406
+}

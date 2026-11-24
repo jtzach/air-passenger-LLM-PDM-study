@@ -1,0 +1,78 @@
+{
+  "task_id": "m02__reise__RegioStaR7__9f47524becab__unanchored__r03",
+  "model_id": "google/gemma-3-12b-it",
+  "model_label": "Gemma 3 12B",
+  "persona_id": "reise__RegioStaR7__9f47524becab",
+  "feature": "RegioStaR7",
+  "arm": "unanchored",
+  "replicate": 3,
+  "request_sha256": "14e0ba66cd48f7ff937e5388cb67645b9ba1dc5ffb665a39052ac849075c09fa",
+  "started_utc": "2026-11-24T21:50:52.846868+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "http_error",
+      "code": 429,
+      "detail": "{\"error\":{\"message\":\"Provider returned error\",\"code\":429,\"metadata\":{\"raw\":\"google/gemma-3-12b-it is temporarily rate-limited upstream. Please retry shortly, or add your own provider key to use your own limits: https://openrouter.ai/workspaces/default/byok\",\"provider_name\":\"DeepInfra\",\"is_byok\":false,\"provider_error_code\":\"engine_overloaded\",\"limit_source\":\"upstream_provider_shared_pool\",\"remedy_hint\":\"Retry shortly, add your own provider key to use your own limits (https://openrouter.ai/workspaces/default/byok), or route to another provider with provider routing: https://openrouter.ai/docs/features/provider-routing.\"}},\"user_id\":\"[REDACTED_ACCOUNT_ID]\"}",
+      "utc": "2026-11-24T21:50:53.693573+00:00"
+    },
+    {
+      "number": 2,
+      "status": "response",
+      "utc": "2026-11-24T21:50:58.154323+00:00"
+    }
+  ],
+  "status": "invalid_output",
+  "accounted_cost_usd": 3.22e-05,
+  "response": {
+    "id": "gen-1795557055-aCIxxptxIqYSHIJ1o1iQ",
+    "object": "chat.completion",
+    "created": 1795557055,
+    "model": "google/gemma-3-12b-it",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"+car\": 0.6, \"+local_pt\": 0.4, \"+long_distance_rail\": 0.1, \"rationale\": \"Urban residents often drive to airports or use local public transport for airport access. Long-distance rail is less likely for a journey already involving air travel, unless connecting to a distant destination.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 419,
+      "completion_tokens": 75,
+      "total_tokens": 494,
+      "cost": 3.22e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 3.22e-05,
+        "upstream_inference_prompt_cost": 2.095e-05,
+        "upstream_inference_completions_cost": 1.125e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "fd7b542bd7fb1c447772a6fab8bc8dc9a4a69aaaf600cb3a55936014a7f25a8a",
+  "cost_basis": "OpenRouter usage.cost",
+  "validation_error": "Unexpected output keys",
+  "finished_utc": "2026-11-24T21:50:58.154323+00:00",
+  "elapsed_seconds": 5.313
+}

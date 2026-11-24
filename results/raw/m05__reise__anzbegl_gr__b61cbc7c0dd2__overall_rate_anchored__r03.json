@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzbegl_gr__b61cbc7c0dd2__overall_rate_anchored__r03",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzbegl_gr__b61cbc7c0dd2",
+  "feature": "anzbegl_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 3,
+  "request_sha256": "cb9c0d05a0d9ec9a4e2c322559d18245ceba3832382574d87b5f5640234536ae",
+  "started_utc": "2026-11-24T21:48:18.967072+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:48:20.272808+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001542,
+  "response": {
+    "id": "gen-1795556898-toFS2rJ77AxWKWtG2nQ9",
+    "object": "chat.completion",
+    "created": 1795556898,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.40,\n  \"local_pt\": 0.19,\n  \"long_distance_rail\": 0.13,\n  \"rationale\": \"Having a household companion may slightly increase car use for convenience and coordination, while public transport and long-distance rail likelihoods are roughly similar to the average, as no other demographic or trip differences are specified.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 451,
+      "completion_tokens": 80,
+      "total_tokens": 531,
+      "cost": 0.001542,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001542,
+        "upstream_inference_prompt_cost": 0.000902,
+        "upstream_inference_completions_cost": 0.00064
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "1376dba33cf69be13b5886b26165e26f32d0091392aa85fac2e8b7bf082b98c0",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.4,
+    "local_pt": 0.19,
+    "long_distance_rail": 0.13,
+    "rationale": "Having a household companion may slightly increase car use for convenience and coordination, while public transport and long-distance rail likelihoods are roughly similar to the average, as no other demographic or trip differences are specified."
+  },
+  "finished_utc": "2026-11-24T21:48:20.272808+00:00",
+  "elapsed_seconds": 1.297
+}

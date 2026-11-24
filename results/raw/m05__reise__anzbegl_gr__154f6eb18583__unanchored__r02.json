@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzbegl_gr__154f6eb18583__unanchored__r02",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzbegl_gr__154f6eb18583",
+  "feature": "anzbegl_gr",
+  "arm": "unanchored",
+  "replicate": 2,
+  "request_sha256": "8a68c34c8c9600fe288911bf5c159ded5c8dadb8107ee5ffff76f685860fca6e",
+  "started_utc": "2026-11-24T21:51:16.841692+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:51:18.275048+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001422,
+  "response": {
+    "id": "gen-1795557076-JQAI6kp4CBiQK8Fsoe9C",
+    "object": "chat.completion",
+    "created": 1795557076,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.31,\n  \"local_pt\": 0.45,\n  \"long_distance_rail\": 0.22,\n  \"rationale\": \"Solo travellers without household companions may prefer public transport for cost and convenience, but car use remains common for airport access, especially in less urban areas; long-distance rail is used when airports are further away.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 391,
+      "completion_tokens": 80,
+      "total_tokens": 471,
+      "cost": 0.001422,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001422,
+        "upstream_inference_prompt_cost": 0.000782,
+        "upstream_inference_completions_cost": 0.00064
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "7d2b92a0549862ec0dc6db85ed1cf666626d8be311bd23eb0bdbb5fa9340c1c6",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.31,
+    "local_pt": 0.45,
+    "long_distance_rail": 0.22,
+    "rationale": "Solo travellers without household companions may prefer public transport for cost and convenience, but car use remains common for airport access, especially in less urban areas; long-distance rail is used when airports are further away."
+  },
+  "finished_utc": "2026-11-24T21:51:18.275048+00:00",
+  "elapsed_seconds": 1.422
+}

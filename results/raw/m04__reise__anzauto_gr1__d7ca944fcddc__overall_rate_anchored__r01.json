@@ -1,0 +1,76 @@
+{
+  "task_id": "m04__reise__anzauto_gr1__d7ca944fcddc__overall_rate_anchored__r01",
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "model_label": "Qwen3 235B A22B",
+  "persona_id": "reise__anzauto_gr1__d7ca944fcddc",
+  "feature": "anzauto_gr1",
+  "arm": "overall_rate_anchored",
+  "replicate": 1,
+  "request_sha256": "69549bf81df8ae5bceda6ca2e1861ae196e2897dc2e095a3df0ba023d3308b43",
+  "started_utc": "2026-11-24T21:51:19.643106+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:51:32.238899+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 8.217e-05,
+  "response": {
+    "id": "gen-1795557079-5bJyj2JByYTRkvwYsApj",
+    "object": "chat.completion",
+    "created": 1795557079,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Households with one car may rely on it for airport access, reducing public transport use. Car availability increases car mode share despite no driver assumption.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 473,
+      "completion_tokens": 72,
+      "total_tokens": 545,
+      "cost": 8.217e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 8.217e-05,
+        "upstream_inference_prompt_cost": 4.257e-05,
+        "upstream_inference_completions_cost": 3.96e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "8f803de1bf1cd1713da75f195b47a4c7b34dff19eba5b33010900fbd0b3fb886",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Households with one car may rely on it for airport access, reducing public transport use. Car availability increases car mode share despite no driver assumption."
+  },
+  "finished_utc": "2026-11-24T21:51:32.238899+00:00",
+  "elapsed_seconds": 12.609
+}

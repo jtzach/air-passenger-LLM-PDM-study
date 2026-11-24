@@ -1,0 +1,76 @@
+{
+  "task_id": "m03__reise__RegioStaR7__72d39163efb4__overall_rate_anchored__r02",
+  "model_id": "openai/gpt-4.1-mini",
+  "model_label": "GPT-4.1 mini",
+  "persona_id": "reise__RegioStaR7__72d39163efb4",
+  "feature": "RegioStaR7",
+  "arm": "overall_rate_anchored",
+  "replicate": 2,
+  "request_sha256": "4fe2fb33e9173597dff1ec627f73a860efafd5eaa47a5cb368caf89c31e35cc8",
+  "started_utc": "2026-11-24T21:50:06.978678+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:50:08.305688+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000294,
+  "response": {
+    "id": "gen-1795557006-cASO0UViByCJvzX0jgBH",
+    "object": "chat.completion",
+    "created": 1795557006,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.50,\n  \"local_pt\": 0.15,\n  \"long_distance_rail\": 0.05,\n  \"rationale\": \"Rural residents likely rely more on cars for airport access; lower local and long-distance public transport use due to sparse service and less frequent rail connections.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 455,
+      "completion_tokens": 70,
+      "total_tokens": 525,
+      "cost": 0.000294,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000294,
+        "upstream_inference_prompt_cost": 0.000182,
+        "upstream_inference_completions_cost": 0.000112
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "7937f4334ea79ae24fdfb335187d6e53e293fcebbe20b999d962759b98978e4f",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.5,
+    "local_pt": 0.15,
+    "long_distance_rail": 0.05,
+    "rationale": "Rural residents likely rely more on cars for airport access; lower local and long-distance public transport use due to sparse service and less frequent rail connections."
+  },
+  "finished_utc": "2026-11-24T21:50:08.305688+00:00",
+  "elapsed_seconds": 1.328
+}

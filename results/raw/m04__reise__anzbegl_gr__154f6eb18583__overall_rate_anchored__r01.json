@@ -1,0 +1,76 @@
+{
+  "task_id": "m04__reise__anzbegl_gr__154f6eb18583__overall_rate_anchored__r01",
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "model_label": "Qwen3 235B A22B",
+  "persona_id": "reise__anzbegl_gr__154f6eb18583",
+  "feature": "anzbegl_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 1,
+  "request_sha256": "79d0ff90491f89f0d9bae88489a9771b1f9067188fa20baf9b757ecd19c7f238",
+  "started_utc": "2026-11-24T21:48:40.981316+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:48:48.053696+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 7.933e-05,
+  "response": {
+    "id": "gen-1795556921-kklsCyu7QrwknVHJ5vbd",
+    "object": "chat.completion",
+    "created": 1795556921,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.15,\n  \"long_distance_rail\": 0.08,\n  \"rationale\": \"Solo travelers may rely more on cars for flexibility, reducing shared or public transport use, especially without companions to coordinate with.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 472,
+      "completion_tokens": 67,
+      "total_tokens": 539,
+      "cost": 7.933e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 7.933e-05,
+        "upstream_inference_prompt_cost": 4.248e-05,
+        "upstream_inference_completions_cost": 3.685e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "e9930b3d43b399eca4da04a256cac7fbc90981371042e0c7278b5bff3b959ae9",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.15,
+    "long_distance_rail": 0.08,
+    "rationale": "Solo travelers may rely more on cars for flexibility, reducing shared or public transport use, especially without companions to coordinate with."
+  },
+  "finished_utc": "2026-11-24T21:48:48.053696+00:00",
+  "elapsed_seconds": 7.062
+}

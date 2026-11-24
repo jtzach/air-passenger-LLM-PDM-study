@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzueb_gr__f6e4375535d4__overall_rate_anchored__r03",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzueb_gr__f6e4375535d4",
+  "feature": "anzueb_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 3,
+  "request_sha256": "08d2076ca823a2a7f823b969845042913d5e3037aea0af05a8a9e4196665964b",
+  "started_utc": "2026-11-24T21:48:51.529420+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:48:52.755357+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001604,
+  "response": {
+    "id": "gen-1795556931-6QYiBipC5Ke9mqtlUreK",
+    "object": "chat.completion",
+    "created": 1795556931,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.38,\n  \"local_pt\": 0.23,\n  \"long_distance_rail\": 0.14,\n  \"rationale\": \"Journeys of 6-7 nights are often longer distance, raising likelihood of using major airports with better public transport and long-distance rail links, but car use remains common for flexibility and luggage, so rates are slightly above population averages.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 454,
+      "completion_tokens": 87,
+      "total_tokens": 541,
+      "cost": 0.001604,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001604,
+        "upstream_inference_prompt_cost": 0.000908,
+        "upstream_inference_completions_cost": 0.000696
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "e4fb38769da13e194503a72ae8a154056144766dd2bfe4262e2014b67486cae3",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.38,
+    "local_pt": 0.23,
+    "long_distance_rail": 0.14,
+    "rationale": "Journeys of 6-7 nights are often longer distance, raising likelihood of using major airports with better public transport and long-distance rail links, but car use remains common for flexibility and luggage, so rates are slightly above population averages."
+  },
+  "finished_utc": "2026-11-24T21:48:52.755357+00:00",
+  "elapsed_seconds": 1.219
+}

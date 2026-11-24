@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzbegl_gr__154f6eb18583__overall_rate_anchored__r01",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzbegl_gr__154f6eb18583",
+  "feature": "anzbegl_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 1,
+  "request_sha256": "f6685f2ebd43deec5d6eed24182b28941e792bc911f985a3b047fa20d8472541",
+  "started_utc": "2026-11-24T21:46:27.015584+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:46:28.490693+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001532,
+  "response": {
+    "id": "gen-1795556787-ViqtxqwYdBfEUwvg4xhv",
+    "object": "chat.completion",
+    "created": 1795556787,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.34,\n  \"local_pt\": 0.23,\n  \"long_distance_rail\": 0.14,\n  \"rationale\": \"Solo travellers are less likely to use a private car but may use public transport or long-distance rail slightly more for airport access, as group convenience is less relevant and parking is costlier per person.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 450,
+      "completion_tokens": 79,
+      "total_tokens": 529,
+      "cost": 0.001532,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001532,
+        "upstream_inference_prompt_cost": 0.0009,
+        "upstream_inference_completions_cost": 0.000632
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "15b9756bbf2c747822d276be3d2cd738d7351a04065a49a1f57876d0a6cd619f",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.34,
+    "local_pt": 0.23,
+    "long_distance_rail": 0.14,
+    "rationale": "Solo travellers are less likely to use a private car but may use public transport or long-distance rail slightly more for airport access, as group convenience is less relevant and parking is costlier per person."
+  },
+  "finished_utc": "2026-11-24T21:46:28.490693+00:00",
+  "elapsed_seconds": 1.469
+}

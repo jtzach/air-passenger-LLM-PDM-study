@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__anzueb_gr__9ee7f61bb0c0__overall_rate_anchored__r01",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__anzueb_gr__9ee7f61bb0c0",
+  "feature": "anzueb_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 1,
+  "request_sha256": "87630facfb33f81b195748e9084900aecf85ea75e3fb7f5abfc7156d81842c60",
+  "started_utc": "2026-11-24T21:48:20.672181+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:48:22.986402+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 1.98e-05,
+  "response": {
+    "id": "gen-1795556900-zzG3owR4BKy9zmpT852J",
+    "object": "chat.completion",
+    "created": 1795556900,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.3, \"local_pt\": 0.18, \"long_distance_rail\": 0.11, \"rationale\": \"The cohort undertook three overnight journeys, suggesting a higher propensity for multi-modal travel compared to the overall population. Combining flights with other modes is plausible for convenience and potentially cost-effectiveness.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 488,
+      "completion_tokens": 76,
+      "total_tokens": 564,
+      "cost": 1.98e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 176,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.98e-05,
+        "upstream_inference_prompt_cost": 1.6e-05,
+        "upstream_inference_completions_cost": 3.8e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "3af32d7211e493029d05cc89f9d28bd70ce02da2480b9b823e4fb0d0ae8ce2d1",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.3,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.11,
+    "rationale": "The cohort undertook three overnight journeys, suggesting a higher propensity for multi-modal travel compared to the overall population. Combining flights with other modes is plausible for convenience and potentially cost-effectiveness."
+  },
+  "finished_utc": "2026-11-24T21:48:22.986402+00:00",
+  "elapsed_seconds": 2.313
+}

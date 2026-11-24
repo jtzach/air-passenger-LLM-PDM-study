@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__anzbegl_gr__154f6eb18583__overall_rate_anchored__r03",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__anzbegl_gr__154f6eb18583",
+  "feature": "anzbegl_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 3,
+  "request_sha256": "d7e3e88caf07f43beb76b78978eaf96df425f5428d5d3dd648adab12e2f1e766",
+  "started_utc": "2026-11-24T21:47:47.460912+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:47:50.188104+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.019e-05,
+  "response": {
+    "id": "gen-1795556867-n1ND26bMT8DNLdX90PXi",
+    "object": "chat.completion",
+    "created": 1795556867,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.25, \"local_pt\": 0.18, \"long_distance_rail\": 0.09, \"rationale\": \"Since the cohort is 'no companion', they likely prioritized convenience and speed. Car use would be lower, and local public transport slightly more common than the overall population, reflecting a desire for flexibility.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 486,
+      "completion_tokens": 79,
+      "total_tokens": 565,
+      "cost": 2.019e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.019e-05,
+        "upstream_inference_prompt_cost": 1.624e-05,
+        "upstream_inference_completions_cost": 3.95e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "7861b383cf7ba116d218d15b118bcdc601aa3d65a97cde8a07791a53704cb981",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.25,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.09,
+    "rationale": "Since the cohort is 'no companion', they likely prioritized convenience and speed. Car use would be lower, and local public transport slightly more common than the overall population, reflecting a desire for flexibility."
+  },
+  "finished_utc": "2026-11-24T21:47:50.188104+00:00",
+  "elapsed_seconds": 2.734
+}

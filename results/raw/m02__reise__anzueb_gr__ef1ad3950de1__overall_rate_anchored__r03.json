@@ -1,0 +1,71 @@
+{
+  "task_id": "m02__reise__anzueb_gr__ef1ad3950de1__overall_rate_anchored__r03",
+  "model_id": "google/gemma-3-12b-it",
+  "model_label": "Gemma 3 12B",
+  "persona_id": "reise__anzueb_gr__ef1ad3950de1",
+  "feature": "anzueb_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 3,
+  "request_sha256": "94f5284509a0fe4cfd0fc3249bcc872268e1f96e5b2edeb53f2a99c56b4d2b9b",
+  "started_utc": "2026-11-24T21:44:00.712209+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:44:02.779623+00:00"
+    }
+  ],
+  "status": "invalid_output",
+  "accounted_cost_usd": 3.595e-05,
+  "response": {
+    "id": "gen-1795556640-nGEXbUfQQvCi3XgA0Lph",
+    "object": "chat.completion",
+    "created": 1795556640,
+    "model": "google/gemma-3-12b-it",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"+car\": 0.45, \"+local_pt\": 0.28, \"+long_distance_rail\": 0.15, \"rationale\": \"A single overnight stay suggests a leisure or short business trip. Car access to airports is common. Public transport/long-distance rail may be used more for convenience than longer trips.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 488,
+      "completion_tokens": 77,
+      "total_tokens": 565,
+      "cost": 3.595e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 3.595e-05,
+        "upstream_inference_prompt_cost": 2.44e-05,
+        "upstream_inference_completions_cost": 1.155e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "dfe5286522853016638d5d5322e9ee882d7b9e12c9cf3adb9e467ece42cc6136",
+  "cost_basis": "OpenRouter usage.cost",
+  "validation_error": "Unexpected output keys",
+  "finished_utc": "2026-11-24T21:44:02.779623+00:00",
+  "elapsed_seconds": 2.078
+}

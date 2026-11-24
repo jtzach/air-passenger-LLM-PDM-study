@@ -1,0 +1,76 @@
+{
+  "task_id": "m03__reise__anzbegl_gr__b61cbc7c0dd2__unanchored__r03",
+  "model_id": "openai/gpt-4.1-mini",
+  "model_label": "GPT-4.1 mini",
+  "persona_id": "reise__anzbegl_gr__b61cbc7c0dd2",
+  "feature": "anzbegl_gr",
+  "arm": "unanchored",
+  "replicate": 3,
+  "request_sha256": "299c8ceabad7808897626fe73c243f72f248225b49e14e431463fb0ff3aa9ddc",
+  "started_utc": "2026-11-24T21:47:02.372479+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:47:03.801494+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002736,
+  "response": {
+    "id": "gen-1795556822-XASMkV0jvdhRSNZ7fCxJ",
+    "object": "chat.completion",
+    "created": 1795556822,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.6,\n  \"local_pt\": 0.7,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"Likely car or local public transport for airport access; long-distance rail less common as direct alternative when flying. Household companion suggests shared car use or combined local transit.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 392,
+      "completion_tokens": 73,
+      "total_tokens": 465,
+      "cost": 0.0002736,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002736,
+        "upstream_inference_prompt_cost": 0.0001568,
+        "upstream_inference_completions_cost": 0.0001168
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "f25ef51fb9f14103d897b826163ee773169d7774f5285f5d96fa3778b1d6b57c",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.6,
+    "local_pt": 0.7,
+    "long_distance_rail": 0.15,
+    "rationale": "Likely car or local public transport for airport access; long-distance rail less common as direct alternative when flying. Household companion suggests shared car use or combined local transit."
+  },
+  "finished_utc": "2026-11-24T21:47:03.801494+00:00",
+  "elapsed_seconds": 1.421
+}

@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzauto_gr1__bee31b0e88ae__unanchored__r01",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzauto_gr1__bee31b0e88ae",
+  "feature": "anzauto_gr1",
+  "arm": "unanchored",
+  "replicate": 1,
+  "request_sha256": "096aecc4368c20273efdf0ef248048ab626c5a69c7b13a18141f978bf579809d",
+  "started_utc": "2026-11-24T21:48:19.107397+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:48:20.671183+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001496,
+  "response": {
+    "id": "gen-1795556899-ASjmLbPqFugn4Y8ZrFtK",
+    "object": "chat.completion",
+    "created": 1795556899,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.85,\n  \"local_pt\": 0.25,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Households with 3 cars are likely affluent, mobile, and car-oriented, so car is dominant for airport access. Public transport and long-distance rail are less attractive given car convenience, but not impossible, especially in urban or rail-rich areas.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 392,
+      "completion_tokens": 89,
+      "total_tokens": 481,
+      "cost": 0.001496,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001496,
+        "upstream_inference_prompt_cost": 0.000784,
+        "upstream_inference_completions_cost": 0.000712
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "e7e67297ad9eac8fe199242247867b00a6adde8e14ee0c2c3d5ee9155d8dc277",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.85,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.1,
+    "rationale": "Households with 3 cars are likely affluent, mobile, and car-oriented, so car is dominant for airport access. Public transport and long-distance rail are less attractive given car convenience, but not impossible, especially in urban or rail-rich areas."
+  },
+  "finished_utc": "2026-11-24T21:48:20.671183+00:00",
+  "elapsed_seconds": 1.562
+}

@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__anzueb_gr__f6e4375535d4__overall_rate_anchored__r03",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__anzueb_gr__f6e4375535d4",
+  "feature": "anzueb_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 3,
+  "request_sha256": "80ef1c0ed527466856a6ac08353baf954e2f88e05d938bf1b40a64ab1177b15e",
+  "started_utc": "2026-11-24T21:46:37.480839+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:46:51.577772+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.08e-05,
+  "response": {
+    "id": "gen-1795556808-ASA9ETEpITWScp4GO5cU",
+    "object": "chat.completion",
+    "created": 1795556808,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.3, \"local_pt\": 0.18, \"long_distance_rail\": 0.11, \"rationale\": \"Given the cohort's overnight trips (6-7 nights), likely a mix of travel needs. Car use would be common for shorter distances, while rail is plausible for longer journeys, mirroring overall rates but potentially slightly lower due to flight preference.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 490,
+      "completion_tokens": 88,
+      "total_tokens": 578,
+      "cost": 2.08e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.08e-05,
+        "upstream_inference_prompt_cost": 1.64e-05,
+        "upstream_inference_completions_cost": 4.4e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "f4236404ac544095103da6536f14bb1ec4b19bc91488e1e5a190aac17807e6cd",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.3,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.11,
+    "rationale": "Given the cohort's overnight trips (6-7 nights), likely a mix of travel needs. Car use would be common for shorter distances, while rail is plausible for longer journeys, mirroring overall rates but potentially slightly lower due to flight preference."
+  },
+  "finished_utc": "2026-11-24T21:46:51.577772+00:00",
+  "elapsed_seconds": 14.094
+}

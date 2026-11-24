@@ -1,0 +1,76 @@
+{
+  "task_id": "m04__reise__anzauto_gr1__bee31b0e88ae__unanchored__r03",
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "model_label": "Qwen3 235B A22B",
+  "persona_id": "reise__anzauto_gr1__bee31b0e88ae",
+  "feature": "anzauto_gr1",
+  "arm": "unanchored",
+  "replicate": 3,
+  "request_sha256": "9d25fe6460875fcfec0d53e2ca8f279f34b5dc1ce5847a27aa527bb21756867a",
+  "started_utc": "2026-11-24T21:51:18.343253+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:51:22.553676+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 7.688e-05,
+  "response": {
+    "id": "gen-1795557078-ZMLEftf5LGWsk3y8NCWD",
+    "object": "chat.completion",
+    "created": 1795557078,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.85,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.2,\n  \"rationale\": \"High car availability increases car use for airport access; public transport use depends on proximity to transit hubs. Long-distance rail competes less when households own multiple cars.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 402,
+      "completion_tokens": 74,
+      "total_tokens": 476,
+      "cost": 7.688e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 7.688e-05,
+        "upstream_inference_prompt_cost": 3.618e-05,
+        "upstream_inference_completions_cost": 4.07e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "e1227ee319f2bacb6bfe08cce3d9fabcebcd337b8177a9a3286bbec0a2932670",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.85,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.2,
+    "rationale": "High car availability increases car use for airport access; public transport use depends on proximity to transit hubs. Long-distance rail competes less when households own multiple cars."
+  },
+  "finished_utc": "2026-11-24T21:51:22.553676+00:00",
+  "elapsed_seconds": 4.203
+}

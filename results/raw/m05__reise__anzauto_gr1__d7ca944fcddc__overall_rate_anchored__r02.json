@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzauto_gr1__d7ca944fcddc__overall_rate_anchored__r02",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzauto_gr1__d7ca944fcddc",
+  "feature": "anzauto_gr1",
+  "arm": "overall_rate_anchored",
+  "replicate": 2,
+  "request_sha256": "180466cf0316d4ba7ccf57827d4276bcf29af34138f7bfe2bb816699036a16e3",
+  "started_utc": "2026-11-24T21:50:12.536704+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:50:14.911829+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001598,
+  "response": {
+    "id": "gen-1795557012-OicuZdljP4lWAn7gkTvI",
+    "object": "chat.completion",
+    "created": 1795557012,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.43,\n  \"local_pt\": 0.21,\n  \"long_distance_rail\": 0.11,\n  \"rationale\": \"Households with one car may rely on it more than carless ones, slightly raising car use versus average. Local PT and long-distance rail use are likely a bit lower, as car is more available for airport access/egress.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 451,
+      "completion_tokens": 87,
+      "total_tokens": 538,
+      "cost": 0.001598,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001598,
+        "upstream_inference_prompt_cost": 0.000902,
+        "upstream_inference_completions_cost": 0.000696
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "5b775eb106e8e3ac6c8138e31d195d60660da3655c9466fd1bd31ab72d0ee282",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.43,
+    "local_pt": 0.21,
+    "long_distance_rail": 0.11,
+    "rationale": "Households with one car may rely on it more than carless ones, slightly raising car use versus average. Local PT and long-distance rail use are likely a bit lower, as car is more available for airport access/egress."
+  },
+  "finished_utc": "2026-11-24T21:50:14.911829+00:00",
+  "elapsed_seconds": 2.375
+}

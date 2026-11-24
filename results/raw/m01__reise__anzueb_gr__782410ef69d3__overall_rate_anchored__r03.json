@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__anzueb_gr__782410ef69d3__overall_rate_anchored__r03",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__anzueb_gr__782410ef69d3",
+  "feature": "anzueb_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 3,
+  "request_sha256": "b856af032a120e3f598fb1059c57670ee90293b863c3555b2754c1af9f3ea7a6",
+  "started_utc": "2026-11-24T21:45:23.037903+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:45:25.197658+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.092e-05,
+  "response": {
+    "id": "gen-1795556722-kWKID53KdGyPPj1id2YM",
+    "object": "chat.completion",
+    "created": 1795556722,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.4, \"local_pt\": 0.25, \"long_distance_rail\": 0.15, \"rationale\": \"Given the 8-14 night journeys, travelers likely combined air travel with other modes for onward or return trips. Car use is probable for connecting journeys, while local public transport is plausible for local transfers. Long-distance rail use is less likely but possible for longer return segments.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 491,
+      "completion_tokens": 96,
+      "total_tokens": 587,
+      "cost": 2.092e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 176,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.092e-05,
+        "upstream_inference_prompt_cost": 1.612e-05,
+        "upstream_inference_completions_cost": 4.8e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "f33a24fcd29613b8f8177c52aa70db234ff6738e810b4b58deb04697cb9772f8",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.4,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "Given the 8-14 night journeys, travelers likely combined air travel with other modes for onward or return trips. Car use is probable for connecting journeys, while local public transport is plausible for local transfers. Long-distance rail use is less likely but possible for longer return segments."
+  },
+  "finished_utc": "2026-11-24T21:45:25.197658+00:00",
+  "elapsed_seconds": 2.156
+}

@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzbegl_gr__b61cbc7c0dd2__unanchored__r01",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzbegl_gr__b61cbc7c0dd2",
+  "feature": "anzbegl_gr",
+  "arm": "unanchored",
+  "replicate": 1,
+  "request_sha256": "2f41ad26d6c08e00728dac6bc4c22b58077298e55637978e52b96ec18bbec4bb",
+  "started_utc": "2026-11-24T21:45:55.803339+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:45:56.880064+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001416,
+  "response": {
+    "id": "gen-1795556755-oB7awvgAPNmsaTpZtCIT",
+    "object": "chat.completion",
+    "created": 1795556755,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.18,\n  \"rationale\": \"Household pairs often use cars for convenience and luggage. Public transport is less likely but possible for urban residents; long-distance rail is plausible for those living far from airports but less common than car.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 392,
+      "completion_tokens": 79,
+      "total_tokens": 471,
+      "cost": 0.001416,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001416,
+        "upstream_inference_prompt_cost": 0.000784,
+        "upstream_inference_completions_cost": 0.000632
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "fa09541702f4882ee05eb5e787429ef3caf942b44583df3a19a10bf8eb4b48be",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.18,
+    "rationale": "Household pairs often use cars for convenience and luggage. Public transport is less likely but possible for urban residents; long-distance rail is plausible for those living far from airports but less common than car."
+  },
+  "finished_utc": "2026-11-24T21:45:56.880064+00:00",
+  "elapsed_seconds": 1.079
+}

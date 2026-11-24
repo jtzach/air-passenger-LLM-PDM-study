@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__reise__RegioStaR7__72d39163efb4__unanchored__r02",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "reise__RegioStaR7__72d39163efb4",
+  "feature": "RegioStaR7",
+  "arm": "unanchored",
+  "replicate": 2,
+  "request_sha256": "3ee7b0a8227adf60941bf393b0f1d11ae6a37ea33d8f98864e17d4c94f48f842",
+  "started_utc": "2026-11-24T21:51:33.836258+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:51:37.568552+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 1.45e-05,
+  "response": {
+    "id": "gen-1795557094-iOZnlUULdRx2JsBUvCfG",
+    "object": "chat.completion",
+    "created": 1795557094,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.2,\n  \"local_pt\": 0.3,\n  \"long_distance_rail\": 0.1,\n  \"rationale\": \"Given the rural region setting, car use for the entire journey is likely lower than in urban areas. Local public transport and long-distance rail offer viable alternatives for reaching airports, increasing their probability of co-occurrence.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 418,
+      "completion_tokens": 90,
+      "total_tokens": 508,
+      "cost": 1.45e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 336,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.45e-05,
+        "upstream_inference_prompt_cost": 1e-05,
+        "upstream_inference_completions_cost": 4.5e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "bf59c276b2a193a83184b373a6924b40faf2d272f7bf8521e264cc28f7556cf7",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.2,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "Given the rural region setting, car use for the entire journey is likely lower than in urban areas. Local public transport and long-distance rail offer viable alternatives for reaching airports, increasing their probability of co-occurrence."
+  },
+  "finished_utc": "2026-11-24T21:51:37.568552+00:00",
+  "elapsed_seconds": 3.734
+}

@@ -1,0 +1,76 @@
+{
+  "task_id": "m04__reise__RegioStaR7__9f47524becab__unanchored__r02",
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "model_label": "Qwen3 235B A22B",
+  "persona_id": "reise__RegioStaR7__9f47524becab",
+  "feature": "RegioStaR7",
+  "arm": "unanchored",
+  "replicate": 2,
+  "request_sha256": "b5b99565afe886512e7f45eec78676e1afa5cb28965ef4d567954d7b4cfce5e7",
+  "started_utc": "2026-11-24T21:49:36.704646+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:49:42.524444+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 7.678e-05,
+  "response": {
+    "id": "gen-1795556976-9oRCIPHf9B0My1axrtHf",
+    "object": "chat.completion",
+    "created": 1795556976,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.75,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.2,\n  \"rationale\": \"In medium-sized urban areas, car use is common for airport access due to limited public transport coverage, while rail links are less frequent than in major cities.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 407,
+      "completion_tokens": 73,
+      "total_tokens": 480,
+      "cost": 7.678e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 7.678e-05,
+        "upstream_inference_prompt_cost": 3.663e-05,
+        "upstream_inference_completions_cost": 4.015e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "8e5106991b979cdab1b75840c7381a88928a88654cfc2b0faf370c46dd5d3c08",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.75,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.2,
+    "rationale": "In medium-sized urban areas, car use is common for airport access due to limited public transport coverage, while rail links are less frequent than in major cities."
+  },
+  "finished_utc": "2026-11-24T21:49:42.524444+00:00",
+  "elapsed_seconds": 5.812
+}

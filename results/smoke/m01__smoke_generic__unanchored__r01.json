@@ -1,0 +1,76 @@
+{
+  "task_id": "m01__smoke_generic__unanchored__r01",
+  "model_id": "google/gemma-3-4b-it",
+  "model_label": "Gemma 3 4B",
+  "persona_id": "smoke_generic",
+  "feature": "none",
+  "arm": "unanchored",
+  "replicate": 1,
+  "request_sha256": "59849f42fe4467fd8fb959d1020b924abe92c939dd59493b630620b3b39d7fc2",
+  "started_utc": "2026-11-24T21:37:58.165346+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:38:01.330556+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 1.854e-05,
+  "response": {
+    "id": "gen-1795556278-Dbi5eyKltDAYAoVYNR6f",
+    "object": "chat.completion",
+    "created": 1795556278,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.3,\n  \"local_pt\": 0.6,\n  \"long_distance_rail\": 0.2,\n  \"rationale\": \"Given the cohort is comprised of those undertaking overnight journeys, including flights, car use is likely for shorter distances. Local public transport is common for accessing airports and travel within destinations. Long-distance rail suggests some inter-city travel, but is less likely than the other two.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 336,
+      "completion_tokens": 102,
+      "total_tokens": 438,
+      "cost": 1.854e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.854e-05,
+        "upstream_inference_prompt_cost": 1.344e-05,
+        "upstream_inference_completions_cost": 5.1e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "35eeb8c3e877dcb1aaac9b5590864a3f0cfa931321100b0742daed2d3299929b",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.3,
+    "local_pt": 0.6,
+    "long_distance_rail": 0.2,
+    "rationale": "Given the cohort is comprised of those undertaking overnight journeys, including flights, car use is likely for shorter distances. Local public transport is common for accessing airports and travel within destinations. Long-distance rail suggests some inter-city travel, but is less likely than the other two."
+  },
+  "finished_utc": "2026-11-24T21:38:01.330556+00:00",
+  "elapsed_seconds": 3.172
+}

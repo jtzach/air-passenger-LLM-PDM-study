@@ -1,0 +1,76 @@
+{
+  "task_id": "m04__reise__anzauto_gr1__79ed954bbe2c__unanchored__r02",
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "model_label": "Qwen3 235B A22B",
+  "persona_id": "reise__anzauto_gr1__79ed954bbe2c",
+  "feature": "anzauto_gr1",
+  "arm": "unanchored",
+  "replicate": 2,
+  "request_sha256": "f6f66593ea2f99d840cbb03b9c91d23086a2ccc16db878e9f31e94e52465867c",
+  "started_utc": "2026-11-24T21:50:50.193775+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:50:54.794346+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 7.596e-05,
+  "response": {
+    "id": "gen-1795557050-1aNq2GtaEBm0sPigBkQn",
+    "object": "chat.completion",
+    "created": 1795557050,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.85,\n  \"local_pt\": 0.3,\n  \"long_distance_rail\": 0.2,\n  \"rationale\": \"High car availability increases car use for airport access; public transport use is lower due to convenience of private cars for multi-modal trips with luggage and scheduling flexibility.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 404,
+      "completion_tokens": 72,
+      "total_tokens": 476,
+      "cost": 7.596e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 7.596e-05,
+        "upstream_inference_prompt_cost": 3.636e-05,
+        "upstream_inference_completions_cost": 3.96e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "b6b13338ed37b51a247c0b5a1813942f31f5611c358ae6d89a51856ac9d84a68",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.85,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.2,
+    "rationale": "High car availability increases car use for airport access; public transport use is lower due to convenience of private cars for multi-modal trips with luggage and scheduling flexibility."
+  },
+  "finished_utc": "2026-11-24T21:50:54.794346+00:00",
+  "elapsed_seconds": 4.609
+}

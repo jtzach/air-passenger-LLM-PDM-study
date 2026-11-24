@@ -1,0 +1,76 @@
+{
+  "task_id": "m03__reise__anzauto_gr1__296e9849dc3d__unanchored__r01",
+  "model_id": "openai/gpt-4.1-mini",
+  "model_label": "GPT-4.1 mini",
+  "persona_id": "reise__anzauto_gr1__296e9849dc3d",
+  "feature": "anzauto_gr1",
+  "arm": "unanchored",
+  "replicate": 1,
+  "request_sha256": "cc567aee94431f5b346d2e3662e93b0fe4c6c7f36b4b6d2518222844b1386605",
+  "started_utc": "2026-11-24T21:45:25.021718+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:45:26.311388+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002684,
+  "response": {
+    "id": "gen-1795556724-PyBIrdgXWHuqg76Rpdr0",
+    "object": "chat.completion",
+    "created": 1795556724,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.25,\n  \"local_pt\": 0.65,\n  \"long_distance_rail\": 0.30,\n  \"rationale\": \"No household car suggests lower car use; local public transport likely for airport access; some use long-distance rail as alternative or complement to flights in Germany.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 391,
+      "completion_tokens": 70,
+      "total_tokens": 461,
+      "cost": 0.0002684,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002684,
+        "upstream_inference_prompt_cost": 0.0001564,
+        "upstream_inference_completions_cost": 0.000112
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "d05f6d84a16c5abb628fc209ed77308c4b5e94fbf7d9e38649ec1249069648ab",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.25,
+    "local_pt": 0.65,
+    "long_distance_rail": 0.3,
+    "rationale": "No household car suggests lower car use; local public transport likely for airport access; some use long-distance rail as alternative or complement to flights in Germany."
+  },
+  "finished_utc": "2026-11-24T21:45:26.311388+00:00",
+  "elapsed_seconds": 1.297
+}

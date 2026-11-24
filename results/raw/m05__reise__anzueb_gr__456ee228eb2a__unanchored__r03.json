@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzueb_gr__456ee228eb2a__unanchored__r03",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzueb_gr__456ee228eb2a",
+  "feature": "anzueb_gr",
+  "arm": "unanchored",
+  "replicate": 3,
+  "request_sha256": "8348e655bc98caae7098585dfdffb576e1fa92e7c3eef4b5c5010eed6778c908",
+  "started_utc": "2026-11-24T21:45:54.452670+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:45:55.600427+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001438,
+  "response": {
+    "id": "gen-1795556754-HguZvYdDZs7UGMGBBt2s",
+    "object": "chat.completion",
+    "created": 1795556754,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.40,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"Medium-length stays suggest leisure or visiting family/friends, often with luggage. Car use is common for airport access, but urban public transport and long-distance rail are also plausible in Germany’s well-connected cities.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 395,
+      "completion_tokens": 81,
+      "total_tokens": 476,
+      "cost": 0.001438,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001438,
+        "upstream_inference_prompt_cost": 0.00079,
+        "upstream_inference_completions_cost": 0.000648
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "b0aa90b0a802dfe22ae27ea26928b31e554505678424d11e301f3b87c7161c9d",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.25,
+    "rationale": "Medium-length stays suggest leisure or visiting family/friends, often with luggage. Car use is common for airport access, but urban public transport and long-distance rail are also plausible in Germany’s well-connected cities."
+  },
+  "finished_utc": "2026-11-24T21:45:55.600427+00:00",
+  "elapsed_seconds": 1.14
+}

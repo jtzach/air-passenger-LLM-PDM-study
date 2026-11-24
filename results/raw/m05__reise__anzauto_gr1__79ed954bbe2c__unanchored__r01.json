@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzauto_gr1__79ed954bbe2c__unanchored__r01",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzauto_gr1__79ed954bbe2c",
+  "feature": "anzauto_gr1",
+  "arm": "unanchored",
+  "replicate": 1,
+  "request_sha256": "2912e28b224de2152e31df6749dbe75ab7b1576d760736051cd0630c7e33e2e8",
+  "started_utc": "2026-11-24T21:50:57.287035+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:50:58.505983+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001436,
+  "response": {
+    "id": "gen-1795557057-ik1oQrGUoyqPje4mu1OG",
+    "object": "chat.completion",
+    "created": 1795557057,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.85,\n  \"local_pt\": 0.20,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Households with 4+ cars likely prefer car access for flexibility and convenience. Public and long-distance rail are less probable due to high car availability, but may occur in urban areas or for airport access.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 394,
+      "completion_tokens": 81,
+      "total_tokens": 475,
+      "cost": 0.001436,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001436,
+        "upstream_inference_prompt_cost": 0.000788,
+        "upstream_inference_completions_cost": 0.000648
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "61e2799bf5df79c4283283ea5af5bb2f2d0d44f0fdba1a18cd60e3131d1cba0b",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.85,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.1,
+    "rationale": "Households with 4+ cars likely prefer car access for flexibility and convenience. Public and long-distance rail are less probable due to high car availability, but may occur in urban areas or for airport access."
+  },
+  "finished_utc": "2026-11-24T21:50:58.505983+00:00",
+  "elapsed_seconds": 1.219
+}

@@ -1,0 +1,76 @@
+{
+  "task_id": "m04__reise__anzbegl_gr__07f355b725cf__unanchored__r03",
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "model_label": "Qwen3 235B A22B",
+  "persona_id": "reise__anzbegl_gr__07f355b725cf",
+  "feature": "anzbegl_gr",
+  "arm": "unanchored",
+  "replicate": 3,
+  "request_sha256": "97077691a328c12842046e61931277ed4f1a0ae43cfed81106bbacf2fe05867a",
+  "started_utc": "2026-11-24T21:44:45.099007+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:44:49.141478+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 7.798e-05,
+  "response": {
+    "id": "gen-1795556685-33b9Ha3UG6K7qqf6vmWc",
+    "object": "chat.completion",
+    "created": 1795556685,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.75,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.2,\n  \"rationale\": \"Car use is likely for household group travel to airports; public transport less common in multi-person trips. Long-distance rail competes with air, making combined use less probable.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 402,
+      "completion_tokens": 76,
+      "total_tokens": 478,
+      "cost": 7.798e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 7.798e-05,
+        "upstream_inference_prompt_cost": 3.618e-05,
+        "upstream_inference_completions_cost": 4.18e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "fb5a135c0095655333a0ed06778ac7e08ff0f1b8e0adb6331a238fc05bae58de",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.75,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.2,
+    "rationale": "Car use is likely for household group travel to airports; public transport less common in multi-person trips. Long-distance rail competes with air, making combined use less probable."
+  },
+  "finished_utc": "2026-11-24T21:44:49.141478+00:00",
+  "elapsed_seconds": 4.047
+}

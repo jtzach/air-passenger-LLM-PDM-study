@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__anzueb_gr__fd46cf332878__overall_rate_anchored__r01",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__anzueb_gr__fd46cf332878",
+  "feature": "anzueb_gr",
+  "arm": "overall_rate_anchored",
+  "replicate": 1,
+  "request_sha256": "bad1ddaa628e7a9a7d2cbb891fe2748030aa5449f957a40d58d0963c0b52304c",
+  "started_utc": "2026-11-24T21:49:21.626889+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:49:23.069872+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001572,
+  "response": {
+    "id": "gen-1795556961-NLcM3jYYWYDMxBp2wTrH",
+    "object": "chat.completion",
+    "created": 1795556961,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.42,\n  \"local_pt\": 0.19,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Longer trips (15+ nights) may favor car use for airport access due to luggage and extended travel, while public/local and long-distance rail are less likely due to trip complexity and baggage management over extended absence.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 454,
+      "completion_tokens": 83,
+      "total_tokens": 537,
+      "cost": 0.001572,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001572,
+        "upstream_inference_prompt_cost": 0.000908,
+        "upstream_inference_completions_cost": 0.000664
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "44573213cfbbad9203020bf192a1575557f57d456faf9f4e5e3ceb12eb951eb5",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.42,
+    "local_pt": 0.19,
+    "long_distance_rail": 0.1,
+    "rationale": "Longer trips (15+ nights) may favor car use for airport access due to luggage and extended travel, while public/local and long-distance rail are less likely due to trip complexity and baggage management over extended absence."
+  },
+  "finished_utc": "2026-11-24T21:49:23.069872+00:00",
+  "elapsed_seconds": 1.437
+}

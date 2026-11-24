@@ -1,0 +1,76 @@
+{
+  "task_id": "m05__reise__RegioStaR7__72d39163efb4__overall_rate_anchored__r01",
+  "model_id": "openai/gpt-4.1",
+  "model_label": "GPT-4.1",
+  "persona_id": "reise__RegioStaR7__72d39163efb4",
+  "feature": "RegioStaR7",
+  "arm": "overall_rate_anchored",
+  "replicate": 1,
+  "request_sha256": "9fb81fbf7e5d03f2ef5f40a9a88aed42503e2142472a3ba6d015bd92978568cf",
+  "started_utc": "2026-11-24T21:47:02.513062+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:47:03.848497+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001566,
+  "response": {
+    "id": "gen-1795556822-ODv57TzSpfKfdwYgGSnO",
+    "object": "chat.completion",
+    "created": 1795556822,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.52,\n  \"local_pt\": 0.17,\n  \"long_distance_rail\": 0.09,\n  \"rationale\": \"Rural residents face limited public transport and infrequent long-distance rail, increasing car use to/from airports. Local PT and long-distance rail likely underused due to sparse coverage and inconvenient schedules compared to urban areas.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 455,
+      "completion_tokens": 82,
+      "total_tokens": 537,
+      "cost": 0.001566,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001566,
+        "upstream_inference_prompt_cost": 0.00091,
+        "upstream_inference_completions_cost": 0.000656
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "33f36bb816b52b09d45343d820437c90c4a1c35b119bed4c8903001591c8f020",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.52,
+    "local_pt": 0.17,
+    "long_distance_rail": 0.09,
+    "rationale": "Rural residents face limited public transport and infrequent long-distance rail, increasing car use to/from airports. Local PT and long-distance rail likely underused due to sparse coverage and inconvenient schedules compared to urban areas."
+  },
+  "finished_utc": "2026-11-24T21:47:03.848497+00:00",
+  "elapsed_seconds": 1.328
+}

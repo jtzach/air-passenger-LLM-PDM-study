@@ -1,0 +1,76 @@
+{
+  "task_id": "m03__reise__anzauto_gr1__bee31b0e88ae__unanchored__r03",
+  "model_id": "openai/gpt-4.1-mini",
+  "model_label": "GPT-4.1 mini",
+  "persona_id": "reise__anzauto_gr1__bee31b0e88ae",
+  "feature": "anzauto_gr1",
+  "arm": "unanchored",
+  "replicate": 3,
+  "request_sha256": "ee578a784e67583aa638f8c20aedf4e75843d7ddd2ffdceda9ccdbbfd0bd902d",
+  "started_utc": "2026-11-24T21:43:21.694616+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-24T21:43:23.742830+00:00"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002768,
+  "response": {
+    "id": "gen-1795556602-zHCocE4L8BEjQ2vduVjQ",
+    "object": "chat.completion",
+    "created": 1795556602,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.75,\n  \"local_pt\": 0.60,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"High car availability suggests frequent car use for airport access; local public transit likely used in urban areas; long-distance rail less common but plausible as alternative or feeder mode to flights.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 392,
+      "completion_tokens": 75,
+      "total_tokens": 467,
+      "cost": 0.0002768,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002768,
+        "upstream_inference_prompt_cost": 0.0001568,
+        "upstream_inference_completions_cost": 0.00012
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "response_sha256": "a2282d6122201ff9bff664b445b52f902273adc987d48fd3862e6fc4eba3b495",
+  "cost_basis": "OpenRouter usage.cost",
+  "prediction": {
+    "car": 0.75,
+    "local_pt": 0.6,
+    "long_distance_rail": 0.25,
+    "rationale": "High car availability suggests frequent car use for airport access; local public transit likely used in urban areas; long-distance rail less common but plausible as alternative or feeder mode to flights."
+  },
+  "finished_utc": "2026-11-24T21:43:23.743757+00:00",
+  "elapsed_seconds": 2.047
+}
