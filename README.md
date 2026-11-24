@@ -1,8 +1,10 @@
 # Air-passenger LLM-PDM study
 
-An aggregate adaptation of LLM-PDM using public **Mobilität in Deutschland 2023** data. The study tests whether five language models reproduce reported car, local public transport and long-distance rail co-use on overnight journeys whose recorded main mode is aircraft.
+An aggregate adaptation of LLM-PDM using public **Mobilität in Deutschland 2023** data. The study tests whether language models reproduce reported car, local public transport and long-distance rail co-use on overnight journeys whose recorded main mode is aircraft.
 
-**Read the paper first:** [journal manuscript](manuscript/main.pdf), then [technical supplement](manuscript/supplement.pdf). The manuscript uses the official Findings template and is designed for a 10–15 minute review.
+**Start with the [plain-language walkthrough and sketch](docs/PLAIN_LANGUAGE_WALKTHROUGH.md):** real survey journeys, group cards with one clue, three AI estimates, and a comparison with survey answers. It includes a real worked example and explains why “out of 100 journeys” does not mean 100 simulated people.
+
+Then read the [journal manuscript](manuscript/main.pdf) and [technical supplement](manuscript/supplement.pdf). The manuscript uses the official Findings template and is designed for a 10–15 minute review.
 
 ## What the evidence represents
 
@@ -18,11 +20,12 @@ These are public group-level margins. No B1 microdata, joint synthetic passenger
 
 ## Review route
 
-1. Read [the paper](manuscript/main.pdf) for the question, design and main results.
-2. Inspect the [framework](figures/01_framework.png), [persona selection](figures/02_persona_selection.png) and [model results](figures/03_model_results.png).
-3. Open [the updated English workbook](data/workbooks/MiD2023_Comprehensive_Data_and_LLM_EN.xlsx) for the original data archive and new, separately labelled experiment tables.
-4. Read [how the Excel was made](docs/EXCEL_PROVENANCE.md) and [the study data dictionary](docs/data_dictionary.md).
-5. Use [the supplement](manuscript/supplement.pdf) for formulas, prompts, limits and reproducibility details.
+1. Read [the plain-language walkthrough](docs/PLAIN_LANGUAGE_WALKTHROUGH.md) for the idea, sketch and one actual example.
+2. Read [the paper](manuscript/main.pdf) for the question, design and main results.
+3. Inspect the [framework](figures/01_framework.png), [persona selection](figures/02_persona_selection.png) and [model results](figures/03_model_results.png).
+4. Open [the updated English workbook](data/workbooks/MiD2023_Comprehensive_Data_and_LLM_EN.xlsx) for the original data archive and new, separately labelled experiment tables.
+5. Read [how the Excel was made](docs/EXCEL_PROVENANCE.md) and [the study data dictionary](docs/data_dictionary.md).
+6. Use [the supplement](manuscript/supplement.pdf) for formulas, prompts, limits and reproducibility details.
 
 ## Repository map
 

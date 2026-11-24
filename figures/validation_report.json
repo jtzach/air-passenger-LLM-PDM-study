@@ -18,31 +18,76 @@
       "file": "01_framework.pdf",
       "pages": 1,
       "width_inches": 7.064,
-      "height_inches": 4.352,
+      "height_inches": 5.0497499999999995,
       "embedded_raster_images": 0,
       "svg_image_tags": 0,
-      "extractable_text_characters": 1077
+      "extractable_text_characters": 857,
+      "sha256": "572c5875c713e82eaf1a110d614a8e4cc8430a8097cfed958bd61cfa2f356c08"
     },
     {
       "file": "02_persona_selection.pdf",
+      "pages": 1,
+      "width_inches": 7.064,
+      "height_inches": 5.33925,
+      "embedded_raster_images": 0,
+      "svg_image_tags": 0,
+      "extractable_text_characters": 777,
+      "sha256": "1d4bd341f3042d5432c57a5e865e39492a51b64767782d14d38399f85cc43e5f"
+    },
+    {
+      "file": "03_model_results.pdf",
+      "pages": 1,
+      "width_inches": 6.92,
+      "height_inches": 5.075683333333334,
+      "embedded_raster_images": 0,
+      "svg_image_tags": 0,
+      "extractable_text_characters": 662,
+      "sha256": "bee11de72bf123d32e318e76eeb536ef6662411be8d677bd97480bb9280bbabf"
+    },
+    {
+      "file": "S01_technical_cohort_profiles.pdf",
       "pages": 1,
       "width_inches": 7.171012152777777,
       "height_inches": 6.827734400000001,
       "embedded_raster_images": 0,
       "svg_image_tags": 0,
-      "extractable_text_characters": 1632
+      "extractable_text_characters": 1621,
+      "sha256": "d05cce34b7e2c902b39d26f8e70a0772469542537825fad408db573360ad1c35"
     },
     {
-      "file": "03_model_results.pdf",
+      "file": "S02_technical_model_diagnostics.pdf",
       "pages": 1,
       "width_inches": 6.981472222222222,
       "height_inches": 6.120771484375,
       "embedded_raster_images": 0,
       "svg_image_tags": 0,
-      "extractable_text_characters": 944
+      "extractable_text_characters": 935,
+      "sha256": "7f37ad4048bcad9806f7bff2c0e6db0b0a7328bdc7934ef85b982ae7195843f8"
     }
   ],
   "errors": [],
   "scope": "Independent recalculation from archived terminal model responses and fixed public cohort targets; no API calls or study-data edits.",
-  "latest_pdf_render_checks": "PASS: all three final PDFs visually inspected; vector colourbar seams suppressed in final figure 2."
+  "latest_pdf_render_checks": "PASS: three simplified main figures and two retained technical appendix figures rendered with pdftoppm and visually inspected; readable labels, no clipping or overlapping labels.",
+  "redesign_validation": {
+    "checked_utc": "2026-11-24T22:54:48.179019+00:00",
+    "main_figures": [
+      "01_framework",
+      "02_persona_selection",
+      "03_model_results"
+    ],
+    "technical_appendix_figures": [
+      "S01_technical_cohort_profiles",
+      "S02_technical_model_diagnostics"
+    ],
+    "probability_or_error_values_independently_matched": 20,
+    "source_values_changed": false,
+    "frozen_selected_feature_counts": [
+      5,
+      7,
+      4,
+      7
+    ],
+    "reproducible_command": "python src/make_figures.py --only all",
+    "note": "Prior independent raw-response and metric recalculation checks above are retained; presentation-only redesign uses the same immutable study outputs."
+  }
 }

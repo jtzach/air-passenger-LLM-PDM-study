@@ -1,0 +1,28 @@
+{
+  "description": "No-household-car cohort; GPT-4.1, overall-rate anchored, mean of three repeats.",
+  "source": "results/processed/prediction_summary.csv",
+  "display": "Probability multiplied by 100; one decimal; no 100-person sample.",
+  "values": [
+    {
+      "mode_id": "car",
+      "predicted_mean": 0.16333333333333333,
+      "observed_share": 0.14996851951330345,
+      "unweighted_n": 936,
+      "n_repeats": 3
+    },
+    {
+      "mode_id": "local_pt",
+      "predicted_mean": 0.35,
+      "observed_share": 0.4005882905932819,
+      "unweighted_n": 936,
+      "n_repeats": 3
+    },
+    {
+      "mode_id": "long_distance_rail",
+      "predicted_mean": 0.19,
+      "observed_share": 0.16762432059419718,
+      "unweighted_n": 936,
+      "n_repeats": 3
+    }
+  ]
+}

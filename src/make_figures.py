@@ -20,7 +20,8 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib import colors
-from matplotlib.patches import FancyArrowPatch, FancyBboxPatch, Rectangle
+from matplotlib.patches import FancyArrowPatch, FancyBboxPatch, Rectangle, Circle, Polygon, Arc
+from matplotlib.transforms import Affine2D
 from matplotlib.lines import Line2D
 from matplotlib.ticker import PercentFormatter, MaxNLocator
 
@@ -96,62 +97,139 @@ def arrow(ax, start, end, color=MUTED, lw=1.2, style="-|>", **kwargs):
     ax.add_patch(p)
 
 
+def icon(ax, kind, cx, cy, size=.07, color=BLUE):
+    """Small, original line icons in native vector coordinates."""
+    sy = size * ax.figure.get_figwidth() / ax.figure.get_figheight()
+    trans = Affine2D().scale(size, sy).translate(cx-size/2, cy-sy/2) + ax.transAxes
+    def patch(p):
+        p.set_transform(trans)
+        p.set_edgecolor(color)
+        p.set_linewidth(1.7)
+        p.set_clip_on(False)
+        ax.add_patch(p)
+    def line(xs, ys, lw=1.7):
+        ax.plot(xs, ys, transform=trans, color=color, lw=lw, solid_capstyle="round", clip_on=False)
+    def rect(x, y, w, h, r=.06):
+        patch(FancyBboxPatch((x,y),w,h,boxstyle=f"round,pad=0,rounding_size={r}",facecolor="white"))
+    def circ(x,y,r,fill=False):
+        patch(Circle((x,y),r,facecolor=color if fill else "white"))
+    if kind == "plane":
+        patch(Polygon([[.47,.04],[.55,.04],[.59,.27],[.83,.17],[.87,.25],
+                       [.59,.44],[.58,.68],[.95,.53],[.98,.64],[.57,.88],
+                       [.54,.99],[.47,.99],[.44,.88],[.03,.64],[.06,.53],
+                       [.43,.68],[.43,.44],[.15,.25],[.19,.17],[.44,.27]],
+                      closed=True,facecolor=color))
+    elif kind == "card":
+        rect(.06,.13,.88,.72)
+        line([.22,.78],[.68,.68])
+        line([.52,.78],[.48,.48])
+        line([.52,.78],[.30,.30])
+        ax.text(.30,.38,"1",transform=trans,ha="center",va="center",weight="bold",fontsize=20,color=color)
+    elif kind == "robot":
+        rect(.12,.17,.76,.61,.12)
+        line([.5,.5],[.78,.93]); circ(.5,.96,.045,True)
+        circ(.32,.54,.055,True); circ(.68,.54,.055,True)
+        line([.33,.67],[.33,.33]); line([.02,.1],[.44,.44]); line([.9,.98],[.44,.44])
+    elif kind == "compare":
+        rect(.08,.06,.7,.87)
+        for x,h in [(.22,.25),(.39,.46),(.56,.34)]:
+            patch(Rectangle((x,.22),.09,h,facecolor=color))
+        circ(.78,.30,.20); line([.92,1.08],[.15,-.02])
+    elif kind == "lock":
+        patch(Arc((.5,.6),.52,.65,theta1=0,theta2=180))
+        rect(.16,.04,.68,.56); circ(.5,.36,.04,True); line([.5,.5],[.33,.22])
+    elif kind == "car":
+        patch(Polygon([[.14,.36],[.26,.66],[.71,.66],[.86,.36]],facecolor="white",closed=True))
+        rect(.06,.22,.89,.22,.04)
+        circ(.25,.21,.1); circ(.76,.21,.1)
+        line([.48,.48],[.44,.64])
+    elif kind == "bus":
+        rect(.08,.19,.84,.61,.07)
+        for x in [.19,.40,.61]: rect(x,.49,.15,.20,.015)
+        circ(.27,.19,.09); circ(.74,.19,.09)
+    elif kind == "train":
+        rect(.10,.25,.80,.43,.05)
+        for x in [.21,.43,.65]: rect(x,.44,.13,.15,.01)
+        for x in [.25,.75]: circ(x,.24,.07)
+        line([.05,.96],[.11,.11]); line([.23,.15],[.13,.03]); line([.76,.84],[.13,.03])
+    elif kind == "area":
+        for x,y,w,h in [(.05,.1,.23,.47),(.35,.1,.27,.79),(.69,.1,.24,.59)]:
+            rect(x,y,w,h,.01)
+            for yy in np.arange(y+.13,y+h-.05,.19): line([x+.07,x+w-.07],[yy,yy],1.3)
+    elif kind == "companions":
+        for x,y in [(.28,.70),(.72,.62)]:
+            circ(x,y,.11)
+            patch(Arc((x,y-.35),.38,.42,theta1=0,theta2=180))
+            line([x-.19,x-.19],[y-.35,y-.53]); line([x+.19,x+.19],[y-.35,y-.53])
+    elif kind == "nights":
+        line([.08,.08],[.12,.63]); line([.08,.92],[.24,.24]); line([.92,.92],[.12,.48])
+        rect(.15,.28,.76,.20,.03); circ(.25,.53,.10)
+        patch(Arc((.74,.79),.28,.28,theta1=65,theta2=330))
+        line([.80,.86],[.91,.87])
+    else:
+        raise ValueError(kind)
+
+
+def worked_example():
+    rows = read_csv(ROOT / "results" / "processed" / "prediction_summary.csv")
+    example = [r for r in rows if r["model_id"] == "openai/gpt-4.1"
+               and r["arm"] == "overall_rate_anchored" and r["feature"] == "anzauto_gr1"
+               and r["category_label"] == "No car"]
+    if len(example) != 3:
+        raise ValueError("Expected one no-car worked example with three modes.")
+    return {r["mode_id"]: r for r in example}
+
+
 def framework():
-    fig, ax = plt.subplots(figsize=(7.2, 4.45))
-    fig.subplots_adjust(left=.015, right=.985, bottom=.025, top=.985)
+    fig, ax = plt.subplots(figsize=(7.2, 5.15))
+    fig.subplots_adjust(left=.015, right=.985, bottom=.02, top=.985)
     ax.set_axis_off()
-    text(ax, .012, .993, "From public evidence to a measured persona benchmark", 12, "bold")
-    text(ax, .012, .94, "Aircraft-containing overnight journeys reported in MiD 2023", 8.4, color=MUTED)
+    text(ax,.015,.99,"The study, in four steps",15,"bold")
+    text(ax,.015,.93,"Can AI guess which other transport people use when they fly?",10,color=MUTED)
 
-    xs, width, bottom, height = [.012, .354, .696], .292, .435, .435
-    titles = ["PUBLIC EVIDENCE", "DATA-DRIVEN PERSONAS", "LLM PROBABILITIES"]
-    cols = [BLUE, TEAL, PURPLE]
-    for i, (x, title, col) in enumerate(zip(xs, titles, cols), 1):
-        box(ax, x, bottom, width, height, face="white")
-        box(ax, x, .79, width, .08, face=col, edge=col)
-        text(ax, x+.015, .828, f"{i:02d}  {title}", 8.1, "bold", "white", va="center")
-    arrow(ax, (.309, .655), (.348, .655))
-    arrow(ax, (.651, .655), (.69, .655))
+    xs = [.015,.265,.515,.765]
+    labels = ["Real survey trips","ONE group clue","Ask the AI","Check the answers"]
+    details = ["9,475 air trips\nwith nights away","e.g. no car\nin the household","Out of 100 trips,\nhow many used each?","AI guesses beside\nthe survey answers"]
+    colours = [BLUE,TEAL,PURPLE,ORANGE]
+    for i,(x,label,detail,col,kind) in enumerate(zip(xs,labels,details,colours,["plane","card","robot","compare"]),1):
+        box(ax,x,.575,.22,.295,face=PALE,edge=GRID)
+        text(ax,x+.015,.851,str(i),9,"bold",col)
+        icon(ax,kind,x+.11,.785,.066,col)
+        text(ax,x+.11,.707,label,9.5,"bold",ha="center")
+        text(ax,x+.11,.661,detail,9,color=MUTED,ha="center",linespacing=1.35)
+    for x in [.242,.492,.742]: arrow(ax,(x,.74),(x+.019,.74),lw=1.4)
 
-    text(ax, .028, .765, "Archive raw responses", 8.1, "bold")
-    text(ax, .028, .716, "Record query, source and hash", 7.8, color=MUTED)
-    # Schematic table: text labels only, never invented prevalence values.
-    box(ax, .029, .555, .258, .115, face=PALE, edge=GRID, radius=.008)
-    for j, label in enumerate(["Cohort | mode | weighted share", "Unweighted support | coverage"]):
-        text(ax, .041, .644-j*.043, label, 6.9, color=MUTED)
-    text(ax, .028, .528, "Compute conditional mode rates", 7.6, "bold")
-    text(ax, .028, .485, "Car  /  local PT  /  long-distance rail", 6.95, color=MUTED)
+    icon(ax,"lock",.042,.505,.035,MUTED)
+    text(ax,.075,.527,"The group's real answers\nare hidden from the AI.",9,color=MUTED,linespacing=1.3)
+    text(ax,.525,.527,"Try with and without a hint:\noverall survey numbers.",9,color=MUTED,linespacing=1.3)
+    ax.plot([.015,.985],[.445,.445],transform=ax.transAxes,lw=.8,color=GRID)
 
-    text(ax, .37, .765, "Rank cohort heterogeneity", 8.1, "bold")
-    text(ax, .37, .715, "2 traveller + 2 journey features", 7.7, color=MUTED)
-    text(ax, .37, .66, "Retain adequately supported strata", 7.5)
-    box(ax, .371, .548, .258, .073, face="#EAF5F1", edge="#BCDCD1", radius=.008)
-    text(ax, .5, .584, "ONE ATTRIBUTE PER PERSONA", 7.2, "bold", TEAL, ha="center", va="center")
-    text(ax, .37, .527, "No invented combinations of attributes", 7.0, color=MUTED)
-    text(ax, .37, .481, "Withhold cohort rates from prompts", 6.9, color=MUTED)
-
-    text(ax, .712, .765, "Three co-use probabilities", 8.1, "bold")
-    text(ax, .712, .716, "Small + large LLMs / OpenRouter", 7.1, color=MUTED)
-    for y, title, desc in [(.61, "Unanchored", "Persona + task definition"),
-                           (.505, "Overall-rate anchored", "Same task + national mode rates")]:
-        box(ax, .713, y, .258, .084, face="#F5F0F7", edge="#DDCCE3", radius=.008)
-        text(ax, .725, y+.066, title, 7.4, "bold", PURPLE)
-        text(ax, .725, y+.032, desc, 6.7, color=MUTED)
-    text(ax, .841, .474, "3 repeats per model and condition", 7, ha="center", color=MUTED)
-
-    # Both evidence and generated outputs enter the same quantitative evaluation.
-    arrow(ax, (.158, .43), (.158, .295), color=BLUE)
-    arrow(ax, (.842, .43), (.842, .295), color=PURPLE)
-    text(ax, .175, .37, "Observed weighted rates", 7.2, color=BLUE, va="center")
-    text(ax, .825, .37, "Predicted probabilities", 7.2, color=PURPLE, ha="right", va="center")
-    box(ax, .012, .08, .976, .21, face=PALE, edge=GRID)
-    text(ax, .031, .258, "04  QUANTITATIVE VALIDATION", 8.2, "bold")
-    text(ax, .031, .207, "Compare persona predictions\nwith a cohort-blind national baseline", 7.7, linespacing=1.45)
-    ax.plot([.495, .495], [.115, .225], color=GRID, lw=.8, transform=ax.transAxes)
-    text(ax, .525, .207, "Absolute error  /  calibration  /  repeat variation\nAgreement with published cohort marginals", 7.7, linespacing=1.45)
-    text(ax, .5, .037, "Scope: aggregate validation; no individual reconstruction or identification of airport-access legs.",
-         7.1, color=MUTED, ha="center", va="center")
-    save(fig, "01_framework", "Study design. Public MiD 2023 aggregate evidence; no synthetic results plotted.")
+    example = worked_example()
+    r0 = next(iter(example.values()))
+    text(ax,.015,.417,f"One example: households with no car ({int(float(r0['unweighted_n'])):,} surveyed journeys)",10,"bold")
+    text(ax,.015,.374,"GPT-4.1 with the overall hint · mean of 3 runs · rates shown out of 100",8.6,color=MUTED)
+    cards = [("car","Car","car"),("local_pt","Local bus or train","bus"),
+             ("long_distance_rail","Long-distance train","train")]
+    audit = {"description":"No-household-car cohort; GPT-4.1, overall-rate anchored, mean of three repeats.",
+             "source":"results/processed/prediction_summary.csv","display":"Probability multiplied by 100; one decimal; no 100-person sample.","values":[]}
+    for x,(mode,label,kind) in zip([.015,.345,.675],cards):
+        box(ax,x,.115,.31,.21,face="white",edge=GRID)
+        icon(ax,kind,x+.038,.285,.045,MUTED)
+        text(ax,x+.075,.297,label,9,"bold")
+        row = example[mode]
+        ai,real = float(row["predicted_mean"])*100,float(row["observed_share"])*100
+        text(ax,x+.082,.239,f"{ai:.1f}",19,"bold",PURPLE,ha="center")
+        text(ax,x+.231,.239,f"{real:.1f}",19,"bold",BLUE,ha="center")
+        text(ax,x+.082,.159,"AI guess",8.4,color=PURPLE,ha="center")
+        text(ax,x+.231,.159,"Survey answer",8.4,color=BLUE,ha="center")
+        audit["values"].append({"mode_id":mode,"predicted_mean":float(row["predicted_mean"]),
+                                 "observed_share":float(row["observed_share"]),
+                                 "unweighted_n":int(float(row["unweighted_n"])),"n_repeats":int(row["n_repeats"])})
+    text(ax,.015,.082,"A journey can use several modes. The three rates need not add up to 100.",8.5,color=MUTED)
+    text(ax,.015,.040,"AI returns probabilities (0–1); ×100 only changes the display. No people are simulated; no airport is identified.",7.7,color=MUTED)
+    OUT.mkdir(parents=True,exist_ok=True)
+    (OUT/"worked_example_values.json").write_text(json.dumps(audit,indent=2)+"\n",encoding="utf-8")
+    save(fig,"01_framework","Four-step study explanation and an observed GPT-4.1 anchored example, read from canonical prediction_summary.csv; all group rates withheld from model prompts.")
 
 
 def read_csv(path):
@@ -170,6 +248,114 @@ def number(x):
 
 
 def cohort_figure():
+    rows = read_csv(DATA / "cohort_mode_shares.csv")
+    ranking = read_csv(DATA / "feature_selection.csv")
+    selected = {r["feature_id"]: r for r in ranking if yes(r["selected"])}
+    features = ["anzauto_gr1","RegioStaR7","anzbegl_gr","anzueb_gr"]
+    if set(selected) != set(features):
+        raise ValueError("The simplified figure requires the frozen four-feature design.")
+    counts = [int(float(selected[f]["eligible_strata"])) for f in features]
+    fig, ax = plt.subplots(figsize=(7.2,5.45))
+    fig.subplots_adjust(left=.015,right=.985,bottom=.02,top=.985)
+    ax.set_axis_off()
+    text(ax,.015,.99,f"Four clues make {sum(counts)} groups",15,"bold")
+    text(ax,.015,.934,"Each group uses ONE clue. A journey can belong to more than one group.",9.8,color=MUTED)
+    text(ax,.255,.872,"2 traveller clues",9.4,"bold",TEAL,ha="center")
+    text(ax,.755,.872,"2 journey clues",9.4,"bold",PURPLE,ha="center")
+    labels = ["Cars at home","Home area","People from the same\nhome coming along","Nights away"]
+    kinds = ["car","area","companions","nights"]
+    for x,label,kind,count,col in zip([.015,.265,.515,.765],labels,kinds,counts,[TEAL,TEAL,PURPLE,PURPLE]):
+        box(ax,x,.530,.22,.303,face=PALE,edge=GRID)
+        icon(ax,kind,x+.11,.776,.062,col)
+        text(ax,x+.11,.714,label,8.6 if kind == "companions" else 9.2,"bold",ha="center",linespacing=1.12)
+        text(ax,x+.11,.624,str(count),22,"bold",col,ha="center")
+        text(ax,x+.11,.569,"groups",8.7,color=MUTED,ha="center")
+    text(ax,.015,.502,f"{len(ranking)} clues checked → 2 traveller clues + 2 journey clues selected",10,"bold")
+    text(ax,.015,.462,"Age ranked 3rd among traveller clues; the design allowed only 2 traveller slots.",8.6,color=MUTED)
+    ax.plot([.015,.985],[.422,.422],transform=ax.transAxes,lw=.8,color=GRID)
+    text(ax,.015,.397,"Why the clue matters: a survey example",10.5,"bold")
+    text(ax,.015,.355,"These groups reported different ways of travelling.",8.6,color=MUTED)
+    contrast = []
+    for i,(mode,label,kind) in enumerate([("car","Car also used","car"),("local_pt","Local bus or train also used","bus")]):
+        x = .015+i*.50
+        box(ax,x,.105,.47,.212,face="white",edge=GRID)
+        icon(ax,kind,x+.034,.284,.035,MUTED)
+        text(ax,x+.064,.298,label,9,"bold")
+        for y,category,short in [(.224,"No car","No car at home"),(.156,"4 or more cars","4+ cars at home")]:
+            row = next(r for r in rows if r["feature_id"] == "anzauto_gr1" and r["mode_id"] == mode and r["stratum_label_en"] == category)
+            share = float(row["observed_share"])
+            text(ax,x+.015,y,short,8.7,va="center")
+            ax.add_patch(Rectangle((x+.205,y-.019),.205*share/.60,.038,transform=ax.transAxes,
+                                   facecolor=TEAL,edgecolor="none"))
+            text(ax,x+.205+.205*share/.60+.008,y,f"{share:.0%}",10,"bold",TEAL,va="center")
+            contrast.append({"mode_id":mode,"category":category,"observed_share":share,
+                             "unweighted_n":int(float(row["unweighted_base"]))})
+    text(ax,.015,.072,"Rounded weighted survey rates. No-car group: 936 journeys; 4+ car group: 279 journeys.",8.3,color=MUTED)
+    text(ax,.015,.033,"Groups overlap; they are not combined into fictional people. A journey may use several modes.",8.3,color=MUTED)
+    (OUT/"cohort_example_values.json").write_text(json.dumps({"source":"data/processed/cohort_mode_shares.csv",
+        "selected_features":[{"feature_id":f,"groups":n} for f,n in zip(features,counts)],"contrasts":contrast},indent=2)+"\n",encoding="utf-8")
+    save(fig,"02_persona_selection","Plain-language overview of the frozen 2-traveller/2-journey feature selection and 23 overlapping single-attribute groups. Rounded survey contrasts read from cohort_mode_shares.csv; complete profiles in S01_technical_cohort_profiles.")
+
+
+def results_figure(calibration_model="openai/gpt-4.1"):
+    metrics = read_csv(ROOT / "results" / "processed" / "model_metrics.csv")
+    config = json.loads((ROOT/"config"/"experiment.json").read_text(encoding="utf-8-sig"))
+    numbers = json.loads((ROOT/"results"/"processed"/"paper_numbers.json").read_text(encoding="utf-8-sig"))
+    active = set(numbers["active_model_ids"])
+    models = [m for m in config["models"] if m["id"] in active]
+    lookup = {(r["model_id"],r["arm"]):r for r in metrics}
+    baseline = float(lookup[("overall_baseline","baseline")]["mae"])
+    fig = plt.figure(figsize=(7.2,5.15))
+    fig.text(.025,.98,"Which AI gets closest to the survey?",fontsize=15,weight="bold",va="top",color=INK)
+    fig.text(.025,.916,"Smaller gaps are better. Giving the overall rates helps all four models.",fontsize=9.8,va="top",color=MUTED)
+    handles = [Rectangle((0,0),1,1,facecolor=ORANGE,label="No overall hint"),
+               Rectangle((0,0),1,1,facecolor=BLUE,label="With overall hint")]
+    fig.legend(handles=handles,loc="upper left",bbox_to_anchor=(.53,.877),ncol=2,
+               frameon=False,fontsize=9.5,handlelength=1.25,columnspacing=1.5)
+    ax = fig.add_axes([.27,.315,.69,.49])
+    ypos = np.arange(len(models))*1.4
+    plot_values=[]
+    for model,y in zip(models,ypos):
+        for arm,offset,col in [("unanchored",-.19,ORANGE),("overall_rate_anchored",.19,BLUE)]:
+            val = float(lookup[(model["id"],arm)]["mae"])
+            ax.barh(y+offset,val,height=.30,color=col,zorder=3)
+            ax.text(val+.27,y+offset,f"{val:.2f}",fontsize=9,color=col,weight="bold",va="center",
+                    bbox=dict(facecolor="white",edgecolor="none",pad=.5),zorder=5)
+            plot_values.append({"model_id":model["id"],"arm":arm,"mae_pp":val})
+    ax.axvline(baseline,color=MUTED,ls=(0,(3,3)),lw=1.15,zorder=2)
+    ax.text(baseline,-.65,f"Same guess for each group:\n{baseline:.2f}",fontsize=8.3,color=MUTED,ha="center",va="bottom",
+            bbox=dict(facecolor="white",edgecolor="none",pad=1))
+    ax.set_xlim(0,max(v["mae_pp"] for v in plot_values)+3.1)
+    ax.set_ylim(ypos[-1]+.58,-.87)
+    ax.set_yticks(ypos)
+    display_labels = {"google/gemma-3-4b-it:free":"Gemma 3 4B","openai/gpt-4.1-mini":"GPT-4.1 mini",
+                      "qwen/qwen3-235b-a22b":"Qwen3 235B A22B","openai/gpt-4.1":"GPT-4.1"}
+    ax.set_yticklabels([display_labels.get(m["id"],m["label"]) for m in models],fontsize=9.5,weight="bold")
+    ax.tick_params(axis="y",length=0,pad=8)
+    ax.tick_params(axis="x",labelsize=8.5)
+    ax.spines["left"].set_visible(False)
+    ax.grid(axis="x",color=GRID,lw=.6,zorder=0)
+    ax.set_axisbelow(True)
+    ax.set_xlabel("Average gap from the survey (percentage points)",fontsize=9.5,labelpad=6)
+    ax.xaxis.set_major_locator(MaxNLocator(6))
+    # The no-persona control keeps the task and overall-rate hint but removes the group clue.
+    full = float(lookup[("openai/gpt-4.1","overall_rate_anchored")]["mae"])
+    control = float(lookup[("openai/gpt-4.1::no_persona","overall_rate_anchored")]["mae"])
+    note = fig.add_axes([.025,.101,.95,.13]); note.set_axis_off()
+    box(note,0,0,1,1,face=PALE,edge=GRID,radius=.07)
+    text(note,.02,.78,"Does the group clue help?",9.2,"bold")
+    text(note,.02,.36,"GPT-4.1 with the overall hint",8.3,color=MUTED)
+    text(note,.55,.78,f"{control:.2f} → {full:.2f}",16,"bold",BLUE,ha="center")
+    text(note,.55,.28,"Without clue → with clue",8.3,color=MUTED,ha="center")
+    text(note,.83,.72,"Lowest error:\nGPT-4.1 + hint",8.6,"bold",ha="center",linespacing=1.35)
+    fig.text(.025,.069,f"Baseline: use the overall survey rates for every group (gap {baseline:.2f}). Mean of 3 runs; 23 overlapping groups.",fontsize=7.8,color=MUTED,va="top")
+    fig.text(.025,.031,"Gemma 3 12B was incomplete (11/144 valid calls) and excluded. Detailed checks appear in the supplement.",fontsize=7.8,color=MUTED,va="top")
+    (OUT/"model_comparison_values.json").write_text(json.dumps({"source":"results/processed/model_metrics.csv",
+        "baseline_mae_pp":baseline,"values":plot_values,"gpt41_anchored_control_mae_pp":control},indent=2)+"\n",encoding="utf-8")
+    save(fig,"03_model_results","Simplified comparison of frozen primary model mean absolute errors (percentage points) and the overall-rate baseline. GPT-4.1 control retains the overall hint but removes the group clue; complete diagnostics in S02_technical_model_diagnostics.")
+
+
+def technical_cohort_figure():
     share_path, selection_path = DATA / "cohort_mode_shares.csv", DATA / "feature_selection.csv"
     rows, ranking = read_csv(share_path), read_csv(selection_path)
     selected = [r for r in ranking if yes(r.get("selected"))]
@@ -224,7 +410,7 @@ def cohort_figure():
     gs = fig.add_gridspec(1, 2, width_ratios=[2.15, 4.8], left=.025, right=.99,
                          bottom=.13, top=.86, wspace=.14)
     ax_rank, ax_heat = fig.add_subplot(gs[0]), fig.add_subplot(gs[1])
-    fig.text(.025, .98, "Data-driven cohort selection and observed heterogeneity", fontsize=11.5,
+    fig.text(.025, .98, "Technical appendix: observed cohort profiles", fontsize=11.5,
              weight="bold", va="top", color=INK)
     source_n = int(number(next(r["unweighted_base"] for r in rows if r["feature_id"] == "__all__")))
     fig.text(.025, .94, f"Public MiD 2023 | {source_n:,} aircraft-containing overnight journeys | {len(entries)} overlapping cohorts", fontsize=8,
@@ -290,11 +476,11 @@ def cohort_figure():
              ha="center", color=MUTED)
     fig.text(.025, .012, "Observed weighted prevalence; cohorts overlap and modes may co-occur. RegioStaR labels are abbreviated.",
              fontsize=6.6, color=MUTED, va="bottom")
-    save(fig, "02_persona_selection", "Observed public MiD 2023 conditional rates and fixed feature-selection scores; "
+    save(fig, "S01_technical_cohort_profiles", "Technical appendix. Observed public MiD 2023 conditional rates and fixed feature-selection scores; "
          f"sources: {share_path.name}, {selection_path.name}. Not individual or airport-access records.")
 
 
-def results_figure(calibration_model="openai/gpt-4.1"):
+def technical_results_figure(calibration_model="openai/gpt-4.1"):
     """Read evaluated means; keep single-run ranges distinct from confidence limits."""
     result_dir = ROOT / "results" / "processed"
     metrics_path = result_dir / "model_metrics.csv"
@@ -322,7 +508,7 @@ def results_figure(calibration_model="openai/gpt-4.1"):
         raise ValueError(f"Predesignated calibration model {calibration_model} is missing.")
     diagnostic_label = diagnostic[0]["model_label"]
     fig = plt.figure(figsize=(7.2, 6.25))
-    fig.text(.025, .98, "How closely do model probabilities match the data?", fontsize=11.5,
+    fig.text(.025, .98, "Technical appendix: error and calibration", fontsize=11.5,
              weight="bold", va="top", color=INK)
     fig.text(.025, .94, f"Aggregate error for {len(models)} completed models; calibration shown for predesignated {diagnostic_label}",
              fontsize=7.8, va="top", color=MUTED)
@@ -416,7 +602,7 @@ def results_figure(calibration_model="openai/gpt-4.1"):
              fontsize=6.6, color=MUTED)
     fig.text(.025, .017, "Calibration points represent cohort-mode cells; the dashed diagonal is exact agreement. Cohorts overlap.",
              fontsize=6.6, color=MUTED)
-    save(fig, "03_model_results", f"Evaluated model outputs from {metrics_path.name} and {summary_path.name}; "
+    save(fig, "S02_technical_model_diagnostics", f"Technical appendix. Evaluated model outputs from {metrics_path.name} and {summary_path.name}; "
          f"calibration model fixed before outcomes: {calibration_model}. Main panel excludes no-persona control IDs. "
          f"Active models: {sorted(active_ids)}; availability exclusions: {[m['id'] for m in excluded_models]}.")
 
@@ -433,6 +619,7 @@ def main():
     if args.only in {"cohorts", "all"}:
         if (DATA / "cohort_mode_shares.csv").exists():
             cohort_figure()
+            technical_cohort_figure()
         elif args.only == "cohorts":
             raise FileNotFoundError("Public cohort inputs have not been prepared.")
         else:
@@ -440,6 +627,7 @@ def main():
     if args.only in {"results", "all"}:
         if (ROOT / "results" / "processed" / "model_metrics.csv").exists():
             results_figure(args.calibration_model)
+            technical_results_figure(args.calibration_model)
         elif args.only == "results":
             raise FileNotFoundError("Evaluated model outputs have not been prepared.")
         else:

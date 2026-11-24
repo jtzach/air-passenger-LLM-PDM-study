@@ -2,21 +2,21 @@
   "02_persona_selection": {
     "canvas_inches": [
       7.2,
-      6.970799999999998
+      5.45
     ],
-    "provenance": "Observed public MiD 2023 conditional rates and fixed feature-selection scores; sources: cohort_mode_shares.csv, feature_selection.csv. Not individual or airport-access records.",
+    "provenance": "Plain-language overview of the frozen 2-traveller/2-journey feature selection and 23 overlapping single-attribute groups. Rounded survey contrasts read from cohort_mode_shares.csv; complete profiles in S01_technical_cohort_profiles.",
     "formats": {
       "pdf": {
         "file": "02_persona_selection.pdf",
-        "sha256": "4c99dd2d357b1e3ca839fba527786cb62a65924a850cc688e5036a6de3f2162d"
+        "sha256": "1d4bd341f3042d5432c57a5e865e39492a51b64767782d14d38399f85cc43e5f"
       },
       "svg": {
         "file": "02_persona_selection.svg",
-        "sha256": "080127aa726818a2f48bc847084bfad54b4a7559efc4a064d7887371dfb4b6e9"
+        "sha256": "2cfe75da6ce3e530548556b643519be6683477582ecc3da7987f0f1748bf8588"
       },
       "png": {
         "file": "02_persona_selection.png",
-        "sha256": "99b8d8300c888e677a1cb3174765e2bcfc24d75af07a3f889dbd81d331b78ee1"
+        "sha256": "407c00a7aae749a98a9c5f1824332d758bdf03214467318d84601b8e399aad63"
       }
     },
     "matplotlib_version": "3.11.2",
@@ -26,21 +26,21 @@
   "01_framework": {
     "canvas_inches": [
       7.2,
-      4.45
+      5.15
     ],
-    "provenance": "Study design. Public MiD 2023 aggregate evidence; no synthetic results plotted.",
+    "provenance": "Four-step study explanation and an observed GPT-4.1 anchored example, read from canonical prediction_summary.csv; all group rates withheld from model prompts.",
     "formats": {
       "pdf": {
         "file": "01_framework.pdf",
-        "sha256": "7d82721b8fe9e07eb249c0d89e93c268eb6d7967b8652cf85b0616c0b153572d"
+        "sha256": "572c5875c713e82eaf1a110d614a8e4cc8430a8097cfed958bd61cfa2f356c08"
       },
       "svg": {
         "file": "01_framework.svg",
-        "sha256": "e46b3f6669a85fbf2880b96ecfe2326bd1ca13bdca4f8673964344ff81e2698f"
+        "sha256": "4f864962b1ef2663c5fb4985f15a4ca2282b8669a5841ec796f08dd493a5a72a"
       },
       "png": {
         "file": "01_framework.png",
-        "sha256": "33c7cdd17f5d66aa963b691edeebfc116b69cca90a520bdadac6cf16529d2cd9"
+        "sha256": "406b2959695f2363b1d7126e0050c6f5ffb3c36caa2a300ab6096869d83e01cb"
       }
     },
     "matplotlib_version": "3.11.2",
@@ -50,21 +50,69 @@
   "03_model_results": {
     "canvas_inches": [
       7.2,
-      6.25
+      5.15
     ],
-    "provenance": "Evaluated model outputs from model_metrics.csv and prediction_summary.csv; calibration model fixed before outcomes: openai/gpt-4.1. Main panel excludes no-persona control IDs. Active models: ['google/gemma-3-4b-it', 'openai/gpt-4.1', 'openai/gpt-4.1-mini', 'qwen/qwen3-235b-a22b-2507']; availability exclusions: ['google/gemma-3-12b-it'].",
+    "provenance": "Simplified comparison of frozen primary model mean absolute errors (percentage points) and the overall-rate baseline. GPT-4.1 control retains the overall hint but removes the group clue; complete diagnostics in S02_technical_model_diagnostics.",
     "formats": {
       "pdf": {
         "file": "03_model_results.pdf",
-        "sha256": "525c4d947c80dd457e6403c895c647c26b07844d4fe79d9fbd52b904799ab555"
+        "sha256": "bee11de72bf123d32e318e76eeb536ef6662411be8d677bd97480bb9280bbabf"
       },
       "svg": {
         "file": "03_model_results.svg",
-        "sha256": "f7112b70f0cacacbccce64afc3f841b45e26dc53db45789e752f12b5274df47c"
+        "sha256": "c6a368830861c6fad82d554518073822f07aea51bb5e35cc57297b41f06099f3"
       },
       "png": {
         "file": "03_model_results.png",
-        "sha256": "50628ae468f325f72223ae2ff011bebc4a90442c92fa6f54f43c9de6551f80b3"
+        "sha256": "0aacb5a8d8aa8685764f51454649eeb30c4a3cfe7e98dd66a0f060f040058c95"
+      }
+    },
+    "matplotlib_version": "3.11.2",
+    "png_dpi": 300,
+    "pdf_svg_vector": true
+  },
+  "S01_technical_cohort_profiles": {
+    "canvas_inches": [
+      7.2,
+      6.970799999999998
+    ],
+    "provenance": "Technical appendix. Observed public MiD 2023 conditional rates and fixed feature-selection scores; sources: cohort_mode_shares.csv, feature_selection.csv. Not individual or airport-access records.",
+    "formats": {
+      "pdf": {
+        "file": "S01_technical_cohort_profiles.pdf",
+        "sha256": "d05cce34b7e2c902b39d26f8e70a0772469542537825fad408db573360ad1c35"
+      },
+      "svg": {
+        "file": "S01_technical_cohort_profiles.svg",
+        "sha256": "d08143306c2787335fce199e894af0dbef5ff3d644bbc48f9477676ee2fd58ab"
+      },
+      "png": {
+        "file": "S01_technical_cohort_profiles.png",
+        "sha256": "4e7f8bdc20cac3301110b27f41fb78418e7599bc04967aa06f2fc96b7ef50727"
+      }
+    },
+    "matplotlib_version": "3.11.2",
+    "png_dpi": 300,
+    "pdf_svg_vector": true
+  },
+  "S02_technical_model_diagnostics": {
+    "canvas_inches": [
+      7.2,
+      6.25
+    ],
+    "provenance": "Technical appendix. Evaluated model outputs from model_metrics.csv and prediction_summary.csv; calibration model fixed before outcomes: openai/gpt-4.1. Main panel excludes no-persona control IDs. Active models: ['google/gemma-3-4b-it', 'openai/gpt-4.1', 'openai/gpt-4.1-mini', 'qwen/qwen3-235b-a22b-2507']; availability exclusions: ['google/gemma-3-12b-it'].",
+    "formats": {
+      "pdf": {
+        "file": "S02_technical_model_diagnostics.pdf",
+        "sha256": "7f37ad4048bcad9806f7bff2c0e6db0b0a7328bdc7934ef85b982ae7195843f8"
+      },
+      "svg": {
+        "file": "S02_technical_model_diagnostics.svg",
+        "sha256": "884e28f0ad3b51bc94808e2c97f5d92599f4153d98d77115823c83de83c4ae41"
+      },
+      "png": {
+        "file": "S02_technical_model_diagnostics.png",
+        "sha256": "016cfc7126529f7237f11c3e50d920bdb99df400127b639aae189523b77605c8"
       }
     },
     "matplotlib_version": "3.11.2",

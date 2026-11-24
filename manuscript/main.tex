@@ -10,57 +10,62 @@
 \usepackage[none]{hyphenat}
 \emergencystretch=4em
 \graphicspath{{../figures/}}
-\newcommand{\pending}[1]{\textbf{[RESULT PENDING: #1]}}
 \newcommand{\studyfigure}[2]{\IfFileExists{../figures/#1.pdf}{\includegraphics[width=\linewidth]{#1.pdf}}{\fbox{\parbox[c][4cm][c]{0.92\linewidth}{\centering Figure awaiting generated results: #2}}}}
-\title{Can LLM Personas Reproduce Ground-Mode Co-Use on Air Journeys? A Public-Data Benchmark for Germany}
+\title{Can AI Estimate Which Other Transport People Use When They Fly?}
 \author{}
 \date{November 24, 2026}
-\hypersetup{pdftitle={Can LLM Personas Reproduce Ground-Mode Co-Use on Air Journeys?},pdfsubject={Aggregate MiD 2023 benchmark},pdfkeywords={large language models,personas,air travel,national travel survey,mode co-use}}
+\hypersetup{pdftitle={Can AI Estimate Which Other Transport People Use When They Fly?},pdfsubject={A group-level adaptation of LLM-PDM using MiD 2023},pdfkeywords={large language models,personas,air travel,national travel survey,ground transport}}
 
 \begin{document}
 \maketitle
 \begin{abstract}
-We adapt LLM-PDM to estimate ground-mode co-use on overnight air journeys using Germany's MiD 2023. Public tables define 23 single-attribute cohort personas; four fully evaluated models predict car, local-public-transport, and long-distance-rail probabilities. Overall-rate guidance reduced error for every model, but only guided GPT-4.1 outperformed an observed-rate constant baseline: mean absolute error 2.93 versus 4.16 percentage points. Unguided errors were 9.44--25.08 points. These results demonstrate model-dependent aggregate agreement, not individual simulation or airport-access validity.
+We adapted LLM-PDM to test whether language models can estimate ground transport use on overnight air journeys. Public MiD 2023 tables supplied 23 group descriptions, each with one known characteristic. Models returned probabilities, which can be read as numbers out of 100 similar journeys. Giving overall survey rates improved all four complete models. Only GPT-4.1 with group details and this hint beat a simple benchmark that repeats overall rates: average error 2.93 versus 4.16 percentage points. These are estimates for groups, not simulated individuals or airport-access choices.
 \end{abstract}
 \textit{Keywords:} large language models; personas; air journeys; national travel survey; multimodality; benchmarking
 
 \section{Questions}
-Persona-based LLM surveys can reproduce selected mobility distributions \citep{tzachristas2026}, but agreement with overall averages does not establish fidelity within groups \citep{bisbee2024}. Travel-choice applications also evaluate individual predictions using labeled records \citep{mo2026,liu2026}. We ask a narrower question: can LLMs recover publicly observable differences in ground-mode co-use among air journeys, beyond simply repeating overall rates? Does supplying those rates improve agreement? Our contribution is a reproducible, aggregate-only adaptation of LLM-PDM that separates unconditional guidance from withheld conditional targets (Figure~\ref{fig:framework}).
+Can a language model estimate how transport use differs between groups of air journeys? Does knowing the overall survey rates help? Earlier studies use LLM personas to generate survey answers or predict individual choices \citep{tzachristas2026,mo2026,liu2026}. However, matching an overall average does not guarantee correct differences between groups \citep{bisbee2024}. We test those differences using public tables, without collecting new responses from people (Figure~\ref{fig:framework}).
 
 \section{Methods}
-We used public Mobilit\"at in Tabellen cross-tabulations from MiD 2023 \citep{mit2023}. The overnight-journey module covers self-responding residents of Germany aged at least 14, reporting up to three journeys during the preceding three months; fieldwork occurred in 2023--2024 \citep{midmethods2025,midhandbook2025}. We selected the recorded main-mode category aircraft. Each observation is a journey, not a unique passenger. The multiple-response question covers outward and return travel together. Car, local bus/rail, and long-distance train are three nonexclusive outcomes; none identifies a particular airport-access leg.
+Each model received a \emph{group card}, technically a \emph{cohort persona}, giving one fact such as ``the household has no car.'' It estimated car, local bus/rail, and long-distance-train use alongside aircraft. Think: \emph{out of 100 similar journeys, how many also used each mode?} The API requested probabilities from 0 to 1; multiplying by 100 displays percentages. We did not generate fictional journeys or people. Answers can overlap and need not sum to 100.
 
-Before study predictions, we fixed a screening rule for 14 candidate dimensions. Substantive strata required at least 100 unweighted journeys; dimensions required at least two eligible strata covering 80\% of weighted aircraft journeys. We ranked mean normalized Bernoulli information gain across the three outcomes and selected two traveler and two journey dimensions. All eligible strata became separate cohort personas. Missing categories were excluded, with coverage retained. Earlier exploratory age tables had been inspected; this was not an externally registered preregistration.
+Public MiD 2023 tables supplied 9,475 overnight journeys with aircraft as the main mode \citep{mit2023}. Respondents lived in Germany, were at least 14, and reported up to three journeys from the preceding three months during 2023--2024 fieldwork \citep{midmethods2025,midhandbook2025}. One person could report several journeys. The transport question combines outward and return travel; it does not identify access to a particular airport.
 
-Unlike LLM-PDM's joint-persona sampling, each prompt described one attribute only and requested three probabilities directly. No joint attributes, synthetic individuals, fine-tuning, or iterative target matching were used. Gemma~3~4B, Gemma~3~12B, GPT-4.1~mini, Qwen3~235B~A22B, and GPT-4.1 were queried through OpenRouter in three repeats at temperature~0.7. Both arms withheld cohort rates; one supplied overall rates. No-persona controls retained the population and task description. Model tiers are not a controlled parameter-size comparison.
+We used existing survey categories, not machine-learned clusters. Before predictions, we fixed rules for 14 candidate attributes. Retained groups needed at least 100 reported journeys; attributes needed at least two groups covering at least 80\% of weighted journeys. Missing-response categories were excluded. We ranked normalized information gain: how much knowing the group reduced uncertainty about the three answers. We deliberately selected two traveler and two journey attributes. Age ranked third overall, but household cars and residential area filled both traveler places; the journey attributes were household companions and nights away.
 
-Primary error was mean absolute error (MAE) of the three-repeat mean probabilities, in percentage points, weighted by stratum prevalence within each dimension and equally across dimensions and outcomes. Supplementary checks include RMSE, Bernoulli Jensen--Shannon divergence, and repeat variability. The observed overall-rate baseline uses no personas. Screening and evaluation share survey aggregates: this is an in-sample descriptive benchmark, without survey-design confidence intervals or individual-level validation.
+Their categories give $5+7+4+7=23$ cards (Figure~\ref{fig:selection}). The same journey can appear in several attribute groups. Each card leaves other characteristics unspecified. Original LLM-PDM combines several attributes and asks the model to answer as those respondents \citep{tzachristas2026}. Our public tables cannot recover those joint profiles. We estimate group percentages directly, without creating fictional individuals.
+
+Five models received three repeated requests through OpenRouter. One condition gave no overall-rate hint; the other supplied car, local-public-transport, and long-distance-rail rates of 37.7\%, 21.6\%, and 12.4\%. Both withheld the group's survey answers. We also tested prompts without cards and a simple benchmark that gives every group the overall rates. No model was fine-tuned or corrected using its errors.
+
+Our score is the average gap between predicted and survey percentages: mean absolute error (MAE), in percentage points. We averaged the three predictions, weighted groups by frequency within each attribute, then averaged equally across attributes and modes. Smaller is better. The same survey answers selected attributes and checked predictions, so this measures agreement with known tables, not unseen passengers. Earlier age tables had been inspected; the selection rule was not externally preregistered.
 
 \begin{figure}[htbp]
 \centering
 \studyfigure{01_framework}{Study framework}
-\caption{Aggregate adaptation of LLM-PDM. Conditional observations select cohorts and score predictions; only overall rates enter the anchored prompts.}
+\caption{From survey tables to group cards and predicted percentages. ``Out of 100'' explains probabilities; it does not create 100 synthetic travelers. Group-specific survey answers are kept out of prompts.}
 \label{fig:framework}
 \end{figure}
 
 \section{Findings}
-The aircraft cohort contained 9,475 reported overnight journeys. Overall car, local-public-transport, and long-distance-rail co-use was 37.7\%, 21.6\%, and 12.4\%. Household car count, residential spatial type, household companions, and nights away yielded 23 profiles covering 92.5--100\% of weighted journeys within each dimension (Figure~\ref{fig:selection}). Car co-use was 15.0\% in households without cars and 58.4\% in households with at least four cars; corresponding local-public-transport rates were 40.1\% and 9.3\%.
+Household cars, residential area, household companions, and nights away supplied the 23 cards, covering 92.5--100\% of weighted journeys within each attribute. Survey groups differed: car use was 15.0\% in households without cars and 58.4\% in households with at least four; local-public-transport use was 40.1\% and 9.3\%, respectively.
 
-Four models completed all 144 calls each. Gemma~3~12B returned only 11 valid outputs, with 98 rate-limited failures and 35 invalid schemas; it was excluded before comparative scoring. Overall-rate guidance lowered every complete model's MAE: unanchored errors ranged from 9.44 to 25.08 points, versus 2.93--6.80 when anchored (Figure~\ref{fig:results}). Only anchored GPT-4.1 personas beat the 4.16-point constant baseline, reaching 2.93 points; its no-persona control scored 4.10. Persona conditioning worsened anchored predictions for the other three models. GPT-4.1's individual-repeat MAEs were 2.89--3.26 points. Its largest remaining error concerned long-distance rail in small-town/village areas within urban regions: 8.3\% predicted versus 23.3\% observed. Generated rationales are hypotheses, not evidence of respondents' motives.
+Gemma~3~4B, GPT-4.1~mini, Qwen3~235B~A22B, and GPT-4.1 each completed 144 calls. Gemma~3~12B produced only 11 valid outputs, with 98 rate-limited failures and 35 wrong-format responses. We excluded it before comparing accuracy and retained every failure record.
 
-Overall-rate guidance helped, but persona-specific improvement beyond simple rates was model-dependent. Agreement supports only the tested aggregate margins. Unknown pretraining exposure, reused selection targets, unavailable survey-design covariance, and unobserved joint characteristics limit interpretation. These data cannot validate individual behavior, causal mechanisms, Munich passengers, or airport-access mode choice. They provide an openly auditable test before such stronger applications are attempted.
+The overall-rate hint improved all four complete models: average gaps were 9.44--25.08 percentage points without it and 2.93--6.80 with it (Figure~\ref{fig:results}). Only GPT-4.1 with the hint and group cards beat the simple benchmark: 2.93 versus 4.16 points. Without cards, its hinted score was 4.10. Cards worsened hinted predictions for the other three models. GPT-4.1's separate-run scores were 2.89--3.26 points. It still missed long-distance-rail use in urban-region small towns/villages: 8.3\% predicted versus 23.3\% observed.
+
+Useful group estimates depended on both the model and the hint. We cannot establish individual behavior, causes, Munich-specific results, or airport-access choices from these tables. Training-data exposure and survey uncertainty are unknown; repeat variation is not a population confidence interval. Model explanations are possible stories, not evidence of people's motives.
 
 \begin{figure}[htbp]
 \centering
 \studyfigure{02_persona_selection}{Selected cohort profiles}
-\caption{Fixed-rule dimension selection and observed cohort co-use. Strata are separate marginal profiles, not combinations of attributes.}
+\caption{Four attributes supply 23 separate group cards. Groups share journeys. Survey percentages show real differences; no card combines all four attributes.}
 \label{fig:selection}
 \end{figure}
 
 \begin{figure}[htbp]
 \centering
 \studyfigure{03_model_results}{Model performance}
-\caption{A: complete-model MAE versus the overall-rate baseline. Points score mean probabilities; bars show single-repeat MAE ranges, not confidence intervals. B--C: GPT-4.1's 69 cohort/mode predictions before and after guidance. Gemma~3~12B was operationally incomplete.}
+\caption{Average gaps between predicted and survey percentages, with and without the overall-rate hint. Smaller is better. The simple benchmark repeats overall rates for every group. Gemma~3~12B could not complete the experiment.}
 \label{fig:results}
 \end{figure}
 

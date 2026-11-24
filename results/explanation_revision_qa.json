@@ -1,0 +1,97 @@
+{
+  "status": "pass",
+  "checked_utc": "2026-11-24T22:56:03.590009+00:00",
+  "baseline_commit": "27bb0640ad619d3563a8413d08b8fb18d7ee05db",
+  "revision_scope": "Plain-language manuscript, explanatory figures and documentation; existing analysis reused.",
+  "protected_scientific_files_checked": 1533,
+  "protected_scientific_files_changed": 0,
+  "text_files_scanned": 1572,
+  "manuscript_qa": {
+    "source_main_words_including_abstract_captions_keywords_acknowledgments": 906,
+    "abstract_words": 87,
+    "word_count_convention": "Audit local manuscript sources and compiled PDFs; no manuscript mutation.\n\nThe reproducible word convention treats whitespace-separated words containing\nletters/digits as words after removing TeX markup. Captions, keywords, and\nacknowledgments are included; title, bibliography, and embedded figure labels\nare excluded. In-text citation commands count as one token per cited source;\nthe rendered PDF count is also recorded as a deliberately broader check.",
+    "pending_result_markers": 0,
+    "numbered_sections": [
+      "Questions",
+      "Methods",
+      "Findings"
+    ],
+    "figure_count": 3,
+    "bibliography_entries": 8,
+    "main_pdf_pages": 5,
+    "main_pdf_words_before_references_including_figures": 1378,
+    "main_pdf_has_pending_marker": false,
+    "main_rendered_words_excluding_figures_and_references": 960,
+    "rendered_narrative_count_note": "Includes actual rendered citations, abstract, captions, keywords, acknowledgments, title, date, headings, and page numbers. Excludes DejaVu Sans figure text and bibliography. This is a conservative check against the 1,000-word limit.",
+    "main_overfull_boxes": 0,
+    "main_unresolved_citations": false,
+    "supplement_pdf_pages": 8,
+    "supplement_pdf_words_before_references_including_figures": 3274,
+    "supplement_pdf_has_pending_marker": false,
+    "supplement_overfull_boxes": 0,
+    "supplement_unresolved_citations": false
+  },
+  "worked_example": [
+    {
+      "mode": "car",
+      "survey_percent": 14.996851951330346,
+      "predicted_percent": 16.333333333333332
+    },
+    {
+      "mode": "local_pt",
+      "survey_percent": 40.05882905932819,
+      "predicted_percent": 35.0
+    },
+    {
+      "mode": "long_distance_rail",
+      "survey_percent": 16.76243205941972,
+      "predicted_percent": 19.0
+    }
+  ],
+  "pdfs": [
+    {
+      "path": "manuscript/main.pdf",
+      "pages": 5,
+      "sha256": "923b22f4abd932569bb0949f91eae536cbf0c25c4a203f9e7b075d589822ebff",
+      "extractable_text": true
+    },
+    {
+      "path": "manuscript/supplement.pdf",
+      "pages": 8,
+      "sha256": "86b380ce2ee73ce28ce27664d31c835a290d016bcdb212f25209e5b6b3de44b8",
+      "extractable_text": true
+    },
+    {
+      "path": "figures/01_framework.pdf",
+      "pages": 1,
+      "sha256": "572c5875c713e82eaf1a110d614a8e4cc8430a8097cfed958bd61cfa2f356c08",
+      "extractable_text": true
+    },
+    {
+      "path": "figures/02_persona_selection.pdf",
+      "pages": 1,
+      "sha256": "1d4bd341f3042d5432c57a5e865e39492a51b64767782d14d38399f85cc43e5f",
+      "extractable_text": true
+    },
+    {
+      "path": "figures/03_model_results.pdf",
+      "pages": 1,
+      "sha256": "bee11de72bf123d32e318e76eeb536ef6662411be8d677bd97480bb9280bbabf",
+      "extractable_text": true
+    },
+    {
+      "path": "figures/S01_technical_cohort_profiles.pdf",
+      "pages": 1,
+      "sha256": "d05cce34b7e2c902b39d26f8e70a0772469542537825fad408db573360ad1c35",
+      "extractable_text": true
+    },
+    {
+      "path": "figures/S02_technical_model_diagnostics.pdf",
+      "pages": 1,
+      "sha256": "7f37ad4048bcad9806f7bff2c0e6db0b0a7328bdc7934ef85b982ae7195843f8",
+      "extractable_text": true
+    }
+  ],
+  "visual_review": "Main and supplementary pages inspected by the manuscript agent; main figure PNGs inspected by root and final PDF renders by figure agent.",
+  "issues": []
+}

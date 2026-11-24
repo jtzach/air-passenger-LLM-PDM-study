@@ -1,0 +1,47 @@
+{
+  "source": "data/processed/cohort_mode_shares.csv",
+  "selected_features": [
+    {
+      "feature_id": "anzauto_gr1",
+      "groups": 5
+    },
+    {
+      "feature_id": "RegioStaR7",
+      "groups": 7
+    },
+    {
+      "feature_id": "anzbegl_gr",
+      "groups": 4
+    },
+    {
+      "feature_id": "anzueb_gr",
+      "groups": 7
+    }
+  ],
+  "contrasts": [
+    {
+      "mode_id": "car",
+      "category": "No car",
+      "observed_share": 0.14996851951330345,
+      "unweighted_n": 936
+    },
+    {
+      "mode_id": "car",
+      "category": "4 or more cars",
+      "observed_share": 0.5843417508416866,
+      "unweighted_n": 279
+    },
+    {
+      "mode_id": "local_pt",
+      "category": "No car",
+      "observed_share": 0.4005882905932819,
+      "unweighted_n": 936
+    },
+    {
+      "mode_id": "local_pt",
+      "category": "4 or more cars",
+      "observed_share": 0.09328591790282008,
+      "unweighted_n": 279
+    }
+  ]
+}

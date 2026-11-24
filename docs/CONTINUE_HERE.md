@@ -6,7 +6,7 @@ The journal manuscript, technical supplement, three publication figures, archive
 
 - Canonical replication repository: https://github.com/jtzach/air-passenger-LLM-PDM-study
 - Editable writing project: https://www.overleaf.com/project/6af39782e40c0117353a9820
-- Start with `manuscript/main.pdf`, then `manuscript/supplement.pdf`.
+- Start with the [plain-language walkthrough and sketch](PLAIN_LANGUAGE_WALKTHROUGH.md), then `manuscript/main.pdf` and `manuscript/supplement.pdf`.
 - Inspect `data/workbooks/MiD2023_Comprehensive_Data_and_LLM_EN.xlsx`; its four appended sheets separate selection, observed rates, predictions and model results.
 - Read `docs/EXCEL_PROVENANCE.md` for the original workbook, translations, source files, preservation checks and appended experiment tables.
 
@@ -17,6 +17,8 @@ The observed population is **9,475 reported overnight journeys with recorded mai
 The 23 personas are **single-attribute cohort descriptions**, not joint synthetic individuals. Public marginal tables cannot establish the joint age/income/car/region distribution. Screening and evaluation use the same aggregates; no individual or independent out-of-sample validation is claimed. Household companions are not the complete travel party. No Munich-specific result follows from these national tables.
 
 The method is an aggregate adaptation of LLM-PDM. It directly elicits three probabilities, without fine-tuning or iterative matching of cohort targets. Conditional observed rates are withheld from model prompts. The anchored arm receives only overall population rates. LLM explanations are hypotheses, not respondents' reported motives.
+
+When explaining the study, use the walkthrough's one-clue group cards and its verified no-household-car GPT-4.1 example. “Out of 100 journeys” displays a probability multiplied by 100; it does not describe 100 sampled or simulated people. Keep the two-traveller-plus-two-journey selection rule explicit: age ranked third among traveller attributes and was not selected under that design. The example illustrates one card; the benchmark evaluates all 23 overlapping groups.
 
 ## Frozen experiment and results
 
