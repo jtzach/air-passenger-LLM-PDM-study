@@ -1,0 +1,120 @@
+{
+  "task_id": "p02__m04__a01__c007__r006",
+  "block_id": "p02__m04__a01",
+  "panel_id": "fmg_2025",
+  "panel_index": 1,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "no_persona",
+  "round": 6,
+  "modes": [
+    "car_dropoff",
+    "car_airport_parking",
+    "car_offairport_parking",
+    "car_other_parking",
+    "taxi_ridehail",
+    "rental_carsharing",
+    "bus_transfer",
+    "s_bahn",
+    "uefex",
+    "other"
+  ],
+  "mutually_exclusive": true,
+  "request_sha256": "3281b917b196b612bf14af74fe05088344c7c27d406fc7d04eecd00e599f0f7e",
+  "started_utc": "2026-11-25T14:32:00.312840+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:32:02.335718+00:00",
+      "cost_usd": 0.002454,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.002454,
+  "reservation_upper_bound_usd": 0.027707999999999997,
+  "response_sha256": "6e68320cfaee17a1c290a3c28805b9becb36a38c1e57f7ee49fb44c16703c3a6",
+  "response": {
+    "id": "gen-1795617120-YnyP1DofmgGIY2Ve0AFR",
+    "object": "chat.completion",
+    "created": 1795617120,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car_dropoff\": 0.20,\n  \"car_airport_parking\": 0.17,\n  \"car_offairport_parking\": 0.10,\n  \"car_other_parking\": 0.03,\n  \"taxi_ridehail\": 0.12,\n  \"rental_carsharing\": 0.03,\n  \"bus_transfer\": 0.05,\n  \"s_bahn\": 0.25,\n  \"uefex\": 0.03,\n  \"other\": 0.02,\n  \"rationale\": \"Shares reflect S-Bahn’s major role, significant private car use, and some taxi, bus, and parking options. UEFEX, rental, and other modes are minor. Distribution assumes broad regional access and no strong bias toward any single group.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 535,
+      "completion_tokens": 173,
+      "total_tokens": 708,
+      "cost": 0.002454,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002454,
+        "upstream_inference_prompt_cost": 0.00107,
+        "upstream_inference_completions_cost": 0.001384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795617120-YnyP1DofmgGIY2Ve0AFR",
+  "raw_prediction": {
+    "car_dropoff": 0.2,
+    "car_airport_parking": 0.17,
+    "car_offairport_parking": 0.1,
+    "car_other_parking": 0.03,
+    "taxi_ridehail": 0.12,
+    "rental_carsharing": 0.03,
+    "bus_transfer": 0.05,
+    "s_bahn": 0.25,
+    "uefex": 0.03,
+    "other": 0.02,
+    "rationale": "Shares reflect S-Bahn’s major role, significant private car use, and some taxi, bus, and parking options. UEFEX, rental, and other modes are minor. Distribution assumes broad regional access and no strong bias toward any single group."
+  },
+  "prediction": {
+    "car_dropoff": 0.2,
+    "car_airport_parking": 0.17,
+    "car_offairport_parking": 0.1,
+    "car_other_parking": 0.03,
+    "taxi_ridehail": 0.12,
+    "rental_carsharing": 0.03,
+    "bus_transfer": 0.05,
+    "s_bahn": 0.25,
+    "uefex": 0.03,
+    "other": 0.02,
+    "rationale": "Shares reflect S-Bahn’s major role, significant private car use, and some taxi, bus, and parking options. UEFEX, rental, and other modes are minor. Distribution assumes broad regional access and no strong bias toward any single group."
+  },
+  "normalization": {
+    "sum_before": 1.0,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:32:02.335718+00:00",
+  "cost_exceeded_reservation": false
+}

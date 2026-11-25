@@ -1,0 +1,100 @@
+{
+  "task_id": "p01__m04__a01__c020__r007__administrative_replacement1",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__9ee7f61bb0c0",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "supersedes_task_id": "p01__m04__a01__c020__r007",
+  "request_sha256": "93c06359d2249a81de9d05e79a197feaac9616a8601baeb668fc52a72157b3c3",
+  "started_utc": "2026-11-25T17:35:10.054534+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:35:11.531000+00:00",
+      "cost_usd": 0.001418,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001418,
+  "reservation_upper_bound_usd": 0.02391,
+  "response_sha256": "a38705b95aa58ab8315af92af39016bd5332881ca5aca4eacffcf1660f1f2c83",
+  "response": {
+    "id": "gen-1795628109-uaW3DKSwIQdKW4YLLZ4r",
+    "object": "chat.completion",
+    "created": 1795628109,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.18,\n  \"rationale\": \"Many use cars for flexible airport access, but public/local transport is also common, especially near major cities. Long-distance rail is less frequent due to convenience, cost, or limited integration with flights.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 393,
+      "completion_tokens": 79,
+      "total_tokens": 472,
+      "cost": 0.001418,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001418,
+        "upstream_inference_prompt_cost": 0.000786,
+        "upstream_inference_completions_cost": 0.000632
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628109-uaW3DKSwIQdKW4YLLZ4r",
+  "raw_prediction": {
+    "car": 0.45,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.18,
+    "rationale": "Many use cars for flexible airport access, but public/local transport is also common, especially near major cities. Long-distance rail is less frequent due to convenience, cost, or limited integration with flights."
+  },
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.18,
+    "rationale": "Many use cars for flexible airport access, but public/local transport is also common, especially near major cities. Long-distance rail is less frequent due to convenience, cost, or limited integration with flights."
+  },
+  "normalization": {
+    "sum_before": 0.98,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:35:11.531000+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-11-25T17:57:54.006490+00:00",
+  "sheets": 35,
+  "cells_checked": 390782,
+  "formula_caches_checked": 1213,
+  "changes": [
+    {
+      "sheet": "32_Sequential_results",
+      "cell": "N5",
+      "before": "Service assumptions met",
+      "after": "Service checks passed"
+    },
+    {
+      "sheet": "34_MUC_new_predictions",
+      "cell": "A2",
+      "before": "Munich FMG only: one reported airport-access category per journey. Ten shares total 100%. Group targets are approved derived results; private source rows and counts are excluded.",
+      "after": "Munich FMG only: one reported airport-access category per originating departing passenger. Ten shares total 100%. Group targets are approved derived results; private source rows and counts are excluded."
+    }
+  ],
+  "issue_count": 0,
+  "issues": [],
+  "before_sha256": "43ac542c5abe8b5bf4f1057c1dcf5523f76b421edf6062408f98e5870256717f",
+  "after_sha256": "513cbc7d411888d737736cedd99e9a54c580adbf03274845544df1fa468290db",
+  "method": "Read-only openpyxl comparison; workbook was authored only with artifact-tool."
+}

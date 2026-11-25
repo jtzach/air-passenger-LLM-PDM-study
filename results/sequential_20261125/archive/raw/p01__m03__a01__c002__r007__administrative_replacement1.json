@@ -1,0 +1,100 @@
+{
+  "task_id": "p01__m03__a01__c002__r007__administrative_replacement1",
+  "block_id": "p01__m03__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "unanchored",
+  "card_id": "reise__anzauto_gr1__79ed954bbe2c",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "supersedes_task_id": "p01__m03__a01__c002__r007",
+  "request_sha256": "ce0a537a7613d2601e45ad24de1ed297bbe59217834832d12900e163be73ce78",
+  "started_utc": "2026-11-25T17:34:02.437088+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:34:15.485165+00:00",
+      "cost_usd": 0.00011559,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00011559,
+  "reservation_upper_bound_usd": 0.00200526,
+  "response_sha256": "cc6335c4f5ede232e2147a761649a2fabfad2990c03e8e8187641a47b4d9ff02",
+  "response": {
+    "id": "gen-1795628041-U81FML5Tkf8AcQIzFtr0",
+    "object": "chat.completion",
+    "created": 1795628041,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.95,\n  \"local_pt\": 0.3,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"High car availability suggests car use for airport access. Limited public transport coverage at major airports reduces reliance on local or long-distance rail, especially among car-rich households.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 404,
+      "completion_tokens": 74,
+      "total_tokens": 478,
+      "cost": 0.00011559,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00011559,
+        "upstream_inference_prompt_cost": 5.454e-05,
+        "upstream_inference_completions_cost": 6.105e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795628041-U81FML5Tkf8AcQIzFtr0",
+  "raw_prediction": {
+    "car": 0.95,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.15,
+    "rationale": "High car availability suggests car use for airport access. Limited public transport coverage at major airports reduces reliance on local or long-distance rail, especially among car-rich households."
+  },
+  "prediction": {
+    "car": 0.95,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.15,
+    "rationale": "High car availability suggests car use for airport access. Limited public transport coverage at major airports reduces reliance on local or long-distance rail, especially among car-rich households."
+  },
+  "normalization": {
+    "sum_before": 1.4,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:34:15.486208+00:00",
+  "cost_exceeded_reservation": false
+}

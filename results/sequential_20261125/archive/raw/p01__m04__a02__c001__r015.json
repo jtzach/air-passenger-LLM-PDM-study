@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c001__r015",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzauto_gr1__296e9849dc3d",
+  "round": 15,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "f6faa9a2a77783aee0875cfbbf87d6361671372b4417be8f82a43c716f3ae54b",
+  "started_utc": "2026-11-25T17:42:03.508352+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:42:05.358132+00:00",
+      "cost_usd": 0.001532,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001532,
+  "reservation_upper_bound_usd": 0.025505999999999997,
+  "response_sha256": "350aafd78f261a73e706fd2cc4df3f116579a139a34d1b2e1e9da1aa5afbc2d0",
+  "response": {
+    "id": "gen-1795628523-bVDtoyG4hMAtpZ2ATgh6",
+    "object": "chat.completion",
+    "created": 1795628523,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.17,\n  \"local_pt\": 0.36,\n  \"long_distance_rail\": 0.22,\n  \"rationale\": \"No household car likely reduces car use and increases reliance on public/local and long-distance rail. Local PT is most accessible for airport access, while long-distance rail can substitute for intercity car trips.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 450,
+      "completion_tokens": 79,
+      "total_tokens": 529,
+      "cost": 0.001532,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001532,
+        "upstream_inference_prompt_cost": 0.0009,
+        "upstream_inference_completions_cost": 0.000632
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628523-bVDtoyG4hMAtpZ2ATgh6",
+  "raw_prediction": {
+    "car": 0.17,
+    "local_pt": 0.36,
+    "long_distance_rail": 0.22,
+    "rationale": "No household car likely reduces car use and increases reliance on public/local and long-distance rail. Local PT is most accessible for airport access, while long-distance rail can substitute for intercity car trips."
+  },
+  "prediction": {
+    "car": 0.17,
+    "local_pt": 0.36,
+    "long_distance_rail": 0.22,
+    "rationale": "No household car likely reduces car use and increases reliance on public/local and long-distance rail. Local PT is most accessible for airport access, while long-distance rail can substitute for intercity car trips."
+  },
+  "normalization": {
+    "sum_before": 0.75,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:42:05.358132+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,111 @@
+{
+  "plan_sha256": "4052c4ac1c244888754ece35e16ad26bdaf57c46dab6c9e5e55052a897235c47",
+  "model_selection": "GPT-4.1 fixed before final outputs; no replacement for unavailable predictions",
+  "rows": [
+    {
+      "observation_id": "mid_car_ownership_rail_difference",
+      "panel_id": "mid_2023",
+      "model_id": "openai/gpt-4.1",
+      "arm": "overall_rate_anchored",
+      "block_id": "p01__m04__a02",
+      "complete_prefix_rounds": 16,
+      "title": "Rail co-use: 4+ cars minus no car",
+      "data_pp": -3.7782366721425626,
+      "llm_pp": -11.6875,
+      "signed_error_pp": -7.909263327857438,
+      "card_ids": [
+        "reise__anzauto_gr1__79ed954bbe2c",
+        "reise__anzauto_gr1__296e9849dc3d"
+      ],
+      "modes": [
+        "long_distance_rail"
+      ],
+      "definition": "Long-distance-rail probability in households with at least four cars minus households with no car.",
+      "normalized_weights": null,
+      "meaning": "The model predicts a larger contrast. Both household groups still report rail co-use.",
+      "inferential_status": "descriptive, no allocated contrast test"
+    },
+    {
+      "observation_id": "mid_small_town_rail_level",
+      "panel_id": "mid_2023",
+      "model_id": "openai/gpt-4.1",
+      "arm": "overall_rate_anchored",
+      "block_id": "p01__m04__a02",
+      "complete_prefix_rounds": 16,
+      "title": "Rail co-use: small towns/villages in urban regions",
+      "data_pp": 23.25260096359134,
+      "llm_pp": 9.375,
+      "signed_error_pp": -13.877600963591341,
+      "card_ids": [
+        "reise__RegioStaR7__5febbfe6f6bc"
+      ],
+      "modes": [
+        "long_distance_rail"
+      ],
+      "definition": "Absolute long-distance-rail probability for the stated residential-area group, not a difference.",
+      "normalized_weights": null,
+      "meaning": "The model underpredicts this group's rail use. The rail leg need not be airport access.",
+      "inferential_status": "descriptive, no allocated contrast test"
+    },
+    {
+      "observation_id": "fmg_purpose_taxi_difference",
+      "panel_id": "fmg_2025",
+      "model_id": "openai/gpt-4.1",
+      "arm": "unanchored",
+      "block_id": "p02__m04__a01",
+      "complete_prefix_rounds": 16,
+      "title": "Taxi/ride-hail: business minus private",
+      "data_pp": 12.720703905296702,
+      "llm_pp": 4.551023901240627,
+      "signed_error_pp": -8.169680004056074,
+      "card_ids": [
+        "fmg_business_continental",
+        "fmg_business_domestic",
+        "fmg_business_intercontinental",
+        "fmg_private_continental",
+        "fmg_private_domestic",
+        "fmg_private_intercontinental"
+      ],
+      "modes": [
+        "taxi_ridehail"
+      ],
+      "definition": "Aggregate each purpose over the three departing-flight regions using observed source-group weights normalized within that purpose, then subtract private from business.",
+      "normalized_weights": {
+        "fmg_business_domestic": 0.303139076319174,
+        "fmg_business_continental": 0.5883186741516875,
+        "fmg_business_intercontinental": 0.10854224952913855,
+        "fmg_private_domestic": 0.07772405866424699,
+        "fmg_private_continental": 0.7129302815300494,
+        "fmg_private_intercontinental": 0.2093456598057036
+      },
+      "meaning": "The model predicts a smaller contrast. Flight-region composition also differs by purpose.",
+      "inferential_status": "descriptive, no allocated contrast test"
+    },
+    {
+      "observation_id": "fmg_private_region_car_difference",
+      "panel_id": "fmg_2025",
+      "model_id": "openai/gpt-4.1",
+      "arm": "unanchored",
+      "block_id": "p02__m04__a01",
+      "complete_prefix_rounds": 16,
+      "title": "Private-car access: intercontinental minus domestic, private trips",
+      "data_pp": 0.19610530852361974,
+      "llm_pp": 1.9999999999999991,
+      "signed_error_pp": 1.8038946914763794,
+      "card_ids": [
+        "fmg_private_intercontinental",
+        "fmg_private_domestic"
+      ],
+      "modes": [
+        "car_dropoff",
+        "car_airport_parking",
+        "car_offairport_parking",
+        "car_other_parking"
+      ],
+      "definition": "Sum drop-off and the three parking categories within private travel, then subtract domestic from intercontinental departing flights.",
+      "normalized_weights": null,
+      "meaning": "The model predicts a larger contrast. Car categories include parking with a shuttle.",
+      "inferential_status": "descriptive, no allocated contrast test"
+    }
+  ]
+}

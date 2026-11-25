@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a01__c017__r009",
+  "block_id": "p01__m03__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__456ee228eb2a",
+  "round": 9,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "fc47d7e4f5435de797423304adfc16d6c2bb6f2bf59a52f7958eb310c8491e87",
+  "started_utc": "2026-11-25T17:37:26.065381+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:38:23.671856+00:00",
+      "cost_usd": 0.000128925,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000128925,
+  "reservation_upper_bound_usd": 0.0020061,
+  "response_sha256": "41ff37c43ac77612428c9ede28e366c9005325e626f61305bb47fc252b7ea83e",
+  "response": {
+    "id": "gen-1795628245-71jCJgZ63jXvA9rRrvdn",
+    "object": "chat.completion",
+    "created": 1795628245,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.75,\n  \"local_pt\": 0.4,\n  \"long_distance_rail\": 0.2,\n  \"rationale\": \"Car use is likely for flexible access to airports, especially from suburban or rural origins. Local public transport may be used near urban airports or destinations. Long-distance rail competes less for 4–5-night trips, suggesting lower multimodal integration.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 405,
+      "completion_tokens": 90,
+      "total_tokens": 495,
+      "cost": 0.000128925,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000128925,
+        "upstream_inference_prompt_cost": 5.4675e-05,
+        "upstream_inference_completions_cost": 7.425e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795628245-71jCJgZ63jXvA9rRrvdn",
+  "raw_prediction": {
+    "car": 0.75,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.2,
+    "rationale": "Car use is likely for flexible access to airports, especially from suburban or rural origins. Local public transport may be used near urban airports or destinations. Long-distance rail competes less for 4–5-night trips, suggesting lower multimodal integration."
+  },
+  "prediction": {
+    "car": 0.75,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.2,
+    "rationale": "Car use is likely for flexible access to airports, especially from suburban or rural origins. Local public transport may be used near urban airports or destinations. Long-distance rail competes less for 4–5-night trips, suggesting lower multimodal integration."
+  },
+  "normalization": {
+    "sum_before": 1.35,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:38:23.671856+00:00",
+  "cost_exceeded_reservation": false
+}

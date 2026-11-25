@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a02__c020__r002",
+  "block_id": "p01__m03__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__9ee7f61bb0c0",
+  "round": 2,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "9f4649e9f86c3dd1fc7df3eca118ec9f80450c31a5d6d5b36e79b4ac0171929f",
+  "started_utc": "2026-11-25T14:23:12.250553+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:23:21.712038+00:00",
+      "cost_usd": 0.000120915,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000120915,
+  "reservation_upper_bound_usd": 0.00212034,
+  "response_sha256": "47699563eddee1df115c2fa8bc82234ef0a33f180f7e1b8dbd873d147edd48e0",
+  "response": {
+    "id": "gen-1795616592-zqEvOHo1fLFueSX25oDj",
+    "object": "chat.completion",
+    "created": 1795616592,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Three-night trips may involve more car use for flexibility at destination, reducing reliance on local and long-distance rail compared to longer stays.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 474,
+      "completion_tokens": 69,
+      "total_tokens": 543,
+      "cost": 0.000120915,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000120915,
+        "upstream_inference_prompt_cost": 6.399e-05,
+        "upstream_inference_completions_cost": 5.6925e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795616592-zqEvOHo1fLFueSX25oDj",
+  "raw_prediction": {
+    "car": 0.45,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Three-night trips may involve more car use for flexibility at destination, reducing reliance on local and long-distance rail compared to longer stays."
+  },
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Three-night trips may involve more car use for flexibility at destination, reducing reliance on local and long-distance rail compared to longer stays."
+  },
+  "normalization": {
+    "sum_before": 0.73,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:23:21.712038+00:00",
+  "cost_exceeded_reservation": false
+}

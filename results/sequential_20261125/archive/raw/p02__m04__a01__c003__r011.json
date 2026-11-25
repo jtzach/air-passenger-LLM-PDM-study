@@ -1,0 +1,120 @@
+{
+  "task_id": "p02__m04__a01__c003__r011",
+  "block_id": "p02__m04__a01",
+  "panel_id": "fmg_2025",
+  "panel_index": 1,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "fmg_business_continental",
+  "round": 11,
+  "modes": [
+    "car_dropoff",
+    "car_airport_parking",
+    "car_offairport_parking",
+    "car_other_parking",
+    "taxi_ridehail",
+    "rental_carsharing",
+    "bus_transfer",
+    "s_bahn",
+    "uefex",
+    "other"
+  ],
+  "mutually_exclusive": true,
+  "request_sha256": "44d048488519127f9eeb2cf082bf14ac191ed4470e7d3ab0335d929e04397d55",
+  "started_utc": "2026-11-25T17:40:30.707585+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:40:32.755595+00:00",
+      "cost_usd": 0.002476,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.002476,
+  "reservation_upper_bound_usd": 0.028811999999999997,
+  "response_sha256": "1d73a4d334f5b4d6e4eca35113b4ba381a5de6fd606ab2d47434979508a8e21f",
+  "response": {
+    "id": "gen-1795628430-AQYO3T7Nfk8wZYP9KZ39",
+    "object": "chat.completion",
+    "created": 1795628430,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car_dropoff\": 0.18,\n  \"car_airport_parking\": 0.19,\n  \"car_offairport_parking\": 0.05,\n  \"car_other_parking\": 0.01,\n  \"taxi_ridehail\": 0.15,\n  \"rental_carsharing\": 0.05,\n  \"bus_transfer\": 0.04,\n  \"s_bahn\": 0.28,\n  \"uefex\": 0.03,\n  \"other\": 0.02,\n  \"rationale\": \"Business passengers balance speed, reliability, and convenience. S-Bahn is frequent and direct, but many use car or taxi for flexibility. Parking is common for multi-day trips; buses and UEFEX serve niche routes.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 570,
+      "completion_tokens": 167,
+      "total_tokens": 737,
+      "cost": 0.002476,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002476,
+        "upstream_inference_prompt_cost": 0.00114,
+        "upstream_inference_completions_cost": 0.001336
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628430-AQYO3T7Nfk8wZYP9KZ39",
+  "raw_prediction": {
+    "car_dropoff": 0.18,
+    "car_airport_parking": 0.19,
+    "car_offairport_parking": 0.05,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.15,
+    "rental_carsharing": 0.05,
+    "bus_transfer": 0.04,
+    "s_bahn": 0.28,
+    "uefex": 0.03,
+    "other": 0.02,
+    "rationale": "Business passengers balance speed, reliability, and convenience. S-Bahn is frequent and direct, but many use car or taxi for flexibility. Parking is common for multi-day trips; buses and UEFEX serve niche routes."
+  },
+  "prediction": {
+    "car_dropoff": 0.18,
+    "car_airport_parking": 0.19,
+    "car_offairport_parking": 0.05,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.15,
+    "rental_carsharing": 0.05,
+    "bus_transfer": 0.04,
+    "s_bahn": 0.28,
+    "uefex": 0.03,
+    "other": 0.02,
+    "rationale": "Business passengers balance speed, reliability, and convenience. S-Bahn is frequent and direct, but many use car or taxi for flexibility. Parking is common for multi-day trips; buses and UEFEX serve niche routes."
+  },
+  "normalization": {
+    "sum_before": 1.0,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:40:32.755595+00:00",
+  "cost_exceeded_reservation": false
+}

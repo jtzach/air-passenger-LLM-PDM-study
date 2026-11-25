@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c016__r016",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzbegl_gr__b61cbc7c0dd2",
+  "round": 16,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "a63672368d43eaa1065c4528ba7413d0f518e9a26cbbbe9d3bf541f46bc11742",
+  "started_utc": "2026-11-25T17:42:23.138411+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:42:24.521657+00:00",
+      "cost_usd": 0.001534,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001534,
+  "reservation_upper_bound_usd": 0.025572,
+  "response_sha256": "21347a82cf4cbb6f1ebb43e2fe1f8cd2c3c2d9c043f01c4a0f4b1db52ae08593",
+  "response": {
+    "id": "gen-1795628542-5FcJEDTGm3zXXdXLRyCm",
+    "object": "chat.completion",
+    "created": 1795628542,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.44,\n  \"local_pt\": 0.20,\n  \"long_distance_rail\": 0.11,\n  \"rationale\": \"Household companion increases likelihood of car use for flexibility and shared travel, but has little effect on public/local transport or long-distance rail, which are less convenient for pairs with luggage or scheduling needs.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 451,
+      "completion_tokens": 79,
+      "total_tokens": 530,
+      "cost": 0.001534,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001534,
+        "upstream_inference_prompt_cost": 0.000902,
+        "upstream_inference_completions_cost": 0.000632
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628542-5FcJEDTGm3zXXdXLRyCm",
+  "raw_prediction": {
+    "car": 0.44,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.11,
+    "rationale": "Household companion increases likelihood of car use for flexibility and shared travel, but has little effect on public/local transport or long-distance rail, which are less convenient for pairs with luggage or scheduling needs."
+  },
+  "prediction": {
+    "car": 0.44,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.11,
+    "rationale": "Household companion increases likelihood of car use for flexibility and shared travel, but has little effect on public/local transport or long-distance rail, which are less convenient for pairs with luggage or scheduling needs."
+  },
+  "normalization": {
+    "sum_before": 0.75,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:42:24.521657+00:00",
+  "cost_exceeded_reservation": false
+}

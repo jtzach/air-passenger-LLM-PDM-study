@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a01__c003__r001",
+  "block_id": "p01__m03__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "unanchored",
+  "card_id": "reise__anzauto_gr1__bee31b0e88ae",
+  "round": 1,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "bfd8b08575bfe9f051d57650fbb3420220f501f3053bd76e5567583db2b95268",
+  "started_utc": "2026-11-25T14:22:36.268459+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:22:44.494025+00:00",
+      "cost_usd": 0.00012027,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00012027,
+  "reservation_upper_bound_usd": 0.0020019,
+  "response_sha256": "9c5e330ad627b42576501fc63a6ef44ada28ddd0b75d59b018e6e43294c4dd63",
+  "response": {
+    "id": "gen-1795616556-M8ryB8hBYhvFIRFANiFZ",
+    "object": "chat.completion",
+    "created": 1795616556,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.85,\n  \"local_pt\": 0.3,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"High car availability in the household suggests frequent car use for airport access. Public transport use is less likely given multiple cars, though some may combine train or local transit with flights for specific destinations.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 402,
+      "completion_tokens": 80,
+      "total_tokens": 482,
+      "cost": 0.00012027,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00012027,
+        "upstream_inference_prompt_cost": 5.427e-05,
+        "upstream_inference_completions_cost": 6.6e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795616556-M8ryB8hBYhvFIRFANiFZ",
+  "raw_prediction": {
+    "car": 0.85,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.15,
+    "rationale": "High car availability in the household suggests frequent car use for airport access. Public transport use is less likely given multiple cars, though some may combine train or local transit with flights for specific destinations."
+  },
+  "prediction": {
+    "car": 0.85,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.15,
+    "rationale": "High car availability in the household suggests frequent car use for airport access. Public transport use is less likely given multiple cars, though some may combine train or local transit with flights for specific destinations."
+  },
+  "normalization": {
+    "sum_before": 1.3,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:22:44.494025+00:00",
+  "cost_exceeded_reservation": false
+}

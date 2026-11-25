@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a01__c004__r003",
+  "block_id": "p01__m03__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "unanchored",
+  "card_id": "reise__anzauto_gr1__d7ca944fcddc",
+  "round": 3,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "6667307bef6f976641229c0d479ffaadea5f546137747d2ea992fda13a59b361",
+  "started_utc": "2026-11-25T14:26:35.868189+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:26:45.841557+00:00",
+      "cost_usd": 0.000121095,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000121095,
+  "reservation_upper_bound_usd": 0.00200148,
+  "response_sha256": "07b8bc231c4b6c4eba9a4be93bf456800836b5fa0d7b703f9f6cef588cd9210a",
+  "response": {
+    "id": "gen-1795616796-dm8iSrplmp7c7Zjzbebb",
+    "object": "chat.completion",
+    "created": 1795616796,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.75,\n  \"local_pt\": 0.3,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"Households with one car likely use it for airport access. Public transit use is moderate, especially near major airports. Long-distance rail competes with air, reducing its likelihood as a connecting mode.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 402,
+      "completion_tokens": 81,
+      "total_tokens": 483,
+      "cost": 0.000121095,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000121095,
+        "upstream_inference_prompt_cost": 5.427e-05,
+        "upstream_inference_completions_cost": 6.6825e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795616796-dm8iSrplmp7c7Zjzbebb",
+  "raw_prediction": {
+    "car": 0.75,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.15,
+    "rationale": "Households with one car likely use it for airport access. Public transit use is moderate, especially near major airports. Long-distance rail competes with air, reducing its likelihood as a connecting mode."
+  },
+  "prediction": {
+    "car": 0.75,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.15,
+    "rationale": "Households with one car likely use it for airport access. Public transit use is moderate, especially near major airports. Long-distance rail competes with air, reducing its likelihood as a connecting mode."
+  },
+  "normalization": {
+    "sum_before": 1.2,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:26:45.841557+00:00",
+  "cost_exceeded_reservation": false
+}

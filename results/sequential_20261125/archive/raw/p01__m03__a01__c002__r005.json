@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a01__c002__r005",
+  "block_id": "p01__m03__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "unanchored",
+  "card_id": "reise__anzauto_gr1__79ed954bbe2c",
+  "round": 5,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "3a99b34fdee510f1efd286610dc93660b104a04157a87f45baea064b7a99bdb2",
+  "started_utc": "2026-11-25T14:30:14.466333+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:30:25.998982+00:00",
+      "cost_usd": 0.00012384,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00012384,
+  "reservation_upper_bound_usd": 0.00200526,
+  "response_sha256": "fc418fba144c05dded925d5bf89b23224dd1a0a0a2a40df0c7159353f6b63a88",
+  "response": {
+    "id": "gen-1795617014-VF1IQpHFlP6nVioB4JJm",
+    "object": "chat.completion",
+    "created": 1795617014,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.85,\n  \"local_pt\": 0.3,\n  \"long_distance_rail\": 0.2,\n  \"rationale\": \"Households with 4+ cars likely have high car availability, increasing car use for airport access. Lower public transport reliance is expected, though some may combine rail or local transit with flights, especially from urban centers.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 404,
+      "completion_tokens": 84,
+      "total_tokens": 488,
+      "cost": 0.00012384,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00012384,
+        "upstream_inference_prompt_cost": 5.454e-05,
+        "upstream_inference_completions_cost": 6.93e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795617014-VF1IQpHFlP6nVioB4JJm",
+  "raw_prediction": {
+    "car": 0.85,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.2,
+    "rationale": "Households with 4+ cars likely have high car availability, increasing car use for airport access. Lower public transport reliance is expected, though some may combine rail or local transit with flights, especially from urban centers."
+  },
+  "prediction": {
+    "car": 0.85,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.2,
+    "rationale": "Households with 4+ cars likely have high car availability, increasing car use for airport access. Lower public transport reliance is expected, though some may combine rail or local transit with flights, especially from urban centers."
+  },
+  "normalization": {
+    "sum_before": 1.35,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:30:25.998982+00:00",
+  "cost_exceeded_reservation": false
+}

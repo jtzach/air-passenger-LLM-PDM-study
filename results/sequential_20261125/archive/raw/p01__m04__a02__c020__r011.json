@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c020__r011",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__9ee7f61bb0c0",
+  "round": 11,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "895f465f033407a3742403f8af1e32c55eb32911e07a91f521a33df94e420353",
+  "started_utc": "2026-11-25T17:40:29.127728+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:40:30.626280+00:00",
+      "cost_usd": 0.001592,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001592,
+  "reservation_upper_bound_usd": 0.025554,
+  "response_sha256": "c19a315826a773a74ca4ea1a08b75d84031e7e1263ff3053150f88c7a3efd7ac",
+  "response": {
+    "id": "gen-1795628428-lbFh9LqfJAXx9nO0CRnw",
+    "object": "chat.completion",
+    "created": 1795628428,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.39,\n  \"local_pt\": 0.22,\n  \"long_distance_rail\": 0.13,\n  \"rationale\": \"3-night stays may slightly favor airport car use (luggage, timing), but not as much as longer trips. Public/local and long-distance rail are near reference, as trip length is moderate and does not strongly shift access mode.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 452,
+      "completion_tokens": 86,
+      "total_tokens": 538,
+      "cost": 0.001592,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001592,
+        "upstream_inference_prompt_cost": 0.000904,
+        "upstream_inference_completions_cost": 0.000688
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628428-lbFh9LqfJAXx9nO0CRnw",
+  "raw_prediction": {
+    "car": 0.39,
+    "local_pt": 0.22,
+    "long_distance_rail": 0.13,
+    "rationale": "3-night stays may slightly favor airport car use (luggage, timing), but not as much as longer trips. Public/local and long-distance rail are near reference, as trip length is moderate and does not strongly shift access mode."
+  },
+  "prediction": {
+    "car": 0.39,
+    "local_pt": 0.22,
+    "long_distance_rail": 0.13,
+    "rationale": "3-night stays may slightly favor airport car use (luggage, timing), but not as much as longer trips. Public/local and long-distance rail are near reference, as trip length is moderate and does not strongly shift access mode."
+  },
+  "normalization": {
+    "sum_before": 0.74,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:40:30.626280+00:00",
+  "cost_exceeded_reservation": false
+}

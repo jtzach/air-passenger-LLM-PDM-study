@@ -1,0 +1,100 @@
+{
+  "task_id": "p01__m03__a01__c006__r007__administrative_replacement1",
+  "block_id": "p01__m03__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "unanchored",
+  "card_id": "reise__RegioStaR7__5febbfe6f6bc",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "supersedes_task_id": "p01__m03__a01__c006__r007",
+  "request_sha256": "756b62a696d5acb8188897939112ce754176a553dd1bb24ae8cf2b0e94af0078",
+  "started_utc": "2026-11-25T17:34:14.388838+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:34:29.817558+00:00",
+      "cost_usd": 0.000124935,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000124935,
+  "reservation_upper_bound_usd": 0.00201702,
+  "response_sha256": "c6cbfb6008dd6c6540fe5743ae136101eeed65c8ad8b76621c67ed91d09f231d",
+  "response": {
+    "id": "gen-1795628053-Yto4l6jla1ON0V87wRKG",
+    "object": "chat.completion",
+    "created": 1795628053,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.75,\n  \"local_pt\": 0.4,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"In small-town and village areas, car use is common for reaching airports due to limited public transport. Local public transport is less prevalent, and long-distance rail is used selectively, often depending on proximity to major hubs.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 406,
+      "completion_tokens": 85,
+      "total_tokens": 491,
+      "cost": 0.000124935,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000124935,
+        "upstream_inference_prompt_cost": 5.481e-05,
+        "upstream_inference_completions_cost": 7.0125e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795628053-Yto4l6jla1ON0V87wRKG",
+  "raw_prediction": {
+    "car": 0.75,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.25,
+    "rationale": "In small-town and village areas, car use is common for reaching airports due to limited public transport. Local public transport is less prevalent, and long-distance rail is used selectively, often depending on proximity to major hubs."
+  },
+  "prediction": {
+    "car": 0.75,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.25,
+    "rationale": "In small-town and village areas, car use is common for reaching airports due to limited public transport. Local public transport is less prevalent, and long-distance rail is used selectively, often depending on proximity to major hubs."
+  },
+  "normalization": {
+    "sum_before": 1.4,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:34:29.817558+00:00",
+  "cost_exceeded_reservation": false
+}

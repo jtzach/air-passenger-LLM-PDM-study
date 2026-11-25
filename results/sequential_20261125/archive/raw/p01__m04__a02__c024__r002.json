@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c024__r002",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "no_persona",
+  "round": 2,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "5e5b7c88ddefd0f63e723df94bece7d9b1a34bfca9eaa6234e2dcbe4492c30fe",
+  "started_utc": "2026-11-25T14:25:11.371869+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:25:13.227212+00:00",
+      "cost_usd": 0.0015,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0015,
+  "reservation_upper_bound_usd": 0.024342,
+  "response_sha256": "11e3ff33364b0a571bce1406392719cb018855a9ee9ef32d271aaac0103cd6ae",
+  "response": {
+    "id": "gen-1795616711-K5d7iR1PhZ75MdIWFt2t",
+    "object": "chat.completion",
+    "created": 1795616711,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.38,\n  \"local_pt\": 0.22,\n  \"long_distance_rail\": 0.12,\n  \"rationale\": \"With only age 14+ and recent air travel specified, modal splits likely mirror population averages; no evidence suggests deviation in car, public transport, or long-distance rail use versus all air-travel journeys in the survey.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 414,
+      "completion_tokens": 84,
+      "total_tokens": 498,
+      "cost": 0.0015,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0015,
+        "upstream_inference_prompt_cost": 0.000828,
+        "upstream_inference_completions_cost": 0.000672
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616711-K5d7iR1PhZ75MdIWFt2t",
+  "raw_prediction": {
+    "car": 0.38,
+    "local_pt": 0.22,
+    "long_distance_rail": 0.12,
+    "rationale": "With only age 14+ and recent air travel specified, modal splits likely mirror population averages; no evidence suggests deviation in car, public transport, or long-distance rail use versus all air-travel journeys in the survey."
+  },
+  "prediction": {
+    "car": 0.38,
+    "local_pt": 0.22,
+    "long_distance_rail": 0.12,
+    "rationale": "With only age 14+ and recent air travel specified, modal splits likely mirror population averages; no evidence suggests deviation in car, public transport, or long-distance rail use versus all air-travel journeys in the survey."
+  },
+  "normalization": {
+    "sum_before": 0.72,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:25:13.227212+00:00",
+  "cost_exceeded_reservation": false
+}

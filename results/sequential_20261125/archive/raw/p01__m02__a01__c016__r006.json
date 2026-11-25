@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m02__a01__c016__r006",
+  "block_id": "p01__m02__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "unanchored",
+  "card_id": "reise__anzbegl_gr__b61cbc7c0dd2",
+  "round": 6,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "ac97ddbe6bb3f77aa3bb22f66c95298958d3fd67575dec5ebe65802070ccdcf9",
+  "started_utc": "2026-11-25T14:32:17.917159+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:32:19.710488+00:00",
+      "cost_usd": 0.00028,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00028,
+  "reservation_upper_bound_usd": 0.0047916,
+  "response_sha256": "b84ea181ff46fc60e6a8635b0bf866880863236c63eb910d5132fe815ff22d16",
+  "response": {
+    "id": "gen-1795617138-PoxCn6jspNnRThWbB3hN",
+    "object": "chat.completion",
+    "created": 1795617138,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.6,\n  \"local_pt\": 0.7,\n  \"long_distance_rail\": 0.3,\n  \"rationale\": \"With one companion, mixed modes likely: car for airport access, local public transport for urban segments, and some long-distance train use as alternative or feeder given Germany's strong rail network.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 392,
+      "completion_tokens": 77,
+      "total_tokens": 469,
+      "cost": 0.00028,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00028,
+        "upstream_inference_prompt_cost": 0.0001568,
+        "upstream_inference_completions_cost": 0.0001232
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795617138-PoxCn6jspNnRThWbB3hN",
+  "raw_prediction": {
+    "car": 0.6,
+    "local_pt": 0.7,
+    "long_distance_rail": 0.3,
+    "rationale": "With one companion, mixed modes likely: car for airport access, local public transport for urban segments, and some long-distance train use as alternative or feeder given Germany's strong rail network."
+  },
+  "prediction": {
+    "car": 0.6,
+    "local_pt": 0.7,
+    "long_distance_rail": 0.3,
+    "rationale": "With one companion, mixed modes likely: car for airport access, local public transport for urban segments, and some long-distance train use as alternative or feeder given Germany's strong rail network."
+  },
+  "normalization": {
+    "sum_before": 1.5999999999999999,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:32:19.710488+00:00",
+  "cost_exceeded_reservation": false
+}

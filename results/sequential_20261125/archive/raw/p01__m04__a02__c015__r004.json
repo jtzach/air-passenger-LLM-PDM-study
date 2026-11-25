@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c015__r004",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzbegl_gr__18864b086b3b",
+  "round": 4,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "f5afa56aacca72f36196b3e72b9e8e618bbf92e2b536de2557134832929a4d6e",
+  "started_utc": "2026-11-25T14:27:47.126026+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:27:48.969226+00:00",
+      "cost_usd": 0.001582,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001582,
+  "reservation_upper_bound_usd": 0.025577999999999997,
+  "response_sha256": "164d8da1995c86adc554eecd884b51109a158e892ad919ec08d9968e0b950b15",
+  "response": {
+    "id": "gen-1795616867-DAOgv1f1F1cUzqkjlcQL",
+    "object": "chat.completion",
+    "created": 1795616867,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.48,\n  \"local_pt\": 0.19,\n  \"long_distance_rail\": 0.09,\n  \"rationale\": \"Larger household groups are likelier to use cars due to convenience and cost-sharing. Group size reduces the appeal of public/rail transport. Thus, car use rises, public transport and long-distance rail drop below population average.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 451,
+      "completion_tokens": 85,
+      "total_tokens": 536,
+      "cost": 0.001582,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001582,
+        "upstream_inference_prompt_cost": 0.000902,
+        "upstream_inference_completions_cost": 0.00068
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616867-DAOgv1f1F1cUzqkjlcQL",
+  "raw_prediction": {
+    "car": 0.48,
+    "local_pt": 0.19,
+    "long_distance_rail": 0.09,
+    "rationale": "Larger household groups are likelier to use cars due to convenience and cost-sharing. Group size reduces the appeal of public/rail transport. Thus, car use rises, public transport and long-distance rail drop below population average."
+  },
+  "prediction": {
+    "car": 0.48,
+    "local_pt": 0.19,
+    "long_distance_rail": 0.09,
+    "rationale": "Larger household groups are likelier to use cars due to convenience and cost-sharing. Group size reduces the appeal of public/rail transport. Thus, car use rises, public transport and long-distance rail drop below population average."
+  },
+  "normalization": {
+    "sum_before": 0.76,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:27:48.969226+00:00",
+  "cost_exceeded_reservation": false
+}

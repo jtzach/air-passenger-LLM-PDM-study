@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m02__a01__c020__r013",
+  "block_id": "p01__m02__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__9ee7f61bb0c0",
+  "round": 13,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "df796c12a1c28a163989549b697c1896fb7023b88b9e2b5161c079ca240b5fef",
+  "started_utc": "2026-11-25T17:41:31.030644+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:41:32.475109+00:00",
+      "cost_usd": 0.0002756,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002756,
+  "reservation_upper_bound_usd": 0.004787999999999999,
+  "response_sha256": "592200526012b2ff6093957666de966236e2193d6bae32da08834af0d25edde0",
+  "response": {
+    "id": "gen-1795628490-tFFIkQwa8K7YuLvpO8q3",
+    "object": "chat.completion",
+    "created": 1795628490,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.55,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"Trips involving flights often combine car access to airports and local public transport at destinations; long-distance rail is less frequent but plausible for connecting to/from airports or final trip legs.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 393,
+      "completion_tokens": 74,
+      "total_tokens": 467,
+      "cost": 0.0002756,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002756,
+        "upstream_inference_prompt_cost": 0.0001572,
+        "upstream_inference_completions_cost": 0.0001184
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795628490-tFFIkQwa8K7YuLvpO8q3",
+  "raw_prediction": {
+    "car": 0.65,
+    "local_pt": 0.55,
+    "long_distance_rail": 0.25,
+    "rationale": "Trips involving flights often combine car access to airports and local public transport at destinations; long-distance rail is less frequent but plausible for connecting to/from airports or final trip legs."
+  },
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.55,
+    "long_distance_rail": 0.25,
+    "rationale": "Trips involving flights often combine car access to airports and local public transport at destinations; long-distance rail is less frequent but plausible for connecting to/from airports or final trip legs."
+  },
+  "normalization": {
+    "sum_before": 1.4500000000000002,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:41:32.475109+00:00",
+  "cost_exceeded_reservation": false
+}

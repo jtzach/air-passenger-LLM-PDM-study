@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c020__r004",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__9ee7f61bb0c0",
+  "round": 4,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "7dd58e87aa678fe2ae92b22f9acaa01142345ad9c74a51256ab2468310f5ac3c",
+  "started_utc": "2026-11-25T14:28:33.312594+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:28:34.846660+00:00",
+      "cost_usd": 0.001482,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001482,
+  "reservation_upper_bound_usd": 0.02391,
+  "response_sha256": "89211d623f62b5d23c1d6712e588d7f379842cc59b7a3b4e816e64cd545fd01c",
+  "response": {
+    "id": "gen-1795616913-jkc5ZxgDCydlXKOQvhfJ",
+    "object": "chat.completion",
+    "created": 1795616913,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.20,\n  \"rationale\": \"German air travelers on 3-night trips often use cars for flexible airport access, but public/local transport is common in urban regions. Long-distance rail is less likely due to luggage and scheduling constraints, yet still plausible for intercity connections.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 393,
+      "completion_tokens": 87,
+      "total_tokens": 480,
+      "cost": 0.001482,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001482,
+        "upstream_inference_prompt_cost": 0.000786,
+        "upstream_inference_completions_cost": 0.000696
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616913-jkc5ZxgDCydlXKOQvhfJ",
+  "raw_prediction": {
+    "car": 0.55,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.2,
+    "rationale": "German air travelers on 3-night trips often use cars for flexible airport access, but public/local transport is common in urban regions. Long-distance rail is less likely due to luggage and scheduling constraints, yet still plausible for intercity connections."
+  },
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.2,
+    "rationale": "German air travelers on 3-night trips often use cars for flexible airport access, but public/local transport is common in urban regions. Long-distance rail is less likely due to luggage and scheduling constraints, yet still plausible for intercity connections."
+  },
+  "normalization": {
+    "sum_before": 1.1,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:28:34.846660+00:00",
+  "cost_exceeded_reservation": false
+}

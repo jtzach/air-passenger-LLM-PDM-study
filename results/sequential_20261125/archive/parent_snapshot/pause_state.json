@@ -1,0 +1,20 @@
+{
+  "status": "PAUSED_BY_USER",
+  "paused_utc": "2026-11-25T14:34:18.358501+00:00",
+  "restart_requires_explicit_user_instruction": true,
+  "last_completed_global_round": 6,
+  "last_progress_utc": "2026-11-25T14:32:34.898324+00:00",
+  "accounted_cost_at_last_complete_round_usd": 0.7967033050000002,
+  "records_on_disk": 1094,
+  "in_progress_unknown_outcomes": [
+    "p01__m03__a01__c001__r007",
+    "p01__m03__a01__c003__r007",
+    "p01__m03__a01__c005__r007",
+    "p01__m03__a01__c006__r007",
+    "p01__m03__a01__c014__r007",
+    "p01__m03__a02__c024__r007",
+    "p01__m04__a02__c016__r007",
+    "p02__m02__a01__c003__r007"
+  ],
+  "reason": "User needs to shut down laptop and requested immediate pause. Process terminated and verified absent. In-flight outcomes may be unknown; retain reservations and all records. Do not restart or silently repurchase interrupted requests."
+}

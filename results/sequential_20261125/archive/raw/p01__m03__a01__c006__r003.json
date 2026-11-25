@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a01__c006__r003",
+  "block_id": "p01__m03__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "unanchored",
+  "card_id": "reise__RegioStaR7__5febbfe6f6bc",
+  "round": 3,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "3d3258f04859e958865f9190be61055c97cf76e37398fbd8e7ecba2a090531c2",
+  "started_utc": "2026-11-25T14:25:43.208188+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:25:54.312492+00:00",
+      "cost_usd": 0.00012246,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00012246,
+  "reservation_upper_bound_usd": 0.00201702,
+  "response_sha256": "26ad1d429699ce35761500595e9f0a351477f354706385878976181aab904592",
+  "response": {
+    "id": "gen-1795616743-2IjI5LdpvUBPuZ4H9m6r",
+    "object": "chat.completion",
+    "created": 1795616743,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.75,\n  \"local_pt\": 0.4,\n  \"long_distance_rail\": 0.2,\n  \"rationale\": \"In small-town and village areas, car use is likely for airport access due to limited public transport. Local public transport may be used where available. Long-distance rail competes less directly, reducing its likelihood.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 406,
+      "completion_tokens": 82,
+      "total_tokens": 488,
+      "cost": 0.00012246,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00012246,
+        "upstream_inference_prompt_cost": 5.481e-05,
+        "upstream_inference_completions_cost": 6.765e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795616743-2IjI5LdpvUBPuZ4H9m6r",
+  "raw_prediction": {
+    "car": 0.75,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.2,
+    "rationale": "In small-town and village areas, car use is likely for airport access due to limited public transport. Local public transport may be used where available. Long-distance rail competes less directly, reducing its likelihood."
+  },
+  "prediction": {
+    "car": 0.75,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.2,
+    "rationale": "In small-town and village areas, car use is likely for airport access due to limited public transport. Local public transport may be used where available. Long-distance rail competes less directly, reducing its likelihood."
+  },
+  "normalization": {
+    "sum_before": 1.35,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:25:54.312492+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m02__a02__c017__r010",
+  "block_id": "p01__m02__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__456ee228eb2a",
+  "round": 10,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "729538593eb0994fa0b0ebef516747e76bc5d17876f36b6b7f9f25bdf2267697",
+  "started_utc": "2026-11-25T17:39:19.854809+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:39:21.740739+00:00",
+      "cost_usd": 0.0003112,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0003112,
+  "reservation_upper_bound_usd": 0.005119199999999999,
+  "response_sha256": "a690b49c79e03a87c2f694ea97668c3f2558d59b6ea3bea4236b4fd6dcea1482",
+  "response": {
+    "id": "gen-1795628359-NAEttnnplo1HjoqceN0y",
+    "object": "chat.completion",
+    "created": 1795628359,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.25,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Longer stays (4-5 nights) likely increase car use for local mobility; local public transport slightly more used; long-distance rail less likely as main mode is aircraft and trip duration reduces train feasibility.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 454,
+      "completion_tokens": 81,
+      "total_tokens": 535,
+      "cost": 0.0003112,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003112,
+        "upstream_inference_prompt_cost": 0.0001816,
+        "upstream_inference_completions_cost": 0.0001296
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795628359-NAEttnnplo1HjoqceN0y",
+  "raw_prediction": {
+    "car": 0.45,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.1,
+    "rationale": "Longer stays (4-5 nights) likely increase car use for local mobility; local public transport slightly more used; long-distance rail less likely as main mode is aircraft and trip duration reduces train feasibility."
+  },
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.1,
+    "rationale": "Longer stays (4-5 nights) likely increase car use for local mobility; local public transport slightly more used; long-distance rail less likely as main mode is aircraft and trip duration reduces train feasibility."
+  },
+  "normalization": {
+    "sum_before": 0.8,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:39:21.740739+00:00",
+  "cost_exceeded_reservation": false
+}

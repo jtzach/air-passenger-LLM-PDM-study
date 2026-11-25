@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "registered_blocks": 12,
+  "reported_blocks": 12,
+  "retained_request_count": 2240,
+  "reconstructed_complete_rounds": 116,
+  "reconstructed_prediction_cells": 603,
+  "verified_request_count": 2375,
+  "invalidated_inference_blocks": [],
+  "private_source_records_exported": false,
+  "fmg_derived_groups_exported": 6
+}

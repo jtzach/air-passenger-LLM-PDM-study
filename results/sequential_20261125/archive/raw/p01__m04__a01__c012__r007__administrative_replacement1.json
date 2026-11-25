@@ -1,0 +1,100 @@
+{
+  "task_id": "p01__m04__a01__c012__r007__administrative_replacement1",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__RegioStaR7__d3321efbbd2e",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "supersedes_task_id": "p01__m04__a01__c012__r007",
+  "request_sha256": "95ebe01e99e51cf0d4a5e67086359920d7c8d072587b0581d45488b4f9a12bad",
+  "started_utc": "2026-11-25T17:34:18.952735+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:34:21.942654+00:00",
+      "cost_usd": 0.00141,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00141,
+  "reservation_upper_bound_usd": 0.023988,
+  "response_sha256": "b3577894837e24b2cf21f1cdffb63867346091987c25dd20dacd431934f71a00",
+  "response": {
+    "id": "gen-1795628059-BYa7vKCZmweCBZ9NteX4",
+    "object": "chat.completion",
+    "created": 1795628059,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.30,\n  \"long_distance_rail\": 0.20,\n  \"rationale\": \"Central cities in rural regions likely have limited long-distance rail and modest local public transport, making car use dominant for airport access, but some respondents still use available public transport or regional rail links.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 393,
+      "completion_tokens": 78,
+      "total_tokens": 471,
+      "cost": 0.00141,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00141,
+        "upstream_inference_prompt_cost": 0.000786,
+        "upstream_inference_completions_cost": 0.000624
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628059-BYa7vKCZmweCBZ9NteX4",
+  "raw_prediction": {
+    "car": 0.65,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.2,
+    "rationale": "Central cities in rural regions likely have limited long-distance rail and modest local public transport, making car use dominant for airport access, but some respondents still use available public transport or regional rail links."
+  },
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.2,
+    "rationale": "Central cities in rural regions likely have limited long-distance rail and modest local public transport, making car use dominant for airport access, but some respondents still use available public transport or regional rail links."
+  },
+  "normalization": {
+    "sum_before": 1.15,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:34:21.942654+00:00",
+  "cost_exceeded_reservation": false
+}

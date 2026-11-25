@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a01__c001__r004",
+  "block_id": "p01__m03__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "unanchored",
+  "card_id": "reise__anzauto_gr1__296e9849dc3d",
+  "round": 4,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "d6e20f63d56528b89177636ce5e4170d1da32174750f420fc1b9af4d2947a8e3",
+  "started_utc": "2026-11-25T14:28:34.713376+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:28:47.945835+00:00",
+      "cost_usd": 0.00012921,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00012921,
+  "reservation_upper_bound_usd": 0.0020019,
+  "response_sha256": "c261005d71b0efb5673eff6dbc2999b7c0a897055ac7eee1ea1fc6e6b4845c6b",
+  "response": {
+    "id": "gen-1795616914-fNIIuF3r6azj6UepDHoQ",
+    "object": "chat.completion",
+    "created": 1795616914,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.3,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"Without household car access, car use likely involves rental, ride-sharing, or rides from others. Public transport use is moderate, constrained by airport connectivity. Long-distance rail competes less for air travelers, especially without car access limiting multimodal combinations.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 401,
+      "completion_tokens": 91,
+      "total_tokens": 492,
+      "cost": 0.00012921,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00012921,
+        "upstream_inference_prompt_cost": 5.4135e-05,
+        "upstream_inference_completions_cost": 7.5075e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795616914-fNIIuF3r6azj6UepDHoQ",
+  "raw_prediction": {
+    "car": 0.65,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.15,
+    "rationale": "Without household car access, car use likely involves rental, ride-sharing, or rides from others. Public transport use is moderate, constrained by airport connectivity. Long-distance rail competes less for air travelers, especially without car access limiting multimodal combinations."
+  },
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.15,
+    "rationale": "Without household car access, car use likely involves rental, ride-sharing, or rides from others. Public transport use is moderate, constrained by airport connectivity. Long-distance rail competes less for air travelers, especially without car access limiting multimodal combinations."
+  },
+  "normalization": {
+    "sum_before": 1.1,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:28:47.945835+00:00",
+  "cost_exceeded_reservation": false
+}

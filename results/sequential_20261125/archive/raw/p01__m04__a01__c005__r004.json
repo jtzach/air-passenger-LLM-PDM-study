@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c005__r004",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzauto_gr1__faec8c191aa2",
+  "round": 4,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "5bb19f3452f6bea5f439b58602b0df1bb7ace784b1c9ba98907491b27baf4ad8",
+  "started_utc": "2026-11-25T14:27:43.226734+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:27:44.707883+00:00",
+      "cost_usd": 0.001432,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001432,
+  "reservation_upper_bound_usd": 0.023861999999999998,
+  "response_sha256": "97f94a8c20ba6dd508e395a8b1e8cf2a6cc132d8a513b07c629c85fcb2031b15",
+  "response": {
+    "id": "gen-1795616863-BaZ4HOR2ayiYNnOfxI4w",
+    "object": "chat.completion",
+    "created": 1795616863,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.75,\n  \"local_pt\": 0.30,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Households with two cars are likely to prefer private car access to/from airports for convenience, while local public transport sees moderate use; long-distance rail is rarely chosen given car availability and typical airport access patterns.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 392,
+      "completion_tokens": 81,
+      "total_tokens": 473,
+      "cost": 0.001432,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001432,
+        "upstream_inference_prompt_cost": 0.000784,
+        "upstream_inference_completions_cost": 0.000648
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616863-BaZ4HOR2ayiYNnOfxI4w",
+  "raw_prediction": {
+    "car": 0.75,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "Households with two cars are likely to prefer private car access to/from airports for convenience, while local public transport sees moderate use; long-distance rail is rarely chosen given car availability and typical airport access patterns."
+  },
+  "prediction": {
+    "car": 0.75,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "Households with two cars are likely to prefer private car access to/from airports for convenience, while local public transport sees moderate use; long-distance rail is rarely chosen given car availability and typical airport access patterns."
+  },
+  "normalization": {
+    "sum_before": 1.15,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:27:44.707883+00:00",
+  "cost_exceeded_reservation": false
+}

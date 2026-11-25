@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a02__c024__r005",
+  "block_id": "p01__m03__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "overall_rate_anchored",
+  "card_id": "no_persona",
+  "round": 5,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "39dd23af3f355875c195c651fd478d80bca00bb1c034fa1c9fa684e06b8bfb23",
+  "started_utc": "2026-11-25T14:30:35.423627+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:30:46.828216+00:00",
+      "cost_usd": 0.00012555,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00012555,
+  "reservation_upper_bound_usd": 0.0020355,
+  "response_sha256": "a4cfe0c3e5ee96daff76be9880d2aad422d55b7263ed0a7e5ac1989f8423a5c6",
+  "response": {
+    "id": "gen-1795617035-3C4JJyRe9FC3RwmcTJzz",
+    "object": "chat.completion",
+    "created": 1795617035,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.376769,\n  \"local_pt\": 0.21623,\n  \"long_distance_rail\": 0.124088,\n  \"rationale\": \"No distinguishing attributes are specified, so the cohort is indistinguishable from the overall population; thus, marginal probabilities are assumed to apply.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 435,
+      "completion_tokens": 81,
+      "total_tokens": 516,
+      "cost": 0.00012555,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00012555,
+        "upstream_inference_prompt_cost": 5.8725e-05,
+        "upstream_inference_completions_cost": 6.6825e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795617035-3C4JJyRe9FC3RwmcTJzz",
+  "raw_prediction": {
+    "car": 0.376769,
+    "local_pt": 0.21623,
+    "long_distance_rail": 0.124088,
+    "rationale": "No distinguishing attributes are specified, so the cohort is indistinguishable from the overall population; thus, marginal probabilities are assumed to apply."
+  },
+  "prediction": {
+    "car": 0.376769,
+    "local_pt": 0.21623,
+    "long_distance_rail": 0.124088,
+    "rationale": "No distinguishing attributes are specified, so the cohort is indistinguishable from the overall population; thus, marginal probabilities are assumed to apply."
+  },
+  "normalization": {
+    "sum_before": 0.717087,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:30:46.828216+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c016__r002",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzbegl_gr__b61cbc7c0dd2",
+  "round": 2,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "7121b8f698e25f24c385497d24afb3204bb82dd4da5d596e5d9902ae26dc3383",
+  "started_utc": "2026-11-25T14:24:26.306725+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:24:27.897694+00:00",
+      "cost_usd": 0.001542,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001542,
+  "reservation_upper_bound_usd": 0.025572,
+  "response_sha256": "e81c91372a18360a651805a88296d73798ca73fb99efa520fdc46bf984743364",
+  "response": {
+    "id": "gen-1795616666-3W2IzdOmDrbcAp34q9tb",
+    "object": "chat.completion",
+    "created": 1795616666,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.40,\n  \"local_pt\": 0.21,\n  \"long_distance_rail\": 0.13,\n  \"rationale\": \"Two household members allow easy car-sharing, slightly raising car use versus solo travellers. Public and long-distance transport probabilities are near average since a pair can flexibly use any mode, without family-size constraints.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 451,
+      "completion_tokens": 80,
+      "total_tokens": 531,
+      "cost": 0.001542,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001542,
+        "upstream_inference_prompt_cost": 0.000902,
+        "upstream_inference_completions_cost": 0.00064
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616666-3W2IzdOmDrbcAp34q9tb",
+  "raw_prediction": {
+    "car": 0.4,
+    "local_pt": 0.21,
+    "long_distance_rail": 0.13,
+    "rationale": "Two household members allow easy car-sharing, slightly raising car use versus solo travellers. Public and long-distance transport probabilities are near average since a pair can flexibly use any mode, without family-size constraints."
+  },
+  "prediction": {
+    "car": 0.4,
+    "local_pt": 0.21,
+    "long_distance_rail": 0.13,
+    "rationale": "Two household members allow easy car-sharing, slightly raising car use versus solo travellers. Public and long-distance transport probabilities are near average since a pair can flexibly use any mode, without family-size constraints."
+  },
+  "normalization": {
+    "sum_before": 0.74,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:24:27.897694+00:00",
+  "cost_exceeded_reservation": false
+}

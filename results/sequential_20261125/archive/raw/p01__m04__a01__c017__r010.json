@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c017__r010",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__456ee228eb2a",
+  "round": 10,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "b669fddb7a5023b271a6120b716a54a45646727652d3b3c7a99f50b7a4e1f7e6",
+  "started_utc": "2026-11-25T17:38:54.461346+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:38:55.619553+00:00",
+      "cost_usd": 0.001486,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001486,
+  "reservation_upper_bound_usd": 0.023921999999999995,
+  "response_sha256": "c9f35fa46c57231f6bff538a2a4befed07651adc9df6bc5cdab63f4a06f1513c",
+  "response": {
+    "id": "gen-1795628333-COd0Os3syrJbHskRWWmy",
+    "object": "chat.completion",
+    "created": 1795628333,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.40,\n  \"long_distance_rail\": 0.20,\n  \"rationale\": \"Flights with 4-5 nights away suggest both leisure and business trips, often requiring flexible ground transport. Car use is common for flexibility, local PT for airport access, and long-distance rail less so but plausible for major city pairs.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 395,
+      "completion_tokens": 87,
+      "total_tokens": 482,
+      "cost": 0.001486,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001486,
+        "upstream_inference_prompt_cost": 0.00079,
+        "upstream_inference_completions_cost": 0.000696
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628333-COd0Os3syrJbHskRWWmy",
+  "raw_prediction": {
+    "car": 0.45,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.2,
+    "rationale": "Flights with 4-5 nights away suggest both leisure and business trips, often requiring flexible ground transport. Car use is common for flexibility, local PT for airport access, and long-distance rail less so but plausible for major city pairs."
+  },
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.2,
+    "rationale": "Flights with 4-5 nights away suggest both leisure and business trips, often requiring flexible ground transport. Car use is common for flexibility, local PT for airport access, and long-distance rail less so but plausible for major city pairs."
+  },
+  "normalization": {
+    "sum_before": 1.05,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:38:55.619553+00:00",
+  "cost_exceeded_reservation": false
+}

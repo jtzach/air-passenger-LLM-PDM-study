@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a02__c017__r003",
+  "block_id": "p01__m03__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__456ee228eb2a",
+  "round": 3,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "8c8021646e5d7c9ecddd5e8d80ef93d34626745a4799b9283878df608dc0f0ea",
+  "started_utc": "2026-11-25T14:25:29.669576+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:25:39.208906+00:00",
+      "cost_usd": 0.000117885,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000117885,
+  "reservation_upper_bound_usd": 0.0021211800000000003,
+  "response_sha256": "378e8681478a7029e23817ff8593016706e7be6a6c744ef16692c324d26f1005",
+  "response": {
+    "id": "gen-1795616729-8d2ErRUAll3D0fntu9Su",
+    "object": "chat.completion",
+    "created": 1795616729,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.1,\n  \"rationale\": \"Longer stays may favor car use for onward travel, reducing reliance on local and long-distance rail near the destination.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 476,
+      "completion_tokens": 65,
+      "total_tokens": 541,
+      "cost": 0.000117885,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000117885,
+        "upstream_inference_prompt_cost": 6.426e-05,
+        "upstream_inference_completions_cost": 5.3625e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795616729-8d2ErRUAll3D0fntu9Su",
+  "raw_prediction": {
+    "car": 0.45,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Longer stays may favor car use for onward travel, reducing reliance on local and long-distance rail near the destination."
+  },
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Longer stays may favor car use for onward travel, reducing reliance on local and long-distance rail near the destination."
+  },
+  "normalization": {
+    "sum_before": 0.73,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:25:39.208906+00:00",
+  "cost_exceeded_reservation": false
+}

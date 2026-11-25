@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c001__r004",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzauto_gr1__296e9849dc3d",
+  "round": 4,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "37e25c459244c4a1021ecddf8f1c3b6f2ee245506ae9e9490906b90261a03dac",
+  "started_utc": "2026-11-25T14:28:28.703421+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:28:30.158522+00:00",
+      "cost_usd": 0.00154,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00154,
+  "reservation_upper_bound_usd": 0.025505999999999997,
+  "response_sha256": "fbf6764d74397fdcb7da400765cf648fab3cb33bee5b6e8945cac6298f7f7a24",
+  "response": {
+    "id": "gen-1795616908-xYHTjIR1nRaULqmZLa71",
+    "object": "chat.completion",
+    "created": 1795616908,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.08,\n  \"local_pt\": 0.38,\n  \"long_distance_rail\": 0.19,\n  \"rationale\": \"Households without a car strongly reduce car use, increasing reliance on public and rail transport. Local PT is more available near airports; long-distance rail rises but remains limited by network coverage and ticket cost.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 450,
+      "completion_tokens": 80,
+      "total_tokens": 530,
+      "cost": 0.00154,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00154,
+        "upstream_inference_prompt_cost": 0.0009,
+        "upstream_inference_completions_cost": 0.00064
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616908-xYHTjIR1nRaULqmZLa71",
+  "raw_prediction": {
+    "car": 0.08,
+    "local_pt": 0.38,
+    "long_distance_rail": 0.19,
+    "rationale": "Households without a car strongly reduce car use, increasing reliance on public and rail transport. Local PT is more available near airports; long-distance rail rises but remains limited by network coverage and ticket cost."
+  },
+  "prediction": {
+    "car": 0.08,
+    "local_pt": 0.38,
+    "long_distance_rail": 0.19,
+    "rationale": "Households without a car strongly reduce car use, increasing reliance on public and rail transport. Local PT is more available near airports; long-distance rail rises but remains limited by network coverage and ticket cost."
+  },
+  "normalization": {
+    "sum_before": 0.65,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:28:30.158522+00:00",
+  "cost_exceeded_reservation": false
+}

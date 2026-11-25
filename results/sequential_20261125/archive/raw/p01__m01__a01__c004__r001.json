@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m01__a01__c004__r001",
+  "block_id": "p01__m01__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "unanchored",
+  "card_id": "reise__anzauto_gr1__d7ca944fcddc",
+  "round": 1,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "8d1616904628791ba885edf4f85fcc0672e9af52b89c54eb4e1f3c64f1e22ae6",
+  "started_utc": "2026-11-25T14:21:09.063701+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:21:10.859707+00:00",
+      "cost_usd": 1.787e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 1.787e-05,
+  "reservation_upper_bound_usd": 0.00033017999999999996,
+  "response_sha256": "c324bcdd5f0904501b66fbba359bad547a1677a6e655e7664e2a20ec27b18399",
+  "response": {
+    "id": "gen-1795616469-tVXICRM3tYduu6RGLJ0z",
+    "object": "chat.completion",
+    "created": 1795616469,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.6, \"local_pt\": 0.4, \"long_distance_rail\": 0.2, \"rationale\": \"Given one car per household, and an overnight flight, it's likely some travel was by car, especially for shorter distances. Local public transport use is plausible for connecting to/from airports or accessing local destinations. Long-distance rail is less probable without further context.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 413,
+      "completion_tokens": 91,
+      "total_tokens": 504,
+      "cost": 1.787e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.787e-05,
+        "upstream_inference_prompt_cost": 1.332e-05,
+        "upstream_inference_completions_cost": 4.55e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616469-tVXICRM3tYduu6RGLJ0z",
+  "raw_prediction": {
+    "car": 0.6,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.2,
+    "rationale": "Given one car per household, and an overnight flight, it's likely some travel was by car, especially for shorter distances. Local public transport use is plausible for connecting to/from airports or accessing local destinations. Long-distance rail is less probable without further context."
+  },
+  "prediction": {
+    "car": 0.6,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.2,
+    "rationale": "Given one car per household, and an overnight flight, it's likely some travel was by car, especially for shorter distances. Local public transport use is plausible for connecting to/from airports or accessing local destinations. Long-distance rail is less probable without further context."
+  },
+  "normalization": {
+    "sum_before": 1.2,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:21:10.859707+00:00",
+  "cost_exceeded_reservation": false
+}

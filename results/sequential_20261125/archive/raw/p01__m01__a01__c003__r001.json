@@ -1,0 +1,106 @@
+{
+  "task_id": "p01__m01__a01__c003__r001",
+  "block_id": "p01__m01__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "unanchored",
+  "card_id": "reise__anzauto_gr1__bee31b0e88ae",
+  "round": 1,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "e948cfea81d00e194d1748405105bef3331b388882708ccfab897ceb4b87eaed",
+  "started_utc": "2026-11-25T14:20:23.865485+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "transport_error",
+      "detail": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>",
+      "utc": "2026-11-25T14:20:48.289856+00:00",
+      "cost_upper_bound_usd": 0.00011009999999999999
+    },
+    {
+      "number": 2,
+      "status": "response",
+      "utc": "2026-11-25T14:20:52.014243+00:00",
+      "cost_usd": 2.032e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00013042,
+  "reservation_upper_bound_usd": 0.00033029999999999995,
+  "response_sha256": "97f9c8fcdc7ca7c5b98d9b7a2b2a6321150db3617c977838c76aeafa694e2d46",
+  "response": {
+    "id": "gen-1795616450-I36crGxA4y9p9IluXYCw",
+    "object": "chat.completion",
+    "created": 1795616450,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.6, \"local_pt\": 0.4, \"long_distance_rail\": 0.2, \"rationale\": \"A household with 3 cars suggests frequent private transport use. Combining this with an overnight flight implies a trip where car travel was still part of the overall journey, likely for onward travel or return.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 413,
+      "completion_tokens": 76,
+      "total_tokens": 489,
+      "cost": 2.032e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.032e-05,
+        "upstream_inference_prompt_cost": 1.652e-05,
+        "upstream_inference_completions_cost": 3.8e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616450-I36crGxA4y9p9IluXYCw",
+  "raw_prediction": {
+    "car": 0.6,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.2,
+    "rationale": "A household with 3 cars suggests frequent private transport use. Combining this with an overnight flight implies a trip where car travel was still part of the overall journey, likely for onward travel or return."
+  },
+  "prediction": {
+    "car": 0.6,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.2,
+    "rationale": "A household with 3 cars suggests frequent private transport use. Combining this with an overnight flight implies a trip where car travel was still part of the overall journey, likely for onward travel or return."
+  },
+  "normalization": {
+    "sum_before": 1.2,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:20:52.014243+00:00",
+  "cost_exceeded_reservation": false
+}

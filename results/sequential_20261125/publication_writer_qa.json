@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "plan_sha256": "4052c4ac1c244888754ece35e16ad26bdaf57c46dab6c9e5e55052a897235c47",
+  "completed_utc": "2026-11-25T17:42:44.843441+00:00",
+  "reported_endpoints": 12,
+  "observation_rows": 4,
+  "no_model_calls": true,
+  "private_source_access": false,
+  "input_sha256": {
+    "table_numbers.json": "eec8d73fd82fb2b01019949610764db33fbff75e06114b808a59a4cad99703bf",
+    "findings.json": "b7c81001cf0a1e879702fa202f84d298cfc3a8ddced6e7f6be2fd0edd2833598",
+    "averaged_predictions.csv": "bff0fbfad7dc8d67000ba8172d74b9941b3a425c5b9f1c81aa67b049c03d0eb3",
+    "block_details.json": "629b30cb4e893e98d346ac6eb9b702ba952a0854c7f11a969a8bae31acc66786"
+  },
+  "output_sha256": {
+    "revised_metrics_table.tex": "50a06154150b90618fea2c7173b2bb24bebca5b1e097444f27fc25e5c903794e",
+    "revised_results_text.tex": "ebec4189bf59d22ff8b8f1f7a54c7fdb134d476438abd28dd48064944169573e",
+    "revised_observations_table.tex": "ef8046bd4916620c0f3705906928811e946230395859397bef662cccf11e1f9f",
+    "revised_accounting_text.tex": "3f0e3cab89720518725f9191aa9e7892ab5d2b4672560a249268bd8b3901c7cd"
+  }
+}

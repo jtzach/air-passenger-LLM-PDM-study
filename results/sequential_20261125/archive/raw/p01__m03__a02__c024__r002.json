@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a02__c024__r002",
+  "block_id": "p01__m03__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "overall_rate_anchored",
+  "card_id": "no_persona",
+  "round": 2,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "90917637c9b05d3a0624c5615b435bc3ba35f946049bbb9a0d2bd2c1315d4736",
+  "started_utc": "2026-11-25T14:25:18.396667+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:25:29.025677+00:00",
+      "cost_usd": 0.00013215,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00013215,
+  "reservation_upper_bound_usd": 0.0020355,
+  "response_sha256": "3016c0d6bb756e2215bedacdbc8254bbec244d70da4fc998019d61f989e762bd",
+  "response": {
+    "id": "gen-1795616718-bJhZHiOOHz981smL0jjC",
+    "object": "chat.completion",
+    "created": 1795616718,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.376769,\n  \"local_pt\": 0.21623,\n  \"long_distance_rail\": 0.124088,\n  \"rationale\": \"No distinguishing attributes are specified for the cohort, so no deviation from the population-level probabilities is justified. The marginal profile provides no basis to assume different access or return mode patterns.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 435,
+      "completion_tokens": 89,
+      "total_tokens": 524,
+      "cost": 0.00013215,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00013215,
+        "upstream_inference_prompt_cost": 5.8725e-05,
+        "upstream_inference_completions_cost": 7.3425e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795616718-bJhZHiOOHz981smL0jjC",
+  "raw_prediction": {
+    "car": 0.376769,
+    "local_pt": 0.21623,
+    "long_distance_rail": 0.124088,
+    "rationale": "No distinguishing attributes are specified for the cohort, so no deviation from the population-level probabilities is justified. The marginal profile provides no basis to assume different access or return mode patterns."
+  },
+  "prediction": {
+    "car": 0.376769,
+    "local_pt": 0.21623,
+    "long_distance_rail": 0.124088,
+    "rationale": "No distinguishing attributes are specified for the cohort, so no deviation from the population-level probabilities is justified. The marginal profile provides no basis to assume different access or return mode patterns."
+  },
+  "normalization": {
+    "sum_before": 0.717087,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:25:29.025677+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m01__a02__c006__r001",
+  "block_id": "p01__m01__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__RegioStaR7__5febbfe6f6bc",
+  "round": 1,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "69a4c31ca52d9588cdb6a7b90b40769a49c7031932243739159bcd148a640ae5",
+  "started_utc": "2026-11-25T14:20:39.441318+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:20:41.356422+00:00",
+      "cost_usd": 2.393e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.393e-05,
+  "reservation_upper_bound_usd": 0.0003675,
+  "response_sha256": "fff556b5df84e90ec6957b6290f2c3c8f26b3de8da393e0def007fe2d2db7f58",
+  "response": {
+    "id": "gen-1795616439-D4fm46uB8MtNpiveXqWr",
+    "object": "chat.completion",
+    "created": 1795616439,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.4, \"local_pt\": 0.25, \"long_distance_rail\": 0.15, \"rationale\": \"Small-town/village residents may still use cars for onward travel, but are less likely to combine them with air travel compared to urban dwellers. Public transport and rail use will be lower, reflecting less dense populations and limited services.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 492,
+      "completion_tokens": 85,
+      "total_tokens": 577,
+      "cost": 2.393e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.393e-05,
+        "upstream_inference_prompt_cost": 1.968e-05,
+        "upstream_inference_completions_cost": 4.25e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616439-D4fm46uB8MtNpiveXqWr",
+  "raw_prediction": {
+    "car": 0.4,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "Small-town/village residents may still use cars for onward travel, but are less likely to combine them with air travel compared to urban dwellers. Public transport and rail use will be lower, reflecting less dense populations and limited services."
+  },
+  "prediction": {
+    "car": 0.4,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "Small-town/village residents may still use cars for onward travel, but are less likely to combine them with air travel compared to urban dwellers. Public transport and rail use will be lower, reflecting less dense populations and limited services."
+  },
+  "normalization": {
+    "sum_before": 0.8,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:20:41.356422+00:00",
+  "cost_exceeded_reservation": false
+}

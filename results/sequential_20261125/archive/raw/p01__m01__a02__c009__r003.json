@@ -1,0 +1,83 @@
+{
+  "task_id": "p01__m01__a02__c009__r003",
+  "block_id": "p01__m01__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__RegioStaR7__7cdab1586e04",
+  "round": 3,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "942f3c748cc6b61c30ff4757e5ebe7237b354ab607df1c6d11afc1d682c77344",
+  "started_utc": "2026-11-25T14:25:59.571965+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:26:01.543500+00:00",
+      "cost_usd": 2.006e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "invalid_output",
+  "accounted_cost_usd": 2.006e-05,
+  "reservation_upper_bound_usd": 0.00036726,
+  "response_sha256": "298e5571ee9be570f57804c18db5902a2f8e7fd3104f090a735e7b9f25d6405e",
+  "response": {
+    "id": "gen-1795616759-14U0ZqbJuI7lExAYwmpT",
+    "object": "chat.completion",
+    "created": 1795616759,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.4, \"local_pt\": 0.25, \"long_distance_rail\": 0.15, \"rationale\": \"Urban residents often combine air travel with other modes. Car use is likely higher due to travel to/from airports, while local public transport and rail might be used for onward journeys from the destination.”}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 492,
+      "completion_tokens": 78,
+      "total_tokens": 570,
+      "cost": 2.006e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 176,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.006e-05,
+        "upstream_inference_prompt_cost": 1.616e-05,
+        "upstream_inference_completions_cost": 3.9e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616759-14U0ZqbJuI7lExAYwmpT",
+  "validation_error": "Unterminated string starting at: line 1 column 73 (char 72)",
+  "finished_utc": "2026-11-25T14:26:01.543500+00:00",
+  "cost_exceeded_reservation": false
+}

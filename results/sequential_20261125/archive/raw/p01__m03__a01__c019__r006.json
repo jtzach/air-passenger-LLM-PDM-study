@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a01__c019__r006",
+  "block_id": "p01__m03__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__782410ef69d3",
+  "round": 6,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "cdddf1f7c84c655b6f1d9344a2d2d72531fec612fc00aa783d27c4b3e758b3b7",
+  "started_utc": "2026-11-25T14:30:55.422312+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:31:07.061053+00:00",
+      "cost_usd": 0.00012576,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00012576,
+  "reservation_upper_bound_usd": 0.00200652,
+  "response_sha256": "76ae9f05e6bb1454ad91499429656fbe63d4ddc755a86319a06f6fab63fe5af0",
+  "response": {
+    "id": "gen-1795617056-4W1F9kPyhylUReJMMktb",
+    "object": "chat.completion",
+    "created": 1795617056,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.2,\n  \"rationale\": \"Longer stays suggest planned trips where car rental or household vehicle use is common for onward travel. Public transport use is moderate, while long-distance rail likely substitutes for air on shorter routes, reducing its role in flown journeys.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 406,
+      "completion_tokens": 86,
+      "total_tokens": 492,
+      "cost": 0.00012576,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00012576,
+        "upstream_inference_prompt_cost": 5.481e-05,
+        "upstream_inference_completions_cost": 7.095e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795617056-4W1F9kPyhylUReJMMktb",
+  "raw_prediction": {
+    "car": 0.65,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.2,
+    "rationale": "Longer stays suggest planned trips where car rental or household vehicle use is common for onward travel. Public transport use is moderate, while long-distance rail likely substitutes for air on shorter routes, reducing its role in flown journeys."
+  },
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.2,
+    "rationale": "Longer stays suggest planned trips where car rental or household vehicle use is common for onward travel. Public transport use is moderate, while long-distance rail likely substitutes for air on shorter routes, reducing its role in flown journeys."
+  },
+  "normalization": {
+    "sum_before": 1.2,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:31:07.061053+00:00",
+  "cost_exceeded_reservation": false
+}

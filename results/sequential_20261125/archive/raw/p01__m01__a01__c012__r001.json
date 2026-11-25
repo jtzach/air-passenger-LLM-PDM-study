@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m01__a01__c012__r001",
+  "block_id": "p01__m01__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "unanchored",
+  "card_id": "reise__RegioStaR7__d3321efbbd2e",
+  "round": 1,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "3d02e67a6fa887d66b5a2bff7b12c237271b3017cc85d9930e230f4d1fac9e41",
+  "started_utc": "2026-11-25T14:21:32.154321+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:21:33.829015+00:00",
+      "cost_usd": 2.081e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.081e-05,
+  "reservation_upper_bound_usd": 0.00033281999999999995,
+  "response_sha256": "9dc0ea8922e994ca8839c72e9756a5cf61456a9fb0892e7fe0556e34d0f1f606",
+  "response": {
+    "id": "gen-1795616492-4RdnaqsfIFzGZ1Um0mQo",
+    "object": "chat.completion",
+    "created": 1795616492,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.3, \"local_pt\": 0.2, \"long_distance_rail\": 0.1, \"rationale\": \"Given the origin is a rural region commuting to a central city, car use for part of the journey is likely. Local public transport is plausible for city travel, and long-distance rail less so, given the flight as the primary mode.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 414,
+      "completion_tokens": 85,
+      "total_tokens": 499,
+      "cost": 2.081e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.081e-05,
+        "upstream_inference_prompt_cost": 1.656e-05,
+        "upstream_inference_completions_cost": 4.25e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616492-4RdnaqsfIFzGZ1Um0mQo",
+  "raw_prediction": {
+    "car": 0.3,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.1,
+    "rationale": "Given the origin is a rural region commuting to a central city, car use for part of the journey is likely. Local public transport is plausible for city travel, and long-distance rail less so, given the flight as the primary mode."
+  },
+  "prediction": {
+    "car": 0.3,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.1,
+    "rationale": "Given the origin is a rural region commuting to a central city, car use for part of the journey is likely. Local public transport is plausible for city travel, and long-distance rail less so, given the flight as the primary mode."
+  },
+  "normalization": {
+    "sum_before": 0.6,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:21:33.829015+00:00",
+  "cost_exceeded_reservation": false
+}

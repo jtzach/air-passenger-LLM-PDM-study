@@ -1,0 +1,100 @@
+{
+  "task_id": "p01__m02__a02__c014__r007__administrative_replacement1",
+  "block_id": "p01__m02__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzbegl_gr__154f6eb18583",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "supersedes_task_id": "p01__m02__a02__c014__r007",
+  "request_sha256": "e3577710ebbc46b0254390f98d77864e35b66fcac0e0abda7ef2f7075fdfc814",
+  "started_utc": "2026-11-25T17:34:22.808923+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:34:24.238061+00:00",
+      "cost_usd": 0.0002952,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002952,
+  "reservation_upper_bound_usd": 0.0051216,
+  "response_sha256": "357491133bc8c7868623dacee302d319d7d6147050ba00eadbcb7d416a8105c5",
+  "response": {
+    "id": "gen-1795628062-iPKymfZuSr14RbOiWMCm",
+    "object": "chat.completion",
+    "created": 1795628062,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.15,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Solo travellers using aircraft likely rely more on car access for flexibility; local public transport and long-distance rail use may be lower without companions or complex multi-modal trips.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 450,
+      "completion_tokens": 72,
+      "total_tokens": 522,
+      "cost": 0.0002952,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002952,
+        "upstream_inference_prompt_cost": 0.00018,
+        "upstream_inference_completions_cost": 0.0001152
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795628062-iPKymfZuSr14RbOiWMCm",
+  "raw_prediction": {
+    "car": 0.45,
+    "local_pt": 0.15,
+    "long_distance_rail": 0.1,
+    "rationale": "Solo travellers using aircraft likely rely more on car access for flexibility; local public transport and long-distance rail use may be lower without companions or complex multi-modal trips."
+  },
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.15,
+    "long_distance_rail": 0.1,
+    "rationale": "Solo travellers using aircraft likely rely more on car access for flexibility; local public transport and long-distance rail use may be lower without companions or complex multi-modal trips."
+  },
+  "normalization": {
+    "sum_before": 0.7,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:34:24.238061+00:00",
+  "cost_exceeded_reservation": false
+}

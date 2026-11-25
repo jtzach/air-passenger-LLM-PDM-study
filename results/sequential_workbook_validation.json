@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-11-25T17:57:54.475449+00:00",
+  "original_sheets": 31,
+  "total_sheets": 35,
+  "checks": {
+    "preserved_tables": 28,
+    "original_cells_checked": 380576,
+    "original_nonempty_cells": 356036,
+    "original_formula_caches": 1,
+    "new_cells_checked": 9966,
+    "new_tables": 4,
+    "new_formulas_checked": 1212
+  },
+  "issue_count": 0,
+  "issues": [],
+  "source_sha256": "58eff4edd14599abd439a8eb8bc241421275a20027b9542b3d222fb28be723af",
+  "output_sha256": "513cbc7d411888d737736cedd99e9a54c580adbf03274845544df1fa468290db"
+}

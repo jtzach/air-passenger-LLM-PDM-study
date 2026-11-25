@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a02__c009__r002",
+  "block_id": "p01__m03__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__RegioStaR7__7cdab1586e04",
+  "round": 2,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "cd1ef1754542e8d48f9728ce0034d672e882f40f6bfc4b80865f6e09b37a482d",
+  "started_utc": "2026-11-25T14:23:56.350355+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:24:06.920232+00:00",
+      "cost_usd": 0.00013479,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00013479,
+  "reservation_upper_bound_usd": 0.0021312600000000003,
+  "response_sha256": "66ae75238ccb81b1cef884d35ef5d4b8c6d0167395dba5476f4e65e0adb9271c",
+  "response": {
+    "id": "gen-1795616636-YuVD4n1MCn0Z0hW8rf4R",
+    "object": "chat.completion",
+    "created": 1795616636,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Urban residents in large cities may have better public transport access, reducing reliance on local PT and long-distance rail. Higher car use could reflect airport access via private or shared vehicles, despite lower car ownership in cities.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 479,
+      "completion_tokens": 85,
+      "total_tokens": 564,
+      "cost": 0.00013479,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00013479,
+        "upstream_inference_prompt_cost": 6.4665e-05,
+        "upstream_inference_completions_cost": 7.0125e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795616636-YuVD4n1MCn0Z0hW8rf4R",
+  "raw_prediction": {
+    "car": 0.45,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Urban residents in large cities may have better public transport access, reducing reliance on local PT and long-distance rail. Higher car use could reflect airport access via private or shared vehicles, despite lower car ownership in cities."
+  },
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Urban residents in large cities may have better public transport access, reducing reliance on local PT and long-distance rail. Higher car use could reflect airport access via private or shared vehicles, despite lower car ownership in cities."
+  },
+  "normalization": {
+    "sum_before": 0.73,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:24:06.920232+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,90 @@
+{
+  "task_id": "p01__m01__a01__c007__r001",
+  "block_id": "p01__m01__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "unanchored",
+  "card_id": "reise__RegioStaR7__72d39163efb4",
+  "round": 1,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "359ba86174a82de734097350f37bd91a62dee346d146dd193afe19aa39b26e39",
+  "started_utc": "2026-11-25T14:22:06.240263+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "transport_error",
+      "detail": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>",
+      "utc": "2026-11-25T14:22:29.998214+00:00",
+      "cost_upper_bound_usd": 0.00011154
+    },
+    {
+      "number": 2,
+      "status": "response",
+      "utc": "2026-11-25T14:22:33.844167+00:00",
+      "cost_usd": 1.837e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "invalid_output",
+  "accounted_cost_usd": 0.00012991,
+  "reservation_upper_bound_usd": 0.00033462,
+  "response_sha256": "7d857afa705ded062b450e58af3dffd5e0708032d827da73c9ee27e514e0c118",
+  "response": {
+    "id": "gen-1795616552-C9o2V2arygN3Ure72y0f",
+    "object": "chat.completion",
+    "created": 1795616552,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.2,\n  \"local_pt\": 0.3,\n  \"long_distance_rail\": 0.1,\n  \"rationale\": \"Given the rural region setting, car use likely supplemented the flight, perhaps for onward travel. Local public transport and long-distance rail could have been used for connections or shorter distances near the destination. “Overnight journey” suggests some flexibility in travel options.” ",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 418,
+      "completion_tokens": 97,
+      "total_tokens": 515,
+      "cost": 1.837e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.837e-05,
+        "upstream_inference_prompt_cost": 1.352e-05,
+        "upstream_inference_completions_cost": 4.85e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616552-C9o2V2arygN3Ure72y0f",
+  "validation_error": "Unterminated string starting at: line 5 column 16 (char 79)",
+  "finished_utc": "2026-11-25T14:22:33.844167+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c024__r004",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "no_persona",
+  "round": 4,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "8a2082a1498edb95382de4245e77cd05d1f44401f64c2da480ef70547d2967e5",
+  "started_utc": "2026-11-25T14:27:03.521323+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:27:05.048673+00:00",
+      "cost_usd": 0.001508,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001508,
+  "reservation_upper_bound_usd": 0.024342,
+  "response_sha256": "1d8019422463e192adf17a2ecef82fbab8515337690f902338460feafbb814a7",
+  "response": {
+    "id": "gen-1795616823-gx5asiJ8Td5yOfUealaf",
+    "object": "chat.completion",
+    "created": 1795616823,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.38,\n  \"local_pt\": 0.22,\n  \"long_distance_rail\": 0.12,\n  \"rationale\": \"With no cohort specifics, travel behaviour likely matches the national average for air travellers: diverse access modes, with car most common, followed by local public transport, then long-distance rail. No reason to expect deviation from reference rates.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 414,
+      "completion_tokens": 85,
+      "total_tokens": 499,
+      "cost": 0.001508,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001508,
+        "upstream_inference_prompt_cost": 0.000828,
+        "upstream_inference_completions_cost": 0.00068
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616823-gx5asiJ8Td5yOfUealaf",
+  "raw_prediction": {
+    "car": 0.38,
+    "local_pt": 0.22,
+    "long_distance_rail": 0.12,
+    "rationale": "With no cohort specifics, travel behaviour likely matches the national average for air travellers: diverse access modes, with car most common, followed by local public transport, then long-distance rail. No reason to expect deviation from reference rates."
+  },
+  "prediction": {
+    "car": 0.38,
+    "local_pt": 0.22,
+    "long_distance_rail": 0.12,
+    "rationale": "With no cohort specifics, travel behaviour likely matches the national average for air travellers: diverse access modes, with car most common, followed by local public transport, then long-distance rail. No reason to expect deviation from reference rates."
+  },
+  "normalization": {
+    "sum_before": 0.72,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:27:05.048673+00:00",
+  "cost_exceeded_reservation": false
+}

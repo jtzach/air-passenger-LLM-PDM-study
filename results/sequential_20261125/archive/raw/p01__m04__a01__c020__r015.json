@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c020__r015",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__9ee7f61bb0c0",
+  "round": 15,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "57aa30bf35f7ab737a8cdff99dcc2038abb1d30856714f7f511c732d85eb1348",
+  "started_utc": "2026-11-25T17:41:57.845162+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:41:59.766668+00:00",
+      "cost_usd": 0.00145,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00145,
+  "reservation_upper_bound_usd": 0.02391,
+  "response_sha256": "4a23605f2f6150fb7e691122e18a6a5ee40da70c79a44d2144669f5d0d590651",
+  "response": {
+    "id": "gen-1795628517-2ApbkJV8Hh479TCwUksL",
+    "object": "chat.completion",
+    "created": 1795628517,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.45,\n  \"long_distance_rail\": 0.22,\n  \"rationale\": \"Many use cars for flexible airport access, public transport is common for urban connections, and long-distance rail less so due to timing, baggage, and connectivity, especially for 3-night air trips spanning diverse German regions.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 393,
+      "completion_tokens": 83,
+      "total_tokens": 476,
+      "cost": 0.00145,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00145,
+        "upstream_inference_prompt_cost": 0.000786,
+        "upstream_inference_completions_cost": 0.000664
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628517-2ApbkJV8Hh479TCwUksL",
+  "raw_prediction": {
+    "car": 0.65,
+    "local_pt": 0.45,
+    "long_distance_rail": 0.22,
+    "rationale": "Many use cars for flexible airport access, public transport is common for urban connections, and long-distance rail less so due to timing, baggage, and connectivity, especially for 3-night air trips spanning diverse German regions."
+  },
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.45,
+    "long_distance_rail": 0.22,
+    "rationale": "Many use cars for flexible airport access, public transport is common for urban connections, and long-distance rail less so due to timing, baggage, and connectivity, especially for 3-night air trips spanning diverse German regions."
+  },
+  "normalization": {
+    "sum_before": 1.32,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:41:59.766668+00:00",
+  "cost_exceeded_reservation": false
+}

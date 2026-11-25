@@ -1,0 +1,106 @@
+{
+  "task_id": "p01__m02__a01__c008__r001",
+  "block_id": "p01__m02__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "unanchored",
+  "card_id": "reise__RegioStaR7__7b0e1c4f102a",
+  "round": 1,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "e7864c412c6f2ee294ab35c0edfe765e8e5a282b2599274f5cefe45551654eed",
+  "started_utc": "2026-11-25T14:22:41.726035+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "transport_error",
+      "detail": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>",
+      "utc": "2026-11-25T14:23:05.468398+00:00",
+      "cost_upper_bound_usd": 0.0016003999999999999
+    },
+    {
+      "number": 2,
+      "status": "response",
+      "utc": "2026-11-25T14:23:09.954644+00:00",
+      "cost_usd": 0.00028,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0018804,
+  "reservation_upper_bound_usd": 0.004801199999999999,
+  "response_sha256": "9b94b493378a1376cac5e6e56536615720d456a836745852ffd6ca02d0a497b2",
+  "response": {
+    "id": "gen-1795616587-yimpkppY7Ba41LPrkIIE",
+    "object": "chat.completion",
+    "created": 1795616587,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.75,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"Urban metropolis residents often use local public transport to access airports; many combine car use for airport access or parking. Long-distance rail is less frequent but still a notable alternative for some journeys.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 392,
+      "completion_tokens": 77,
+      "total_tokens": 469,
+      "cost": 0.00028,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00028,
+        "upstream_inference_prompt_cost": 0.0001568,
+        "upstream_inference_completions_cost": 0.0001232
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795616587-yimpkppY7Ba41LPrkIIE",
+  "raw_prediction": {
+    "car": 0.65,
+    "local_pt": 0.75,
+    "long_distance_rail": 0.25,
+    "rationale": "Urban metropolis residents often use local public transport to access airports; many combine car use for airport access or parking. Long-distance rail is less frequent but still a notable alternative for some journeys."
+  },
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.75,
+    "long_distance_rail": 0.25,
+    "rationale": "Urban metropolis residents often use local public transport to access airports; many combine car use for airport access or parking. Long-distance rail is less frequent but still a notable alternative for some journeys."
+  },
+  "normalization": {
+    "sum_before": 1.65,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:23:09.955642+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,100 @@
+{
+  "task_id": "p01__m04__a02__c021__r007__administrative_replacement1",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__ef1ad3950de1",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "supersedes_task_id": "p01__m04__a02__c021__r007",
+  "request_sha256": "b340a93f8317928aa8407e4314afd14619a1127334b3e371669e4a1b90d61db9",
+  "started_utc": "2026-11-25T17:33:52.865875+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:33:54.056837+00:00",
+      "cost_usd": 0.001536,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001536,
+  "reservation_upper_bound_usd": 0.025547999999999998,
+  "response_sha256": "24670006dc83fe4433afdd7fe125f84dd613cfedf21083cc381623ad6e75161b",
+  "response": {
+    "id": "gen-1795628032-rw7638KalpiNt6SaL2Vz",
+    "object": "chat.completion",
+    "created": 1795628032,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.41,\n  \"local_pt\": 0.19,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Single-night trips likely favor speed and flexibility, increasing car use, while reducing long-distance rail and local public transport compared to all-aircraft journeys, as time constraints discourage slower or less direct modes.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 452,
+      "completion_tokens": 79,
+      "total_tokens": 531,
+      "cost": 0.001536,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001536,
+        "upstream_inference_prompt_cost": 0.000904,
+        "upstream_inference_completions_cost": 0.000632
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628032-rw7638KalpiNt6SaL2Vz",
+  "raw_prediction": {
+    "car": 0.41,
+    "local_pt": 0.19,
+    "long_distance_rail": 0.1,
+    "rationale": "Single-night trips likely favor speed and flexibility, increasing car use, while reducing long-distance rail and local public transport compared to all-aircraft journeys, as time constraints discourage slower or less direct modes."
+  },
+  "prediction": {
+    "car": 0.41,
+    "local_pt": 0.19,
+    "long_distance_rail": 0.1,
+    "rationale": "Single-night trips likely favor speed and flexibility, increasing car use, while reducing long-distance rail and local public transport compared to all-aircraft journeys, as time constraints discourage slower or less direct modes."
+  },
+  "normalization": {
+    "sum_before": 0.7,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:33:54.056837+00:00",
+  "cost_exceeded_reservation": false
+}

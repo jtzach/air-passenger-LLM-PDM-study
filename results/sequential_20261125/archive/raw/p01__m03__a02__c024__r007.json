@@ -1,0 +1,22 @@
+{
+  "task_id": "p01__m03__a02__c024__r007",
+  "block_id": "p01__m03__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "overall_rate_anchored",
+  "card_id": "no_persona",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "e373be3f4991e45146980617f933df30d201de838717f376d952d2b308016d94",
+  "started_utc": "2026-11-25T14:32:59.839973+00:00",
+  "attempts": [],
+  "status": "in_progress",
+  "accounted_cost_usd": 0.0020355,
+  "reservation_upper_bound_usd": 0.0020355
+}

@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c004__r016",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzauto_gr1__d7ca944fcddc",
+  "round": 16,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "7f77ff79d5213017bf06a15b6a01a8038d85608c262eb8ee366e7090d5b079e7",
+  "started_utc": "2026-11-25T17:42:21.592892+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:42:22.954953+00:00",
+      "cost_usd": 0.001448,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001448,
+  "reservation_upper_bound_usd": 0.023856000000000002,
+  "response_sha256": "1e8c1017742e5e96de66fbdd1b22dc20e83f419c4b9ab3400afe4056ec8793ca",
+  "response": {
+    "id": "gen-1795628541-SA2PBWcsg0yJxIL4SEAz",
+    "object": "chat.completion",
+    "created": 1795628541,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.40,\n  \"long_distance_rail\": 0.20,\n  \"rationale\": \"With one household car, many use it for airport access, but alternatives are common. Local PT serves first/last mile or urban trips; long-distance rail less so, due to convenience and coordination challenges with flights.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 392,
+      "completion_tokens": 83,
+      "total_tokens": 475,
+      "cost": 0.001448,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001448,
+        "upstream_inference_prompt_cost": 0.000784,
+        "upstream_inference_completions_cost": 0.000664
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628541-SA2PBWcsg0yJxIL4SEAz",
+  "raw_prediction": {
+    "car": 0.65,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.2,
+    "rationale": "With one household car, many use it for airport access, but alternatives are common. Local PT serves first/last mile or urban trips; long-distance rail less so, due to convenience and coordination challenges with flights."
+  },
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.2,
+    "rationale": "With one household car, many use it for airport access, but alternatives are common. Local PT serves first/last mile or urban trips; long-distance rail less so, due to convenience and coordination challenges with flights."
+  },
+  "normalization": {
+    "sum_before": 1.25,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:42:22.954953+00:00",
+  "cost_exceeded_reservation": false
+}

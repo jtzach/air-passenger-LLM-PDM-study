@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c001__r016",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzauto_gr1__296e9849dc3d",
+  "round": 16,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "7ccccb243ff0f7bd3cc4a09a3a0aea252f25d33e621ba30ec882c4e317418186",
+  "started_utc": "2026-11-25T17:42:42.675590+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:42:44.013792+00:00",
+      "cost_usd": 0.00143,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00143,
+  "reservation_upper_bound_usd": 0.023861999999999998,
+  "response_sha256": "59adb73c8c486a2c71ada0fb91391e115623f9454b1b0343632c6f28a839f90e",
+  "response": {
+    "id": "gen-1795628562-mcSXVauvvGXYokvStKFW",
+    "object": "chat.completion",
+    "created": 1795628562,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.15,\n  \"local_pt\": 0.65,\n  \"long_distance_rail\": 0.35,\n  \"rationale\": \"Without a household car, public transport is likely for airport access. Car is still possible via taxis, friends, or car share. Long-distance rail is plausible given Germany’s network and city-airport connections.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 391,
+      "completion_tokens": 81,
+      "total_tokens": 472,
+      "cost": 0.00143,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00143,
+        "upstream_inference_prompt_cost": 0.000782,
+        "upstream_inference_completions_cost": 0.000648
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628562-mcSXVauvvGXYokvStKFW",
+  "raw_prediction": {
+    "car": 0.15,
+    "local_pt": 0.65,
+    "long_distance_rail": 0.35,
+    "rationale": "Without a household car, public transport is likely for airport access. Car is still possible via taxis, friends, or car share. Long-distance rail is plausible given Germany’s network and city-airport connections."
+  },
+  "prediction": {
+    "car": 0.15,
+    "local_pt": 0.65,
+    "long_distance_rail": 0.35,
+    "rationale": "Without a household car, public transport is likely for airport access. Car is still possible via taxis, friends, or car share. Long-distance rail is plausible given Germany’s network and city-airport connections."
+  },
+  "normalization": {
+    "sum_before": 1.15,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:42:44.013792+00:00",
+  "cost_exceeded_reservation": false
+}

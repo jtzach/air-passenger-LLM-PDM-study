@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c020__r009",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__9ee7f61bb0c0",
+  "round": 9,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "17eb46bae012c8a13dce267d99933af15aa8dbcdbaa012136a10c758f82d3564",
+  "started_utc": "2026-11-25T17:37:08.021504+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:37:09.274248+00:00",
+      "cost_usd": 0.001466,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001466,
+  "reservation_upper_bound_usd": 0.02391,
+  "response_sha256": "f10dc42c4a5677c3c205b48751cd9650621c83df48ed7bec6425b7c29bc8e0cf",
+  "response": {
+    "id": "gen-1795628227-fzTqLuGoMZCcq0Cao1Fu",
+    "object": "chat.completion",
+    "created": 1795628227,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.62,\n  \"local_pt\": 0.48,\n  \"long_distance_rail\": 0.28,\n  \"rationale\": \"Three-night trips suggest mid-length stays, likely regional or European. Many use cars for airport access, but strong German rail and local PT networks enable alternatives. Rail use is lower due to convenience and luggage concerns for overnight flyers.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 393,
+      "completion_tokens": 85,
+      "total_tokens": 478,
+      "cost": 0.001466,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001466,
+        "upstream_inference_prompt_cost": 0.000786,
+        "upstream_inference_completions_cost": 0.00068
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628227-fzTqLuGoMZCcq0Cao1Fu",
+  "raw_prediction": {
+    "car": 0.62,
+    "local_pt": 0.48,
+    "long_distance_rail": 0.28,
+    "rationale": "Three-night trips suggest mid-length stays, likely regional or European. Many use cars for airport access, but strong German rail and local PT networks enable alternatives. Rail use is lower due to convenience and luggage concerns for overnight flyers."
+  },
+  "prediction": {
+    "car": 0.62,
+    "local_pt": 0.48,
+    "long_distance_rail": 0.28,
+    "rationale": "Three-night trips suggest mid-length stays, likely regional or European. Many use cars for airport access, but strong German rail and local PT networks enable alternatives. Rail use is lower due to convenience and luggage concerns for overnight flyers."
+  },
+  "normalization": {
+    "sum_before": 1.38,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:37:09.274248+00:00",
+  "cost_exceeded_reservation": false
+}

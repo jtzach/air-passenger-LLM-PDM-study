@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a01__c015__r001",
+  "block_id": "p01__m03__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "unanchored",
+  "card_id": "reise__anzbegl_gr__18864b086b3b",
+  "round": 1,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "8dbbee28ac25bd05922b616d5e0bd1e37aeecd1d2137530ac611737596dc3701",
+  "started_utc": "2026-11-25T14:21:53.882781+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:22:06.351796+00:00",
+      "cost_usd": 0.00012192,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00012192,
+  "reservation_upper_bound_usd": 0.00200694,
+  "response_sha256": "b4887fc98a37a426d58aa8bd144cd44d98770ac2817fcbf5a691cdcbaee4375b",
+  "response": {
+    "id": "gen-1795616514-2rPtzz6SOTFzdwXE9aw6",
+    "object": "chat.completion",
+    "created": 1795616514,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.75,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.2,\n  \"rationale\": \"With three household companions, car use is likely for group access to the airport. Public transport use is lower due to coordination challenges. Long-distance rail competes with air, making combined use less probable.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 402,
+      "completion_tokens": 82,
+      "total_tokens": 484,
+      "cost": 0.00012192,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00012192,
+        "upstream_inference_prompt_cost": 5.427e-05,
+        "upstream_inference_completions_cost": 6.765e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795616514-2rPtzz6SOTFzdwXE9aw6",
+  "raw_prediction": {
+    "car": 0.75,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.2,
+    "rationale": "With three household companions, car use is likely for group access to the airport. Public transport use is lower due to coordination challenges. Long-distance rail competes with air, making combined use less probable."
+  },
+  "prediction": {
+    "car": 0.75,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.2,
+    "rationale": "With three household companions, car use is likely for group access to the airport. Public transport use is lower due to coordination challenges. Long-distance rail competes with air, making combined use less probable."
+  },
+  "normalization": {
+    "sum_before": 1.3,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:22:06.351796+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m01__a02__c017__r001",
+  "block_id": "p01__m01__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__456ee228eb2a",
+  "round": 1,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "d22e995a1e3d89b620cf2041c355a16029e307f5726d926b55e514694dfc396c",
+  "started_utc": "2026-11-25T14:20:55.991964+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:21:01.133244+00:00",
+      "cost_usd": 2.055e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.055e-05,
+  "reservation_upper_bound_usd": 0.00036438,
+  "response_sha256": "0637dcb8e86f42c51bae50e1ec6744656bc263ed7d6eef31ee9c00548a39f0f7",
+  "response": {
+    "id": "gen-1795616456-E7iBuS4Q3dChTDqPAs0h",
+    "object": "chat.completion",
+    "created": 1795616456,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.3, \"local_pt\": 0.18, \"long_distance_rail\": 0.11, \"rationale\": \"The cohort's 4-5 night trips suggests a more leisure-oriented journey. Ground transport use (car, bus/rail) is likely to supplement the flight, though at lower rates than the overall population.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 490,
+      "completion_tokens": 83,
+      "total_tokens": 573,
+      "cost": 2.055e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.055e-05,
+        "upstream_inference_prompt_cost": 1.64e-05,
+        "upstream_inference_completions_cost": 4.15e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616456-E7iBuS4Q3dChTDqPAs0h",
+  "raw_prediction": {
+    "car": 0.3,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.11,
+    "rationale": "The cohort's 4-5 night trips suggests a more leisure-oriented journey. Ground transport use (car, bus/rail) is likely to supplement the flight, though at lower rates than the overall population."
+  },
+  "prediction": {
+    "car": 0.3,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.11,
+    "rationale": "The cohort's 4-5 night trips suggests a more leisure-oriented journey. Ground transport use (car, bus/rail) is likely to supplement the flight, though at lower rates than the overall population."
+  },
+  "normalization": {
+    "sum_before": 0.59,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:21:01.133244+00:00",
+  "cost_exceeded_reservation": false
+}

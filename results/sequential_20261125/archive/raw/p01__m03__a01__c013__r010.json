@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a01__c013__r010",
+  "block_id": "p01__m03__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "unanchored",
+  "card_id": "reise__anzbegl_gr__07f355b725cf",
+  "round": 10,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "126fc545ab16262d015157f93580f9733772d4daeab40b6e835bac765af00036",
+  "started_utc": "2026-11-25T17:38:40.666636+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:38:50.822497+00:00",
+      "cost_usd": 0.000119445,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000119445,
+  "reservation_upper_bound_usd": 0.00200694,
+  "response_sha256": "f21c92585efc7543cf0e612f460b620d551ea58403d3afe68c24f309497a16ae",
+  "response": {
+    "id": "gen-1795628320-5n9tlRHOux3LzonL7KXM",
+    "object": "chat.completion",
+    "created": 1795628320,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.75,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.2,\n  \"rationale\": \"Household group travel with companions suggests car use for flexibility. Public transport use is less likely due to coordination challenges. Long-distance rail competes less when flying, especially with a group.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 402,
+      "completion_tokens": 79,
+      "total_tokens": 481,
+      "cost": 0.000119445,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000119445,
+        "upstream_inference_prompt_cost": 5.427e-05,
+        "upstream_inference_completions_cost": 6.5175e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795628320-5n9tlRHOux3LzonL7KXM",
+  "raw_prediction": {
+    "car": 0.75,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.2,
+    "rationale": "Household group travel with companions suggests car use for flexibility. Public transport use is less likely due to coordination challenges. Long-distance rail competes less when flying, especially with a group."
+  },
+  "prediction": {
+    "car": 0.75,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.2,
+    "rationale": "Household group travel with companions suggests car use for flexibility. Public transport use is less likely due to coordination challenges. Long-distance rail competes less when flying, especially with a group."
+  },
+  "normalization": {
+    "sum_before": 1.3,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:38:50.822497+00:00",
+  "cost_exceeded_reservation": false
+}

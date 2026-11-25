@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m02__a02__c002__r011",
+  "block_id": "p01__m02__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzauto_gr1__79ed954bbe2c",
+  "round": 11,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "3432c6aa8516ffdb285fd1852772fa5854ae37aaa6d667f4923ec08ddc66399c",
+  "started_utc": "2026-11-25T17:40:31.744287+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:40:33.164164+00:00",
+      "cost_usd": 0.0003108,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0003108,
+  "reservation_upper_bound_usd": 0.0051167999999999995,
+  "response_sha256": "cc2cecf233cea22ad5bacb683b56e691acf7289b40806b969d08f3c1a7d64143",
+  "response": {
+    "id": "gen-1795628431-rrer9oeFeNTjqBNwJ2Df",
+    "object": "chat.completion",
+    "created": 1795628431,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.70,\n  \"local_pt\": 0.30,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Households with 4+ cars likely use cars more for airport access; local public transport use slightly above average for multimodal trips; long-distance rail less likely due to preference for flying and car use.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 453,
+      "completion_tokens": 81,
+      "total_tokens": 534,
+      "cost": 0.0003108,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003108,
+        "upstream_inference_prompt_cost": 0.0001812,
+        "upstream_inference_completions_cost": 0.0001296
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795628431-rrer9oeFeNTjqBNwJ2Df",
+  "raw_prediction": {
+    "car": 0.7,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "Households with 4+ cars likely use cars more for airport access; local public transport use slightly above average for multimodal trips; long-distance rail less likely due to preference for flying and car use."
+  },
+  "prediction": {
+    "car": 0.7,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "Households with 4+ cars likely use cars more for airport access; local public transport use slightly above average for multimodal trips; long-distance rail less likely due to preference for flying and car use."
+  },
+  "normalization": {
+    "sum_before": 1.0999999999999999,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:40:33.164164+00:00",
+  "cost_exceeded_reservation": false
+}

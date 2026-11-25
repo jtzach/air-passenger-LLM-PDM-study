@@ -1,0 +1,214 @@
+\subsection{MiD: exact no-hint request}
+
+This is the full user message for the no-household-car group. No additional system message was sent. The same wording is used for all four models; only the group paragraph changes between cards. Model, seed, temperature and output limits are separate API parameters in the archived request files.
+
+\begin{promptbox}[title={MiD group description, without overall-rate hint}]
+You are participating in a travel-behaviour research benchmark. Apply persona-based reasoning to estimate reported transport use. Do not browse or look up a survey table.
+
+Population: residents of Germany aged 14 or older, self-reporting an overnight journey in the preceding three months during the MiD 2023 survey (fieldwork 2023-2024). Aircraft is the recorded main mode of the journey. Consider a randomly drawn journey within the cohort profile below. This is a group-level marginal profile; do not invent a joint age, income, household, origin, destination, or airport when it is unspecified.
+
+Cohort profile: Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is number of household cars: No car. All other traveller and journey characteristics are unspecified.
+
+Survey task: Which transport modes were used for the outward AND return journey? All modes used in combinations could be selected. For each of the following, estimate the probability that it was also reported alongside aircraft: (1) car; (2) local bus or rail, including urban/suburban/regional public transport; (3) long-distance train. These are three separate, nonexclusive yes/no mentions; they need not add to one. Ground modes can be reported on either direction and either side of the flight. The question does not isolate access to a named airport.\par 
+Car use does not require owning a car or being its driver. If household companions are specified, these count accompanying household members only; zero does not establish that the traveller was alone.
+
+Return only one JSON object with exactly four keys: car, local\_pt, long\_distance\_rail, rationale. The first three must be numbers from 0 to 1 (not percentages). rationale must be at most 40 words and describe a plausible hypothesis, not claim to know respondents' actual motives.
+\end{promptbox}
+
+
+For the hinted condition, insert the following paragraph immediately before the final paragraph beginning ``Return only one JSON object''. All other words remain the same.
+
+\begin{promptbox}[title={Exact paragraph added for the MiD hint condition}]
+Population-level reference (all eligible overnight journeys with aircraft as main mode, NOT this specific cohort): car=0.376769, local bus/rail=0.216230, long-distance train=0.124088. Use these overall rates as reference and estimate whether the supplied cohort differs.
+\end{promptbox}
+
+
+For the no-group control, replace the complete cohort-profile paragraph with the following. The control retains the overall-rate paragraph in the hinted condition.
+
+\begin{promptbox}[title={Exact MiD no-group replacement}]
+Cohort profile: No further traveller or journey attribute is specified.
+\end{promptbox}
+
+
+\subsection{The 23 exact MiD group paragraphs}
+
+Each paragraph below replaces only the cohort-profile paragraph in the full prompt above. They are separate requests; the attributes are never combined into a joint person.
+
+\begin{promptbox}[title={Number of household cars: No car}]
+Cohort profile: Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is number of household cars: No car. All other traveller and journey characteristics are unspecified.
+\end{promptbox}
+
+
+\begin{promptbox}[title={Number of household cars: 4 or more cars}]
+Cohort profile: Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is number of household cars: 4 or more cars. All other traveller and journey characteristics are unspecified.
+\end{promptbox}
+
+
+\begin{promptbox}[title={Number of household cars: 3 cars}]
+Cohort profile: Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is number of household cars: 3 cars. All other traveller and journey characteristics are unspecified.
+\end{promptbox}
+
+
+\begin{promptbox}[title={Number of household cars: 1 car}]
+Cohort profile: Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is number of household cars: 1 car. All other traveller and journey characteristics are unspecified.
+\end{promptbox}
+
+
+\begin{promptbox}[title={Number of household cars: 2 cars}]
+Cohort profile: Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is number of household cars: 2 cars. All other traveller and journey characteristics are unspecified.
+\end{promptbox}
+
+
+\begin{promptbox}[title={Residential spatial type: Urban region - small-town and village area}]
+Cohort profile: Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is residential spatial type: Urban region - small-town and village area. All other traveller and journey characteristics are unspecified.
+\end{promptbox}
+
+
+\begin{promptbox}[title={Residential spatial type: Rural region - small-town and village area}]
+Cohort profile: Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is residential spatial type: Rural region - small-town and village area. All other traveller and journey characteristics are unspecified.
+\end{promptbox}
+
+
+\begin{promptbox}[title={Residential spatial type: Urban region - metropolis}]
+Cohort profile: Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is residential spatial type: Urban region - metropolis. All other traveller and journey characteristics are unspecified.
+\end{promptbox}
+
+
+\begin{promptbox}[title={Residential spatial type: Urban region - regiopolis and large city}]
+Cohort profile: Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is residential spatial type: Urban region - regiopolis and large city. All other traveller and journey characteristics are unspecified.
+\end{promptbox}
+
+
+\begin{promptbox}[title={Residential spatial type: Urban region - medium-sized town, urban area}]
+Cohort profile: Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is residential spatial type: Urban region - medium-sized town, urban area. All other traveller and journey characteristics are unspecified.
+\end{promptbox}
+
+
+\begin{promptbox}[title={Residential spatial type: Rural region - medium-sized town, urban area}]
+Cohort profile: Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is residential spatial type: Rural region - medium-sized town, urban area. All other traveller and journey characteristics are unspecified.
+\end{promptbox}
+
+
+\begin{promptbox}[title={Residential spatial type: Rural region - central city}]
+Cohort profile: Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is residential spatial type: Rural region - central city. All other traveller and journey characteristics are unspecified.
+\end{promptbox}
+
+
+\begin{promptbox}[title={Number of household companions: 2 companions}]
+Cohort profile: Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is number of household companions: 2 companions. All other traveller and journey characteristics are unspecified.
+\end{promptbox}
+
+
+\begin{promptbox}[title={Number of household companions: No companion}]
+Cohort profile: Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is number of household companions: No companion. All other traveller and journey characteristics are unspecified.
+\end{promptbox}
+
+
+\begin{promptbox}[title={Number of household companions: 3 companions}]
+Cohort profile: Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is number of household companions: 3 companions. All other traveller and journey characteristics are unspecified.
+\end{promptbox}
+
+
+\begin{promptbox}[title={Number of household companions: 1 companion}]
+Cohort profile: Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is number of household companions: 1 companion. All other traveller and journey characteristics are unspecified.
+\end{promptbox}
+
+
+\begin{promptbox}[title={Number of nights away: 4-5 overnight stays}]
+Cohort profile: Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is number of nights away: 4-5 overnight stays. All other traveller and journey characteristics are unspecified.
+\end{promptbox}
+
+
+\begin{promptbox}[title={Number of nights away: 2 overnight stays}]
+Cohort profile: Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is number of nights away: 2 overnight stays. All other traveller and journey characteristics are unspecified.
+\end{promptbox}
+
+
+\begin{promptbox}[title={Number of nights away: 8-14 overnight stays}]
+Cohort profile: Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is number of nights away: 8-14 overnight stays. All other traveller and journey characteristics are unspecified.
+\end{promptbox}
+
+
+\begin{promptbox}[title={Number of nights away: 3 overnight stays}]
+Cohort profile: Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is number of nights away: 3 overnight stays. All other traveller and journey characteristics are unspecified.
+\end{promptbox}
+
+
+\begin{promptbox}[title={Number of nights away: 1 overnight stay}]
+Cohort profile: Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is number of nights away: 1 overnight stay. All other traveller and journey characteristics are unspecified.
+\end{promptbox}
+
+
+\begin{promptbox}[title={Number of nights away: 6-7 overnight stays}]
+Cohort profile: Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is number of nights away: 6-7 overnight stays. All other traveller and journey characteristics are unspecified.
+\end{promptbox}
+
+
+\begin{promptbox}[title={Number of nights away: 15 or more overnight stays}]
+Cohort profile: Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is number of nights away: 15 or more overnight stays. All other traveller and journey characteristics are unspecified.
+\end{promptbox}
+
+
+\subsection{Munich: exact generic request, without an airport-data hint}
+
+\begin{promptbox}[title={Munich business / domestic group: full request}]
+You are participating in a travel-behaviour research benchmark. Estimate group-level airport-access choices. Do not browse or look up a survey table.
+
+Population: passengers who reach Munich Airport (MUC), Germany, by ground transport to start a departing flight in calendar year 2025. Exclude passengers who only change aircraft at Munich without a ground-access trip. Do not predict how arriving passengers leave the airport, and do not predict ground travel at the other end of the flight.
+
+Group description: The passenger travels for business. The flight departing Munich is a domestic flight within Germany. Age, income, household cars, residence, starting location, trip duration, luggage and travel party are unspecified. Do not invent a specific value for any of these characteristics.
+
+Task: out of similar passengers in this group, estimate the share in each of the following mutually exclusive access categories. The flight region describes the flight departing Munich, not necessarily the final destination of a connecting itinerary. Predict the reported airport-access category, not every vehicle used along the way. A rail journey followed by S-Bahn to the airport belongs to S-Bahn. For the specified parking options, a terminal shuttle included in parking is part of that parking category; do not count it again as bus.\par 
+- car\_dropoff: A private car brings the passenger and leaves; the driver may stop or park briefly.\par 
+- car\_airport\_parking: A private car is left in airport parking for the passenger's trip.\par 
+- car\_offairport\_parking: A private car is left at an off-airport parking provider with a transfer to the terminal.\par 
+- car\_other\_parking: A private car is left at another parking location not covered by the two parking options above.\par 
+- taxi\_ridehail: Taxi or app-booked ride-hailing.\par 
+- rental\_carsharing: A rental car or car-sharing vehicle.\par 
+- bus\_transfer: Public bus, coach, airport transfer or hotel shuttle, excluding transfers already counted as part of a parking option.\par 
+- s\_bahn: Munich suburban rail (S-Bahn S1 or S8).\par 
+- uefex: The direct regional airport train serving Landshut and Regensburg (UEFEX).\par 
+- other: Any remaining access option.
+
+Give one complete distribution: the ten probabilities must add to 1. No observed airport percentages or passenger counts are supplied.
+
+Return only one JSON object with exactly these keys: car\_dropoff, car\_airport\_parking, car\_offairport\_parking, car\_other\_parking, taxi\_ridehail, rental\_carsharing, bus\_transfer, s\_bahn, uefex, other, rationale. The ten mode values must be numbers from 0 to 1 (not percentages). rationale must be at most 40 words and state a plausible hypothesis, not claim to know passengers' actual motives.
+\end{promptbox}
+
+
+The following are the six exact group-description paragraphs. Each replaces only that paragraph in the request above. No target percentages, source volumes or source weights appear in these messages.
+
+\begin{promptbox}[title={business / domestic}]
+Group description: The passenger travels for business. The flight departing Munich is a domestic flight within Germany. Age, income, household cars, residence, starting location, trip duration, luggage and travel party are unspecified. Do not invent a specific value for any of these characteristics.
+\end{promptbox}
+
+
+\begin{promptbox}[title={private / domestic}]
+Group description: The passenger travels for a private purpose (for example a holiday or visiting friends or relatives). The flight departing Munich is a domestic flight within Germany. Age, income, household cars, residence, starting location, trip duration, luggage and travel party are unspecified. Do not invent a specific value for any of these characteristics.
+\end{promptbox}
+
+
+\begin{promptbox}[title={business / continental}]
+Group description: The passenger travels for business. The flight departing Munich is a continental international flight within Europe. Age, income, household cars, residence, starting location, trip duration, luggage and travel party are unspecified. Do not invent a specific value for any of these characteristics.
+\end{promptbox}
+
+
+\begin{promptbox}[title={private / continental}]
+Group description: The passenger travels for a private purpose (for example a holiday or visiting friends or relatives). The flight departing Munich is a continental international flight within Europe. Age, income, household cars, residence, starting location, trip duration, luggage and travel party are unspecified. Do not invent a specific value for any of these characteristics.
+\end{promptbox}
+
+
+\begin{promptbox}[title={business / intercontinental}]
+Group description: The passenger travels for business. The flight departing Munich is an intercontinental flight beyond Europe. Age, income, household cars, residence, starting location, trip duration, luggage and travel party are unspecified. Do not invent a specific value for any of these characteristics.
+\end{promptbox}
+
+
+\begin{promptbox}[title={private / intercontinental}]
+Group description: The passenger travels for a private purpose (for example a holiday or visiting friends or relatives). The flight departing Munich is an intercontinental flight beyond Europe. Age, income, household cars, residence, starting location, trip duration, luggage and travel party are unspecified. Do not invent a specific value for any of these characteristics.
+\end{promptbox}
+
+
+\begin{promptbox}[title={Exact Munich no-group replacement}]
+Group description: No trip-purpose or flight-region characteristic is supplied. All other passenger characteristics are unspecified.
+\end{promptbox}
+

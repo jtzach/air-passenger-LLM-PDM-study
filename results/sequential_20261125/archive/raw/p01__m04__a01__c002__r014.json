@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c002__r014",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzauto_gr1__79ed954bbe2c",
+  "round": 14,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "97e159312906ded0f2f27f9965445972a8b9707f3fd51bf638eec3750f380ddc",
+  "started_utc": "2026-11-25T17:41:45.076604+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:41:46.554316+00:00",
+      "cost_usd": 0.00146,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00146,
+  "reservation_upper_bound_usd": 0.02391,
+  "response_sha256": "ab3165074cd4534952fccc8354385066ea3f85cfe05e0b2516557b115cbcaf3c",
+  "response": {
+    "id": "gen-1795628504-eTwkNgYv4kCkiEj86bmC",
+    "object": "chat.completion",
+    "created": 1795628504,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.90,\n  \"local_pt\": 0.15,\n  \"long_distance_rail\": 0.05,\n  \"rationale\": \"Households with 4+ cars likely have high car access and preference, making car the dominant airport access mode. Public/local transport is less attractive; long-distance rail is rare due to car availability and possible rural residence.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 394,
+      "completion_tokens": 84,
+      "total_tokens": 478,
+      "cost": 0.00146,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00146,
+        "upstream_inference_prompt_cost": 0.000788,
+        "upstream_inference_completions_cost": 0.000672
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628504-eTwkNgYv4kCkiEj86bmC",
+  "raw_prediction": {
+    "car": 0.9,
+    "local_pt": 0.15,
+    "long_distance_rail": 0.05,
+    "rationale": "Households with 4+ cars likely have high car access and preference, making car the dominant airport access mode. Public/local transport is less attractive; long-distance rail is rare due to car availability and possible rural residence."
+  },
+  "prediction": {
+    "car": 0.9,
+    "local_pt": 0.15,
+    "long_distance_rail": 0.05,
+    "rationale": "Households with 4+ cars likely have high car access and preference, making car the dominant airport access mode. Public/local transport is less attractive; long-distance rail is rare due to car availability and possible rural residence."
+  },
+  "normalization": {
+    "sum_before": 1.1,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:41:46.554316+00:00",
+  "cost_exceeded_reservation": false
+}

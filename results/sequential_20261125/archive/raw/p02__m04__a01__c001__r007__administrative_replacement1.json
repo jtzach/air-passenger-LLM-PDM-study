@@ -1,0 +1,121 @@
+{
+  "task_id": "p02__m04__a01__c001__r007__administrative_replacement1",
+  "block_id": "p02__m04__a01",
+  "panel_id": "fmg_2025",
+  "panel_index": 1,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "fmg_business_domestic",
+  "round": 7,
+  "modes": [
+    "car_dropoff",
+    "car_airport_parking",
+    "car_offairport_parking",
+    "car_other_parking",
+    "taxi_ridehail",
+    "rental_carsharing",
+    "bus_transfer",
+    "s_bahn",
+    "uefex",
+    "other"
+  ],
+  "mutually_exclusive": true,
+  "supersedes_task_id": "p02__m04__a01__c001__r007",
+  "request_sha256": "f29b6c7a6292512da6bf66c68db69615fc767c867b821495c3ce8737d992f141",
+  "started_utc": "2026-11-25T17:33:55.954196+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:33:59.108877+00:00",
+      "cost_usd": 0.002498,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.002498,
+  "reservation_upper_bound_usd": 0.028716000000000002,
+  "response_sha256": "4c2b721ad90adfce3fc6578ca0ecfd373958e05a34793f8bdc198c259109aa27",
+  "response": {
+    "id": "gen-1795628035-eJpXXq7mPYXzZIYsSnHl",
+    "object": "chat.completion",
+    "created": 1795628035,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car_dropoff\": 0.22,\n  \"car_airport_parking\": 0.18,\n  \"car_offairport_parking\": 0.05,\n  \"car_other_parking\": 0.01,\n  \"taxi_ridehail\": 0.15,\n  \"rental_carsharing\": 0.03,\n  \"bus_transfer\": 0.04,\n  \"s_bahn\": 0.28,\n  \"uefex\": 0.03,\n  \"other\": 0.01,\n  \"rationale\": \"Business passengers value speed and reliability; S-Bahn is frequent, but car and taxi offer flexibility. Parking is relevant for business use. UEFEX and bus serve niche origins. Modal split reflects mixed urban and hinterland catchment.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 569,
+      "completion_tokens": 170,
+      "total_tokens": 739,
+      "cost": 0.002498,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002498,
+        "upstream_inference_prompt_cost": 0.001138,
+        "upstream_inference_completions_cost": 0.00136
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628035-eJpXXq7mPYXzZIYsSnHl",
+  "raw_prediction": {
+    "car_dropoff": 0.22,
+    "car_airport_parking": 0.18,
+    "car_offairport_parking": 0.05,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.15,
+    "rental_carsharing": 0.03,
+    "bus_transfer": 0.04,
+    "s_bahn": 0.28,
+    "uefex": 0.03,
+    "other": 0.01,
+    "rationale": "Business passengers value speed and reliability; S-Bahn is frequent, but car and taxi offer flexibility. Parking is relevant for business use. UEFEX and bus serve niche origins. Modal split reflects mixed urban and hinterland catchment."
+  },
+  "prediction": {
+    "car_dropoff": 0.22,
+    "car_airport_parking": 0.18,
+    "car_offairport_parking": 0.05,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.15,
+    "rental_carsharing": 0.03,
+    "bus_transfer": 0.04,
+    "s_bahn": 0.28,
+    "uefex": 0.03,
+    "other": 0.01,
+    "rationale": "Business passengers value speed and reliability; S-Bahn is frequent, but car and taxi offer flexibility. Parking is relevant for business use. UEFEX and bus serve niche origins. Modal split reflects mixed urban and hinterland catchment."
+  },
+  "normalization": {
+    "sum_before": 1.0,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:33:59.108877+00:00",
+  "cost_exceeded_reservation": false
+}

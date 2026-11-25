@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m02__a02__c008__r013",
+  "block_id": "p01__m02__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__RegioStaR7__7b0e1c4f102a",
+  "round": 13,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "434ec82c707019a4a34cc5ab4780e5c164dbf603dca69d79419761122ced04c8",
+  "started_utc": "2026-11-25T17:41:27.693715+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:41:28.968888+00:00",
+      "cost_usd": 0.0002988,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002988,
+  "reservation_upper_bound_usd": 0.00513,
+  "response_sha256": "baf81eec7f3ebf7858a5b213d8d93370ae053f76e47a5ee1c592fbfae185c0a4",
+  "response": {
+    "id": "gen-1795628487-msONySn3ROkAdYhuitFs",
+    "object": "chat.completion",
+    "created": 1795628487,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.30,\n  \"long_distance_rail\": 0.08,\n  \"rationale\": \"Metropolis residents likely favor car access for airport reach and use local public transport more, but less often combine long-distance rail due to urban flight convenience and integrated transit options.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 451,
+      "completion_tokens": 74,
+      "total_tokens": 525,
+      "cost": 0.0002988,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002988,
+        "upstream_inference_prompt_cost": 0.0001804,
+        "upstream_inference_completions_cost": 0.0001184
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795628487-msONySn3ROkAdYhuitFs",
+  "raw_prediction": {
+    "car": 0.45,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.08,
+    "rationale": "Metropolis residents likely favor car access for airport reach and use local public transport more, but less often combine long-distance rail due to urban flight convenience and integrated transit options."
+  },
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.08,
+    "rationale": "Metropolis residents likely favor car access for airport reach and use local public transport more, but less often combine long-distance rail due to urban flight convenience and integrated transit options."
+  },
+  "normalization": {
+    "sum_before": 0.83,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:41:28.968888+00:00",
+  "cost_exceeded_reservation": false
+}

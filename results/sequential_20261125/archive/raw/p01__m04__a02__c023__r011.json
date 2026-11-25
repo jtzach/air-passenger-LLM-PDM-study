@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c023__r011",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__fd46cf332878",
+  "round": 11,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "fdf55cadb3222d810646ff6b35ac0763301b06e9c545e788db7f47d1c70b2797",
+  "started_utc": "2026-11-25T17:39:45.661293+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:39:47.347858+00:00",
+      "cost_usd": 0.001548,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001548,
+  "reservation_upper_bound_usd": 0.025607999999999995,
+  "response_sha256": "d4ae11a3df375c00034e958d5d86c5236f9d7e3e20c95d51cb40452d3744a35d",
+  "response": {
+    "id": "gen-1795628385-sYKFzZn6Ts8tiQSbNa8w",
+    "object": "chat.completion",
+    "created": 1795628385,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.42,\n  \"local_pt\": 0.19,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Longer trips (15+ nights) often mean heavy luggage and less flexibility, increasing car use for airport access. Extended stays may lower local PT and long-distance rail use compared to the overall average.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 454,
+      "completion_tokens": 80,
+      "total_tokens": 534,
+      "cost": 0.001548,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001548,
+        "upstream_inference_prompt_cost": 0.000908,
+        "upstream_inference_completions_cost": 0.00064
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628385-sYKFzZn6Ts8tiQSbNa8w",
+  "raw_prediction": {
+    "car": 0.42,
+    "local_pt": 0.19,
+    "long_distance_rail": 0.1,
+    "rationale": "Longer trips (15+ nights) often mean heavy luggage and less flexibility, increasing car use for airport access. Extended stays may lower local PT and long-distance rail use compared to the overall average."
+  },
+  "prediction": {
+    "car": 0.42,
+    "local_pt": 0.19,
+    "long_distance_rail": 0.1,
+    "rationale": "Longer trips (15+ nights) often mean heavy luggage and less flexibility, increasing car use for airport access. Extended stays may lower local PT and long-distance rail use compared to the overall average."
+  },
+  "normalization": {
+    "sum_before": 0.71,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:39:47.347858+00:00",
+  "cost_exceeded_reservation": false
+}

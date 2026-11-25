@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c016__r015",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzbegl_gr__b61cbc7c0dd2",
+  "round": 15,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "290521dfa37f5f77f4aa06ad043a0f0f2d0dfa46d5d30c70c2a371d90d379316",
+  "started_utc": "2026-11-25T17:42:12.671347+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:42:13.960821+00:00",
+      "cost_usd": 0.001502,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001502,
+  "reservation_upper_bound_usd": 0.025572,
+  "response_sha256": "4c0864fc88f89dbb55c0f9b78a1b9472de6ec119f6425c8de43788364626215a",
+  "response": {
+    "id": "gen-1795628532-8lWqXXCy8zYsT2Ps1nov",
+    "object": "chat.completion",
+    "created": 1795628532,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.41,\n  \"local_pt\": 0.22,\n  \"long_distance_rail\": 0.13,\n  \"rationale\": \"Having one household companion increases the likelihood of car use due to convenience and cost-sharing versus solo travel, with minor effects on public/local or long-distance rail relative to population averages.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 451,
+      "completion_tokens": 75,
+      "total_tokens": 526,
+      "cost": 0.001502,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001502,
+        "upstream_inference_prompt_cost": 0.000902,
+        "upstream_inference_completions_cost": 0.0006
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628532-8lWqXXCy8zYsT2Ps1nov",
+  "raw_prediction": {
+    "car": 0.41,
+    "local_pt": 0.22,
+    "long_distance_rail": 0.13,
+    "rationale": "Having one household companion increases the likelihood of car use due to convenience and cost-sharing versus solo travel, with minor effects on public/local or long-distance rail relative to population averages."
+  },
+  "prediction": {
+    "car": 0.41,
+    "local_pt": 0.22,
+    "long_distance_rail": 0.13,
+    "rationale": "Having one household companion increases the likelihood of car use due to convenience and cost-sharing versus solo travel, with minor effects on public/local or long-distance rail relative to population averages."
+  },
+  "normalization": {
+    "sum_before": 0.76,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:42:13.960821+00:00",
+  "cost_exceeded_reservation": false
+}

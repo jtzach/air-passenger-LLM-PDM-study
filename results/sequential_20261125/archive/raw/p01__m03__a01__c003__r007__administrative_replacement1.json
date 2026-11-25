@@ -1,0 +1,100 @@
+{
+  "task_id": "p01__m03__a01__c003__r007__administrative_replacement1",
+  "block_id": "p01__m03__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "unanchored",
+  "card_id": "reise__anzauto_gr1__bee31b0e88ae",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "supersedes_task_id": "p01__m03__a01__c003__r007",
+  "request_sha256": "6f07c248febd00284135ae7e464a81800ae5390908010598994f652e2709d73b",
+  "started_utc": "2026-11-25T17:34:18.196814+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:34:33.696154+00:00",
+      "cost_usd": 0.000127695,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000127695,
+  "reservation_upper_bound_usd": 0.0020019,
+  "response_sha256": "a779122238710a7c09333ec283f536a6fafeb33b8c8687aa1bd734b3b67a597e",
+  "response": {
+    "id": "gen-1795628057-pFY3VeY39DLMPleVJNfS",
+    "object": "chat.completion",
+    "created": 1795628057,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.75,\n  \"local_pt\": 0.3,\n  \"long_distance_rail\": 0.2,\n  \"rationale\": \"Households with 3 cars suggest high car availability, increasing car use for airport access. Public transport use is lower but present due to urban origins or multi-modal travelers. Long-distance rail competes less for air travelers with high car ownership.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 402,
+      "completion_tokens": 89,
+      "total_tokens": 491,
+      "cost": 0.000127695,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000127695,
+        "upstream_inference_prompt_cost": 5.427e-05,
+        "upstream_inference_completions_cost": 7.3425e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795628057-pFY3VeY39DLMPleVJNfS",
+  "raw_prediction": {
+    "car": 0.75,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.2,
+    "rationale": "Households with 3 cars suggest high car availability, increasing car use for airport access. Public transport use is lower but present due to urban origins or multi-modal travelers. Long-distance rail competes less for air travelers with high car ownership."
+  },
+  "prediction": {
+    "car": 0.75,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.2,
+    "rationale": "Households with 3 cars suggest high car availability, increasing car use for airport access. Public transport use is lower but present due to urban origins or multi-modal travelers. Long-distance rail competes less for air travelers with high car ownership."
+  },
+  "normalization": {
+    "sum_before": 1.25,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:34:33.696154+00:00",
+  "cost_exceeded_reservation": false
+}

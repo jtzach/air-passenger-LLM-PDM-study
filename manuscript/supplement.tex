@@ -1,199 +1,134 @@
+% Technical companion to revised_main.tex. No figures or tables: combined cap is 3+3.
 \documentclass{article}
 \usepackage[english]{babel}
 \usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm]{geometry}
-\usepackage{amsmath,amssymb,booktabs,longtable,array,graphicx}
+\usepackage{amsmath,amssymb,array,xcolor}
 \usepackage[round,semicolon,authoryear]{natbib}
 \usepackage[colorlinks=true,allcolors=blue]{hyperref}
-\emergencystretch=3em
+\emergencystretch=4em
 \newcommand{\code}[1]{\texttt{\detokenize{#1}}}
-\graphicspath{{../figures/}}
-\renewcommand{\thefigure}{S\arabic{figure}}
-\title{How the Study Works: Technical Supplement}
+\title{Technical Supplement: Two Aggregate Air-Passenger Prediction Tasks}
 \author{}
-\date{November 24, 2026}
+\date{November 25, 2026}
 \begin{document}
 \maketitle
 
-\section{A worked example}
-A group card gives the model one fact about a group of journeys. Consider the card ``the traveler's household has no car.'' The other facts, such as age, income, destination, and airport, are left unknown. This card covers 936 reported overnight journeys with aircraft as the main mode. It is a group of journeys, not a detailed description of one person.
+\section{Scope of this supplement}
+This document specifies the target construction, weighting, controls, and sequential analysis. It introduces no additional figures or tables; the complete main paper and its appendices are limited to three of each. Exact prompts and all group descriptions are printed in the main paper's prompt appendix. Numerical findings from the fresh experiment must come from its archived complete rounds, not from the earlier exploratory run.
 
-We asked the model for the probability that each of three other modes was also reported. A probability of 0.163 means 16.3\%, or about 16 out of 100 similar journeys. The ``out of 100'' wording explains the numbers; the API actually requested probabilities from 0 to 1. We did not simulate 100 people or ask 100 separate questions. Table~\ref{tab:example} shows real results for this card. These answers can overlap: one journey may use both a car and a train. Not owning a car does not prevent being a passenger or using a hired car.
+\section{National journey targets and group selection}
+The public Mobilit\"at in Tabellen service publishes group tables for MiD 2023 \citep{mit2023}. The benchmark uses the overnight-journey dataset, selecting aircraft as the main mode. The relevant transport question allows multiple answers covering outward and return travel. Car, local bus/rail, and long-distance rail are three separate indicators; treating them as a categorical distribution or normalizing their sum would change the question \citep{midquestionnaire2025}.
 
-\begin{table}[htbp]
-\centering\small
-\begin{tabular}{lrrr}
-\toprule
-Also used on the journey & Survey (\%) & AI estimate (\%) & Gap (points)\\
-\midrule
-Car & 15.0 & 16.3 & 1.3\\
-Local bus/rail & 40.1 & 35.0 & 5.1\\
-Long-distance train & 16.8 & 19.0 & 2.2\\
-\bottomrule
-\end{tabular}
-\caption{One actual card: households without cars. AI estimates are GPT-4.1's three-repeat means with the overall-rate hint. The model was not given these group-specific survey answers. Gaps use unrounded probabilities before display rounding.}
-\label{tab:example}
-\end{table}
+The selected indicators are both overlapping and incomplete. The table also records bicycle, scheduled long-distance coach, nonscheduled tour coach, aircraft, ship, motorhome, and other transport. Aircraft is present by the analysis selection, rather than being a predicted additional-mode target. Missing-response categories are not transport modes. Walking and taxi are not individually identifiable as separate rows here, and no assignment of those choices to car or public transport is inferred. Consequently, neither a sum below 100\% nor its complement estimates the share using none of the three selected modes. Recovering that union would require information about joint mode mentions that these separate marginals do not provide.
 
-This example illustrates one card. The main score compares all 23 cards and three modes, with survey-based group weights. The survey answers were hidden from the model, but the analyst used the same tables both to choose informative attributes and to score predictions. Thus, this is a comparison with known survey tables, not a test on new people.
+This module concerns respondents aged at least 14, up to three recently reported journeys with at least one overnight stay, and a three-month recall period. It is distinct from the assigned-day diary and day-journey modules. Individual respondents may contribute multiple journeys. Unweighted reported journeys, rounded survey-weighted bases, and outcome percentages are retained separately \citep{midmethods2025,midhandbook2025}. Weighted bases are not converted into artificial individual records.
 
-\section{What the survey can tell us}
-The source is the public Mobilit\"at in Tabellen (MiT) service for MiD 2023, dataset \code{reise}. It publishes tables of group percentages rather than individual records. We selected the column labeled \emph{Flugzeug} in the main-mode variable and extracted three answers that respondents could select together: \emph{Auto}, \emph{Bus oder Bahn im Nahverkehr}, and \emph{Fernzug}. The actual number of reported journeys (unweighted base), the survey-adjusted base (weighted base), and the published percentage remain separate. We divide percentages by 100 for calculations; we do not turn weighted counts into invented individual records.
+The selection protocol listed nine traveler attributes (age, gender category, education, employment, household income, household cars, household size, residential spatial type, and driving-license status) and five journey attributes (purpose, destination region, one-way distance, nights away, and household companions). The protocol was recorded before model evaluation, but earlier age tables had been inspected. It was not an external preregistration or a held-out-data design.
 
-The overnight module was allocated to approximately one-quarter of the sample and answered by respondents aged 14 or above in telephone or web interviews, excluding proxy interviews. It records details of up to the three most recent journeys with at least one overnight stay in the previous three months. Outward and return travel constitute one journey. Thus, frequent travelers can contribute more than one journey; estimates describe reported journeys, not the prevalence of behavior among unique persons. This module is distinct from the assigned-day trip diary and the day-journey module \citep{midhandbook2025,midquestionnaire2025}.
-
-The relevant question asks which modes were used for outward and return travel and permits all modes used in combination (questionnaire overview, PDF page 21, internal page 18; field \code{R_VM_A-N}). The three analyzed indicators correspond to car, local bus/rail, and long-distance rail. The car item does not distinguish driver from passenger. The local-public-transport item pools several modes. The observations do not identify terminal, airport, country of the ground segment, direction, sequence, or which side of the flight a mode served. Consequently, neither an airport-access choice set nor airport-specific mode shares can be reconstructed. Multiple mentions must not be normalized to sum to 100\%.
-
-No restricted B1 microdata, Munich Airport data, primary interviews, or individual identifiers are used. Day journeys are not analyzed or pooled with the overnight benchmark.
-
-\section{How we chose the groups}
-We listed 14 possible attributes in \code{selection_protocol.json} before requesting the new tables and model predictions. Earlier age tables had already been inspected, so this was a recorded analysis rule rather than an external preregistration. Table~\ref{tab:candidates} lists every candidate. No attribute was added because a model performed well on it.
-
-\begin{table}[htbp]
-\centering\small
-\begin{tabular}{p{0.20\linewidth}p{0.72\linewidth}}
-\toprule
-Family & Candidate dimensions\\
-\midrule
-Traveler & Age; gender category; education; employment; monthly net household income; household car count; household size; residential RegioStaR7 type; car driving license.\\
-Journey & Main purpose; destination region; one-way distance; nights away; number of household companions.\\
-\bottomrule
-\end{tabular}
-\caption{Prespecified dimensions. Household companions are not equivalent to the full travel party.}
-\label{tab:candidates}
-\end{table}
-
-Let $n_{fg}$ and $W_{fg}$ denote the unweighted and weighted bases for stratum $g$ of feature $f$, and $W_0$ the overall weighted aircraft-journey base. A substantive stratum is eligible if $n_{fg}\geq100$. Response/design missingness is excluded; meaningful negative categories, such as no household cars, remain eligible. A feature requires at least two eligible strata and coverage $c_f=\sum_{g\in G_f}W_{fg}/W_0\geq0.80$. Published rounding is retained; coverage and exclusions are reported rather than concealed through imputation.
-
-For each eligible feature, normalized weights are $w_{fg}=W_{fg}/\sum_{h\in G_f}W_{fh}$. Let $p_{fgm}$ be observed co-use of mode $m$ in stratum $g$, and $\bar p_{fm}=\sum_gw_{fg}p_{fgm}$. Define binary entropy in bits as
+For feature $f$ and substantive category $g$, let $n_{fg}$ be the reported unweighted base and $W_{fg}$ the rounded weighted base. Categories require $n_{fg}\geq100$; meaningful absence categories, such as no car, remain eligible. Missing-response categories are excluded. An eligible feature has at least two retained categories and weighted coverage at least 0.80 of the overall aircraft-journey base. The retained weights are
 \begin{equation}
-H(p)=-p\log_2p-(1-p)\log_2(1-p),\qquad 0\log_2 0=0.
+w_{fg}=\frac{W_{fg}}{\sum_{h\in G_f}W_{fh}}.
 \end{equation}
-The screening score is
+For outcome $m$, let $p_{fgm}$ be the observed share and $\bar p_{fm}=\sum_g w_{fg}p_{fgm}$. With binary entropy $H(p)=-p\log_2p-(1-p)\log_2(1-p)$ and $0\log 0=0$, the ranking score is
 \begin{equation}
-S_f=\frac{1}{3}\sum_{m=1}^{3}\frac{H(\bar p_{fm})-\sum_gw_{fg}H(p_{fgm})}{H(\bar p_{fm})}.
+S_f=\frac{1}{3}\sum_{m=1}^{3}
+\frac{H(\bar p_{fm})-\sum_gw_{fg}H(p_{fgm})}{H(\bar p_{fm})}.
 \end{equation}
-A constant outcome contributes zero. In words, the score asks how much uncertainty about transport use disappears when the group is known. Larger scores mean that groups differ more on these recorded answers. We selected the top two eligible traveler attributes and top two eligible journey attributes, breaking ties by identifier. This two-plus-two balance was a design decision, not a mathematical requirement. Age ranked third overall and among traveler attributes; it was omitted because household cars and residential area took the two traveler places, not because age showed no differences. Every eligible category of a selected attribute becomes a card. The score describes these tables; it is not a test of causes or statistical significance. Different missing-response patterns change coverage, so we report it alongside each score.
+A constant outcome contributes zero. This describes variation in the published tables, not a causal effect or a significance test. The two highest-ranked eligible traveler attributes and two highest-ranked eligible journey attributes were retained. The resulting household-car, area, companion, and nights-away cards overlap. Household companions do not enumerate the full travel party; a zero-household-companion category does not necessarily mean traveling alone.
 
-Each card gives exactly one characteristic. For example, a household car-count card does not assign an age, household structure, or destination. The same journey can appear in both a car-count card and an area card. The 23 cards come from $5+7+4+7$ categories (Table~\ref{tab:selected}), not from multiplying these numbers to create joint profiles. The groups are therefore overlapping views of the same survey. We give each attribute equal influence in the final score rather than count those overlapping views as extra passengers. No clustering algorithm is used.
+The new experiment keeps this selection fixed. No new group is added because an LLM answers it accurately. Its target remains an observed group percentage rather than an individual choice or an airport-specific access share.
 
-\begin{table}[htbp]
-\centering\small
-\begin{tabular}{lrrr}
-\toprule
-Selected dimension & Strata & Coverage (\%) & Score $S_f$\\
-\midrule
-Household cars & 5 & 100.00 & 0.03457\\
-Residential spatial type & 7 & 100.00 & 0.02409\\
-Household companions & 4 & 92.49 & 0.00688\\
-Nights away & 7 & 96.01 & 0.00650\\
-\bottomrule
-\end{tabular}
-\caption{Selected dimensions, eligible profiles, weighted coverage, and mean normalized information gain.}
-\label{tab:selected}
-\end{table}
+\section{Munich Airport targets and generic cards}
+The airport case asks for the reported airport-access category before a passenger's departure from Munich Airport. The eligible population excludes passengers merely transferring between flights. This target differs from a sequence of modes used across an entire return journey and from the departure-day diary. The agreed access categories form a mutually exclusive, complete composition, with a residual category retained where required by the source mapping. They are not literal final-vehicle labels: off-airport parking can include a shuttle leg while remaining in a parking category.
 
-\section{How this differs from original LLM-PDM}
-Original LLM-PDM builds personas that combine several characteristics, weights how common those combinations are, and asks the model to answer survey questions as each respondent \citep{tzachristas2026}. Its Algorithms 1--3 and Appendix A describe joint profiles and their sampling weights. Our separate public tables do not show which characteristics belong together. We therefore use one-characteristic group cards and ask directly for group probabilities. We do not generate a population of role-playing individuals. Survey weights affect selection and scoring, not the number of artificial respondents created.
+Six generic cards cross business/private purpose with domestic/continental/intercontinental departing-flight type. All other attributes are left unspecified. The classification concerns the departing leg; a connecting itinerary's final destination cannot be inferred from that label alone. The cards do not assert an age, residence, trip duration, airport-origin district, car availability, or joint demographic persona.
 
-Both approaches can supply overall travel information. LLM-PDM's Appendix C gives examples of numerical overall-rate hints. Its framework permits an optional correction loop, but that appendix reports that a single broad hint sufficed. Our two conditions are fixed: \emph{no overall hint} (unanchored) and \emph{with the three overall rates} (anchored). Neither receives the specific group's survey answers. There is no correction using evaluation errors, group-specific quota, prompt optimization, or fine-tuning. This is a substantial adaptation of the original task. The three predicted probabilities may describe modes used together; we do not assume the modes are independent. Model-written reasons are possible explanations, not evidence of actual motives.
+The targets are aggregated locally from a coauthor-prepared summary of the airport's 2025 table, using a fixed category mapping and denominators \citep{fmgsummary2026}. The original source workbooks are not independently verified in the present analysis. Unweighted interview counts are unknown, and expanded annual passenger volumes must not be interpreted as interview sample sizes. Flight-region boundaries, including boundary-country treatment, and parking/shuttle coding require checking against the original questionnaire. The prompts' generic operational labels cannot establish exact alignment with that unverified source classification. Same-year source groups are retained; origin-zone distributions from another year are not multiplied with duration margins. Such a product would impose conditional independence and support only synthetic marginal consistency, not observed joint validation. Categorical source segments also do not establish a machine-learning clustering procedure.
 
-\section{What we asked the models and how we checked replies}
-Table~\ref{tab:models} lists the exact model IDs used in the requests. We included smaller products and larger systems. GPT parameter counts are not public; Qwen has 235 billion total parameters, with 22 billion active for a given input. The models also differ in their design, training data, and provider. We therefore cannot attribute a difference in accuracy to model size alone.
+Original source counts and row-level extracts stay in local processing. Model requests contain only generic task descriptions and group labels, with no airport-rate hint or observed target values. The six aggregated target distributions and normalized group weights are published with approval as derived study results, enabling offline evaluation. The restricted workbook and its native rows are excluded. A private extraction manifest records source integrity and aggregation checks; the public evaluation configuration contains only the approved six-group derivation.
 
-\begin{table}[htbp]
-\centering\footnotesize
-\begin{tabular}{p{0.27\linewidth}p{0.65\linewidth}}
-\toprule
-Label & OpenRouter request identifier\\
-\midrule
-Gemma 3 4B & \code{google/gemma-3-4b-it}\\
-Gemma 3 12B & \code{google/gemma-3-12b-it}\\
-GPT-4.1 mini & \code{openai/gpt-4.1-mini}\\
-Qwen3 235B A22B & \code{qwen/qwen3-235b-a22b-2507}\\
-GPT-4.1 & \code{openai/gpt-4.1}\\
-\bottomrule
-\end{tabular}
-\caption{Requested model IDs; returned provider/model metadata are archived per call.}
-\label{tab:models}
-\end{table}
+\section{Prompt conditions and controls}
+In the \emph{group/no-hint} condition, the model knows the task, the group card, and the output schema. It receives no numerical overall-rate anchor. The \emph{group/with-hint} condition adds the three public MiD overall rates and is used only for MiD. Both keep specific group answers out of the prompts. The hint is outcome information from the same survey, not an independent external forecast. There is no airport hint arm.
 
-All calls use the OpenRouter chat-completions endpoint with temperature 0.7, a 450-token output cap, JSON-object response format, and three repeat seeds beginning at 24112026. Seed support does not guarantee identical responses across infrastructure or time. Other sampling settings use provider defaults. Task order is shuffled with seed 24112026; up to five calls run concurrently. Provider fallbacks are disabled and support for requested parameters is required, but provider identity is recorded rather than assumed invariant. A maximum of three attempts handles transport/transient HTTP failures. A received invalid output is recorded without a corrective retry. Availability smoke tests are archived separately and excluded from study scores. The planned design contains $5\times(23+1)\times2\times3=720$ calls, including 30 no-persona calls.
+The \emph{no-group model control} removes the card, keeping the task and, where relevant, the MiD hint. It generates an actual model probability vector that is then applied across the evaluation groups. The \emph{constant statistical baseline} instead returns source overall shares without querying a model. Airport baseline values are computed and used locally. These controls answer different questions and must not be merged under a single label such as ``no hint.''
 
-For every model and condition, we also asked the same question without a group card. This \emph{no-persona control} shows what the model predicts without the extra group fact. A separate simple benchmark gives every group the observed overall rates; this is the \emph{constant baseline}. We compare with this basic rule, not with a fitted model of individual choices, because the public tables do not contain the individual records needed for that comparison.
+The task requests numerical probabilities, not simulated respondents. Multiplying a probability by 100 permits a plain-language reading as a rate out of 100 similar observations. It does not create a sample of 100 or turn an LLM response into a survey record. An optional rationale is not scored as evidence of motives or as a faithful account of the model's internal process.
 
-The exact English prompt is generated in \code{src/run_experiment.py} and saved with every request. It states the survey population, the group card, the three transport questions covering outward/return travel, the optional overall-rate hint, and the required reply format. Each reply must contain exactly \code{car}, \code{local_pt}, \code{long_distance_rail}, and \code{rationale}. The first three must be numbers between 0 and 1, not yes/no values. We request a possible explanation of at most 40 words. These explanations are not checked human motives and are not scored as facts about behavior.
+Each probability must be a finite numeric value in $[0,1]$. For the airport composition, a raw sum within 0.005 of one is accepted and divided by its sum before scoring; the raw response and normalization factor are retained. A larger sum discrepancy fails validation. This fixed, target-free normalization enforces the simplex used by the loss bound; it does not adjust predictions toward the observed modal shares. MiD's overlapping probabilities are never normalized to a common sum.
 
-All 720 planned calls were attempted on November 24, 2026, from 21:42:57 to 21:51:47 UTC. There were 587 valid outputs, 98 failed calls, and 35 invalid schemas; 112 calls had multiple attempts, totaling 941 attempt records. Recorded study cost was US\$0.273, excluding separate smoke tests. All 133 unsuccessful calls belonged to Gemma~3~12B: upstream rate limiting caused 98 failures, and 35 responses violated the required key schema. Its 11 valid outputs cannot support a complete matched evaluation. The other four models each completed all 144 calls.
+The service identifiers are:
+\begin{itemize}
+\item \code{google/gemma-3-4b-it};
+\item \code{openai/gpt-4.1-mini};
+\item \code{qwen/qwen3-235b-a22b-2507};
+\item \code{openai/gpt-4.1}.
+\end{itemize}
+Returned provider/model identifiers, request settings, timestamps, validation, and failures are archived. The four-service panel follows the earlier exploratory experiment; its selection is not claimed to be blind to all previous results. Model-size categories do not isolate a parameter-count effect.
 
-After checking which calls succeeded, but before calculating comparative errors, we limited the accuracy comparison to the four models with complete replies. All 23 groups were retained. This decision was made after the run and is documented; every failed or wrong-format reply remains in the archive. We did not rerun answers because they were inaccurate or relax the format rules for one model. Gemma~3~12B's failure to complete the run does not establish its prediction accuracy. The comparison uses 576 valid calls: 552 group-card calls and 24 without cards.
+Fresh requests pin Gemma to \code{parasail/bf16}, Qwen to \code{deepinfra/fp8}, and both GPT services to \code{openai}, with fallback routing disabled. Provider/model identity is recorded; a within-block identity change halts the block and withholds its inferential claim. Pinning reduces one source of heterogeneity but does not prove independent generation or immutable model weights.
 
-\section{How errors were calculated}
-An error is the gap between the model's predicted percentage and the survey percentage. We ignore its sign when calculating mean absolute error (MAE): predicting too high and too low both count as mistakes. We average the three repeated predictions first, then calculate the gap. The formulas below state exactly how group sizes, attributes, and modes contribute.
-For model $a$, arm $b$, replicate $r$, and stratum $g$ of feature $f$, let the predicted probability be $q_{abrfgm}$ and its three-repeat mean $\bar q_{abfgm}=\frac13\sum_{r=1}^{3}q_{abrfgm}$. With $F=4$ selected features and $M=3$ modes, the primary score is
+\section{One complete panel produces one round-level score}
+Let $p_i$ be a fixed observed target, $q_{eri}$ a prediction for endpoint $e$ in complete round $r$, and $a_i$ fixed cell weights summing to one. The round-level loss is
 \begin{equation}
-\operatorname{MAE}_{ab}=\frac{100}{FM}\sum_{f=1}^{F}\sum_{g\in G_f}w_{fg}\sum_{m=1}^{M}\left|\bar q_{abfgm}-p_{fgm}\right|.
+L_{er}=100\sum_i a_i|q_{eri}-p_i|.
 \end{equation}
-Its companion RMSE is
+For MiD, $i=(f,g,m)$ and $a_i=w_{fg}/(FM)$, with four features and three outcomes. Thus, larger categories have more influence within a feature, while features and modes have equal influence. Overlapping categories are not independent observational replications. For the airport case, $a_{gm}=w_g/K$, where $w_g$ is the group's share of expanded passenger volume and $K=10$. The six weights and targets are computed locally and are identical for the model and its source-rate baseline.
+
+Let $b_i$ be the relevant overall-rate baseline for cell $i$ and $B_e=100\sum_i a_i|b_i-p_i|$. Define
 \begin{equation}
-\operatorname{RMSE}_{ab}=100\sqrt{\frac{1}{FM}\sum_f\sum_gw_{fg}\sum_m(\bar q_{abfgm}-p_{fgm})^2}.
+D_{er}=B_e-L_{er}.
 \end{equation}
-Both are in percentage points. Primary scores evaluate the mean prediction, while single-repeat MAE ranges separately describe run stability. The baseline replaces every prediction with overall $p_{0m}$ and uses identical strata and weights. A positive baseline-minus-model MAE indicates an improvement. The three-repeat no-persona control mean is likewise applied to each stratum. All compared model/arm scores use the same complete 23-cohort panel; no failed prediction is imputed. Diagnostic outputs also include equal-stratum MAE, signed bias, maximum absolute cell error, and centered MAE. The latter subtracts each feature/mode's weighted mean from its observed and predicted profiles before taking absolute differences, separating profile-shape disagreement from level bias.
+Positive $D$ means that a complete model panel is more accurate than the constant baseline. A whole round yields one $D$, regardless of the number of group-mode cells. The primary estimand is the median of the round-level $D$ distribution for the fixed service and protocol.
 
-Another check compares the predicted and observed yes/no distributions for each mode separately. Define $P=(p,1-p)$, $Q=(q,1-q)$, and $A=(P+Q)/2$. The Jensen--Shannon \emph{divergence} is
+This is different from calculating the MAE of the average probability across repeats. Absolute values are nonlinear, so the MAE of an ensemble of probabilities can be lower than the mean or median single-round MAE. The earlier three-repeat experiment used the ensemble-probability score. It remains exploratory context and is neither pooled into the fresh rounds nor relabeled as a new median result. A single response reproduced to explain an exact prompt is a third object and must carry its own identity.
+
+No-group comparisons use the same targets and weighting but are descriptive secondary diagnostics. Hint-arm comparisons use each model's common complete-round prefix and also remain descriptive. Mode-wise error, signed bias, and selected contrasts can reveal cancellation or subgroup misses. They do not create extra independent observations or additional confirmatory endpoints. MAEs from the two tasks are not interchangeable: one scores three binary co-use indicators, the other ten categories of a composition.
+
+\section{Primary scheduled median inference}
+The fixed-look interval uses the binomial order-statistic construction for quantiles \citep[Section 5.3]{lu2020}. The following multiplicity allocation and stopping thresholds are our study-design choices.
+There are $E=12$ frozen endpoints: four services multiplied by two MiD conditions plus one airport condition. Looks occur at $n\in\{16,32,64\}$ complete rounds. The total median-family allowance is $\alpha_M=0.04$, giving a two-sided fixed-look allowance
 \begin{equation}
-\operatorname{JSD}(P,Q)=\tfrac12\operatorname{KL}_2(P\Vert A)+\tfrac12\operatorname{KL}_2(Q\Vert A).
+\alpha_* = \frac{0.04}{12\times3}
 \end{equation}
-It lies between zero and one bit and is averaged with the same feature/stratum/mode weights. Unlike the square-root distance used in LLM-PDM, our reported field is explicitly a divergence in bits. Using the three co-use probabilities as one categorical distribution would be incorrect because multiple modes can occur together. Across-repeat standard deviation or range describes generation stability only. It is not a confidence interval for population behavior or model generalization.
+for each endpoint and scheduled look. The divisor is not reduced if a service fails or an endpoint is uninteresting.
 
-The same survey tables help choose the groups and check predictions, although the prompts hide each group's answers. We deliberately test groups that differ in the observed data. We do not reserve a separate set of people for final testing. Public tables lack the detailed sample-design and linked-record information needed to calculate appropriate survey confidence intervals. We do not invent individual records from weighted counts. We also do not know whether the models encountered these public data during training.
+Sort the complete-round improvements as $D_{(1)}\leq\cdots\leq D_{(n)}$. Choose the largest $k\geq1$ satisfying
+\begin{equation}
+\Pr\{\operatorname{Binomial}(n,1/2)\leq k-1\}\leq\alpha_*/2.
+\end{equation}
+The noninterpolated order-statistic interval is $[D_{(k)},D_{(n-k+1)}]$. If no $k$ qualifies, use the full prespecified support. Ties are retained; threshold ties are not discarded from the exact directional sign tests. The implementation uses integer binomial sums rather than a normal approximation.
 
-Table~\ref{tab:metrics} reports the complete-model comparison. Guidance reduced all four models' primary MAE, but adding cohort profiles to anchored prompts improved only GPT-4.1 relative to its no-persona control. Its equal-stratum MAE was 3.62 points, versus 5.31 for the constant baseline; centered MAE was 2.68 versus 4.11. Thus, its improvement was not limited to the prevalence-weighted level metric. The anchored GPT-4.1 mode-specific MAEs were 3.44 points for car, 2.97 for local public transport, and 2.37 for long-distance rail. Its largest cell error remained 14.92 points. These descriptive checks use the same data and are not independent confirmations.
+With practical margin $\delta=0.5$ percentage points, the primary decision is meaningful improvement if the lower bound exceeds $\delta$, meaningful degradation if the upper bound is below $-\delta$, and practical equivalence if the full interval lies within $[-\delta,\delta]$. An interval with half-width at most 0.25 points that crosses a decision boundary is precise but inconclusive. Otherwise the endpoint continues to the next scheduled look, or is marked inconclusive at the maximum. Stopping is symmetric: favorable and unfavorable evidence receive the same rule. A global stopping statement requires every frozen endpoint to be accounted for; operational or budget stops must report unresolved endpoints rather than imply equivalence.
 
-\begin{table}[htbp]
-\centering\footnotesize
-\begin{tabular}{lrrrrr}
-\toprule
- & No hint & With hint & No card & With hint & With hint\\
- & MAE & MAE & hinted MAE & RMSE & JSD (bits)\\
-\midrule
-Gemma 3 4B & 9.44 & 5.63 & 4.31 & 7.32 & 0.00537\\
-GPT-4.1 mini & 25.08 & 5.37 & 4.13 & 7.10 & 0.00483\\
-Qwen3 235B A22B & 20.91 & 6.80 & 4.16 & 9.04 & 0.00696\\
-GPT-4.1 & 13.91 & 2.93 & 4.10 & 4.07 & 0.00179\\
-\midrule
-Constant baseline & \multicolumn{3}{c}{MAE 4.16} & 6.22 & 0.00370\\
-\bottomrule
-\end{tabular}
-\caption{Scores use the mean of three predictions. MAE and RMSE measure gaps in percentage points; JSD compares yes/no distributions in bits. Every score uses the same 23 groups and weights. Gemma~3~12B did not provide enough replies for this comparison.}
-\label{tab:metrics}
-\end{table}
+The exact coverage argument requires independent, identically distributed complete rounds under the fixed generation protocol. Distinct request seeds are not proof of this property. Hosted services can route, cache, update, or change settings. The analysis therefore records this as an assumption, distinguishes identical outputs from verified independence, and makes no survey-population coverage claim. If the assumptions are not defensible, the empirical intervals can be displayed descriptively but not represented as established repeated-output confidence guarantees.
 
-Single-repeat anchored MAE ranges were 5.78--7.35 for Gemma~3~4B, 5.05--5.93 for GPT-4.1~mini, 6.51--7.47 for Qwen3, and 2.89--3.26 for GPT-4.1. Averaging predictions can score better than an individual repeat, as with Gemma~3~4B, because errors may partially cancel. Identical unanchored Gemma~3~4B numeric predictions across repeats are observed output stability, not evidence of correct probabilities or independent stochastic sampling. All per-cell values and repeat outputs are retained in the replication package.
+\section{Secondary bounded-mean confidence sequences}
+We use a fixed-mixture betting construction for bounded means, based on the nonnegative-martingale approach described by \citet{waudbysmith2024}. This transparent implementation is not a reproduction of all their optimized procedures.
+The secondary quantity is a stable conditional mean of $D$, not its median. Its separate allowance is $\alpha_C=0.01$, split across the same 12 baseline endpoints. A time-uniform confidence sequence already accounts for repeated inspection, so no additional division by the number of looks is applied. The overall allocation reserves 0.04 for the median family and 0.01 for this separate mean family. No-card contrasts do not inherit either guarantee.
 
-\section{Repeating the study and understanding its limits}
-Raw source responses, request bodies, retrieval timestamps, hashes, normalized tables, selection protocol, cohort descriptions, API requests/responses, configuration, and scoring/figure scripts form the replication package. Offline analysis should reproduce the reported results from saved responses; making new API calls tests a later model service and can yield different outputs. Model IDs are service identifiers, not immutable weight checkpoints. No credentials are included.
+The implementation maps a prespecified bounded improvement to $X_r\in[0,1]$. For the nonexclusive MiD indicators, the coordinate-wise loss upper bound, computed from fixed targets rather than observed model runs, is
+\begin{equation}
+U_e=100\sum_i a_i\max(p_i,1-p_i),\qquad D_{er}\in[B_e-U_e,B_e].
+\end{equation}
+For the airport task, predictions lie on the $K=10$ category simplex. With fixed group weights $w_g$ and equal category weights, the sharper exact vertex bound is
+\begin{equation}
+U_e=\frac{100}{K}\sum_g w_g\left[1+\sum_{m=1}^{K}p_{gm}-2\min_m p_{gm}\right].
+\end{equation}
+When target shares sum exactly to one, the bracket equals $2(1-\min_m p_{gm})$. Retaining the explicit sum accommodates the stored rounded target shares. This bound maximizes the convex absolute-error loss at a simplex vertex; it does not allow mutually incompatible predictions of one for every category. Both bounds were fixed before the fresh model calls. Out-of-support observations must be investigated rather than clipped, and support cannot be tightened using the observed responses.
 
-The main paper reports all five attempted models and both arms, separating the incomplete model's operational status from the four complete models' behavioral accuracy. Performance below the simple baseline is retained. Supplementary mode/feature breakdowns diagnose where agreement changes; they do not establish mechanisms. The findings apply to recorded overnight journeys with aircraft as main mode among the eligible MiD population. They do not cover every flight passenger in Germany, international visitors, children below 14, unreported journeys, or a particular airport. Matching an aggregate benchmark does not establish fidelity of individual choices, joint distributions, policy responses, or Munich Airport access.
+For candidate normalized mean $m$, each fixed positive fraction $c\in(0,1)$ defines wealth factors $1+c(X_r/m-1)$; the opposite side applies the same construction to $1-X_r$ and $1-m$. A frozen mixture over the implementation's fractions is compared with $2/\alpha$ on each side. The resulting two-sided betting interval is inverted with numerical bounds rounded outward. It requires a constant conditional mean under the relevant filtration and bounded outcomes. It is not selected instead of the median interval merely because it is narrower or more favorable. Secondary mean evidence does not drive the primary stopping decision.
 
-\clearpage
-\section{Detailed figures}
-These figures retain the full numerical views behind the simpler main-paper illustrations. Figure~\ref{fig:technicalgroups} shows every candidate's selection score and every selected group's three survey percentages. Figure~\ref{fig:technicalmodels} shows model errors and all 69 group/mode predictions for GPT-4.1. They use the same saved data and model replies; no new experiment was run.
+\section{Failures, administrative resumption, and reporting}
+The first invalid response or failed request halts the affected block under the frozen failure policy. An incomplete panel supplies no loss; missing probabilities are not filled with baseline values or valid outputs from another round. Replacing failures until a complete panel appears would change the sampling process. Attempted and complete rounds, validation failures, and the actual stopping reason are therefore retained.
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\linewidth]{S01_technical_cohort_profiles.pdf}
-\caption{Detailed group selection and survey answers. Larger selection scores mean that knowing the attribute reduces more uncertainty about transport use. Groups overlap; the three modes can be used together.}
-\label{fig:technicalgroups}
-\end{figure}
+An author-requested shutdown interrupted round 7 before the first scheduled inferential look at 16 complete rounds. A separate amendment was frozen before resumption. For every active block interrupted solely by this administrative pause, the entire partial round was replaced using new request identifiers and disjoint seeds. Replacement did not depend on answer values or accuracy. Original partial responses remain archived and excluded from scoring; previously completed rounds and all known failure halts are retained. All original costs, unresolved in-progress cost reservations, and prior active execution time count toward the budgets; only the documented pause is excluded from elapsed execution time. The original plan, raw records, and amendment remain separately auditable.
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\linewidth]{S02_technical_model_diagnostics.pdf}
-\caption{Detailed error checks. In A, points score the three-run mean probabilities; segments show the range of individual-run MAEs, not confidence intervals. In B--C, each point is one group/mode estimate. The diagonal means exact agreement with the survey.}
-\label{fig:technicalmodels}
-\end{figure}
+Fresh-run results must identify the endpoint, completed look, score estimand, margin, uncertainty method, and operational status. Existing exploratory observations can motivate explanations but cannot be inserted into the fresh inference. No claim of individual realism follows from matching aggregate rates. Model narratives are not measured human preferences, and known group labels do not reconstruct their joint distribution.
 
-\clearpage
+\input{generated/revised_accounting_text.tex}
+
+Public MiD inputs, protocols, generic prompts, model outputs, and the six approved derived airport targets and normalized weights support offline evaluation. Airport source extraction and checks remain local; original workbooks, native rows, and passenger counts are excluded from publication. A new online run tests the service available then, not an immutable model checkpoint. Both cases compare predictions with supplied aggregate evidence; survey sampling uncertainty, training-data exposure, and causal responses remain unidentified.
+
 \bibliographystyle{chicago}
-\bibliography{refs}
+\bibliography{refs,revised_refs_additions}
 \end{document}

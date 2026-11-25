@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c020__r002",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__9ee7f61bb0c0",
+  "round": 2,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "154a797a90528f7232dff308ceec565f3fe3fc6a61f34e906a922a2e63f4499d",
+  "started_utc": "2026-11-25T14:23:22.850160+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:23:24.805018+00:00",
+      "cost_usd": 0.001474,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001474,
+  "reservation_upper_bound_usd": 0.02391,
+  "response_sha256": "5a9807a45c5cc80fab729f1e00718c6b70fb0901faced730691c6ebe46976328",
+  "response": {
+    "id": "gen-1795616603-48oXVJfe5c5TkeQSX8BN",
+    "object": "chat.completion",
+    "created": 1795616603,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.40,\n  \"long_distance_rail\": 0.20,\n  \"rationale\": \"Aircraft users for 3-night trips often drive or are driven to airports, especially in suburban/rural Germany. Local PT serves urban dwellers better; long-distance rail is less preferred for airport access, especially for moderate trip durations.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 393,
+      "completion_tokens": 86,
+      "total_tokens": 479,
+      "cost": 0.001474,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001474,
+        "upstream_inference_prompt_cost": 0.000786,
+        "upstream_inference_completions_cost": 0.000688
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616603-48oXVJfe5c5TkeQSX8BN",
+  "raw_prediction": {
+    "car": 0.55,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.2,
+    "rationale": "Aircraft users for 3-night trips often drive or are driven to airports, especially in suburban/rural Germany. Local PT serves urban dwellers better; long-distance rail is less preferred for airport access, especially for moderate trip durations."
+  },
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.2,
+    "rationale": "Aircraft users for 3-night trips often drive or are driven to airports, especially in suburban/rural Germany. Local PT serves urban dwellers better; long-distance rail is less preferred for airport access, especially for moderate trip durations."
+  },
+  "normalization": {
+    "sum_before": 1.1500000000000001,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:23:24.805018+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,295 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-11-25T17:58:42.564975+00:00",
+  "figure_count": 3,
+  "table_count": 3,
+  "tests_passed": 59,
+  "original_scientific_files_preserved": 1519,
+  "baseline_commit": "f7e94654d8c3759c100a2813292f67fb20d42d22",
+  "component_report_hashes": {
+    "results/sequential_20261125/analysis_qa.json": "2ff6762f5536b7196e92f35eda7c9d7772566f755745d97c8cfc40949b8b0b0a",
+    "results/sequential_20261125/offline_replay_qa.json": "6c9a74dcf978482435be91eaf34d5078e459dedd284f5ea07017413b5e1a35df",
+    "results/sequential_20261125/independent_publication_audit.json": "639f3a17690dcc5e144505d616f7b79e95efa938e9c7418f3567fa7b74163c5d",
+    "results/sequential_20261125/publication_writer_qa.json": "95cad4b4f12f050404f724027288bed31a081580bcdada1bc0839cfd5de275b6",
+    "results/sequential_workbook_validation.json": "c42e19628cd50f1ac854821c86b30f0a9801a129621816ceae8675667208e2ff",
+    "results/sequential_figures_qa.json": "cb85c3867495549d474e10215c1ba99588714b98d5d8e32bd16761e151e8995b"
+  },
+  "pdfs": [
+    {
+      "path": "manuscript\\main.pdf",
+      "pages": 14,
+      "sha256": "a8d4e7ddaf63af1599e6e54543c3486f56b100b125284a269960b84d9015e2e4"
+    },
+    {
+      "path": "manuscript\\supplement.pdf",
+      "pages": 6,
+      "sha256": "f97f21aeda7689216440df125adad5d19649f0067a2bba153f4eddd8840edb67"
+    }
+  ],
+  "visual_review": {
+    "status": "PASS",
+    "scope": "All 15 pages of the initial main paper and all 6 supplement pages were visually reviewed; final affected main pages 6, 7, 8, 9 and 14 and supplement page 6 were re-rendered and inspected after the pagination/reference update.",
+    "documents": [
+      {
+        "file": "main.pdf",
+        "sha256": "a8d4e7ddaf63af1599e6e54543c3486f56b100b125284a269960b84d9015e2e4",
+        "page_count": 14
+      },
+      {
+        "file": "supplement.pdf",
+        "sha256": "f97f21aeda7689216440df125adad5d19649f0067a2bba153f4eddd8840edb67",
+        "page_count": 6
+      }
+    ],
+    "visually_reviewed_supplement_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "overlaps_or_clipped_text_found": false,
+    "gray_boxes_readable": true,
+    "equations_readable": true,
+    "claims_consistent_with_analysis": true,
+    "rendered_prompt_checks": [
+      {
+        "kind": "full_request",
+        "panel": "mid_2023",
+        "present": true
+      },
+      {
+        "kind": "group_or_control_paragraph",
+        "card_id": "reise__anzauto_gr1__296e9849dc3d",
+        "present": true
+      },
+      {
+        "kind": "group_or_control_paragraph",
+        "card_id": "reise__anzauto_gr1__79ed954bbe2c",
+        "present": true
+      },
+      {
+        "kind": "group_or_control_paragraph",
+        "card_id": "reise__anzauto_gr1__bee31b0e88ae",
+        "present": true
+      },
+      {
+        "kind": "group_or_control_paragraph",
+        "card_id": "reise__anzauto_gr1__d7ca944fcddc",
+        "present": true
+      },
+      {
+        "kind": "group_or_control_paragraph",
+        "card_id": "reise__anzauto_gr1__faec8c191aa2",
+        "present": true
+      },
+      {
+        "kind": "group_or_control_paragraph",
+        "card_id": "reise__RegioStaR7__5febbfe6f6bc",
+        "present": true
+      },
+      {
+        "kind": "group_or_control_paragraph",
+        "card_id": "reise__RegioStaR7__72d39163efb4",
+        "present": true
+      },
+      {
+        "kind": "group_or_control_paragraph",
+        "card_id": "reise__RegioStaR7__7b0e1c4f102a",
+        "present": true
+      },
+      {
+        "kind": "group_or_control_paragraph",
+        "card_id": "reise__RegioStaR7__7cdab1586e04",
+        "present": true
+      },
+      {
+        "kind": "group_or_control_paragraph",
+        "card_id": "reise__RegioStaR7__9f47524becab",
+        "present": true
+      },
+      {
+        "kind": "group_or_control_paragraph",
+        "card_id": "reise__RegioStaR7__cae80c90607c",
+        "present": true
+      },
+      {
+        "kind": "group_or_control_paragraph",
+        "card_id": "reise__RegioStaR7__d3321efbbd2e",
+        "present": true
+      },
+      {
+        "kind": "group_or_control_paragraph",
+        "card_id": "reise__anzbegl_gr__07f355b725cf",
+        "present": true
+      },
+      {
+        "kind": "group_or_control_paragraph",
+        "card_id": "reise__anzbegl_gr__154f6eb18583",
+        "present": true
+      },
+      {
+        "kind": "group_or_control_paragraph",
+        "card_id": "reise__anzbegl_gr__18864b086b3b",
+        "present": true
+      },
+      {
+        "kind": "group_or_control_paragraph",
+        "card_id": "reise__anzbegl_gr__b61cbc7c0dd2",
+        "present": true
+      },
+      {
+        "kind": "group_or_control_paragraph",
+        "card_id": "reise__anzueb_gr__456ee228eb2a",
+        "present": true
+      },
+      {
+        "kind": "group_or_control_paragraph",
+        "card_id": "reise__anzueb_gr__6bcea89383ae",
+        "present": true
+      },
+      {
+        "kind": "group_or_control_paragraph",
+        "card_id": "reise__anzueb_gr__782410ef69d3",
+        "present": true
+      },
+      {
+        "kind": "group_or_control_paragraph",
+        "card_id": "reise__anzueb_gr__9ee7f61bb0c0",
+        "present": true
+      },
+      {
+        "kind": "group_or_control_paragraph",
+        "card_id": "reise__anzueb_gr__ef1ad3950de1",
+        "present": true
+      },
+      {
+        "kind": "group_or_control_paragraph",
+        "card_id": "reise__anzueb_gr__f6e4375535d4",
+        "present": true
+      },
+      {
+        "kind": "group_or_control_paragraph",
+        "card_id": "reise__anzueb_gr__fd46cf332878",
+        "present": true
+      },
+      {
+        "kind": "group_or_control_paragraph",
+        "card_id": "no_persona",
+        "present": true
+      },
+      {
+        "kind": "exact_overall_hint",
+        "present": true
+      },
+      {
+        "kind": "full_request",
+        "panel": "fmg_2025",
+        "present": true
+      },
+      {
+        "kind": "group_or_control_paragraph",
+        "card_id": "fmg_business_domestic",
+        "present": true
+      },
+      {
+        "kind": "group_or_control_paragraph",
+        "card_id": "fmg_private_domestic",
+        "present": true
+      },
+      {
+        "kind": "group_or_control_paragraph",
+        "card_id": "fmg_business_continental",
+        "present": true
+      },
+      {
+        "kind": "group_or_control_paragraph",
+        "card_id": "fmg_private_continental",
+        "present": true
+      },
+      {
+        "kind": "group_or_control_paragraph",
+        "card_id": "fmg_business_intercontinental",
+        "present": true
+      },
+      {
+        "kind": "group_or_control_paragraph",
+        "card_id": "fmg_private_intercontinental",
+        "present": true
+      },
+      {
+        "kind": "group_or_control_paragraph",
+        "card_id": "no_persona",
+        "present": true
+      }
+    ],
+    "issues": [],
+    "notes": [
+      "The former three-line orphan page is removed; the main paper now has 14 pages.",
+      "All 34 rendered prompt components still match the actual public prompt text after typographic normalization.",
+      "The supplement citation page range 1\u201327 is visible; no renewed bibliographic/source verification is claimed.",
+      "Technical equations and interpretation were checked against the reviewed implementation; numerical results match the final analyzed records."
+    ],
+    "initial_documents": [
+      {
+        "file": "main.pdf",
+        "sha256": "995c6e0a296806262f9468aaa585c909cacce951ab6b22585e0b3371247e3fb8",
+        "page_count": 15
+      },
+      {
+        "file": "supplement.pdf",
+        "sha256": "632a55d9cb22e775c5c777dd4595596f9dfc0d94a8183e839f3f2ab696c51065",
+        "page_count": 6
+      }
+    ],
+    "initial_visually_reviewed_main_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "final_changed_main_pages_visually_rechecked": [
+      6,
+      7,
+      8,
+      9,
+      14
+    ],
+    "final_changed_supplement_pages_visually_rechecked": [
+      6
+    ],
+    "resolved_issues": [
+      {
+        "document": "main.pdf",
+        "page": 9,
+        "severity": "layout",
+        "description": "Only final3 acknowledgment lines occupy this otherwise empty page before AppendixA; avoidable orphan page. Parent notified; no edits made."
+      }
+    ],
+    "orphan_page_resolved": true,
+    "table3_unrounded_error_note_visible": true,
+    "final_rendered_prompt_components_verified": 34,
+    "pdf_sha256": {
+      "main.pdf": "a8d4e7ddaf63af1599e6e54543c3486f56b100b125284a269960b84d9015e2e4",
+      "supplement.pdf": "f97f21aeda7689216440df125adad5d19649f0067a2bba153f4eddd8840edb67"
+    },
+    "page_counts": {
+      "main.pdf": 14,
+      "supplement.pdf": 6
+    }
+  },
+  "scope": "Extended author-review paper; the user waived a 1,000-word ceiling. No journal submission.",
+  "issues": []
+}

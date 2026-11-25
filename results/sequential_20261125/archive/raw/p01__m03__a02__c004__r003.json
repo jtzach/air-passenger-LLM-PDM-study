@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a02__c004__r003",
+  "block_id": "p01__m03__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzauto_gr1__d7ca944fcddc",
+  "round": 3,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "633388741f3f14d0f365f0336f354701c2038aa137cc62504aaed09b99e77dea",
+  "started_utc": "2026-11-25T14:25:42.202674+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:25:53.711156+00:00",
+      "cost_usd": 0.000128205,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000128205,
+  "reservation_upper_bound_usd": 0.00211656,
+  "response_sha256": "e390ec16b67bb1743c49771f49917e29626e098fa265d70fa9074c903a7cf538",
+  "response": {
+    "id": "gen-1795616742-Hy0oWwBqPRAANfQZvDch",
+    "object": "chat.completion",
+    "created": 1795616742,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Household car availability increases car use likelihood for airport access. Public transport reliance may decrease, especially for local and long-distance rail, due to convenient car access for journey segments.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 473,
+      "completion_tokens": 78,
+      "total_tokens": 551,
+      "cost": 0.000128205,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000128205,
+        "upstream_inference_prompt_cost": 6.3855e-05,
+        "upstream_inference_completions_cost": 6.435e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795616742-Hy0oWwBqPRAANfQZvDch",
+  "raw_prediction": {
+    "car": 0.55,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Household car availability increases car use likelihood for airport access. Public transport reliance may decrease, especially for local and long-distance rail, due to convenient car access for journey segments."
+  },
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Household car availability increases car use likelihood for airport access. Public transport reliance may decrease, especially for local and long-distance rail, due to convenient car access for journey segments."
+  },
+  "normalization": {
+    "sum_before": 0.8300000000000001,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:25:53.711156+00:00",
+  "cost_exceeded_reservation": false
+}

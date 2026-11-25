@@ -1,0 +1,120 @@
+{
+  "task_id": "p02__m02__a01__c001__r001",
+  "block_id": "p02__m02__a01",
+  "panel_id": "fmg_2025",
+  "panel_index": 1,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "unanchored",
+  "card_id": "fmg_business_domestic",
+  "round": 1,
+  "modes": [
+    "car_dropoff",
+    "car_airport_parking",
+    "car_offairport_parking",
+    "car_other_parking",
+    "taxi_ridehail",
+    "rental_carsharing",
+    "bus_transfer",
+    "s_bahn",
+    "uefex",
+    "other"
+  ],
+  "mutually_exclusive": true,
+  "request_sha256": "0167e31ec06b43d2f88b6242fa5c6d0bf92c8931f9acf6eb4d76a4e2bcf33838",
+  "started_utc": "2026-11-25T14:19:53.966686+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:19:56.487200+00:00",
+      "cost_usd": 0.0004836,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0004836,
+  "reservation_upper_bound_usd": 0.0057491999999999994,
+  "response_sha256": "0db7437cd2cefdf1e3a91a4e4f0273ecc13cfa3b1ca110fc03ea9e149739dcb0",
+  "response": {
+    "id": "gen-1795616394-0afuS9UDra4U2GDgJqSG",
+    "object": "chat.completion",
+    "created": 1795616394,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car_dropoff\": 0.25,\n  \"car_airport_parking\": 0.20,\n  \"car_offairport_parking\": 0.10,\n  \"car_other_parking\": 0.05,\n  \"taxi_ridehail\": 0.10,\n  \"rental_carsharing\": 0.05,\n  \"bus_transfer\": 0.10,\n  \"s_bahn\": 0.10,\n  \"uefex\": 0.03,\n  \"other\": 0.02,\n  \"rationale\": \"Business travelers on domestic flights in Munich likely favor convenience and time-efficiency, leading to high private car use and rail, with moderate taxi and bus use reflecting varied urban access patterns.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 569,
+      "completion_tokens": 160,
+      "total_tokens": 729,
+      "cost": 0.0004836,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0004836,
+        "upstream_inference_prompt_cost": 0.0002276,
+        "upstream_inference_completions_cost": 0.000256
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795616394-0afuS9UDra4U2GDgJqSG",
+  "raw_prediction": {
+    "car_dropoff": 0.25,
+    "car_airport_parking": 0.2,
+    "car_offairport_parking": 0.1,
+    "car_other_parking": 0.05,
+    "taxi_ridehail": 0.1,
+    "rental_carsharing": 0.05,
+    "bus_transfer": 0.1,
+    "s_bahn": 0.1,
+    "uefex": 0.03,
+    "other": 0.02,
+    "rationale": "Business travelers on domestic flights in Munich likely favor convenience and time-efficiency, leading to high private car use and rail, with moderate taxi and bus use reflecting varied urban access patterns."
+  },
+  "prediction": {
+    "car_dropoff": 0.25,
+    "car_airport_parking": 0.2,
+    "car_offairport_parking": 0.1,
+    "car_other_parking": 0.05,
+    "taxi_ridehail": 0.1,
+    "rental_carsharing": 0.05,
+    "bus_transfer": 0.1,
+    "s_bahn": 0.1,
+    "uefex": 0.03,
+    "other": 0.02,
+    "rationale": "Business travelers on domestic flights in Munich likely favor convenience and time-efficiency, leading to high private car use and rail, with moderate taxi and bus use reflecting varied urban access patterns."
+  },
+  "normalization": {
+    "sum_before": 1.0,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:19:56.487200+00:00",
+  "cost_exceeded_reservation": false
+}

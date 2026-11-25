@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c016__r011",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzbegl_gr__b61cbc7c0dd2",
+  "round": 11,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "e46f64e38c03bf77ba2b9004eb5cbf95bdb4828abb956edea32b2bdfb50a5174",
+  "started_utc": "2026-11-25T17:39:41.421927+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:39:42.710009+00:00",
+      "cost_usd": 0.001534,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001534,
+  "reservation_upper_bound_usd": 0.025572,
+  "response_sha256": "49c2caf29312e1f194e8461f3b73a1dfb150efc806dd6224c002d506caece198",
+  "response": {
+    "id": "gen-1795628380-nxBwCZBUfDitCvz2VnEm",
+    "object": "chat.completion",
+    "created": 1795628380,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.41,\n  \"local_pt\": 0.20,\n  \"long_distance_rail\": 0.13,\n  \"rationale\": \"Two household members increase car use for convenience and luggage, possibly reducing local PT. Long-distance rail is only slightly more likely due to shared ticket discounts, but car remains most attractive for small groups.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 451,
+      "completion_tokens": 79,
+      "total_tokens": 530,
+      "cost": 0.001534,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001534,
+        "upstream_inference_prompt_cost": 0.000902,
+        "upstream_inference_completions_cost": 0.000632
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628380-nxBwCZBUfDitCvz2VnEm",
+  "raw_prediction": {
+    "car": 0.41,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.13,
+    "rationale": "Two household members increase car use for convenience and luggage, possibly reducing local PT. Long-distance rail is only slightly more likely due to shared ticket discounts, but car remains most attractive for small groups."
+  },
+  "prediction": {
+    "car": 0.41,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.13,
+    "rationale": "Two household members increase car use for convenience and luggage, possibly reducing local PT. Long-distance rail is only slightly more likely due to shared ticket discounts, but car remains most attractive for small groups."
+  },
+  "normalization": {
+    "sum_before": 0.74,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:39:42.710009+00:00",
+  "cost_exceeded_reservation": false
+}

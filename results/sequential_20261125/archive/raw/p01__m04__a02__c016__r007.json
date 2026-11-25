@@ -1,0 +1,22 @@
+{
+  "task_id": "p01__m04__a02__c016__r007",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzbegl_gr__b61cbc7c0dd2",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "cd4b79a008c447eb0d57f7f33d00da8b2fca2414d5576ec06fa2cc48bade463b",
+  "started_utc": "2026-11-25T14:32:45.697635+00:00",
+  "attempts": [],
+  "status": "in_progress",
+  "accounted_cost_usd": 0.025572,
+  "reservation_upper_bound_usd": 0.025572
+}

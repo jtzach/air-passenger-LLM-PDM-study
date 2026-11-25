@@ -1,0 +1,100 @@
+{
+  "task_id": "p01__m04__a01__c021__r007__administrative_replacement1",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__ef1ad3950de1",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "supersedes_task_id": "p01__m04__a01__c021__r007",
+  "request_sha256": "eaa90ba4b86a0cd2b187a31c4291aaf3cb0e7292431a9ce88c4c2604de14583a",
+  "started_utc": "2026-11-25T17:34:32.549231+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:34:33.798730+00:00",
+      "cost_usd": 0.001442,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001442,
+  "reservation_upper_bound_usd": 0.023903999999999998,
+  "response_sha256": "a709b6a2904e070157bb0e59ae487e3f228da2a446e7659cccc2b26b6777ff24",
+  "response": {
+    "id": "gen-1795628071-fVLFCPPxDmM96zazAU09",
+    "object": "chat.completion",
+    "created": 1795628071,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.52,\n  \"local_pt\": 0.33,\n  \"long_distance_rail\": 0.14,\n  \"rationale\": \"Single-night air trips suggest short stays, likely regional; car is often used for flexible airport access, local PT less for short trips, long-distance rail probable mainly for non-local airports but less for brief journeys.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 393,
+      "completion_tokens": 82,
+      "total_tokens": 475,
+      "cost": 0.001442,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001442,
+        "upstream_inference_prompt_cost": 0.000786,
+        "upstream_inference_completions_cost": 0.000656
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628071-fVLFCPPxDmM96zazAU09",
+  "raw_prediction": {
+    "car": 0.52,
+    "local_pt": 0.33,
+    "long_distance_rail": 0.14,
+    "rationale": "Single-night air trips suggest short stays, likely regional; car is often used for flexible airport access, local PT less for short trips, long-distance rail probable mainly for non-local airports but less for brief journeys."
+  },
+  "prediction": {
+    "car": 0.52,
+    "local_pt": 0.33,
+    "long_distance_rail": 0.14,
+    "rationale": "Single-night air trips suggest short stays, likely regional; car is often used for flexible airport access, local PT less for short trips, long-distance rail probable mainly for non-local airports but less for brief journeys."
+  },
+  "normalization": {
+    "sum_before": 0.99,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:34:33.798730+00:00",
+  "cost_exceeded_reservation": false
+}

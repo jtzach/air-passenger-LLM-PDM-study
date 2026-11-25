@@ -1,0 +1,106 @@
+{
+  "task_id": "p01__m04__a02__c008__r001",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__RegioStaR7__7b0e1c4f102a",
+  "round": 1,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "9d6ba525b7c29c43efa0d0bcb67d0d7f1bb4cbdf185ac9b411b2e6de7b505d6a",
+  "started_utc": "2026-11-25T14:22:07.797960+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "transport_error",
+      "detail": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>",
+      "utc": "2026-11-25T14:22:31.220520+00:00",
+      "cost_upper_bound_usd": 0.008539999999999999
+    },
+    {
+      "number": 2,
+      "status": "response",
+      "utc": "2026-11-25T14:22:35.635016+00:00",
+      "cost_usd": 0.001526,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.010065999999999999,
+  "reservation_upper_bound_usd": 0.025619999999999997,
+  "response_sha256": "e449ee4f895930b67e9ba89d4d9a62cf02d3f34e52c9173e15dc69a6434b4203",
+  "response": {
+    "id": "gen-1795616554-JStJ5RQmZDPwyjKerKSF",
+    "object": "chat.completion",
+    "created": 1795616554,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.32,\n  \"local_pt\": 0.29,\n  \"long_distance_rail\": 0.18,\n  \"rationale\": \"Metropolis residents have better access to public transport and long-distance rail, so car use may be lower than average, local PT and rail higher, reflecting greater connectivity and airport access by transit.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 451,
+      "completion_tokens": 78,
+      "total_tokens": 529,
+      "cost": 0.001526,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001526,
+        "upstream_inference_prompt_cost": 0.000902,
+        "upstream_inference_completions_cost": 0.000624
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616554-JStJ5RQmZDPwyjKerKSF",
+  "raw_prediction": {
+    "car": 0.32,
+    "local_pt": 0.29,
+    "long_distance_rail": 0.18,
+    "rationale": "Metropolis residents have better access to public transport and long-distance rail, so car use may be lower than average, local PT and rail higher, reflecting greater connectivity and airport access by transit."
+  },
+  "prediction": {
+    "car": 0.32,
+    "local_pt": 0.29,
+    "long_distance_rail": 0.18,
+    "rationale": "Metropolis residents have better access to public transport and long-distance rail, so car use may be lower than average, local PT and rail higher, reflecting greater connectivity and airport access by transit."
+  },
+  "normalization": {
+    "sum_before": 0.79,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:22:35.635016+00:00",
+  "cost_exceeded_reservation": false
+}

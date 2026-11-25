@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m01__a01__c009__r001",
+  "block_id": "p01__m01__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "unanchored",
+  "card_id": "reise__RegioStaR7__7cdab1586e04",
+  "round": 1,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "e518cbf68a858d87bda75091327689aca3f93be2084a55606eddb6f13105c988",
+  "started_utc": "2026-11-25T14:21:49.168693+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:21:51.027445+00:00",
+      "cost_usd": 2.102e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.102e-05,
+  "reservation_upper_bound_usd": 0.00033438,
+  "response_sha256": "ff2a3d2915bd4bc9d6c794063200830a878385a1d22f702159093d65f4242ee1",
+  "response": {
+    "id": "gen-1795616509-JXYFO9Izft7pnsvfgrKw",
+    "object": "chat.completion",
+    "created": 1795616509,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.3, \"local_pt\": 0.2, \"long_distance_rail\": 0.1, \"rationale\": \"Given the origin is an urban region (regiopolis or large city), combined with an overnight flight, it's likely some respondents used ground transport to reach the airport. Local public transport and long-distance rail are common for such trips.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 418,
+      "completion_tokens": 86,
+      "total_tokens": 504,
+      "cost": 2.102e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.102e-05,
+        "upstream_inference_prompt_cost": 1.672e-05,
+        "upstream_inference_completions_cost": 4.3e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616509-JXYFO9Izft7pnsvfgrKw",
+  "raw_prediction": {
+    "car": 0.3,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.1,
+    "rationale": "Given the origin is an urban region (regiopolis or large city), combined with an overnight flight, it's likely some respondents used ground transport to reach the airport. Local public transport and long-distance rail are common for such trips."
+  },
+  "prediction": {
+    "car": 0.3,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.1,
+    "rationale": "Given the origin is an urban region (regiopolis or large city), combined with an overnight flight, it's likely some respondents used ground transport to reach the airport. Local public transport and long-distance rail are common for such trips."
+  },
+  "normalization": {
+    "sum_before": 0.6,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:21:51.027445+00:00",
+  "cost_exceeded_reservation": false
+}

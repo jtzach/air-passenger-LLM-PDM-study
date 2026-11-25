@@ -1,0 +1,85 @@
+block_id,model_id,arm,group,reference_group,mode,observed_difference_pp,predicted_difference_pp,contrast_error_pp,n_rounds,interpretation
+p01__m01__a02,google/gemma-3-4b-it,overall_rate_anchored,4 or more cars,No car,car,43.437323132838316,17.5,-25.937323132838312,2,descriptive association; no car-ownership causal effect
+p01__m01__a02,google/gemma-3-4b-it,overall_rate_anchored,4 or more cars,No car,local_pt,-30.730237269046178,10.000000000000004,40.730237269046185,2,descriptive association; no car-ownership causal effect
+p01__m01__a02,google/gemma-3-4b-it,overall_rate_anchored,4 or more cars,No car,long_distance_rail,-3.7782366721425626,4.5,8.278236672142562,2,descriptive association; no car-ownership causal effect
+p01__m01__a02,google/gemma-3-4b-it,overall_rate_anchored,3 cars,No car,car,35.291566535026,12.5,-22.791566535025996,2,descriptive association; no car-ownership causal effect
+p01__m01__a02,google/gemma-3-4b-it,overall_rate_anchored,3 cars,No car,local_pt,-30.361109318292907,8.500000000000002,38.86110931829291,2,descriptive association; no car-ownership causal effect
+p01__m01__a02,google/gemma-3-4b-it,overall_rate_anchored,3 cars,No car,long_distance_rail,-4.595763285920573,6.999999999999999,11.595763285920572,2,descriptive association; no car-ownership causal effect
+p01__m01__a02,google/gemma-3-4b-it,overall_rate_anchored,1 car,No car,car,21.412324301858295,12.5,-8.912324301858296,2,descriptive association; no car-ownership causal effect
+p01__m01__a02,google/gemma-3-4b-it,overall_rate_anchored,1 car,No car,local_pt,-16.653723567378677,8.500000000000002,25.153723567378684,2,descriptive association; no car-ownership causal effect
+p01__m01__a02,google/gemma-3-4b-it,overall_rate_anchored,1 car,No car,long_distance_rail,-5.000383265736123,6.999999999999999,12.000383265736122,2,descriptive association; no car-ownership causal effect
+p01__m01__a02,google/gemma-3-4b-it,overall_rate_anchored,2 cars,No car,car,31.228277934529046,12.5,-18.728277934529046,2,descriptive association; no car-ownership causal effect
+p01__m01__a02,google/gemma-3-4b-it,overall_rate_anchored,2 cars,No car,local_pt,-26.172744566305216,8.500000000000002,34.67274456630522,2,descriptive association; no car-ownership causal effect
+p01__m01__a02,google/gemma-3-4b-it,overall_rate_anchored,2 cars,No car,long_distance_rail,-5.789035576381991,6.999999999999999,12.789035576381991,2,descriptive association; no car-ownership causal effect
+p01__m02__a01,openai/gpt-4.1-mini,unanchored,4 or more cars,No car,car,43.437323132838316,69.6875,26.25017686716169,16,descriptive association; no car-ownership causal effect
+p01__m02__a01,openai/gpt-4.1-mini,unanchored,4 or more cars,No car,local_pt,-30.730237269046178,-3.125,27.605237269046178,16,descriptive association; no car-ownership causal effect
+p01__m02__a01,openai/gpt-4.1-mini,unanchored,4 or more cars,No car,long_distance_rail,-3.7782366721425626,3.125,6.903236672142563,16,descriptive association; no car-ownership causal effect
+p01__m02__a01,openai/gpt-4.1-mini,unanchored,3 cars,No car,car,35.291566535026,63.4375,28.145933464974004,16,descriptive association; no car-ownership causal effect
+p01__m02__a01,openai/gpt-4.1-mini,unanchored,3 cars,No car,local_pt,-30.361109318292907,-9.375,20.986109318292907,16,descriptive association; no car-ownership causal effect
+p01__m02__a01,openai/gpt-4.1-mini,unanchored,3 cars,No car,long_distance_rail,-4.595763285920573,0.0,4.595763285920573,16,descriptive association; no car-ownership causal effect
+p01__m02__a01,openai/gpt-4.1-mini,unanchored,1 car,No car,car,21.412324301858295,57.1875,35.7751756981417,16,descriptive association; no car-ownership causal effect
+p01__m02__a01,openai/gpt-4.1-mini,unanchored,1 car,No car,local_pt,-16.653723567378677,-7.187499999999991,9.466223567378687,16,descriptive association; no car-ownership causal effect
+p01__m02__a01,openai/gpt-4.1-mini,unanchored,1 car,No car,long_distance_rail,-5.000383265736123,-1.874999999999999,3.1253832657361245,16,descriptive association; no car-ownership causal effect
+p01__m02__a01,openai/gpt-4.1-mini,unanchored,2 cars,No car,car,31.228277934529046,59.68750000000001,28.459222065470957,16,descriptive association; no car-ownership causal effect
+p01__m02__a01,openai/gpt-4.1-mini,unanchored,2 cars,No car,local_pt,-26.172744566305216,-5.312499999999998,20.86024456630522,16,descriptive association; no car-ownership causal effect
+p01__m02__a01,openai/gpt-4.1-mini,unanchored,2 cars,No car,long_distance_rail,-5.789035576381991,4.062499999999999,9.851535576381991,16,descriptive association; no car-ownership causal effect
+p01__m02__a02,openai/gpt-4.1-mini,overall_rate_anchored,4 or more cars,No car,car,43.437323132838316,51.24999999999999,7.812676867161683,16,descriptive association; no car-ownership causal effect
+p01__m02__a02,openai/gpt-4.1-mini,overall_rate_anchored,4 or more cars,No car,local_pt,-30.730237269046178,-5.75,24.980237269046178,16,descriptive association; no car-ownership causal effect
+p01__m02__a02,openai/gpt-4.1-mini,overall_rate_anchored,4 or more cars,No car,long_distance_rail,-3.7782366721425626,1.5625,5.340736672142563,16,descriptive association; no car-ownership causal effect
+p01__m02__a02,openai/gpt-4.1-mini,overall_rate_anchored,3 cars,No car,car,35.291566535026,42.50000000000001,7.2084334649740125,16,descriptive association; no car-ownership causal effect
+p01__m02__a02,openai/gpt-4.1-mini,overall_rate_anchored,3 cars,No car,local_pt,-30.361109318292907,-10.249999999999995,20.11110931829291,16,descriptive association; no car-ownership causal effect
+p01__m02__a02,openai/gpt-4.1-mini,overall_rate_anchored,3 cars,No car,long_distance_rail,-4.595763285920573,0.6250000000000006,5.220763285920574,16,descriptive association; no car-ownership causal effect
+p01__m02__a02,openai/gpt-4.1-mini,overall_rate_anchored,1 car,No car,car,21.412324301858295,34.875,13.462675698141705,16,descriptive association; no car-ownership causal effect
+p01__m02__a02,openai/gpt-4.1-mini,overall_rate_anchored,1 car,No car,local_pt,-16.653723567378677,-9.124999999999996,7.528723567378681,16,descriptive association; no car-ownership causal effect
+p01__m02__a02,openai/gpt-4.1-mini,overall_rate_anchored,1 car,No car,long_distance_rail,-5.000383265736123,0.9375000000000009,5.937883265736124,16,descriptive association; no car-ownership causal effect
+p01__m02__a02,openai/gpt-4.1-mini,overall_rate_anchored,2 cars,No car,car,31.228277934529046,38.43750000000001,7.209222065470961,16,descriptive association; no car-ownership causal effect
+p01__m02__a02,openai/gpt-4.1-mini,overall_rate_anchored,2 cars,No car,local_pt,-26.172744566305216,-9.687499999999996,16.48524456630522,16,descriptive association; no car-ownership causal effect
+p01__m02__a02,openai/gpt-4.1-mini,overall_rate_anchored,2 cars,No car,long_distance_rail,-5.789035576381991,1.250000000000001,7.039035576381993,16,descriptive association; no car-ownership causal effect
+p01__m03__a01,qwen/qwen3-235b-a22b-2507,unanchored,4 or more cars,No car,car,43.437323132838316,21.999999999999996,-21.437323132838316,10,descriptive association; no car-ownership causal effect
+p01__m03__a01,qwen/qwen3-235b-a22b-2507,unanchored,4 or more cars,No car,local_pt,-30.730237269046178,-6.0,24.730237269046178,10,descriptive association; no car-ownership causal effect
+p01__m03__a01,qwen/qwen3-235b-a22b-2507,unanchored,4 or more cars,No car,long_distance_rail,-3.7782366721425626,0.0,3.7782366721425626,10,descriptive association; no car-ownership causal effect
+p01__m03__a01,qwen/qwen3-235b-a22b-2507,unanchored,3 cars,No car,car,35.291566535026,13.0,-22.291566535025996,10,descriptive association; no car-ownership causal effect
+p01__m03__a01,qwen/qwen3-235b-a22b-2507,unanchored,3 cars,No car,local_pt,-30.361109318292907,-2.4999999999999964,27.86110931829291,10,descriptive association; no car-ownership causal effect
+p01__m03__a01,qwen/qwen3-235b-a22b-2507,unanchored,3 cars,No car,long_distance_rail,-4.595763285920573,1.0000000000000009,5.595763285920574,10,descriptive association; no car-ownership causal effect
+p01__m03__a01,qwen/qwen3-235b-a22b-2507,unanchored,1 car,No car,car,21.412324301858295,8.499999999999996,-12.9123243018583,10,descriptive association; no car-ownership causal effect
+p01__m03__a01,qwen/qwen3-235b-a22b-2507,unanchored,1 car,No car,local_pt,-16.653723567378677,0.5000000000000004,17.15372356737868,10,descriptive association; no car-ownership causal effect
+p01__m03__a01,qwen/qwen3-235b-a22b-2507,unanchored,1 car,No car,long_distance_rail,-5.000383265736123,-0.9999999999999981,4.000383265736125,10,descriptive association; no car-ownership causal effect
+p01__m03__a01,qwen/qwen3-235b-a22b-2507,unanchored,2 cars,No car,car,31.228277934529046,10.999999999999998,-20.22827793452905,10,descriptive association; no car-ownership causal effect
+p01__m03__a01,qwen/qwen3-235b-a22b-2507,unanchored,2 cars,No car,local_pt,-26.172744566305216,0.0,26.172744566305216,10,descriptive association; no car-ownership causal effect
+p01__m03__a01,qwen/qwen3-235b-a22b-2507,unanchored,2 cars,No car,long_distance_rail,-5.789035576381991,1.5000000000000013,7.289035576381993,10,descriptive association; no car-ownership causal effect
+p01__m03__a02,qwen/qwen3-235b-a22b-2507,overall_rate_anchored,4 or more cars,No car,car,43.437323132838316,45.0,1.5626768671616886,8,descriptive association; no car-ownership causal effect
+p01__m03__a02,qwen/qwen3-235b-a22b-2507,overall_rate_anchored,4 or more cars,No car,local_pt,-30.730237269046178,-14.999999999999996,15.730237269046182,8,descriptive association; no car-ownership causal effect
+p01__m03__a02,qwen/qwen3-235b-a22b-2507,overall_rate_anchored,4 or more cars,No car,long_distance_rail,-3.7782366721425626,-10.0,-6.2217633278574365,8,descriptive association; no car-ownership causal effect
+p01__m03__a02,qwen/qwen3-235b-a22b-2507,overall_rate_anchored,3 cars,No car,car,35.291566535026,41.25,5.958433464974005,8,descriptive association; no car-ownership causal effect
+p01__m03__a02,qwen/qwen3-235b-a22b-2507,overall_rate_anchored,3 cars,No car,local_pt,-30.361109318292907,-12.999999999999998,17.361109318292907,8,descriptive association; no car-ownership causal effect
+p01__m03__a02,qwen/qwen3-235b-a22b-2507,overall_rate_anchored,3 cars,No car,long_distance_rail,-4.595763285920573,-8.749999999999998,-4.154236714079425,8,descriptive association; no car-ownership causal effect
+p01__m03__a02,qwen/qwen3-235b-a22b-2507,overall_rate_anchored,1 car,No car,car,21.412324301858295,31.250000000000007,9.837675698141709,8,descriptive association; no car-ownership causal effect
+p01__m03__a02,qwen/qwen3-235b-a22b-2507,overall_rate_anchored,1 car,No car,local_pt,-16.653723567378677,-11.124999999999998,5.528723567378679,8,descriptive association; no car-ownership causal effect
+p01__m03__a02,qwen/qwen3-235b-a22b-2507,overall_rate_anchored,1 car,No car,long_distance_rail,-5.000383265736123,-7.749999999999998,-2.749616734263875,8,descriptive association; no car-ownership causal effect
+p01__m03__a02,qwen/qwen3-235b-a22b-2507,overall_rate_anchored,2 cars,No car,car,31.228277934529046,33.75000000000001,2.5217220654709607,8,descriptive association; no car-ownership causal effect
+p01__m03__a02,qwen/qwen3-235b-a22b-2507,overall_rate_anchored,2 cars,No car,local_pt,-26.172744566305216,-11.875,14.297744566305218,8,descriptive association; no car-ownership causal effect
+p01__m03__a02,qwen/qwen3-235b-a22b-2507,overall_rate_anchored,2 cars,No car,long_distance_rail,-5.789035576381991,-8.124999999999998,-2.3359644236180075,8,descriptive association; no car-ownership causal effect
+p01__m04__a01,openai/gpt-4.1,unanchored,4 or more cars,No car,car,43.437323132838316,67.75,24.312676867161688,16,descriptive association; no car-ownership causal effect
+p01__m04__a01,openai/gpt-4.1,unanchored,4 or more cars,No car,local_pt,-30.730237269046178,-51.24999999999999,-20.519762730953815,16,descriptive association; no car-ownership causal effect
+p01__m04__a01,openai/gpt-4.1,unanchored,4 or more cars,No car,long_distance_rail,-3.7782366721425626,-29.1875,-25.409263327857435,16,descriptive association; no car-ownership causal effect
+p01__m04__a01,openai/gpt-4.1,unanchored,3 cars,No car,car,35.291566535026,65.9375,30.645933464973997,16,descriptive association; no car-ownership causal effect
+p01__m04__a01,openai/gpt-4.1,unanchored,3 cars,No car,local_pt,-30.361109318292907,-43.99999999999999,-13.638890681707089,16,descriptive association; no car-ownership causal effect
+p01__m04__a01,openai/gpt-4.1,unanchored,3 cars,No car,long_distance_rail,-4.595763285920573,-26.125,-21.529236714079424,16,descriptive association; no car-ownership causal effect
+p01__m04__a01,openai/gpt-4.1,unanchored,1 car,No car,car,21.412324301858295,43.6875,22.275175698141705,16,descriptive association; no car-ownership causal effect
+p01__m04__a01,openai/gpt-4.1,unanchored,1 car,No car,local_pt,-16.653723567378677,-34.1875,-17.53377643262132,16,descriptive association; no car-ownership causal effect
+p01__m04__a01,openai/gpt-4.1,unanchored,1 car,No car,long_distance_rail,-5.000383265736123,-18.9375,-13.937116734263878,16,descriptive association; no car-ownership causal effect
+p01__m04__a01,openai/gpt-4.1,unanchored,2 cars,No car,car,31.228277934529046,56.75,25.521722065470954,16,descriptive association; no car-ownership causal effect
+p01__m04__a01,openai/gpt-4.1,unanchored,2 cars,No car,local_pt,-26.172744566305216,-37.875,-11.70225543369478,16,descriptive association; no car-ownership causal effect
+p01__m04__a01,openai/gpt-4.1,unanchored,2 cars,No car,long_distance_rail,-5.789035576381991,-22.0625,-16.273464423618012,16,descriptive association; no car-ownership causal effect
+p01__m04__a02,openai/gpt-4.1,overall_rate_anchored,4 or more cars,No car,car,43.437323132838316,43.75,0.3126768671616875,16,descriptive association; no car-ownership causal effect
+p01__m04__a02,openai/gpt-4.1,overall_rate_anchored,4 or more cars,No car,local_pt,-30.730237269046178,-19.375,11.355237269046178,16,descriptive association; no car-ownership causal effect
+p01__m04__a02,openai/gpt-4.1,overall_rate_anchored,4 or more cars,No car,long_distance_rail,-3.7782366721425626,-11.6875,-7.909263327857438,16,descriptive association; no car-ownership causal effect
+p01__m04__a02,openai/gpt-4.1,overall_rate_anchored,3 cars,No car,car,35.291566535026,38.81250000000001,3.5209334649740076,16,descriptive association; no car-ownership causal effect
+p01__m04__a02,openai/gpt-4.1,overall_rate_anchored,3 cars,No car,local_pt,-30.361109318292907,-16.6875,13.673609318292906,16,descriptive association; no car-ownership causal effect
+p01__m04__a02,openai/gpt-4.1,overall_rate_anchored,3 cars,No car,long_distance_rail,-4.595763285920573,-10.500000000000002,-5.904236714079428,16,descriptive association; no car-ownership causal effect
+p01__m04__a02,openai/gpt-4.1,overall_rate_anchored,1 car,No car,car,21.412324301858295,28.6875,7.2751756981417035,16,descriptive association; no car-ownership causal effect
+p01__m04__a02,openai/gpt-4.1,overall_rate_anchored,1 car,No car,local_pt,-16.653723567378677,-13.6875,2.9662235673786785,16,descriptive association; no car-ownership causal effect
+p01__m04__a02,openai/gpt-4.1,overall_rate_anchored,1 car,No car,long_distance_rail,-5.000383265736123,-8.375,-3.3746167342638773,16,descriptive association; no car-ownership causal effect
+p01__m04__a02,openai/gpt-4.1,overall_rate_anchored,2 cars,No car,car,31.228277934529046,33.375,2.146722065470952,16,descriptive association; no car-ownership causal effect
+p01__m04__a02,openai/gpt-4.1,overall_rate_anchored,2 cars,No car,local_pt,-26.172744566305216,-15.437499999999998,10.73524456630522,16,descriptive association; no car-ownership causal effect
+p01__m04__a02,openai/gpt-4.1,overall_rate_anchored,2 cars,No car,long_distance_rail,-5.789035576381991,-9.6875,-3.898464423618009,16,descriptive association; no car-ownership causal effect

@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c014__r006",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzbegl_gr__154f6eb18583",
+  "round": 6,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "a63be60cd0e02d2409f5f043ab2512aacc06641c4f4d5ca5f48ec938f0d8d3b1",
+  "started_utc": "2026-11-25T14:31:57.369858+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:31:58.797217+00:00",
+      "cost_usd": 0.00143,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00143,
+  "reservation_upper_bound_usd": 0.023933999999999997,
+  "response_sha256": "e9a1ac504facf64b165a8e2419560b5dc0ee6ff21cac53f834df8e455ee0f9e4",
+  "response": {
+    "id": "gen-1795617117-wVcI5VZbEBO9WzXrxZYw",
+    "object": "chat.completion",
+    "created": 1795617117,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.40,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.20,\n  \"rationale\": \"Solo, Germany-based air travellers often access airports by car or public transport. Car use is common but solo status reduces likelihood. Long-distance rail is less frequent but possible, especially for intercity airport access.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 391,
+      "completion_tokens": 81,
+      "total_tokens": 472,
+      "cost": 0.00143,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00143,
+        "upstream_inference_prompt_cost": 0.000782,
+        "upstream_inference_completions_cost": 0.000648
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795617117-wVcI5VZbEBO9WzXrxZYw",
+  "raw_prediction": {
+    "car": 0.4,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.2,
+    "rationale": "Solo, Germany-based air travellers often access airports by car or public transport. Car use is common but solo status reduces likelihood. Long-distance rail is less frequent but possible, especially for intercity airport access."
+  },
+  "prediction": {
+    "car": 0.4,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.2,
+    "rationale": "Solo, Germany-based air travellers often access airports by car or public transport. Car use is common but solo status reduces likelihood. Long-distance rail is less frequent but possible, especially for intercity airport access."
+  },
+  "normalization": {
+    "sum_before": 0.95,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:31:58.797217+00:00",
+  "cost_exceeded_reservation": false
+}

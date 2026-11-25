@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c022__r008",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__f6e4375535d4",
+  "round": 8,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "460f30ce8fd1edabbae4d435ea350e8edcec81d15b8d44c0990debebe87b83a1",
+  "started_utc": "2026-11-25T17:36:15.361968+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:36:16.942262+00:00",
+      "cost_usd": 0.001462,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001462,
+  "reservation_upper_bound_usd": 0.023921999999999995,
+  "response_sha256": "c5b6233ca913d071a7447f1740383519681748e13b16b87ec4c78c8743c6bb9d",
+  "response": {
+    "id": "gen-1795628174-PlUYoiWXMX6S6cAzkwUG",
+    "object": "chat.completion",
+    "created": 1795628174,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.30,\n  \"long_distance_rail\": 0.22,\n  \"rationale\": \"6-7 nights implies substantial travel, so airport access/egress often involves car (private or shared), but public/local transport and long-distance rail are common alternatives, especially given urbanization and Germany’s rail connectivity.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 395,
+      "completion_tokens": 84,
+      "total_tokens": 479,
+      "cost": 0.001462,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001462,
+        "upstream_inference_prompt_cost": 0.00079,
+        "upstream_inference_completions_cost": 0.000672
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628174-PlUYoiWXMX6S6cAzkwUG",
+  "raw_prediction": {
+    "car": 0.45,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.22,
+    "rationale": "6-7 nights implies substantial travel, so airport access/egress often involves car (private or shared), but public/local transport and long-distance rail are common alternatives, especially given urbanization and Germany’s rail connectivity."
+  },
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.22,
+    "rationale": "6-7 nights implies substantial travel, so airport access/egress often involves car (private or shared), but public/local transport and long-distance rail are common alternatives, especially given urbanization and Germany’s rail connectivity."
+  },
+  "normalization": {
+    "sum_before": 0.97,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:36:16.942262+00:00",
+  "cost_exceeded_reservation": false
+}

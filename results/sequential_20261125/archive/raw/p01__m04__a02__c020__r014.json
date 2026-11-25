@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c020__r014",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__9ee7f61bb0c0",
+  "round": 14,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "98057eddf4d0b5bb638311757f0e150e2fca092abf6113122296b2469f350313",
+  "started_utc": "2026-11-25T17:41:34.993901+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:41:36.169565+00:00",
+      "cost_usd": 0.001592,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001592,
+  "reservation_upper_bound_usd": 0.025554,
+  "response_sha256": "7502e0db3011efab0625e8ffa5a16c87cc4ed32c694e609ba88c40ad67a3a434",
+  "response": {
+    "id": "gen-1795628494-bKqWReVeJpZ4kcVXKbwL",
+    "object": "chat.completion",
+    "created": 1795628494,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.38,\n  \"local_pt\": 0.22,\n  \"long_distance_rail\": 0.13,\n  \"rationale\": \"Three nights away suggests typical leisure or business trips, likely mirroring population rates. Duration doesn't strongly bias car or rail use compared to shorter or longer trips; thus, I estimate probabilities close to, but slightly above, population averages.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 452,
+      "completion_tokens": 86,
+      "total_tokens": 538,
+      "cost": 0.001592,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001592,
+        "upstream_inference_prompt_cost": 0.000904,
+        "upstream_inference_completions_cost": 0.000688
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628494-bKqWReVeJpZ4kcVXKbwL",
+  "raw_prediction": {
+    "car": 0.38,
+    "local_pt": 0.22,
+    "long_distance_rail": 0.13,
+    "rationale": "Three nights away suggests typical leisure or business trips, likely mirroring population rates. Duration doesn't strongly bias car or rail use compared to shorter or longer trips; thus, I estimate probabilities close to, but slightly above, population averages."
+  },
+  "prediction": {
+    "car": 0.38,
+    "local_pt": 0.22,
+    "long_distance_rail": 0.13,
+    "rationale": "Three nights away suggests typical leisure or business trips, likely mirroring population rates. Duration doesn't strongly bias car or rail use compared to shorter or longer trips; thus, I estimate probabilities close to, but slightly above, population averages."
+  },
+  "normalization": {
+    "sum_before": 0.73,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:41:36.169565+00:00",
+  "cost_exceeded_reservation": false
+}

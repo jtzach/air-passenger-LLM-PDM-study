@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c016__r014",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzbegl_gr__b61cbc7c0dd2",
+  "round": 14,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "2543ac03671c586721097b3ce9d87c1b39257ffaffcd5a13cea1a679e09561a1",
+  "started_utc": "2026-11-25T17:41:36.559996+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:41:37.702498+00:00",
+      "cost_usd": 0.001518,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001518,
+  "reservation_upper_bound_usd": 0.025572,
+  "response_sha256": "733a6e5a72584a794d606fca7a56b8163fbeba9d73e839cdc82b1bfb1c6c5359",
+  "response": {
+    "id": "gen-1795628495-3TjJzya7KtwAjEvgTQno",
+    "object": "chat.completion",
+    "created": 1795628495,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.42,\n  \"local_pt\": 0.20,\n  \"long_distance_rail\": 0.11,\n  \"rationale\": \"Travelling with a household companion likely increases car use for convenience and luggage reasons, while shared travel may reduce reliance on public or long-distance rail compared to solo travellers; probabilities adjusted accordingly.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 451,
+      "completion_tokens": 77,
+      "total_tokens": 528,
+      "cost": 0.001518,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001518,
+        "upstream_inference_prompt_cost": 0.000902,
+        "upstream_inference_completions_cost": 0.000616
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628495-3TjJzya7KtwAjEvgTQno",
+  "raw_prediction": {
+    "car": 0.42,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.11,
+    "rationale": "Travelling with a household companion likely increases car use for convenience and luggage reasons, while shared travel may reduce reliance on public or long-distance rail compared to solo travellers; probabilities adjusted accordingly."
+  },
+  "prediction": {
+    "car": 0.42,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.11,
+    "rationale": "Travelling with a household companion likely increases car use for convenience and luggage reasons, while shared travel may reduce reliance on public or long-distance rail compared to solo travellers; probabilities adjusted accordingly."
+  },
+  "normalization": {
+    "sum_before": 0.73,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:41:37.702498+00:00",
+  "cost_exceeded_reservation": false
+}

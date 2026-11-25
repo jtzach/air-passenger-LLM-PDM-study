@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c013__r010",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzbegl_gr__07f355b725cf",
+  "round": 10,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "7eab8425154f7d7e7c8652a02db7f94a54c017fba7771c7e1344baf945947070",
+  "started_utc": "2026-11-25T17:39:27.170775+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:39:28.427093+00:00",
+      "cost_usd": 0.00151,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00151,
+  "reservation_upper_bound_usd": 0.025577999999999997,
+  "response_sha256": "1f92396b8f882af19bf8f62fde1581c32655a785694e5033c63c86c6b0ca4465",
+  "response": {
+    "id": "gen-1795628366-iDQgrNuUkn0jV3mBHlme",
+    "object": "chat.completion",
+    "created": 1795628366,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.46,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Travelling with two household companions raises the likelihood of car use for airport access due to convenience and cost-sharing, while public and long-distance rail become somewhat less attractive for group coordination.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 451,
+      "completion_tokens": 76,
+      "total_tokens": 527,
+      "cost": 0.00151,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00151,
+        "upstream_inference_prompt_cost": 0.000902,
+        "upstream_inference_completions_cost": 0.000608
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628366-iDQgrNuUkn0jV3mBHlme",
+  "raw_prediction": {
+    "car": 0.46,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Travelling with two household companions raises the likelihood of car use for airport access due to convenience and cost-sharing, while public and long-distance rail become somewhat less attractive for group coordination."
+  },
+  "prediction": {
+    "car": 0.46,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Travelling with two household companions raises the likelihood of car use for airport access due to convenience and cost-sharing, while public and long-distance rail become somewhat less attractive for group coordination."
+  },
+  "normalization": {
+    "sum_before": 0.74,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:39:28.427093+00:00",
+  "cost_exceeded_reservation": false
+}

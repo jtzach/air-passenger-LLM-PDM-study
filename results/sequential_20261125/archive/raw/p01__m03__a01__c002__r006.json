@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a01__c002__r006",
+  "block_id": "p01__m03__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "unanchored",
+  "card_id": "reise__anzauto_gr1__79ed954bbe2c",
+  "round": 6,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "1484d24b72a56e617c68a5f75e5c6ddd9657bdd08f5f9f6b0a113441aa21d840",
+  "started_utc": "2026-11-25T14:32:09.164295+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:32:16.301092+00:00",
+      "cost_usd": 0.00010899,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00010899,
+  "reservation_upper_bound_usd": 0.00200526,
+  "response_sha256": "5cb0ae478eef7deb627200338bdb7e32df68c2e21d042c695208f01634848ed9",
+  "response": {
+    "id": "gen-1795617129-jgLQB0oOjaiB37a6y92Z",
+    "object": "chat.completion",
+    "created": 1795617129,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.85,\n  \"local_pt\": 0.3,\n  \"long_distance_rail\": 0.2,\n  \"rationale\": \"High car availability suggests frequent car use for access; lower public transport use due to airport locations and household resources enabling car dependency.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 404,
+      "completion_tokens": 66,
+      "total_tokens": 470,
+      "cost": 0.00010899,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00010899,
+        "upstream_inference_prompt_cost": 5.454e-05,
+        "upstream_inference_completions_cost": 5.445e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795617129-jgLQB0oOjaiB37a6y92Z",
+  "raw_prediction": {
+    "car": 0.85,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.2,
+    "rationale": "High car availability suggests frequent car use for access; lower public transport use due to airport locations and household resources enabling car dependency."
+  },
+  "prediction": {
+    "car": 0.85,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.2,
+    "rationale": "High car availability suggests frequent car use for access; lower public transport use due to airport locations and household resources enabling car dependency."
+  },
+  "normalization": {
+    "sum_before": 1.35,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:32:16.301092+00:00",
+  "cost_exceeded_reservation": false
+}

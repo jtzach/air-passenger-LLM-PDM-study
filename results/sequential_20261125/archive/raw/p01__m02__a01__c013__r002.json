@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m02__a01__c013__r002",
+  "block_id": "p01__m02__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "unanchored",
+  "card_id": "reise__anzbegl_gr__07f355b725cf",
+  "round": 2,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "68352723cfb963dc3565297077ef4e8741b509f43090b2523284328f47e4593e",
+  "started_utc": "2026-11-25T14:25:01.675440+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:25:03.323588+00:00",
+      "cost_usd": 0.0002768,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002768,
+  "reservation_upper_bound_usd": 0.0047928,
+  "response_sha256": "83e392559adeef57bf5a8ccaa4108df9982b5c82dd972b658bd168cdada7d749",
+  "response": {
+    "id": "gen-1795616701-8LoA6Yo5IYNh7pm06HLA",
+    "object": "chat.completion",
+    "created": 1795616701,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.45,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"Household companions suggest shared car travel. Local public transport likely for airport access in urban areas. Long-distance rail less common but plausible for multimodal trips combining train and plane.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 392,
+      "completion_tokens": 75,
+      "total_tokens": 467,
+      "cost": 0.0002768,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002768,
+        "upstream_inference_prompt_cost": 0.0001568,
+        "upstream_inference_completions_cost": 0.00012
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795616701-8LoA6Yo5IYNh7pm06HLA",
+  "raw_prediction": {
+    "car": 0.55,
+    "local_pt": 0.45,
+    "long_distance_rail": 0.25,
+    "rationale": "Household companions suggest shared car travel. Local public transport likely for airport access in urban areas. Long-distance rail less common but plausible for multimodal trips combining train and plane."
+  },
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.45,
+    "long_distance_rail": 0.25,
+    "rationale": "Household companions suggest shared car travel. Local public transport likely for airport access in urban areas. Long-distance rail less common but plausible for multimodal trips combining train and plane."
+  },
+  "normalization": {
+    "sum_before": 1.25,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:25:03.323588+00:00",
+  "cost_exceeded_reservation": false
+}

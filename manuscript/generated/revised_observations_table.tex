@@ -1,0 +1,12 @@
+% Fixed descriptive illustrations; exact calculation inputs are archived in publication_observations.json.
+\begingroup\footnotesize\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.2}
+\noindent\begin{tabular}{@{}>{\raggedright\arraybackslash}p{.27\linewidth}>{\centering\arraybackslash}p{.075\linewidth}>{\centering\arraybackslash}p{.075\linewidth}>{\centering\arraybackslash}p{.075\linewidth}>{\raggedright\arraybackslash}p{.38\linewidth}@{}}
+\toprule Comparison & Data & LLM & Error & What it means / limit \\ \midrule
+Rail co-use: 4+ cars minus no car & -3.8 & -11.7 & -7.9 & The model predicts a larger contrast. Both household groups still report rail co-use. \\
+Rail co-use: small towns/villages in urban regions & 23.3 & 9.4 & -13.9 & The model underpredicts this group's rail use. The rail leg need not be airport access. \\
+Taxi/ride-hail: business minus private & +12.7 & +4.6 & -8.2 & The model predicts a smaller contrast. Flight-region composition also differs by purpose. \\
+Private-car access: intercontinental minus domestic, private trips & +0.2 & +2.0 & +1.8 & The model predicts a larger contrast. Car categories include parking with a shuttle. \\
+\bottomrule
+\multicolumn{5}{@{}p{.98\linewidth}@{}}{\scriptsize Fixed illustrations, using GPT-4.1 with the overall hint for MiD ($N=16$ complete rounds) and without a hint for the airport ($N=16$). Data/LLM entries are percentage-point differences, except the residential-area row, which gives percentages. Error is LLM minus data in percentage points. Errors use unrounded values. Model values average the complete prefix; no unavailable output is substituted. Purpose aggregates use the observed mix of flight regions within each purpose, for both data and predictions. These descriptive examples were fixed before the final results and carry no separate significance claim.}
+\end{tabular}
+\endgroup

@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a01__c019__r011",
+  "block_id": "p01__m03__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__782410ef69d3",
+  "round": 11,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "b23d3edb43da3d5d180973d1d229487599317d111007c03e435d7f37bbde7ae0",
+  "started_utc": "2026-11-25T17:39:54.889047+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:40:24.636181+00:00",
+      "cost_usd": 0.00012576,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00012576,
+  "reservation_upper_bound_usd": 0.00200652,
+  "response_sha256": "6fd77d4c0db3792a6f033994112d0745e8e474d5ad6f6847565048b1dd548836",
+  "response": {
+    "id": "gen-1795628394-VtvUKvIYTHyMpRoIsMTU",
+    "object": "chat.completion",
+    "created": 1795628394,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.75,\n  \"local_pt\": 0.45,\n  \"long_distance_rail\": 0.3,\n  \"rationale\": \"Longer stays suggest non-urgent travel, increasing likelihood of car use for flexibility. Airports are often outside cities, raising car and local transit use. Long-distance rail competes less for medium-length trips with flights.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 406,
+      "completion_tokens": 86,
+      "total_tokens": 492,
+      "cost": 0.00012576,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00012576,
+        "upstream_inference_prompt_cost": 5.481e-05,
+        "upstream_inference_completions_cost": 7.095e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795628394-VtvUKvIYTHyMpRoIsMTU",
+  "raw_prediction": {
+    "car": 0.75,
+    "local_pt": 0.45,
+    "long_distance_rail": 0.3,
+    "rationale": "Longer stays suggest non-urgent travel, increasing likelihood of car use for flexibility. Airports are often outside cities, raising car and local transit use. Long-distance rail competes less for medium-length trips with flights."
+  },
+  "prediction": {
+    "car": 0.75,
+    "local_pt": 0.45,
+    "long_distance_rail": 0.3,
+    "rationale": "Longer stays suggest non-urgent travel, increasing likelihood of car use for flexibility. Airports are often outside cities, raising car and local transit use. Long-distance rail competes less for medium-length trips with flights."
+  },
+  "normalization": {
+    "sum_before": 1.5,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:40:24.636181+00:00",
+  "cost_exceeded_reservation": false
+}

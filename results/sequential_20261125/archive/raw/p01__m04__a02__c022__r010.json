@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c022__r010",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__f6e4375535d4",
+  "round": 10,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "bb0a1398938e599a2029b2c3c00dde7fd7254948d91582a8125b14d9ff5acc8e",
+  "started_utc": "2026-11-25T17:38:54.216041+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:38:55.634269+00:00",
+      "cost_usd": 0.001532,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001532,
+  "reservation_upper_bound_usd": 0.025566,
+  "response_sha256": "bec23a18df52976ff214b211cb358e9e6098c23e6f672b70b443241c654178c6",
+  "response": {
+    "id": "gen-1795628333-AhE4Gddz3mmxHEPyDFDi",
+    "object": "chat.completion",
+    "created": 1795628333,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.42,\n  \"local_pt\": 0.20,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"6-7 night trips suggest longer distances, more luggage, or rural destinations, making car access/egress more likely and public/local transport less so compared to the overall aircraft journey population.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 454,
+      "completion_tokens": 78,
+      "total_tokens": 532,
+      "cost": 0.001532,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001532,
+        "upstream_inference_prompt_cost": 0.000908,
+        "upstream_inference_completions_cost": 0.000624
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628333-AhE4Gddz3mmxHEPyDFDi",
+  "raw_prediction": {
+    "car": 0.42,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.1,
+    "rationale": "6-7 night trips suggest longer distances, more luggage, or rural destinations, making car access/egress more likely and public/local transport less so compared to the overall aircraft journey population."
+  },
+  "prediction": {
+    "car": 0.42,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.1,
+    "rationale": "6-7 night trips suggest longer distances, more luggage, or rural destinations, making car access/egress more likely and public/local transport less so compared to the overall aircraft journey population."
+  },
+  "normalization": {
+    "sum_before": 0.72,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:38:55.634269+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m02__a01__c001__r010",
+  "block_id": "p01__m02__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "unanchored",
+  "card_id": "reise__anzauto_gr1__296e9849dc3d",
+  "round": 10,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "c3c0cb44e7eaa5dfdf64d25642df157b4a9adc222e86b597e4db92792f3fd573",
+  "started_utc": "2026-11-25T17:38:42.474385+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:38:43.895506+00:00",
+      "cost_usd": 0.00027,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00027,
+  "reservation_upper_bound_usd": 0.0047783999999999995,
+  "response_sha256": "6bfdc9e28205e7513ec730b604323ff3b9d3d6ae59a5ed933bb9fba8c5d968aa",
+  "response": {
+    "id": "gen-1795628321-AFtURDh0RxUBOYWdQdrA",
+    "object": "chat.completion",
+    "created": 1795628321,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.10,\n  \"local_pt\": 0.70,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"No household car reduces car access likelihood; local public transport commonly connects homes and airports; some may combine long-distance rail with flights for connecting or return trips.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 391,
+      "completion_tokens": 71,
+      "total_tokens": 462,
+      "cost": 0.00027,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00027,
+        "upstream_inference_prompt_cost": 0.0001564,
+        "upstream_inference_completions_cost": 0.0001136
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795628321-AFtURDh0RxUBOYWdQdrA",
+  "raw_prediction": {
+    "car": 0.1,
+    "local_pt": 0.7,
+    "long_distance_rail": 0.25,
+    "rationale": "No household car reduces car access likelihood; local public transport commonly connects homes and airports; some may combine long-distance rail with flights for connecting or return trips."
+  },
+  "prediction": {
+    "car": 0.1,
+    "local_pt": 0.7,
+    "long_distance_rail": 0.25,
+    "rationale": "No household car reduces car access likelihood; local public transport commonly connects homes and airports; some may combine long-distance rail with flights for connecting or return trips."
+  },
+  "normalization": {
+    "sum_before": 1.05,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:38:43.895506+00:00",
+  "cost_exceeded_reservation": false
+}

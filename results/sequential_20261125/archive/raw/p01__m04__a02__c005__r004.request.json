@@ -1,0 +1,22 @@
+{
+  "model": "openai/gpt-4.1",
+  "messages": [
+    {
+      "role": "user",
+      "content": "You are participating in a travel-behaviour research benchmark. Apply persona-based reasoning to estimate reported transport use. Do not browse or look up a survey table.\n\nPopulation: residents of Germany aged 14 or older, self-reporting an overnight journey in the preceding three months during the MiD 2023 survey (fieldwork 2023-2024). Aircraft is the recorded main mode of the journey. Consider a randomly drawn journey within the cohort profile below. This is a group-level marginal profile; do not invent a joint age, income, household, origin, destination, or airport when it is unspecified.\n\nCohort profile: Cohort of aircraft-containing overnight journeys reported by Germany-resident self-respondents aged 14 or older. The only supplied cohort attribute is number of household cars: 2 cars. All other traveller and journey characteristics are unspecified.\n\nSurvey task: Which transport modes were used for the outward AND return journey? All modes used in combinations could be selected. For each of the following, estimate the probability that it was also reported alongside aircraft: (1) car; (2) local bus or rail, including urban/suburban/regional public transport; (3) long-distance train. These are three separate, nonexclusive yes/no mentions; they need not add to one. Ground modes can be reported on either direction and either side of the flight. The question does not isolate access to a named airport.\nCar use does not require owning a car or being its driver. If household companions are specified, these count accompanying household members only; zero does not establish that the traveller was alone.\n\nPopulation-level reference (all eligible overnight journeys with aircraft as main mode, NOT this specific cohort): car=0.376769, local bus/rail=0.216230, long-distance train=0.124088. Use these overall rates as reference and estimate whether the supplied cohort differs.\n\nReturn only one JSON object with exactly four keys: car, local_pt, long_distance_rail, rationale. The first three must be numbers from 0 to 1 (not percentages). rationale must be at most 40 words and describe a plausible hypothesis, not claim to know respondents' actual motives."
+    }
+  ],
+  "temperature": 0.7,
+  "max_tokens": 450,
+  "seed": 25112029,
+  "response_format": {
+    "type": "json_object"
+  },
+  "provider": {
+    "allow_fallbacks": false,
+    "require_parameters": true,
+    "only": [
+      "openai"
+    ]
+  }
+}

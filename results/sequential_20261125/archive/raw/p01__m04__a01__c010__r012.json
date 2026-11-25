@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c010__r012",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__RegioStaR7__9f47524becab",
+  "round": 12,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "faaaa987a3189116a479c7a7996d2f45a7fa1d026bcb83fc6b68aeb7040fac84",
+  "started_utc": "2026-11-25T17:41:08.463192+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:41:09.570403+00:00",
+      "cost_usd": 0.00145,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00145,
+  "reservation_upper_bound_usd": 0.024089999999999997,
+  "response_sha256": "5059105026eb664a7e84107dcb6f26129a151f1f6327a6bf9bd9942678a652ba",
+  "response": {
+    "id": "gen-1795628467-obwhStdn1rWFsWDbXz89",
+    "object": "chat.completion",
+    "created": 1795628467,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.50,\n  \"long_distance_rail\": 0.20,\n  \"rationale\": \"Medium-sized urban dwellers have middling car ownership, moderate access to local transit, and less frequent direct long-distance rail links to airports, leading to mixed but car-preferred, multimodal airport access patterns.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 397,
+      "completion_tokens": 82,
+      "total_tokens": 479,
+      "cost": 0.00145,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00145,
+        "upstream_inference_prompt_cost": 0.000794,
+        "upstream_inference_completions_cost": 0.000656
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628467-obwhStdn1rWFsWDbXz89",
+  "raw_prediction": {
+    "car": 0.55,
+    "local_pt": 0.5,
+    "long_distance_rail": 0.2,
+    "rationale": "Medium-sized urban dwellers have middling car ownership, moderate access to local transit, and less frequent direct long-distance rail links to airports, leading to mixed but car-preferred, multimodal airport access patterns."
+  },
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.5,
+    "long_distance_rail": 0.2,
+    "rationale": "Medium-sized urban dwellers have middling car ownership, moderate access to local transit, and less frequent direct long-distance rail links to airports, leading to mixed but car-preferred, multimodal airport access patterns."
+  },
+  "normalization": {
+    "sum_before": 1.25,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:41:09.571306+00:00",
+  "cost_exceeded_reservation": false
+}

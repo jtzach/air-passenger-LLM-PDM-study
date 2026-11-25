@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m02__a02__c018__r003",
+  "block_id": "p01__m02__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__6bcea89383ae",
+  "round": 3,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "f0066eba98eafaa354628caa2716c7e991848b18821a540f5327684a2bc40f47",
+  "started_utc": "2026-11-25T14:26:25.936576+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:26:27.547993+00:00",
+      "cost_usd": 0.0002992,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002992,
+  "reservation_upper_bound_usd": 0.0051167999999999995,
+  "response_sha256": "04144d827e1aeb42c7fb68719acde5b9cdf4299f7395bf9e1d733b42a593006a",
+  "response": {
+    "id": "gen-1795616786-WLO88oGzYQVJhGLhRr3F",
+    "object": "chat.completion",
+    "created": 1795616786,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.25,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Two-night trips likely involve airport access by car more often; local public transit slightly above average for city airport access; long-distance rail slightly less due to shorter trip duration.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 452,
+      "completion_tokens": 74,
+      "total_tokens": 526,
+      "cost": 0.0002992,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002992,
+        "upstream_inference_prompt_cost": 0.0001808,
+        "upstream_inference_completions_cost": 0.0001184
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795616786-WLO88oGzYQVJhGLhRr3F",
+  "raw_prediction": {
+    "car": 0.45,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.1,
+    "rationale": "Two-night trips likely involve airport access by car more often; local public transit slightly above average for city airport access; long-distance rail slightly less due to shorter trip duration."
+  },
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.1,
+    "rationale": "Two-night trips likely involve airport access by car more often; local public transit slightly above average for city airport access; long-distance rail slightly less due to shorter trip duration."
+  },
+  "normalization": {
+    "sum_before": 0.8,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:26:27.549037+00:00",
+  "cost_exceeded_reservation": false
+}

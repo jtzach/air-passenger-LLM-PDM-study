@@ -1,0 +1,100 @@
+{
+  "task_id": "p01__m04__a02__c009__r007__administrative_replacement1",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__RegioStaR7__7cdab1586e04",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "supersedes_task_id": "p01__m04__a02__c009__r007",
+  "request_sha256": "25f5676b26761e4262661602f2de3836623242b383bcb248192e483070eacc83",
+  "started_utc": "2026-11-25T17:33:58.496484+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:33:59.779776+00:00",
+      "cost_usd": 0.001502,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001502,
+  "reservation_upper_bound_usd": 0.025709999999999997,
+  "response_sha256": "6571211544257708ee383742de7f999ddf5e6303ccd52fe268a40bd369439e5a",
+  "response": {
+    "id": "gen-1795628037-W0JlUyM3ZNHa6s3bqOsi",
+    "object": "chat.completion",
+    "created": 1795628037,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.32,\n  \"local_pt\": 0.27,\n  \"long_distance_rail\": 0.16,\n  \"rationale\": \"Urban regiopolis/large city residents likely have better public transport and rail access, reducing car use and increasing public/local and long-distance rail rates compared to the national average.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 455,
+      "completion_tokens": 74,
+      "total_tokens": 529,
+      "cost": 0.001502,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001502,
+        "upstream_inference_prompt_cost": 0.00091,
+        "upstream_inference_completions_cost": 0.000592
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628037-W0JlUyM3ZNHa6s3bqOsi",
+  "raw_prediction": {
+    "car": 0.32,
+    "local_pt": 0.27,
+    "long_distance_rail": 0.16,
+    "rationale": "Urban regiopolis/large city residents likely have better public transport and rail access, reducing car use and increasing public/local and long-distance rail rates compared to the national average."
+  },
+  "prediction": {
+    "car": 0.32,
+    "local_pt": 0.27,
+    "long_distance_rail": 0.16,
+    "rationale": "Urban regiopolis/large city residents likely have better public transport and rail access, reducing car use and increasing public/local and long-distance rail rates compared to the national average."
+  },
+  "normalization": {
+    "sum_before": 0.75,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:33:59.779776+00:00",
+  "cost_exceeded_reservation": false
+}

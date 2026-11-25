@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c015__r002",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzbegl_gr__18864b086b3b",
+  "round": 2,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "5feb8677ec2a9083dd7d1d818d2c6e6b57bc3821225d9c971ba7a1e158d7003e",
+  "started_utc": "2026-11-25T14:24:13.951786+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:24:15.252989+00:00",
+      "cost_usd": 0.001542,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001542,
+  "reservation_upper_bound_usd": 0.025577999999999997,
+  "response_sha256": "034ef70fa75a4cf21902161aa9350d9e650fc2324a4f7de85b2fe52b0af3c983",
+  "response": {
+    "id": "gen-1795616654-30krFWJL4Tm7nutdmZbv",
+    "object": "chat.completion",
+    "created": 1795616654,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.46,\n  \"local_pt\": 0.19,\n  \"long_distance_rail\": 0.08,\n  \"rationale\": \"With three household companions, car use rises due to convenience and cost-sharing. Local public transport and long-distance rail are less likely, as group coordination and luggage make car access more practical for airport trips.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 451,
+      "completion_tokens": 80,
+      "total_tokens": 531,
+      "cost": 0.001542,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001542,
+        "upstream_inference_prompt_cost": 0.000902,
+        "upstream_inference_completions_cost": 0.00064
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616654-30krFWJL4Tm7nutdmZbv",
+  "raw_prediction": {
+    "car": 0.46,
+    "local_pt": 0.19,
+    "long_distance_rail": 0.08,
+    "rationale": "With three household companions, car use rises due to convenience and cost-sharing. Local public transport and long-distance rail are less likely, as group coordination and luggage make car access more practical for airport trips."
+  },
+  "prediction": {
+    "car": 0.46,
+    "local_pt": 0.19,
+    "long_distance_rail": 0.08,
+    "rationale": "With three household companions, car use rises due to convenience and cost-sharing. Local public transport and long-distance rail are less likely, as group coordination and luggage make car access more practical for airport trips."
+  },
+  "normalization": {
+    "sum_before": 0.73,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:24:15.252989+00:00",
+  "cost_exceeded_reservation": false
+}

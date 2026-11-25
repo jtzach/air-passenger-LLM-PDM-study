@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m02__a02__c019__r004",
+  "block_id": "p01__m02__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__782410ef69d3",
+  "round": 4,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "425c14a72cc677acea49f91e68d95f4a77fdb6f66f7a48b3f236196d3ae652cb",
+  "started_utc": "2026-11-25T14:28:18.516163+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:28:20.318521+00:00",
+      "cost_usd": 0.0003096,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0003096,
+  "reservation_upper_bound_usd": 0.0051204,
+  "response_sha256": "9bcffc2f213d212e67b7a194c6b90e54604ffc33dd8751871e64e63cc1f07409",
+  "response": {
+    "id": "gen-1795616898-bAbzdvyrvt7quhFsDyVw",
+    "object": "chat.completion",
+    "created": 1795616898,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.25,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Longer trips (8-14 nights) likely increase car use for airport access and local travel; slightly more local PT use for urban areas; lower long-distance rail use as flights dominate main travel.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 454,
+      "completion_tokens": 80,
+      "total_tokens": 534,
+      "cost": 0.0003096,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003096,
+        "upstream_inference_prompt_cost": 0.0001816,
+        "upstream_inference_completions_cost": 0.000128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795616898-bAbzdvyrvt7quhFsDyVw",
+  "raw_prediction": {
+    "car": 0.45,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.1,
+    "rationale": "Longer trips (8-14 nights) likely increase car use for airport access and local travel; slightly more local PT use for urban areas; lower long-distance rail use as flights dominate main travel."
+  },
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.1,
+    "rationale": "Longer trips (8-14 nights) likely increase car use for airport access and local travel; slightly more local PT use for urban areas; lower long-distance rail use as flights dominate main travel."
+  },
+  "normalization": {
+    "sum_before": 0.8,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:28:20.318521+00:00",
+  "cost_exceeded_reservation": false
+}

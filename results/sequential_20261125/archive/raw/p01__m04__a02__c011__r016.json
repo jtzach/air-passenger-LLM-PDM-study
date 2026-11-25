@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c011__r016",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__RegioStaR7__cae80c90607c",
+  "round": 16,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "1a7995e292fb489c36782a57bcb8e3d610320539a1ef704a5f6359f8050f75b5",
+  "started_utc": "2026-11-25T17:42:23.013813+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:42:24.276517+00:00",
+      "cost_usd": 0.001528,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001528,
+  "reservation_upper_bound_usd": 0.025733999999999996,
+  "response_sha256": "5cfd54f64776c980c080a76f5afb3506109468a4ef057620d2f984542dd8bb6c",
+  "response": {
+    "id": "gen-1795628542-an4C5Ni67G4Zho99JXLw",
+    "object": "chat.completion",
+    "created": 1795628542,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.41,\n  \"local_pt\": 0.24,\n  \"long_distance_rail\": 0.14,\n  \"rationale\": \"Medium-town/rural residents often lack direct rail/pt links, increasing car use for airport access. However, urban area access improves public transport and rail probabilities slightly above the national average.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 456,
+      "completion_tokens": 77,
+      "total_tokens": 533,
+      "cost": 0.001528,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001528,
+        "upstream_inference_prompt_cost": 0.000912,
+        "upstream_inference_completions_cost": 0.000616
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628542-an4C5Ni67G4Zho99JXLw",
+  "raw_prediction": {
+    "car": 0.41,
+    "local_pt": 0.24,
+    "long_distance_rail": 0.14,
+    "rationale": "Medium-town/rural residents often lack direct rail/pt links, increasing car use for airport access. However, urban area access improves public transport and rail probabilities slightly above the national average."
+  },
+  "prediction": {
+    "car": 0.41,
+    "local_pt": 0.24,
+    "long_distance_rail": 0.14,
+    "rationale": "Medium-town/rural residents often lack direct rail/pt links, increasing car use for airport access. However, urban area access improves public transport and rail probabilities slightly above the national average."
+  },
+  "normalization": {
+    "sum_before": 0.79,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:42:24.276517+00:00",
+  "cost_exceeded_reservation": false
+}

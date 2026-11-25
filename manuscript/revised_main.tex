@@ -1,0 +1,169 @@
+% Review draft adapted from David Levinson's official Findings template (CC BY 4.0).
+% Published 2026-11-24 manuscript is preserved; do not replace it before final QA.
+% Maximum across this paper and supplement: three figures and three tables.
+\documentclass{article}
+\usepackage[english]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{amsmath,amssymb,graphicx,booktabs,array,xcolor}
+\usepackage[breakable]{tcolorbox}
+\usepackage[sort&compress,round,semicolon,authoryear]{natbib}
+\usepackage[figurename=Fig.,labelfont=bf,labelsep=period]{caption}
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+\usepackage[none]{hyphenat}
+\emergencystretch=4em
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\textfraction}{0.05}
+\graphicspath{{../figures/}}
+\newcommand{\code}[1]{\texttt{\detokenize{#1}}}
+\newcommand{\studyfigure}[2]{\includegraphics[width=\linewidth]{#1.pdf}}
+\newtcolorbox{promptbox}[1][]{breakable,colback=gray!8,colbacktitle=gray!18,colframe=gray!45,coltitle=black,boxrule=0.4pt,arc=1mm,left=2mm,right=2mm,top=2mm,bottom=2mm,fontupper=\small\raggedright,fonttitle=\bfseries,#1}
+\title{Can AI Predict How Groups of Air Passengers Travel on the Ground?}
+\author{}
+\date{November 25, 2026}
+\hypersetup{pdftitle={Can AI Predict How Groups of Air Passengers Travel on the Ground?},pdfsubject={An aggregate MiD journey benchmark and a Munich Airport access test},pdfkeywords={large language models,LLM-PDM,air travel,airport access,aggregate validation}}
+
+\begin{document}
+\maketitle
+\begin{center}\color{gray}\textbf{AUTHOR REVIEW DRAFT}\end{center}
+\begin{abstract}
+We test whether language models reproduce transport shares for 23 national MiD air-journey groups and six Munich Airport groups. Four services enter 12 conditions. Six conditions reached 16 complete rounds; only GPT-4.1 with overall MiD rates improved on the constant baseline: median gain 0.93 percentage points, adjusted interval [0.79, 1.19]. Five showed degradation; six yielded no valid inferential checkpoint. Airport models received no numerical hint and did not beat the informed baseline. Models also missed important group contrasts. These conditional aggregate results support checking numerical predictions against observations, not treating plausible personas as validated passenger behavior. Uncertainty concerns model outputs, not survey populations.
+\end{abstract}
+\textit{Keywords:} large language models; group personas; air journeys; airport access; aggregate validation
+
+\section{Questions and contribution}
+An airport needs to understand how different passengers arrive, while national transport research also asks how flying fits with other modes. A language model may offer a sensible story about both. The empirical question is whether its numerical predictions agree with observations, including less intuitive differences between groups.
+
+LLM-PDM builds persona descriptions and uses language models to answer mobility questions \citep{tzachristas2026}. Related work studies travel prediction and persona-based alignment \citep{mo2026,liu2026}. These approaches motivate our study, but synthetic survey answers can misrepresent relationships even when an overall average looks convincing \citep{bisbee2024}. We therefore ask: how accurate are group-level probabilities, how much does an overall-rate hint help, and which differences remain difficult? We do not assume that an LLM explanation identifies a human motive.
+
+Our contribution is a comparison with existing aggregate evidence, using separate national and airport targets. Group-specific answers are withheld from the prompts. A constant baseline, prompt controls, and a fixed stopping rule test whether group descriptions improve numerical predictions. The evidence concerns distributions within groups, not realistic artificial people or individual choice mechanisms.
+
+This aggregate adaptation of LLM-PDM asks directly for probabilities within an observed group. Original LLM-PDM combines persona attributes, weights their combinations, and asks models to respond as those personas; some prompts also supply numerical reference information \citep{tzachristas2026}. Our public MiD marginals support separate one-attribute cards, while the airport table supports joint purpose-by-flight-type groups. We generate no individual survey respondents and perform no fine-tuning or iterative correction against group-specific answers.
+
+\section{Two sources, two transport questions}
+Table~\ref{tab:tasks} distinguishes the outcomes. In the national case, a journey may include a car, local public transport, and long-distance rail. In the airport case, the outcome is the reported access category. These are different denominators and different events; similarly named transport modes must not be treated as interchangeable measurements.
+
+\begin{table}[htbp]
+\centering\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.18\linewidth}>{\raggedright\arraybackslash}p{0.36\linewidth}>{\raggedright\arraybackslash}p{0.36\linewidth}}
+\toprule
+ & National MiD case & Munich Airport case\\
+\midrule
+Evidence & Public MiD 2023 journey tables; fieldwork in 2023--2024 & Coauthor summary of airport access data for 2025; originals not independently verified\\
+Population & Eligible German residents reporting overnight journeys with aircraft as main mode & Originating passengers departing Munich Airport; transfer passengers excluded\\
+Question & Which other modes were used anywhere on the outward/return journey? & Which airport-access category was reported?\\
+Group information & One attribute per card; 23 overlapping cards & Six generic purpose-by-departing-flight-type cards; other attributes unspecified\\
+Probability meaning & Three nonexclusive co-use probabilities & One distribution across ten reported access categories\\
+Overall-rate hint & Separate with-hint and no-hint conditions & No airport-data hint condition\\
+Main limitation & No airport or airport-access leg identified & No individual records or causal effects identified\\
+\bottomrule
+\end{tabular}
+\caption{The datasets support distinct tasks. Airport targets bypass the model service; only approved derived research results are published.}
+\label{tab:tasks}
+\end{table}
+
+The public MiD service supplies 9,475 reported overnight journeys with aircraft as recorded main mode \citep{mit2023}. The module covers respondents aged at least 14 and up to three journeys with nights away in the preceding three months. One person may contribute several journeys. The transport question covers outward and return travel and permits several modes \citep{midmethods2025,midhandbook2025,midquestionnaire2025}. We use car, local bus/rail, and long-distance rail. The tables identify neither an airport-access leg nor the airport used, and do not distinguish car drivers from passengers.
+
+The three MiD percentages need not sum to 100\% for \emph{two} reasons: modes can overlap, and the selected three do not exhaust the recorded categories. Aircraft is present by selection; other choices include bicycle, coaches, ship, motorhome, and other transport. Walking and taxi are not separate rows, so no mapping is inferred for them. For example, the no-car group's shares, $15.0+40.1+16.8=71.9\%$, do \emph{not} imply that 28.1\% used ``other transport'': overlapping mentions cannot be subtracted from 100 to recover a residual group.
+
+For MiD, the group cards retain the earlier documented selection. Among 14 candidate attributes, substantive categories needed at least 100 reported journeys; an eligible attribute needed at least two categories covering at least 80\% of weighted journeys. Normalized information gain ranked how much groups differed on the three outcomes. A fixed two-traveler/two-journey allocation selected household cars, residential area, household companions, and nights away. Their categories supply $5+7+4+7=23$ separate cards. Age ranked third among traveler attributes and was omitted by this allocation, not because age was uninformative. The same journey can appear under several attributes; we never multiply the marginal tables into joint people.
+
+The Munich case crosses business/private purpose with domestic/continental/intercontinental departing flights to form six groups. \emph{Continental} distinguishes this category from the broader \emph{international}, which also includes intercontinental flights. Other characteristics remain unspecified. Flight type describes the departing leg, not necessarily a connecting itinerary's final destination. Targets are aggregated locally from the same-year airport table; different-year origin and duration margins are not combined into synthetic validation targets. Neither these groups nor the MiD cards are machine-learned personas.
+
+We use a coauthor-prepared summary of the airport tables \citep{fmgsummary2026}. The original source workbooks have not been independently verified, and unweighted interview counts are unknown. Annual expanded passenger volumes are not interview sample sizes. The outcome is a \emph{reported airport-access category}, not necessarily the literal last vehicle: an off-airport parking category can include a shuttle leg while remaining classified as parking. We retain the supplied categories during scoring. Flight-region boundaries and parking/shuttle coding still need checking against the original questionnaire; generic prompt labels alone cannot establish exact classification alignment.
+
+The airport workbook, passenger volumes, and target shares are not transmitted to the model service. It receives only generic task and group descriptions, without an airport-rate hint. Six aggregated targets and normalized scoring weights are released as approved derived results for offline evaluation; this permission does not make the underlying source material public.
+
+\begin{figure}[htbp]
+\centering
+\studyfigure{revised_01_dual_framework}{The two-task workflow}
+\caption{Two prediction tasks, with group-specific answers withheld from prompts. Only the MiD hint condition supplies numerical survey rates. Munich targets are compared with model outputs locally.}
+\label{fig:framework}
+\end{figure}
+
+\section{What the models are told}
+The word \emph{no hint} does not mean that the model receives no information. It still receives the population, transport question, response format, and, in the primary group condition, the card. Four objects must be distinguished:
+\begin{enumerate}
+\item \textbf{Group, no hint.} The model sees the task and group description, but no numerical overall-rate guidance. This is the no-hint MiD arm and the only primary airport arm.
+\item \textbf{Group plus overall hint.} The MiD prompt adds the three overall survey rates. The specific group's answers remain hidden. This tests a numerical anchor derived from the same survey, rather than a prediction made without outcome information.
+\item \textbf{No-group model control.} The model receives the same task without the group description. Its output is applied to the same evaluation groups. Where a MiD hint is used, the control retains that hint. This is an actual model response, not a lookup rule.
+\item \textbf{Constant statistical baseline.} No model call is made. Every group receives the source's overall mode rates, calculated and scored locally. For the airport case, those rates are never sent to the model.
+\end{enumerate}
+
+The exact paragraph added in the MiD hint condition is:
+\begin{promptbox}[title={Exact MiD overall-rate hint}]
+Population-level reference (all eligible overnight journeys with aircraft as main mode, NOT this specific cohort): car=0.376769, local bus/rail=0.216230, long-distance train=0.124088. Use these overall rates as reference and estimate whether the supplied cohort differs.
+\end{promptbox}
+For the no-household-car card, both arms describe a household without a car; neither receives the group's observed car-use rate of about 15\%. The hinted arm receives the overall rate, about 37.68\%, and must estimate an adjustment. The constant baseline simply repeats 37.68\%. Comparing with that baseline tests whether the prediction improves on the average; comparing hint arms tests the numerical reference; comparing with the matched no-group response tests the card. The no-hint condition still contains all 23 MiD cards.
+
+We request probabilities between zero and one. ``Out of 100 similar journeys'' is an explanation of percentages, not an instruction to simulate 100 people. MiD probabilities may overlap; airport access-category probabilities form a composition. Any short rationale is treated as a possible explanation, not an observed motive or a validated account of the model's reasoning. The exact prompts, including the no-hint version, hint insertion, control replacement, and group descriptions, appear in Appendix~\ref{app:prompts}. Every actual request is archived.
+
+\section{Scoring and repeated evaluation}
+The four model services are Gemma~3~4B, GPT-4.1~mini, Qwen3~235B~A22B, and GPT-4.1. Requests pin a provider endpoint and disable fallback routing. These are service identifiers, not a controlled experiment in parameter count. Commercial sizes are not fully disclosed, and training, architecture, and provider may differ.
+
+One \emph{round} contains the complete group panel and its no-group control for a model, task, and condition. It yields one mean absolute error (MAE), in percentage points. MiD weights groups within each attribute by published survey-adjusted bases, then gives equal influence to each attribute and mode. Airport scores weight the six groups by expanded passenger volume and give equal influence to the ten categories. Both the model and constant baseline use identical targets and weights. Smaller MAE is better; the different outcome sets make cross-task MAEs noninterchangeable.
+
+For each round, improvement is baseline MAE minus model MAE. Positive values favor the model. The primary quantity is the \emph{median round-level improvement}, not the error of a probability vector averaged across runs. The previous three-repeat exploratory experiment used the latter score; its values must not be silently substituted for the new estimand.
+
+The frozen primary family has 12 endpoints: four models, each evaluated in two MiD conditions and one airport condition. We inspect complete rounds only at 16, 32, and 64. Exact noninterpolated order-statistic intervals divide a family error allowance of 0.04 across all 12 endpoints and all three looks. A 0.5-percentage-point margin distinguishes meaningful improvement or degradation from practical equivalence. A narrow interval that crosses a decision boundary remains inconclusive. Endpoints are not dropped from the multiplicity calculation because they are unfavorable or incomplete.
+
+A separate bounded-mean confidence sequence uses an allowance of $0.01/12$ per endpoint. It concerns the mean, not the median, and cannot override the primary stopping rule. No-group comparisons, hint-arm comparisons, and selected group contrasts are descriptive. The supplement specifies the intervals, support bounds, and stopping logic.
+
+These intervals concern repeated model outputs under the stated sampling assumptions. Distinct seeds do not prove independent, identically distributed responses; provider changes, caching, and routing may violate that assumption. The mean procedure needs a stable conditional mean. Neither interval describes survey-population uncertainty. An invalid response or failed request halts the affected block; an incomplete panel receives no score. A separate administrative amendment addressed an author-requested pause during round 7, before the first scheduled look. Each affected active block's interrupted round was replaced in full using new identifiers and seeds. Existing failure halts, partial records, costs, and prior active runtime were retained; replacement was unrelated to accuracy.
+
+\section{Group differences and prediction accuracy}
+The observed household-car contrast provides a concrete diagnostic. Car co-use rises from 15.00\% in households with no car to 58.43\% with at least four cars; local-public-transport co-use falls from 40.06\% to 9.33\%. Long-distance rail changes less, from 16.76\% to 12.98\%, and is not monotonic across all car categories. These are associations within reported air journeys, not effects of acquiring a car or identified airport-access choices. The earlier three-repeat experiment motivated these checks but contributes no responses to the fresh results.
+
+\input{generated/revised_results_text.tex}
+
+\begin{table}[htbp]
+\centering\small
+\input{generated/revised_metrics_table.tex}
+\caption{Fresh-run results for all 12 endpoints. Averaged-prediction MAEs are descriptive; adjusted intervals concern median round-level improvement over the constant baseline. All errors and gains are in percentage points.}
+\label{tab:newmetrics}
+\end{table}
+
+\begin{figure}[htbp]
+\centering
+\studyfigure{revised_02_mid_contrasts}{MiD performance and group contrasts}
+\caption{Household-car contrasts in MiD. Observed shares are compared with fresh GPT-4.1 and Gemma~3~4B probabilities averaged over complete rounds in the overall-hint condition. Three selected whole-journey modes may overlap; the contrasts are descriptive associations.}
+\label{fig:midcontrasts}
+\end{figure}
+
+\begin{table}[htbp]
+\centering\small
+\input{generated/revised_observations_table.tex}
+\caption{Four fixed GPT-4.1 illustrations behind the aggregate scores. These descriptive comparisons are not additional confirmatory tests.}
+\label{tab:observations}
+\end{table}
+
+\begin{figure}[htbp]
+\centering
+\studyfigure{revised_03_fmg_results}{Munich Airport results}
+\caption{Munich Airport access: observed compositions and fresh GPT-4.1 averages without an airport-rate hint. Six mode families simplify the display; scoring and the displayed group errors retain all ten reported categories. Parking with a shuttle remains in the private-car family.}
+\label{fig:fmgresults}
+\end{figure}
+
+\section{Interpretation and limits}
+Low average error can coexist with poor group contrasts, and a correct contrast with biased levels. Reporting both reveals where a model could inform an airport's analysis and where its narrative would be misleading. The no-group control distinguishes the contribution of the card from a generic model answer.
+
+The airport baseline has an information advantage: it uses locally observed overall airport rates, whereas the airport model receives no numerical hint. This is a demanding practical comparison with a simple informed forecast, not a controlled test in which both methods receive identical information. Failing to beat that baseline would not by itself show that group descriptions are useless. The matched no-group control addresses whether the card improves predictions from the same model and task information.
+
+The national and airport cases do not constitute direct validation against one another. Whole-journey rail use can coexist with a reported parking or S-Bahn airport-access category. Different years, populations, and mode definitions also prevent a simple transfer of percentages. Successful airport aggregate predictions would support that bounded task; they would not establish accurate individual choices, joint demographic personas, policy responses, or causal explanations.
+
+MiD group selection and targets use the same tables; airport groups follow a specified purpose-by-flight-type comparison. Neither provides an independent sample of unseen passengers. Fresh model calls separate this response experiment from the exploratory run, but do not create new survey evidence. Training-data exposure is unknown, and repeated prompting cannot recover source sampling uncertainty.
+
+The clearest benefit is therefore bounded: GPT-4.1 used the overall MiD hint to improve on a constant forecast, yet still overstated the household-car rail contrast and missed the high rail share in urban-region small towns and villages. In Munich, its business--private taxi contrast was too small, and both available airport models had slightly worse averaged-prediction errors with group cards than without them. Those control differences are descriptive. An airport can use this type of benchmark to check a proposed model before relying on its persona narratives; matching one average does not validate the underlying behavior.
+
+\section*{Availability and acknowledgments}
+Public inputs, approved Munich derivatives, code and outputs are in the \href{https://github.com/jtzach/air-passenger-LLM-PDM-study}{replication repository}. OpenAI Codex assisted with code and writing. The layout adapts David Levinson's Findings template (CC BY 4.0), with attribution retained.
+
+\clearpage
+\appendix
+\section{Exact prompts and group descriptions}\label{app:prompts}
+These boxes reproduce the actual request text, not a simplified paraphrase. The MiD no-hint prompt still includes a group description. The hint condition adds the stated numerical paragraph; the no-group control replaces the group description. The airport prompt contains only generic descriptors and no confidential source rates. Probabilities in a single archived response are distinct from an exploratory three-run mean or a fresh sequential summary.
+\input{generated/exact_prompts_appendix.tex}
+
+\clearpage
+\bibliographystyle{chicago}
+\bibliography{refs,revised_refs_additions}
+\end{document}

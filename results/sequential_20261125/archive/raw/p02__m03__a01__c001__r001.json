@@ -1,0 +1,97 @@
+{
+  "task_id": "p02__m03__a01__c001__r001",
+  "block_id": "p02__m03__a01",
+  "panel_id": "fmg_2025",
+  "panel_index": 1,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "unanchored",
+  "card_id": "fmg_business_domestic",
+  "round": 1,
+  "modes": [
+    "car_dropoff",
+    "car_airport_parking",
+    "car_offairport_parking",
+    "car_other_parking",
+    "taxi_ridehail",
+    "rental_carsharing",
+    "bus_transfer",
+    "s_bahn",
+    "uefex",
+    "other"
+  ],
+  "mutually_exclusive": true,
+  "request_sha256": "99d6eb9e8cab825eeb1930307c7e9a18e82052556f1211ef0f29612f68148d65",
+  "started_utc": "2026-11-25T14:20:05.605366+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "transport_error",
+      "detail": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>",
+      "utc": "2026-11-25T14:20:29.437065+00:00",
+      "cost_upper_bound_usd": 0.00078056
+    },
+    {
+      "number": 2,
+      "status": "response",
+      "utc": "2026-11-25T14:20:52.193218+00:00",
+      "cost_usd": 0.00019752,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "invalid_output",
+  "accounted_cost_usd": 0.00097808,
+  "reservation_upper_bound_usd": 0.00234168,
+  "response_sha256": "2a303cc9a2ef7ec9e20619a602af498aecaefa6d8fa6a1f2a9d6759b70e57049",
+  "response": {
+    "id": "gen-1795616431-4pZlJrwM4gUuuhPJ4312",
+    "object": "chat.completion",
+    "created": 1795616431,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car_dropoff\": 0.08, \"car_airport_parking\": 0.05, \"car_offairport_parking\": 0.02, \"car_other_parking\": 0.01, \"taxi_ridehail\": 0.15, \"rental_carsharing\": 0.05, \"bus_transfer\": 0.05, \"s_bahn\": 0.55, \"uefex\": 0.03, \"other\": 0.06, \"rationale\": \"Business travelers prioritize reliability and convenience; S-Bahn offers frequent, direct service ideal for predictable urban airport access.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 577,
+      "completion_tokens": 145,
+      "total_tokens": 722,
+      "cost": 0.00019752,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00019752,
+        "upstream_inference_prompt_cost": 7.7895e-05,
+        "upstream_inference_completions_cost": 0.000119625
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795616431-4pZlJrwM4gUuuhPJ4312",
+  "validation_error": "Exclusive probabilities do not sum to one within .005",
+  "finished_utc": "2026-11-25T14:20:52.193218+00:00",
+  "cost_exceeded_reservation": false
+}

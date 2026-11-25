@@ -1,0 +1,120 @@
+{
+  "task_id": "p02__m02__a01__c006__r001",
+  "block_id": "p02__m02__a01",
+  "panel_id": "fmg_2025",
+  "panel_index": 1,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "unanchored",
+  "card_id": "fmg_private_intercontinental",
+  "round": 1,
+  "modes": [
+    "car_dropoff",
+    "car_airport_parking",
+    "car_offairport_parking",
+    "car_other_parking",
+    "taxi_ridehail",
+    "rental_carsharing",
+    "bus_transfer",
+    "s_bahn",
+    "uefex",
+    "other"
+  ],
+  "mutually_exclusive": true,
+  "request_sha256": "0effb7f94e2f6c9dc0ddd4e8c12037feedbb27b897cf656d0563bd414d5a04e0",
+  "started_utc": "2026-11-25T14:22:38.936931+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:22:41.724035+00:00",
+      "cost_usd": 0.0004952,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0004952,
+  "reservation_upper_bound_usd": 0.0058379999999999994,
+  "response_sha256": "24f32848d46cc0a5fbeba625fd11c896d958c42846130c506f4382f42af81c48",
+  "response": {
+    "id": "gen-1795616559-MG8FMMF8Z9aJtnAHhQpH",
+    "object": "chat.completion",
+    "created": 1795616559,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car_dropoff\": 0.25,\n  \"car_airport_parking\": 0.20,\n  \"car_offairport_parking\": 0.15,\n  \"car_other_parking\": 0.05,\n  \"taxi_ridehail\": 0.10,\n  \"rental_carsharing\": 0.05,\n  \"bus_transfer\": 0.08,\n  \"s_bahn\": 0.10,\n  \"uefex\": 0.01,\n  \"other\": 0.01,\n  \"rationale\": \"Private trips with intercontinental flights favor car access; S-Bahn popular for convenience; parking options vary by cost and duration; taxis and buses serve those without cars; UEFEX limited by route coverage.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 582,
+      "completion_tokens": 164,
+      "total_tokens": 746,
+      "cost": 0.0004952,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0004952,
+        "upstream_inference_prompt_cost": 0.0002328,
+        "upstream_inference_completions_cost": 0.0002624
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795616559-MG8FMMF8Z9aJtnAHhQpH",
+  "raw_prediction": {
+    "car_dropoff": 0.25,
+    "car_airport_parking": 0.2,
+    "car_offairport_parking": 0.15,
+    "car_other_parking": 0.05,
+    "taxi_ridehail": 0.1,
+    "rental_carsharing": 0.05,
+    "bus_transfer": 0.08,
+    "s_bahn": 0.1,
+    "uefex": 0.01,
+    "other": 0.01,
+    "rationale": "Private trips with intercontinental flights favor car access; S-Bahn popular for convenience; parking options vary by cost and duration; taxis and buses serve those without cars; UEFEX limited by route coverage."
+  },
+  "prediction": {
+    "car_dropoff": 0.25,
+    "car_airport_parking": 0.2,
+    "car_offairport_parking": 0.15,
+    "car_other_parking": 0.05,
+    "taxi_ridehail": 0.1,
+    "rental_carsharing": 0.05,
+    "bus_transfer": 0.08,
+    "s_bahn": 0.1,
+    "uefex": 0.01,
+    "other": 0.01,
+    "rationale": "Private trips with intercontinental flights favor car access; S-Bahn popular for convenience; parking options vary by cost and duration; taxis and buses serve those without cars; UEFEX limited by route coverage."
+  },
+  "normalization": {
+    "sum_before": 1.0,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:22:41.724035+00:00",
+  "cost_exceeded_reservation": false
+}

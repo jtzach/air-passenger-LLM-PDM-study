@@ -1,0 +1,100 @@
+{
+  "task_id": "p01__m04__a01__c003__r007__administrative_replacement1",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzauto_gr1__bee31b0e88ae",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "supersedes_task_id": "p01__m04__a01__c003__r007",
+  "request_sha256": "b5a815377e9a9800fa08c6fe4d572f23435434537302dab88e63f3b97f3ffd5e",
+  "started_utc": "2026-11-25T17:33:50.866816+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:33:52.697336+00:00",
+      "cost_usd": 0.001456,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001456,
+  "reservation_upper_bound_usd": 0.023861999999999998,
+  "response_sha256": "1ddbe30c2c9c0ed2b1e80bfcd7f918a70080122c2abc1a6db196f88036eaf67e",
+  "response": {
+    "id": "gen-1795628030-BdLUSb2ewAkkWEQYko6P",
+    "object": "chat.completion",
+    "created": 1795628030,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.85,\n  \"local_pt\": 0.25,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Three-car households likely prefer car access to airports for flexibility and luggage. Public transport is less attractive but not absent, especially in urban areas. Long-distance rail is rare due to car convenience and likely suburban/rural residence.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 392,
+      "completion_tokens": 84,
+      "total_tokens": 476,
+      "cost": 0.001456,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001456,
+        "upstream_inference_prompt_cost": 0.000784,
+        "upstream_inference_completions_cost": 0.000672
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628030-BdLUSb2ewAkkWEQYko6P",
+  "raw_prediction": {
+    "car": 0.85,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.1,
+    "rationale": "Three-car households likely prefer car access to airports for flexibility and luggage. Public transport is less attractive but not absent, especially in urban areas. Long-distance rail is rare due to car convenience and likely suburban/rural residence."
+  },
+  "prediction": {
+    "car": 0.85,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.1,
+    "rationale": "Three-car households likely prefer car access to airports for flexibility and luggage. Public transport is less attractive but not absent, especially in urban areas. Long-distance rail is rare due to car convenience and likely suburban/rural residence."
+  },
+  "normalization": {
+    "sum_before": 1.2,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:33:52.698369+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,100 @@
+{
+  "task_id": "p01__m02__a02__c012__r007__administrative_replacement1",
+  "block_id": "p01__m02__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__RegioStaR7__d3321efbbd2e",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "supersedes_task_id": "p01__m02__a02__c012__r007",
+  "request_sha256": "2e121f2de5c38d906d20b9cc53eaf9cfc611b384289e06c8264f0c0a5e8dbcdd",
+  "started_utc": "2026-11-25T17:34:42.699344+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:34:44.129906+00:00",
+      "cost_usd": 0.0002992,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002992,
+  "reservation_upper_bound_usd": 0.0051324,
+  "response_sha256": "f4cfac1e54e7d72cf3fc5164c8891b8a050b6438d2f03bba4226cb7eebf2cad6",
+  "response": {
+    "id": "gen-1795628081-1KwsKSmE7w8sPjpMiixj",
+    "object": "chat.completion",
+    "created": 1795628081,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Rural central city residents likely use cars more for airport access, local PT slightly more due to urban proximity; long-distance rail less, as flights dominate intercity travel.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 452,
+      "completion_tokens": 74,
+      "total_tokens": 526,
+      "cost": 0.0002992,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002992,
+        "upstream_inference_prompt_cost": 0.0001808,
+        "upstream_inference_completions_cost": 0.0001184
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795628081-1KwsKSmE7w8sPjpMiixj",
+  "raw_prediction": {
+    "car": 0.55,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.1,
+    "rationale": "Rural central city residents likely use cars more for airport access, local PT slightly more due to urban proximity; long-distance rail less, as flights dominate intercity travel."
+  },
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.1,
+    "rationale": "Rural central city residents likely use cars more for airport access, local PT slightly more due to urban proximity; long-distance rail less, as flights dominate intercity travel."
+  },
+  "normalization": {
+    "sum_before": 1.0,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:34:44.129906+00:00",
+  "cost_exceeded_reservation": false
+}

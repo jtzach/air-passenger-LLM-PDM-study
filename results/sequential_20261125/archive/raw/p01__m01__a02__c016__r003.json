@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m01__a02__c016__r003",
+  "block_id": "p01__m01__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzbegl_gr__b61cbc7c0dd2",
+  "round": 3,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "1d8e51ac2fdc09828121b52420c968d13522e5db5df7f058545aaf71ada84420",
+  "started_utc": "2026-11-25T14:25:29.673471+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:25:31.485134+00:00",
+      "cost_usd": 2.073e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.073e-05,
+  "reservation_upper_bound_usd": 0.0003645,
+  "response_sha256": "65c731a1ae01a1c7ebc71092a0d06ad6730e630896443c70596674df91d6583e",
+  "response": {
+    "id": "gen-1795616729-EUC2KgRm81h99KWEl2T0",
+    "object": "chat.completion",
+    "created": 1795616729,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.25, \"local_pt\": 0.18, \"long_distance_rail\": 0.08, \"rationale\": \"Given one companion, the journey likely involved a mix of modes. Car use would be lower than the overall population, and local public transport and long-distance rail usage would also be reduced, reflecting a preference for convenience and potentially cost-effectiveness.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 487,
+      "completion_tokens": 89,
+      "total_tokens": 576,
+      "cost": 2.073e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.073e-05,
+        "upstream_inference_prompt_cost": 1.628e-05,
+        "upstream_inference_completions_cost": 4.45e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616729-EUC2KgRm81h99KWEl2T0",
+  "raw_prediction": {
+    "car": 0.25,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.08,
+    "rationale": "Given one companion, the journey likely involved a mix of modes. Car use would be lower than the overall population, and local public transport and long-distance rail usage would also be reduced, reflecting a preference for convenience and potentially cost-effectiveness."
+  },
+  "prediction": {
+    "car": 0.25,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.08,
+    "rationale": "Given one companion, the journey likely involved a mix of modes. Car use would be lower than the overall population, and local public transport and long-distance rail usage would also be reduced, reflecting a preference for convenience and potentially cost-effectiveness."
+  },
+  "normalization": {
+    "sum_before": 0.51,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:25:31.485134+00:00",
+  "cost_exceeded_reservation": false
+}

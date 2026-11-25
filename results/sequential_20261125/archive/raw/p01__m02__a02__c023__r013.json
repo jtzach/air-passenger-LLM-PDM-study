@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m02__a02__c023__r013",
+  "block_id": "p01__m02__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__fd46cf332878",
+  "round": 13,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "707a9e04de2d05a616f8808344ce3c1cc35dcccf90c992bea21eb5d59ee90437",
+  "started_utc": "2026-11-25T17:41:25.006405+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:41:26.754142+00:00",
+      "cost_usd": 0.0003016,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0003016,
+  "reservation_upper_bound_usd": 0.0051275999999999995,
+  "response_sha256": "29e0b3135c5c1786ec286b5701a54fadfcc8c1aa2d3dbb8ff1bb0933d49b541d",
+  "response": {
+    "id": "gen-1795628484-j5BeFMKvGiasKQf514FO",
+    "object": "chat.completion",
+    "created": 1795628484,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.30,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"Long stays imply complex itineraries with more ground transfers; more car use for regional access, increased local public transport for city connections, slightly higher train use for intercity segments.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 454,
+      "completion_tokens": 75,
+      "total_tokens": 529,
+      "cost": 0.0003016,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003016,
+        "upstream_inference_prompt_cost": 0.0001816,
+        "upstream_inference_completions_cost": 0.00012
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795628484-j5BeFMKvGiasKQf514FO",
+  "raw_prediction": {
+    "car": 0.55,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.15,
+    "rationale": "Long stays imply complex itineraries with more ground transfers; more car use for regional access, increased local public transport for city connections, slightly higher train use for intercity segments."
+  },
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.15,
+    "rationale": "Long stays imply complex itineraries with more ground transfers; more car use for regional access, increased local public transport for city connections, slightly higher train use for intercity segments."
+  },
+  "normalization": {
+    "sum_before": 1.0,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:41:26.754142+00:00",
+  "cost_exceeded_reservation": false
+}

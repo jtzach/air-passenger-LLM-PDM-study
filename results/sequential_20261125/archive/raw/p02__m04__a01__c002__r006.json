@@ -1,0 +1,120 @@
+{
+  "task_id": "p02__m04__a01__c002__r006",
+  "block_id": "p02__m04__a01",
+  "panel_id": "fmg_2025",
+  "panel_index": 1,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "fmg_private_domestic",
+  "round": 6,
+  "modes": [
+    "car_dropoff",
+    "car_airport_parking",
+    "car_offairport_parking",
+    "car_other_parking",
+    "taxi_ridehail",
+    "rental_carsharing",
+    "bus_transfer",
+    "s_bahn",
+    "uefex",
+    "other"
+  ],
+  "mutually_exclusive": true,
+  "request_sha256": "6d3a15f144cc222d9b0c4d1b59f1591f5f0c88189ab50e2a5934ec2013055766",
+  "started_utc": "2026-11-25T14:30:49.638546+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:30:51.833089+00:00",
+      "cost_usd": 0.002506,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.002506,
+  "reservation_upper_bound_usd": 0.029112000000000002,
+  "response_sha256": "019bd6d44b23b6bdc9318f3f59e85e55a277804397c535649190691d0b68e6bc",
+  "response": {
+    "id": "gen-1795617049-Gogca6Xbak09WoYsYn3n",
+    "object": "chat.completion",
+    "created": 1795617049,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car_dropoff\": 0.16,\n  \"car_airport_parking\": 0.25,\n  \"car_offairport_parking\": 0.09,\n  \"car_other_parking\": 0.02,\n  \"taxi_ridehail\": 0.08,\n  \"rental_carsharing\": 0.04,\n  \"bus_transfer\": 0.06,\n  \"s_bahn\": 0.25,\n  \"uefex\": 0.03,\n  \"other\": 0.02,\n  \"rationale\": \"Private-trip domestic flyers likely favor car use and S-Bahn, reflecting convenience, cost, and regional rail coverage. Taxis, rental, coach, and other modes are less common but plausible for diverse, unspecified passenger backgrounds.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 581,
+      "completion_tokens": 168,
+      "total_tokens": 749,
+      "cost": 0.002506,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002506,
+        "upstream_inference_prompt_cost": 0.001162,
+        "upstream_inference_completions_cost": 0.001344
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795617049-Gogca6Xbak09WoYsYn3n",
+  "raw_prediction": {
+    "car_dropoff": 0.16,
+    "car_airport_parking": 0.25,
+    "car_offairport_parking": 0.09,
+    "car_other_parking": 0.02,
+    "taxi_ridehail": 0.08,
+    "rental_carsharing": 0.04,
+    "bus_transfer": 0.06,
+    "s_bahn": 0.25,
+    "uefex": 0.03,
+    "other": 0.02,
+    "rationale": "Private-trip domestic flyers likely favor car use and S-Bahn, reflecting convenience, cost, and regional rail coverage. Taxis, rental, coach, and other modes are less common but plausible for diverse, unspecified passenger backgrounds."
+  },
+  "prediction": {
+    "car_dropoff": 0.16,
+    "car_airport_parking": 0.25,
+    "car_offairport_parking": 0.09,
+    "car_other_parking": 0.02,
+    "taxi_ridehail": 0.08,
+    "rental_carsharing": 0.04,
+    "bus_transfer": 0.06,
+    "s_bahn": 0.25,
+    "uefex": 0.03,
+    "other": 0.02,
+    "rationale": "Private-trip domestic flyers likely favor car use and S-Bahn, reflecting convenience, cost, and regional rail coverage. Taxis, rental, coach, and other modes are less common but plausible for diverse, unspecified passenger backgrounds."
+  },
+  "normalization": {
+    "sum_before": 1.0,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:30:51.833089+00:00",
+  "cost_exceeded_reservation": false
+}

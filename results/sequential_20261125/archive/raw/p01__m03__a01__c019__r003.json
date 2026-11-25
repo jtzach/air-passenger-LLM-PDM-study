@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a01__c019__r003",
+  "block_id": "p01__m03__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__782410ef69d3",
+  "round": 3,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "53934aaabfeb71629a979261118245648c09ce012e131ac82446c1ea2ed6bc7c",
+  "started_utc": "2026-11-25T14:25:54.320471+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:26:06.795568+00:00",
+      "cost_usd": 0.000128235,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000128235,
+  "reservation_upper_bound_usd": 0.00200652,
+  "response_sha256": "b2c2884ced2501ac43431dd9b49dda2d5bf6b4705ab1c366cb592351d67b345b",
+  "response": {
+    "id": "gen-1795616754-a6gUXANShBR5rU4X9nCy",
+    "object": "chat.completion",
+    "created": 1795616754,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.75,\n  \"local_pt\": 0.4,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"Longer stays suggest multi-stage trips; car use likely for airport access or local mobility. Public transport use varies by urban origin/destination. Long-distance rail competes less for 8–14-day trips, reducing its role.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 406,
+      "completion_tokens": 89,
+      "total_tokens": 495,
+      "cost": 0.000128235,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000128235,
+        "upstream_inference_prompt_cost": 5.481e-05,
+        "upstream_inference_completions_cost": 7.3425e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795616754-a6gUXANShBR5rU4X9nCy",
+  "raw_prediction": {
+    "car": 0.75,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.25,
+    "rationale": "Longer stays suggest multi-stage trips; car use likely for airport access or local mobility. Public transport use varies by urban origin/destination. Long-distance rail competes less for 8–14-day trips, reducing its role."
+  },
+  "prediction": {
+    "car": 0.75,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.25,
+    "rationale": "Longer stays suggest multi-stage trips; car use likely for airport access or local mobility. Public transport use varies by urban origin/destination. Long-distance rail competes less for 8–14-day trips, reducing its role."
+  },
+  "normalization": {
+    "sum_before": 1.4,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:26:06.795568+00:00",
+  "cost_exceeded_reservation": false
+}

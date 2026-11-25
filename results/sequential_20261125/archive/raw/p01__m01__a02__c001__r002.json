@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m01__a02__c001__r002",
+  "block_id": "p01__m01__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzauto_gr1__296e9849dc3d",
+  "round": 2,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "576d5abc37d0530858f282c8653056e8164b7de1d1a19d486713b609b80a4558",
+  "started_utc": "2026-11-25T14:23:29.603692+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:23:31.140075+00:00",
+      "cost_usd": 2.004e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.004e-05,
+  "reservation_upper_bound_usd": 0.00036318000000000006,
+  "response_sha256": "d71c298720ddbe87ab6758458f51e1b28bc0ad982f8e7f7d46d68c8239d3b2a9",
+  "response": {
+    "id": "gen-1795616609-cXcdeypn8kPfXNQ351Wf",
+    "object": "chat.completion",
+    "created": 1795616609,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.25, \"local_pt\": 0.18, \"long_distance_rail\": 0.08, \"rationale\": \"Individuals with no household cars are likely to rely more on public transport for their return journey, given the lack of private vehicle access. Car use is also reduced, reflecting this constraint.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 486,
+      "completion_tokens": 76,
+      "total_tokens": 562,
+      "cost": 2.004e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.004e-05,
+        "upstream_inference_prompt_cost": 1.624e-05,
+        "upstream_inference_completions_cost": 3.8e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616609-cXcdeypn8kPfXNQ351Wf",
+  "raw_prediction": {
+    "car": 0.25,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.08,
+    "rationale": "Individuals with no household cars are likely to rely more on public transport for their return journey, given the lack of private vehicle access. Car use is also reduced, reflecting this constraint."
+  },
+  "prediction": {
+    "car": 0.25,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.08,
+    "rationale": "Individuals with no household cars are likely to rely more on public transport for their return journey, given the lack of private vehicle access. Car use is also reduced, reflecting this constraint."
+  },
+  "normalization": {
+    "sum_before": 0.51,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:23:31.140075+00:00",
+  "cost_exceeded_reservation": false
+}

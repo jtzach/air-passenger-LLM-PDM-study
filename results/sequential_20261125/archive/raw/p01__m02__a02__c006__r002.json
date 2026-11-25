@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m02__a02__c006__r002",
+  "block_id": "p01__m02__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__RegioStaR7__5febbfe6f6bc",
+  "round": 2,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "76afaecfafce699b7b42b634e317f91aa87a61bf7d54164354ac6edacd16b30f",
+  "started_utc": "2026-11-25T14:25:00.029582+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:25:01.672007+00:00",
+      "cost_usd": 0.0003164,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0003164,
+  "reservation_upper_bound_usd": 0.005150399999999999,
+  "response_sha256": "a30c5b2b0b79e574616cfe03e5bd26419adce14cbbda8b58a46c6023a39defb0",
+  "response": {
+    "id": "gen-1795616700-qnHOSLYUYBNwzKJzEtq7",
+    "object": "chat.completion",
+    "created": 1795616700,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.30,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"In small-town/village urban regions, car access to airports is likelier, raising car use. Local public transport also rises due to limited direct airport links. Long-distance rail use is slightly lower given rural starting points.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 455,
+      "completion_tokens": 84,
+      "total_tokens": 539,
+      "cost": 0.0003164,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003164,
+        "upstream_inference_prompt_cost": 0.000182,
+        "upstream_inference_completions_cost": 0.0001344
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795616700-qnHOSLYUYBNwzKJzEtq7",
+  "raw_prediction": {
+    "car": 0.45,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "In small-town/village urban regions, car access to airports is likelier, raising car use. Local public transport also rises due to limited direct airport links. Long-distance rail use is slightly lower given rural starting points."
+  },
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "In small-town/village urban regions, car access to airports is likelier, raising car use. Local public transport also rises due to limited direct airport links. Long-distance rail use is slightly lower given rural starting points."
+  },
+  "normalization": {
+    "sum_before": 0.85,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:25:01.672007+00:00",
+  "cost_exceeded_reservation": false
+}

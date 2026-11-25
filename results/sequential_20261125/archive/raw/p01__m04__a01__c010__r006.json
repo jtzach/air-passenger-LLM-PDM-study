@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c010__r006",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__RegioStaR7__9f47524becab",
+  "round": 6,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "e3df66454af74c216b9c5431dae5919d84e359062bf39ec0bceeb1b8bec50011",
+  "started_utc": "2026-11-25T14:32:05.026164+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:32:06.418812+00:00",
+      "cost_usd": 0.001426,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001426,
+  "reservation_upper_bound_usd": 0.024089999999999997,
+  "response_sha256": "19b61401b4847f2f26851aeacec11dc98136db70dcf81438fa4f7735ce778829",
+  "response": {
+    "id": "gen-1795617125-EHIeFjtRwEpRjsEyiumE",
+    "object": "chat.completion",
+    "created": 1795617125,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.40,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"Medium-sized town residents have moderate car access, somewhat limited long-distance rail, and some use of local public transport to reach larger hubs; car is most probable, but multimodal trips are possible.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 397,
+      "completion_tokens": 79,
+      "total_tokens": 476,
+      "cost": 0.001426,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001426,
+        "upstream_inference_prompt_cost": 0.000794,
+        "upstream_inference_completions_cost": 0.000632
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795617125-EHIeFjtRwEpRjsEyiumE",
+  "raw_prediction": {
+    "car": 0.55,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.25,
+    "rationale": "Medium-sized town residents have moderate car access, somewhat limited long-distance rail, and some use of local public transport to reach larger hubs; car is most probable, but multimodal trips are possible."
+  },
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.25,
+    "rationale": "Medium-sized town residents have moderate car access, somewhat limited long-distance rail, and some use of local public transport to reach larger hubs; car is most probable, but multimodal trips are possible."
+  },
+  "normalization": {
+    "sum_before": 1.2000000000000002,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:32:06.418812+00:00",
+  "cost_exceeded_reservation": false
+}

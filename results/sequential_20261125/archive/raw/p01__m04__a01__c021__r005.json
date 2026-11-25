@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c021__r005",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__ef1ad3950de1",
+  "round": 5,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "0f918b09a82500bcc60e751971e03a0414815b92c7b5cb39d9bd9fc86bc4cac5",
+  "started_utc": "2026-11-25T14:29:37.010266+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:29:38.306133+00:00",
+      "cost_usd": 0.001442,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001442,
+  "reservation_upper_bound_usd": 0.023903999999999998,
+  "response_sha256": "0fdfad1a69bfdf7db71db8aeaff054a0e2268b5c34b5141cbbcdbae3a23bb65f",
+  "response": {
+    "id": "gen-1795616977-DFsAHaNnBSXqQliPTBD9",
+    "object": "chat.completion",
+    "created": 1795616977,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.30,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Short trips with only 1 night away often involve nearby airports; car is convenient for access. Local public transport is less likely for luggage but still plausible. Few use long-distance rail for such short itineraries.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 393,
+      "completion_tokens": 82,
+      "total_tokens": 475,
+      "cost": 0.001442,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001442,
+        "upstream_inference_prompt_cost": 0.000786,
+        "upstream_inference_completions_cost": 0.000656
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616977-DFsAHaNnBSXqQliPTBD9",
+  "raw_prediction": {
+    "car": 0.55,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "Short trips with only 1 night away often involve nearby airports; car is convenient for access. Local public transport is less likely for luggage but still plausible. Few use long-distance rail for such short itineraries."
+  },
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "Short trips with only 1 night away often involve nearby airports; car is convenient for access. Local public transport is less likely for luggage but still plausible. Few use long-distance rail for such short itineraries."
+  },
+  "normalization": {
+    "sum_before": 0.9500000000000001,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:29:38.306133+00:00",
+  "cost_exceeded_reservation": false
+}

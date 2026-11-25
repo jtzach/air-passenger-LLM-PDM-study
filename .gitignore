@@ -25,3 +25,7 @@ manuscript/qa/
 figures/*_pdf_check.png
 manuscript/template_original/author_guidelines.html
 manuscript/template_original/findings_template_gallery.html
+# Exploratory local source audit contains internal project material. The final
+# public pipeline uses only explicitly released derived research outputs.
+data/fmg/
+docs/FMG_DATA_AUDIT.md

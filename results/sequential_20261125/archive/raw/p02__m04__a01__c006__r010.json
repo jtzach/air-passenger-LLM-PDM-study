@@ -1,0 +1,120 @@
+{
+  "task_id": "p02__m04__a01__c006__r010",
+  "block_id": "p02__m04__a01",
+  "panel_id": "fmg_2025",
+  "panel_index": 1,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "fmg_private_intercontinental",
+  "round": 10,
+  "modes": [
+    "car_dropoff",
+    "car_airport_parking",
+    "car_offairport_parking",
+    "car_other_parking",
+    "taxi_ridehail",
+    "rental_carsharing",
+    "bus_transfer",
+    "s_bahn",
+    "uefex",
+    "other"
+  ],
+  "mutually_exclusive": true,
+  "request_sha256": "d957f75f31a025ab5bd39a63bf1458962752692f894f47f75758065fe566d4eb",
+  "started_utc": "2026-11-25T17:39:21.746662+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:39:23.348161+00:00",
+      "cost_usd": 0.002484,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.002484,
+  "reservation_upper_bound_usd": 0.02916,
+  "response_sha256": "b683b19b4b2f4f9020891b5573f1616d795c03269106112e147fa712ee6076df",
+  "response": {
+    "id": "gen-1795628361-Lez5jY5AnqGRkSIqeZyG",
+    "object": "chat.completion",
+    "created": 1795628361,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car_dropoff\": 0.18,\n  \"car_airport_parking\": 0.26,\n  \"car_offairport_parking\": 0.10,\n  \"car_other_parking\": 0.03,\n  \"taxi_ridehail\": 0.09,\n  \"rental_carsharing\": 0.03,\n  \"bus_transfer\": 0.04,\n  \"s_bahn\": 0.22,\n  \"uefex\": 0.03,\n  \"other\": 0.02,\n  \"rationale\": \"Intercontinental private travellers value convenience and luggage handling; airport parking and S-Bahn are popular. Some use drop-off, taxi, or regional trains; buses and rentals are less common for long-haul departures.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 582,
+      "completion_tokens": 165,
+      "total_tokens": 747,
+      "cost": 0.002484,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002484,
+        "upstream_inference_prompt_cost": 0.001164,
+        "upstream_inference_completions_cost": 0.00132
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628361-Lez5jY5AnqGRkSIqeZyG",
+  "raw_prediction": {
+    "car_dropoff": 0.18,
+    "car_airport_parking": 0.26,
+    "car_offairport_parking": 0.1,
+    "car_other_parking": 0.03,
+    "taxi_ridehail": 0.09,
+    "rental_carsharing": 0.03,
+    "bus_transfer": 0.04,
+    "s_bahn": 0.22,
+    "uefex": 0.03,
+    "other": 0.02,
+    "rationale": "Intercontinental private travellers value convenience and luggage handling; airport parking and S-Bahn are popular. Some use drop-off, taxi, or regional trains; buses and rentals are less common for long-haul departures."
+  },
+  "prediction": {
+    "car_dropoff": 0.18,
+    "car_airport_parking": 0.26,
+    "car_offairport_parking": 0.1,
+    "car_other_parking": 0.03,
+    "taxi_ridehail": 0.09,
+    "rental_carsharing": 0.03,
+    "bus_transfer": 0.04,
+    "s_bahn": 0.22,
+    "uefex": 0.03,
+    "other": 0.02,
+    "rationale": "Intercontinental private travellers value convenience and luggage handling; airport parking and S-Bahn are popular. Some use drop-off, taxi, or regional trains; buses and rentals are less common for long-haul departures."
+  },
+  "normalization": {
+    "sum_before": 1.0,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:39:23.348161+00:00",
+  "cost_exceeded_reservation": false
+}

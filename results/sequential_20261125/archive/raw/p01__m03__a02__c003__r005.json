@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a02__c003__r005",
+  "block_id": "p01__m03__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzauto_gr1__bee31b0e88ae",
+  "round": 5,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "c753b3d15c181ca7b60055938ee5b0e3bfb9eddb7682b28ca4c3c6aab445f26a",
+  "started_utc": "2026-11-25T14:30:38.614980+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:30:48.913466+00:00",
+      "cost_usd": 0.000119955,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000119955,
+  "reservation_upper_bound_usd": 0.00211698,
+  "response_sha256": "b4056e848d6e94f91e89f9bfe434b548ec22af166bc8006c53deb314b171041f",
+  "response": {
+    "id": "gen-1795617038-gXQbqtsyiBlPaBnprxc2",
+    "object": "chat.completion",
+    "created": 1795617038,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.15,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Higher car ownership suggests greater car dependency for access; lower reliance on public transport modes due to private vehicle availability for journey legs.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 473,
+      "completion_tokens": 68,
+      "total_tokens": 541,
+      "cost": 0.000119955,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000119955,
+        "upstream_inference_prompt_cost": 6.3855e-05,
+        "upstream_inference_completions_cost": 5.61e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795617038-gXQbqtsyiBlPaBnprxc2",
+  "raw_prediction": {
+    "car": 0.65,
+    "local_pt": 0.15,
+    "long_distance_rail": 0.1,
+    "rationale": "Higher car ownership suggests greater car dependency for access; lower reliance on public transport modes due to private vehicle availability for journey legs."
+  },
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.15,
+    "long_distance_rail": 0.1,
+    "rationale": "Higher car ownership suggests greater car dependency for access; lower reliance on public transport modes due to private vehicle availability for journey legs."
+  },
+  "normalization": {
+    "sum_before": 0.9,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:30:48.913466+00:00",
+  "cost_exceeded_reservation": false
+}

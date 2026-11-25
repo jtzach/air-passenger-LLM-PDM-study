@@ -1,0 +1,106 @@
+{
+  "task_id": "p01__m01__a01__c010__r001",
+  "block_id": "p01__m01__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "unanchored",
+  "card_id": "reise__RegioStaR7__9f47524becab",
+  "round": 1,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "44c49b1e587ac9dc8d8be56cd65461cca7342cb5b335792dc31415bb6b727ab6",
+  "started_utc": "2026-11-25T14:20:46.674896+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "transport_error",
+      "detail": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>",
+      "utc": "2026-11-25T14:21:09.847038+00:00",
+      "cost_upper_bound_usd": 0.00011161999999999999
+    },
+    {
+      "number": 2,
+      "status": "response",
+      "utc": "2026-11-25T14:21:14.559592+00:00",
+      "cost_usd": 2.086e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00013247999999999998,
+  "reservation_upper_bound_usd": 0.00033486,
+  "response_sha256": "45b4ec6914c4c27fca52fa81ca4ff18e60ba44b0cd6dabd313cb6b17703808d1",
+  "response": {
+    "id": "gen-1795616473-jUgshkUjm2sjBWMzPLZE",
+    "object": "chat.completion",
+    "created": 1795616473,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.3, \"local_pt\": 0.2, \"long_distance_rail\": 0.1, \"rationale\": \"Given the origin is a medium-sized urban area, a combination of flight and car use is likely for onward travel. Local public transport use is probable for accessing the airport and returning, alongside some long-distance rail trips.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 419,
+      "completion_tokens": 82,
+      "total_tokens": 501,
+      "cost": 2.086e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.086e-05,
+        "upstream_inference_prompt_cost": 1.676e-05,
+        "upstream_inference_completions_cost": 4.1e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616473-jUgshkUjm2sjBWMzPLZE",
+  "raw_prediction": {
+    "car": 0.3,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.1,
+    "rationale": "Given the origin is a medium-sized urban area, a combination of flight and car use is likely for onward travel. Local public transport use is probable for accessing the airport and returning, alongside some long-distance rail trips."
+  },
+  "prediction": {
+    "car": 0.3,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.1,
+    "rationale": "Given the origin is a medium-sized urban area, a combination of flight and car use is likely for onward travel. Local public transport use is probable for accessing the airport and returning, alongside some long-distance rail trips."
+  },
+  "normalization": {
+    "sum_before": 0.6,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:21:14.559592+00:00",
+  "cost_exceeded_reservation": false
+}

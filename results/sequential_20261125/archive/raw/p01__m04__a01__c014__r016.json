@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c014__r016",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzbegl_gr__154f6eb18583",
+  "round": 16,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "808b39f0baa61234814f862fc5dfe1cae737c6b02b254dde451d8d52838638f5",
+  "started_utc": "2026-11-25T17:42:37.004550+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:42:38.246493+00:00",
+      "cost_usd": 0.001462,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001462,
+  "reservation_upper_bound_usd": 0.023933999999999997,
+  "response_sha256": "dabf2e70f868c87e4b314e98bb9eaeabd619b48addf3d3b02c4eba0f5370369f",
+  "response": {
+    "id": "gen-1795628556-gdQkMASGdzJjgsKZtivR",
+    "object": "chat.completion",
+    "created": 1795628556,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.30,\n  \"local_pt\": 0.40,\n  \"long_distance_rail\": 0.20,\n  \"rationale\": \"Solo travellers may favor public transport for airport access, but car use (including rides) remains common. Long-distance rail is less likely, but possible, especially if connecting to major airports. No companions may reduce carpool likelihood.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 391,
+      "completion_tokens": 85,
+      "total_tokens": 476,
+      "cost": 0.001462,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001462,
+        "upstream_inference_prompt_cost": 0.000782,
+        "upstream_inference_completions_cost": 0.00068
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628556-gdQkMASGdzJjgsKZtivR",
+  "raw_prediction": {
+    "car": 0.3,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.2,
+    "rationale": "Solo travellers may favor public transport for airport access, but car use (including rides) remains common. Long-distance rail is less likely, but possible, especially if connecting to major airports. No companions may reduce carpool likelihood."
+  },
+  "prediction": {
+    "car": 0.3,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.2,
+    "rationale": "Solo travellers may favor public transport for airport access, but car use (including rides) remains common. Long-distance rail is less likely, but possible, especially if connecting to major airports. No companions may reduce carpool likelihood."
+  },
+  "normalization": {
+    "sum_before": 0.9,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:42:38.252458+00:00",
+  "cost_exceeded_reservation": false
+}

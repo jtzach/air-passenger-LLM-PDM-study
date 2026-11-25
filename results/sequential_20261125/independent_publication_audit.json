@@ -1,0 +1,142 @@
+{
+  "status": "PASS",
+  "method": "Independent Python arithmetic from public averaged-prediction, no-group, and complete-round CSVs; no analysis functions imported. Median interval recomputed by integer binomial tail enumeration.",
+  "plan_sha256": "4052c4ac1c244888754ece35e16ad26bdaf57c46dab6c9e5e55052a897235c47",
+  "checked_blocks": 12,
+  "checked_prediction_cells": 603,
+  "checks": [
+    {
+      "block_id": "p01__m01__a01",
+      "prefix": 0,
+      "score_absent": true
+    },
+    {
+      "block_id": "p01__m01__a02",
+      "prefix": 2,
+      "recomputed_ensemble_mae_pp": 5.6679704680938245,
+      "recomputed_no_group_mae_pp": 4.935225796810767
+    },
+    {
+      "block_id": "p01__m02__a01",
+      "prefix": 16,
+      "recomputed_ensemble_mae_pp": 25.195745128769016,
+      "recomputed_no_group_mae_pp": 25.55114808255193,
+      "look": 16,
+      "order_statistic_k": 2,
+      "median": -21.352421685214388,
+      "lower": -21.876044042086857,
+      "upper": -20.001963409082066,
+      "decision": "meaningful_degradation"
+    },
+    {
+      "block_id": "p01__m02__a02",
+      "prefix": 16,
+      "recomputed_ensemble_mae_pp": 5.5090395808096355,
+      "recomputed_no_group_mae_pp": 4.473946103172806,
+      "look": 16,
+      "order_statistic_k": 2,
+      "median": -1.5945479175423949,
+      "lower": -1.929297775252162,
+      "upper": -1.2495545078745085,
+      "decision": "meaningful_degradation"
+    },
+    {
+      "block_id": "p01__m03__a01",
+      "prefix": 10,
+      "recomputed_ensemble_mae_pp": 20.044458313544148,
+      "recomputed_no_group_mae_pp": 18.806268487155766
+    },
+    {
+      "block_id": "p01__m03__a02",
+      "prefix": 8,
+      "recomputed_ensemble_mae_pp": 7.70176772576589,
+      "recomputed_no_group_mae_pp": 4.16202751600975
+    },
+    {
+      "block_id": "p01__m04__a01",
+      "prefix": 16,
+      "recomputed_ensemble_mae_pp": 13.896227897106998,
+      "recomputed_no_group_mae_pp": 17.643243896384394,
+      "look": 16,
+      "order_statistic_k": 2,
+      "median": -9.663748853034361,
+      "lower": -10.634013893227038,
+      "upper": -9.335114850593804,
+      "decision": "meaningful_degradation"
+    },
+    {
+      "block_id": "p01__m04__a02",
+      "prefix": 16,
+      "recomputed_ensemble_mae_pp": 2.9543222381555805,
+      "recomputed_no_group_mae_pp": 4.10883460925786,
+      "look": 16,
+      "order_statistic_k": 2,
+      "median": 0.9312206486416166,
+      "lower": 0.7929414994865951,
+      "upper": 1.1934787350893519,
+      "decision": "meaningful_improvement"
+    },
+    {
+      "block_id": "p02__m01__a01",
+      "prefix": 0,
+      "score_absent": true
+    },
+    {
+      "block_id": "p02__m02__a01",
+      "prefix": 16,
+      "recomputed_ensemble_mae_pp": 5.4796183129694835,
+      "recomputed_no_group_mae_pp": 5.4423830934046595,
+      "look": 16,
+      "order_statistic_k": 2,
+      "median": -2.9662506675103155,
+      "lower": -3.1860206393056636,
+      "upper": -2.4258103554922883,
+      "decision": "meaningful_degradation"
+    },
+    {
+      "block_id": "p02__m03__a01",
+      "prefix": 0,
+      "score_absent": true
+    },
+    {
+      "block_id": "p02__m04__a01",
+      "prefix": 16,
+      "recomputed_ensemble_mae_pp": 3.7667869456880396,
+      "recomputed_no_group_mae_pp": 3.7389356107009,
+      "look": 16,
+      "order_statistic_k": 2,
+      "median": -1.2077409592170367,
+      "lower": -1.90295662865441,
+      "upper": -0.7655960938117357,
+      "decision": "meaningful_degradation"
+    }
+  ],
+  "input_sha256": {
+    "table_numbers.json": "eec8d73fd82fb2b01019949610764db33fbff75e06114b808a59a4cad99703bf",
+    "averaged_predictions.csv": "bff0fbfad7dc8d67000ba8172d74b9941b3a425c5b9f1c81aa67b049c03d0eb3",
+    "no_card_predictions.csv": "f392954e4330bd7cc8ff0a2fe0ac370ecd23fa0d661ccfb86a2612b2c12543ba",
+    "round_scores.csv": "790a62b5c27bad73055aeafbd7513fdc54311f72273436cddc61247b36b8ebb1"
+  },
+  "fixed_observation_checks": {
+    "mid_car_ownership_rail_difference": {
+      "data_pp": -3.7782366721425626,
+      "llm_pp": -11.6875,
+      "signed_error_pp": -7.909263327857437
+    },
+    "mid_small_town_rail_level": {
+      "data_pp": 23.25260096359134,
+      "llm_pp": 9.375,
+      "signed_error_pp": -13.877600963591341
+    },
+    "fmg_purpose_taxi_difference": {
+      "data_pp": 12.720703905296698,
+      "llm_pp": 4.551023901240627,
+      "signed_error_pp": -8.169680004056072
+    },
+    "fmg_private_region_car_difference": {
+      "data_pp": 0.19610530852361974,
+      "llm_pp": 2.0000000000000018,
+      "signed_error_pp": 1.803894691476382
+    }
+  }
+}

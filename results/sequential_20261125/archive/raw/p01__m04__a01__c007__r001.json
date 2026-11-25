@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c007__r001",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__RegioStaR7__72d39163efb4",
+  "round": 1,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "0532236b0bd728e8c2082838dcfde87ca6031d4b2c58e2b345e7802b4740f872",
+  "started_utc": "2026-11-25T14:21:08.061081+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:21:09.637034+00:00",
+      "cost_usd": 0.001472,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001472,
+  "reservation_upper_bound_usd": 0.024077999999999995,
+  "response_sha256": "debeb514cd8b9b703061eed25c898e402f1129be7a12381b73c87fe3377a5b3c",
+  "response": {
+    "id": "gen-1795616468-XHODyxuOYlWRkybDU87F",
+    "object": "chat.completion",
+    "created": 1795616468,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.75,\n  \"local_pt\": 0.30,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Rural residents often rely on cars due to limited public transport. Local PT is less accessible, but some connections exist. Long-distance rail use is rarer, as rural areas are typically distant from major train stations and airports.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 396,
+      "completion_tokens": 85,
+      "total_tokens": 481,
+      "cost": 0.001472,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001472,
+        "upstream_inference_prompt_cost": 0.000792,
+        "upstream_inference_completions_cost": 0.00068
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616468-XHODyxuOYlWRkybDU87F",
+  "raw_prediction": {
+    "car": 0.75,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "Rural residents often rely on cars due to limited public transport. Local PT is less accessible, but some connections exist. Long-distance rail use is rarer, as rural areas are typically distant from major train stations and airports."
+  },
+  "prediction": {
+    "car": 0.75,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "Rural residents often rely on cars due to limited public transport. Local PT is less accessible, but some connections exist. Long-distance rail use is rarer, as rural areas are typically distant from major train stations and airports."
+  },
+  "normalization": {
+    "sum_before": 1.15,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:21:09.637034+00:00",
+  "cost_exceeded_reservation": false
+}

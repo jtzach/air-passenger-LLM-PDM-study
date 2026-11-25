@@ -1,0 +1,558 @@
+{
+  "mid_example": [
+    {
+      "group": "No car",
+      "mode": "car",
+      "observed": 0.14996851951330345,
+      "predictions": {
+        "google/gemma-3-4b-it": 0.275,
+        "openai/gpt-4.1-mini": 0.128125,
+        "qwen/qwen3-235b-a22b-2507": 0.2625,
+        "openai/gpt-4.1": 0.146875
+      }
+    },
+    {
+      "group": "No car",
+      "mode": "local_pt",
+      "observed": 0.4005882905932819,
+      "predictions": {
+        "google/gemma-3-4b-it": 0.16499999999999998,
+        "openai/gpt-4.1-mini": 0.32187499999999997,
+        "qwen/qwen3-235b-a22b-2507": 0.2875,
+        "openai/gpt-4.1": 0.33875
+      }
+    },
+    {
+      "group": "No car",
+      "mode": "long_distance_rail",
+      "observed": 0.16762432059419718,
+      "predictions": {
+        "google/gemma-3-4b-it": 0.08,
+        "openai/gpt-4.1-mini": 0.09375,
+        "qwen/qwen3-235b-a22b-2507": 0.175,
+        "openai/gpt-4.1": 0.19125
+      }
+    },
+    {
+      "group": "4 or more cars",
+      "mode": "car",
+      "observed": 0.5843417508416866,
+      "predictions": {
+        "google/gemma-3-4b-it": 0.45,
+        "openai/gpt-4.1-mini": 0.640625,
+        "qwen/qwen3-235b-a22b-2507": 0.7125,
+        "openai/gpt-4.1": 0.584375
+      }
+    },
+    {
+      "group": "4 or more cars",
+      "mode": "local_pt",
+      "observed": 0.09328591790282008,
+      "predictions": {
+        "google/gemma-3-4b-it": 0.265,
+        "openai/gpt-4.1-mini": 0.26437499999999997,
+        "qwen/qwen3-235b-a22b-2507": 0.1375,
+        "openai/gpt-4.1": 0.145
+      }
+    },
+    {
+      "group": "4 or more cars",
+      "mode": "long_distance_rail",
+      "observed": 0.12984195387277156,
+      "predictions": {
+        "google/gemma-3-4b-it": 0.125,
+        "openai/gpt-4.1-mini": 0.109375,
+        "qwen/qwen3-235b-a22b-2507": 0.075,
+        "openai/gpt-4.1": 0.074375
+      }
+    }
+  ],
+  "fmg": [
+    {
+      "group": "Business / Domestic",
+      "observed": {
+        "car_dropoff": 0.11290882144852094,
+        "car_airport_parking": 0.22211391096164462,
+        "car_offairport_parking": 0.012509815479281785,
+        "car_other_parking": 0.007293741142208332,
+        "taxi_ridehail": 0.19903629417711646,
+        "rental_carsharing": 0.11617076998031664,
+        "bus_transfer": 0.07153771288235285,
+        "s_bahn": 0.24847943501798053,
+        "uefex": 0.003347588489223625,
+        "other": 0.006601910421354264
+      },
+      "predictions": {
+        "openai/gpt-4.1-mini": {
+          "car_dropoff": 0.24375,
+          "car_airport_parking": 0.184375,
+          "car_offairport_parking": 0.1,
+          "car_other_parking": 0.05,
+          "taxi_ridehail": 0.096875,
+          "rental_carsharing": 0.05,
+          "bus_transfer": 0.08750000000000001,
+          "s_bahn": 0.145625,
+          "uefex": 0.03,
+          "other": 0.011875
+        },
+        "openai/gpt-4.1": {
+          "car_dropoff": 0.17125,
+          "car_airport_parking": 0.20625000000000002,
+          "car_offairport_parking": 0.058125,
+          "car_other_parking": 0.010625,
+          "taxi_ridehail": 0.123125,
+          "rental_carsharing": 0.035,
+          "bus_transfer": 0.043750000000000004,
+          "s_bahn": 0.30125,
+          "uefex": 0.033125,
+          "other": 0.0175
+        }
+      }
+    },
+    {
+      "group": "Private / Domestic",
+      "observed": {
+        "car_dropoff": 0.29434849524442913,
+        "car_airport_parking": 0.08170427176393094,
+        "car_offairport_parking": 0.04048857917776017,
+        "car_other_parking": 0.008228878822278561,
+        "taxi_ridehail": 0.05953686657449073,
+        "rental_carsharing": 0.05970898894460615,
+        "bus_transfer": 0.0772742010394252,
+        "s_bahn": 0.35919092797387836,
+        "uefex": 0.012240002711743659,
+        "other": 0.007278787747457605
+      },
+      "predictions": {
+        "openai/gpt-4.1-mini": {
+          "car_dropoff": 0.265625,
+          "car_airport_parking": 0.19375,
+          "car_offairport_parking": 0.1,
+          "car_other_parking": 0.05,
+          "taxi_ridehail": 0.08125,
+          "rental_carsharing": 0.036250000000000004,
+          "bus_transfer": 0.0925,
+          "s_bahn": 0.145625,
+          "uefex": 0.023125,
+          "other": 0.011875
+        },
+        "openai/gpt-4.1": {
+          "car_dropoff": 0.1975,
+          "car_airport_parking": 0.215,
+          "car_offairport_parking": 0.06625,
+          "car_other_parking": 0.015,
+          "taxi_ridehail": 0.074375,
+          "rental_carsharing": 0.031875,
+          "bus_transfer": 0.06625,
+          "s_bahn": 0.286875,
+          "uefex": 0.0275,
+          "other": 0.019375
+        }
+      }
+    },
+    {
+      "group": "Business / Continental",
+      "observed": {
+        "car_dropoff": 0.11470330644628887,
+        "car_airport_parking": 0.1588704347219814,
+        "car_offairport_parking": 0.012653548060918453,
+        "car_other_parking": 0.00546142694198766,
+        "taxi_ridehail": 0.1735413924653301,
+        "rental_carsharing": 0.10655117366860953,
+        "bus_transfer": 0.10682575719410664,
+        "s_bahn": 0.29708347982252914,
+        "uefex": 0.014358898164548453,
+        "other": 0.009950582513699884
+      },
+      "predictions": {
+        "openai/gpt-4.1-mini": {
+          "car_dropoff": 0.234375,
+          "car_airport_parking": 0.184375,
+          "car_offairport_parking": 0.1,
+          "car_other_parking": 0.048125,
+          "taxi_ridehail": 0.1,
+          "rental_carsharing": 0.04875,
+          "bus_transfer": 0.09375,
+          "s_bahn": 0.144375,
+          "uefex": 0.034375,
+          "other": 0.011875
+        },
+        "openai/gpt-4.1": {
+          "car_dropoff": 0.165625,
+          "car_airport_parking": 0.17,
+          "car_offairport_parking": 0.050625,
+          "car_other_parking": 0.01,
+          "taxi_ridehail": 0.14125,
+          "rental_carsharing": 0.04,
+          "bus_transfer": 0.046875,
+          "s_bahn": 0.31375000000000003,
+          "uefex": 0.040625,
+          "other": 0.02125
+        }
+      }
+    },
+    {
+      "group": "Private / Continental",
+      "observed": {
+        "car_dropoff": 0.26468703739038796,
+        "car_airport_parking": 0.07245322093208274,
+        "car_offairport_parking": 0.08222437689832668,
+        "car_other_parking": 0.007912345796191891,
+        "taxi_ridehail": 0.05462416650804476,
+        "rental_carsharing": 0.03585040652461142,
+        "bus_transfer": 0.0751621156087607,
+        "s_bahn": 0.3767198865317443,
+        "uefex": 0.027098292421971888,
+        "other": 0.0032681513878777876
+      },
+      "predictions": {
+        "openai/gpt-4.1-mini": {
+          "car_dropoff": 0.240625,
+          "car_airport_parking": 0.19375,
+          "car_offairport_parking": 0.10312500000000001,
+          "car_other_parking": 0.05,
+          "taxi_ridehail": 0.09375,
+          "rental_carsharing": 0.048125,
+          "bus_transfer": 0.1,
+          "s_bahn": 0.13624999999999998,
+          "uefex": 0.02375,
+          "other": 0.010625
+        },
+        "openai/gpt-4.1": {
+          "car_dropoff": 0.198125,
+          "car_airport_parking": 0.1875,
+          "car_offairport_parking": 0.06875,
+          "car_other_parking": 0.011875,
+          "taxi_ridehail": 0.08750000000000001,
+          "rental_carsharing": 0.03625,
+          "bus_transfer": 0.06375,
+          "s_bahn": 0.2925,
+          "uefex": 0.0325,
+          "other": 0.02125
+        }
+      }
+    },
+    {
+      "group": "Business / Intercontinental",
+      "observed": {
+        "car_dropoff": 0.13365901547776274,
+        "car_airport_parking": 0.13789926486852686,
+        "car_offairport_parking": 0.0165229229902933,
+        "car_other_parking": 0.0,
+        "taxi_ridehail": 0.22082245856660668,
+        "rental_carsharing": 0.13563225110278104,
+        "bus_transfer": 0.09878659909860932,
+        "s_bahn": 0.23224904152673936,
+        "uefex": 0.008899812462285397,
+        "other": 0.0155286339063951
+      },
+      "predictions": {
+        "openai/gpt-4.1-mini": {
+          "car_dropoff": 0.25,
+          "car_airport_parking": 0.19062500000000002,
+          "car_offairport_parking": 0.1,
+          "car_other_parking": 0.05,
+          "taxi_ridehail": 0.125,
+          "rental_carsharing": 0.04875,
+          "bus_transfer": 0.084375,
+          "s_bahn": 0.113125,
+          "uefex": 0.024375,
+          "other": 0.01375
+        },
+        "openai/gpt-4.1": {
+          "car_dropoff": 0.14625,
+          "car_airport_parking": 0.25625,
+          "car_offairport_parking": 0.060625,
+          "car_other_parking": 0.01,
+          "taxi_ridehail": 0.165625,
+          "rental_carsharing": 0.041875,
+          "bus_transfer": 0.031875,
+          "s_bahn": 0.224375,
+          "uefex": 0.03625,
+          "other": 0.026875
+        }
+      }
+    },
+    {
+      "group": "Private / Intercontinental",
+      "observed": {
+        "car_dropoff": 0.28209987849906115,
+        "car_airport_parking": 0.05459196638956193,
+        "car_offairport_parking": 0.0787217739912474,
+        "car_other_parking": 0.011317659213764522,
+        "taxi_ridehail": 0.0746333998046379,
+        "rental_carsharing": 0.05750886609010293,
+        "bus_transfer": 0.09448290352831025,
+        "s_bahn": 0.3166186556657825,
+        "uefex": 0.023534541724861996,
+        "other": 0.0064903550926695645
+      },
+      "predictions": {
+        "openai/gpt-4.1-mini": {
+          "car_dropoff": 0.253125,
+          "car_airport_parking": 0.203125,
+          "car_offairport_parking": 0.1125,
+          "car_other_parking": 0.05,
+          "taxi_ridehail": 0.095625,
+          "rental_carsharing": 0.045625,
+          "bus_transfer": 0.09062500000000001,
+          "s_bahn": 0.1125,
+          "uefex": 0.02375,
+          "other": 0.013125
+        },
+        "openai/gpt-4.1": {
+          "car_dropoff": 0.195625,
+          "car_airport_parking": 0.2225,
+          "car_offairport_parking": 0.081875,
+          "car_other_parking": 0.01375,
+          "taxi_ridehail": 0.11812500000000001,
+          "rental_carsharing": 0.038125,
+          "bus_transfer": 0.049375,
+          "s_bahn": 0.226875,
+          "uefex": 0.03125,
+          "other": 0.0225
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "mid_models": [
+      "openai/gpt-4.1",
+      "google/gemma-3-4b-it"
+    ],
+    "model_labels": {
+      "google/gemma-3-4b-it": "Gemma 3 4B",
+      "openai/gpt-4.1-mini": "GPT-4.1 mini",
+      "qwen/qwen3-235b-a22b-2507": "Qwen3 235B A22B",
+      "openai/gpt-4.1": "GPT-4.1"
+    },
+    "fmg_model": "openai/gpt-4.1",
+    "mid_condition": "overall_rate_anchored",
+    "fmg_condition": "unanchored",
+    "prediction_basis": "mean across each block's complete round prefix",
+    "unavailable_blocks": [
+      "p01__m01__a01",
+      "p02__m01__a01",
+      "p02__m03__a01"
+    ],
+    "block_availability": [
+      {
+        "block_id": "p01__m01__a01",
+        "panel_id": "mid_2023",
+        "model_id": "google/gemma-3-4b-it",
+        "model_label": "Gemma 3 4B",
+        "arm": "unanchored",
+        "complete_prefix_rounds": 0,
+        "attempted_requests": 24,
+        "valid_responses": 23,
+        "unsuccessful_requests": 1,
+        "retained_prefix_requests": 0,
+        "valid_responses_outside_prefix": 23,
+        "accounted_cost_usd": 0.00110002,
+        "halt_reason": "incomplete_round_invalid_output",
+        "inference_assumptions_ok": true,
+        "provider": "Parasail",
+        "returned_model": "google/gemma-3-4b-it"
+      },
+      {
+        "block_id": "p01__m01__a02",
+        "panel_id": "mid_2023",
+        "model_id": "google/gemma-3-4b-it",
+        "model_label": "Gemma 3 4B",
+        "arm": "overall_rate_anchored",
+        "complete_prefix_rounds": 2,
+        "attempted_requests": 58,
+        "valid_responses": 57,
+        "unsuccessful_requests": 1,
+        "retained_prefix_requests": 48,
+        "valid_responses_outside_prefix": 9,
+        "accounted_cost_usd": 0.00136387,
+        "halt_reason": "incomplete_round_invalid_output",
+        "inference_assumptions_ok": true,
+        "provider": "Parasail",
+        "returned_model": "google/gemma-3-4b-it"
+      },
+      {
+        "block_id": "p01__m02__a01",
+        "panel_id": "mid_2023",
+        "model_id": "openai/gpt-4.1-mini",
+        "model_label": "GPT-4.1 mini",
+        "arm": "unanchored",
+        "complete_prefix_rounds": 16,
+        "attempted_requests": 396,
+        "valid_responses": 396,
+        "unsuccessful_requests": 0,
+        "retained_prefix_requests": 384,
+        "valid_responses_outside_prefix": 12,
+        "accounted_cost_usd": 0.115234,
+        "halt_reason": "meaningful_degradation",
+        "inference_assumptions_ok": true,
+        "provider": "OpenAI",
+        "returned_model": "openai/gpt-4.1-mini"
+      },
+      {
+        "block_id": "p01__m02__a02",
+        "panel_id": "mid_2023",
+        "model_id": "openai/gpt-4.1-mini",
+        "model_label": "GPT-4.1 mini",
+        "arm": "overall_rate_anchored",
+        "complete_prefix_rounds": 16,
+        "attempted_requests": 394,
+        "valid_responses": 394,
+        "unsuccessful_requests": 0,
+        "retained_prefix_requests": 384,
+        "valid_responses_outside_prefix": 10,
+        "accounted_cost_usd": 0.1285008,
+        "halt_reason": "meaningful_degradation",
+        "inference_assumptions_ok": true,
+        "provider": "OpenAI",
+        "returned_model": "openai/gpt-4.1-mini"
+      },
+      {
+        "block_id": "p01__m03__a01",
+        "panel_id": "mid_2023",
+        "model_id": "qwen/qwen3-235b-a22b-2507",
+        "model_label": "Qwen3 235B A22B",
+        "arm": "unanchored",
+        "complete_prefix_rounds": 10,
+        "attempted_requests": 269,
+        "valid_responses": 263,
+        "unsuccessful_requests": 6,
+        "retained_prefix_requests": 240,
+        "valid_responses_outside_prefix": 23,
+        "accounted_cost_usd": 0.04811432,
+        "halt_reason": "incomplete_round_invalid_output",
+        "inference_assumptions_ok": true,
+        "provider": "DeepInfra",
+        "returned_model": "qwen/qwen3-235b-a22b-2507"
+      },
+      {
+        "block_id": "p01__m03__a02",
+        "panel_id": "mid_2023",
+        "model_id": "qwen/qwen3-235b-a22b-2507",
+        "model_label": "Qwen3 235B A22B",
+        "arm": "overall_rate_anchored",
+        "complete_prefix_rounds": 8,
+        "attempted_requests": 215,
+        "valid_responses": 213,
+        "unsuccessful_requests": 2,
+        "retained_prefix_requests": 192,
+        "valid_responses_outside_prefix": 21,
+        "accounted_cost_usd": 0.034492665,
+        "halt_reason": "incomplete_round_failed",
+        "inference_assumptions_ok": true,
+        "provider": "DeepInfra",
+        "returned_model": "qwen/qwen3-235b-a22b-2507"
+      },
+      {
+        "block_id": "p01__m04__a01",
+        "panel_id": "mid_2023",
+        "model_id": "openai/gpt-4.1",
+        "model_label": "GPT-4.1",
+        "arm": "unanchored",
+        "complete_prefix_rounds": 16,
+        "attempted_requests": 392,
+        "valid_responses": 392,
+        "unsuccessful_requests": 0,
+        "retained_prefix_requests": 384,
+        "valid_responses_outside_prefix": 8,
+        "accounted_cost_usd": 0.615372,
+        "halt_reason": "meaningful_degradation",
+        "inference_assumptions_ok": true,
+        "provider": "OpenAI",
+        "returned_model": "openai/gpt-4.1"
+      },
+      {
+        "block_id": "p01__m04__a02",
+        "panel_id": "mid_2023",
+        "model_id": "openai/gpt-4.1",
+        "model_label": "GPT-4.1",
+        "arm": "overall_rate_anchored",
+        "complete_prefix_rounds": 16,
+        "attempted_requests": 393,
+        "valid_responses": 392,
+        "unsuccessful_requests": 1,
+        "retained_prefix_requests": 384,
+        "valid_responses_outside_prefix": 8,
+        "accounted_cost_usd": 0.667158,
+        "halt_reason": "meaningful_improvement",
+        "inference_assumptions_ok": true,
+        "provider": "OpenAI",
+        "returned_model": "openai/gpt-4.1"
+      },
+      {
+        "block_id": "p02__m01__a01",
+        "panel_id": "fmg_2025",
+        "model_id": "google/gemma-3-4b-it",
+        "model_label": "Gemma 3 4B",
+        "arm": "unanchored",
+        "complete_prefix_rounds": 0,
+        "attempted_requests": 2,
+        "valid_responses": 0,
+        "unsuccessful_requests": 2,
+        "retained_prefix_requests": 0,
+        "valid_responses_outside_prefix": 0,
+        "accounted_cost_usd": 6.3e-05,
+        "halt_reason": "incomplete_round_invalid_output",
+        "inference_assumptions_ok": true,
+        "provider": null,
+        "returned_model": null
+      },
+      {
+        "block_id": "p02__m02__a01",
+        "panel_id": "fmg_2025",
+        "model_id": "openai/gpt-4.1-mini",
+        "model_label": "GPT-4.1 mini",
+        "arm": "unanchored",
+        "complete_prefix_rounds": 16,
+        "attempted_requests": 115,
+        "valid_responses": 114,
+        "unsuccessful_requests": 1,
+        "retained_prefix_requests": 112,
+        "valid_responses_outside_prefix": 2,
+        "accounted_cost_usd": 0.0630644,
+        "halt_reason": "meaningful_degradation",
+        "inference_assumptions_ok": true,
+        "provider": "OpenAI",
+        "returned_model": "openai/gpt-4.1-mini"
+      },
+      {
+        "block_id": "p02__m03__a01",
+        "panel_id": "fmg_2025",
+        "model_id": "qwen/qwen3-235b-a22b-2507",
+        "model_label": "Qwen3 235B A22B",
+        "arm": "unanchored",
+        "complete_prefix_rounds": 0,
+        "attempted_requests": 2,
+        "valid_responses": 1,
+        "unsuccessful_requests": 1,
+        "retained_prefix_requests": 0,
+        "valid_responses_outside_prefix": 1,
+        "accounted_cost_usd": 0.00116006,
+        "halt_reason": "incomplete_round_invalid_output",
+        "inference_assumptions_ok": true,
+        "provider": "DeepInfra",
+        "returned_model": "qwen/qwen3-235b-a22b-2507"
+      },
+      {
+        "block_id": "p02__m04__a01",
+        "panel_id": "fmg_2025",
+        "model_id": "openai/gpt-4.1",
+        "model_label": "GPT-4.1",
+        "arm": "unanchored",
+        "complete_prefix_rounds": 16,
+        "attempted_requests": 115,
+        "valid_responses": 115,
+        "unsuccessful_requests": 0,
+        "retained_prefix_requests": 112,
+        "valid_responses_outside_prefix": 3,
+        "accounted_cost_usd": 0.295178,
+        "halt_reason": "meaningful_degradation",
+        "inference_assumptions_ok": true,
+        "provider": "OpenAI",
+        "returned_model": "openai/gpt-4.1"
+      }
+    ],
+    "fmg_model_available": true
+  }
+}

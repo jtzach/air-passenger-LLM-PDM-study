@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c017__r016",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__456ee228eb2a",
+  "round": 16,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "6533e7835da64c16f8a458a9e7d001ce91e72a5595738bef3d54bd457b1fbf03",
+  "started_utc": "2026-11-25T17:42:36.639141+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:42:37.947585+00:00",
+      "cost_usd": 0.001462,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001462,
+  "reservation_upper_bound_usd": 0.023921999999999995,
+  "response_sha256": "baaa3f05808f2e7ad6f7de6b91d850c4225bee81e3735a9a554513675786cdd9",
+  "response": {
+    "id": "gen-1795628556-YKGxlgOrd8s7q7n3LHuZ",
+    "object": "chat.completion",
+    "created": 1795628556,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.48,\n  \"local_pt\": 0.32,\n  \"long_distance_rail\": 0.18,\n  \"rationale\": \"For 4-5 night air trips, car access is common for airport transfer, but public/local transport and long-distance rail are options, especially for those without cars or coming from larger cities with easy airport rail connections.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 395,
+      "completion_tokens": 84,
+      "total_tokens": 479,
+      "cost": 0.001462,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001462,
+        "upstream_inference_prompt_cost": 0.00079,
+        "upstream_inference_completions_cost": 0.000672
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628556-YKGxlgOrd8s7q7n3LHuZ",
+  "raw_prediction": {
+    "car": 0.48,
+    "local_pt": 0.32,
+    "long_distance_rail": 0.18,
+    "rationale": "For 4-5 night air trips, car access is common for airport transfer, but public/local transport and long-distance rail are options, especially for those without cars or coming from larger cities with easy airport rail connections."
+  },
+  "prediction": {
+    "car": 0.48,
+    "local_pt": 0.32,
+    "long_distance_rail": 0.18,
+    "rationale": "For 4-5 night air trips, car access is common for airport transfer, but public/local transport and long-distance rail are options, especially for those without cars or coming from larger cities with easy airport rail connections."
+  },
+  "normalization": {
+    "sum_before": 0.98,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:42:37.948589+00:00",
+  "cost_exceeded_reservation": false
+}

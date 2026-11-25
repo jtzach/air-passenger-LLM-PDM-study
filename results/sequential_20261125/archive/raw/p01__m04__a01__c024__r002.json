@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c024__r002",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "no_persona",
+  "round": 2,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "915b7d506fb221f51a7a0d67977ba8964faf8cc8ea3149679b8b1ea2af5da6ae",
+  "started_utc": "2026-11-25T14:24:30.408776+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:24:31.865194+00:00",
+      "cost_usd": 0.001366,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001366,
+  "reservation_upper_bound_usd": 0.022698,
+  "response_sha256": "b209f59c558cd47fed7b39fede43017b3d66d6598405fad5165f5530aee24107",
+  "response": {
+    "id": "gen-1795616670-mj96VwreuF3amPjEgJrQ",
+    "object": "chat.completion",
+    "created": 1795616670,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.60,\n  \"local_pt\": 0.40,\n  \"long_distance_rail\": 0.18,\n  \"rationale\": \"Airport access in Germany often involves car use due to convenience or group travel. Local public transport is widely available but less dominant. Long-distance rail is less used, since many airports lack direct high-speed rail connections.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 355,
+      "completion_tokens": 82,
+      "total_tokens": 437,
+      "cost": 0.001366,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001366,
+        "upstream_inference_prompt_cost": 0.00071,
+        "upstream_inference_completions_cost": 0.000656
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616670-mj96VwreuF3amPjEgJrQ",
+  "raw_prediction": {
+    "car": 0.6,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.18,
+    "rationale": "Airport access in Germany often involves car use due to convenience or group travel. Local public transport is widely available but less dominant. Long-distance rail is less used, since many airports lack direct high-speed rail connections."
+  },
+  "prediction": {
+    "car": 0.6,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.18,
+    "rationale": "Airport access in Germany often involves car use due to convenience or group travel. Local public transport is widely available but less dominant. Long-distance rail is less used, since many airports lack direct high-speed rail connections."
+  },
+  "normalization": {
+    "sum_before": 1.18,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:24:31.865194+00:00",
+  "cost_exceeded_reservation": false
+}

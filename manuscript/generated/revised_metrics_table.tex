@@ -1,0 +1,23 @@
+% Generated from finalized sequential results; do not edit numbers by hand.
+\begingroup\footnotesize\setlength{\tabcolsep}{3pt}\renewcommand{\arraystretch}{1.16}
+\noindent\begin{tabular}{@{}>{\raggedright\arraybackslash}p{.13\linewidth}>{\centering\arraybackslash}p{.045\linewidth}>{\centering\arraybackslash}p{.065\linewidth}>{\centering\arraybackslash}p{.07\linewidth}>{\centering\arraybackslash}p{.08\linewidth}>{\raggedright\arraybackslash}p{.22\linewidth}>{\raggedright\arraybackslash}p{.23\linewidth}@{}}
+\toprule Model & Hint & $N$ & Group MAE & No-group MAE & Median gain [adjusted interval] & Decision / stop \\ \midrule
+\multicolumn{7}{@{}l}{\textbf{MiD 2023 --- constant-baseline MAE 4.16 pp}}\\[2pt]
+Gemma 3 4B & No & 0 & --- & --- & --- & No valid look\newline invalid output \\
+Gemma 3 4B & Yes & 2 & 5.67 & 4.94 & --- & No valid look\newline invalid output \\
+GPT-4.1 mini & No & 16 & 25.20 & 25.55 & -21.35\newline [-21.88, -20.00] & Degradation \\
+GPT-4.1 mini & Yes & 16 & 5.51 & 4.47 & -1.59\newline [-1.93, -1.25] & Degradation \\
+Qwen3 235B A22B & No & 10 & 20.04 & 18.81 & --- & No valid look\newline invalid output \\
+Qwen3 235B A22B & Yes & 8 & 7.70 & 4.16 & --- & No valid look\newline request failure \\
+GPT-4.1 & No & 16 & 13.90 & 17.64 & -9.66\newline [-10.63, -9.34] & Degradation \\
+GPT-4.1 & Yes & 16 & 2.95 & 4.11 & +0.93\newline [+0.79, +1.19] & Improvement \\
+\midrule
+\multicolumn{7}{@{}l}{\textbf{Munich Airport 2025 --- constant-baseline MAE 2.67 pp}}\\[2pt]
+Gemma 3 4B & No & 0 & --- & --- & --- & No valid look\newline invalid output \\
+GPT-4.1 mini & No & 16 & 5.48 & 5.44 & -2.97\newline [-3.19, -2.43] & Degradation \\
+Qwen3 235B A22B & No & 0 & --- & --- & --- & No valid look\newline invalid output \\
+GPT-4.1 & No & 16 & 3.77 & 3.74 & -1.21\newline [-1.90, -0.77] & Degradation \\
+\bottomrule
+\multicolumn{7}{@{}p{.98\linewidth}@{}}{\scriptsize All errors and gains are percentage points (pp). Smaller MAE is better; positive gain favors the model. $N$ is the complete-round prefix used for averaged predictions; parentheses give the last inferential look when earlier. Group and no-group MAEs score probabilities averaged across that prefix. The primary interval instead concerns the median of individual-round baseline gains, with $\alpha=0.04/(12\times3)$ per scheduled look. No-group comparisons are descriptive. A dash means unavailable, not zero. Incomplete rounds are excluded; their valid individual responses are not selectively scored. No inference is made before 16 complete rounds or after a service-assumption failure. Improvement/degradation require the full interval to exceed $+0.5$/fall below $-0.5$ pp.}
+\end{tabular}
+\endgroup

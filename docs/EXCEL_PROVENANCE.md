@@ -1,10 +1,11 @@
 # How the Excel was made
 
-The original research workbook was assembled on 18 November 2026. The paper extends it with new public MiD cross-tabulations and explicitly labelled LLM predictions on 24 November 2026. No individual B1 survey records have been received, created or inferred.
+The original research workbook was assembled on 18 November 2026. Public MiD cross-tabulations and the first LLM pilot were added on 24 November. The 25 November revision appends the repeated-run MiD experiment and a separate Munich Airport case. No individual B1 survey records have been received, created or inferred.
 
 ## Which workbook to use
 
-- `data/workbooks/MiD2023_Comprehensive_Data_and_LLM_EN.xlsx`: updated English archive, retaining the original data sheets and adding the current experiment tables.
+- `data/workbooks/MiD2023_MUC_LLM_Comprehensive_EN_20261125.xlsx`: current 35-sheet English archive, including the new repeated-run experiment and separately labelled Munich derivatives.
+- `MiD2023_Comprehensive_Data_and_LLM_EN.xlsx`: preserved 31-sheet archive with the original three-repeat pilot, not the fresh sequential results.
 - `MiD2023_Comprehensive_Data_EN.xlsx`: unchanged 27-sheet English archive from 18 November.
 - `MiD2023_Comprehensive_Data.xlsx`: unchanged source-language archive.
 - `workbook_provenance_20261118.zip`: frozen rendering input, original production scripts, translation patches, archived public queries, source manifests and validation reports.
@@ -64,6 +65,29 @@ The [machine-readable preservation report](../results/workbook_validation.json),
 The final workbook SHA-256 is `58eff4edd14599abd439a8eb8bc241421275a20027b9542b3d222fb28be723af`. Its unchanged 27-sheet English input has SHA-256 `449253601da5793dba9384ecf739b15516d089783cb3b9b2e9f433a0513e2bd7`.
 
 The appendix can be reproduced with `src/prepare_workbook_appendix.py`, `src/append_benchmark_workbook.mjs` and the read-only `src/validate_benchmark_workbook.py`. The Python preparation reads committed observations and analysis results; Artifact Tool imports the English original and appends the new sheets. Validation compares the exported file with the original workbook and the typed appendix input. Weighted coverage can marginally exceed 100% because independently rounded weighted subgroup bases are preserved.
+
+## Repeated-run and Munich extension: 25 November 2026
+
+The new file `MiD2023_MUC_LLM_Comprehensive_EN_20261125.xlsx` preserves the complete 31-sheet pilot workbook and appends four data sheets. Original data, geographical reference material, questionnaire entries and earlier predictions remain intact. The previous experiment is not overwritten or pooled with the new runs.
+
+| New sheet | Records and units | Source |
+|---|---|---|
+| `32_Sequential_results` | All 12 planned model/task/condition comparisons, complete-round counts, errors in percentage points, adjusted median-gain intervals and stopping reasons | Audited `block_metrics.csv` and `table_numbers.json` |
+| `33_MiD_new_predictions` | Each available model/condition/group/mode combination, observed and predicted shares, repeated-output spread, group weight and errors | `averaged_predictions.csv`, MiD rows only |
+| `34_MUC_new_predictions` | The same prediction fields for six Munich purpose-by-flight-region groups and ten native access categories | `averaged_predictions.csv`, FMG rows only |
+| `35_MUC_derived_targets` | Six approved derived Munich groups, their population weights and ten observed shares | Locally aggregated 2025 FMG summary, released as `derived_fmg_targets.json` |
+
+The Munich sheets are **FMG-derived, not MiD data**. They contain neither individual records nor the airport workbook's original 10/30-row extracts or expanded annual passenger counts. The six groups pool direction and duration within business/private purpose crossed with domestic/continental/intercontinental departing flight. The original workbook remains restricted. Derivation is documented in `FMG_PROVENANCE.md`; original survey definitions and interview sample sizes still require source verification.
+
+The extension follows this reproducible sequence:
+
+1. Audit the completed frozen experiment with `src/analyse_sequential_results.py`. Reconstruct each complete logical round from its recorded responses; preserve failed and interrupted requests in availability and cost accounting. Exclude the original administratively interrupted partial round from scoring, as recorded in `ADMINISTRATIVE_RESUMPTION_20261125.md`.
+2. Run `src/prepare_sequential_workbook.py`. It requires a passing analysis report, reads typed analysis outputs, separates MiD from FMG, assigns readable category labels and records the input workbook hash. It does not query an API or infer missing responses.
+3. Run `src/append_sequential_workbook.mjs` using `@oai/artifact-tool`. Import the existing English workbook, append the four sheets, retain numeric probabilities on a 0–1 scale and display them as percentages. Errors use Excel formulas `100 × (prediction − observation)` and its absolute value. The Munich share-total column sums the ten observed categories.
+4. Recalculate formulas, scan for Excel errors, inspect rendered sheet excerpts and export the new workbook. Statistical intervals remain audited Python outputs; model-run variation must not be read as survey-sampling uncertainty.
+5. Run `src/validate_sequential_workbook.py` in read-only mode. It checks every original cell and formula cache, native tables, styles, dimensions, frozen panes, appended values and the independently recomputed formula results. Exact counts and file hashes are in `results/sequential_workbook_validation.json`.
+
+For MiD, the three outcomes are overlapping mentions across whole outward/return journeys and need not sum to 100%. For FMG, the ten reported airport-access shares form one composition. Group weights in the MiD analysis include equal weighting across attributes; Munich weights describe the composition of the six target groups. Neither is an unweighted interview count. Missing inference for a failed block is left unavailable rather than encoded as zero. All complete-response prefixes, including short prefixes without a scheduled statistical check, remain explicitly labelled.
 
 ## Reproducing the files
 

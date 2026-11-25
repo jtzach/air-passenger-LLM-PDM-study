@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m02__a02__c011__r015",
+  "block_id": "p01__m02__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__RegioStaR7__cae80c90607c",
+  "round": 15,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "bfcb09c8afa69bbcf6d743f146ad07d2db51e2d50826b42a4763fcbba138b5c3",
+  "started_utc": "2026-11-25T17:42:04.078498+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:42:05.541801+00:00",
+      "cost_usd": 0.0003072,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0003072,
+  "reservation_upper_bound_usd": 0.0051528,
+  "response_sha256": "0ab45dae920a800c03109e9ba87ddecdc09ca6bab4509ae7e20b548bb58c1ed8",
+  "response": {
+    "id": "gen-1795628523-cBox6UW6IPZ6nl9ztLMp",
+    "object": "chat.completion",
+    "created": 1795628523,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.48,\n  \"local_pt\": 0.30,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Residents in rural/medium towns likely rely more on cars for airport access; local public transport is less frequent, slightly reducing its use; long-distance train is less common due to rural locations.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 456,
+      "completion_tokens": 78,
+      "total_tokens": 534,
+      "cost": 0.0003072,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003072,
+        "upstream_inference_prompt_cost": 0.0001824,
+        "upstream_inference_completions_cost": 0.0001248
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795628523-cBox6UW6IPZ6nl9ztLMp",
+  "raw_prediction": {
+    "car": 0.48,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "Residents in rural/medium towns likely rely more on cars for airport access; local public transport is less frequent, slightly reducing its use; long-distance train is less common due to rural locations."
+  },
+  "prediction": {
+    "car": 0.48,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "Residents in rural/medium towns likely rely more on cars for airport access; local public transport is less frequent, slightly reducing its use; long-distance train is less common due to rural locations."
+  },
+  "normalization": {
+    "sum_before": 0.88,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:42:05.541801+00:00",
+  "cost_exceeded_reservation": false
+}

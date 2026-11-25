@@ -1,0 +1,120 @@
+{
+  "task_id": "p02__m02__a01__c003__r001",
+  "block_id": "p02__m02__a01",
+  "panel_id": "fmg_2025",
+  "panel_index": 1,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "unanchored",
+  "card_id": "fmg_business_continental",
+  "round": 1,
+  "modes": [
+    "car_dropoff",
+    "car_airport_parking",
+    "car_offairport_parking",
+    "car_other_parking",
+    "taxi_ridehail",
+    "rental_carsharing",
+    "bus_transfer",
+    "s_bahn",
+    "uefex",
+    "other"
+  ],
+  "mutually_exclusive": true,
+  "request_sha256": "81b1933d43884556dbab36cf1c5ae47a1f12a89391e18b4a8115f2d383cb8723",
+  "started_utc": "2026-11-25T14:21:45.100223+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:21:49.281319+00:00",
+      "cost_usd": 0.000476,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000476,
+  "reservation_upper_bound_usd": 0.0057684,
+  "response_sha256": "436322c48725b30c890cf710d5f6cb135dafc069584afab7a1d95c8bc62579c5",
+  "response": {
+    "id": "gen-1795616505-HCkATod4fcBUZNkK0vN3",
+    "object": "chat.completion",
+    "created": 1795616505,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car_dropoff\": 0.25,\n  \"car_airport_parking\": 0.20,\n  \"car_offairport_parking\": 0.10,\n  \"car_other_parking\": 0.05,\n  \"taxi_ridehail\": 0.10,\n  \"rental_carsharing\": 0.05,\n  \"bus_transfer\": 0.05,\n  \"s_bahn\": 0.15,\n  \"uefex\": 0.04,\n  \"other\": 0.01,\n  \"rationale\": \"Business travelers prioritize convenience and time-saving; many rely on private cars or efficient rail (S-Bahn), with some using taxis or parking options near Munich Airport.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 570,
+      "completion_tokens": 155,
+      "total_tokens": 725,
+      "cost": 0.000476,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000476,
+        "upstream_inference_prompt_cost": 0.000228,
+        "upstream_inference_completions_cost": 0.000248
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795616505-HCkATod4fcBUZNkK0vN3",
+  "raw_prediction": {
+    "car_dropoff": 0.25,
+    "car_airport_parking": 0.2,
+    "car_offairport_parking": 0.1,
+    "car_other_parking": 0.05,
+    "taxi_ridehail": 0.1,
+    "rental_carsharing": 0.05,
+    "bus_transfer": 0.05,
+    "s_bahn": 0.15,
+    "uefex": 0.04,
+    "other": 0.01,
+    "rationale": "Business travelers prioritize convenience and time-saving; many rely on private cars or efficient rail (S-Bahn), with some using taxis or parking options near Munich Airport."
+  },
+  "prediction": {
+    "car_dropoff": 0.25,
+    "car_airport_parking": 0.2,
+    "car_offairport_parking": 0.1,
+    "car_other_parking": 0.05,
+    "taxi_ridehail": 0.1,
+    "rental_carsharing": 0.05,
+    "bus_transfer": 0.05,
+    "s_bahn": 0.15,
+    "uefex": 0.04,
+    "other": 0.01,
+    "rationale": "Business travelers prioritize convenience and time-saving; many rely on private cars or efficient rail (S-Bahn), with some using taxis or parking options near Munich Airport."
+  },
+  "normalization": {
+    "sum_before": 1.0,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:21:49.281319+00:00",
+  "cost_exceeded_reservation": false
+}

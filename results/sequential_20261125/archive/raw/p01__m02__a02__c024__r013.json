@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m02__a02__c024__r013",
+  "block_id": "p01__m02__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "overall_rate_anchored",
+  "card_id": "no_persona",
+  "round": 13,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "022e4cddbf038f13f574523c0ba5aaa9dbcfdcc6105729be2cc085cbef0f44ad",
+  "started_utc": "2026-11-25T17:41:26.759670+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:41:28.160931+00:00",
+      "cost_usd": 0.0002632,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002632,
+  "reservation_upper_bound_usd": 0.0048744,
+  "response_sha256": "7b7199614eb620f91c1c590b5cc16c698ea785485bed20fbe846d12cbf1debbc",
+  "response": {
+    "id": "gen-1795628486-1D6Op6UUsl8VhW5fSU1r",
+    "object": "chat.completion",
+    "created": 1795628486,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.38,\n  \"local_pt\": 0.22,\n  \"long_distance_rail\": 0.12,\n  \"rationale\": \"Cohort matches overall sample; no additional attributes suggest deviation in combined ground transport use with air travel.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 414,
+      "completion_tokens": 61,
+      "total_tokens": 475,
+      "cost": 0.0002632,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002632,
+        "upstream_inference_prompt_cost": 0.0001656,
+        "upstream_inference_completions_cost": 9.76e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795628486-1D6Op6UUsl8VhW5fSU1r",
+  "raw_prediction": {
+    "car": 0.38,
+    "local_pt": 0.22,
+    "long_distance_rail": 0.12,
+    "rationale": "Cohort matches overall sample; no additional attributes suggest deviation in combined ground transport use with air travel."
+  },
+  "prediction": {
+    "car": 0.38,
+    "local_pt": 0.22,
+    "long_distance_rail": 0.12,
+    "rationale": "Cohort matches overall sample; no additional attributes suggest deviation in combined ground transport use with air travel."
+  },
+  "normalization": {
+    "sum_before": 0.72,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:41:28.160931+00:00",
+  "cost_exceeded_reservation": false
+}

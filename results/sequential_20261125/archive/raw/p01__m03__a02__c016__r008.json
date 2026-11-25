@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a02__c016__r008",
+  "block_id": "p01__m03__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzbegl_gr__b61cbc7c0dd2",
+  "round": 8,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "f18e3380320bf0e85ec04edc7bcd6c646988a702e3d8a9227e539b0770a7048c",
+  "started_utc": "2026-11-25T17:36:02.834211+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:36:11.602007+00:00",
+      "cost_usd": 0.000123255,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000123255,
+  "reservation_upper_bound_usd": 0.0021216000000000004,
+  "response_sha256": "aa9dc7bbd6a1d6a1a7044fb502dc767965474d5df6218361feb31947bf0c6b38",
+  "response": {
+    "id": "gen-1795628162-vuIXNOsglrLbPDUN7sfS",
+    "object": "chat.completion",
+    "created": 1795628162,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Travellers with one companion may prefer car use for flexibility, reducing reliance on local or long-distance public transport compared to solo or larger groups.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 473,
+      "completion_tokens": 72,
+      "total_tokens": 545,
+      "cost": 0.000123255,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000123255,
+        "upstream_inference_prompt_cost": 6.3855e-05,
+        "upstream_inference_completions_cost": 5.94e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795628162-vuIXNOsglrLbPDUN7sfS",
+  "raw_prediction": {
+    "car": 0.55,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Travellers with one companion may prefer car use for flexibility, reducing reliance on local or long-distance public transport compared to solo or larger groups."
+  },
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Travellers with one companion may prefer car use for flexibility, reducing reliance on local or long-distance public transport compared to solo or larger groups."
+  },
+  "normalization": {
+    "sum_before": 0.8300000000000001,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:36:11.602007+00:00",
+  "cost_exceeded_reservation": false
+}

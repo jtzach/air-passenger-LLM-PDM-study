@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c004__r013",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzauto_gr1__d7ca944fcddc",
+  "round": 13,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "28af01a485710564146e8058877101aa113957d15cb10975b0e2301f661db760",
+  "started_utc": "2026-11-25T17:41:29.305689+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:41:30.561106+00:00",
+      "cost_usd": 0.001448,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001448,
+  "reservation_upper_bound_usd": 0.023856000000000002,
+  "response_sha256": "00a97329db4fa19fea9044179285c99724fd32a9d1c12d584a4f9be5a81ba7b1",
+  "response": {
+    "id": "gen-1795628488-TaEOTE9jdAAQ9ReO3ivY",
+    "object": "chat.completion",
+    "created": 1795628488,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.20,\n  \"rationale\": \"With household car access, many would drive to/from airports, but some use local or long-distance public transport, depending on airport proximity, convenience, and cost. Mixed-mode journeys are common for air travelers in Germany.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 392,
+      "completion_tokens": 83,
+      "total_tokens": 475,
+      "cost": 0.001448,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001448,
+        "upstream_inference_prompt_cost": 0.000784,
+        "upstream_inference_completions_cost": 0.000664
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628488-TaEOTE9jdAAQ9ReO3ivY",
+  "raw_prediction": {
+    "car": 0.55,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.2,
+    "rationale": "With household car access, many would drive to/from airports, but some use local or long-distance public transport, depending on airport proximity, convenience, and cost. Mixed-mode journeys are common for air travelers in Germany."
+  },
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.2,
+    "rationale": "With household car access, many would drive to/from airports, but some use local or long-distance public transport, depending on airport proximity, convenience, and cost. Mixed-mode journeys are common for air travelers in Germany."
+  },
+  "normalization": {
+    "sum_before": 1.1,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:41:30.561106+00:00",
+  "cost_exceeded_reservation": false
+}

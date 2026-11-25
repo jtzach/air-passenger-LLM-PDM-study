@@ -1,0 +1,100 @@
+{
+  "task_id": "p01__m04__a02__c014__r007__administrative_replacement1",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzbegl_gr__154f6eb18583",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "supersedes_task_id": "p01__m04__a02__c014__r007",
+  "request_sha256": "04e1b337430c6b12e3dd095d29fba88b7d540334888ce6a5949f66ac6e4416d3",
+  "started_utc": "2026-11-25T17:34:57.262527+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:34:58.761669+00:00",
+      "cost_usd": 0.001572,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001572,
+  "reservation_upper_bound_usd": 0.025577999999999997,
+  "response_sha256": "6f14e0dbcaaa8e7940dde6f5f3b731abe028532a945a2d400a8b4f6075259aff",
+  "response": {
+    "id": "gen-1795628096-TgKk4S79EZKLhYCkqwSF",
+    "object": "chat.completion",
+    "created": 1795628096,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.34,\n  \"local_pt\": 0.25,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"Solo travellers without household companions may show slightly lower car use (fewer shared car trips) but higher public/local and long-distance rail use, leveraging public transport options for airport access, especially in urban and well-connected regions.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 450,
+      "completion_tokens": 84,
+      "total_tokens": 534,
+      "cost": 0.001572,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001572,
+        "upstream_inference_prompt_cost": 0.0009,
+        "upstream_inference_completions_cost": 0.000672
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628096-TgKk4S79EZKLhYCkqwSF",
+  "raw_prediction": {
+    "car": 0.34,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "Solo travellers without household companions may show slightly lower car use (fewer shared car trips) but higher public/local and long-distance rail use, leveraging public transport options for airport access, especially in urban and well-connected regions."
+  },
+  "prediction": {
+    "car": 0.34,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "Solo travellers without household companions may show slightly lower car use (fewer shared car trips) but higher public/local and long-distance rail use, leveraging public transport options for airport access, especially in urban and well-connected regions."
+  },
+  "normalization": {
+    "sum_before": 0.74,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:34:58.762669+00:00",
+  "cost_exceeded_reservation": false
+}

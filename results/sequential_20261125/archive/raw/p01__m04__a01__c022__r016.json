@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c022__r016",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__f6e4375535d4",
+  "round": 16,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "301140e2c015d411547c951736f0d81673264a6a7e656392947ba62a2107c643",
+  "started_utc": "2026-11-25T17:42:24.454429+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:42:25.825566+00:00",
+      "cost_usd": 0.001406,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001406,
+  "reservation_upper_bound_usd": 0.023921999999999995,
+  "response_sha256": "9cc397fce1399f66c2b1a2eb8fb8767dbd84ae6ae03a4dc1513eed3eb641c2c8",
+  "response": {
+    "id": "gen-1795628543-zr8tpWzDaB7HZIyFP5dH",
+    "object": "chat.completion",
+    "created": 1795628543,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.40,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"6-7 nights suggests longer trips, possibly to distant airports; car and local PT are common for airport access, but long-distance rail is less likely due to luggage and coordination needs.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 395,
+      "completion_tokens": 77,
+      "total_tokens": 472,
+      "cost": 0.001406,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001406,
+        "upstream_inference_prompt_cost": 0.00079,
+        "upstream_inference_completions_cost": 0.000616
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628543-zr8tpWzDaB7HZIyFP5dH",
+  "raw_prediction": {
+    "car": 0.45,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.25,
+    "rationale": "6-7 nights suggests longer trips, possibly to distant airports; car and local PT are common for airport access, but long-distance rail is less likely due to luggage and coordination needs."
+  },
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.25,
+    "rationale": "6-7 nights suggests longer trips, possibly to distant airports; car and local PT are common for airport access, but long-distance rail is less likely due to luggage and coordination needs."
+  },
+  "normalization": {
+    "sum_before": 1.1,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:42:25.825566+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c012__r007",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__RegioStaR7__d3321efbbd2e",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "e98eefce7f46238d65ecfb58b11dbaa844f2d3227f86e5c4d8a4a7197a3cd531",
+  "started_utc": "2026-11-25T14:32:44.771292+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:32:46.240845+00:00",
+      "cost_usd": 0.00156,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00156,
+  "reservation_upper_bound_usd": 0.025632,
+  "response_sha256": "a59d1c47f82d7759a534482a25dc612aac3088d5e4c0c0e3459f92141b5b7c25",
+  "response": {
+    "id": "gen-1795617164-56tqlELraww0RYBP7LW6",
+    "object": "chat.completion",
+    "created": 1795617164,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.44,\n  \"local_pt\": 0.19,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Central city residents in rural regions likely face limited public transport to airports, increasing car use. Local public transport and long-distance rail are less accessible than in metropolitan cores, slightly lowering their probabilities from the national average.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 452,
+      "completion_tokens": 82,
+      "total_tokens": 534,
+      "cost": 0.00156,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00156,
+        "upstream_inference_prompt_cost": 0.000904,
+        "upstream_inference_completions_cost": 0.000656
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795617164-56tqlELraww0RYBP7LW6",
+  "raw_prediction": {
+    "car": 0.44,
+    "local_pt": 0.19,
+    "long_distance_rail": 0.1,
+    "rationale": "Central city residents in rural regions likely face limited public transport to airports, increasing car use. Local public transport and long-distance rail are less accessible than in metropolitan cores, slightly lowering their probabilities from the national average."
+  },
+  "prediction": {
+    "car": 0.44,
+    "local_pt": 0.19,
+    "long_distance_rail": 0.1,
+    "rationale": "Central city residents in rural regions likely face limited public transport to airports, increasing car use. Local public transport and long-distance rail are less accessible than in metropolitan cores, slightly lowering their probabilities from the national average."
+  },
+  "normalization": {
+    "sum_before": 0.73,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:32:46.240845+00:00",
+  "cost_exceeded_reservation": false
+}

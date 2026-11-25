@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c008__r003",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__RegioStaR7__7b0e1c4f102a",
+  "round": 3,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "1a29db5a414b34662a3bed11b8bb3436b5ddabbf22d22c078009dd436fb9b4ef",
+  "started_utc": "2026-11-25T14:26:15.368987+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:26:16.698037+00:00",
+      "cost_usd": 0.001542,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001542,
+  "reservation_upper_bound_usd": 0.025619999999999997,
+  "response_sha256": "d07d26917bb9818114ad3f51a9c8d65d0af17c8e11d58584c9a568f31f02a6aa",
+  "response": {
+    "id": "gen-1795616775-s8HVixwFQwn1hZvN4tIm",
+    "object": "chat.completion",
+    "created": 1795616775,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.33,\n  \"local_pt\": 0.27,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"Urban-metropolis residents have better public transport access and lower car reliance, so car use drops, local PT rises, and long-distance rail is slightly higher than average due to more rail-airport connections.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 451,
+      "completion_tokens": 80,
+      "total_tokens": 531,
+      "cost": 0.001542,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001542,
+        "upstream_inference_prompt_cost": 0.000902,
+        "upstream_inference_completions_cost": 0.00064
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616775-s8HVixwFQwn1hZvN4tIm",
+  "raw_prediction": {
+    "car": 0.33,
+    "local_pt": 0.27,
+    "long_distance_rail": 0.15,
+    "rationale": "Urban-metropolis residents have better public transport access and lower car reliance, so car use drops, local PT rises, and long-distance rail is slightly higher than average due to more rail-airport connections."
+  },
+  "prediction": {
+    "car": 0.33,
+    "local_pt": 0.27,
+    "long_distance_rail": 0.15,
+    "rationale": "Urban-metropolis residents have better public transport access and lower car reliance, so car use drops, local PT rises, and long-distance rail is slightly higher than average due to more rail-airport connections."
+  },
+  "normalization": {
+    "sum_before": 0.75,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:26:16.698037+00:00",
+  "cost_exceeded_reservation": false
+}

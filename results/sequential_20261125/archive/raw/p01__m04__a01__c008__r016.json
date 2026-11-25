@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c008__r016",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__RegioStaR7__7b0e1c4f102a",
+  "round": 16,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "ba5b6d525815aff506102c33af5c555a2ffd4ec09b3ae1f6a1c6f38da35011ba",
+  "started_utc": "2026-11-25T17:42:42.063308+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:42:43.158366+00:00",
+      "cost_usd": 0.001416,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001416,
+  "reservation_upper_bound_usd": 0.023975999999999997,
+  "response_sha256": "16e072e0975388a99ecbf6e22eef0f99dfefa6ff9e2976b48369d3b4a94480c7",
+  "response": {
+    "id": "gen-1795628561-q4wsnVs9UyGpkFjESn4i",
+    "object": "chat.completion",
+    "created": 1795628561,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.38,\n  \"local_pt\": 0.62,\n  \"long_distance_rail\": 0.22,\n  \"rationale\": \"Urban-metropolis residents likely have strong public transport access and may prefer it for airport access, but car use remains significant. Long-distance rail is less frequent but plausible for connecting to more distant airports.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 392,
+      "completion_tokens": 79,
+      "total_tokens": 471,
+      "cost": 0.001416,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001416,
+        "upstream_inference_prompt_cost": 0.000784,
+        "upstream_inference_completions_cost": 0.000632
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628561-q4wsnVs9UyGpkFjESn4i",
+  "raw_prediction": {
+    "car": 0.38,
+    "local_pt": 0.62,
+    "long_distance_rail": 0.22,
+    "rationale": "Urban-metropolis residents likely have strong public transport access and may prefer it for airport access, but car use remains significant. Long-distance rail is less frequent but plausible for connecting to more distant airports."
+  },
+  "prediction": {
+    "car": 0.38,
+    "local_pt": 0.62,
+    "long_distance_rail": 0.22,
+    "rationale": "Urban-metropolis residents likely have strong public transport access and may prefer it for airport access, but car use remains significant. Long-distance rail is less frequent but plausible for connecting to more distant airports."
+  },
+  "normalization": {
+    "sum_before": 1.22,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:42:43.159381+00:00",
+  "cost_exceeded_reservation": false
+}

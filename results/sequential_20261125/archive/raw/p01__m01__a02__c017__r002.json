@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m01__a02__c017__r002",
+  "block_id": "p01__m01__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__456ee228eb2a",
+  "round": 2,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "d181915a34310b1dbb599f7b097eec3494995addc87b99c51c4d29ea8f996a91",
+  "started_utc": "2026-11-25T14:24:34.910549+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:24:36.678518+00:00",
+      "cost_usd": 2.085e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.085e-05,
+  "reservation_upper_bound_usd": 0.00036438,
+  "response_sha256": "33be9507c99a7d23446ce1681d452c49967389d98b7c6005172cfcb618634629",
+  "response": {
+    "id": "gen-1795616675-CUpZMOfsxrCLlyW2Afdc",
+    "object": "chat.completion",
+    "created": 1795616675,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.25,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.08,\n  \"rationale\": \"The cohort undertook 4-5 night journeys by aircraft, suggesting a higher level of leisure travel. Ground transport use would likely be lower than the overall population, as flying is the primary mode.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 490,
+      "completion_tokens": 89,
+      "total_tokens": 579,
+      "cost": 2.085e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.085e-05,
+        "upstream_inference_prompt_cost": 1.64e-05,
+        "upstream_inference_completions_cost": 4.45e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616675-CUpZMOfsxrCLlyW2Afdc",
+  "raw_prediction": {
+    "car": 0.25,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.08,
+    "rationale": "The cohort undertook 4-5 night journeys by aircraft, suggesting a higher level of leisure travel. Ground transport use would likely be lower than the overall population, as flying is the primary mode."
+  },
+  "prediction": {
+    "car": 0.25,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.08,
+    "rationale": "The cohort undertook 4-5 night journeys by aircraft, suggesting a higher level of leisure travel. Ground transport use would likely be lower than the overall population, as flying is the primary mode."
+  },
+  "normalization": {
+    "sum_before": 0.51,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:24:36.678518+00:00",
+  "cost_exceeded_reservation": false
+}

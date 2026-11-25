@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a01__c010__r011",
+  "block_id": "p01__m03__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "unanchored",
+  "card_id": "reise__RegioStaR7__9f47524becab",
+  "round": 11,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "0ca332cbe92a2362898a33237bc6004f8e341b5530dc5488dbdf50d3814e7733",
+  "started_utc": "2026-11-25T17:39:59.751243+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:40:29.125420+00:00",
+      "cost_usd": 0.00012177,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00012177,
+  "reservation_upper_bound_usd": 0.00201786,
+  "response_sha256": "11d2b271bb61914d5423e9a9838bf25065184f8c48d5962e8563b02e0bcce761",
+  "response": {
+    "id": "gen-1795628399-bcv96WjXeCKc4GhF53MO",
+    "object": "chat.completion",
+    "created": 1795628399,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.45,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"Medium-sized urban residents may rely on cars for flexible airport access, local transit for shorter connections, and less frequently on long-distance rail, which may substitute for air travel rather than complement it.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 407,
+      "completion_tokens": 81,
+      "total_tokens": 488,
+      "cost": 0.00012177,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00012177,
+        "upstream_inference_prompt_cost": 5.4945e-05,
+        "upstream_inference_completions_cost": 6.6825e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795628399-bcv96WjXeCKc4GhF53MO",
+  "raw_prediction": {
+    "car": 0.65,
+    "local_pt": 0.45,
+    "long_distance_rail": 0.25,
+    "rationale": "Medium-sized urban residents may rely on cars for flexible airport access, local transit for shorter connections, and less frequently on long-distance rail, which may substitute for air travel rather than complement it."
+  },
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.45,
+    "long_distance_rail": 0.25,
+    "rationale": "Medium-sized urban residents may rely on cars for flexible airport access, local transit for shorter connections, and less frequently on long-distance rail, which may substitute for air travel rather than complement it."
+  },
+  "normalization": {
+    "sum_before": 1.35,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:40:29.125420+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m02__a01__c024__r010",
+  "block_id": "p01__m02__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "unanchored",
+  "card_id": "no_persona",
+  "round": 10,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "c7d0e14e0fe8e1592f8a17151a509bfe2832e1db25f992e74a003d5d259becb2",
+  "started_utc": "2026-11-25T17:39:21.743649+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:39:23.111716+00:00",
+      "cost_usd": 0.0002572,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002572,
+  "reservation_upper_bound_usd": 0.0045456,
+  "response_sha256": "6f40249acf9acd6b60eab80d8577c30d4c4b92f2e50042dc2316df03b4c6cb4c",
+  "response": {
+    "id": "gen-1795628361-gq7q22TYtzdHDO8DWgw1",
+    "object": "chat.completion",
+    "created": 1795628361,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.55,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"Air travellers often combine car or local public transport for airport access; long-distance rail is less common but may be used for multimodal journeys or regional airport connections.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 355,
+      "completion_tokens": 72,
+      "total_tokens": 427,
+      "cost": 0.0002572,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002572,
+        "upstream_inference_prompt_cost": 0.000142,
+        "upstream_inference_completions_cost": 0.0001152
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795628361-gq7q22TYtzdHDO8DWgw1",
+  "raw_prediction": {
+    "car": 0.65,
+    "local_pt": 0.55,
+    "long_distance_rail": 0.25,
+    "rationale": "Air travellers often combine car or local public transport for airport access; long-distance rail is less common but may be used for multimodal journeys or regional airport connections."
+  },
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.55,
+    "long_distance_rail": 0.25,
+    "rationale": "Air travellers often combine car or local public transport for airport access; long-distance rail is less common but may be used for multimodal journeys or regional airport connections."
+  },
+  "normalization": {
+    "sum_before": 1.4500000000000002,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:39:23.112731+00:00",
+  "cost_exceeded_reservation": false
+}

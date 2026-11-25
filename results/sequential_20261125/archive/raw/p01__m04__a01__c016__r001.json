@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c016__r001",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzbegl_gr__b61cbc7c0dd2",
+  "round": 1,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "49a90a5ef1857989bd03ba2e97d0d90ca323ac9d63f4139b5f944e6f8ca7ad9f",
+  "started_utc": "2026-11-25T14:20:25.345966+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:20:26.983348+00:00",
+      "cost_usd": 0.001448,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001448,
+  "reservation_upper_bound_usd": 0.023928,
+  "response_sha256": "07a6afee75ab8bfa43208782ae8c7a88cb7cd04c5aefb1689c8ec2e417440bbe",
+  "response": {
+    "id": "gen-1795616425-IQCPeRATk9BlOCAS2Duv",
+    "object": "chat.completion",
+    "created": 1795616425,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.20,\n  \"rationale\": \"With a household companion, car use is likely due to convenience and luggage. Local public transport is common but less so for group travel. Long-distance rail is possible but rarer for airport access, especially with companions.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 392,
+      "completion_tokens": 83,
+      "total_tokens": 475,
+      "cost": 0.001448,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001448,
+        "upstream_inference_prompt_cost": 0.000784,
+        "upstream_inference_completions_cost": 0.000664
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616425-IQCPeRATk9BlOCAS2Duv",
+  "raw_prediction": {
+    "car": 0.55,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.2,
+    "rationale": "With a household companion, car use is likely due to convenience and luggage. Local public transport is common but less so for group travel. Long-distance rail is possible but rarer for airport access, especially with companions."
+  },
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.2,
+    "rationale": "With a household companion, car use is likely due to convenience and luggage. Local public transport is common but less so for group travel. Long-distance rail is possible but rarer for airport access, especially with companions."
+  },
+  "normalization": {
+    "sum_before": 1.1,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:20:26.983348+00:00",
+  "cost_exceeded_reservation": false
+}

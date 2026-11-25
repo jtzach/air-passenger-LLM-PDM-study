@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m02__a01__c023__r013",
+  "block_id": "p01__m02__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__fd46cf332878",
+  "round": 13,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "456ec3d77e8de331b911c5c1864252a3175ba57cd426dfa9b71cc0f4eda356f2",
+  "started_utc": "2026-11-25T17:41:11.997147+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:41:13.385362+00:00",
+      "cost_usd": 0.0002764,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002764,
+  "reservation_upper_bound_usd": 0.0047988,
+  "response_sha256": "678376fb9ae2338e2cd5fb751789357ef9d0588a3ad7b8a5aa51f2076ffd98a6",
+  "response": {
+    "id": "gen-1795628471-DFy6ORmZoSVO1Fy6aCdh",
+    "object": "chat.completion",
+    "created": 1795628471,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.6,\n  \"local_pt\": 0.7,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"Long trips with 15+ nights often involve airport access by car or local transit; long-distance rail is less common due to flight dominance but possible for intercity transfers.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 395,
+      "completion_tokens": 74,
+      "total_tokens": 469,
+      "cost": 0.0002764,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002764,
+        "upstream_inference_prompt_cost": 0.000158,
+        "upstream_inference_completions_cost": 0.0001184
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795628471-DFy6ORmZoSVO1Fy6aCdh",
+  "raw_prediction": {
+    "car": 0.6,
+    "local_pt": 0.7,
+    "long_distance_rail": 0.15,
+    "rationale": "Long trips with 15+ nights often involve airport access by car or local transit; long-distance rail is less common due to flight dominance but possible for intercity transfers."
+  },
+  "prediction": {
+    "car": 0.6,
+    "local_pt": 0.7,
+    "long_distance_rail": 0.15,
+    "rationale": "Long trips with 15+ nights often involve airport access by car or local transit; long-distance rail is less common due to flight dominance but possible for intercity transfers."
+  },
+  "normalization": {
+    "sum_before": 1.45,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:41:13.385362+00:00",
+  "cost_exceeded_reservation": false
+}

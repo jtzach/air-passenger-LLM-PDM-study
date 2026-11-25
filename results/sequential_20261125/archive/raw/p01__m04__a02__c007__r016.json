@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c007__r016",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__RegioStaR7__72d39163efb4",
+  "round": 16,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "3504c74e83cffad95f89776ccbfe49371c543fd0d9aca59f3d4872faee38da89",
+  "started_utc": "2026-11-25T17:42:23.182432+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:42:24.450425+00:00",
+      "cost_usd": 0.001478,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001478,
+  "reservation_upper_bound_usd": 0.025722000000000002,
+  "response_sha256": "fe0fc9a110755c1ecd424b6aaa823015d27c0ba12975f777e05c3089abf54503",
+  "response": {
+    "id": "gen-1795628542-LPRlsy4bI0anpG6ykXkH",
+    "object": "chat.completion",
+    "created": 1795628542,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.50,\n  \"local_pt\": 0.15,\n  \"long_distance_rail\": 0.08,\n  \"rationale\": \"Rural residents more likely lack frequent public transport and distant airports; car use rises, while local and long-distance public transport use falls, versus national average.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 455,
+      "completion_tokens": 71,
+      "total_tokens": 526,
+      "cost": 0.001478,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001478,
+        "upstream_inference_prompt_cost": 0.00091,
+        "upstream_inference_completions_cost": 0.000568
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628542-LPRlsy4bI0anpG6ykXkH",
+  "raw_prediction": {
+    "car": 0.5,
+    "local_pt": 0.15,
+    "long_distance_rail": 0.08,
+    "rationale": "Rural residents more likely lack frequent public transport and distant airports; car use rises, while local and long-distance public transport use falls, versus national average."
+  },
+  "prediction": {
+    "car": 0.5,
+    "local_pt": 0.15,
+    "long_distance_rail": 0.08,
+    "rationale": "Rural residents more likely lack frequent public transport and distant airports; car use rises, while local and long-distance public transport use falls, versus national average."
+  },
+  "normalization": {
+    "sum_before": 0.73,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:42:24.450425+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c011__r002",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__RegioStaR7__cae80c90607c",
+  "round": 2,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "0b617029ebc785c76f253bc203999dfd39883f5e615eb564644f9d8a29e1a926",
+  "started_utc": "2026-11-25T14:24:55.942578+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:24:57.859102+00:00",
+      "cost_usd": 0.001442,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001442,
+  "reservation_upper_bound_usd": 0.024089999999999997,
+  "response_sha256": "f25be7bc080d8c6acb20affa1db500b864067dd25dd40b29916979cfe4527e8b",
+  "response": {
+    "id": "gen-1795616696-xGXqp8ewqrhQGxWJR49I",
+    "object": "chat.completion",
+    "created": 1795616696,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.60,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.20,\n  \"rationale\": \"Medium towns and rural/urban mix imply variable airport access; many use cars for flexibility, but a minority use local public transport or long-distance rail, especially if airports are distant or car access is inconvenient.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 397,
+      "completion_tokens": 81,
+      "total_tokens": 478,
+      "cost": 0.001442,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001442,
+        "upstream_inference_prompt_cost": 0.000794,
+        "upstream_inference_completions_cost": 0.000648
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616696-xGXqp8ewqrhQGxWJR49I",
+  "raw_prediction": {
+    "car": 0.6,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.2,
+    "rationale": "Medium towns and rural/urban mix imply variable airport access; many use cars for flexibility, but a minority use local public transport or long-distance rail, especially if airports are distant or car access is inconvenient."
+  },
+  "prediction": {
+    "car": 0.6,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.2,
+    "rationale": "Medium towns and rural/urban mix imply variable airport access; many use cars for flexibility, but a minority use local public transport or long-distance rail, especially if airports are distant or car access is inconvenient."
+  },
+  "normalization": {
+    "sum_before": 1.15,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:24:57.859102+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c002__r012",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzauto_gr1__79ed954bbe2c",
+  "round": 12,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "7d8aeeec9a3a52d197b0cd518aae465e79c4019d53fc669061f21a3bd3a7baef",
+  "started_utc": "2026-11-25T17:41:06.532210+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:41:07.750137+00:00",
+      "cost_usd": 0.001562,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001562,
+  "reservation_upper_bound_usd": 0.025554,
+  "response_sha256": "ddc01201e6c3345886064e86096ceae750322fe6a31e74741da0c9acdfa3aadd",
+  "response": {
+    "id": "gen-1795628465-lXKD9eNjfsh0hJkrgpkU",
+    "object": "chat.completion",
+    "created": 1795628465,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.17,\n  \"long_distance_rail\": 0.08,\n  \"rationale\": \"Households with 4+ cars likely have higher car availability, so car use exceeds average. High car ownership suggests less reliance on public/local or long-distance rail, lowering those probabilities relative to the population average.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 453,
+      "completion_tokens": 82,
+      "total_tokens": 535,
+      "cost": 0.001562,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001562,
+        "upstream_inference_prompt_cost": 0.000906,
+        "upstream_inference_completions_cost": 0.000656
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628465-lXKD9eNjfsh0hJkrgpkU",
+  "raw_prediction": {
+    "car": 0.55,
+    "local_pt": 0.17,
+    "long_distance_rail": 0.08,
+    "rationale": "Households with 4+ cars likely have higher car availability, so car use exceeds average. High car ownership suggests less reliance on public/local or long-distance rail, lowering those probabilities relative to the population average."
+  },
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.17,
+    "long_distance_rail": 0.08,
+    "rationale": "Households with 4+ cars likely have higher car availability, so car use exceeds average. High car ownership suggests less reliance on public/local or long-distance rail, lowering those probabilities relative to the population average."
+  },
+  "normalization": {
+    "sum_before": 0.8,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:41:07.750137+00:00",
+  "cost_exceeded_reservation": false
+}

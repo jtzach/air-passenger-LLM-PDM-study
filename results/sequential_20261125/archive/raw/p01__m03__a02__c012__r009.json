@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a02__c012__r009",
+  "block_id": "p01__m03__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__RegioStaR7__d3321efbbd2e",
+  "round": 9,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "b0978c42e32ee573f5ec904f193614c4bc526373c3531455d91be15c52cad2d7",
+  "started_utc": "2026-11-25T17:37:08.856912+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:37:18.348314+00:00",
+      "cost_usd": 0.00012834,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00012834,
+  "reservation_upper_bound_usd": 0.0021257999999999997,
+  "response_sha256": "a9d1f07a34c214f5cad26dff2fda2d965a7a2496d06a49dc88089b6331544d53",
+  "response": {
+    "id": "gen-1795628228-R4glJNoinONL3xxD9kw2",
+    "object": "chat.completion",
+    "created": 1795628228,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Rural residents near central cities may rely more on cars for airport access due to limited public transport, reducing reliance on local transit and long-distance rail compared to urban dwellers.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 474,
+      "completion_tokens": 78,
+      "total_tokens": 552,
+      "cost": 0.00012834,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00012834,
+        "upstream_inference_prompt_cost": 6.399e-05,
+        "upstream_inference_completions_cost": 6.435e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795628228-R4glJNoinONL3xxD9kw2",
+  "raw_prediction": {
+    "car": 0.45,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Rural residents near central cities may rely more on cars for airport access due to limited public transport, reducing reliance on local transit and long-distance rail compared to urban dwellers."
+  },
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Rural residents near central cities may rely more on cars for airport access due to limited public transport, reducing reliance on local transit and long-distance rail compared to urban dwellers."
+  },
+  "normalization": {
+    "sum_before": 0.73,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:37:18.348314+00:00",
+  "cost_exceeded_reservation": false
+}

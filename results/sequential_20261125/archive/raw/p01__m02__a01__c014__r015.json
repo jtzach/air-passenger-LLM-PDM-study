@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m02__a01__c014__r015",
+  "block_id": "p01__m02__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "unanchored",
+  "card_id": "reise__anzbegl_gr__154f6eb18583",
+  "round": 15,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "a4a9efd3bfa13d032315b611d69b3ba313fef3ab69d301b72af7e5ff4da7dd8a",
+  "started_utc": "2026-11-25T17:42:06.071871+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:42:07.710206+00:00",
+      "cost_usd": 0.0002716,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002716,
+  "reservation_upper_bound_usd": 0.0047928,
+  "response_sha256": "063a07e0df2c8dba207cf9925a7c1e409b93a0431387610fdc11b51dae9f25bb",
+  "response": {
+    "id": "gen-1795628525-rcjHXbhNz2znvPEzNg40",
+    "object": "chat.completion",
+    "created": 1795628525,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.6,\n  \"local_pt\": 0.7,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"Solo air travelers likely use local public transport for airport access; many also use cars as driver or passenger; fewer combine air with long-distance trains on same trip.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 391,
+      "completion_tokens": 72,
+      "total_tokens": 463,
+      "cost": 0.0002716,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002716,
+        "upstream_inference_prompt_cost": 0.0001564,
+        "upstream_inference_completions_cost": 0.0001152
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795628525-rcjHXbhNz2znvPEzNg40",
+  "raw_prediction": {
+    "car": 0.6,
+    "local_pt": 0.7,
+    "long_distance_rail": 0.25,
+    "rationale": "Solo air travelers likely use local public transport for airport access; many also use cars as driver or passenger; fewer combine air with long-distance trains on same trip."
+  },
+  "prediction": {
+    "car": 0.6,
+    "local_pt": 0.7,
+    "long_distance_rail": 0.25,
+    "rationale": "Solo air travelers likely use local public transport for airport access; many also use cars as driver or passenger; fewer combine air with long-distance trains on same trip."
+  },
+  "normalization": {
+    "sum_before": 1.5499999999999998,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:42:07.710206+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m02__a01__c019__r008",
+  "block_id": "p01__m02__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__782410ef69d3",
+  "round": 8,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "4bdd096cd69816109b459c36752ab0e7e98c10ef1640fb3bc244362ff40728ac",
+  "started_utc": "2026-11-25T17:35:52.066166+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:35:53.353837+00:00",
+      "cost_usd": 0.0002828,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002828,
+  "reservation_upper_bound_usd": 0.0047916,
+  "response_sha256": "f9c53f74898d3447d036a82ae064c707b17467fa538ad974099f9792cc80e76b",
+  "response": {
+    "id": "gen-1795628151-WEBfonmNLM9H19KnepJm",
+    "object": "chat.completion",
+    "created": 1795628151,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.7,\n  \"local_pt\": 0.6,\n  \"long_distance_rail\": 0.4,\n  \"rationale\": \"Multi-night trips often combine flights with car travel for airport access and local mobility, public transit usage near airports or destinations, and occasional long-distance rail as an alternative or complement to air travel.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 395,
+      "completion_tokens": 78,
+      "total_tokens": 473,
+      "cost": 0.0002828,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002828,
+        "upstream_inference_prompt_cost": 0.000158,
+        "upstream_inference_completions_cost": 0.0001248
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795628151-WEBfonmNLM9H19KnepJm",
+  "raw_prediction": {
+    "car": 0.7,
+    "local_pt": 0.6,
+    "long_distance_rail": 0.4,
+    "rationale": "Multi-night trips often combine flights with car travel for airport access and local mobility, public transit usage near airports or destinations, and occasional long-distance rail as an alternative or complement to air travel."
+  },
+  "prediction": {
+    "car": 0.7,
+    "local_pt": 0.6,
+    "long_distance_rail": 0.4,
+    "rationale": "Multi-night trips often combine flights with car travel for airport access and local mobility, public transit usage near airports or destinations, and occasional long-distance rail as an alternative or complement to air travel."
+  },
+  "normalization": {
+    "sum_before": 1.7,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:35:53.353837+00:00",
+  "cost_exceeded_reservation": false
+}

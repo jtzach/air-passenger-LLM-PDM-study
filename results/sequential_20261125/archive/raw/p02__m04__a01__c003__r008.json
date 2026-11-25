@@ -1,0 +1,120 @@
+{
+  "task_id": "p02__m04__a01__c003__r008",
+  "block_id": "p02__m04__a01",
+  "panel_id": "fmg_2025",
+  "panel_index": 1,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "fmg_business_continental",
+  "round": 8,
+  "modes": [
+    "car_dropoff",
+    "car_airport_parking",
+    "car_offairport_parking",
+    "car_other_parking",
+    "taxi_ridehail",
+    "rental_carsharing",
+    "bus_transfer",
+    "s_bahn",
+    "uefex",
+    "other"
+  ],
+  "mutually_exclusive": true,
+  "request_sha256": "e93f44fc99c0f389f87af134391dd2dc5082cac6a15e12cdd452183274a417d6",
+  "started_utc": "2026-11-25T17:35:43.309953+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:35:45.117222+00:00",
+      "cost_usd": 0.002516,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.002516,
+  "reservation_upper_bound_usd": 0.028811999999999997,
+  "response_sha256": "47b6bdca07c4188ce8849ee735c86981f60fd078d62bea0743d8de689ebe208d",
+  "response": {
+    "id": "gen-1795628142-54o8xGxYZOYBik7eMUgs",
+    "object": "chat.completion",
+    "created": 1795628142,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car_dropoff\": 0.18,\n  \"car_airport_parking\": 0.18,\n  \"car_offairport_parking\": 0.03,\n  \"car_other_parking\": 0.01,\n  \"taxi_ridehail\": 0.13,\n  \"rental_carsharing\": 0.04,\n  \"bus_transfer\": 0.04,\n  \"s_bahn\": 0.33,\n  \"uefex\": 0.04,\n  \"other\": 0.02,\n  \"rationale\": \"Business travellers value speed and reliability, making S-Bahn, car (dropoff/parking), and taxi prominent. Some use rental, bus, or UEFEX; off-airport and other modes are rare due to convenience and time factors.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 570,
+      "completion_tokens": 172,
+      "total_tokens": 742,
+      "cost": 0.002516,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002516,
+        "upstream_inference_prompt_cost": 0.00114,
+        "upstream_inference_completions_cost": 0.001376
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628142-54o8xGxYZOYBik7eMUgs",
+  "raw_prediction": {
+    "car_dropoff": 0.18,
+    "car_airport_parking": 0.18,
+    "car_offairport_parking": 0.03,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.13,
+    "rental_carsharing": 0.04,
+    "bus_transfer": 0.04,
+    "s_bahn": 0.33,
+    "uefex": 0.04,
+    "other": 0.02,
+    "rationale": "Business travellers value speed and reliability, making S-Bahn, car (dropoff/parking), and taxi prominent. Some use rental, bus, or UEFEX; off-airport and other modes are rare due to convenience and time factors."
+  },
+  "prediction": {
+    "car_dropoff": 0.18,
+    "car_airport_parking": 0.18,
+    "car_offairport_parking": 0.03,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.13,
+    "rental_carsharing": 0.04,
+    "bus_transfer": 0.04,
+    "s_bahn": 0.33,
+    "uefex": 0.04,
+    "other": 0.02,
+    "rationale": "Business travellers value speed and reliability, making S-Bahn, car (dropoff/parking), and taxi prominent. Some use rental, bus, or UEFEX; off-airport and other modes are rare due to convenience and time factors."
+  },
+  "normalization": {
+    "sum_before": 1.0,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:35:45.117222+00:00",
+  "cost_exceeded_reservation": false
+}

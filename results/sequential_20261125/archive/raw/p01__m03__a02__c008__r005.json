@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a02__c008__r005",
+  "block_id": "p01__m03__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__RegioStaR7__7b0e1c4f102a",
+  "round": 5,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "21effccff7addd3e11c82e7fc47b4948d8ae1b0e62ff7017802195dcae2eb7fd",
+  "started_utc": "2026-11-25T14:29:28.699465+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:29:39.097367+00:00",
+      "cost_usd": 0.00012834,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00012834,
+  "reservation_upper_bound_usd": 0.0021249599999999995,
+  "response_sha256": "c90258018785b3ad5785ab6cb70591172a3a2ef14295be1dad7ccace4b4f10a7",
+  "response": {
+    "id": "gen-1795616968-rYwOZEioAJQjT1XjzuG7",
+    "object": "chat.completion",
+    "created": 1795616968,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.15,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Urban metropolis residents may have better public transport access, reducing local PT and rail use; higher car availability or ride-sharing may increase car use despite lower necessity for airport access.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 474,
+      "completion_tokens": 78,
+      "total_tokens": 552,
+      "cost": 0.00012834,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00012834,
+        "upstream_inference_prompt_cost": 6.399e-05,
+        "upstream_inference_completions_cost": 6.435e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795616968-rYwOZEioAJQjT1XjzuG7",
+  "raw_prediction": {
+    "car": 0.45,
+    "local_pt": 0.15,
+    "long_distance_rail": 0.1,
+    "rationale": "Urban metropolis residents may have better public transport access, reducing local PT and rail use; higher car availability or ride-sharing may increase car use despite lower necessity for airport access."
+  },
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.15,
+    "long_distance_rail": 0.1,
+    "rationale": "Urban metropolis residents may have better public transport access, reducing local PT and rail use; higher car availability or ride-sharing may increase car use despite lower necessity for airport access."
+  },
+  "normalization": {
+    "sum_before": 0.7,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:29:39.097367+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,120 @@
+{
+  "task_id": "p02__m04__a01__c004__r010",
+  "block_id": "p02__m04__a01",
+  "panel_id": "fmg_2025",
+  "panel_index": 1,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "fmg_private_continental",
+  "round": 10,
+  "modes": [
+    "car_dropoff",
+    "car_airport_parking",
+    "car_offairport_parking",
+    "car_other_parking",
+    "taxi_ridehail",
+    "rental_carsharing",
+    "bus_transfer",
+    "s_bahn",
+    "uefex",
+    "other"
+  ],
+  "mutually_exclusive": true,
+  "request_sha256": "83ba3aa91034a8dc9bfff59309b9e250e19ea85bb2075d17bfb65f8c919f2141",
+  "started_utc": "2026-11-25T17:39:25.388254+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:39:26.927383+00:00",
+      "cost_usd": 0.002508,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.002508,
+  "reservation_upper_bound_usd": 0.029207999999999998,
+  "response_sha256": "5317672833d22017aca2c6d92838dab8c781704da6a272456d13c7c5122382f0",
+  "response": {
+    "id": "gen-1795628364-00dfDxBAjDy9nqvo4d6Q",
+    "object": "chat.completion",
+    "created": 1795628364,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car_dropoff\": 0.20,\n  \"car_airport_parking\": 0.23,\n  \"car_offairport_parking\": 0.07,\n  \"car_other_parking\": 0.01,\n  \"taxi_ridehail\": 0.10,\n  \"rental_carsharing\": 0.03,\n  \"bus_transfer\": 0.05,\n  \"s_bahn\": 0.27,\n  \"uefex\": 0.02,\n  \"other\": 0.02,\n  \"rationale\": \"Private-purpose passengers likely use a mix of S-Bahn, parking, and drop-off due to convenience, cost, and luggage needs. S-Bahn is strong due to direct airport connection, but private cars remain popular for flexibility.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 582,
+      "completion_tokens": 168,
+      "total_tokens": 750,
+      "cost": 0.002508,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002508,
+        "upstream_inference_prompt_cost": 0.001164,
+        "upstream_inference_completions_cost": 0.001344
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628364-00dfDxBAjDy9nqvo4d6Q",
+  "raw_prediction": {
+    "car_dropoff": 0.2,
+    "car_airport_parking": 0.23,
+    "car_offairport_parking": 0.07,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.1,
+    "rental_carsharing": 0.03,
+    "bus_transfer": 0.05,
+    "s_bahn": 0.27,
+    "uefex": 0.02,
+    "other": 0.02,
+    "rationale": "Private-purpose passengers likely use a mix of S-Bahn, parking, and drop-off due to convenience, cost, and luggage needs. S-Bahn is strong due to direct airport connection, but private cars remain popular for flexibility."
+  },
+  "prediction": {
+    "car_dropoff": 0.2,
+    "car_airport_parking": 0.23,
+    "car_offairport_parking": 0.07,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.1,
+    "rental_carsharing": 0.03,
+    "bus_transfer": 0.05,
+    "s_bahn": 0.27,
+    "uefex": 0.02,
+    "other": 0.02,
+    "rationale": "Private-purpose passengers likely use a mix of S-Bahn, parking, and drop-off due to convenience, cost, and luggage needs. S-Bahn is strong due to direct airport connection, but private cars remain popular for flexibility."
+  },
+  "normalization": {
+    "sum_before": 1.0,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:39:26.927383+00:00",
+  "cost_exceeded_reservation": false
+}

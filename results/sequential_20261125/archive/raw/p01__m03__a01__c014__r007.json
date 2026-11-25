@@ -1,0 +1,22 @@
+{
+  "task_id": "p01__m03__a01__c014__r007",
+  "block_id": "p01__m03__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "unanchored",
+  "card_id": "reise__anzbegl_gr__154f6eb18583",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "b4f9d2e813cdfe723c968c08cefae847edfcca2d481fbdd33d9b718d25a7e0c8",
+  "started_utc": "2026-11-25T14:32:58.563688+00:00",
+  "attempts": [],
+  "status": "in_progress",
+  "accounted_cost_usd": 0.00200694,
+  "reservation_upper_bound_usd": 0.00200694
+}

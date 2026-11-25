@@ -1,0 +1,173 @@
+{
+  "block_id": "p02__m02__a01",
+  "panel_id": "fmg_2025",
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "unanchored",
+  "baseline_mae_pp": 2.673616200412777,
+  "score_support_upper_pp": 19.915050342840196,
+  "complete_rounds": 16,
+  "round_scores": [
+    {
+      "round": 1,
+      "mae_pp": 5.859636839718441,
+      "no_card_mae_pp": 5.082114385996656,
+      "baseline_gain_pp": -3.1860206393056636,
+      "no_card_gain_pp": -0.7775224537217849
+    },
+    {
+      "round": 2,
+      "mae_pp": 5.054291861770066,
+      "no_card_mae_pp": 5.078978613063468,
+      "baseline_gain_pp": -2.380675661357289,
+      "no_card_gain_pp": 0.0246867512934017
+    },
+    {
+      "round": 3,
+      "mae_pp": 5.697027075911059,
+      "no_card_mae_pp": 5.661341584778209,
+      "baseline_gain_pp": -3.023410875498282,
+      "no_card_gain_pp": -0.03568549113284991
+    },
+    {
+      "round": 4,
+      "mae_pp": 5.336923345778356,
+      "no_card_mae_pp": 6.36503690137151,
+      "baseline_gain_pp": -2.6633071453655788,
+      "no_card_gain_pp": 1.028113555593154
+    },
+    {
+      "round": 5,
+      "mae_pp": 5.099426555905065,
+      "no_card_mae_pp": 4.817703550434516,
+      "baseline_gain_pp": -2.4258103554922883,
+      "no_card_gain_pp": -0.28172300547054974
+    },
+    {
+      "round": 6,
+      "mae_pp": 5.644600613909004,
+      "no_card_mae_pp": 5.661341584778209,
+      "baseline_gain_pp": -2.970984413496227,
+      "no_card_gain_pp": 0.016740970869205007
+    },
+    {
+      "round": 7,
+      "mae_pp": 5.539535401932142,
+      "no_card_mae_pp": 4.817703550434516,
+      "baseline_gain_pp": -2.8659192015193646,
+      "no_card_gain_pp": -0.7218318514976261
+    },
+    {
+      "round": 8,
+      "mae_pp": 6.274392063692831,
+      "no_card_mae_pp": 5.975641682475368,
+      "baseline_gain_pp": -3.600775863280054,
+      "no_card_gain_pp": -0.298750381217463
+    },
+    {
+      "round": 9,
+      "mae_pp": 5.658806632428068,
+      "no_card_mae_pp": 4.817703550434516,
+      "baseline_gain_pp": -2.9851904320152913,
+      "no_card_gain_pp": -0.8411030819935528
+    },
+    {
+      "round": 10,
+      "mae_pp": 5.696817828100195,
+      "no_card_mae_pp": 5.97250590954218,
+      "baseline_gain_pp": -3.023201627687418,
+      "no_card_gain_pp": 0.2756880814419853
+    },
+    {
+      "round": 11,
+      "mae_pp": 5.310986018384139,
+      "no_card_mae_pp": 5.082114385996656,
+      "baseline_gain_pp": -2.6373698179713623,
+      "no_card_gain_pp": -0.22887163238748354
+    },
+    {
+      "round": 12,
+      "mae_pp": 5.791524014860762,
+      "no_card_mae_pp": 6.613575889604031,
+      "baseline_gain_pp": -3.1179078144479853,
+      "no_card_gain_pp": 0.822051874743269
+    },
+    {
+      "round": 13,
+      "mae_pp": 5.635133121937181,
+      "no_card_mae_pp": 5.453091557217465,
+      "baseline_gain_pp": -2.961516921524404,
+      "no_card_gain_pp": -0.18204156471971622
+    },
+    {
+      "round": 14,
+      "mae_pp": 5.628058021664928,
+      "no_card_mae_pp": 5.97250590954218,
+      "baseline_gain_pp": -2.954441821252151,
+      "no_card_gain_pp": 0.34444788787725233
+    },
+    {
+      "round": 15,
+      "mae_pp": 5.711093412043302,
+      "no_card_mae_pp": 5.613575889604032,
+      "baseline_gain_pp": -3.0374772116305246,
+      "no_card_gain_pp": -0.09751752243926948
+    },
+    {
+      "round": 16,
+      "mae_pp": 5.5150657520028705,
+      "no_card_mae_pp": 5.078978613063468,
+      "baseline_gain_pp": -2.8414495515900935,
+      "no_card_gain_pp": -0.43608713893940276
+    }
+  ],
+  "looks": [
+    {
+      "round": 16,
+      "primary_median": {
+        "estimate": -2.9662506675103155,
+        "lower": -3.1860206393056636,
+        "upper": -2.4258103554922883,
+        "n": 16,
+        "alpha": 0.0011111111111111111,
+        "estimand": "population median of the round-level quantity",
+        "method": "exact noninterpolated binomial order statistics",
+        "width": 0.7602102838133753,
+        "family_alpha": 0.04,
+        "endpoint_count": 12,
+        "scheduled_looks": [
+          16,
+          32,
+          64
+        ],
+        "margin": 0.5,
+        "precision_half_width": 0.25,
+        "decision": "meaningful_degradation",
+        "p_improvement_adjusted": 1.0,
+        "p_degradation_adjusted": 0.0010986328125,
+        "n_strict_improvements": 0,
+        "n_strict_degradations": 16,
+        "n_threshold_ties": 0,
+        "iid_assumption_acknowledged": true,
+        "identical_observations": false
+      },
+      "secondary_mean": {
+        "estimate": -2.9172162095896237,
+        "lower": -9.299786780548978,
+        "upper": -0.42274339541593164,
+        "n": 16,
+        "alpha": 0.0008333333333333334,
+        "estimand": "constant conditional mean of the round-level quantity",
+        "method": "two-sided fixed-mixture betting confidence sequence",
+        "width": 8.877043385133046,
+        "assumptions_acknowledged": true
+      }
+    }
+  ],
+  "halt_reason": null,
+  "identity": [
+    "OpenAI",
+    "openai/gpt-4.1-mini"
+  ],
+  "diagnostics": [],
+  "inference_assumptions_ok": true
+}

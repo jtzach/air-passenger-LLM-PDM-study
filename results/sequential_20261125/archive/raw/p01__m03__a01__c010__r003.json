@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a01__c010__r003",
+  "block_id": "p01__m03__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "unanchored",
+  "card_id": "reise__RegioStaR7__9f47524becab",
+  "round": 3,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "ac4a644fc20ef5dc4000eb3ba0c67dcdb08eda986dce27b88b5c0a2ae4b269d9",
+  "started_utc": "2026-11-25T14:26:36.643314+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:26:47.079004+00:00",
+      "cost_usd": 0.00012507,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00012507,
+  "reservation_upper_bound_usd": 0.00201786,
+  "response_sha256": "ce4d4e9acbda129ee6005ec8f2afda511870161d7a4e00d9504566093284895e",
+  "response": {
+    "id": "gen-1795616796-PieIvxxGUckWAnDGcSiC",
+    "object": "chat.completion",
+    "created": 1795616796,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.75,\n  \"local_pt\": 0.4,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"In medium-sized urban areas, car use for airport access is common due to flexibility and parking availability. Public transport coverage is moderate but less dominant. Long-distance rail competes less when nearby airports offer convenient flight options.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 407,
+      "completion_tokens": 85,
+      "total_tokens": 492,
+      "cost": 0.00012507,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00012507,
+        "upstream_inference_prompt_cost": 5.4945e-05,
+        "upstream_inference_completions_cost": 7.0125e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795616796-PieIvxxGUckWAnDGcSiC",
+  "raw_prediction": {
+    "car": 0.75,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.25,
+    "rationale": "In medium-sized urban areas, car use for airport access is common due to flexibility and parking availability. Public transport coverage is moderate but less dominant. Long-distance rail competes less when nearby airports offer convenient flight options."
+  },
+  "prediction": {
+    "car": 0.75,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.25,
+    "rationale": "In medium-sized urban areas, car use for airport access is common due to flexibility and parking availability. Public transport coverage is moderate but less dominant. Long-distance rail competes less when nearby airports offer convenient flight options."
+  },
+  "normalization": {
+    "sum_before": 1.4,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:26:47.079004+00:00",
+  "cost_exceeded_reservation": false
+}

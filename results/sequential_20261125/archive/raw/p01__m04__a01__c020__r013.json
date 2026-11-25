@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c020__r013",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__9ee7f61bb0c0",
+  "round": 13,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "cec541876f55bcfa07f4ba621a26c0d353e599de63c1573d0ad3e2ba5a56295a",
+  "started_utc": "2026-11-25T17:41:29.694013+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:41:31.210170+00:00",
+      "cost_usd": 0.001442,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001442,
+  "reservation_upper_bound_usd": 0.02391,
+  "response_sha256": "90418a0aef90a719d28024a8567133a21370ab4fc704563ae565f097c48f3437",
+  "response": {
+    "id": "gen-1795628489-ZpFvX1o3Wq8ayOe5iOzV",
+    "object": "chat.completion",
+    "created": 1795628489,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.20,\n  \"rationale\": \"German air travelers often use cars for airport access, but public and long-distance rail are also common, especially for medium-distance journeys. Three nights suggests leisure or city trips, favoring a mix of access modes.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 393,
+      "completion_tokens": 82,
+      "total_tokens": 475,
+      "cost": 0.001442,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001442,
+        "upstream_inference_prompt_cost": 0.000786,
+        "upstream_inference_completions_cost": 0.000656
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628489-ZpFvX1o3Wq8ayOe5iOzV",
+  "raw_prediction": {
+    "car": 0.55,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.2,
+    "rationale": "German air travelers often use cars for airport access, but public and long-distance rail are also common, especially for medium-distance journeys. Three nights suggests leisure or city trips, favoring a mix of access modes."
+  },
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.2,
+    "rationale": "German air travelers often use cars for airport access, but public and long-distance rail are also common, especially for medium-distance journeys. Three nights suggests leisure or city trips, favoring a mix of access modes."
+  },
+  "normalization": {
+    "sum_before": 1.1,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:41:31.210170+00:00",
+  "cost_exceeded_reservation": false
+}

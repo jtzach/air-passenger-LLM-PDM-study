@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m02__a01__c019__r006",
+  "block_id": "p01__m02__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__782410ef69d3",
+  "round": 6,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "1e56669fb215222c31b12f9df287babd7769e37937ee69de8d0a149040202ee7",
+  "started_utc": "2026-11-25T14:31:43.878693+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:31:45.716354+00:00",
+      "cost_usd": 0.0002684,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002684,
+  "reservation_upper_bound_usd": 0.0047916,
+  "response_sha256": "01c9504a8d60cb8ba04c440d0c8d3a815c08f09eb46d9b4986c234ed1e039398",
+  "response": {
+    "id": "gen-1795617104-Pq91KQg1PnFbTiP6fqaP",
+    "object": "chat.completion",
+    "created": 1795617104,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.6,\n  \"local_pt\": 0.7,\n  \"long_distance_rail\": 0.3,\n  \"rationale\": \"Mid-length stays often involve airport access by car or local public transit; long-distance rail less frequent but possible for airport or city link in Germany.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 395,
+      "completion_tokens": 69,
+      "total_tokens": 464,
+      "cost": 0.0002684,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002684,
+        "upstream_inference_prompt_cost": 0.000158,
+        "upstream_inference_completions_cost": 0.0001104
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795617104-Pq91KQg1PnFbTiP6fqaP",
+  "raw_prediction": {
+    "car": 0.6,
+    "local_pt": 0.7,
+    "long_distance_rail": 0.3,
+    "rationale": "Mid-length stays often involve airport access by car or local public transit; long-distance rail less frequent but possible for airport or city link in Germany."
+  },
+  "prediction": {
+    "car": 0.6,
+    "local_pt": 0.7,
+    "long_distance_rail": 0.3,
+    "rationale": "Mid-length stays often involve airport access by car or local public transit; long-distance rail less frequent but possible for airport or city link in Germany."
+  },
+  "normalization": {
+    "sum_before": 1.5999999999999999,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:31:45.716354+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c018__r002",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__6bcea89383ae",
+  "round": 2,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "9c7155e75f469a5e3fa7926df636ccd35447b766cdbbd7c903097c8275b94dd3",
+  "started_utc": "2026-11-25T14:23:59.421912+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:24:02.053955+00:00",
+      "cost_usd": 0.00156,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00156,
+  "reservation_upper_bound_usd": 0.025554,
+  "response_sha256": "bcbf10615228327d6e691874f5d5141a6c91d94f698a5a02001f1c20cd38c4c1",
+  "response": {
+    "id": "gen-1795616640-XIZyUEIw5Kuadf0NaRr2",
+    "object": "chat.completion",
+    "created": 1795616640,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.39,\n  \"local_pt\": 0.24,\n  \"long_distance_rail\": 0.13,\n  \"rationale\": \"Two-night trips may skew slightly toward weekend or city-break travel, often involving airports with less extensive public transport, so car and local PT use may be marginally higher, but differences from population rates remain minor.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 452,
+      "completion_tokens": 82,
+      "total_tokens": 534,
+      "cost": 0.00156,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00156,
+        "upstream_inference_prompt_cost": 0.000904,
+        "upstream_inference_completions_cost": 0.000656
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616640-XIZyUEIw5Kuadf0NaRr2",
+  "raw_prediction": {
+    "car": 0.39,
+    "local_pt": 0.24,
+    "long_distance_rail": 0.13,
+    "rationale": "Two-night trips may skew slightly toward weekend or city-break travel, often involving airports with less extensive public transport, so car and local PT use may be marginally higher, but differences from population rates remain minor."
+  },
+  "prediction": {
+    "car": 0.39,
+    "local_pt": 0.24,
+    "long_distance_rail": 0.13,
+    "rationale": "Two-night trips may skew slightly toward weekend or city-break travel, often involving airports with less extensive public transport, so car and local PT use may be marginally higher, but differences from population rates remain minor."
+  },
+  "normalization": {
+    "sum_before": 0.76,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:24:02.053955+00:00",
+  "cost_exceeded_reservation": false
+}

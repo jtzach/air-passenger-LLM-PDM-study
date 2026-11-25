@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c001__r008",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzauto_gr1__296e9849dc3d",
+  "round": 8,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "3030aa093218e9970ab688799afc35c0b0045121476bb50cdadfe45d4c32a719",
+  "started_utc": "2026-11-25T17:36:35.539388+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:36:37.064480+00:00",
+      "cost_usd": 0.001454,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001454,
+  "reservation_upper_bound_usd": 0.023861999999999998,
+  "response_sha256": "f0abd012c02636f0efb7b44af6748c3f9e977ba85f57e6f8ba1021752113bf11",
+  "response": {
+    "id": "gen-1795628194-sE4hckxg6AlDgieUsjVw",
+    "object": "chat.completion",
+    "created": 1795628194,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.20,\n  \"local_pt\": 0.70,\n  \"long_distance_rail\": 0.35,\n  \"rationale\": \"Without a household car, most access airports by public transport or lifts. Car use includes taxis or rides with non-household members. Local PT is common for airport access; some use long-distance rail for longer airport transfers.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 391,
+      "completion_tokens": 84,
+      "total_tokens": 475,
+      "cost": 0.001454,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001454,
+        "upstream_inference_prompt_cost": 0.000782,
+        "upstream_inference_completions_cost": 0.000672
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628194-sE4hckxg6AlDgieUsjVw",
+  "raw_prediction": {
+    "car": 0.2,
+    "local_pt": 0.7,
+    "long_distance_rail": 0.35,
+    "rationale": "Without a household car, most access airports by public transport or lifts. Car use includes taxis or rides with non-household members. Local PT is common for airport access; some use long-distance rail for longer airport transfers."
+  },
+  "prediction": {
+    "car": 0.2,
+    "local_pt": 0.7,
+    "long_distance_rail": 0.35,
+    "rationale": "Without a household car, most access airports by public transport or lifts. Car use includes taxis or rides with non-household members. Local PT is common for airport access; some use long-distance rail for longer airport transfers."
+  },
+  "normalization": {
+    "sum_before": 1.25,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:36:37.064480+00:00",
+  "cost_exceeded_reservation": false
+}

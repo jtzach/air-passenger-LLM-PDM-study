@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a02__c017__r001",
+  "block_id": "p01__m03__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__456ee228eb2a",
+  "round": 1,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "10248e5ff45549d9e0db9d8f071450d00f66bbda0b4d3569d5c367a772135269",
+  "started_utc": "2026-11-25T14:21:22.011477+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:21:33.129610+00:00",
+      "cost_usd": 0.00013191,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00013191,
+  "reservation_upper_bound_usd": 0.0021211800000000003,
+  "response_sha256": "f7f0e5ef4be8028782b11ed27cb65f6147e69ffcdd8f804fe54b6f49a244a2e0",
+  "response": {
+    "id": "gen-1795616482-OROx6Smle0cBTTgCvGBY",
+    "object": "chat.completion",
+    "created": 1795616482,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Longer stays (4–5 nights) may favor car use for flexibility upon arrival; reduced reliance on local or rail transit due to likely non-urban destinations or lower frequency of service usage.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 476,
+      "completion_tokens": 82,
+      "total_tokens": 558,
+      "cost": 0.00013191,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00013191,
+        "upstream_inference_prompt_cost": 6.426e-05,
+        "upstream_inference_completions_cost": 6.765e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795616482-OROx6Smle0cBTTgCvGBY",
+  "raw_prediction": {
+    "car": 0.45,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Longer stays (4–5 nights) may favor car use for flexibility upon arrival; reduced reliance on local or rail transit due to likely non-urban destinations or lower frequency of service usage."
+  },
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Longer stays (4–5 nights) may favor car use for flexibility upon arrival; reduced reliance on local or rail transit due to likely non-urban destinations or lower frequency of service usage."
+  },
+  "normalization": {
+    "sum_before": 0.73,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:21:33.129610+00:00",
+  "cost_exceeded_reservation": false
+}

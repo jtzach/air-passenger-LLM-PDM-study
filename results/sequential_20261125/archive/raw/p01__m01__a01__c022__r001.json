@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m01__a01__c022__r001",
+  "block_id": "p01__m01__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__f6e4375535d4",
+  "round": 1,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "8ba54fcbd23df92f13fb7a711a7f0c61d7f3a2a9961eae490f71f71ea5cbc3bc",
+  "started_utc": "2026-11-25T14:22:14.607480+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:22:16.170594+00:00",
+      "cost_usd": 1.387e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 1.387e-05,
+  "reservation_upper_bound_usd": 0.0003315,
+  "response_sha256": "63a2b684dcbd0c6d4af4867eb43559dd7d6b9a76f8a6aae3966c8a171fd575ed",
+  "response": {
+    "id": "gen-1795616534-kkXNHimcQki9jPKJHlq4",
+    "object": "chat.completion",
+    "created": 1795616534,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.3, \"local_pt\": 0.4, \"long_distance_rail\": 0.2, \"rationale\": \"Given 6-7 overnight trips, many likely involved a combination of flight and other transport. Car use is plausible for connecting journeys, local transport for arrival/departure, and rail for longer distances between destinations.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 416,
+      "completion_tokens": 79,
+      "total_tokens": 495,
+      "cost": 1.387e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 336,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.387e-05,
+        "upstream_inference_prompt_cost": 9.92e-06,
+        "upstream_inference_completions_cost": 3.95e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616534-kkXNHimcQki9jPKJHlq4",
+  "raw_prediction": {
+    "car": 0.3,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.2,
+    "rationale": "Given 6-7 overnight trips, many likely involved a combination of flight and other transport. Car use is plausible for connecting journeys, local transport for arrival/departure, and rail for longer distances between destinations."
+  },
+  "prediction": {
+    "car": 0.3,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.2,
+    "rationale": "Given 6-7 overnight trips, many likely involved a combination of flight and other transport. Car use is plausible for connecting journeys, local transport for arrival/departure, and rail for longer distances between destinations."
+  },
+  "normalization": {
+    "sum_before": 0.9,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:22:16.170594+00:00",
+  "cost_exceeded_reservation": false
+}

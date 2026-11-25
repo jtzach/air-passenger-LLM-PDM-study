@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c003__r003",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzauto_gr1__bee31b0e88ae",
+  "round": 3,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "4f994145f45648253c1be2c02a201b2e440246465183ce8fbcdba532cd60f15d",
+  "started_utc": "2026-11-25T14:26:53.019992+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:26:54.374984+00:00",
+      "cost_usd": 0.001472,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001472,
+  "reservation_upper_bound_usd": 0.023861999999999998,
+  "response_sha256": "ae663a557ab90181b12d9a884af6ae23db5ebdcb4186c9d739b2e9f672131711",
+  "response": {
+    "id": "gen-1795616813-AjT10BHDVXls77NkeBZM",
+    "object": "chat.completion",
+    "created": 1795616813,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.85,\n  \"local_pt\": 0.25,\n  \"long_distance_rail\": 0.12,\n  \"rationale\": \"Households with 3 cars likely prefer driving to airports for flexibility and convenience. Public/local transport is less favored but still possible, especially in cities. Long-distance rail is less likely due to car availability and preference for directness.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 392,
+      "completion_tokens": 86,
+      "total_tokens": 478,
+      "cost": 0.001472,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001472,
+        "upstream_inference_prompt_cost": 0.000784,
+        "upstream_inference_completions_cost": 0.000688
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616813-AjT10BHDVXls77NkeBZM",
+  "raw_prediction": {
+    "car": 0.85,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.12,
+    "rationale": "Households with 3 cars likely prefer driving to airports for flexibility and convenience. Public/local transport is less favored but still possible, especially in cities. Long-distance rail is less likely due to car availability and preference for directness."
+  },
+  "prediction": {
+    "car": 0.85,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.12,
+    "rationale": "Households with 3 cars likely prefer driving to airports for flexibility and convenience. Public/local transport is less favored but still possible, especially in cities. Long-distance rail is less likely due to car availability and preference for directness."
+  },
+  "normalization": {
+    "sum_before": 1.22,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:26:54.374984+00:00",
+  "cost_exceeded_reservation": false
+}

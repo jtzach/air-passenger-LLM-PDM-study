@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c011__r014",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__RegioStaR7__cae80c90607c",
+  "round": 14,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "35a021c9de30092bf2645f3a18af40ec403a0f36ff6fcc3928a3515718c87ad4",
+  "started_utc": "2026-11-25T17:41:41.516385+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:41:42.818106+00:00",
+      "cost_usd": 0.001426,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001426,
+  "reservation_upper_bound_usd": 0.024089999999999997,
+  "response_sha256": "19bd1d03ac6e5cfa97eb1fed2cca91b2f93052625e12bdab80ff82b28fb375b3",
+  "response": {
+    "id": "gen-1795628500-OSeKZxEzX942jKKW7ngE",
+    "object": "chat.completion",
+    "created": 1795628500,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.68,\n  \"local_pt\": 0.40,\n  \"long_distance_rail\": 0.18,\n  \"rationale\": \"Medium towns and rural/urban edges often lack direct long-distance rail to airports, so car dominates. Local public transport is used if available; long-distance rail is less probable without large-city proximity.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 397,
+      "completion_tokens": 79,
+      "total_tokens": 476,
+      "cost": 0.001426,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001426,
+        "upstream_inference_prompt_cost": 0.000794,
+        "upstream_inference_completions_cost": 0.000632
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628500-OSeKZxEzX942jKKW7ngE",
+  "raw_prediction": {
+    "car": 0.68,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.18,
+    "rationale": "Medium towns and rural/urban edges often lack direct long-distance rail to airports, so car dominates. Local public transport is used if available; long-distance rail is less probable without large-city proximity."
+  },
+  "prediction": {
+    "car": 0.68,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.18,
+    "rationale": "Medium towns and rural/urban edges often lack direct long-distance rail to airports, so car dominates. Local public transport is used if available; long-distance rail is less probable without large-city proximity."
+  },
+  "normalization": {
+    "sum_before": 1.26,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:41:42.818106+00:00",
+  "cost_exceeded_reservation": false
+}

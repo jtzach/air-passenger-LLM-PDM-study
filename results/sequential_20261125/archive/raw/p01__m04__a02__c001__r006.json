@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c001__r006",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzauto_gr1__296e9849dc3d",
+  "round": 6,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "95335af2b019a0740d90b44c89e83197b07b1f1b497dcdd80b41714a0ee776b6",
+  "started_utc": "2026-11-25T14:31:51.147456+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:31:52.953732+00:00",
+      "cost_usd": 0.001588,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001588,
+  "reservation_upper_bound_usd": 0.025505999999999997,
+  "response_sha256": "25890da567ecb4c04fce7bcba96195590597ed3d690aff21ed0db0e73d16881a",
+  "response": {
+    "id": "gen-1795617111-gApsPpI8GrmpaqYWTDDX",
+    "object": "chat.completion",
+    "created": 1795617111,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.18,\n  \"local_pt\": 0.34,\n  \"long_distance_rail\": 0.17,\n  \"rationale\": \"Without a household car, car use drops (fewer private or shared rides). Local PT rises as primary access/egress, and long-distance rail increases modestly as a substitute for car, but not to majority mode share.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 450,
+      "completion_tokens": 86,
+      "total_tokens": 536,
+      "cost": 0.001588,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001588,
+        "upstream_inference_prompt_cost": 0.0009,
+        "upstream_inference_completions_cost": 0.000688
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795617111-gApsPpI8GrmpaqYWTDDX",
+  "raw_prediction": {
+    "car": 0.18,
+    "local_pt": 0.34,
+    "long_distance_rail": 0.17,
+    "rationale": "Without a household car, car use drops (fewer private or shared rides). Local PT rises as primary access/egress, and long-distance rail increases modestly as a substitute for car, but not to majority mode share."
+  },
+  "prediction": {
+    "car": 0.18,
+    "local_pt": 0.34,
+    "long_distance_rail": 0.17,
+    "rationale": "Without a household car, car use drops (fewer private or shared rides). Local PT rises as primary access/egress, and long-distance rail increases modestly as a substitute for car, but not to majority mode share."
+  },
+  "normalization": {
+    "sum_before": 0.6900000000000001,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:31:52.953732+00:00",
+  "cost_exceeded_reservation": false
+}

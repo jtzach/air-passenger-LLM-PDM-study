@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a02__c009__r009",
+  "block_id": "p01__m03__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__RegioStaR7__7cdab1586e04",
+  "round": 9,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "021777e4db56937ea12324e5894b5c735d5a517c223e7a0d1ef651546110858d",
+  "started_utc": "2026-11-25T17:37:12.969527+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:37:21.797152+00:00",
+      "cost_usd": 0.00012654,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00012654,
+  "reservation_upper_bound_usd": 0.0021312600000000003,
+  "response_sha256": "e53e9be936173313db4d75d35837e3aaaf043a35b0dc5ac48bfedf7876a8aebd",
+  "response": {
+    "id": "gen-1795628232-Ed0MCsD28cy46YWbbxTn",
+    "object": "chat.completion",
+    "created": 1795628232,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Urban residents in large cities may rely more on cars for airport access due to luggage or convenience, less on local and long-distance rail, compared to national averages.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 479,
+      "completion_tokens": 75,
+      "total_tokens": 554,
+      "cost": 0.00012654,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00012654,
+        "upstream_inference_prompt_cost": 6.4665e-05,
+        "upstream_inference_completions_cost": 6.1875e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795628232-Ed0MCsD28cy46YWbbxTn",
+  "raw_prediction": {
+    "car": 0.45,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Urban residents in large cities may rely more on cars for airport access due to luggage or convenience, less on local and long-distance rail, compared to national averages."
+  },
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Urban residents in large cities may rely more on cars for airport access due to luggage or convenience, less on local and long-distance rail, compared to national averages."
+  },
+  "normalization": {
+    "sum_before": 0.73,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:37:21.797152+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c010__r008",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__RegioStaR7__9f47524becab",
+  "round": 8,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "9a810e6f5a0bce14f4a539c583315734c5eab119b89fd2c67c44801292551667",
+  "started_utc": "2026-11-25T17:36:05.356398+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:36:06.631782+00:00",
+      "cost_usd": 0.001552,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001552,
+  "reservation_upper_bound_usd": 0.025733999999999996,
+  "response_sha256": "244ad25763692152425a981eefe0f387d40918e7b851951f03906bd45cbe5a7f",
+  "response": {
+    "id": "gen-1795628164-RTRTx8te6t1V4YkD2S5v",
+    "object": "chat.completion",
+    "created": 1795628164,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.33,\n  \"local_pt\": 0.27,\n  \"long_distance_rail\": 0.13,\n  \"rationale\": \"Medium-sized urban residents likely have moderate car access but better public transport than rural areas, raising local PT use slightly above average; car and long-distance rail remain close to population rates due to mixed connectivity.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 456,
+      "completion_tokens": 80,
+      "total_tokens": 536,
+      "cost": 0.001552,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001552,
+        "upstream_inference_prompt_cost": 0.000912,
+        "upstream_inference_completions_cost": 0.00064
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628164-RTRTx8te6t1V4YkD2S5v",
+  "raw_prediction": {
+    "car": 0.33,
+    "local_pt": 0.27,
+    "long_distance_rail": 0.13,
+    "rationale": "Medium-sized urban residents likely have moderate car access but better public transport than rural areas, raising local PT use slightly above average; car and long-distance rail remain close to population rates due to mixed connectivity."
+  },
+  "prediction": {
+    "car": 0.33,
+    "local_pt": 0.27,
+    "long_distance_rail": 0.13,
+    "rationale": "Medium-sized urban residents likely have moderate car access but better public transport than rural areas, raising local PT use slightly above average; car and long-distance rail remain close to population rates due to mixed connectivity."
+  },
+  "normalization": {
+    "sum_before": 0.73,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:36:06.631782+00:00",
+  "cost_exceeded_reservation": false
+}

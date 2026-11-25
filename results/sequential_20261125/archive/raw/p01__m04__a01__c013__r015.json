@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c013__r015",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzbegl_gr__07f355b725cf",
+  "round": 15,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "18ee1f3ab485bba764ca7cf44d89eac8f9174c554f14338c796e822e81cf1206",
+  "started_utc": "2026-11-25T17:42:13.962831+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:42:15.200291+00:00",
+      "cost_usd": 0.001456,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001456,
+  "reservation_upper_bound_usd": 0.023933999999999997,
+  "response_sha256": "0f2348de15a526131ee2299ea895a49c95fe16f4609759954b7aa614b4d43714",
+  "response": {
+    "id": "gen-1795628533-LpJyGSeFOfbUri6B55CS",
+    "object": "chat.completion",
+    "created": 1795628533,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.18,\n  \"rationale\": \"With two household companions, shared car use is likely for cost and convenience. Public/local transport is less suited for group logistics, but still feasible. Long-distance rail is less common, especially for families or groups with luggage.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 392,
+      "completion_tokens": 84,
+      "total_tokens": 476,
+      "cost": 0.001456,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001456,
+        "upstream_inference_prompt_cost": 0.000784,
+        "upstream_inference_completions_cost": 0.000672
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628533-LpJyGSeFOfbUri6B55CS",
+  "raw_prediction": {
+    "car": 0.65,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.18,
+    "rationale": "With two household companions, shared car use is likely for cost and convenience. Public/local transport is less suited for group logistics, but still feasible. Long-distance rail is less common, especially for families or groups with luggage."
+  },
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.18,
+    "rationale": "With two household companions, shared car use is likely for cost and convenience. Public/local transport is less suited for group logistics, but still feasible. Long-distance rail is less common, especially for families or groups with luggage."
+  },
+  "normalization": {
+    "sum_before": 1.18,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:42:15.200291+00:00",
+  "cost_exceeded_reservation": false
+}

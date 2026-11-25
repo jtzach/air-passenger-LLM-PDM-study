@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c011__r014",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__RegioStaR7__cae80c90607c",
+  "round": 14,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "3ac542c62f557bb5f207a93206db4d46f03776fb2e15412cbf9261cd9c624cc1",
+  "started_utc": "2026-11-25T17:41:36.532879+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:41:37.786435+00:00",
+      "cost_usd": 0.00156,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00156,
+  "reservation_upper_bound_usd": 0.025733999999999996,
+  "response_sha256": "b17a9f0606a1282f210751edb4a1ba973c1db83b2d405d1dc305f4a3cd071180",
+  "response": {
+    "id": "gen-1795628495-0OcP7ZHVDHsB54krDLbg",
+    "object": "chat.completion",
+    "created": 1795628495,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.41,\n  \"local_pt\": 0.23,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Residents outside major cities often face limited public transport to airports, slightly increasing car use and reducing long-distance rail. Local PT use is only slightly higher, as medium towns and urban areas have moderate transit access.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 456,
+      "completion_tokens": 81,
+      "total_tokens": 537,
+      "cost": 0.00156,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00156,
+        "upstream_inference_prompt_cost": 0.000912,
+        "upstream_inference_completions_cost": 0.000648
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628495-0OcP7ZHVDHsB54krDLbg",
+  "raw_prediction": {
+    "car": 0.41,
+    "local_pt": 0.23,
+    "long_distance_rail": 0.1,
+    "rationale": "Residents outside major cities often face limited public transport to airports, slightly increasing car use and reducing long-distance rail. Local PT use is only slightly higher, as medium towns and urban areas have moderate transit access."
+  },
+  "prediction": {
+    "car": 0.41,
+    "local_pt": 0.23,
+    "long_distance_rail": 0.1,
+    "rationale": "Residents outside major cities often face limited public transport to airports, slightly increasing car use and reducing long-distance rail. Local PT use is only slightly higher, as medium towns and urban areas have moderate transit access."
+  },
+  "normalization": {
+    "sum_before": 0.74,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:41:37.787434+00:00",
+  "cost_exceeded_reservation": false
+}

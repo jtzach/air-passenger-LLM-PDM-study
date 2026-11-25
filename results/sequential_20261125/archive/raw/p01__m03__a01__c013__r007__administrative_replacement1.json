@@ -1,0 +1,100 @@
+{
+  "task_id": "p01__m03__a01__c013__r007__administrative_replacement1",
+  "block_id": "p01__m03__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "unanchored",
+  "card_id": "reise__anzbegl_gr__07f355b725cf",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "supersedes_task_id": "p01__m03__a01__c013__r007",
+  "request_sha256": "bd7e5eeb3a0f3c81d7ad9b3ae96caeb449f3df287ee26f2516b3be4195f42da8",
+  "started_utc": "2026-11-25T17:35:13.139569+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:35:25.371359+00:00",
+      "cost_usd": 0.00013017,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00013017,
+  "reservation_upper_bound_usd": 0.00200694,
+  "response_sha256": "498f7619b83fb89cf9f99da142c190d17b04175ef26b50ea77a6cb23799d769c",
+  "response": {
+    "id": "gen-1795628112-05DAWq95HA3VDftl0i5z",
+    "object": "chat.completion",
+    "created": 1795628112,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.7,\n  \"local_pt\": 0.4,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"With two household companions, car use is likely for airport access due to convenience and group size. Local public transport is possible but less likely for groups. Long-distance rail may be used if the origin or destination is well-connected, but car dominates for flexibility.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 402,
+      "completion_tokens": 92,
+      "total_tokens": 494,
+      "cost": 0.00013017,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00013017,
+        "upstream_inference_prompt_cost": 5.427e-05,
+        "upstream_inference_completions_cost": 7.59e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795628112-05DAWq95HA3VDftl0i5z",
+  "raw_prediction": {
+    "car": 0.7,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.25,
+    "rationale": "With two household companions, car use is likely for airport access due to convenience and group size. Local public transport is possible but less likely for groups. Long-distance rail may be used if the origin or destination is well-connected, but car dominates for flexibility."
+  },
+  "prediction": {
+    "car": 0.7,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.25,
+    "rationale": "With two household companions, car use is likely for airport access due to convenience and group size. Local public transport is possible but less likely for groups. Long-distance rail may be used if the origin or destination is well-connected, but car dominates for flexibility."
+  },
+  "normalization": {
+    "sum_before": 1.35,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:35:25.371359+00:00",
+  "cost_exceeded_reservation": false
+}

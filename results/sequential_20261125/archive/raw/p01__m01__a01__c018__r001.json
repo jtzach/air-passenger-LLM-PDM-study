@@ -1,0 +1,106 @@
+{
+  "task_id": "p01__m01__a01__c018__r001",
+  "block_id": "p01__m01__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__6bcea89383ae",
+  "round": 1,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "bb548bb49545a6f479bd752afd8f814c8030b477a260bb904c8df3b9df8ec53f",
+  "started_utc": "2026-11-25T14:21:36.601444+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "transport_error",
+      "detail": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>",
+      "utc": "2026-11-25T14:22:00.472923+00:00",
+      "cost_upper_bound_usd": 0.00011041999999999999
+    },
+    {
+      "number": 2,
+      "status": "response",
+      "utc": "2026-11-25T14:22:05.348800+00:00",
+      "cost_usd": 1.684e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00012726,
+  "reservation_upper_bound_usd": 0.00033126,
+  "response_sha256": "90b6e0346edfd3b3d2fd3cde69a9a73e8548d597dd129923d66dbb332e0852d1",
+  "response": {
+    "id": "gen-1795616522-xRWm0uyAuGWT9gNc3LDP",
+    "object": "chat.completion",
+    "created": 1795616522,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.3, \"local_pt\": 0.4, \"long_distance_rail\": 0.1, \"rationale\": \"Given two overnight trips, individuals likely combined air travel with other modes for local transport. Car use is plausible for shorter distances, local public transport for city travel, and rail for longer regional journeys.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 414,
+      "completion_tokens": 76,
+      "total_tokens": 490,
+      "cost": 1.684e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 176,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.684e-05,
+        "upstream_inference_prompt_cost": 1.304e-05,
+        "upstream_inference_completions_cost": 3.8e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616522-xRWm0uyAuGWT9gNc3LDP",
+  "raw_prediction": {
+    "car": 0.3,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.1,
+    "rationale": "Given two overnight trips, individuals likely combined air travel with other modes for local transport. Car use is plausible for shorter distances, local public transport for city travel, and rail for longer regional journeys."
+  },
+  "prediction": {
+    "car": 0.3,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.1,
+    "rationale": "Given two overnight trips, individuals likely combined air travel with other modes for local transport. Car use is plausible for shorter distances, local public transport for city travel, and rail for longer regional journeys."
+  },
+  "normalization": {
+    "sum_before": 0.8,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:22:05.348800+00:00",
+  "cost_exceeded_reservation": false
+}

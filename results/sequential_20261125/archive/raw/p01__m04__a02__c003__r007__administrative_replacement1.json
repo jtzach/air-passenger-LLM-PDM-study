@@ -1,0 +1,100 @@
+{
+  "task_id": "p01__m04__a02__c003__r007__administrative_replacement1",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzauto_gr1__bee31b0e88ae",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "supersedes_task_id": "p01__m04__a02__c003__r007",
+  "request_sha256": "cc059fb3d24a74b6589cd54b967fa24696688c8b7adc084f7826226f2d9fde5a",
+  "started_utc": "2026-11-25T17:33:50.838069+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:33:52.735912+00:00",
+      "cost_usd": 0.00155,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00155,
+  "reservation_upper_bound_usd": 0.025505999999999997,
+  "response_sha256": "5ba91ff1520ac568c4d956dee6ddc96a214f964a275eec210636b69ac4dbc389",
+  "response": {
+    "id": "gen-1795628030-TtK2zhI5zpTePGjVueJ6",
+    "object": "chat.completion",
+    "created": 1795628030,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.17,\n  \"long_distance_rail\": 0.09,\n  \"rationale\": \"Households with 3 cars likely drive to/from airports, raising car use above average and slightly lowering public transport/rail use, as high car ownership correlates with preference for private over collective ground modes.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 451,
+      "completion_tokens": 81,
+      "total_tokens": 532,
+      "cost": 0.00155,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00155,
+        "upstream_inference_prompt_cost": 0.000902,
+        "upstream_inference_completions_cost": 0.000648
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628030-TtK2zhI5zpTePGjVueJ6",
+  "raw_prediction": {
+    "car": 0.55,
+    "local_pt": 0.17,
+    "long_distance_rail": 0.09,
+    "rationale": "Households with 3 cars likely drive to/from airports, raising car use above average and slightly lowering public transport/rail use, as high car ownership correlates with preference for private over collective ground modes."
+  },
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.17,
+    "long_distance_rail": 0.09,
+    "rationale": "Households with 3 cars likely drive to/from airports, raising car use above average and slightly lowering public transport/rail use, as high car ownership correlates with preference for private over collective ground modes."
+  },
+  "normalization": {
+    "sum_before": 0.81,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:33:52.735912+00:00",
+  "cost_exceeded_reservation": false
+}

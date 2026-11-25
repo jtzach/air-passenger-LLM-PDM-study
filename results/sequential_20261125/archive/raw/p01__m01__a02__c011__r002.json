@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m01__a02__c011__r002",
+  "block_id": "p01__m01__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__RegioStaR7__cae80c90607c",
+  "round": 2,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "37096c6161a162a126f53fdca6c5f1901d260e704a2ac5eb0953a567f22e5073",
+  "started_utc": "2026-11-25T14:24:10.023986+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:24:12.515849+00:00",
+      "cost_usd": 2.332e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.332e-05,
+  "reservation_upper_bound_usd": 0.00036774,
+  "response_sha256": "6b06ea8a7827910414244c96b7a391c9bb5bea6e6a4d7714ccbec79ed3448107",
+  "response": {
+    "id": "gen-1795616651-B3kaNY3RHqmrx4wnX9O8",
+    "object": "chat.completion",
+    "created": 1795616651,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.45, \"local_pt\": 0.28, \"long_distance_rail\": 0.15, \"rationale\": \"Rural-urban mix suggests a greater reliance on car for onward travel, compensating for potentially limited public transport options. Local public transport use would likely remain relatively consistent.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 493,
+      "completion_tokens": 72,
+      "total_tokens": 565,
+      "cost": 2.332e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.332e-05,
+        "upstream_inference_prompt_cost": 1.972e-05,
+        "upstream_inference_completions_cost": 3.6e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616651-B3kaNY3RHqmrx4wnX9O8",
+  "raw_prediction": {
+    "car": 0.45,
+    "local_pt": 0.28,
+    "long_distance_rail": 0.15,
+    "rationale": "Rural-urban mix suggests a greater reliance on car for onward travel, compensating for potentially limited public transport options. Local public transport use would likely remain relatively consistent."
+  },
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.28,
+    "long_distance_rail": 0.15,
+    "rationale": "Rural-urban mix suggests a greater reliance on car for onward travel, compensating for potentially limited public transport options. Local public transport use would likely remain relatively consistent."
+  },
+  "normalization": {
+    "sum_before": 0.88,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:24:12.515849+00:00",
+  "cost_exceeded_reservation": false
+}

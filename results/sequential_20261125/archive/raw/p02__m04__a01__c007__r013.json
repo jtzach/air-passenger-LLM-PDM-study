@@ -1,0 +1,120 @@
+{
+  "task_id": "p02__m04__a01__c007__r013",
+  "block_id": "p02__m04__a01",
+  "panel_id": "fmg_2025",
+  "panel_index": 1,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "no_persona",
+  "round": 13,
+  "modes": [
+    "car_dropoff",
+    "car_airport_parking",
+    "car_offairport_parking",
+    "car_other_parking",
+    "taxi_ridehail",
+    "rental_carsharing",
+    "bus_transfer",
+    "s_bahn",
+    "uefex",
+    "other"
+  ],
+  "mutually_exclusive": true,
+  "request_sha256": "88de5182e2f19df347ef290089a3263b0cf82846a45b4235b3232acba7840a78",
+  "started_utc": "2026-11-25T17:41:14.671265+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:41:16.403774+00:00",
+      "cost_usd": 0.002494,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.002494,
+  "reservation_upper_bound_usd": 0.027707999999999997,
+  "response_sha256": "3c2862a2062e8f2b4483f6627a7330b87684158287fa18c507d490ea8aad99a7",
+  "response": {
+    "id": "gen-1795628474-onnNpUdxY01wwwGmfoKp",
+    "object": "chat.completion",
+    "created": 1795628474,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car_dropoff\": 0.20,\n  \"car_airport_parking\": 0.19,\n  \"car_offairport_parking\": 0.07,\n  \"car_other_parking\": 0.01,\n  \"taxi_ridehail\": 0.09,\n  \"rental_carsharing\": 0.04,\n  \"bus_transfer\": 0.06,\n  \"s_bahn\": 0.28,\n  \"uefex\": 0.03,\n  \"other\": 0.03,\n  \"rationale\": \"Distribution reflects Munich’s strong S-Bahn airport link, high private car use (dropoff and parking), moderate taxi/ridehail, and limited direct regional train (UEFEX) and bus/shuttle. Assumes a mix of urban and regional passengers with varied accessibility.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 535,
+      "completion_tokens": 178,
+      "total_tokens": 713,
+      "cost": 0.002494,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002494,
+        "upstream_inference_prompt_cost": 0.00107,
+        "upstream_inference_completions_cost": 0.001424
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628474-onnNpUdxY01wwwGmfoKp",
+  "raw_prediction": {
+    "car_dropoff": 0.2,
+    "car_airport_parking": 0.19,
+    "car_offairport_parking": 0.07,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.09,
+    "rental_carsharing": 0.04,
+    "bus_transfer": 0.06,
+    "s_bahn": 0.28,
+    "uefex": 0.03,
+    "other": 0.03,
+    "rationale": "Distribution reflects Munich’s strong S-Bahn airport link, high private car use (dropoff and parking), moderate taxi/ridehail, and limited direct regional train (UEFEX) and bus/shuttle. Assumes a mix of urban and regional passengers with varied accessibility."
+  },
+  "prediction": {
+    "car_dropoff": 0.2,
+    "car_airport_parking": 0.19,
+    "car_offairport_parking": 0.07,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.09,
+    "rental_carsharing": 0.04,
+    "bus_transfer": 0.06,
+    "s_bahn": 0.28,
+    "uefex": 0.03,
+    "other": 0.03,
+    "rationale": "Distribution reflects Munich’s strong S-Bahn airport link, high private car use (dropoff and parking), moderate taxi/ridehail, and limited direct regional train (UEFEX) and bus/shuttle. Assumes a mix of urban and regional passengers with varied accessibility."
+  },
+  "normalization": {
+    "sum_before": 1.0,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:41:16.403774+00:00",
+  "cost_exceeded_reservation": false
+}

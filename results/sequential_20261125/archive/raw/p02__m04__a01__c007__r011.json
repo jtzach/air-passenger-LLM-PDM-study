@@ -1,0 +1,120 @@
+{
+  "task_id": "p02__m04__a01__c007__r011",
+  "block_id": "p02__m04__a01",
+  "panel_id": "fmg_2025",
+  "panel_index": 1,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "no_persona",
+  "round": 11,
+  "modes": [
+    "car_dropoff",
+    "car_airport_parking",
+    "car_offairport_parking",
+    "car_other_parking",
+    "taxi_ridehail",
+    "rental_carsharing",
+    "bus_transfer",
+    "s_bahn",
+    "uefex",
+    "other"
+  ],
+  "mutually_exclusive": true,
+  "request_sha256": "16bd0ea8550a279dbe8e54763483d5e1a2eb04d3d0ab6bfa44b80f5754bfdfbf",
+  "started_utc": "2026-11-25T17:39:58.274581+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:40:00.014185+00:00",
+      "cost_usd": 0.002398,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.002398,
+  "reservation_upper_bound_usd": 0.027707999999999997,
+  "response_sha256": "fbe29a84734595058cb8945061bc17fbe9fe497ba7cf0e31d3015a4eb388ce24",
+  "response": {
+    "id": "gen-1795628397-SP1WnBl4MBiIIZel7S0M",
+    "object": "chat.completion",
+    "created": 1795628397,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car_dropoff\": 0.18,\n  \"car_airport_parking\": 0.20,\n  \"car_offairport_parking\": 0.09,\n  \"car_other_parking\": 0.03,\n  \"taxi_ridehail\": 0.08,\n  \"rental_carsharing\": 0.04,\n  \"bus_transfer\": 0.07,\n  \"s_bahn\": 0.25,\n  \"uefex\": 0.03,\n  \"other\": 0.03,\n  \"rationale\": \"Munich Airport’s strong S-Bahn links and car access both attract large segments; smaller shares use parking alternatives, taxis, buses, and regional trains, reflecting diverse origins and convenience tradeoffs among typical airport users.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 535,
+      "completion_tokens": 166,
+      "total_tokens": 701,
+      "cost": 0.002398,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002398,
+        "upstream_inference_prompt_cost": 0.00107,
+        "upstream_inference_completions_cost": 0.001328
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628397-SP1WnBl4MBiIIZel7S0M",
+  "raw_prediction": {
+    "car_dropoff": 0.18,
+    "car_airport_parking": 0.2,
+    "car_offairport_parking": 0.09,
+    "car_other_parking": 0.03,
+    "taxi_ridehail": 0.08,
+    "rental_carsharing": 0.04,
+    "bus_transfer": 0.07,
+    "s_bahn": 0.25,
+    "uefex": 0.03,
+    "other": 0.03,
+    "rationale": "Munich Airport’s strong S-Bahn links and car access both attract large segments; smaller shares use parking alternatives, taxis, buses, and regional trains, reflecting diverse origins and convenience tradeoffs among typical airport users."
+  },
+  "prediction": {
+    "car_dropoff": 0.18,
+    "car_airport_parking": 0.2,
+    "car_offairport_parking": 0.09,
+    "car_other_parking": 0.03,
+    "taxi_ridehail": 0.08,
+    "rental_carsharing": 0.04,
+    "bus_transfer": 0.07,
+    "s_bahn": 0.25,
+    "uefex": 0.03,
+    "other": 0.03,
+    "rationale": "Munich Airport’s strong S-Bahn links and car access both attract large segments; smaller shares use parking alternatives, taxis, buses, and regional trains, reflecting diverse origins and convenience tradeoffs among typical airport users."
+  },
+  "normalization": {
+    "sum_before": 1.0,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:40:00.033142+00:00",
+  "cost_exceeded_reservation": false
+}

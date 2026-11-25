@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m02__a02__c017__r015",
+  "block_id": "p01__m02__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__456ee228eb2a",
+  "round": 15,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "2f58a97a7bd7aaec6ecaf3df1436cf1ef81549b7aada441e930911933d70ba3d",
+  "started_utc": "2026-11-25T17:42:18.308787+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:42:19.920349+00:00",
+      "cost_usd": 0.000316,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000316,
+  "reservation_upper_bound_usd": 0.005119199999999999,
+  "response_sha256": "e66b5363fa76201873bd5c480776ec571ae24bfd084975216ea2b62e31452451",
+  "response": {
+    "id": "gen-1795628537-6bOnAyZNDrMxG1fCHog8",
+    "object": "chat.completion",
+    "created": 1795628537,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.5,\n  \"local_pt\": 0.3,\n  \"long_distance_rail\": 0.1,\n  \"rationale\": \"Longer trips (4-5 nights) often require car access for airport or local travel, increasing car use. Local public transit use also rises with multi-day stays, while long-distance rail remains less common alongside flights.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 454,
+      "completion_tokens": 84,
+      "total_tokens": 538,
+      "cost": 0.000316,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000316,
+        "upstream_inference_prompt_cost": 0.0001816,
+        "upstream_inference_completions_cost": 0.0001344
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795628537-6bOnAyZNDrMxG1fCHog8",
+  "raw_prediction": {
+    "car": 0.5,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "Longer trips (4-5 nights) often require car access for airport or local travel, increasing car use. Local public transit use also rises with multi-day stays, while long-distance rail remains less common alongside flights."
+  },
+  "prediction": {
+    "car": 0.5,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "Longer trips (4-5 nights) often require car access for airport or local travel, increasing car use. Local public transit use also rises with multi-day stays, while long-distance rail remains less common alongside flights."
+  },
+  "normalization": {
+    "sum_before": 0.9,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:42:19.920349+00:00",
+  "cost_exceeded_reservation": false
+}

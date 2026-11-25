@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c024__r003",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "no_persona",
+  "round": 3,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "4b9f0dd69c091377fbdd12cec11178f30ba5524d64e038e53b0b4589ffabe6b7",
+  "started_utc": "2026-11-25T14:26:36.051774+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:26:37.854147+00:00",
+      "cost_usd": 0.001358,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001358,
+  "reservation_upper_bound_usd": 0.022698,
+  "response_sha256": "a13d469a689cbee1dc82f0838630d46930f177a8dc37f73aaecac631e9bbdee8",
+  "response": {
+    "id": "gen-1795616796-G24ETZXFuQGWESZdJ6Ol",
+    "object": "chat.completion",
+    "created": 1795616796,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.20,\n  \"rationale\": \"German flyers often use cars for airport access due to flexibility, especially outside major cities. Public/local transport appeals to urban dwellers, while long-distance rail is less common but feasible for links to major airports.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 355,
+      "completion_tokens": 81,
+      "total_tokens": 436,
+      "cost": 0.001358,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001358,
+        "upstream_inference_prompt_cost": 0.00071,
+        "upstream_inference_completions_cost": 0.000648
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616796-G24ETZXFuQGWESZdJ6Ol",
+  "raw_prediction": {
+    "car": 0.55,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.2,
+    "rationale": "German flyers often use cars for airport access due to flexibility, especially outside major cities. Public/local transport appeals to urban dwellers, while long-distance rail is less common but feasible for links to major airports."
+  },
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.2,
+    "rationale": "German flyers often use cars for airport access due to flexibility, especially outside major cities. Public/local transport appeals to urban dwellers, while long-distance rail is less common but feasible for links to major airports."
+  },
+  "normalization": {
+    "sum_before": 1.1,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:26:37.854147+00:00",
+  "cost_exceeded_reservation": false
+}

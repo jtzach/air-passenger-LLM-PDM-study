@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a02__c005__r002",
+  "block_id": "p01__m03__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzauto_gr1__faec8c191aa2",
+  "round": 2,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "e8ddd147ef578808b11a466fa0070a178af0486ad9b14a6c969c0002a819fe68",
+  "started_utc": "2026-11-25T14:24:53.376706+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:25:06.412599+00:00",
+      "cost_usd": 0.000133155,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000133155,
+  "reservation_upper_bound_usd": 0.00211698,
+  "response_sha256": "8ff6fa64f5272732bb1143ddae7fae08dc1351bb7f7cc8db0ca98d7a53c95f41",
+  "response": {
+    "id": "gen-1795616694-rhpkuv5xAD99ygczD5Wy",
+    "object": "chat.completion",
+    "created": 1795616694,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.15,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Households with 2 cars likely rely more on private vehicles for airport access, reducing public transport use. Car availability increases car mode reporting despite no driver specification, especially for flexible, door-to-door travel.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 473,
+      "completion_tokens": 84,
+      "total_tokens": 557,
+      "cost": 0.000133155,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000133155,
+        "upstream_inference_prompt_cost": 6.3855e-05,
+        "upstream_inference_completions_cost": 6.93e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795616694-rhpkuv5xAD99ygczD5Wy",
+  "raw_prediction": {
+    "car": 0.65,
+    "local_pt": 0.15,
+    "long_distance_rail": 0.1,
+    "rationale": "Households with 2 cars likely rely more on private vehicles for airport access, reducing public transport use. Car availability increases car mode reporting despite no driver specification, especially for flexible, door-to-door travel."
+  },
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.15,
+    "long_distance_rail": 0.1,
+    "rationale": "Households with 2 cars likely rely more on private vehicles for airport access, reducing public transport use. Car availability increases car mode reporting despite no driver specification, especially for flexible, door-to-door travel."
+  },
+  "normalization": {
+    "sum_before": 0.9,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:25:06.412599+00:00",
+  "cost_exceeded_reservation": false
+}

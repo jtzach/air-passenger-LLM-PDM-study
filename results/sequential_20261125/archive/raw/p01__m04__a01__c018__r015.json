@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c018__r015",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__6bcea89383ae",
+  "round": 15,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "5f66d23c0668779cc29f9d4071314c4640c4f093614a1b6c6438656f337eda89",
+  "started_utc": "2026-11-25T17:42:09.878455+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:42:11.261498+00:00",
+      "cost_usd": 0.00145,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00145,
+  "reservation_upper_bound_usd": 0.02391,
+  "response_sha256": "e78c5473f14444021845b28862bb32dcb7b2a849123bb7c4ce354e46c474f36c",
+  "response": {
+    "id": "gen-1795628529-eGuIA8AU2Lg1olpVJVip",
+    "object": "chat.completion",
+    "created": 1795628529,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.40,\n  \"long_distance_rail\": 0.20,\n  \"rationale\": \"For 2-night trips, convenience and flexibility favor car use; public transport is common but less so for short stays. Long-distance rail is less likely due to short duration, but still plausible for certain city pairs.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 393,
+      "completion_tokens": 83,
+      "total_tokens": 476,
+      "cost": 0.00145,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00145,
+        "upstream_inference_prompt_cost": 0.000786,
+        "upstream_inference_completions_cost": 0.000664
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628529-eGuIA8AU2Lg1olpVJVip",
+  "raw_prediction": {
+    "car": 0.55,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.2,
+    "rationale": "For 2-night trips, convenience and flexibility favor car use; public transport is common but less so for short stays. Long-distance rail is less likely due to short duration, but still plausible for certain city pairs."
+  },
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.2,
+    "rationale": "For 2-night trips, convenience and flexibility favor car use; public transport is common but less so for short stays. Long-distance rail is less likely due to short duration, but still plausible for certain city pairs."
+  },
+  "normalization": {
+    "sum_before": 1.1500000000000001,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:42:11.261498+00:00",
+  "cost_exceeded_reservation": false
+}

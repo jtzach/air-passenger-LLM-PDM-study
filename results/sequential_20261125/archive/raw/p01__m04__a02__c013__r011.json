@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c013__r011",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzbegl_gr__07f355b725cf",
+  "round": 11,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "2dc1539262e93c4fd45cab703692ca7c8ceb570fe20bde821f6c87c9becea3ed",
+  "started_utc": "2026-11-25T17:40:03.166041+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:40:04.343171+00:00",
+      "cost_usd": 0.00159,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00159,
+  "reservation_upper_bound_usd": 0.025577999999999997,
+  "response_sha256": "143013a7c77e777f2a47f863b863c4b859ced42dc01e85d05dc626d19a3b7e6c",
+  "response": {
+    "id": "gen-1795628402-RRXcCJyjRFmtyX5ngSY5",
+    "object": "chat.completion",
+    "created": 1795628402,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.47,\n  \"local_pt\": 0.19,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Larger households (2 companions) are likelier to use cars for flexibility and cost-sharing, increasing car use probability; public and long-distance rail use may decrease slightly due to cost, convenience, and logistical challenges with group travel.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 451,
+      "completion_tokens": 86,
+      "total_tokens": 537,
+      "cost": 0.00159,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00159,
+        "upstream_inference_prompt_cost": 0.000902,
+        "upstream_inference_completions_cost": 0.000688
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628402-RRXcCJyjRFmtyX5ngSY5",
+  "raw_prediction": {
+    "car": 0.47,
+    "local_pt": 0.19,
+    "long_distance_rail": 0.1,
+    "rationale": "Larger households (2 companions) are likelier to use cars for flexibility and cost-sharing, increasing car use probability; public and long-distance rail use may decrease slightly due to cost, convenience, and logistical challenges with group travel."
+  },
+  "prediction": {
+    "car": 0.47,
+    "local_pt": 0.19,
+    "long_distance_rail": 0.1,
+    "rationale": "Larger households (2 companions) are likelier to use cars for flexibility and cost-sharing, increasing car use probability; public and long-distance rail use may decrease slightly due to cost, convenience, and logistical challenges with group travel."
+  },
+  "normalization": {
+    "sum_before": 0.76,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:40:04.343171+00:00",
+  "cost_exceeded_reservation": false
+}

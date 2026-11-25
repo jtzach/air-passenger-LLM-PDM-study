@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m01__a02__c005__r001",
+  "block_id": "p01__m01__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzauto_gr1__faec8c191aa2",
+  "round": 1,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "25490608ed389e9621a332539e75118d2d3ca92db1d653c6a05febae9f942ac0",
+  "started_utc": "2026-11-25T14:21:10.861895+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:21:12.582576+00:00",
+      "cost_usd": 2.016e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.016e-05,
+  "reservation_upper_bound_usd": 0.00036318000000000006,
+  "response_sha256": "fd25881d3468eacd63760f7ac69a00949ae5a3864927d17b94d65ee199bab6ce",
+  "response": {
+    "id": "gen-1795616471-wJktdZAnx52MzWwflj4l",
+    "object": "chat.completion",
+    "created": 1795616471,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.4, \"local_pt\": 0.25, \"long_distance_rail\": 0.15, \"rationale\": \"A household with two cars suggests a higher likelihood of car use for at least part of the journey, even alongside air travel. Local and long-distance rail use are likely to be present, though less frequently than car travel.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 487,
+      "completion_tokens": 84,
+      "total_tokens": 571,
+      "cost": 2.016e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 176,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.016e-05,
+        "upstream_inference_prompt_cost": 1.596e-05,
+        "upstream_inference_completions_cost": 4.2e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616471-wJktdZAnx52MzWwflj4l",
+  "raw_prediction": {
+    "car": 0.4,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "A household with two cars suggests a higher likelihood of car use for at least part of the journey, even alongside air travel. Local and long-distance rail use are likely to be present, though less frequently than car travel."
+  },
+  "prediction": {
+    "car": 0.4,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "A household with two cars suggests a higher likelihood of car use for at least part of the journey, even alongside air travel. Local and long-distance rail use are likely to be present, though less frequently than car travel."
+  },
+  "normalization": {
+    "sum_before": 0.8,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:21:12.582576+00:00",
+  "cost_exceeded_reservation": false
+}

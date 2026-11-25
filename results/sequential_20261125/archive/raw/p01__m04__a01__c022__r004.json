@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c022__r004",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__f6e4375535d4",
+  "round": 4,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "ffcb517f2b381dffdfa4cc5c3db707220cf446efbdaef8cde4417f08d36315b4",
+  "started_utc": "2026-11-25T14:27:47.634655+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:27:49.322289+00:00",
+      "cost_usd": 0.00147,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00147,
+  "reservation_upper_bound_usd": 0.023921999999999995,
+  "response_sha256": "767732cb0e1a076787314dbec04fdba963937dbca03477fd2b8e41f549789897",
+  "response": {
+    "id": "gen-1795616867-tWtR5De3FLWyW1udfLfo",
+    "object": "chat.completion",
+    "created": 1795616867,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.38,\n  \"local_pt\": 0.43,\n  \"long_distance_rail\": 0.22,\n  \"rationale\": \"6-7 nights suggests intercity or international leisure/business trips, often to/from Germany's large airports, where car and local public transport are frequent access modes; long-distance rail is less common but plausible for major city pairs.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 395,
+      "completion_tokens": 85,
+      "total_tokens": 480,
+      "cost": 0.00147,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00147,
+        "upstream_inference_prompt_cost": 0.00079,
+        "upstream_inference_completions_cost": 0.00068
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616867-tWtR5De3FLWyW1udfLfo",
+  "raw_prediction": {
+    "car": 0.38,
+    "local_pt": 0.43,
+    "long_distance_rail": 0.22,
+    "rationale": "6-7 nights suggests intercity or international leisure/business trips, often to/from Germany's large airports, where car and local public transport are frequent access modes; long-distance rail is less common but plausible for major city pairs."
+  },
+  "prediction": {
+    "car": 0.38,
+    "local_pt": 0.43,
+    "long_distance_rail": 0.22,
+    "rationale": "6-7 nights suggests intercity or international leisure/business trips, often to/from Germany's large airports, where car and local public transport are frequent access modes; long-distance rail is less common but plausible for major city pairs."
+  },
+  "normalization": {
+    "sum_before": 1.03,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:27:49.322289+00:00",
+  "cost_exceeded_reservation": false
+}

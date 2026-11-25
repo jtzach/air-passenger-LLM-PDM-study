@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a02__c018__r008",
+  "block_id": "p01__m03__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__6bcea89383ae",
+  "round": 8,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "23d71ba6c1905d4b94b8f7a90b0ff124eb27144c5f6f7f260f0b88086bf846cb",
+  "started_utc": "2026-11-25T17:36:30.033860+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:36:37.526999+00:00",
+      "cost_usd": 0.00012999,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00012999,
+  "reservation_upper_bound_usd": 0.00212034,
+  "response_sha256": "e576d595e8513ea1d83517cf4f466a68b721f538f64915f289027da53eb0cdcd",
+  "response": {
+    "id": "gen-1795628189-uKwIn1I1zmufQE1aliRa",
+    "object": "chat.completion",
+    "created": 1795628189,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Shorter stays may favor car use for flexibility, reducing reliance on local and long-distance rail. Car use might include rental or rides with others, increasing its likelihood relative to longer trips.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 474,
+      "completion_tokens": 80,
+      "total_tokens": 554,
+      "cost": 0.00012999,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00012999,
+        "upstream_inference_prompt_cost": 6.399e-05,
+        "upstream_inference_completions_cost": 6.6e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795628189-uKwIn1I1zmufQE1aliRa",
+  "raw_prediction": {
+    "car": 0.45,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Shorter stays may favor car use for flexibility, reducing reliance on local and long-distance rail. Car use might include rental or rides with others, increasing its likelihood relative to longer trips."
+  },
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Shorter stays may favor car use for flexibility, reducing reliance on local and long-distance rail. Car use might include rental or rides with others, increasing its likelihood relative to longer trips."
+  },
+  "normalization": {
+    "sum_before": 0.73,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:36:37.526999+00:00",
+  "cost_exceeded_reservation": false
+}

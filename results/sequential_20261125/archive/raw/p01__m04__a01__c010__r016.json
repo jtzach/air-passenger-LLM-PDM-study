@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c010__r016",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__RegioStaR7__9f47524becab",
+  "round": 16,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "e838cde566b812f25ef1a7471f1a9494bdca73e3bd66ad425fab8eb6eb99915f",
+  "started_utc": "2026-11-25T17:42:21.598215+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:42:23.006354+00:00",
+      "cost_usd": 0.001458,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001458,
+  "reservation_upper_bound_usd": 0.024089999999999997,
+  "response_sha256": "8d964ce4f09d7c7fcf9a120f48deaeeab4d616f1453fbabb0edcf88f1ac3d38a",
+  "response": {
+    "id": "gen-1795628541-1bu9xDFAOGAph5dhbFFv",
+    "object": "chat.completion",
+    "created": 1795628541,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.45,\n  \"long_distance_rail\": 0.22,\n  \"rationale\": \"Medium-sized urban areas offer mixed car and public transport access. Car remains popular for airport access, but local and long-distance public transport are viable, especially given Germany’s rail network and some preference for multimodal travel.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 397,
+      "completion_tokens": 83,
+      "total_tokens": 480,
+      "cost": 0.001458,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001458,
+        "upstream_inference_prompt_cost": 0.000794,
+        "upstream_inference_completions_cost": 0.000664
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628541-1bu9xDFAOGAph5dhbFFv",
+  "raw_prediction": {
+    "car": 0.55,
+    "local_pt": 0.45,
+    "long_distance_rail": 0.22,
+    "rationale": "Medium-sized urban areas offer mixed car and public transport access. Car remains popular for airport access, but local and long-distance public transport are viable, especially given Germany’s rail network and some preference for multimodal travel."
+  },
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.45,
+    "long_distance_rail": 0.22,
+    "rationale": "Medium-sized urban areas offer mixed car and public transport access. Car remains popular for airport access, but local and long-distance public transport are viable, especially given Germany’s rail network and some preference for multimodal travel."
+  },
+  "normalization": {
+    "sum_before": 1.22,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:42:23.006354+00:00",
+  "cost_exceeded_reservation": false
+}

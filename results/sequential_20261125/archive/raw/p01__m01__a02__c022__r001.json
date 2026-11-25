@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m01__a02__c022__r001",
+  "block_id": "p01__m01__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__f6e4375535d4",
+  "round": 1,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "7839e6260617ba8560c31c90b375a65fefa7cee030e6e94f9a998924b92f1e50",
+  "started_utc": "2026-11-25T14:22:10.067911+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:22:11.764733+00:00",
+      "cost_usd": 2.07e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.07e-05,
+  "reservation_upper_bound_usd": 0.00036438,
+  "response_sha256": "f3f2a353acf0925224d42f0cfe04486fc395c95a41feec3e5ee3e204c958d0d4",
+  "response": {
+    "id": "gen-1795616530-ZJdK1EYGykiG1HDIMETU",
+    "object": "chat.completion",
+    "created": 1795616530,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.3, \"local_pt\": 0.18, \"long_distance_rail\": 0.11, \"rationale\": \"The cohort's 6-7 night trips suggests a more leisure-oriented journey. Ground transport use (car, bus/rail) is likely higher than average to connect to airports, but less so than long-distance rail.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 490,
+      "completion_tokens": 86,
+      "total_tokens": 576,
+      "cost": 2.07e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.07e-05,
+        "upstream_inference_prompt_cost": 1.64e-05,
+        "upstream_inference_completions_cost": 4.3e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616530-ZJdK1EYGykiG1HDIMETU",
+  "raw_prediction": {
+    "car": 0.3,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.11,
+    "rationale": "The cohort's 6-7 night trips suggests a more leisure-oriented journey. Ground transport use (car, bus/rail) is likely higher than average to connect to airports, but less so than long-distance rail."
+  },
+  "prediction": {
+    "car": 0.3,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.11,
+    "rationale": "The cohort's 6-7 night trips suggests a more leisure-oriented journey. Ground transport use (car, bus/rail) is likely higher than average to connect to airports, but less so than long-distance rail."
+  },
+  "normalization": {
+    "sum_before": 0.59,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:22:11.764733+00:00",
+  "cost_exceeded_reservation": false
+}

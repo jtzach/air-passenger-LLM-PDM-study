@@ -1,0 +1,90 @@
+{
+  "task_id": "p02__m01__a01__c001__r001",
+  "block_id": "p02__m01__a01",
+  "panel_id": "fmg_2025",
+  "panel_index": 1,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "unanchored",
+  "card_id": "fmg_business_domestic",
+  "round": 1,
+  "modes": [
+    "car_dropoff",
+    "car_airport_parking",
+    "car_offairport_parking",
+    "car_other_parking",
+    "taxi_ridehail",
+    "rental_carsharing",
+    "bus_transfer",
+    "s_bahn",
+    "uefex",
+    "other"
+  ],
+  "mutually_exclusive": true,
+  "request_sha256": "62b77399212d73c6ed4c199afb1fd7429171ae6c92179e379bb8d74c6e689837",
+  "started_utc": "2026-11-25T14:19:54.104319+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:20:00.228619+00:00",
+      "cost_usd": 3.241e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "invalid_output",
+  "accounted_cost_usd": 3.241e-05,
+  "reservation_upper_bound_usd": 0.00042738,
+  "response_sha256": "67b94349daf6379d0cf8e8a77f8117b8d07c54229acc6485c213a6bbb6346053",
+  "response": {
+    "id": "gen-1795616394-fyL5ZGRMqMrJpq4lgSv8",
+    "object": "chat.completion",
+    "created": 1795616394,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car_dropoff\": 0.25, \"car_airport_parking\": 0.30, \"car_offairport_parking\": 0.10, \"car_other_parking\": 0.05, \"taxi_ridehail\": 0.10, \"rental_carsharing\": 0.05, \"bus_transfer\": 0.05, \"s_bahn\": 0.05, \"uefex\": 0.02, \"other\": 0.02, \"rationale\": \"Business travelers often prefer convenience and directness. Car drop-offs and airport parking are likely, with S-Bahn a common, relatively affordable option for those near the city.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 609,
+      "completion_tokens": 161,
+      "total_tokens": 770,
+      "cost": 3.241e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 3.241e-05,
+        "upstream_inference_prompt_cost": 2.436e-05,
+        "upstream_inference_completions_cost": 8.05e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616394-fyL5ZGRMqMrJpq4lgSv8",
+  "validation_error": "Exclusive probabilities do not sum to one within .005",
+  "finished_utc": "2026-11-25T14:20:00.228619+00:00",
+  "cost_exceeded_reservation": false
+}

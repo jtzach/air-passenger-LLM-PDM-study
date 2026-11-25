@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c008__r016",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__RegioStaR7__7b0e1c4f102a",
+  "round": 16,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "1ca33b0a98c430bacb2c73bac6f427b0a8b5433fd268140cf7e97b31fe9ace46",
+  "started_utc": "2026-11-25T17:42:22.968828+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:42:24.148386+00:00",
+      "cost_usd": 0.001566,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001566,
+  "reservation_upper_bound_usd": 0.025619999999999997,
+  "response_sha256": "fa2ad22e24ec01dfacac1a1ee36695e747c784d6db11f0fb056c40ce0749cf4e",
+  "response": {
+    "id": "gen-1795628542-n2DLeFjlou4pi0A0DAuo",
+    "object": "chat.completion",
+    "created": 1795628542,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.32,\n  \"local_pt\": 0.28,\n  \"long_distance_rail\": 0.16,\n  \"rationale\": \"Metropolis residents likely have better access to public transport and airports, reducing car use and increasing public/local rail rates. Long-distance rail use may be slightly above average due to strong rail-airport links in large cities.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 451,
+      "completion_tokens": 83,
+      "total_tokens": 534,
+      "cost": 0.001566,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001566,
+        "upstream_inference_prompt_cost": 0.000902,
+        "upstream_inference_completions_cost": 0.000664
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628542-n2DLeFjlou4pi0A0DAuo",
+  "raw_prediction": {
+    "car": 0.32,
+    "local_pt": 0.28,
+    "long_distance_rail": 0.16,
+    "rationale": "Metropolis residents likely have better access to public transport and airports, reducing car use and increasing public/local rail rates. Long-distance rail use may be slightly above average due to strong rail-airport links in large cities."
+  },
+  "prediction": {
+    "car": 0.32,
+    "local_pt": 0.28,
+    "long_distance_rail": 0.16,
+    "rationale": "Metropolis residents likely have better access to public transport and airports, reducing car use and increasing public/local rail rates. Long-distance rail use may be slightly above average due to strong rail-airport links in large cities."
+  },
+  "normalization": {
+    "sum_before": 0.76,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:42:24.148386+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c011__r004",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__RegioStaR7__cae80c90607c",
+  "round": 4,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "eb63f4b9fd05d59cff0efac9641c0af72d10a1d606d05700c336c9baddd407dc",
+  "started_utc": "2026-11-25T14:27:51.937364+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:27:53.390231+00:00",
+      "cost_usd": 0.00145,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00145,
+  "reservation_upper_bound_usd": 0.024089999999999997,
+  "response_sha256": "92e3cfabdbc40073cf30c28f76f074393a899c5e2124800ab5eb7d6439ca4906",
+  "response": {
+    "id": "gen-1795616872-uO8BVcYLmiI43gnfePpv",
+    "object": "chat.completion",
+    "created": 1795616872,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.45,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"Residents of mixed rural-urban areas may rely on cars for airport access, but many also use public transport where available. Long-distance rail is less common but plausible for major airports, especially for urban dwellers.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 397,
+      "completion_tokens": 82,
+      "total_tokens": 479,
+      "cost": 0.00145,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00145,
+        "upstream_inference_prompt_cost": 0.000794,
+        "upstream_inference_completions_cost": 0.000656
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616872-uO8BVcYLmiI43gnfePpv",
+  "raw_prediction": {
+    "car": 0.55,
+    "local_pt": 0.45,
+    "long_distance_rail": 0.25,
+    "rationale": "Residents of mixed rural-urban areas may rely on cars for airport access, but many also use public transport where available. Long-distance rail is less common but plausible for major airports, especially for urban dwellers."
+  },
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.45,
+    "long_distance_rail": 0.25,
+    "rationale": "Residents of mixed rural-urban areas may rely on cars for airport access, but many also use public transport where available. Long-distance rail is less common but plausible for major airports, especially for urban dwellers."
+  },
+  "normalization": {
+    "sum_before": 1.25,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:27:53.390231+00:00",
+  "cost_exceeded_reservation": false
+}

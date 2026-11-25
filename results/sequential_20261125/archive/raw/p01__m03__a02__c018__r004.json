@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a02__c018__r004",
+  "block_id": "p01__m03__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__6bcea89383ae",
+  "round": 4,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "353bc3e0e2e6768931b49799110276d472f414d4c61deb33919305e4e81d34e7",
+  "started_utc": "2026-11-25T14:27:21.285591+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:27:34.103455+00:00",
+      "cost_usd": 0.000127515,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000127515,
+  "reservation_upper_bound_usd": 0.00212034,
+  "response_sha256": "88acab4105c5d9df56ea9c2bc602e2b2a5fa08120037dfa1e27a7766d2013b4a",
+  "response": {
+    "id": "gen-1795616841-lNGe4MepMLZEyNNLVdti",
+    "object": "chat.completion",
+    "created": 1795616841,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"With only two nights away, trips may prioritize speed and convenience, favoring car use for flexibility, while shorter duration reduces likelihood of using local transit or long-distance rail.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 474,
+      "completion_tokens": 77,
+      "total_tokens": 551,
+      "cost": 0.000127515,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000127515,
+        "upstream_inference_prompt_cost": 6.399e-05,
+        "upstream_inference_completions_cost": 6.3525e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795616841-lNGe4MepMLZEyNNLVdti",
+  "raw_prediction": {
+    "car": 0.45,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "With only two nights away, trips may prioritize speed and convenience, favoring car use for flexibility, while shorter duration reduces likelihood of using local transit or long-distance rail."
+  },
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "With only two nights away, trips may prioritize speed and convenience, favoring car use for flexibility, while shorter duration reduces likelihood of using local transit or long-distance rail."
+  },
+  "normalization": {
+    "sum_before": 0.73,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:27:34.103455+00:00",
+  "cost_exceeded_reservation": false
+}

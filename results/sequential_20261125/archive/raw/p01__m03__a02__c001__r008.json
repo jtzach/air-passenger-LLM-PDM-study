@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a02__c001__r008",
+  "block_id": "p01__m03__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzauto_gr1__296e9849dc3d",
+  "round": 8,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "60cf34bfd2727a028605e6474bc704738d2f1481b6b0290fdfc59b7cacccdbfd",
+  "started_utc": "2026-11-25T17:36:22.853481+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:36:31.962482+00:00",
+      "cost_usd": 0.00013137,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00013137,
+  "reservation_upper_bound_usd": 0.00211698,
+  "response_sha256": "490d2cd81e35f1f669d96ddbf074840cf461c2e9e09f97413b436c7cbee34692",
+  "response": {
+    "id": "gen-1795628182-WU7lXwaij3HQKskeCo84",
+    "object": "chat.completion",
+    "created": 1795628182,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.25,\n  \"local_pt\": 0.3,\n  \"long_distance_rail\": 0.2,\n  \"rationale\": \"Households without a car may rely more on local public transport and shared rides, increasing local PT use; car and long-distance rail use may be lower due to limited access to private vehicles for airport access.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 472,
+      "completion_tokens": 82,
+      "total_tokens": 554,
+      "cost": 0.00013137,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00013137,
+        "upstream_inference_prompt_cost": 6.372e-05,
+        "upstream_inference_completions_cost": 6.765e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795628182-WU7lXwaij3HQKskeCo84",
+  "raw_prediction": {
+    "car": 0.25,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.2,
+    "rationale": "Households without a car may rely more on local public transport and shared rides, increasing local PT use; car and long-distance rail use may be lower due to limited access to private vehicles for airport access."
+  },
+  "prediction": {
+    "car": 0.25,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.2,
+    "rationale": "Households without a car may rely more on local public transport and shared rides, increasing local PT use; car and long-distance rail use may be lower due to limited access to private vehicles for airport access."
+  },
+  "normalization": {
+    "sum_before": 0.75,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:36:31.962482+00:00",
+  "cost_exceeded_reservation": false
+}

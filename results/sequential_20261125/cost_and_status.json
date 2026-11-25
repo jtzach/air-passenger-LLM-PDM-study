@@ -1,0 +1,39 @@
+{
+  "attempted_requests": 2375,
+  "planned_maximum_requests": 14238,
+  "status_counts": {
+    "valid": 2360,
+    "invalid_output": 6,
+    "in_progress": 8,
+    "failed": 1
+  },
+  "attempt_records": 2413,
+  "requests_with_retries": 45,
+  "accounted_cost_usd": 1.970801135,
+  "cost_basis": "reported charges plus conservative estimates for unverified billing",
+  "retained_prefix_requests": 2240,
+  "responses_outside_complete_prefix": 135,
+  "normalized_exclusive_responses": 0,
+  "http_status_counts": {
+    "429": 5
+  },
+  "global_stop": null,
+  "administrative_pause": {
+    "parent_plan_sha256": "09032d51b5ec0bbb0d5c7d0483f146af07e5296e5a49bfe6552cb52b48daa9d7",
+    "replaced_logical_round": 7,
+    "replacement_blocks": [
+      "p01__m02__a01",
+      "p01__m02__a02",
+      "p01__m03__a01",
+      "p01__m03__a02",
+      "p01__m04__a01",
+      "p01__m04__a02",
+      "p02__m02__a01",
+      "p02__m04__a01"
+    ],
+    "excluded_partial_requests": 60,
+    "unknown_outcomes_reserved_usd": 0.04340556,
+    "prior_active_execution_seconds": 866.615342,
+    "selection_rule": "Whole incomplete round replacement after explicit user pause; no accuracy-based selection"
+  }
+}

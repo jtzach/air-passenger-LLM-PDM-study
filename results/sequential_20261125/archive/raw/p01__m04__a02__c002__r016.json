@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c002__r016",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzauto_gr1__79ed954bbe2c",
+  "round": 16,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "eba8344bd5f3042c66fec5a491757683a45f92b60cf7daa74926fee867df38dc",
+  "started_utc": "2026-11-25T17:42:26.919266+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:42:28.252580+00:00",
+      "cost_usd": 0.001538,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001538,
+  "reservation_upper_bound_usd": 0.025554,
+  "response_sha256": "90069727ac20f971c2f7f35986361ece8037a9718b9aebf7b65b438769f57e4b",
+  "response": {
+    "id": "gen-1795628546-rdWdTbkbJHWwvqdphZ85",
+    "object": "chat.completion",
+    "created": 1795628546,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.60,\n  \"local_pt\": 0.15,\n  \"long_distance_rail\": 0.08,\n  \"rationale\": \"Households with 4+ cars likely favor car use for airport access, reducing reliance on public/local transport or long-distance rail, as high car ownership suggests greater convenience and preference for private vehicles.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 453,
+      "completion_tokens": 79,
+      "total_tokens": 532,
+      "cost": 0.001538,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001538,
+        "upstream_inference_prompt_cost": 0.000906,
+        "upstream_inference_completions_cost": 0.000632
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628546-rdWdTbkbJHWwvqdphZ85",
+  "raw_prediction": {
+    "car": 0.6,
+    "local_pt": 0.15,
+    "long_distance_rail": 0.08,
+    "rationale": "Households with 4+ cars likely favor car use for airport access, reducing reliance on public/local transport or long-distance rail, as high car ownership suggests greater convenience and preference for private vehicles."
+  },
+  "prediction": {
+    "car": 0.6,
+    "local_pt": 0.15,
+    "long_distance_rail": 0.08,
+    "rationale": "Households with 4+ cars likely favor car use for airport access, reducing reliance on public/local transport or long-distance rail, as high car ownership suggests greater convenience and preference for private vehicles."
+  },
+  "normalization": {
+    "sum_before": 0.83,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:42:28.252580+00:00",
+  "cost_exceeded_reservation": false
+}

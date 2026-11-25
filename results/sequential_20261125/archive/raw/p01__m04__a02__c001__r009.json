@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c001__r009",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzauto_gr1__296e9849dc3d",
+  "round": 9,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "727ae07eaa08ffca5207dc0f682e4b23f8816fe3950c0e31faf19d6d37cb61ff",
+  "started_utc": "2026-11-25T17:37:26.107519+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:37:27.489000+00:00",
+      "cost_usd": 0.001596,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001596,
+  "reservation_upper_bound_usd": 0.025505999999999997,
+  "response_sha256": "bf7251cd0852432ef144f344679738b5879dbb80624d742519fa84130b9ef399",
+  "response": {
+    "id": "gen-1795628245-KfUPoAuVqIVoeo7mM7CU",
+    "object": "chat.completion",
+    "created": 1795628245,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.08,\n  \"local_pt\": 0.33,\n  \"long_distance_rail\": 0.20,\n  \"rationale\": \"No household car likely reduces direct car use, shifting reliance to local public transport and long-distance rail for airport access, but car remains possible via lifts, car-sharing, or taxis. Modal shares adjust upward for public and rail modes accordingly.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 450,
+      "completion_tokens": 87,
+      "total_tokens": 537,
+      "cost": 0.001596,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001596,
+        "upstream_inference_prompt_cost": 0.0009,
+        "upstream_inference_completions_cost": 0.000696
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628245-KfUPoAuVqIVoeo7mM7CU",
+  "raw_prediction": {
+    "car": 0.08,
+    "local_pt": 0.33,
+    "long_distance_rail": 0.2,
+    "rationale": "No household car likely reduces direct car use, shifting reliance to local public transport and long-distance rail for airport access, but car remains possible via lifts, car-sharing, or taxis. Modal shares adjust upward for public and rail modes accordingly."
+  },
+  "prediction": {
+    "car": 0.08,
+    "local_pt": 0.33,
+    "long_distance_rail": 0.2,
+    "rationale": "No household car likely reduces direct car use, shifting reliance to local public transport and long-distance rail for airport access, but car remains possible via lifts, car-sharing, or taxis. Modal shares adjust upward for public and rail modes accordingly."
+  },
+  "normalization": {
+    "sum_before": 0.61,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:37:27.489000+00:00",
+  "cost_exceeded_reservation": false
+}

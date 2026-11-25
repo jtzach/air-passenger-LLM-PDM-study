@@ -1,0 +1,120 @@
+{
+  "task_id": "p02__m04__a01__c002__r009",
+  "block_id": "p02__m04__a01",
+  "panel_id": "fmg_2025",
+  "panel_index": 1,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "fmg_private_domestic",
+  "round": 9,
+  "modes": [
+    "car_dropoff",
+    "car_airport_parking",
+    "car_offairport_parking",
+    "car_other_parking",
+    "taxi_ridehail",
+    "rental_carsharing",
+    "bus_transfer",
+    "s_bahn",
+    "uefex",
+    "other"
+  ],
+  "mutually_exclusive": true,
+  "request_sha256": "949f97db29f156453bba1b871a3d6554f496a33f6627457c9351fdda1d718ff6",
+  "started_utc": "2026-11-25T17:37:09.331905+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:37:11.030953+00:00",
+      "cost_usd": 0.002522,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.002522,
+  "reservation_upper_bound_usd": 0.029112000000000002,
+  "response_sha256": "5a1677da37993048fd86b3ea0165f3c5b017263d1c9bb2bc9cf17b5ce701a197",
+  "response": {
+    "id": "gen-1795628228-TsSs6rS3srxMSz7bAqFb",
+    "object": "chat.completion",
+    "created": 1795628228,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car_dropoff\": 0.21,\n  \"car_airport_parking\": 0.18,\n  \"car_offairport_parking\": 0.05,\n  \"car_other_parking\": 0.01,\n  \"taxi_ridehail\": 0.07,\n  \"rental_carsharing\": 0.03,\n  \"bus_transfer\": 0.10,\n  \"s_bahn\": 0.30,\n  \"uefex\": 0.03,\n  \"other\": 0.02,\n  \"rationale\": \"Private domestic leisure travelers likely value convenience and cost, favoring S-Bahn and private car access; parking is split by price sensitivity. Taxis, UEFEX, and buses fill smaller shares. Rental and other modes are minor.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 581,
+      "completion_tokens": 170,
+      "total_tokens": 751,
+      "cost": 0.002522,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002522,
+        "upstream_inference_prompt_cost": 0.001162,
+        "upstream_inference_completions_cost": 0.00136
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628228-TsSs6rS3srxMSz7bAqFb",
+  "raw_prediction": {
+    "car_dropoff": 0.21,
+    "car_airport_parking": 0.18,
+    "car_offairport_parking": 0.05,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.07,
+    "rental_carsharing": 0.03,
+    "bus_transfer": 0.1,
+    "s_bahn": 0.3,
+    "uefex": 0.03,
+    "other": 0.02,
+    "rationale": "Private domestic leisure travelers likely value convenience and cost, favoring S-Bahn and private car access; parking is split by price sensitivity. Taxis, UEFEX, and buses fill smaller shares. Rental and other modes are minor."
+  },
+  "prediction": {
+    "car_dropoff": 0.21,
+    "car_airport_parking": 0.18,
+    "car_offairport_parking": 0.05,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.07,
+    "rental_carsharing": 0.03,
+    "bus_transfer": 0.1,
+    "s_bahn": 0.3,
+    "uefex": 0.03,
+    "other": 0.02,
+    "rationale": "Private domestic leisure travelers likely value convenience and cost, favoring S-Bahn and private car access; parking is split by price sensitivity. Taxis, UEFEX, and buses fill smaller shares. Rental and other modes are minor."
+  },
+  "normalization": {
+    "sum_before": 1.0,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:37:11.030953+00:00",
+  "cost_exceeded_reservation": false
+}

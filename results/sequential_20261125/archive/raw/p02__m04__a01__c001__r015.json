@@ -1,0 +1,120 @@
+{
+  "task_id": "p02__m04__a01__c001__r015",
+  "block_id": "p02__m04__a01",
+  "panel_id": "fmg_2025",
+  "panel_index": 1,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "fmg_business_domestic",
+  "round": 15,
+  "modes": [
+    "car_dropoff",
+    "car_airport_parking",
+    "car_offairport_parking",
+    "car_other_parking",
+    "taxi_ridehail",
+    "rental_carsharing",
+    "bus_transfer",
+    "s_bahn",
+    "uefex",
+    "other"
+  ],
+  "mutually_exclusive": true,
+  "request_sha256": "a95b759f752892829b622008e4ee5b4e1d922a911bb66ce188de7bc77015f653",
+  "started_utc": "2026-11-25T17:41:59.333415+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:42:01.366393+00:00",
+      "cost_usd": 0.002442,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.002442,
+  "reservation_upper_bound_usd": 0.028716000000000002,
+  "response_sha256": "248f0c2cf3a5e40327acbd6da44531cbe54525a67422c88a1f4bd509a51a7e3e",
+  "response": {
+    "id": "gen-1795628518-GkH8BLpMlE8dfqbVfG8y",
+    "object": "chat.completion",
+    "created": 1795628518,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car_dropoff\": 0.22,\n  \"car_airport_parking\": 0.20,\n  \"car_offairport_parking\": 0.07,\n  \"car_other_parking\": 0.01,\n  \"taxi_ridehail\": 0.13,\n  \"rental_carsharing\": 0.04,\n  \"bus_transfer\": 0.05,\n  \"s_bahn\": 0.24,\n  \"uefex\": 0.02,\n  \"other\": 0.02,\n  \"rationale\": \"Business passengers prioritize speed and reliability. S-Bahn is direct and frequent, but car and taxi remain important for flexibility. Parking is common; other modes have minor shares due to limited convenience or coverage.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 569,
+      "completion_tokens": 163,
+      "total_tokens": 732,
+      "cost": 0.002442,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002442,
+        "upstream_inference_prompt_cost": 0.001138,
+        "upstream_inference_completions_cost": 0.001304
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628518-GkH8BLpMlE8dfqbVfG8y",
+  "raw_prediction": {
+    "car_dropoff": 0.22,
+    "car_airport_parking": 0.2,
+    "car_offairport_parking": 0.07,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.13,
+    "rental_carsharing": 0.04,
+    "bus_transfer": 0.05,
+    "s_bahn": 0.24,
+    "uefex": 0.02,
+    "other": 0.02,
+    "rationale": "Business passengers prioritize speed and reliability. S-Bahn is direct and frequent, but car and taxi remain important for flexibility. Parking is common; other modes have minor shares due to limited convenience or coverage."
+  },
+  "prediction": {
+    "car_dropoff": 0.22,
+    "car_airport_parking": 0.2,
+    "car_offairport_parking": 0.07,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.13,
+    "rental_carsharing": 0.04,
+    "bus_transfer": 0.05,
+    "s_bahn": 0.24,
+    "uefex": 0.02,
+    "other": 0.02,
+    "rationale": "Business passengers prioritize speed and reliability. S-Bahn is direct and frequent, but car and taxi remain important for flexibility. Parking is common; other modes have minor shares due to limited convenience or coverage."
+  },
+  "normalization": {
+    "sum_before": 1.0,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:42:01.367397+00:00",
+  "cost_exceeded_reservation": false
+}

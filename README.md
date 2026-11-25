@@ -1,90 +1,79 @@
-# Air-passenger LLM-PDM study
+# Can AI predict how groups of air passengers travel on the ground?
 
-An aggregate adaptation of LLM-PDM using public **Mobilität in Deutschland 2023** data. The study tests whether language models reproduce reported car, local public transport and long-distance rail co-use on overnight journeys whose recorded main mode is aircraft.
+An aggregate adaptation of **LLM-PDM** with two distinct tests: national ground-mode co-use on MiD 2023 air journeys, and reported access categories at Munich Airport. We ask whether a model can use a short group description to improve on simply repeating the overall observed rates. No new human survey or reconstructed individual passengers are used.
 
-**Start with the [plain-language walkthrough and sketch](docs/PLAIN_LANGUAGE_WALKTHROUGH.md):** real survey journeys, group cards with one clue, three AI estimates, and a comparison with survey answers. It includes a real worked example and explains why “out of 100 journeys” does not mean 100 simulated people.
+<!-- SEQUENTIAL_RELEASE_STATUS_START -->
+**Completed experiment, 25 November 2026.** Final analysis, independent arithmetic checks, offline replay and workbook preservation validation have passed. Read the [current paper](manuscript/main.pdf) and [technical supplement](manuscript/supplement.pdf) for author review.
+<!-- SEQUENTIAL_RELEASE_STATUS_END -->
 
-Then read the [journal manuscript](manuscript/main.pdf) and [technical supplement](manuscript/supplement.pdf). The manuscript uses the official Findings template and is designed for a 10–15 minute review.
+## What is being compared?
 
-## What the evidence represents
+| | MiD 2023 | Munich Airport 2025 |
+|---|---|---|
+| Observed unit | 9,475 reported overnight journeys with aircraft as the main mode; not unique passengers | Six authorized purpose-by-departing-flight-region aggregates from a co-author's FMG summary |
+| Group cards | 23 overlapping groups, each defined by **one** attribute | Business/private × domestic/continental/intercontinental; other attributes unspecified |
+| Prediction | Three probabilities: car, local public transport, long-distance rail anywhere on the journey | A distribution over ten reported airport-access categories |
+| Outcome scope | Modes may overlap and the three targets do not exhaust all modes | Categories form a composition; parking may include an onward shuttle |
+| Numerical hint | Both without and with overall MiD rates | No airport rates supplied to the model |
 
-- **9,475 reported aircraft-main-mode overnight journeys**, not unique passengers.
-- **14 candidate attributes**, screened with a fixed descriptive information-gain rule.
-- **23 single-attribute profiles** from household car count, residential area type, household companions and nights away.
-- **Five attempted models**, two prompt conditions, three repetitions, plus no-persona controls. Four models completed every call; Gemma 3 12B was operationally incomplete.
-- **720 terminal records**: 587 valid responses, 35 invalid outputs and 98 rate-limited failures. Study cost was US$0.2728, plus US$0.0016 for five smoke checks.
+Four services produce **12 model–task–condition endpoints**. All endpoints remain in the results, including failures. The paper distinguishes:
 
-**Main result:** overall-rate guidance improved all four complete models. Only anchored GPT-4.1 personas beat the observed population-rate baseline: **2.93 versus 4.16 percentage points MAE**. Its anchored no-persona control scored 4.10. The other three models' anchored personas performed worse than their no-persona controls. See [paper numbers](results/processed/paper_numbers.json) and the transparent [availability decision](docs/PROTOCOL_DEVIATIONS.md).
+- **Group/no hint:** the model receives the group description without observed rates.
+- **Group/with hint:** MiD additionally supplies overall rates; the specific group's answers remain hidden.
+- **No-group model control:** the same task without the group description; any MiD hint is retained.
+- **Constant statistical baseline:** overall source rates applied to every group; no model call.
 
-These are public group-level margins. No B1 microdata, joint synthetic passengers, new human responses or Munich Airport passenger records are used. The outcomes combine outward and return travel and do not isolate airport access. Selection and scoring use the same survey aggregates; the study is a descriptive aggregate benchmark, not individual or out-of-sample validation.
+“Out of 100 similar journeys” means probabilities multiplied by 100, not 100 simulated people. Model rationales are possible explanations, not measured human motives. These are aggregate benchmarks, not individual, causal, or independent out-of-sample validation.
 
-## Review route
+## Audited findings
 
-1. Read [the plain-language walkthrough](docs/PLAIN_LANGUAGE_WALKTHROUGH.md) for the idea, sketch and one actual example.
-2. Read [the paper](manuscript/main.pdf) for the question, design and main results.
-3. Inspect the [framework](figures/01_framework.png), [persona selection](figures/02_persona_selection.png) and [model results](figures/03_model_results.png).
-4. Open [the updated English workbook](data/workbooks/MiD2023_Comprehensive_Data_and_LLM_EN.xlsx) for the original data archive and new, separately labelled experiment tables.
-5. Read [how the Excel was made](docs/EXCEL_PROVENANCE.md) and [the study data dictionary](docs/data_dictionary.md).
-6. Use [the supplement](manuscript/supplement.pdf) for formulas, prompts, limits and reproducibility details.
+- Six of the 12 conditions reached 16 complete rounds: **one improved on its constant baseline and five performed worse** under the primary rule. Six had no valid inferential checkpoint; their failures or short prefixes remain visible.
+- **GPT-4.1 with the MiD hint** had a median round-level gain of **0.93 percentage points**, adjusted interval **[0.79, 1.19]**. Its averaged probabilities scored **2.95 pp MAE**, versus **4.16** for the baseline. These are different estimands, not interchangeable numbers.
+- In Munich, GPT-4.1 and GPT-4.1 mini averaged **3.77** and **5.48 pp MAE**, versus the informed baseline's **2.67**. Their no-group controls scored **3.74** and **5.44**; these small control differences are descriptive. Airport prompts received no numerical hint, while the baseline knew the observed overall rates.
 
-## Repository map
+These claims concern repeated outputs under the stated model-service assumptions, not survey-population uncertainty. All figures and tables derive from [the new study's numerical record](results/sequential_20261125/table_numbers.json), not the pilot.
 
-| Directory | Contents |
-|---|---|
-| `manuscript/` | Findings LaTeX source, bibliography, compiled paper, supplement and archived official template |
-| `figures/` | Publication figures in vector PDF/SVG and 300-dpi PNG |
-| `data/raw/mit/` | Original public API responses, exact requests and provenance |
-| `data/processed/` | Cohort rates, eligibility, feature screening, frozen personas and validation |
-| `data/workbooks/` | Updated and original workbooks, hashes and compact historical production archive |
-| `config/` | Model selection, run settings and dated public OpenRouter model catalogue |
-| `results/raw/` | Paid-run requests and terminal responses; authentication omitted and private account identifiers redacted |
-| `results/processed/` | Predictions, error metrics, failure log and machine-readable paper numbers |
-| `src/` | Preparation, selection, API runner, evaluation, figures and workbook production |
-| `docs/` | Provenance, dictionary, literature, review notes and continuation instructions |
+## Start here
 
-## Reproduce without new API charges
+- **Paper and exact prompts:** [paper](manuscript/main.pdf) and [technical supplement](manuscript/supplement.pdf). The main paper contains three figures, three tables, the exact overall-rate hint in a grey box, and a grey-box appendix of actual prompt text and all group descriptions.
+- **Excel:** [revised inspection workbook](data/workbooks/MiD2023_MUC_LLM_Comprehensive_EN_20261125.xlsx): 31 preserved earlier sheets plus four new sequential-study sheets, **35 in total**. [Excel provenance](docs/EXCEL_PROVENANCE.md) explains the source files and preservation checks. JSON/CSV remain the computational record.
+- **Continue the work:** [CONTINUE_HERE](docs/CONTINUE_HERE.md) records the boundaries, file map, and reproduction steps. [Author checklist](docs/REVIEW_CHECKLIST.md) lists scientific and publication decisions.
+- **Earlier pilot:** [archived paper](manuscript/archive/20261124/main.pdf), [archived supplement](manuscript/archive/20261124/supplement.pdf), `results/processed/`, and the original figure names belong to the separate November 24 three-repeat MiD pilot. Its results must not be substituted for the new experiment. The [plain-language walkthrough](docs/PLAIN_LANGUAGE_WALKTHROUGH.md) also describes that pilot and its worked example.
 
-Use Python 3.11 or newer. The data preparation and metric scripts use the Python standard library. Figures require the versions in `requirements.txt`.
+## Reproduce the new study without API charges
+
+Use Python 3.11+ and the pinned dependencies. These commands analyze archived outputs; they make no model calls and require no confidential source workbook.
 
 ```sh
 python -m pip install -r requirements.txt
-python src/prepare_data.py --offline
-python src/select_personas.py
-python src/analyse_results.py
-python src/make_figures.py
+python -m zipfile -e results/sequential_20261125/request_archive.zip outputs/sequential_replay
+python src/analyse_sequential_results.py --config results/sequential_20261125/evaluation_config.json --run-dir outputs/sequential_replay --output outputs/sequential_replay_analysis
+python src/write_revised_results.py --source outputs/sequential_replay_analysis --output manuscript/generated
+python src/make_revised_figures.py --data outputs/sequential_replay_analysis/figure_data.json
+python -m unittest discover -s tests
 ```
 
-The frozen selection and run plans are part of the record. Do not alter them while reusing cached predictions. Rebuilding the presentation workbook uses `@oai/artifact-tool`; see the workbook builder and the historical archive instructions. Excel is an inspection format; JSON/CSV and source responses are the computational record.
+Keep `evaluation_config.json` unchanged: its hash identifies the frozen settings. Its historical local catalogue path is unused by the offline analyzer. `request_archive.zip` retains the run and administrative-resumption evidence. A paused incomplete round was replaced as a whole under a documented amendment; original records remain in the audit and cost accounting.
 
-The updated workbook preserves **all 27 original sheets** and adds four experiment sheets, for **31 sheets** in total. Original values, formulas, tables and formatting were checked for preservation; experiment predictions are separately labelled from observed MiD rates. The comprehensive workbook's Munich/ADV context is separate and was not used to fit or score the experiment.
+The primary inference concerns **median round-level improvement** at registered looks of 16, 32, and 64 complete rounds. Errors of probabilities averaged across rounds are separate descriptive scores. A secondary mean confidence sequence has its own error allowance. No-group and hint contrasts are descriptive. None of these intervals measures survey-population uncertainty.
 
-Compile the journal files with a LaTeX installation containing the official template packages, or Tectonic:
+Compile the final canonical paper from `manuscript/` with `tectonic main.tex` and `tectonic supplement.tex`. Generating a workbook additionally requires `@oai/artifact-tool`; see the workbook provenance and builder scripts. New paid model experiments require a new versioned protocol and output directory, not the offline commands above. Credentials belong only in the process environment.
 
-```sh
-cd manuscript
-tectonic main.tex
-tectonic supplement.tex
-```
+## Files and permissions
 
-## Rerun the language models
+| Path | Role |
+|---|---|
+| `data/raw/mit/`, `data/processed/` | Public MiD requests, responses, normalization, group screening and frozen cards |
+| `results/sequential_20261125/` | New 12-endpoint metrics, complete-prefix predictions, approved derived airport targets, exact-hash evaluation config and request archive |
+| `manuscript/generated/` | Reproducible results tables/text and exact prompt appendix |
+| `figures/revised_*` | The new paper's three figures, vector formats and numerical manifests |
+| `results/processed/`, `results/raw/` | Preserved earlier pilot, not the new inferential sample |
+| `data/workbooks/`, `docs/` | Inspection workbooks, provenance, protocols and continuation notes |
 
-Set `OPENROUTER_API_KEY` **in your process environment**. Do not put it in any file tracked by Git. Then run:
+Confidential FMG originals, underlying source rows and interview counts are not released or sent to model services. Publication permission covers the six derived group aggregates and derived study results. The exact approved rates and weights permit offline score reproduction; they do not expose individual passenger records. MiD and airport targets have different populations and mode definitions, so their MAEs are not a common scale of task difficulty.
 
-```sh
-python src/run_experiment.py --prepare-only
-python src/run_experiment.py
-python src/analyse_results.py
-```
+MiD is credited to infas, DLR, IVT and infas 360 for the German Federal Ministry of Transport; the public tabulation service is supplied by BASt. Original data terms still apply. The method builds on Tzachristas, Narayanan and Antoniou's [LLM-PDM](https://doi.org/10.26599/COMMTR.2026.9640004). The Findings layout is adapted from David Levinson's CC BY 4.0 template, retained with attribution in `manuscript/template_original/`.
 
-The runner resumes existing matching requests and enforces a conservative US$10 run cap. A clean rerun needs a separately archived results directory and a versioned plan. Merely rerunning the command with the existing responses does not purchase new calls. Hosted models and providers may change; recorded requests, returned model/provider metadata, seeds and timestamps document the actual execution rather than guarantee bitwise repeatability.
+This is an author-review project, not a journal submission or accepted article. [GitHub](https://github.com/jtzach/air-passenger-LLM-PDM-study) is the replication record; [Overleaf](https://www.overleaf.com/project/6af39782e40c0117353a9820) is the editable writing copy. Authorship, affiliations and final declarations remain author decisions.
 
-## Sources and reuse
-
-- MiD/MiT data: infas, DLR, IVT and infas 360 for the German Federal Ministry of Transport; public tabulation service supplied by BASt. Original source terms continue to apply.
-- LLM-PDM: Tzachristas, Narayanan and Antoniou (2026), [DOI 10.26599/COMMTR.2026.9640004](https://doi.org/10.26599/COMMTR.2026.9640004).
-- Findings template: David Levinson, CC BY 4.0; unmodified template and provenance are in `manuscript/template_original/`.
-- The comprehensive workbook also contains clearly separated public Munich/ADV and geographical context, plus an airport data-availability catalogue. These contextual sheets are not inputs to the paper's experiment.
-
-This is a manuscript for author review, not a journal submission or an accepted publication. Author order, affiliations and final declarations remain author decisions. AI assistance in research code and drafting is disclosed in the manuscript.
-
-The editable writing copy is in [Overleaf](https://www.overleaf.com/project/6af39782e40c0117353a9820). GitHub is the canonical replication record. Start a later working session with [CONTINUE_HERE.md](docs/CONTINUE_HERE.md); use [the review checklist](docs/REVIEW_CHECKLIST.md) for author review.
+Verification records: [analysis](results/sequential_20261125/analysis_qa.json), [independent arithmetic](results/sequential_20261125/independent_publication_audit.json), [offline replay](results/sequential_20261125/offline_replay_qa.json), [figures](results/sequential_figures_qa.json), and [35-sheet workbook preservation](results/sequential_workbook_validation.json).

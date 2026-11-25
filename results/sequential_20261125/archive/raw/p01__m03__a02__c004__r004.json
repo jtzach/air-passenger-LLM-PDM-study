@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a02__c004__r004",
+  "block_id": "p01__m03__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzauto_gr1__d7ca944fcddc",
+  "round": 4,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "2e80d667804894793478d17a9e127bb117ba248266cd4662e6d25b8e61f25bcd",
+  "started_utc": "2026-11-25T14:28:22.420585+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:28:31.470471+00:00",
+      "cost_usd": 0.000126555,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000126555,
+  "reservation_upper_bound_usd": 0.00211656,
+  "response_sha256": "e0c2bd95ad4c02521c6aa42e689b61ff2210932ffaa40d8e15305ff2763a985f",
+  "response": {
+    "id": "gen-1795616902-7jY7xGqH25ZU3EAVqlrw",
+    "object": "chat.completion",
+    "created": 1795616902,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Households with one car may rely on it for airport access, increasing car use probability. This reduces reliance on local public transport and long-distance rail for journey legs.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 473,
+      "completion_tokens": 76,
+      "total_tokens": 549,
+      "cost": 0.000126555,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000126555,
+        "upstream_inference_prompt_cost": 6.3855e-05,
+        "upstream_inference_completions_cost": 6.27e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795616902-7jY7xGqH25ZU3EAVqlrw",
+  "raw_prediction": {
+    "car": 0.55,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Households with one car may rely on it for airport access, increasing car use probability. This reduces reliance on local public transport and long-distance rail for journey legs."
+  },
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Households with one car may rely on it for airport access, increasing car use probability. This reduces reliance on local public transport and long-distance rail for journey legs."
+  },
+  "normalization": {
+    "sum_before": 0.8300000000000001,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:28:31.470471+00:00",
+  "cost_exceeded_reservation": false
+}

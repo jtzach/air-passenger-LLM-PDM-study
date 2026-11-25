@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c021__r012",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__ef1ad3950de1",
+  "round": 12,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "6a1ae584314c46f06fd1f5fb029c0d8ffa1cb38ec0da4e5f99e56f5b68432fff",
+  "started_utc": "2026-11-25T17:40:50.806190+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:40:51.933460+00:00",
+      "cost_usd": 0.00145,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00145,
+  "reservation_upper_bound_usd": 0.023903999999999998,
+  "response_sha256": "36bc9d59193820964b399322280247e8436edfcf8e08dab5fdd57632f5af3f57",
+  "response": {
+    "id": "gen-1795628450-6VPcjqM4jaIWPflDUFop",
+    "object": "chat.completion",
+    "created": 1795628450,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"Short trips with one overnight stay often involve airports near origin or destination. Car use is common for flexible airport access. Public transport is plausible, but long-distance rail use is lower due to time constraints on brief journeys.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 393,
+      "completion_tokens": 83,
+      "total_tokens": 476,
+      "cost": 0.00145,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00145,
+        "upstream_inference_prompt_cost": 0.000786,
+        "upstream_inference_completions_cost": 0.000664
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628450-6VPcjqM4jaIWPflDUFop",
+  "raw_prediction": {
+    "car": 0.45,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.15,
+    "rationale": "Short trips with one overnight stay often involve airports near origin or destination. Car use is common for flexible airport access. Public transport is plausible, but long-distance rail use is lower due to time constraints on brief journeys."
+  },
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.15,
+    "rationale": "Short trips with one overnight stay often involve airports near origin or destination. Car use is common for flexible airport access. Public transport is plausible, but long-distance rail use is lower due to time constraints on brief journeys."
+  },
+  "normalization": {
+    "sum_before": 0.95,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:40:51.933460+00:00",
+  "cost_exceeded_reservation": false
+}

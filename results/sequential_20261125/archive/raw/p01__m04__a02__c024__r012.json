@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c024__r012",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "no_persona",
+  "round": 12,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "9bbf92accc6e30641ed5c7197a6a60ae8551467b2dc748c25668c307f34ec477",
+  "started_utc": "2026-11-25T17:41:04.929451+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:41:06.433356+00:00",
+      "cost_usd": 0.001396,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001396,
+  "reservation_upper_bound_usd": 0.024342,
+  "response_sha256": "ddda5671f55d52c3af1e1b79355ea53690b79f34d82acfba780bbc579ecfa2e4",
+  "response": {
+    "id": "gen-1795628464-l0wi70aXsEHd8ODEE61A",
+    "object": "chat.completion",
+    "created": 1795628464,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.38,\n  \"local_pt\": 0.22,\n  \"long_distance_rail\": 0.12,\n  \"rationale\": \"Without specific journey or traveller details, population-level rates are likely representative. Random selection within the cohort suggests no reason for systematic deviation from overall mode-use probabilities.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 414,
+      "completion_tokens": 71,
+      "total_tokens": 485,
+      "cost": 0.001396,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001396,
+        "upstream_inference_prompt_cost": 0.000828,
+        "upstream_inference_completions_cost": 0.000568
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628464-l0wi70aXsEHd8ODEE61A",
+  "raw_prediction": {
+    "car": 0.38,
+    "local_pt": 0.22,
+    "long_distance_rail": 0.12,
+    "rationale": "Without specific journey or traveller details, population-level rates are likely representative. Random selection within the cohort suggests no reason for systematic deviation from overall mode-use probabilities."
+  },
+  "prediction": {
+    "car": 0.38,
+    "local_pt": 0.22,
+    "long_distance_rail": 0.12,
+    "rationale": "Without specific journey or traveller details, population-level rates are likely representative. Random selection within the cohort suggests no reason for systematic deviation from overall mode-use probabilities."
+  },
+  "normalization": {
+    "sum_before": 0.72,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:41:06.433356+00:00",
+  "cost_exceeded_reservation": false
+}

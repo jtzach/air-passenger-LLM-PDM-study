@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c006__r002",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__RegioStaR7__5febbfe6f6bc",
+  "round": 2,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "a4725566fd7169d0510c90246821c70630a7cd8fb539ee5dfda0bd3537363dad",
+  "started_utc": "2026-11-25T14:24:50.623197+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:24:52.026379+00:00",
+      "cost_usd": 0.001472,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001472,
+  "reservation_upper_bound_usd": 0.024077999999999995,
+  "response_sha256": "953869e788f1653c16be93b0c5891871390ab8e87b0ca91d5344658577ca170f",
+  "response": {
+    "id": "gen-1795616690-PTNcuUnSo2u1XeqWv9xp",
+    "object": "chat.completion",
+    "created": 1795616690,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.18,\n  \"rationale\": \"Small-town/village residents likely face limited local public transport, making car travel to/from airports more probable. Local PT is less frequent but possible; long-distance rail is less likely due to access, frequency, and connectivity constraints.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 396,
+      "completion_tokens": 85,
+      "total_tokens": 481,
+      "cost": 0.001472,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001472,
+        "upstream_inference_prompt_cost": 0.000792,
+        "upstream_inference_completions_cost": 0.00068
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616690-PTNcuUnSo2u1XeqWv9xp",
+  "raw_prediction": {
+    "car": 0.65,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.18,
+    "rationale": "Small-town/village residents likely face limited local public transport, making car travel to/from airports more probable. Local PT is less frequent but possible; long-distance rail is less likely due to access, frequency, and connectivity constraints."
+  },
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.18,
+    "rationale": "Small-town/village residents likely face limited local public transport, making car travel to/from airports more probable. Local PT is less frequent but possible; long-distance rail is less likely due to access, frequency, and connectivity constraints."
+  },
+  "normalization": {
+    "sum_before": 1.18,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:24:52.026379+00:00",
+  "cost_exceeded_reservation": false
+}

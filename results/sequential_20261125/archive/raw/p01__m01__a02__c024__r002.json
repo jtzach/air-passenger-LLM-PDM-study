@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m01__a02__c024__r002",
+  "block_id": "p01__m01__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "overall_rate_anchored",
+  "card_id": "no_persona",
+  "round": 2,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "d213129f99a4529b5ce6790b060062262c5edceff8ff18005accc59830924bc3",
+  "started_utc": "2026-11-25T14:23:30.477947+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:23:32.202129+00:00",
+      "cost_usd": 1.966e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 1.966e-05,
+  "reservation_upper_bound_usd": 0.00033989999999999997,
+  "response_sha256": "d54214016f670c7f2f9ca2e2a46fda1a88eed165608a9698a6e85d209ecedf00",
+  "response": {
+    "id": "gen-1795616610-5v514Gt9VzmXjd5o9UFJ",
+    "object": "chat.completion",
+    "created": 1795616610,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.4, \"local_pt\": 0.25, \"long_distance_rail\": 0.15, \"rationale\": \"Given the cohort's overnight aircraft travel, I anticipate a slightly higher car use (convenience), moderate local public transport (access to destinations), and a lower likelihood of long-distance rail (less efficient for this type of journey).\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 448,
+      "completion_tokens": 86,
+      "total_tokens": 534,
+      "cost": 1.966e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 128,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.966e-05,
+        "upstream_inference_prompt_cost": 1.536e-05,
+        "upstream_inference_completions_cost": 4.3e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616610-5v514Gt9VzmXjd5o9UFJ",
+  "raw_prediction": {
+    "car": 0.4,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "Given the cohort's overnight aircraft travel, I anticipate a slightly higher car use (convenience), moderate local public transport (access to destinations), and a lower likelihood of long-distance rail (less efficient for this type of journey)."
+  },
+  "prediction": {
+    "car": 0.4,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "Given the cohort's overnight aircraft travel, I anticipate a slightly higher car use (convenience), moderate local public transport (access to destinations), and a lower likelihood of long-distance rail (less efficient for this type of journey)."
+  },
+  "normalization": {
+    "sum_before": 0.8,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:23:32.202129+00:00",
+  "cost_exceeded_reservation": false
+}

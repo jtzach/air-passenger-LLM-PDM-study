@@ -1,0 +1,120 @@
+{
+  "task_id": "p02__m04__a01__c005__r012",
+  "block_id": "p02__m04__a01",
+  "panel_id": "fmg_2025",
+  "panel_index": 1,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "fmg_business_intercontinental",
+  "round": 12,
+  "modes": [
+    "car_dropoff",
+    "car_airport_parking",
+    "car_offairport_parking",
+    "car_other_parking",
+    "taxi_ridehail",
+    "rental_carsharing",
+    "bus_transfer",
+    "s_bahn",
+    "uefex",
+    "other"
+  ],
+  "mutually_exclusive": true,
+  "request_sha256": "bce5668c7c8c26778d388bd89fe1aeaae34ebc78809907c750edd647a8d1806a",
+  "started_utc": "2026-11-25T17:40:57.215752+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:40:58.986804+00:00",
+      "cost_usd": 0.002508,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.002508,
+  "reservation_upper_bound_usd": 0.028763999999999998,
+  "response_sha256": "86d6ca2b06b85f57f5550a3d24d5e46743703c12e3278047e6f83807323df7a1",
+  "response": {
+    "id": "gen-1795628456-NC1ZAe3JCukNo63NoFxl",
+    "object": "chat.completion",
+    "created": 1795628456,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car_dropoff\": 0.17,\n  \"car_airport_parking\": 0.29,\n  \"car_offairport_parking\": 0.06,\n  \"car_other_parking\": 0.01,\n  \"taxi_ridehail\": 0.16,\n  \"rental_carsharing\": 0.05,\n  \"bus_transfer\": 0.03,\n  \"s_bahn\": 0.18,\n  \"uefex\": 0.03,\n  \"other\": 0.02,\n  \"rationale\": \"Business travellers on intercontinental flights likely prioritise reliability, speed, and comfort. Private car (parking or drop-off), taxi, and S-Bahn are predominant; other modes are less frequent due to trip length, convenience, and luggage.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 570,
+      "completion_tokens": 171,
+      "total_tokens": 741,
+      "cost": 0.002508,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002508,
+        "upstream_inference_prompt_cost": 0.00114,
+        "upstream_inference_completions_cost": 0.001368
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628456-NC1ZAe3JCukNo63NoFxl",
+  "raw_prediction": {
+    "car_dropoff": 0.17,
+    "car_airport_parking": 0.29,
+    "car_offairport_parking": 0.06,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.16,
+    "rental_carsharing": 0.05,
+    "bus_transfer": 0.03,
+    "s_bahn": 0.18,
+    "uefex": 0.03,
+    "other": 0.02,
+    "rationale": "Business travellers on intercontinental flights likely prioritise reliability, speed, and comfort. Private car (parking or drop-off), taxi, and S-Bahn are predominant; other modes are less frequent due to trip length, convenience, and luggage."
+  },
+  "prediction": {
+    "car_dropoff": 0.17,
+    "car_airport_parking": 0.29,
+    "car_offairport_parking": 0.06,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.16,
+    "rental_carsharing": 0.05,
+    "bus_transfer": 0.03,
+    "s_bahn": 0.18,
+    "uefex": 0.03,
+    "other": 0.02,
+    "rationale": "Business travellers on intercontinental flights likely prioritise reliability, speed, and comfort. Private car (parking or drop-off), taxi, and S-Bahn are predominant; other modes are less frequent due to trip length, convenience, and luggage."
+  },
+  "normalization": {
+    "sum_before": 1.0,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:40:58.987818+00:00",
+  "cost_exceeded_reservation": false
+}

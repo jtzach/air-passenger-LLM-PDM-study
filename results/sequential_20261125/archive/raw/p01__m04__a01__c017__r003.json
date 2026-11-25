@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c017__r003",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__456ee228eb2a",
+  "round": 3,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "c6cb9b2690130c4c3dd989203d35e96d390a3c6e9506a2f0c66a60b91600ef2c",
+  "started_utc": "2026-11-25T14:26:13.282317+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:26:14.902864+00:00",
+      "cost_usd": 0.001478,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001478,
+  "reservation_upper_bound_usd": 0.023921999999999995,
+  "response_sha256": "a19f530ddc61e36e6f8e10d14f23732227a1f8dd9fe7be60332fd4282cf54d93",
+  "response": {
+    "id": "gen-1795616773-hVrpEWMNmGopOSfARyCT",
+    "object": "chat.completion",
+    "created": 1795616773,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.50,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"Journeys of 4-5 nights suggest medium/long-haul. Car is often used for flexible airport access, but public/local and long-distance rail are common alternatives, especially given Germany’s strong rail network and urban connectivity.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 395,
+      "completion_tokens": 86,
+      "total_tokens": 481,
+      "cost": 0.001478,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001478,
+        "upstream_inference_prompt_cost": 0.00079,
+        "upstream_inference_completions_cost": 0.000688
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616773-hVrpEWMNmGopOSfARyCT",
+  "raw_prediction": {
+    "car": 0.5,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.25,
+    "rationale": "Journeys of 4-5 nights suggest medium/long-haul. Car is often used for flexible airport access, but public/local and long-distance rail are common alternatives, especially given Germany’s strong rail network and urban connectivity."
+  },
+  "prediction": {
+    "car": 0.5,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.25,
+    "rationale": "Journeys of 4-5 nights suggest medium/long-haul. Car is often used for flexible airport access, but public/local and long-distance rail are common alternatives, especially given Germany’s strong rail network and urban connectivity."
+  },
+  "normalization": {
+    "sum_before": 1.1,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:26:14.902864+00:00",
+  "cost_exceeded_reservation": false
+}

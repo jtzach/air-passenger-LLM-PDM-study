@@ -1,0 +1,100 @@
+{
+  "task_id": "p01__m04__a02__c023__r007__administrative_replacement1",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__fd46cf332878",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "supersedes_task_id": "p01__m04__a02__c023__r007",
+  "request_sha256": "3c25b73e6beacaa7e20bd0986e121da492ff9d976c97156bd0608fc8cdc1cf17",
+  "started_utc": "2026-11-25T17:34:36.367708+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:34:37.603949+00:00",
+      "cost_usd": 0.00158,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00158,
+  "reservation_upper_bound_usd": 0.025607999999999995,
+  "response_sha256": "265b90970eeb514fe4a59ba5d1043bc4742a34ead06cfff1e8ab8a3b01a90ee3",
+  "response": {
+    "id": "gen-1795628075-VBovTHRYPIy35bOlmG96",
+    "object": "chat.completion",
+    "created": 1795628075,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.34,\n  \"local_pt\": 0.21,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Longer stays (15+ nights) suggest more international or distant trips, likely favoring direct airport access via car or taxi, and less frequent use of trains or local transit, compared to shorter, more domestic journeys.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 454,
+      "completion_tokens": 84,
+      "total_tokens": 538,
+      "cost": 0.00158,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00158,
+        "upstream_inference_prompt_cost": 0.000908,
+        "upstream_inference_completions_cost": 0.000672
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628075-VBovTHRYPIy35bOlmG96",
+  "raw_prediction": {
+    "car": 0.34,
+    "local_pt": 0.21,
+    "long_distance_rail": 0.1,
+    "rationale": "Longer stays (15+ nights) suggest more international or distant trips, likely favoring direct airport access via car or taxi, and less frequent use of trains or local transit, compared to shorter, more domestic journeys."
+  },
+  "prediction": {
+    "car": 0.34,
+    "local_pt": 0.21,
+    "long_distance_rail": 0.1,
+    "rationale": "Longer stays (15+ nights) suggest more international or distant trips, likely favoring direct airport access via car or taxi, and less frequent use of trains or local transit, compared to shorter, more domestic journeys."
+  },
+  "normalization": {
+    "sum_before": 0.65,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:34:37.603949+00:00",
+  "cost_exceeded_reservation": false
+}

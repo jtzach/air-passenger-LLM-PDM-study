@@ -1,0 +1,120 @@
+{
+  "task_id": "p02__m04__a01__c001__r008",
+  "block_id": "p02__m04__a01",
+  "panel_id": "fmg_2025",
+  "panel_index": 1,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "fmg_business_domestic",
+  "round": 8,
+  "modes": [
+    "car_dropoff",
+    "car_airport_parking",
+    "car_offairport_parking",
+    "car_other_parking",
+    "taxi_ridehail",
+    "rental_carsharing",
+    "bus_transfer",
+    "s_bahn",
+    "uefex",
+    "other"
+  ],
+  "mutually_exclusive": true,
+  "request_sha256": "2d8ee0d7a4a98e9a4ae63303d24beaa683976e362b098f114b3fac6d0b6b9cc6",
+  "started_utc": "2026-11-25T17:35:37.229273+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:35:39.512206+00:00",
+      "cost_usd": 0.002474,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.002474,
+  "reservation_upper_bound_usd": 0.028716000000000002,
+  "response_sha256": "ebe4f16b1e09c2615027cf7112191c4bced04b67d196c243d49f08bbb4513394",
+  "response": {
+    "id": "gen-1795628136-ZIDZBtR5jX27oJOqndrR",
+    "object": "chat.completion",
+    "created": 1795628136,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car_dropoff\": 0.19,\n  \"car_airport_parking\": 0.14,\n  \"car_offairport_parking\": 0.05,\n  \"car_other_parking\": 0.01,\n  \"taxi_ridehail\": 0.12,\n  \"rental_carsharing\": 0.04,\n  \"bus_transfer\": 0.05,\n  \"s_bahn\": 0.33,\n  \"uefex\": 0.04,\n  \"other\": 0.03,\n  \"rationale\": \"Business domestic passengers likely prefer S-Bahn for reliability, but also use private cars, taxis, and airport parking for flexibility or speed. UEFEX and bus are niche; rental and other modes are limited by practicality.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 569,
+      "completion_tokens": 167,
+      "total_tokens": 736,
+      "cost": 0.002474,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002474,
+        "upstream_inference_prompt_cost": 0.001138,
+        "upstream_inference_completions_cost": 0.001336
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628136-ZIDZBtR5jX27oJOqndrR",
+  "raw_prediction": {
+    "car_dropoff": 0.19,
+    "car_airport_parking": 0.14,
+    "car_offairport_parking": 0.05,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.12,
+    "rental_carsharing": 0.04,
+    "bus_transfer": 0.05,
+    "s_bahn": 0.33,
+    "uefex": 0.04,
+    "other": 0.03,
+    "rationale": "Business domestic passengers likely prefer S-Bahn for reliability, but also use private cars, taxis, and airport parking for flexibility or speed. UEFEX and bus are niche; rental and other modes are limited by practicality."
+  },
+  "prediction": {
+    "car_dropoff": 0.19,
+    "car_airport_parking": 0.14,
+    "car_offairport_parking": 0.05,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.12,
+    "rental_carsharing": 0.04,
+    "bus_transfer": 0.05,
+    "s_bahn": 0.33,
+    "uefex": 0.04,
+    "other": 0.03,
+    "rationale": "Business domestic passengers likely prefer S-Bahn for reliability, but also use private cars, taxis, and airport parking for flexibility or speed. UEFEX and bus are niche; rental and other modes are limited by practicality."
+  },
+  "normalization": {
+    "sum_before": 1.0,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:35:39.512206+00:00",
+  "cost_exceeded_reservation": false
+}

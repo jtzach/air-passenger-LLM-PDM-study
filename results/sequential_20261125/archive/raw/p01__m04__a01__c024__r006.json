@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c024__r006",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "no_persona",
+  "round": 6,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "c3fdcad88a5396f207eb800efc1866a758d857dfa98fceeb1b7628a84983799a",
+  "started_utc": "2026-11-25T14:32:02.951156+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:32:04.324511+00:00",
+      "cost_usd": 0.00135,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00135,
+  "reservation_upper_bound_usd": 0.022698,
+  "response_sha256": "d7ae9b599829dbda4121b36b1a50c6149e0a4b359cfd3e6fbf52d80c85105802",
+  "response": {
+    "id": "gen-1795617123-ADAFAeY9FEAAIjXBgkBe",
+    "object": "chat.completion",
+    "created": 1795617123,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.60,\n  \"local_pt\": 0.45,\n  \"long_distance_rail\": 0.20,\n  \"rationale\": \"German residents flying often access airports by car due to convenience or group travel, with local public transport also common in metro areas; long-distance rail is less frequent but viable for some intercity airport trips.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 355,
+      "completion_tokens": 80,
+      "total_tokens": 435,
+      "cost": 0.00135,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00135,
+        "upstream_inference_prompt_cost": 0.00071,
+        "upstream_inference_completions_cost": 0.00064
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795617123-ADAFAeY9FEAAIjXBgkBe",
+  "raw_prediction": {
+    "car": 0.6,
+    "local_pt": 0.45,
+    "long_distance_rail": 0.2,
+    "rationale": "German residents flying often access airports by car due to convenience or group travel, with local public transport also common in metro areas; long-distance rail is less frequent but viable for some intercity airport trips."
+  },
+  "prediction": {
+    "car": 0.6,
+    "local_pt": 0.45,
+    "long_distance_rail": 0.2,
+    "rationale": "German residents flying often access airports by car due to convenience or group travel, with local public transport also common in metro areas; long-distance rail is less frequent but viable for some intercity airport trips."
+  },
+  "normalization": {
+    "sum_before": 1.25,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:32:04.324511+00:00",
+  "cost_exceeded_reservation": false
+}

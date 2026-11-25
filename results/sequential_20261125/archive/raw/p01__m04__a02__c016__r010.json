@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c016__r010",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzbegl_gr__b61cbc7c0dd2",
+  "round": 10,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "12856205f817c7b843f28fabe51556090433ccc64de2ff3fb369219d509cb899",
+  "started_utc": "2026-11-25T17:39:21.048194+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:39:22.249282+00:00",
+      "cost_usd": 0.00151,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00151,
+  "reservation_upper_bound_usd": 0.025572,
+  "response_sha256": "85a8a9ebe4fd2ca697173526fc46791f2b72e75ab9a2f6288a5f10602406500b",
+  "response": {
+    "id": "gen-1795628360-Dg2mjZSgRJhwAKgX3oxa",
+    "object": "chat.completion",
+    "created": 1795628360,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.42,\n  \"local_pt\": 0.21,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Two household members increase car use likelihood for convenience and luggage, but do not notably affect local PT or long-distance rail use, which are more sensitive to group size and coordination complexity.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 451,
+      "completion_tokens": 76,
+      "total_tokens": 527,
+      "cost": 0.00151,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00151,
+        "upstream_inference_prompt_cost": 0.000902,
+        "upstream_inference_completions_cost": 0.000608
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628360-Dg2mjZSgRJhwAKgX3oxa",
+  "raw_prediction": {
+    "car": 0.42,
+    "local_pt": 0.21,
+    "long_distance_rail": 0.1,
+    "rationale": "Two household members increase car use likelihood for convenience and luggage, but do not notably affect local PT or long-distance rail use, which are more sensitive to group size and coordination complexity."
+  },
+  "prediction": {
+    "car": 0.42,
+    "local_pt": 0.21,
+    "long_distance_rail": 0.1,
+    "rationale": "Two household members increase car use likelihood for convenience and luggage, but do not notably affect local PT or long-distance rail use, which are more sensitive to group size and coordination complexity."
+  },
+  "normalization": {
+    "sum_before": 0.73,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:39:22.250277+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c010__r013",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__RegioStaR7__9f47524becab",
+  "round": 13,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "aee3ffecce107898878b94f7b899186895a863ea66fbc4aa4b87129fa0f54aaa",
+  "started_utc": "2026-11-25T17:41:16.957394+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:41:18.752172+00:00",
+      "cost_usd": 0.001592,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001592,
+  "reservation_upper_bound_usd": 0.025733999999999996,
+  "response_sha256": "a4be64e3c5e4f9ed4873d74184f9a5527e79997e3c7b89eee99a78ce47c8f868",
+  "response": {
+    "id": "gen-1795628476-MXILnyGsHT7TvqeixywO",
+    "object": "chat.completion",
+    "created": 1795628476,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.41,\n  \"local_pt\": 0.25,\n  \"long_distance_rail\": 0.13,\n  \"rationale\": \"Medium-town urbanites may have slightly better local public transport than rural areas, but often rely on cars for airport access. Long-distance rail use is likely near national average, as major rail links may not serve all regional airports.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 456,
+      "completion_tokens": 85,
+      "total_tokens": 541,
+      "cost": 0.001592,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001592,
+        "upstream_inference_prompt_cost": 0.000912,
+        "upstream_inference_completions_cost": 0.00068
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628476-MXILnyGsHT7TvqeixywO",
+  "raw_prediction": {
+    "car": 0.41,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.13,
+    "rationale": "Medium-town urbanites may have slightly better local public transport than rural areas, but often rely on cars for airport access. Long-distance rail use is likely near national average, as major rail links may not serve all regional airports."
+  },
+  "prediction": {
+    "car": 0.41,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.13,
+    "rationale": "Medium-town urbanites may have slightly better local public transport than rural areas, but often rely on cars for airport access. Long-distance rail use is likely near national average, as major rail links may not serve all regional airports."
+  },
+  "normalization": {
+    "sum_before": 0.79,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:41:18.752172+00:00",
+  "cost_exceeded_reservation": false
+}

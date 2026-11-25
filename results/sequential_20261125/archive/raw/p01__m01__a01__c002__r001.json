@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m01__a01__c002__r001",
+  "block_id": "p01__m01__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "unanchored",
+  "card_id": "reise__anzauto_gr1__79ed954bbe2c",
+  "round": 1,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "e3d7bca3d394118160b3c12f45be9335fd873e66bbda57faa98410fe55ee6792",
+  "started_utc": "2026-11-25T14:22:06.107317+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:22:07.795015+00:00",
+      "cost_usd": 1.715e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 1.715e-05,
+  "reservation_upper_bound_usd": 0.00033126,
+  "response_sha256": "7430ca87de3e58e2d74fe394ed7f0901337a536d25b7f8e646734a2a824fca2e",
+  "response": {
+    "id": "gen-1795616526-9cn0zoqOJZGonXisWT4b",
+    "object": "chat.completion",
+    "created": 1795616526,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.6, \"local_pt\": 0.4, \"long_distance_rail\": 0.2, \"rationale\": \"A household with 4+ cars suggests frequent travel and a reliance on private vehicles. Combining this with overnight flights likely involves car travel for onward or return journeys, alongside some public transport options.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 415,
+      "completion_tokens": 75,
+      "total_tokens": 490,
+      "cost": 1.715e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.715e-05,
+        "upstream_inference_prompt_cost": 1.34e-05,
+        "upstream_inference_completions_cost": 3.75e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616526-9cn0zoqOJZGonXisWT4b",
+  "raw_prediction": {
+    "car": 0.6,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.2,
+    "rationale": "A household with 4+ cars suggests frequent travel and a reliance on private vehicles. Combining this with overnight flights likely involves car travel for onward or return journeys, alongside some public transport options."
+  },
+  "prediction": {
+    "car": 0.6,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.2,
+    "rationale": "A household with 4+ cars suggests frequent travel and a reliance on private vehicles. Combining this with overnight flights likely involves car travel for onward or return journeys, alongside some public transport options."
+  },
+  "normalization": {
+    "sum_before": 1.2,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:22:07.795015+00:00",
+  "cost_exceeded_reservation": false
+}

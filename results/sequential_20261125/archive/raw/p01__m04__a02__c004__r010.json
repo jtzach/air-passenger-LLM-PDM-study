@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c004__r010",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzauto_gr1__d7ca944fcddc",
+  "round": 10,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "ca56e869e8c7fec2d357b2989b60c13976668af1349d976694b9549ea8a4eaaf",
+  "started_utc": "2026-11-25T17:39:15.805741+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:39:17.114197+00:00",
+      "cost_usd": 0.001558,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001558,
+  "reservation_upper_bound_usd": 0.025500000000000002,
+  "response_sha256": "535e31947c6e103d38394f6241147cb8c97940901dbd8f489a9feb2916879e8a",
+  "response": {
+    "id": "gen-1795628355-2VfeSiReedSD6BlONYaL",
+    "object": "chat.completion",
+    "created": 1795628355,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.42,\n  \"local_pt\": 0.20,\n  \"long_distance_rail\": 0.11,\n  \"rationale\": \"Owning 1 car likely increases car use above average, but not as much as multi-car households. Public/local and long-distance rail are slightly less likely, as car access may reduce need for these alternatives.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 451,
+      "completion_tokens": 82,
+      "total_tokens": 533,
+      "cost": 0.001558,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001558,
+        "upstream_inference_prompt_cost": 0.000902,
+        "upstream_inference_completions_cost": 0.000656
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628355-2VfeSiReedSD6BlONYaL",
+  "raw_prediction": {
+    "car": 0.42,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.11,
+    "rationale": "Owning 1 car likely increases car use above average, but not as much as multi-car households. Public/local and long-distance rail are slightly less likely, as car access may reduce need for these alternatives."
+  },
+  "prediction": {
+    "car": 0.42,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.11,
+    "rationale": "Owning 1 car likely increases car use above average, but not as much as multi-car households. Public/local and long-distance rail are slightly less likely, as car access may reduce need for these alternatives."
+  },
+  "normalization": {
+    "sum_before": 0.73,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:39:17.114197+00:00",
+  "cost_exceeded_reservation": false
+}

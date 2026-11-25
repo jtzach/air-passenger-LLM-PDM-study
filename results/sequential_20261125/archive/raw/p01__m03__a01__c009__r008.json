@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a01__c009__r008",
+  "block_id": "p01__m03__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "unanchored",
+  "card_id": "reise__RegioStaR7__7cdab1586e04",
+  "round": 8,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "3770d3d09cbb8be146b8df8279a5705ff0bf0826768bb0be0270cfe7d381ae39",
+  "started_utc": "2026-11-25T17:36:26.472883+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:36:35.294983+00:00",
+      "cost_usd": 0.000126855,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000126855,
+  "reservation_upper_bound_usd": 0.00201618,
+  "response_sha256": "b16fae168697816dc43ee5759a3fe03c8d4ff5432d3a4302e5f23dcdbafe2b90",
+  "response": {
+    "id": "gen-1795628185-OwSCSEGV29wTO6XJhKAW",
+    "object": "chat.completion",
+    "created": 1795628185,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.75,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"Urban residents in large cities often rely on cars for flexible access to airports and combined trips, while public transport use varies by proximity. Long-distance rail competes less frequently with air for longer trips originating in major urban centers.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 408,
+      "completion_tokens": 87,
+      "total_tokens": 495,
+      "cost": 0.000126855,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000126855,
+        "upstream_inference_prompt_cost": 5.508e-05,
+        "upstream_inference_completions_cost": 7.1775e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795628185-OwSCSEGV29wTO6XJhKAW",
+  "raw_prediction": {
+    "car": 0.75,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.15,
+    "rationale": "Urban residents in large cities often rely on cars for flexible access to airports and combined trips, while public transport use varies by proximity. Long-distance rail competes less frequently with air for longer trips originating in major urban centers."
+  },
+  "prediction": {
+    "car": 0.75,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.15,
+    "rationale": "Urban residents in large cities often rely on cars for flexible access to airports and combined trips, while public transport use varies by proximity. Long-distance rail competes less frequently with air for longer trips originating in major urban centers."
+  },
+  "normalization": {
+    "sum_before": 1.25,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:36:35.294983+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m02__a02__c004__r005",
+  "block_id": "p01__m02__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzauto_gr1__d7ca944fcddc",
+  "round": 5,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "ddf90a2b9288e2776290564cdaaa86268d6372b1d0f9ce575242339467896dab",
+  "started_utc": "2026-11-25T14:29:48.369343+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:29:49.809458+00:00",
+      "cost_usd": 0.000286,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000286,
+  "reservation_upper_bound_usd": 0.005105999999999999,
+  "response_sha256": "3ee844950ebecdc05ccfa430c22a4e9f8be0a3c2dfbf25f138f428d0a6f99962",
+  "response": {
+    "id": "gen-1795616988-punSeX4Ar3mWisGKOsMF",
+    "object": "chat.completion",
+    "created": 1795616988,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.20,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"One-car households likely increase car use for airport access, slightly reducing public transit and long-distance rail use compared to overall aircraft journeys.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 451,
+      "completion_tokens": 66,
+      "total_tokens": 517,
+      "cost": 0.000286,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000286,
+        "upstream_inference_prompt_cost": 0.0001804,
+        "upstream_inference_completions_cost": 0.0001056
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795616988-punSeX4Ar3mWisGKOsMF",
+  "raw_prediction": {
+    "car": 0.45,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.1,
+    "rationale": "One-car households likely increase car use for airport access, slightly reducing public transit and long-distance rail use compared to overall aircraft journeys."
+  },
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.1,
+    "rationale": "One-car households likely increase car use for airport access, slightly reducing public transit and long-distance rail use compared to overall aircraft journeys."
+  },
+  "normalization": {
+    "sum_before": 0.75,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:29:49.809458+00:00",
+  "cost_exceeded_reservation": false
+}

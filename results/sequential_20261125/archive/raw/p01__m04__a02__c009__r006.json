@@ -1,0 +1,106 @@
+{
+  "task_id": "p01__m04__a02__c009__r006",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__RegioStaR7__7cdab1586e04",
+  "round": 6,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "254186f6c09b3f9a180ac07e0e3c04dda2eba637310e55b57975f96d82c4e367",
+  "started_utc": "2026-11-25T14:31:34.426966+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "transport_error",
+      "detail": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>",
+      "utc": "2026-11-25T14:31:56.930380+00:00",
+      "cost_upper_bound_usd": 0.00857
+    },
+    {
+      "number": 2,
+      "status": "response",
+      "utc": "2026-11-25T14:32:00.311499+00:00",
+      "cost_usd": 0.001574,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.010144,
+  "reservation_upper_bound_usd": 0.025709999999999997,
+  "response_sha256": "efd1f9526dac71bd7521e7557af742295768080c1aabe3ed6c582ddc9d079752",
+  "response": {
+    "id": "gen-1795617119-wXqG2NnwRsic5Z1JKbIh",
+    "object": "chat.completion",
+    "created": 1795617119,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.33,\n  \"local_pt\": 0.29,\n  \"long_distance_rail\": 0.14,\n  \"rationale\": \"Urban regiopolis/large city residents likely have better public transport access and lower car reliance than average, increasing local PT and slightly increasing long-distance rail use, while car use is somewhat less frequent than the population average.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 455,
+      "completion_tokens": 83,
+      "total_tokens": 538,
+      "cost": 0.001574,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001574,
+        "upstream_inference_prompt_cost": 0.00091,
+        "upstream_inference_completions_cost": 0.000664
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795617119-wXqG2NnwRsic5Z1JKbIh",
+  "raw_prediction": {
+    "car": 0.33,
+    "local_pt": 0.29,
+    "long_distance_rail": 0.14,
+    "rationale": "Urban regiopolis/large city residents likely have better public transport access and lower car reliance than average, increasing local PT and slightly increasing long-distance rail use, while car use is somewhat less frequent than the population average."
+  },
+  "prediction": {
+    "car": 0.33,
+    "local_pt": 0.29,
+    "long_distance_rail": 0.14,
+    "rationale": "Urban regiopolis/large city residents likely have better public transport access and lower car reliance than average, increasing local PT and slightly increasing long-distance rail use, while car use is somewhat less frequent than the population average."
+  },
+  "normalization": {
+    "sum_before": 0.76,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:32:00.311499+00:00",
+  "cost_exceeded_reservation": false
+}

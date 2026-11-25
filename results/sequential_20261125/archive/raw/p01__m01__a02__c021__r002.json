@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m01__a02__c021__r002",
+  "block_id": "p01__m01__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__ef1ad3950de1",
+  "round": 2,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "6814a9fd801b887ef2c1f79e770509a6a3d249f3ad1f4748120e3e5f202050e1",
+  "started_utc": "2026-11-25T14:25:21.964915+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:25:23.733539+00:00",
+      "cost_usd": 2.045e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.045e-05,
+  "reservation_upper_bound_usd": 0.00036402,
+  "response_sha256": "c1bef8136a529000be18b62e78366fff67aa4f6afb6db1b512f9546917ffb20e",
+  "response": {
+    "id": "gen-1795616722-VBeEa5OhVMHGUsF4g54U",
+    "object": "chat.completion",
+    "created": 1795616722,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.4, \"local_pt\": 0.25, \"long_distance_rail\": 0.15, \"rationale\": \"The cohort undertook a single overnight flight, suggesting a desire for speed and convenience. Ground transport use (car, bus/rail, train) would likely be used for initial access to the airport or return travel, but less frequently than the flight itself.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 488,
+      "completion_tokens": 89,
+      "total_tokens": 577,
+      "cost": 2.045e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 176,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.045e-05,
+        "upstream_inference_prompt_cost": 1.6e-05,
+        "upstream_inference_completions_cost": 4.45e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616722-VBeEa5OhVMHGUsF4g54U",
+  "raw_prediction": {
+    "car": 0.4,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "The cohort undertook a single overnight flight, suggesting a desire for speed and convenience. Ground transport use (car, bus/rail, train) would likely be used for initial access to the airport or return travel, but less frequently than the flight itself."
+  },
+  "prediction": {
+    "car": 0.4,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "The cohort undertook a single overnight flight, suggesting a desire for speed and convenience. Ground transport use (car, bus/rail, train) would likely be used for initial access to the airport or return travel, but less frequently than the flight itself."
+  },
+  "normalization": {
+    "sum_before": 0.8,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:25:23.733539+00:00",
+  "cost_exceeded_reservation": false
+}

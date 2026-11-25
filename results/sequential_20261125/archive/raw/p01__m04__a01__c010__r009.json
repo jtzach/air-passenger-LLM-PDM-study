@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c010__r009",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__RegioStaR7__9f47524becab",
+  "round": 9,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "a4e1561022bfc8ff7f569880b9330b292fcc542c2332831a9bac73904ffddf82",
+  "started_utc": "2026-11-25T17:37:26.804983+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:37:28.195881+00:00",
+      "cost_usd": 0.001442,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001442,
+  "reservation_upper_bound_usd": 0.024089999999999997,
+  "response_sha256": "e5aca99f1e2e7cd161dc7d430f62ca9fbf8d10721918b5ab1fa50900b19c2c46",
+  "response": {
+    "id": "gen-1795628246-KPRX90Xhxnl8XDQR7HsJ",
+    "object": "chat.completion",
+    "created": 1795628246,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.22,\n  \"rationale\": \"Urban residents in medium towns often use cars for airport access due to flexibility and limited direct rail links; local public transport is used less, and long-distance trains are least common but plausible for larger hub airports.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 397,
+      "completion_tokens": 81,
+      "total_tokens": 478,
+      "cost": 0.001442,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001442,
+        "upstream_inference_prompt_cost": 0.000794,
+        "upstream_inference_completions_cost": 0.000648
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628246-KPRX90Xhxnl8XDQR7HsJ",
+  "raw_prediction": {
+    "car": 0.55,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.22,
+    "rationale": "Urban residents in medium towns often use cars for airport access due to flexibility and limited direct rail links; local public transport is used less, and long-distance trains are least common but plausible for larger hub airports."
+  },
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.22,
+    "rationale": "Urban residents in medium towns often use cars for airport access due to flexibility and limited direct rail links; local public transport is used less, and long-distance trains are least common but plausible for larger hub airports."
+  },
+  "normalization": {
+    "sum_before": 1.12,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:37:28.195881+00:00",
+  "cost_exceeded_reservation": false
+}

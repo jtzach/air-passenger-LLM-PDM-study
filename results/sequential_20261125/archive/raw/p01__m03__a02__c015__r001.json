@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a02__c015__r001",
+  "block_id": "p01__m03__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzbegl_gr__18864b086b3b",
+  "round": 1,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "00cbd92c313b85b674cad0d144d8d4c1df0f70d3a8cde2376622db83813f7d60",
+  "started_utc": "2026-11-25T14:21:50.465774+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:22:02.087957+00:00",
+      "cost_usd": 0.00012738,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00012738,
+  "reservation_upper_bound_usd": 0.00212202,
+  "response_sha256": "9945f9f35468cecaeccba2155b493ca1517e3f90603ccabe3637986e610fe05c",
+  "response": {
+    "id": "gen-1795616510-FFF4xHHUOEIy7yjuepNu",
+    "object": "chat.completion",
+    "created": 1795616510,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.15,\n  \"long_distance_rail\": 0.08,\n  \"rationale\": \"Households with three companions may prefer car use for flexibility and convenience when traveling together, reducing reliance on local public transport and long-distance rail for airport access or egress.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 473,
+      "completion_tokens": 77,
+      "total_tokens": 550,
+      "cost": 0.00012738,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00012738,
+        "upstream_inference_prompt_cost": 6.3855e-05,
+        "upstream_inference_completions_cost": 6.3525e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795616510-FFF4xHHUOEIy7yjuepNu",
+  "raw_prediction": {
+    "car": 0.55,
+    "local_pt": 0.15,
+    "long_distance_rail": 0.08,
+    "rationale": "Households with three companions may prefer car use for flexibility and convenience when traveling together, reducing reliance on local public transport and long-distance rail for airport access or egress."
+  },
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.15,
+    "long_distance_rail": 0.08,
+    "rationale": "Households with three companions may prefer car use for flexibility and convenience when traveling together, reducing reliance on local public transport and long-distance rail for airport access or egress."
+  },
+  "normalization": {
+    "sum_before": 0.78,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:22:02.087957+00:00",
+  "cost_exceeded_reservation": false
+}

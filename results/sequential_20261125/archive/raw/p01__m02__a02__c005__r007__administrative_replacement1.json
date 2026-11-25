@@ -1,0 +1,100 @@
+{
+  "task_id": "p01__m02__a02__c005__r007__administrative_replacement1",
+  "block_id": "p01__m02__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzauto_gr1__faec8c191aa2",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "supersedes_task_id": "p01__m02__a02__c005__r007",
+  "request_sha256": "86c9f766ff4e2534c53bdd9471eb8a46f137b6be177a0b242165f1601cf5bb03",
+  "started_utc": "2026-11-25T17:34:57.382487+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:34:59.354147+00:00",
+      "cost_usd": 0.0002956,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002956,
+  "reservation_upper_bound_usd": 0.0051072,
+  "response_sha256": "a5baaeaa1db260f9638be7c936cbd828be5ef3f3b7478acd89a37625413fb7bc",
+  "response": {
+    "id": "gen-1795628096-hHOd6cKZaRhfXvc6vhjt",
+    "object": "chat.completion",
+    "created": 1795628096,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.20,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Two-car households likely increase car use to/from airports; local PT use remains near average; long-distance train use slightly lower as car is convenient for airport access.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 451,
+      "completion_tokens": 72,
+      "total_tokens": 523,
+      "cost": 0.0002956,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002956,
+        "upstream_inference_prompt_cost": 0.0001804,
+        "upstream_inference_completions_cost": 0.0001152
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795628096-hHOd6cKZaRhfXvc6vhjt",
+  "raw_prediction": {
+    "car": 0.55,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.1,
+    "rationale": "Two-car households likely increase car use to/from airports; local PT use remains near average; long-distance train use slightly lower as car is convenient for airport access."
+  },
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.1,
+    "rationale": "Two-car households likely increase car use to/from airports; local PT use remains near average; long-distance train use slightly lower as car is convenient for airport access."
+  },
+  "normalization": {
+    "sum_before": 0.8500000000000001,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:34:59.354147+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a02__c020__r006",
+  "block_id": "p01__m03__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__9ee7f61bb0c0",
+  "round": 6,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "cc939bceab0a362629fa2750ec17d684df701ea3ae2e5183c90f721585b6ae93",
+  "started_utc": "2026-11-25T14:31:35.106528+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:31:46.343919+00:00",
+      "cost_usd": 0.000127515,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000127515,
+  "reservation_upper_bound_usd": 0.00212034,
+  "response_sha256": "63cc3d3c5c21bf43f9009c68026b32ed286f5c757ff0a354433ce5e9c25b5bac",
+  "response": {
+    "id": "gen-1795617096-VIn5jQKiPnboKrhJXc5S",
+    "object": "chat.completion",
+    "created": 1795617096,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Three-night trips may involve more car use for flexibility at destination, reducing reliance on local transit and long-distance rail, which are more common in longer or urban-centric journeys.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 474,
+      "completion_tokens": 77,
+      "total_tokens": 551,
+      "cost": 0.000127515,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000127515,
+        "upstream_inference_prompt_cost": 6.399e-05,
+        "upstream_inference_completions_cost": 6.3525e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795617096-VIn5jQKiPnboKrhJXc5S",
+  "raw_prediction": {
+    "car": 0.45,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Three-night trips may involve more car use for flexibility at destination, reducing reliance on local transit and long-distance rail, which are more common in longer or urban-centric journeys."
+  },
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Three-night trips may involve more car use for flexibility at destination, reducing reliance on local transit and long-distance rail, which are more common in longer or urban-centric journeys."
+  },
+  "normalization": {
+    "sum_before": 0.73,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:31:46.343919+00:00",
+  "cost_exceeded_reservation": false
+}

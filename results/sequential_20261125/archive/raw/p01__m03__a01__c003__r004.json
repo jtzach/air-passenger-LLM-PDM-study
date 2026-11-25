@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a01__c003__r004",
+  "block_id": "p01__m03__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "unanchored",
+  "card_id": "reise__anzauto_gr1__bee31b0e88ae",
+  "round": 4,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "e33faac34fde5badeff37ffa6b1dad17f16dc72ebb87f5a5942e41b4ec5b77df",
+  "started_utc": "2026-11-25T14:28:06.846937+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:28:18.511497+00:00",
+      "cost_usd": 0.00012357,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00012357,
+  "reservation_upper_bound_usd": 0.0020019,
+  "response_sha256": "ed00bbdce3631bf4895a15284c4e2f42e52848576e1b7d756142acfc28c415c2",
+  "response": {
+    "id": "gen-1795616887-oDdPv9pBc9ZfPsCELvjW",
+    "object": "chat.completion",
+    "created": 1795616887,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.75,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.2,\n  \"rationale\": \"High car ownership suggests reliance on private vehicles for airport access. Long-distance rail may substitute for short-haul flights, but intermodality is limited. Urban transit use depends on airport connectivity and household travel patterns.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 402,
+      "completion_tokens": 84,
+      "total_tokens": 486,
+      "cost": 0.00012357,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00012357,
+        "upstream_inference_prompt_cost": 5.427e-05,
+        "upstream_inference_completions_cost": 6.93e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795616887-oDdPv9pBc9ZfPsCELvjW",
+  "raw_prediction": {
+    "car": 0.75,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.2,
+    "rationale": "High car ownership suggests reliance on private vehicles for airport access. Long-distance rail may substitute for short-haul flights, but intermodality is limited. Urban transit use depends on airport connectivity and household travel patterns."
+  },
+  "prediction": {
+    "car": 0.75,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.2,
+    "rationale": "High car ownership suggests reliance on private vehicles for airport access. Long-distance rail may substitute for short-haul flights, but intermodality is limited. Urban transit use depends on airport connectivity and household travel patterns."
+  },
+  "normalization": {
+    "sum_before": 1.3,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:28:18.511497+00:00",
+  "cost_exceeded_reservation": false
+}

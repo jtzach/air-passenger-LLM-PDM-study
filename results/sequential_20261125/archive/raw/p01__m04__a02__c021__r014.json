@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c021__r014",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__ef1ad3950de1",
+  "round": 14,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "874584fd6c29601e7380ff1b7b467f010cea6eab8640ce4e459b381ddc71b79d",
+  "started_utc": "2026-11-25T17:41:39.076371+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:41:40.255233+00:00",
+      "cost_usd": 0.001576,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001576,
+  "reservation_upper_bound_usd": 0.025547999999999998,
+  "response_sha256": "298319ae473067059aab901f758cf6ae9687472ceaa06f5156f04d603eea116e",
+  "response": {
+    "id": "gen-1795628498-htfWl5WI5ks3nrAC5GqZ",
+    "object": "chat.completion",
+    "created": 1795628498,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.42,\n  \"local_pt\": 0.24,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Single-night trips are likely to airports near home, increasing car/local PT use; long-distance rail less likely given short duration and need for flexibility. Marginal increases for car/PT, slight decrease for rail versus population rates.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 452,
+      "completion_tokens": 84,
+      "total_tokens": 536,
+      "cost": 0.001576,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001576,
+        "upstream_inference_prompt_cost": 0.000904,
+        "upstream_inference_completions_cost": 0.000672
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628498-htfWl5WI5ks3nrAC5GqZ",
+  "raw_prediction": {
+    "car": 0.42,
+    "local_pt": 0.24,
+    "long_distance_rail": 0.1,
+    "rationale": "Single-night trips are likely to airports near home, increasing car/local PT use; long-distance rail less likely given short duration and need for flexibility. Marginal increases for car/PT, slight decrease for rail versus population rates."
+  },
+  "prediction": {
+    "car": 0.42,
+    "local_pt": 0.24,
+    "long_distance_rail": 0.1,
+    "rationale": "Single-night trips are likely to airports near home, increasing car/local PT use; long-distance rail less likely given short duration and need for flexibility. Marginal increases for car/PT, slight decrease for rail versus population rates."
+  },
+  "normalization": {
+    "sum_before": 0.76,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:41:40.256177+00:00",
+  "cost_exceeded_reservation": false
+}

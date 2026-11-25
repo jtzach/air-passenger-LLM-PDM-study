@@ -1,0 +1,106 @@
+{
+  "task_id": "p01__m02__a02__c019__r002",
+  "block_id": "p01__m02__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__782410ef69d3",
+  "round": 2,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "c2da96974e87c880bb182c11c80fea7ce54d1b51662f86465f61da4012a7dd84",
+  "started_utc": "2026-11-25T14:24:52.663005+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "transport_error",
+      "detail": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>",
+      "utc": "2026-11-25T14:25:16.900507+00:00",
+      "cost_upper_bound_usd": 0.0017067999999999999
+    },
+    {
+      "number": 2,
+      "status": "response",
+      "utc": "2026-11-25T14:25:20.698825+00:00",
+      "cost_usd": 0.0003128,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0020196,
+  "reservation_upper_bound_usd": 0.0051204,
+  "response_sha256": "83ce23fae971d5b8e96b04b802d7c6d549c1b07920b27a23aadb8556454eb6ea",
+  "response": {
+    "id": "gen-1795616719-JlaWGOmpsTyIPNHv2seA",
+    "object": "chat.completion",
+    "created": 1795616719,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.50,\n  \"local_pt\": 0.30,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Longer trips (8-14 nights) likely increase car use for airport access and local travel; local public transport use rises with urban airports; long-distance rail less frequent due to flight preference for long trips.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 454,
+      "completion_tokens": 82,
+      "total_tokens": 536,
+      "cost": 0.0003128,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003128,
+        "upstream_inference_prompt_cost": 0.0001816,
+        "upstream_inference_completions_cost": 0.0001312
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795616719-JlaWGOmpsTyIPNHv2seA",
+  "raw_prediction": {
+    "car": 0.5,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "Longer trips (8-14 nights) likely increase car use for airport access and local travel; local public transport use rises with urban airports; long-distance rail less frequent due to flight preference for long trips."
+  },
+  "prediction": {
+    "car": 0.5,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "Longer trips (8-14 nights) likely increase car use for airport access and local travel; local public transport use rises with urban airports; long-distance rail less frequent due to flight preference for long trips."
+  },
+  "normalization": {
+    "sum_before": 0.9,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:25:20.698825+00:00",
+  "cost_exceeded_reservation": false
+}

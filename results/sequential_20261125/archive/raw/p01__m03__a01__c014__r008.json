@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a01__c014__r008",
+  "block_id": "p01__m03__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "unanchored",
+  "card_id": "reise__anzbegl_gr__154f6eb18583",
+  "round": 8,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "b56ee64f6927045e0553f35b420ee87062eec082a8f2c993aafbfe0defbc6aba",
+  "started_utc": "2026-11-25T17:35:51.257125+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:36:02.830735+00:00",
+      "cost_usd": 0.000125085,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000125085,
+  "reservation_upper_bound_usd": 0.00200694,
+  "response_sha256": "81ea0f48f205f55de46c732f9e135a3e1285cbf0be429380c4f619019b3aa4ff",
+  "response": {
+    "id": "gen-1795628150-TU2rE4uFZ4eUFI3XvDFn",
+    "object": "chat.completion",
+    "created": 1795628150,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.75,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.2,\n  \"rationale\": \"Solo travelers may rely on cars for flexible airport access, especially from suburban or rural areas, while public transport use depends on proximity to hubs. Long-distance rail is less likely due to flight-centric trip purposes and time efficiency.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 401,
+      "completion_tokens": 86,
+      "total_tokens": 487,
+      "cost": 0.000125085,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000125085,
+        "upstream_inference_prompt_cost": 5.4135e-05,
+        "upstream_inference_completions_cost": 7.095e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795628150-TU2rE4uFZ4eUFI3XvDFn",
+  "raw_prediction": {
+    "car": 0.75,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.2,
+    "rationale": "Solo travelers may rely on cars for flexible airport access, especially from suburban or rural areas, while public transport use depends on proximity to hubs. Long-distance rail is less likely due to flight-centric trip purposes and time efficiency."
+  },
+  "prediction": {
+    "car": 0.75,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.2,
+    "rationale": "Solo travelers may rely on cars for flexible airport access, especially from suburban or rural areas, while public transport use depends on proximity to hubs. Long-distance rail is less likely due to flight-centric trip purposes and time efficiency."
+  },
+  "normalization": {
+    "sum_before": 1.3,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:36:02.830735+00:00",
+  "cost_exceeded_reservation": false
+}

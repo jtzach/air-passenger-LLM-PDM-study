@@ -1,0 +1,106 @@
+{
+  "task_id": "p01__m03__a02__c022__r004",
+  "block_id": "p01__m03__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__f6e4375535d4",
+  "round": 4,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "df4ab9922bfb7f5ce3c78488e6ea68027edfaa0d363d1107a2c111dfbf295771",
+  "started_utc": "2026-11-25T14:28:34.852631+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "transport_error",
+      "detail": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>",
+      "utc": "2026-11-25T14:28:58.225008+00:00",
+      "cost_upper_bound_usd": 0.00070706
+    },
+    {
+      "number": 2,
+      "status": "response",
+      "utc": "2026-11-25T14:29:10.962905+00:00",
+      "cost_usd": 0.000121185,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000828245,
+  "reservation_upper_bound_usd": 0.0021211800000000003,
+  "response_sha256": "5baf31c40c881aeac4b71e11a4e6acdabc8effe6577c13f129a768af8b3bd4c2",
+  "response": {
+    "id": "gen-1795616940-xEHOM2PM3AHLTlHTIfEL",
+    "object": "chat.completion",
+    "created": 1795616940,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Longer stays may involve more car use for destination-area mobility, reducing reliance on local and long-distance rail compared to shorter trips.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 476,
+      "completion_tokens": 69,
+      "total_tokens": 545,
+      "cost": 0.000121185,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000121185,
+        "upstream_inference_prompt_cost": 6.426e-05,
+        "upstream_inference_completions_cost": 5.6925e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795616940-xEHOM2PM3AHLTlHTIfEL",
+  "raw_prediction": {
+    "car": 0.55,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Longer stays may involve more car use for destination-area mobility, reducing reliance on local and long-distance rail compared to shorter trips."
+  },
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Longer stays may involve more car use for destination-area mobility, reducing reliance on local and long-distance rail compared to shorter trips."
+  },
+  "normalization": {
+    "sum_before": 0.8300000000000001,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:29:10.962905+00:00",
+  "cost_exceeded_reservation": false
+}

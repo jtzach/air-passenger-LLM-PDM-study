@@ -1,0 +1,100 @@
+{
+  "task_id": "p01__m02__a01__c017__r007__administrative_replacement1",
+  "block_id": "p01__m02__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__456ee228eb2a",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "supersedes_task_id": "p01__m02__a01__c017__r007",
+  "request_sha256": "e1169f6d843bd2ccfddf2795c9449746b2ffd2f28d1b8b7efbbbb371b8a084db",
+  "started_utc": "2026-11-25T17:34:55.984507+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:34:57.572504+00:00",
+      "cost_usd": 0.0002812,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002812,
+  "reservation_upper_bound_usd": 0.004790399999999999,
+  "response_sha256": "5f0aedc9e853f2bdb151afd21a1152950e92853198d4d1922056d3a558a92ef6",
+  "response": {
+    "id": "gen-1795628095-NPS5xK4bSKBQ9qOR1YMV",
+    "object": "chat.completion",
+    "created": 1795628095,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.55,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"Moderate car and local public transport use likely for airport access and local travel; low long-distance rail overlap due to preference for flying on main journey segments with some regional train transfers possible.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 395,
+      "completion_tokens": 77,
+      "total_tokens": 472,
+      "cost": 0.0002812,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002812,
+        "upstream_inference_prompt_cost": 0.000158,
+        "upstream_inference_completions_cost": 0.0001232
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795628095-NPS5xK4bSKBQ9qOR1YMV",
+  "raw_prediction": {
+    "car": 0.65,
+    "local_pt": 0.55,
+    "long_distance_rail": 0.15,
+    "rationale": "Moderate car and local public transport use likely for airport access and local travel; low long-distance rail overlap due to preference for flying on main journey segments with some regional train transfers possible."
+  },
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.55,
+    "long_distance_rail": 0.15,
+    "rationale": "Moderate car and local public transport use likely for airport access and local travel; low long-distance rail overlap due to preference for flying on main journey segments with some regional train transfers possible."
+  },
+  "normalization": {
+    "sum_before": 1.35,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:34:57.573519+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a02__c021__r002",
+  "block_id": "p01__m03__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__ef1ad3950de1",
+  "round": 2,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "bb35c4509375e43e617cd9c4588105a377d64e90835b69776fa18ff956bb9db8",
+  "started_utc": "2026-11-25T14:25:13.229121+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:25:22.835241+00:00",
+      "cost_usd": 0.00012834,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00012834,
+  "reservation_upper_bound_usd": 0.00211992,
+  "response_sha256": "2bd81755478b07437f9c7000011a86e6652b7feedeebaae24992277aa82d800b",
+  "response": {
+    "id": "gen-1795616713-6MXr30mjnwRluWtuiBzO",
+    "object": "chat.completion",
+    "created": 1795616713,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.35,\n  \"local_pt\": 0.25,\n  \"long_distance_rail\": 0.08,\n  \"rationale\": \"Shorter trips may favor car access, especially from suburban areas, while long-distance rail is less likely for one-night journeys. Urban access may increase local public transport use slightly.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 474,
+      "completion_tokens": 78,
+      "total_tokens": 552,
+      "cost": 0.00012834,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00012834,
+        "upstream_inference_prompt_cost": 6.399e-05,
+        "upstream_inference_completions_cost": 6.435e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795616713-6MXr30mjnwRluWtuiBzO",
+  "raw_prediction": {
+    "car": 0.35,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.08,
+    "rationale": "Shorter trips may favor car access, especially from suburban areas, while long-distance rail is less likely for one-night journeys. Urban access may increase local public transport use slightly."
+  },
+  "prediction": {
+    "car": 0.35,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.08,
+    "rationale": "Shorter trips may favor car access, especially from suburban areas, while long-distance rail is less likely for one-night journeys. Urban access may increase local public transport use slightly."
+  },
+  "normalization": {
+    "sum_before": 0.6799999999999999,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:25:22.835241+00:00",
+  "cost_exceeded_reservation": false
+}

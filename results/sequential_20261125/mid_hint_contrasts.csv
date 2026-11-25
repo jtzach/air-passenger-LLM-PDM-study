@@ -1,0 +1,4 @@
+model_id,common_prefix_rounds,mean_round_gain_from_hint_pp,median_round_gain_from_hint_pp,unanchored_ensemble_rounds,anchored_ensemble_rounds,ensemble_mae_difference_pp,inference
+openai/gpt-4.1-mini,16,19.57540493495983,19.73556507159435,16,16,19.686705547959377,descriptive; not an additional allocated confirmatory contrast
+qwen/qwen3-235b-a22b-2507,8,12.221544142779807,12.238310130657668,10,8,12.342690587778261,descriptive; not an additional allocated confirmatory contrast
+openai/gpt-4.1,16,10.798203290073452,10.63504511667405,16,16,10.94190565895142,descriptive; not an additional allocated confirmatory contrast

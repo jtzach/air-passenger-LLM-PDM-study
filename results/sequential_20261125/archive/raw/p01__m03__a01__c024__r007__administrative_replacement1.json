@@ -1,0 +1,100 @@
+{
+  "task_id": "p01__m03__a01__c024__r007__administrative_replacement1",
+  "block_id": "p01__m03__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "unanchored",
+  "card_id": "no_persona",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "supersedes_task_id": "p01__m03__a01__c024__r007",
+  "request_sha256": "820631bef536eda764acc3de0c452deeba72d5da5e3069a3798053b08911e8a3",
+  "started_utc": "2026-11-25T17:35:04.649607+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:35:15.602320+00:00",
+      "cost_usd": 0.000117615,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000117615,
+  "reservation_upper_bound_usd": 0.00192042,
+  "response_sha256": "0b1dd721edc8cf731609e126733f8ed59f0a4f6f4bcaa8eb1767f3426722fbec",
+  "response": {
+    "id": "gen-1795628104-1vblnwZAv6Klu3lLP14Y",
+    "object": "chat.completion",
+    "created": 1795628104,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.4,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"Many German travelers drive to airports, especially from suburban or rural areas. Public transit use varies regionally. Long-distance rail competes less for air trips, but some combine rail with flights via hub cities.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 364,
+      "completion_tokens": 83,
+      "total_tokens": 447,
+      "cost": 0.000117615,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000117615,
+        "upstream_inference_prompt_cost": 4.914e-05,
+        "upstream_inference_completions_cost": 6.8475e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795628104-1vblnwZAv6Klu3lLP14Y",
+  "raw_prediction": {
+    "car": 0.65,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.25,
+    "rationale": "Many German travelers drive to airports, especially from suburban or rural areas. Public transit use varies regionally. Long-distance rail competes less for air trips, but some combine rail with flights via hub cities."
+  },
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.25,
+    "rationale": "Many German travelers drive to airports, especially from suburban or rural areas. Public transit use varies regionally. Long-distance rail competes less for air trips, but some combine rail with flights via hub cities."
+  },
+  "normalization": {
+    "sum_before": 1.3,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:35:15.602320+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m01__a02__c014__r002",
+  "block_id": "p01__m01__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzbegl_gr__154f6eb18583",
+  "round": 2,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "f98dd484389d140c052257b87417607e01592933cd217849eb96918c4fa82d1a",
+  "started_utc": "2026-11-25T14:24:14.463630+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:24:16.920719+00:00",
+      "cost_usd": 2.039e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.039e-05,
+  "reservation_upper_bound_usd": 0.00036462,
+  "response_sha256": "b4a7f16e450fc98f106ccaf9544d1e66d8d8851278d2450fac9fe257d36be363",
+  "response": {
+    "id": "gen-1795616655-CTu9r3XaQwz4iGGMb9Ux",
+    "object": "chat.completion",
+    "created": 1795616655,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.25, \"local_pt\": 0.18, \"long_distance_rail\": 0.08, \"rationale\": \"Since the cohort is 'no companion,' they likely prioritized convenience and speed over cost or flexibility. Car and local public transport would be more suitable for shorter distances, while long-distance rail is less common without companions.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 486,
+      "completion_tokens": 83,
+      "total_tokens": 569,
+      "cost": 2.039e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.039e-05,
+        "upstream_inference_prompt_cost": 1.624e-05,
+        "upstream_inference_completions_cost": 4.15e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616655-CTu9r3XaQwz4iGGMb9Ux",
+  "raw_prediction": {
+    "car": 0.25,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.08,
+    "rationale": "Since the cohort is 'no companion,' they likely prioritized convenience and speed over cost or flexibility. Car and local public transport would be more suitable for shorter distances, while long-distance rail is less common without companions."
+  },
+  "prediction": {
+    "car": 0.25,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.08,
+    "rationale": "Since the cohort is 'no companion,' they likely prioritized convenience and speed over cost or flexibility. Car and local public transport would be more suitable for shorter distances, while long-distance rail is less common without companions."
+  },
+  "normalization": {
+    "sum_before": 0.51,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:24:16.920719+00:00",
+  "cost_exceeded_reservation": false
+}

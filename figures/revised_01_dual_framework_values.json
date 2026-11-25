@@ -1,0 +1,35 @@
+{
+  "figure": "revised_01_dual_framework",
+  "canvas_inches": [
+    7.4,
+    5.0
+  ],
+  "matplotlib_version": "3.11.2",
+  "png_dpi": 300,
+  "pdf_svg_vector": true,
+  "text_within_canvas": true,
+  "input_file": null,
+  "input_sha256": null,
+  "values": {
+    "type": "conceptual diagram; no observed or simulated numerical results",
+    "mid": "Nonexclusive mode co-use within overnight journeys whose recorded main mode is aircraft.",
+    "mid_processing": "Four attributes selected from fourteen by normalized information gain with a fixed two-traveller/two-journey allocation; twenty-three single-attribute groups. Compare group-only and group-plus-public-overall-rate-hint arms.",
+    "fmg": "Exclusive reported airport-access category for originating departing passengers; six purpose-by-flight-type groups.",
+    "privacy": "Only generic group cards go to the model; airport observations, volumes, weights and numerical hints are excluded from requests. Approved six-group derived targets and normalized weights are published separately for offline evaluation; sources and native rows remain private.",
+    "interpretation": "Group-share estimates, not sampled synthetic passengers."
+  },
+  "files": {
+    "pdf": {
+      "file": "revised_01_dual_framework.pdf",
+      "sha256": "e4d442ad892a0a07b85ffa9a922ad95505191c32a7fe1ae143a235ba3ce94172"
+    },
+    "svg": {
+      "file": "revised_01_dual_framework.svg",
+      "sha256": "298e34a1c8e1558367eafe4cb7a716fa5b421791688d1f45f277259656016367"
+    },
+    "png": {
+      "file": "revised_01_dual_framework.png",
+      "sha256": "6afc1e201bee4dce17fc67edc9bfdf66bcd6529fc9c9bbb3c3da43721a885693"
+    }
+  }
+}

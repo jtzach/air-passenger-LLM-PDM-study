@@ -1,0 +1,100 @@
+{
+  "task_id": "p01__m03__a02__c008__r007__administrative_replacement1",
+  "block_id": "p01__m03__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__RegioStaR7__7b0e1c4f102a",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "supersedes_task_id": "p01__m03__a02__c008__r007",
+  "request_sha256": "c1794ff0ad3021f48cde9f71d4134b3b56045841d67cd2ea504b44fb9a5b3b19",
+  "started_utc": "2026-11-25T17:35:10.598651+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:35:22.420281+00:00",
+      "cost_usd": 0.000137415,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000137415,
+  "reservation_upper_bound_usd": 0.0021249599999999995,
+  "response_sha256": "605ac79027899d5270af82d228336ad038e41eb01619864decbb943a05a51adf",
+  "response": {
+    "id": "gen-1795628110-aF0nNhJbqYUoZg6YiItf",
+    "object": "chat.completion",
+    "created": 1795628110,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.15,\n  \"long_distance_rail\": 0.08,\n  \"rationale\": \"Urban metropolis residents may have better local transit access but higher car availability. Car use may increase for airport access, while long-distance rail and local public transport use may decrease due to proximity to major airports and car-centric trip chaining.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 474,
+      "completion_tokens": 89,
+      "total_tokens": 563,
+      "cost": 0.000137415,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000137415,
+        "upstream_inference_prompt_cost": 6.399e-05,
+        "upstream_inference_completions_cost": 7.3425e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795628110-aF0nNhJbqYUoZg6YiItf",
+  "raw_prediction": {
+    "car": 0.55,
+    "local_pt": 0.15,
+    "long_distance_rail": 0.08,
+    "rationale": "Urban metropolis residents may have better local transit access but higher car availability. Car use may increase for airport access, while long-distance rail and local public transport use may decrease due to proximity to major airports and car-centric trip chaining."
+  },
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.15,
+    "long_distance_rail": 0.08,
+    "rationale": "Urban metropolis residents may have better local transit access but higher car availability. Car use may increase for airport access, while long-distance rail and local public transport use may decrease due to proximity to major airports and car-centric trip chaining."
+  },
+  "normalization": {
+    "sum_before": 0.78,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:35:22.420281+00:00",
+  "cost_exceeded_reservation": false
+}

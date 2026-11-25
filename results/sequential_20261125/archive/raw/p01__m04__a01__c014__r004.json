@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c014__r004",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzbegl_gr__154f6eb18583",
+  "round": 4,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "65b9349670a47da0c5d172717f026340bdbe86c1f5c6d4ca0a683db5dd060e9d",
+  "started_utc": "2026-11-25T14:28:12.013770+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:28:14.055285+00:00",
+      "cost_usd": 0.001446,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001446,
+  "reservation_upper_bound_usd": 0.023933999999999997,
+  "response_sha256": "39d3e02602a3f3b935f14650e903af9f150a970fe35fd6f48721a323904cb0a0",
+  "response": {
+    "id": "gen-1795616892-2ykCAbCiSscFcBNyVz0N",
+    "object": "chat.completion",
+    "created": 1795616892,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.35,\n  \"local_pt\": 0.5,\n  \"long_distance_rail\": 0.2,\n  \"rationale\": \"Solo travellers may favour public transport to major airports, but many still use cars (including taxis/rideshares). Long-distance rail is less common, as most access is regional. No household companions makes lifts less likely.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 391,
+      "completion_tokens": 83,
+      "total_tokens": 474,
+      "cost": 0.001446,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001446,
+        "upstream_inference_prompt_cost": 0.000782,
+        "upstream_inference_completions_cost": 0.000664
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616892-2ykCAbCiSscFcBNyVz0N",
+  "raw_prediction": {
+    "car": 0.35,
+    "local_pt": 0.5,
+    "long_distance_rail": 0.2,
+    "rationale": "Solo travellers may favour public transport to major airports, but many still use cars (including taxis/rideshares). Long-distance rail is less common, as most access is regional. No household companions makes lifts less likely."
+  },
+  "prediction": {
+    "car": 0.35,
+    "local_pt": 0.5,
+    "long_distance_rail": 0.2,
+    "rationale": "Solo travellers may favour public transport to major airports, but many still use cars (including taxis/rideshares). Long-distance rail is less common, as most access is regional. No household companions makes lifts less likely."
+  },
+  "normalization": {
+    "sum_before": 1.05,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:28:14.055285+00:00",
+  "cost_exceeded_reservation": false
+}

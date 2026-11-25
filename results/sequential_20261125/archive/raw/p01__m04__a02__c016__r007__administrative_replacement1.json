@@ -1,0 +1,100 @@
+{
+  "task_id": "p01__m04__a02__c016__r007__administrative_replacement1",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzbegl_gr__b61cbc7c0dd2",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "supersedes_task_id": "p01__m04__a02__c016__r007",
+  "request_sha256": "51492aab59190367e2ca2d35d0828e51e3d8dd0068bf1de21feb531040b87eb7",
+  "started_utc": "2026-11-25T17:34:01.935736+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:34:03.460414+00:00",
+      "cost_usd": 0.001606,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001606,
+  "reservation_upper_bound_usd": 0.025572,
+  "response_sha256": "a305c30388922e18f382e4b451b57caf7af23528e1d6935a346b99303e0f7a33",
+  "response": {
+    "id": "gen-1795628041-gQYFPv4ULy2x2peWQWSh",
+    "object": "chat.completion",
+    "created": 1795628041,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.41,\n  \"local_pt\": 0.20,\n  \"long_distance_rail\": 0.11,\n  \"rationale\": \"Having one household companion slightly increases the likelihood of car use (convenience, cost-sharing), but public transport and long-distance rail are less affected. Group size of two may modestly decrease reliance on public/rail relative to solo travellers.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 451,
+      "completion_tokens": 88,
+      "total_tokens": 539,
+      "cost": 0.001606,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001606,
+        "upstream_inference_prompt_cost": 0.000902,
+        "upstream_inference_completions_cost": 0.000704
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628041-gQYFPv4ULy2x2peWQWSh",
+  "raw_prediction": {
+    "car": 0.41,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.11,
+    "rationale": "Having one household companion slightly increases the likelihood of car use (convenience, cost-sharing), but public transport and long-distance rail are less affected. Group size of two may modestly decrease reliance on public/rail relative to solo travellers."
+  },
+  "prediction": {
+    "car": 0.41,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.11,
+    "rationale": "Having one household companion slightly increases the likelihood of car use (convenience, cost-sharing), but public transport and long-distance rail are less affected. Group size of two may modestly decrease reliance on public/rail relative to solo travellers."
+  },
+  "normalization": {
+    "sum_before": 0.72,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:34:03.460414+00:00",
+  "cost_exceeded_reservation": false
+}

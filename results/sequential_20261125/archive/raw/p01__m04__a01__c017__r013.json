@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c017__r013",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__456ee228eb2a",
+  "round": 13,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "c96088cf31dfc741d54682771194cd2e213f9ebcc7d73d7be1772e18edfc3629",
+  "started_utc": "2026-11-25T17:41:28.974989+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:41:30.223757+00:00",
+      "cost_usd": 0.001486,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001486,
+  "reservation_upper_bound_usd": 0.023921999999999995,
+  "response_sha256": "3fa46d7264315d0a562ad26ba178d96ed81422f33b1ceca74a4a8aa9b368b2b8",
+  "response": {
+    "id": "gen-1795628488-7gFsppNHcyqQP8wsEGtp",
+    "object": "chat.completion",
+    "created": 1795628488,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.20,\n  \"rationale\": \"Journeys of 4-5 nights often involve regional airports or group travel, making car access likely. Local public transport is also common, especially for urban residents. Long-distance rail, while rising, is less frequent for airport access.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 395,
+      "completion_tokens": 87,
+      "total_tokens": 482,
+      "cost": 0.001486,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001486,
+        "upstream_inference_prompt_cost": 0.00079,
+        "upstream_inference_completions_cost": 0.000696
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628488-7gFsppNHcyqQP8wsEGtp",
+  "raw_prediction": {
+    "car": 0.55,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.2,
+    "rationale": "Journeys of 4-5 nights often involve regional airports or group travel, making car access likely. Local public transport is also common, especially for urban residents. Long-distance rail, while rising, is less frequent for airport access."
+  },
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.2,
+    "rationale": "Journeys of 4-5 nights often involve regional airports or group travel, making car access likely. Local public transport is also common, especially for urban residents. Long-distance rail, while rising, is less frequent for airport access."
+  },
+  "normalization": {
+    "sum_before": 1.1,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:41:30.223757+00:00",
+  "cost_exceeded_reservation": false
+}

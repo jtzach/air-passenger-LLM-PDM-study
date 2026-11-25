@@ -1,0 +1,100 @@
+{
+  "task_id": "p01__m03__a01__c021__r007__administrative_replacement1",
+  "block_id": "p01__m03__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__ef1ad3950de1",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "supersedes_task_id": "p01__m03__a01__c021__r007",
+  "request_sha256": "1cf40fca4b9cbc07700af9735ad6c656b5086aa4250d0cf0b25d0f2a5271934c",
+  "started_utc": "2026-11-25T17:34:31.242152+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:34:42.694419+00:00",
+      "cost_usd": 0.000115455,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000115455,
+  "reservation_upper_bound_usd": 0.00200484,
+  "response_sha256": "42376bd9195a131b67509c69d1e2da54d84c8f2dd58104c1fa9f6dc2fa2b2808",
+  "response": {
+    "id": "gen-1795628070-xNsJjOqS2WvAvLCKR5HG",
+    "object": "chat.completion",
+    "created": 1795628070,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.4,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"Short trips favor car access for flexibility. Urban airports may increase local transit use. Long-distance rail competes less for brief trips, reducing its role in access.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 403,
+      "completion_tokens": 74,
+      "total_tokens": 477,
+      "cost": 0.000115455,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000115455,
+        "upstream_inference_prompt_cost": 5.4405e-05,
+        "upstream_inference_completions_cost": 6.105e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795628070-xNsJjOqS2WvAvLCKR5HG",
+  "raw_prediction": {
+    "car": 0.65,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.15,
+    "rationale": "Short trips favor car access for flexibility. Urban airports may increase local transit use. Long-distance rail competes less for brief trips, reducing its role in access."
+  },
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.15,
+    "rationale": "Short trips favor car access for flexibility. Urban airports may increase local transit use. Long-distance rail competes less for brief trips, reducing its role in access."
+  },
+  "normalization": {
+    "sum_before": 1.2,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:34:42.695348+00:00",
+  "cost_exceeded_reservation": false
+}

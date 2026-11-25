@@ -1,0 +1,120 @@
+{
+  "task_id": "p02__m02__a01__c003__r003",
+  "block_id": "p02__m02__a01",
+  "panel_id": "fmg_2025",
+  "panel_index": 1,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "unanchored",
+  "card_id": "fmg_business_continental",
+  "round": 3,
+  "modes": [
+    "car_dropoff",
+    "car_airport_parking",
+    "car_offairport_parking",
+    "car_other_parking",
+    "taxi_ridehail",
+    "rental_carsharing",
+    "bus_transfer",
+    "s_bahn",
+    "uefex",
+    "other"
+  ],
+  "mutually_exclusive": true,
+  "request_sha256": "e742b05000ae6161341b91268b04308d51548d49271410affb9dfac11c070e32",
+  "started_utc": "2026-11-25T14:25:38.260462+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:25:41.399402+00:00",
+      "cost_usd": 0.0004856,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0004856,
+  "reservation_upper_bound_usd": 0.0057684,
+  "response_sha256": "61aa8c76401f17c3f870fb001fb2eaeb4537dc497b04d78ee172aa8c57cafe5f",
+  "response": {
+    "id": "gen-1795616738-VxyRkDbfjGpDoxDnfnNh",
+    "object": "chat.completion",
+    "created": 1795616738,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car_dropoff\": 0.25,\n  \"car_airport_parking\": 0.20,\n  \"car_offairport_parking\": 0.10,\n  \"car_other_parking\": 0.05,\n  \"taxi_ridehail\": 0.10,\n  \"rental_carsharing\": 0.05,\n  \"bus_transfer\": 0.10,\n  \"s_bahn\": 0.12,\n  \"uefex\": 0.02,\n  \"other\": 0.01,\n  \"rationale\": \"Business travelers likely use private car drop-off or parking and rail access; S-Bahn is common. Ridehail and bus fill gaps. UEFEX use is limited due to regional scope.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 570,
+      "completion_tokens": 161,
+      "total_tokens": 731,
+      "cost": 0.0004856,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0004856,
+        "upstream_inference_prompt_cost": 0.000228,
+        "upstream_inference_completions_cost": 0.0002576
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795616738-VxyRkDbfjGpDoxDnfnNh",
+  "raw_prediction": {
+    "car_dropoff": 0.25,
+    "car_airport_parking": 0.2,
+    "car_offairport_parking": 0.1,
+    "car_other_parking": 0.05,
+    "taxi_ridehail": 0.1,
+    "rental_carsharing": 0.05,
+    "bus_transfer": 0.1,
+    "s_bahn": 0.12,
+    "uefex": 0.02,
+    "other": 0.01,
+    "rationale": "Business travelers likely use private car drop-off or parking and rail access; S-Bahn is common. Ridehail and bus fill gaps. UEFEX use is limited due to regional scope."
+  },
+  "prediction": {
+    "car_dropoff": 0.25,
+    "car_airport_parking": 0.2,
+    "car_offairport_parking": 0.1,
+    "car_other_parking": 0.05,
+    "taxi_ridehail": 0.1,
+    "rental_carsharing": 0.05,
+    "bus_transfer": 0.1,
+    "s_bahn": 0.12,
+    "uefex": 0.02,
+    "other": 0.01,
+    "rationale": "Business travelers likely use private car drop-off or parking and rail access; S-Bahn is common. Ridehail and bus fill gaps. UEFEX use is limited due to regional scope."
+  },
+  "normalization": {
+    "sum_before": 1.0,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:25:41.399402+00:00",
+  "cost_exceeded_reservation": false
+}

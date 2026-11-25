@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a01__c018__r003",
+  "block_id": "p01__m03__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__6bcea89383ae",
+  "round": 3,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "4d175241def0ebc67a291b1762e1b7731d8d1e38f47a50a87603f02a3c8ad6c1",
+  "started_utc": "2026-11-25T14:25:29.674585+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:25:41.599407+00:00",
+      "cost_usd": 0.000118755,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000118755,
+  "reservation_upper_bound_usd": 0.00200526,
+  "response_sha256": "8c829eef36fc9e7abbef7f00391011c8289646f184502d5a3c789c862da87503",
+  "response": {
+    "id": "gen-1795616729-fvovC8wQFa7o5vI8O00e",
+    "object": "chat.completion",
+    "created": 1795616729,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.55,\n  \"long_distance_rail\": 0.35,\n  \"rationale\": \"Car and local public transport are likely for airport access and onward travel. Long-distance rail competes with air for shorter routes but may complement it for regional connections beyond the flight.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 403,
+      "completion_tokens": 78,
+      "total_tokens": 481,
+      "cost": 0.000118755,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000118755,
+        "upstream_inference_prompt_cost": 5.4405e-05,
+        "upstream_inference_completions_cost": 6.435e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795616729-fvovC8wQFa7o5vI8O00e",
+  "raw_prediction": {
+    "car": 0.65,
+    "local_pt": 0.55,
+    "long_distance_rail": 0.35,
+    "rationale": "Car and local public transport are likely for airport access and onward travel. Long-distance rail competes with air for shorter routes but may complement it for regional connections beyond the flight."
+  },
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.55,
+    "long_distance_rail": 0.35,
+    "rationale": "Car and local public transport are likely for airport access and onward travel. Long-distance rail competes with air for shorter routes but may complement it for regional connections beyond the flight."
+  },
+  "normalization": {
+    "sum_before": 1.55,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:25:41.599407+00:00",
+  "cost_exceeded_reservation": false
+}

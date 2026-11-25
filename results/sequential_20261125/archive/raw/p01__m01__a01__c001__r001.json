@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m01__a01__c001__r001",
+  "block_id": "p01__m01__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "unanchored",
+  "card_id": "reise__anzauto_gr1__296e9849dc3d",
+  "round": 1,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "d3503d1fc89e54aadfabeba7c679e0528c3d5ee118eb688086c2badf077bb820",
+  "started_utc": "2026-11-25T14:22:08.267742+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:22:10.063913+00:00",
+      "cost_usd": 1.703e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 1.703e-05,
+  "reservation_upper_bound_usd": 0.00033029999999999995,
+  "response_sha256": "dfae9d952bf9b58079abc689191634b8d245592666634e237c710a3f4c1e0ebe",
+  "response": {
+    "id": "gen-1795616528-mNR1nZZCAsX57HqwTJpV",
+    "object": "chat.completion",
+    "created": 1795616528,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.3, \"local_pt\": 0.2, \"long_distance_rail\": 0.1, \"rationale\": \"Without cars, individuals are more reliant on public transport. Combining this with an overnight flight suggests a trip involving some ground transport, likely buses or trains, for onward travel from the destination airport.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 412,
+      "completion_tokens": 75,
+      "total_tokens": 487,
+      "cost": 1.703e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.703e-05,
+        "upstream_inference_prompt_cost": 1.328e-05,
+        "upstream_inference_completions_cost": 3.75e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616528-mNR1nZZCAsX57HqwTJpV",
+  "raw_prediction": {
+    "car": 0.3,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.1,
+    "rationale": "Without cars, individuals are more reliant on public transport. Combining this with an overnight flight suggests a trip involving some ground transport, likely buses or trains, for onward travel from the destination airport."
+  },
+  "prediction": {
+    "car": 0.3,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.1,
+    "rationale": "Without cars, individuals are more reliant on public transport. Combining this with an overnight flight suggests a trip involving some ground transport, likely buses or trains, for onward travel from the destination airport."
+  },
+  "normalization": {
+    "sum_before": 0.6,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:22:10.063913+00:00",
+  "cost_exceeded_reservation": false
+}

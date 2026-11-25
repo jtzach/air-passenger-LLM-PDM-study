@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c014__r013",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzbegl_gr__154f6eb18583",
+  "round": 13,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "55abc8e8dfb47072d3f4ddfd03391c407b4f983b6988c5b54dbd59057c8af7cf",
+  "started_utc": "2026-11-25T17:41:12.011145+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:41:13.193685+00:00",
+      "cost_usd": 0.00143,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00143,
+  "reservation_upper_bound_usd": 0.023933999999999997,
+  "response_sha256": "05c64f0222f918106832761b4b6a710542744877489f644c56ab153e87218720",
+  "response": {
+    "id": "gen-1795628471-CjJk1KoWDafrXkVec0a7",
+    "object": "chat.completion",
+    "created": 1795628471,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.35,\n  \"local_pt\": 0.45,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"Solo travellers without household companions may prefer public transport for airport access, but cars (private, taxi, or shared) and long-distance rail are also common options for reaching airports, especially for intercity connections.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 391,
+      "completion_tokens": 81,
+      "total_tokens": 472,
+      "cost": 0.00143,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00143,
+        "upstream_inference_prompt_cost": 0.000782,
+        "upstream_inference_completions_cost": 0.000648
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628471-CjJk1KoWDafrXkVec0a7",
+  "raw_prediction": {
+    "car": 0.35,
+    "local_pt": 0.45,
+    "long_distance_rail": 0.25,
+    "rationale": "Solo travellers without household companions may prefer public transport for airport access, but cars (private, taxi, or shared) and long-distance rail are also common options for reaching airports, especially for intercity connections."
+  },
+  "prediction": {
+    "car": 0.35,
+    "local_pt": 0.45,
+    "long_distance_rail": 0.25,
+    "rationale": "Solo travellers without household companions may prefer public transport for airport access, but cars (private, taxi, or shared) and long-distance rail are also common options for reaching airports, especially for intercity connections."
+  },
+  "normalization": {
+    "sum_before": 1.05,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:41:13.193685+00:00",
+  "cost_exceeded_reservation": false
+}

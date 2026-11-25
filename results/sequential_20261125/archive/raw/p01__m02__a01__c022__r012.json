@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m02__a01__c022__r012",
+  "block_id": "p01__m02__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__f6e4375535d4",
+  "round": 12,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "4208afb581065d3c74d7c135fdf173c82c17ccbd155d03a413da1cf68d1552e9",
+  "started_utc": "2026-11-25T17:41:06.884441+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:41:08.182944+00:00",
+      "cost_usd": 0.0002684,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002684,
+  "reservation_upper_bound_usd": 0.004790399999999999,
+  "response_sha256": "9a2048b3b0bf556c41383ea0d5f3f17d68f6dcc7ac1181212d43d84407cccdf6",
+  "response": {
+    "id": "gen-1795628466-7fV7YZG7iU87frY9SEy8",
+    "object": "chat.completion",
+    "created": 1795628466,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.70,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"Moderate car and local public transport use likely for airport access; long-distance rail less frequent but possible for connecting trips or airport transfers within Germany.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 395,
+      "completion_tokens": 69,
+      "total_tokens": 464,
+      "cost": 0.0002684,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002684,
+        "upstream_inference_prompt_cost": 0.000158,
+        "upstream_inference_completions_cost": 0.0001104
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795628466-7fV7YZG7iU87frY9SEy8",
+  "raw_prediction": {
+    "car": 0.65,
+    "local_pt": 0.7,
+    "long_distance_rail": 0.25,
+    "rationale": "Moderate car and local public transport use likely for airport access; long-distance rail less frequent but possible for connecting trips or airport transfers within Germany."
+  },
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.7,
+    "long_distance_rail": 0.25,
+    "rationale": "Moderate car and local public transport use likely for airport access; long-distance rail less frequent but possible for connecting trips or airport transfers within Germany."
+  },
+  "normalization": {
+    "sum_before": 1.6,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:41:08.182944+00:00",
+  "cost_exceeded_reservation": false
+}

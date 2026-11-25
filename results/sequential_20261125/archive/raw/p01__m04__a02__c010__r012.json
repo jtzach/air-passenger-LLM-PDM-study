@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c010__r012",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__RegioStaR7__9f47524becab",
+  "round": 12,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "e91ce2e4a85c05b32ae71a011498058f3f52e952670f8a7dbd5357c2e186bec3",
+  "started_utc": "2026-11-25T17:40:50.801693+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:40:51.929204+00:00",
+      "cost_usd": 0.00152,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00152,
+  "reservation_upper_bound_usd": 0.025733999999999996,
+  "response_sha256": "f938bef8e094f3fe3a03ed7ee59643f7eb42801b151c439b228f33ae4777b8ed",
+  "response": {
+    "id": "gen-1795628450-wcQOyNXPJ1H4FGr5IqwT",
+    "object": "chat.completion",
+    "created": 1795628450,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.33,\n  \"local_pt\": 0.25,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"Urban-medium residents may rely less on cars and more on local public transport and rail compared to the national average, due to better service availability and lower car dependency in urbanized areas.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 456,
+      "completion_tokens": 76,
+      "total_tokens": 532,
+      "cost": 0.00152,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00152,
+        "upstream_inference_prompt_cost": 0.000912,
+        "upstream_inference_completions_cost": 0.000608
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628450-wcQOyNXPJ1H4FGr5IqwT",
+  "raw_prediction": {
+    "car": 0.33,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "Urban-medium residents may rely less on cars and more on local public transport and rail compared to the national average, due to better service availability and lower car dependency in urbanized areas."
+  },
+  "prediction": {
+    "car": 0.33,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "Urban-medium residents may rely less on cars and more on local public transport and rail compared to the national average, due to better service availability and lower car dependency in urbanized areas."
+  },
+  "normalization": {
+    "sum_before": 0.73,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:40:51.929204+00:00",
+  "cost_exceeded_reservation": false
+}

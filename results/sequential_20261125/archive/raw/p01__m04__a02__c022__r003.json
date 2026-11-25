@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c022__r003",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__f6e4375535d4",
+  "round": 3,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "df73fb68df58a6e9dfc711fed198f07722d82a1f7ec0d0af2f8700d6f3410ac9",
+  "started_utc": "2026-11-25T14:26:38.164586+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:26:39.550384+00:00",
+      "cost_usd": 0.00158,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00158,
+  "reservation_upper_bound_usd": 0.025566,
+  "response_sha256": "32d65d8fc0d810540296896b1e2d68b0ab8dd1a514365f4229151b42bc43addd",
+  "response": {
+    "id": "gen-1795616798-KdNURe6yFhzrq8sKyKPJ",
+    "object": "chat.completion",
+    "created": 1795616798,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.40,\n  \"local_pt\": 0.24,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"6-7 night stays suggest longer, possibly farther trips, increasing likelihood of rail/car to reach airports. Longer travel may encourage multimodal combinations, raising car and train use slightly above average, especially for regional airport access.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 454,
+      "completion_tokens": 84,
+      "total_tokens": 538,
+      "cost": 0.00158,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00158,
+        "upstream_inference_prompt_cost": 0.000908,
+        "upstream_inference_completions_cost": 0.000672
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616798-KdNURe6yFhzrq8sKyKPJ",
+  "raw_prediction": {
+    "car": 0.4,
+    "local_pt": 0.24,
+    "long_distance_rail": 0.15,
+    "rationale": "6-7 night stays suggest longer, possibly farther trips, increasing likelihood of rail/car to reach airports. Longer travel may encourage multimodal combinations, raising car and train use slightly above average, especially for regional airport access."
+  },
+  "prediction": {
+    "car": 0.4,
+    "local_pt": 0.24,
+    "long_distance_rail": 0.15,
+    "rationale": "6-7 night stays suggest longer, possibly farther trips, increasing likelihood of rail/car to reach airports. Longer travel may encourage multimodal combinations, raising car and train use slightly above average, especially for regional airport access."
+  },
+  "normalization": {
+    "sum_before": 0.79,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:26:39.550384+00:00",
+  "cost_exceeded_reservation": false
+}

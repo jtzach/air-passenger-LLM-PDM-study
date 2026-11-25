@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a02__c002__r006",
+  "block_id": "p01__m03__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzauto_gr1__79ed954bbe2c",
+  "round": 6,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "dd057fc7c94ed79f5637cca8b12d8bc2aad9c86ed900cf4f9f4ee2e7a6f4ff4f",
+  "started_utc": "2026-11-25T14:32:02.336938+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:32:10.646408+00:00",
+      "cost_usd": 0.00011775,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00011775,
+  "reservation_upper_bound_usd": 0.00212034,
+  "response_sha256": "cb0399c4264f58fbbf5783c3d011f9060b6561a48c5a24988eb919ad46da5be7",
+  "response": {
+    "id": "gen-1795617122-x6oVSW7tJZZSCzXalWIM",
+    "object": "chat.completion",
+    "created": 1795617122,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.15,\n  \"long_distance_rail\": 0.08,\n  \"rationale\": \"Higher household car ownership likely increases car dependency for trip access, reducing reliance on public transport modes for airport connections.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 475,
+      "completion_tokens": 65,
+      "total_tokens": 540,
+      "cost": 0.00011775,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00011775,
+        "upstream_inference_prompt_cost": 6.4125e-05,
+        "upstream_inference_completions_cost": 5.3625e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795617122-x6oVSW7tJZZSCzXalWIM",
+  "raw_prediction": {
+    "car": 0.65,
+    "local_pt": 0.15,
+    "long_distance_rail": 0.08,
+    "rationale": "Higher household car ownership likely increases car dependency for trip access, reducing reliance on public transport modes for airport connections."
+  },
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.15,
+    "long_distance_rail": 0.08,
+    "rationale": "Higher household car ownership likely increases car dependency for trip access, reducing reliance on public transport modes for airport connections."
+  },
+  "normalization": {
+    "sum_before": 0.88,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:32:10.646408+00:00",
+  "cost_exceeded_reservation": false
+}

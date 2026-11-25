@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a01__c010__r009",
+  "block_id": "p01__m03__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "unanchored",
+  "card_id": "reise__RegioStaR7__9f47524becab",
+  "round": 9,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "fcecda796697d0f86cdd39bae429fc9cbcbf27880e5ba1acb4a43e730a087058",
+  "started_utc": "2026-11-25T17:37:12.317904+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:37:22.125321+00:00",
+      "cost_usd": 0.00012507,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00012507,
+  "reservation_upper_bound_usd": 0.00201786,
+  "response_sha256": "add1437325cd48744cf9d06702a00561932361379748a549aad87f75083541fe",
+  "response": {
+    "id": "gen-1795628231-0BfklqMAM19KRi2ZyPYl",
+    "object": "chat.completion",
+    "created": 1795628231,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.45,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"In medium-sized urban areas, car use is common for flexibility and access. Public transit use is moderate due to coverage gaps. Long-distance rail competes less for airport access in these regions, lowering its probability.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 407,
+      "completion_tokens": 85,
+      "total_tokens": 492,
+      "cost": 0.00012507,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00012507,
+        "upstream_inference_prompt_cost": 5.4945e-05,
+        "upstream_inference_completions_cost": 7.0125e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795628231-0BfklqMAM19KRi2ZyPYl",
+  "raw_prediction": {
+    "car": 0.65,
+    "local_pt": 0.45,
+    "long_distance_rail": 0.25,
+    "rationale": "In medium-sized urban areas, car use is common for flexibility and access. Public transit use is moderate due to coverage gaps. Long-distance rail competes less for airport access in these regions, lowering its probability."
+  },
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.45,
+    "long_distance_rail": 0.25,
+    "rationale": "In medium-sized urban areas, car use is common for flexibility and access. Public transit use is moderate due to coverage gaps. Long-distance rail competes less for airport access in these regions, lowering its probability."
+  },
+  "normalization": {
+    "sum_before": 1.35,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:37:22.125321+00:00",
+  "cost_exceeded_reservation": false
+}

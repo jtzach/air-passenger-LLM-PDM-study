@@ -1,0 +1,104 @@
+[
+  {
+    "group": "Business / Domestic",
+    "card_id": "fmg_business_domestic",
+    "weight": 0.07920268115057472,
+    "observed": {
+      "car_dropoff": 0.11290882144852094,
+      "car_airport_parking": 0.22211391096164462,
+      "car_offairport_parking": 0.012509815479281785,
+      "car_other_parking": 0.007293741142208332,
+      "taxi_ridehail": 0.19903629417711646,
+      "rental_carsharing": 0.11617076998031664,
+      "bus_transfer": 0.07153771288235285,
+      "s_bahn": 0.24847943501798053,
+      "uefex": 0.003347588489223625,
+      "other": 0.006601910421354264
+    }
+  },
+  {
+    "group": "Private / Domestic",
+    "card_id": "fmg_private_domestic",
+    "weight": 0.05741670036896955,
+    "observed": {
+      "car_dropoff": 0.29434849524442913,
+      "car_airport_parking": 0.08170427176393094,
+      "car_offairport_parking": 0.04048857917776017,
+      "car_other_parking": 0.008228878822278561,
+      "taxi_ridehail": 0.05953686657449073,
+      "rental_carsharing": 0.05970898894460615,
+      "bus_transfer": 0.0772742010394252,
+      "s_bahn": 0.35919092797387836,
+      "uefex": 0.012240002711743659,
+      "other": 0.007278787747457605
+    }
+  },
+  {
+    "group": "Business / Continental",
+    "card_id": "fmg_business_continental",
+    "weight": 0.15371299843476394,
+    "observed": {
+      "car_dropoff": 0.11470330644628887,
+      "car_airport_parking": 0.1588704347219814,
+      "car_offairport_parking": 0.012653548060918453,
+      "car_other_parking": 0.00546142694198766,
+      "taxi_ridehail": 0.1735413924653301,
+      "rental_carsharing": 0.10655117366860953,
+      "bus_transfer": 0.10682575719410664,
+      "s_bahn": 0.29708347982252914,
+      "uefex": 0.014358898164548453,
+      "other": 0.009950582513699884
+    }
+  },
+  {
+    "group": "Private / Continental",
+    "card_id": "fmg_private_continental",
+    "weight": 0.5266593775732097,
+    "observed": {
+      "car_dropoff": 0.26468703739038796,
+      "car_airport_parking": 0.07245322093208274,
+      "car_offairport_parking": 0.08222437689832668,
+      "car_other_parking": 0.007912345796191891,
+      "taxi_ridehail": 0.05462416650804476,
+      "rental_carsharing": 0.03585040652461142,
+      "bus_transfer": 0.0751621156087607,
+      "s_bahn": 0.3767198865317443,
+      "uefex": 0.027098292421971888,
+      "other": 0.0032681513878777876
+    }
+  },
+  {
+    "group": "Business / Intercontinental",
+    "card_id": "fmg_business_intercontinental",
+    "weight": 0.02835938304361297,
+    "observed": {
+      "car_dropoff": 0.13365901547776274,
+      "car_airport_parking": 0.13789926486852686,
+      "car_offairport_parking": 0.0165229229902933,
+      "car_other_parking": 0.0,
+      "taxi_ridehail": 0.22082245856660668,
+      "rental_carsharing": 0.13563225110278104,
+      "bus_transfer": 0.09878659909860932,
+      "s_bahn": 0.23224904152673936,
+      "uefex": 0.008899812462285397,
+      "other": 0.0155286339063951
+    }
+  },
+  {
+    "group": "Private / Intercontinental",
+    "card_id": "fmg_private_intercontinental",
+    "weight": 0.1546488594288692,
+    "observed": {
+      "car_dropoff": 0.28209987849906115,
+      "car_airport_parking": 0.05459196638956193,
+      "car_offairport_parking": 0.0787217739912474,
+      "car_other_parking": 0.011317659213764522,
+      "taxi_ridehail": 0.0746333998046379,
+      "rental_carsharing": 0.05750886609010293,
+      "bus_transfer": 0.09448290352831025,
+      "s_bahn": 0.3166186556657825,
+      "uefex": 0.023534541724861996,
+      "other": 0.0064903550926695645
+    }
+  }
+]

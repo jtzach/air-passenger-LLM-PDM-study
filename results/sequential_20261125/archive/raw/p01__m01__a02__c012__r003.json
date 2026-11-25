@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m01__a02__c012__r003",
+  "block_id": "p01__m01__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__RegioStaR7__d3321efbbd2e",
+  "round": 3,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "33a0188326779660cf2c7ab4cf81a9a3a5ef0dc80b3dec6d012f2975a30c041b",
+  "started_utc": "2026-11-25T14:25:29.671472+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:25:31.412107+00:00",
+      "cost_usd": 2.377e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.377e-05,
+  "reservation_upper_bound_usd": 0.00036570000000000005,
+  "response_sha256": "c60f343942768d227f760e6b35f4a53c931989d0f6deb2f6faf350fb28808d3a",
+  "response": {
+    "id": "gen-1795616729-IMfxNI8gjY9vdOeS6hSj",
+    "object": "chat.completion",
+    "created": 1795616729,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.4, \"local_pt\": 0.25, \"long_distance_rail\": 0.15, \"rationale\": \"Rural to central city journeys often involve a car for initial travel, but the final leg may shift to rail due to city access. Local bus/rail use will be moderately higher than overall averages reflecting longer distances within the rural region.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 488,
+      "completion_tokens": 85,
+      "total_tokens": 573,
+      "cost": 2.377e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.377e-05,
+        "upstream_inference_prompt_cost": 1.952e-05,
+        "upstream_inference_completions_cost": 4.25e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616729-IMfxNI8gjY9vdOeS6hSj",
+  "raw_prediction": {
+    "car": 0.4,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "Rural to central city journeys often involve a car for initial travel, but the final leg may shift to rail due to city access. Local bus/rail use will be moderately higher than overall averages reflecting longer distances within the rural region."
+  },
+  "prediction": {
+    "car": 0.4,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "Rural to central city journeys often involve a car for initial travel, but the final leg may shift to rail due to city access. Local bus/rail use will be moderately higher than overall averages reflecting longer distances within the rural region."
+  },
+  "normalization": {
+    "sum_before": 0.8,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:25:31.412107+00:00",
+  "cost_exceeded_reservation": false
+}

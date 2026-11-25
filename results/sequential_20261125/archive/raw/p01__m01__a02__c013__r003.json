@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m01__a02__c013__r003",
+  "block_id": "p01__m01__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzbegl_gr__07f355b725cf",
+  "round": 3,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "23aec4d48491254e6000177f5b0c652e0d49f3c476289fa4fb5c81a2e14b59fb",
+  "started_utc": "2026-11-25T14:25:41.426424+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:25:43.203090+00:00",
+      "cost_usd": 2.328e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.328e-05,
+  "reservation_upper_bound_usd": 0.00036462,
+  "response_sha256": "52c6a642526b4694df179af5ce997e78250d3af782ed78e6b92de854d471de6a",
+  "response": {
+    "id": "gen-1795616741-QysmXGARkzv8PBnWyswD",
+    "object": "chat.completion",
+    "created": 1795616741,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.4, \"local_pt\": 0.25, \"long_distance_rail\": 0.15, \"rationale\": \"The cohort traveled with companions, suggesting a more leisure-oriented trip. Ground transport use is likely higher than the overall population due to convenience for group travel, though still less than aircraft.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 487,
+      "completion_tokens": 76,
+      "total_tokens": 563,
+      "cost": 2.328e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.328e-05,
+        "upstream_inference_prompt_cost": 1.948e-05,
+        "upstream_inference_completions_cost": 3.8e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616741-QysmXGARkzv8PBnWyswD",
+  "raw_prediction": {
+    "car": 0.4,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "The cohort traveled with companions, suggesting a more leisure-oriented trip. Ground transport use is likely higher than the overall population due to convenience for group travel, though still less than aircraft."
+  },
+  "prediction": {
+    "car": 0.4,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "The cohort traveled with companions, suggesting a more leisure-oriented trip. Ground transport use is likely higher than the overall population due to convenience for group travel, though still less than aircraft."
+  },
+  "normalization": {
+    "sum_before": 0.8,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:25:43.203090+00:00",
+  "cost_exceeded_reservation": false
+}

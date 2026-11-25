@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m01__a02__c010__r003",
+  "block_id": "p01__m01__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__RegioStaR7__9f47524becab",
+  "round": 3,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "d9f1f28f2a2f43ce57af78d87a74805dcebc3615b89e7fd3a6c1d9ed0818193f",
+  "started_utc": "2026-11-25T14:25:53.810360+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:25:58.107386+00:00",
+      "cost_usd": 2e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2e-05,
+  "reservation_upper_bound_usd": 0.00036774,
+  "response_sha256": "269920f0e1639a88c26dbc5fe89e8ee961428989ae9d826a71aca664a2c92a33",
+  "response": {
+    "id": "gen-1795616754-AyPzRCSoYNyp5flCk43S",
+    "object": "chat.completion",
+    "created": 1795616754,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.4, \"local_pt\": 0.25, \"long_distance_rail\": 0.15, \"rationale\": \"Medium-sized towns often have limited public transport compared to major cities. Residents may combine flight with car travel for convenience, while local rail use is likely lower than in dense urban areas.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 493,
+      "completion_tokens": 76,
+      "total_tokens": 569,
+      "cost": 2e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 176,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2e-05,
+        "upstream_inference_prompt_cost": 1.62e-05,
+        "upstream_inference_completions_cost": 3.8e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616754-AyPzRCSoYNyp5flCk43S",
+  "raw_prediction": {
+    "car": 0.4,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "Medium-sized towns often have limited public transport compared to major cities. Residents may combine flight with car travel for convenience, while local rail use is likely lower than in dense urban areas."
+  },
+  "prediction": {
+    "car": 0.4,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "Medium-sized towns often have limited public transport compared to major cities. Residents may combine flight with car travel for convenience, while local rail use is likely lower than in dense urban areas."
+  },
+  "normalization": {
+    "sum_before": 0.8,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:25:58.107386+00:00",
+  "cost_exceeded_reservation": false
+}

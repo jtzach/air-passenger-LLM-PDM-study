@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c014__r006",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzbegl_gr__154f6eb18583",
+  "round": 6,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "981da2102af40e832fde118197ae590cf5b779d69637c2722dcc7142fd4519cb",
+  "started_utc": "2026-11-25T14:32:03.478239+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:32:05.025162+00:00",
+      "cost_usd": 0.00154,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00154,
+  "reservation_upper_bound_usd": 0.025577999999999997,
+  "response_sha256": "22cd5c457dca104fd16b2454342ed18f781ba2a4b003cdd6da4a1d6b2e78abd3",
+  "response": {
+    "id": "gen-1795617123-VAHPrPohF4PhHzA3hIzU",
+    "object": "chat.completion",
+    "created": 1795617123,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.35,\n  \"local_pt\": 0.23,\n  \"long_distance_rail\": 0.13,\n  \"rationale\": \"Solo travellers may use car slightly less due to lack of household companions, shifting some to local public transport; long-distance rail and public transport may see slight increases, but not dramatically differing from population rates.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 450,
+      "completion_tokens": 80,
+      "total_tokens": 530,
+      "cost": 0.00154,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00154,
+        "upstream_inference_prompt_cost": 0.0009,
+        "upstream_inference_completions_cost": 0.00064
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795617123-VAHPrPohF4PhHzA3hIzU",
+  "raw_prediction": {
+    "car": 0.35,
+    "local_pt": 0.23,
+    "long_distance_rail": 0.13,
+    "rationale": "Solo travellers may use car slightly less due to lack of household companions, shifting some to local public transport; long-distance rail and public transport may see slight increases, but not dramatically differing from population rates."
+  },
+  "prediction": {
+    "car": 0.35,
+    "local_pt": 0.23,
+    "long_distance_rail": 0.13,
+    "rationale": "Solo travellers may use car slightly less due to lack of household companions, shifting some to local public transport; long-distance rail and public transport may see slight increases, but not dramatically differing from population rates."
+  },
+  "normalization": {
+    "sum_before": 0.71,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:32:05.025162+00:00",
+  "cost_exceeded_reservation": false
+}

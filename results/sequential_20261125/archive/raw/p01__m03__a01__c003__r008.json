@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a01__c003__r008",
+  "block_id": "p01__m03__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "unanchored",
+  "card_id": "reise__anzauto_gr1__bee31b0e88ae",
+  "round": 8,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "7a029e702f95eb5d5817d440526cdd145bd1ee21006cbced5257da3c6b2341cd",
+  "started_utc": "2026-11-25T17:35:38.460903+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:35:49.066436+00:00",
+      "cost_usd": 0.00012522,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00012522,
+  "reservation_upper_bound_usd": 0.0020019,
+  "response_sha256": "a99c9a91e5d6548384f7abf2859d35e202bc4b575a53676b3a1d46aa2223819c",
+  "response": {
+    "id": "gen-1795628137-cy2GoDN4oE5xe5e8x5Lo",
+    "object": "chat.completion",
+    "created": 1795628137,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.85,\n  \"local_pt\": 0.3,\n  \"long_distance_rail\": 0.2,\n  \"rationale\": \"High car availability suggests frequent car use for airport access. Public transport use is lower due to likely reliance on private vehicles. Long-distance rail competes less when car ownership is high and flights are chosen despite proximity to rail networks.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 402,
+      "completion_tokens": 86,
+      "total_tokens": 488,
+      "cost": 0.00012522,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00012522,
+        "upstream_inference_prompt_cost": 5.427e-05,
+        "upstream_inference_completions_cost": 7.095e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795628137-cy2GoDN4oE5xe5e8x5Lo",
+  "raw_prediction": {
+    "car": 0.85,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.2,
+    "rationale": "High car availability suggests frequent car use for airport access. Public transport use is lower due to likely reliance on private vehicles. Long-distance rail competes less when car ownership is high and flights are chosen despite proximity to rail networks."
+  },
+  "prediction": {
+    "car": 0.85,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.2,
+    "rationale": "High car availability suggests frequent car use for airport access. Public transport use is lower due to likely reliance on private vehicles. Long-distance rail competes less when car ownership is high and flights are chosen despite proximity to rail networks."
+  },
+  "normalization": {
+    "sum_before": 1.35,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:35:49.066436+00:00",
+  "cost_exceeded_reservation": false
+}

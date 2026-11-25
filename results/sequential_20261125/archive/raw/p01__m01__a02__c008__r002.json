@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m01__a02__c008__r002",
+  "block_id": "p01__m01__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__RegioStaR7__7b0e1c4f102a",
+  "round": 2,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "f74b7244cf087cf9e24bf9d6146dfd61c8fc4f15092e07c7e8118a5b5bf231a6",
+  "started_utc": "2026-11-25T14:23:09.966736+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:23:12.120227+00:00",
+      "cost_usd": 2.078e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.078e-05,
+  "reservation_upper_bound_usd": 0.00036545999999999996,
+  "response_sha256": "6c0ed5edf284665a9ae42e7200fab7901d8b4b0ce56fe74ab0be151e35d276df",
+  "response": {
+    "id": "gen-1795616590-cDTfEkKNgg9ON90Krlug",
+    "object": "chat.completion",
+    "created": 1795616590,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.3,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.09,\n  \"rationale\": \"Metropolitan residents may still use car for shorter trips combined with air travel. Local public transport use will be lower than the overall population, and long-distance rail likely lower too due to air travel convenience.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 487,
+      "completion_tokens": 90,
+      "total_tokens": 577,
+      "cost": 2.078e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.078e-05,
+        "upstream_inference_prompt_cost": 1.628e-05,
+        "upstream_inference_completions_cost": 4.5e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616590-cDTfEkKNgg9ON90Krlug",
+  "raw_prediction": {
+    "car": 0.3,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.09,
+    "rationale": "Metropolitan residents may still use car for shorter trips combined with air travel. Local public transport use will be lower than the overall population, and long-distance rail likely lower too due to air travel convenience."
+  },
+  "prediction": {
+    "car": 0.3,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.09,
+    "rationale": "Metropolitan residents may still use car for shorter trips combined with air travel. Local public transport use will be lower than the overall population, and long-distance rail likely lower too due to air travel convenience."
+  },
+  "normalization": {
+    "sum_before": 0.57,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:23:12.120227+00:00",
+  "cost_exceeded_reservation": false
+}

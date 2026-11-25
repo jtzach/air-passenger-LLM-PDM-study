@@ -1,0 +1,120 @@
+{
+  "task_id": "p02__m04__a01__c002__r013",
+  "block_id": "p02__m04__a01",
+  "panel_id": "fmg_2025",
+  "panel_index": 1,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "fmg_private_domestic",
+  "round": 13,
+  "modes": [
+    "car_dropoff",
+    "car_airport_parking",
+    "car_offairport_parking",
+    "car_other_parking",
+    "taxi_ridehail",
+    "rental_carsharing",
+    "bus_transfer",
+    "s_bahn",
+    "uefex",
+    "other"
+  ],
+  "mutually_exclusive": true,
+  "request_sha256": "37d280e351890c49d21a5d191e97b058ba79dc0eb55fefe71ac0dee866cc5dbe",
+  "started_utc": "2026-11-25T17:41:14.878332+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:41:17.627258+00:00",
+      "cost_usd": 0.002426,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.002426,
+  "reservation_upper_bound_usd": 0.029112000000000002,
+  "response_sha256": "23d012f63f83a69f6995670edc24338432369dad88c155d4d478cd6531194abf",
+  "response": {
+    "id": "gen-1795628474-huTRbwZlwCRnqlwikVKT",
+    "object": "chat.completion",
+    "created": 1795628474,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car_dropoff\": 0.23,\n  \"car_airport_parking\": 0.18,\n  \"car_offairport_parking\": 0.05,\n  \"car_other_parking\": 0.01,\n  \"taxi_ridehail\": 0.09,\n  \"rental_carsharing\": 0.03,\n  \"bus_transfer\": 0.07,\n  \"s_bahn\": 0.29,\n  \"uefex\": 0.03,\n  \"other\": 0.02,\n  \"rationale\": \"Private-trip domestic flyers likely prefer S-Bahn and car access; taxi, bus, and parking offsite serve smaller shares due to convenience, cost, and regional transport patterns.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 581,
+      "completion_tokens": 158,
+      "total_tokens": 739,
+      "cost": 0.002426,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002426,
+        "upstream_inference_prompt_cost": 0.001162,
+        "upstream_inference_completions_cost": 0.001264
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628474-huTRbwZlwCRnqlwikVKT",
+  "raw_prediction": {
+    "car_dropoff": 0.23,
+    "car_airport_parking": 0.18,
+    "car_offairport_parking": 0.05,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.09,
+    "rental_carsharing": 0.03,
+    "bus_transfer": 0.07,
+    "s_bahn": 0.29,
+    "uefex": 0.03,
+    "other": 0.02,
+    "rationale": "Private-trip domestic flyers likely prefer S-Bahn and car access; taxi, bus, and parking offsite serve smaller shares due to convenience, cost, and regional transport patterns."
+  },
+  "prediction": {
+    "car_dropoff": 0.23,
+    "car_airport_parking": 0.18,
+    "car_offairport_parking": 0.05,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.09,
+    "rental_carsharing": 0.03,
+    "bus_transfer": 0.07,
+    "s_bahn": 0.29,
+    "uefex": 0.03,
+    "other": 0.02,
+    "rationale": "Private-trip domestic flyers likely prefer S-Bahn and car access; taxi, bus, and parking offsite serve smaller shares due to convenience, cost, and regional transport patterns."
+  },
+  "normalization": {
+    "sum_before": 1.0,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:41:17.646774+00:00",
+  "cost_exceeded_reservation": false
+}

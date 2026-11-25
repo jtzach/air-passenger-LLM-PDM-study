@@ -1,0 +1,120 @@
+{
+  "task_id": "p02__m02__a01__c007__r005",
+  "block_id": "p02__m02__a01",
+  "panel_id": "fmg_2025",
+  "panel_index": 1,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "unanchored",
+  "card_id": "no_persona",
+  "round": 5,
+  "modes": [
+    "car_dropoff",
+    "car_airport_parking",
+    "car_offairport_parking",
+    "car_other_parking",
+    "taxi_ridehail",
+    "rental_carsharing",
+    "bus_transfer",
+    "s_bahn",
+    "uefex",
+    "other"
+  ],
+  "mutually_exclusive": true,
+  "request_sha256": "e224621c5cc24b1a028913d1c4e99b46473dd815f2c84701fb8d6e2889db18df",
+  "started_utc": "2026-11-25T14:29:54.173307+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:29:56.462513+00:00",
+      "cost_usd": 0.000462,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000462,
+  "reservation_upper_bound_usd": 0.0055476,
+  "response_sha256": "f4747fd9fc9936e66716386bd10bfed6aedaff6e7bfd99748606a41c033c3f00",
+  "response": {
+    "id": "gen-1795616994-ExyINkpB9bCCoGqqWY2k",
+    "object": "chat.completion",
+    "created": 1795616994,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car_dropoff\": 0.20,\n  \"car_airport_parking\": 0.15,\n  \"car_offairport_parking\": 0.10,\n  \"car_other_parking\": 0.05,\n  \"taxi_ridehail\": 0.10,\n  \"rental_carsharing\": 0.05,\n  \"bus_transfer\": 0.10,\n  \"s_bahn\": 0.20,\n  \"uefex\": 0.03,\n  \"other\": 0.02,\n  \"rationale\": \"Balanced access modes reflect Munich's strong rail, parking options, and urban ride services; S-Bahn and car dropoff dominate due to convenience and local habits.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 535,
+      "completion_tokens": 155,
+      "total_tokens": 690,
+      "cost": 0.000462,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000462,
+        "upstream_inference_prompt_cost": 0.000214,
+        "upstream_inference_completions_cost": 0.000248
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795616994-ExyINkpB9bCCoGqqWY2k",
+  "raw_prediction": {
+    "car_dropoff": 0.2,
+    "car_airport_parking": 0.15,
+    "car_offairport_parking": 0.1,
+    "car_other_parking": 0.05,
+    "taxi_ridehail": 0.1,
+    "rental_carsharing": 0.05,
+    "bus_transfer": 0.1,
+    "s_bahn": 0.2,
+    "uefex": 0.03,
+    "other": 0.02,
+    "rationale": "Balanced access modes reflect Munich's strong rail, parking options, and urban ride services; S-Bahn and car dropoff dominate due to convenience and local habits."
+  },
+  "prediction": {
+    "car_dropoff": 0.2,
+    "car_airport_parking": 0.15,
+    "car_offairport_parking": 0.1,
+    "car_other_parking": 0.05,
+    "taxi_ridehail": 0.1,
+    "rental_carsharing": 0.05,
+    "bus_transfer": 0.1,
+    "s_bahn": 0.2,
+    "uefex": 0.03,
+    "other": 0.02,
+    "rationale": "Balanced access modes reflect Munich's strong rail, parking options, and urban ride services; S-Bahn and car dropoff dominate due to convenience and local habits."
+  },
+  "normalization": {
+    "sum_before": 1.0,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:29:56.462513+00:00",
+  "cost_exceeded_reservation": false
+}

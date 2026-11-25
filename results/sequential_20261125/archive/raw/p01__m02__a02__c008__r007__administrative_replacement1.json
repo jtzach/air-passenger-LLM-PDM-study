@@ -1,0 +1,100 @@
+{
+  "task_id": "p01__m02__a02__c008__r007__administrative_replacement1",
+  "block_id": "p01__m02__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__RegioStaR7__7b0e1c4f102a",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "supersedes_task_id": "p01__m02__a02__c008__r007",
+  "request_sha256": "97a33fc998f1f0c8b7f6d3730ee1c5b59cba552cb3d1871d6c4130a8377753ff",
+  "started_utc": "2026-11-25T17:34:45.689971+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:34:46.908221+00:00",
+      "cost_usd": 0.000286,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000286,
+  "reservation_upper_bound_usd": 0.00513,
+  "response_sha256": "deae98af3d65daaf863b36ee3da22db40e45206de92f22d596c601bfe080289c",
+  "response": {
+    "id": "gen-1795628084-1V6V0Xup3iDqWcs6uo2w",
+    "object": "chat.completion",
+    "created": 1795628084,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.30,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Urban metropolis residents likely rely more on local public transit and car-sharing for airport access, slightly reducing train use compared to overall averages.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 451,
+      "completion_tokens": 66,
+      "total_tokens": 517,
+      "cost": 0.000286,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000286,
+        "upstream_inference_prompt_cost": 0.0001804,
+        "upstream_inference_completions_cost": 0.0001056
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795628084-1V6V0Xup3iDqWcs6uo2w",
+  "raw_prediction": {
+    "car": 0.45,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "Urban metropolis residents likely rely more on local public transit and car-sharing for airport access, slightly reducing train use compared to overall averages."
+  },
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "Urban metropolis residents likely rely more on local public transit and car-sharing for airport access, slightly reducing train use compared to overall averages."
+  },
+  "normalization": {
+    "sum_before": 0.85,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:34:46.908221+00:00",
+  "cost_exceeded_reservation": false
+}

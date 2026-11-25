@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c021__r003",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__ef1ad3950de1",
+  "round": 3,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "6f62fddb623c0432f62e5278f7bcf5c6a2b3d52999fe6cb7880731bc858d7146",
+  "started_utc": "2026-11-25T14:26:33.518557+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:26:35.143694+00:00",
+      "cost_usd": 0.001458,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001458,
+  "reservation_upper_bound_usd": 0.023903999999999998,
+  "response_sha256": "ce94c50f8e0992915054b074291123e1cf393429c6db2ce8681c26ee12dab8a9",
+  "response": {
+    "id": "gen-1795616793-ACGG7KNENNrqfp65w6lE",
+    "object": "chat.completion",
+    "created": 1795616793,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.60,\n  \"local_pt\": 0.30,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"For a short 1-night trip, convenience and time-saving are prioritized. Many use cars for airport access, fewer use local public transport, and long-distance rail is less common due to time constraints and short trip duration.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 393,
+      "completion_tokens": 84,
+      "total_tokens": 477,
+      "cost": 0.001458,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001458,
+        "upstream_inference_prompt_cost": 0.000786,
+        "upstream_inference_completions_cost": 0.000672
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616793-ACGG7KNENNrqfp65w6lE",
+  "raw_prediction": {
+    "car": 0.6,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "For a short 1-night trip, convenience and time-saving are prioritized. Many use cars for airport access, fewer use local public transport, and long-distance rail is less common due to time constraints and short trip duration."
+  },
+  "prediction": {
+    "car": 0.6,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "For a short 1-night trip, convenience and time-saving are prioritized. Many use cars for airport access, fewer use local public transport, and long-distance rail is less common due to time constraints and short trip duration."
+  },
+  "normalization": {
+    "sum_before": 1.0,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:26:35.143694+00:00",
+  "cost_exceeded_reservation": false
+}

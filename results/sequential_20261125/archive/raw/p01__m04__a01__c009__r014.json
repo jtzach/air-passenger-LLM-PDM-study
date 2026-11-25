@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c009__r014",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__RegioStaR7__7cdab1586e04",
+  "round": 14,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "33449dde930cebfec0228ac0b14b87486e49c6291448fa402596eabf498f8a6e",
+  "started_utc": "2026-11-25T17:41:48.519777+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:41:49.806132+00:00",
+      "cost_usd": 0.001432,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001432,
+  "reservation_upper_bound_usd": 0.024065999999999997,
+  "response_sha256": "a505e6763cb99ba7761cca25f7af078d071ae47d813c7328ba93f44282032d8f",
+  "response": {
+    "id": "gen-1795628507-FnrDuLO1P1zBS5Zybykp",
+    "object": "chat.completion",
+    "created": 1795628507,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.70,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"Urban dwellers often use public transport for airport access, but car remains common, especially for convenience or luggage. Long-distance rail is plausible for intercity airport trips, but less frequent than local modes.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 396,
+      "completion_tokens": 80,
+      "total_tokens": 476,
+      "cost": 0.001432,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001432,
+        "upstream_inference_prompt_cost": 0.000792,
+        "upstream_inference_completions_cost": 0.00064
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628507-FnrDuLO1P1zBS5Zybykp",
+  "raw_prediction": {
+    "car": 0.45,
+    "local_pt": 0.7,
+    "long_distance_rail": 0.25,
+    "rationale": "Urban dwellers often use public transport for airport access, but car remains common, especially for convenience or luggage. Long-distance rail is plausible for intercity airport trips, but less frequent than local modes."
+  },
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.7,
+    "long_distance_rail": 0.25,
+    "rationale": "Urban dwellers often use public transport for airport access, but car remains common, especially for convenience or luggage. Long-distance rail is plausible for intercity airport trips, but less frequent than local modes."
+  },
+  "normalization": {
+    "sum_before": 1.4,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:41:49.806132+00:00",
+  "cost_exceeded_reservation": false
+}

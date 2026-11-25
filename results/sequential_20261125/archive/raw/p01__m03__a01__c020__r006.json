@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a01__c020__r006",
+  "block_id": "p01__m03__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__9ee7f61bb0c0",
+  "round": 6,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "7f0a124b70eafc03a5fd5f168b89d5c49a92f9e50b681237439c4b3d902b149c",
+  "started_utc": "2026-11-25T14:32:10.427045+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:32:17.932265+00:00",
+      "cost_usd": 0.000117105,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000117105,
+  "reservation_upper_bound_usd": 0.00200526,
+  "response_sha256": "c28bb691bb35ebcb47e1c0ed23e709eabe1bf043fd2573518e21bf96954085d0",
+  "response": {
+    "id": "gen-1795617130-JMnqlE9v8zrikNEvmJ6J",
+    "object": "chat.completion",
+    "created": 1795617130,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.75,\n  \"local_pt\": 0.4,\n  \"long_distance_rail\": 0.2,\n  \"rationale\": \"Longer stays suggest multi-modal access; car use likely for flexibility. Urban destinations may involve local transit. Long-distance rail competes less for air trips with three-night stays.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 403,
+      "completion_tokens": 76,
+      "total_tokens": 479,
+      "cost": 0.000117105,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000117105,
+        "upstream_inference_prompt_cost": 5.4405e-05,
+        "upstream_inference_completions_cost": 6.27e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795617130-JMnqlE9v8zrikNEvmJ6J",
+  "raw_prediction": {
+    "car": 0.75,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.2,
+    "rationale": "Longer stays suggest multi-modal access; car use likely for flexibility. Urban destinations may involve local transit. Long-distance rail competes less for air trips with three-night stays."
+  },
+  "prediction": {
+    "car": 0.75,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.2,
+    "rationale": "Longer stays suggest multi-modal access; car use likely for flexibility. Urban destinations may involve local transit. Long-distance rail competes less for air trips with three-night stays."
+  },
+  "normalization": {
+    "sum_before": 1.35,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:32:17.932265+00:00",
+  "cost_exceeded_reservation": false
+}

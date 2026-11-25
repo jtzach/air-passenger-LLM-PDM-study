@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c014__r003",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzbegl_gr__154f6eb18583",
+  "round": 3,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "c4ee3ec485125dccc0d27efe9752c91e7d3cda533cacdaf2aec46ea5a654efdf",
+  "started_utc": "2026-11-25T14:26:00.529884+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:26:03.057231+00:00",
+      "cost_usd": 0.001406,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001406,
+  "reservation_upper_bound_usd": 0.023933999999999997,
+  "response_sha256": "012e15e61a57cd95f88dd113f8ebafa0ac57bbcee57222816568d8aebe826149",
+  "response": {
+    "id": "gen-1795616760-eu2VQ81g2DMPCD3TA1rL",
+    "object": "chat.completion",
+    "created": 1795616760,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.40,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.20,\n  \"rationale\": \"Solo travellers may favor convenience and flexibility (car), but also use public/local transport for cost or access. Long-distance rail is less likely for airport access but still plausible for intercity connections.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 391,
+      "completion_tokens": 78,
+      "total_tokens": 469,
+      "cost": 0.001406,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001406,
+        "upstream_inference_prompt_cost": 0.000782,
+        "upstream_inference_completions_cost": 0.000624
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616760-eu2VQ81g2DMPCD3TA1rL",
+  "raw_prediction": {
+    "car": 0.4,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.2,
+    "rationale": "Solo travellers may favor convenience and flexibility (car), but also use public/local transport for cost or access. Long-distance rail is less likely for airport access but still plausible for intercity connections."
+  },
+  "prediction": {
+    "car": 0.4,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.2,
+    "rationale": "Solo travellers may favor convenience and flexibility (car), but also use public/local transport for cost or access. Long-distance rail is less likely for airport access but still plausible for intercity connections."
+  },
+  "normalization": {
+    "sum_before": 0.95,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:26:03.057231+00:00",
+  "cost_exceeded_reservation": false
+}

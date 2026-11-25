@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c006__r006",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__RegioStaR7__5febbfe6f6bc",
+  "round": 6,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "a7b1ae36fb6e969e7273d6f3d46a30842318b29031c5e6ea5112b96b22d56f24",
+  "started_utc": "2026-11-25T14:31:47.665809+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:31:49.319976+00:00",
+      "cost_usd": 0.001448,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001448,
+  "reservation_upper_bound_usd": 0.024077999999999995,
+  "response_sha256": "80ef0303cb46f96e0662dcfda19c1d5692cf2681c505a4130e66ada09d9a8b38",
+  "response": {
+    "id": "gen-1795617107-VNyCv88RaouwzTTa7mKf",
+    "object": "chat.completion",
+    "created": 1795617107,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.68,\n  \"local_pt\": 0.32,\n  \"long_distance_rail\": 0.14,\n  \"rationale\": \"Small-town/village residents often rely on cars for airport access due to sparse public transit. Some use local PT to reach regional hubs; long-distance rail is less likely due to limited connectivity and the rural origin.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 396,
+      "completion_tokens": 82,
+      "total_tokens": 478,
+      "cost": 0.001448,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001448,
+        "upstream_inference_prompt_cost": 0.000792,
+        "upstream_inference_completions_cost": 0.000656
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795617107-VNyCv88RaouwzTTa7mKf",
+  "raw_prediction": {
+    "car": 0.68,
+    "local_pt": 0.32,
+    "long_distance_rail": 0.14,
+    "rationale": "Small-town/village residents often rely on cars for airport access due to sparse public transit. Some use local PT to reach regional hubs; long-distance rail is less likely due to limited connectivity and the rural origin."
+  },
+  "prediction": {
+    "car": 0.68,
+    "local_pt": 0.32,
+    "long_distance_rail": 0.14,
+    "rationale": "Small-town/village residents often rely on cars for airport access due to sparse public transit. Some use local PT to reach regional hubs; long-distance rail is less likely due to limited connectivity and the rural origin."
+  },
+  "normalization": {
+    "sum_before": 1.1400000000000001,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:31:49.319976+00:00",
+  "cost_exceeded_reservation": false
+}

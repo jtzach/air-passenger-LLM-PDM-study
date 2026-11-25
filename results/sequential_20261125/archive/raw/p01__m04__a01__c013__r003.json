@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c013__r003",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzbegl_gr__07f355b725cf",
+  "round": 3,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "f43e85fded1954a4c91c7da9fbcb8bad29dab732edf60fb2f2735b4e54d68263",
+  "started_utc": "2026-11-25T14:26:12.005571+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:26:13.573604+00:00",
+      "cost_usd": 0.001464,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001464,
+  "reservation_upper_bound_usd": 0.023933999999999997,
+  "response_sha256": "2f6ad146853bb429b3d5da66801206b359d14b2e612bec4719b59cd6c99c7944",
+  "response": {
+    "id": "gen-1795616772-jcUNKQoqbMh2VOIFiat5",
+    "object": "chat.completion",
+    "created": 1795616772,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.30,\n  \"long_distance_rail\": 0.18,\n  \"rationale\": \"With two household companions, car use is likely for convenience and cost-sharing; local public transport is somewhat likely, especially in urban areas; long-distance rail is less common given group size and Germany’s modal patterns for airport access.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 392,
+      "completion_tokens": 85,
+      "total_tokens": 477,
+      "cost": 0.001464,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001464,
+        "upstream_inference_prompt_cost": 0.000784,
+        "upstream_inference_completions_cost": 0.00068
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616772-jcUNKQoqbMh2VOIFiat5",
+  "raw_prediction": {
+    "car": 0.65,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.18,
+    "rationale": "With two household companions, car use is likely for convenience and cost-sharing; local public transport is somewhat likely, especially in urban areas; long-distance rail is less common given group size and Germany’s modal patterns for airport access."
+  },
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.18,
+    "rationale": "With two household companions, car use is likely for convenience and cost-sharing; local public transport is somewhat likely, especially in urban areas; long-distance rail is less common given group size and Germany’s modal patterns for airport access."
+  },
+  "normalization": {
+    "sum_before": 1.13,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:26:13.573604+00:00",
+  "cost_exceeded_reservation": false
+}

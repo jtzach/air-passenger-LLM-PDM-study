@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m01__a01__c016__r001",
+  "block_id": "p01__m01__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "unanchored",
+  "card_id": "reise__anzbegl_gr__b61cbc7c0dd2",
+  "round": 1,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "e0cdd417a38e80f07923281f160396de2a38fac09306c334988f6b0aec8ae110",
+  "started_utc": "2026-11-25T14:22:28.396965+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:22:29.994215+00:00",
+      "cost_usd": 1.692e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 1.692e-05,
+  "reservation_upper_bound_usd": 0.00033162,
+  "response_sha256": "795dea894f101461d7775649c8ab13bd0c49efa984fa33399d15a49e07a9b005",
+  "response": {
+    "id": "gen-1795616548-BTgEdgkslZJvb55fPMuh",
+    "object": "chat.completion",
+    "created": 1795616548,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.2, \"local_pt\": 0.3, \"long_distance_rail\": 0.1, \"rationale\": \"Given a single companion, combining air travel with a car or train is plausible for accessing the airport or onward travel. Local public transport is likely for shorter distances near the destination.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 413,
+      "completion_tokens": 72,
+      "total_tokens": 485,
+      "cost": 1.692e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.692e-05,
+        "upstream_inference_prompt_cost": 1.332e-05,
+        "upstream_inference_completions_cost": 3.6e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616548-BTgEdgkslZJvb55fPMuh",
+  "raw_prediction": {
+    "car": 0.2,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "Given a single companion, combining air travel with a car or train is plausible for accessing the airport or onward travel. Local public transport is likely for shorter distances near the destination."
+  },
+  "prediction": {
+    "car": 0.2,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "Given a single companion, combining air travel with a car or train is plausible for accessing the airport or onward travel. Local public transport is likely for shorter distances near the destination."
+  },
+  "normalization": {
+    "sum_before": 0.6,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:22:29.995225+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,114 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-11-25T17:47:06.861346+00:00",
+  "figure_count": 3,
+  "source": "results/sequential_20261125/figure_data.json",
+  "source_sha256": "0558a0e71bb5aa0a3dff6ccb2d1cc190cb534de581c8aa524591daf7611779b9",
+  "exact_plotted_value_checks": {
+    "mid_values": 18,
+    "fmg_native_and_visual_values_and_native_mae": 198
+  },
+  "mode_category_mapping_checked": {
+    "private_car": [
+      "car_dropoff",
+      "car_airport_parking",
+      "car_offairport_parking",
+      "car_other_parking"
+    ],
+    "taxi": [
+      "taxi_ridehail"
+    ],
+    "rental": [
+      "rental_carsharing"
+    ],
+    "bus": [
+      "bus_transfer"
+    ],
+    "rail": [
+      "s_bahn",
+      "uefex"
+    ],
+    "other": [
+      "other"
+    ]
+  },
+  "parking_shuttle_stays_private_car": true,
+  "native_ten_category_errors_checked": true,
+  "round_labels_checked": [
+    {
+      "panel": "mid_2023",
+      "model": "openai/gpt-4.1",
+      "arm": "overall_rate_anchored",
+      "complete_rounds": 16
+    },
+    {
+      "panel": "mid_2023",
+      "model": "google/gemma-3-4b-it",
+      "arm": "overall_rate_anchored",
+      "complete_rounds": 2
+    },
+    {
+      "panel": "fmg_2025",
+      "model": "openai/gpt-4.1",
+      "arm": "unanchored",
+      "complete_rounds": 16
+    }
+  ],
+  "all_visible_text_within_canvas": true,
+  "original_release_figures_touched": false,
+  "png_visual_inspection": "PASS",
+  "pdf_render_visual_inspection": "PASS",
+  "visual_notes": "All three PNGs and separately rendered final PDFs reviewed for clipping, overlap, legend readability, units, category coding and observed/prediction distinction.",
+  "pdf_render_sha256": {
+    "revised_01_dual_framework.png": "096a506049df769b4b0d3b71667e0ce6fcab60e09e92f628da52c3f8fbddbac6",
+    "revised_02_mid_contrasts.png": "a88dcbbba8b9a0e4fc11c2516158c0cdc17db1973ef51b4ad5fcb3ad872f2df6",
+    "revised_03_fmg_results.png": "8b749645ea23dfbf690fbacc5c028828b660cb961d87bc114d6251ccbb571da1"
+  },
+  "assets": [
+    {
+      "path": "figures/revised_01_dual_framework.pdf",
+      "sha256": "e4d442ad892a0a07b85ffa9a922ad95505191c32a7fe1ae143a235ba3ce94172",
+      "bytes": 33692
+    },
+    {
+      "path": "figures/revised_01_dual_framework.svg",
+      "sha256": "298e34a1c8e1558367eafe4cb7a716fa5b421791688d1f45f277259656016367",
+      "bytes": 29387
+    },
+    {
+      "path": "figures/revised_01_dual_framework.png",
+      "sha256": "6afc1e201bee4dce17fc67edc9bfdf66bcd6529fc9c9bbb3c3da43721a885693",
+      "bytes": 291698
+    },
+    {
+      "path": "figures/revised_02_mid_contrasts.pdf",
+      "sha256": "5509db0cddf904985ecbf05897d5213c96cf18031311096507e891506e707340",
+      "bytes": 25283
+    },
+    {
+      "path": "figures/revised_02_mid_contrasts.svg",
+      "sha256": "8e14db8335ce01ca56d6639a7656153933c2e272b708ea5aacabe91b6f0eac81",
+      "bytes": 27535
+    },
+    {
+      "path": "figures/revised_02_mid_contrasts.png",
+      "sha256": "1088f11650ec907b2c61e183ec317a79b8f7526bed2ba1ec5012ac1e354ea9c6",
+      "bytes": 210904
+    },
+    {
+      "path": "figures/revised_03_fmg_results.pdf",
+      "sha256": "155110fa3fda99378ce9c87995c1c4f2d59451efb7ad3470d7fc04f5f22975e4",
+      "bytes": 35610
+    },
+    {
+      "path": "figures/revised_03_fmg_results.svg",
+      "sha256": "b5c53fa9c54687d609c128149320eacfdefbab78dff658346af22d6ef70d1876",
+      "bytes": 47306
+    },
+    {
+      "path": "figures/revised_03_fmg_results.png",
+      "sha256": "c09314198de27a62dd11a6578ed1609c576883f64457e2cd021850165cacce48",
+      "bytes": 283196
+    }
+  ]
+}

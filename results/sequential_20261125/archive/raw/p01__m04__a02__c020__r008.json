@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c020__r008",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__9ee7f61bb0c0",
+  "round": 8,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "9e3a2034250cfe9374ea72c861f042768f468a5e2df3251ecf2ffe6ecf920f9f",
+  "started_utc": "2026-11-25T17:35:59.270496+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:36:00.677691+00:00",
+      "cost_usd": 0.001592,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001592,
+  "reservation_upper_bound_usd": 0.025554,
+  "response_sha256": "5bd0e7eb312883c42a2d58d5d02fce3f3b9174322f6336455c27abc83499da1b",
+  "response": {
+    "id": "gen-1795628158-nT5dS9wQ4O5NuZKRX1Au",
+    "object": "chat.completion",
+    "created": 1795628158,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.39,\n  \"local_pt\": 0.23,\n  \"long_distance_rail\": 0.13,\n  \"rationale\": \"Three-night trips may cluster near the population average: short enough for airports to be locally accessed, but long enough for some intercity travel; thus, mode shares likely match or slightly exceed overall rates due to varied airport access patterns.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 452,
+      "completion_tokens": 86,
+      "total_tokens": 538,
+      "cost": 0.001592,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001592,
+        "upstream_inference_prompt_cost": 0.000904,
+        "upstream_inference_completions_cost": 0.000688
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628158-nT5dS9wQ4O5NuZKRX1Au",
+  "raw_prediction": {
+    "car": 0.39,
+    "local_pt": 0.23,
+    "long_distance_rail": 0.13,
+    "rationale": "Three-night trips may cluster near the population average: short enough for airports to be locally accessed, but long enough for some intercity travel; thus, mode shares likely match or slightly exceed overall rates due to varied airport access patterns."
+  },
+  "prediction": {
+    "car": 0.39,
+    "local_pt": 0.23,
+    "long_distance_rail": 0.13,
+    "rationale": "Three-night trips may cluster near the population average: short enough for airports to be locally accessed, but long enough for some intercity travel; thus, mode shares likely match or slightly exceed overall rates due to varied airport access patterns."
+  },
+  "normalization": {
+    "sum_before": 0.75,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:36:00.677691+00:00",
+  "cost_exceeded_reservation": false
+}

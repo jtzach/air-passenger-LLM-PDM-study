@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a01__c005__r009",
+  "block_id": "p01__m03__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "unanchored",
+  "card_id": "reise__anzauto_gr1__faec8c191aa2",
+  "round": 9,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "f5317c8bcca1dc801712c1b3aca3c20a57c44f886dc9446da3d4548152946a05",
+  "started_utc": "2026-11-25T17:37:20.471682+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:37:27.486993+00:00",
+      "cost_usd": 0.000122745,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000122745,
+  "reservation_upper_bound_usd": 0.0020019,
+  "response_sha256": "f10fee323b95ec7b2e14be91ee05ce80a0644cb1bedc769ea4b97c2d3fe111ca",
+  "response": {
+    "id": "gen-1795628239-cWBnrleuvHgFWnzhsnPN",
+    "object": "chat.completion",
+    "created": 1795628239,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.75,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.2,\n  \"rationale\": \"Households with two cars likely rely on private vehicles for access to airports, reducing dependency on public transport. Long-distance rail competes with air travel but may be used for shorter connections or multi-leg trips.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 402,
+      "completion_tokens": 83,
+      "total_tokens": 485,
+      "cost": 0.000122745,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000122745,
+        "upstream_inference_prompt_cost": 5.427e-05,
+        "upstream_inference_completions_cost": 6.8475e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795628239-cWBnrleuvHgFWnzhsnPN",
+  "raw_prediction": {
+    "car": 0.75,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.2,
+    "rationale": "Households with two cars likely rely on private vehicles for access to airports, reducing dependency on public transport. Long-distance rail competes with air travel but may be used for shorter connections or multi-leg trips."
+  },
+  "prediction": {
+    "car": 0.75,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.2,
+    "rationale": "Households with two cars likely rely on private vehicles for access to airports, reducing dependency on public transport. Long-distance rail competes with air travel but may be used for shorter connections or multi-leg trips."
+  },
+  "normalization": {
+    "sum_before": 1.3,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:37:27.486993+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c008__r014",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__RegioStaR7__7b0e1c4f102a",
+  "round": 14,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "e1412aa069aa4c3f5d297b49b0c6de965f016306f5378cb5251f08bab8033a8a",
+  "started_utc": "2026-11-25T17:41:52.622598+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:41:53.931265+00:00",
+      "cost_usd": 0.001432,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001432,
+  "reservation_upper_bound_usd": 0.023975999999999997,
+  "response_sha256": "4fe8e1aaf64e1e9c4ebd8af7156af46e67ac9aa54840403a6b30e0d2873ed534",
+  "response": {
+    "id": "gen-1795628512-VVnfecgMucqObnqYPUIj",
+    "object": "chat.completion",
+    "created": 1795628512,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.35,\n  \"local_pt\": 0.65,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"Urban residents often have good public transport access but still use cars for flexibility or luggage. Local PT is likely due to strong urban networks. Long-distance rail is less likely but plausible for intercity airport access.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 392,
+      "completion_tokens": 81,
+      "total_tokens": 473,
+      "cost": 0.001432,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001432,
+        "upstream_inference_prompt_cost": 0.000784,
+        "upstream_inference_completions_cost": 0.000648
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628512-VVnfecgMucqObnqYPUIj",
+  "raw_prediction": {
+    "car": 0.35,
+    "local_pt": 0.65,
+    "long_distance_rail": 0.25,
+    "rationale": "Urban residents often have good public transport access but still use cars for flexibility or luggage. Local PT is likely due to strong urban networks. Long-distance rail is less likely but plausible for intercity airport access."
+  },
+  "prediction": {
+    "car": 0.35,
+    "local_pt": 0.65,
+    "long_distance_rail": 0.25,
+    "rationale": "Urban residents often have good public transport access but still use cars for flexibility or luggage. Local PT is likely due to strong urban networks. Long-distance rail is less likely but plausible for intercity airport access."
+  },
+  "normalization": {
+    "sum_before": 1.25,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:41:53.931265+00:00",
+  "cost_exceeded_reservation": false
+}

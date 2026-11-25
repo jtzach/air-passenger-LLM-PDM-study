@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m01__a02__c001__r001",
+  "block_id": "p01__m01__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzauto_gr1__296e9849dc3d",
+  "round": 1,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "ab8cb740917784662afdb942596d3573cbf4cadc43547373bc455fa9d088f404",
+  "started_utc": "2026-11-25T14:21:33.131615+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:21:35.069911+00:00",
+      "cost_usd": 2.009e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.009e-05,
+  "reservation_upper_bound_usd": 0.00036318000000000006,
+  "response_sha256": "fb7c20e6ba08a446b88f2036211613a22bd123b5b3a7a595363013587af5b68d",
+  "response": {
+    "id": "gen-1795616493-ywQkSTzJPgSWBezeSJ9W",
+    "object": "chat.completion",
+    "created": 1795616493,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.3, \"local_pt\": 0.15, \"long_distance_rail\": 0.08, \"rationale\": \"Without car ownership, individuals are less likely to use cars for onward/return travel. Local public transport use will be lower than the overall population, and long-distance rail use similarly reduced.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 486,
+      "completion_tokens": 77,
+      "total_tokens": 563,
+      "cost": 2.009e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.009e-05,
+        "upstream_inference_prompt_cost": 1.624e-05,
+        "upstream_inference_completions_cost": 3.85e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616493-ywQkSTzJPgSWBezeSJ9W",
+  "raw_prediction": {
+    "car": 0.3,
+    "local_pt": 0.15,
+    "long_distance_rail": 0.08,
+    "rationale": "Without car ownership, individuals are less likely to use cars for onward/return travel. Local public transport use will be lower than the overall population, and long-distance rail use similarly reduced."
+  },
+  "prediction": {
+    "car": 0.3,
+    "local_pt": 0.15,
+    "long_distance_rail": 0.08,
+    "rationale": "Without car ownership, individuals are less likely to use cars for onward/return travel. Local public transport use will be lower than the overall population, and long-distance rail use similarly reduced."
+  },
+  "normalization": {
+    "sum_before": 0.53,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:21:35.069911+00:00",
+  "cost_exceeded_reservation": false
+}

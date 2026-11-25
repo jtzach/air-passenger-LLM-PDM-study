@@ -1,0 +1,100 @@
+{
+  "task_id": "p01__m04__a02__c004__r007__administrative_replacement1",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzauto_gr1__d7ca944fcddc",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "supersedes_task_id": "p01__m04__a02__c004__r007",
+  "request_sha256": "a18e565671b44245e93516e4f0c89f1fec8e9181857131b56540182d536cf38d",
+  "started_utc": "2026-11-25T17:34:46.239422+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:34:47.784224+00:00",
+      "cost_usd": 0.001582,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001582,
+  "reservation_upper_bound_usd": 0.025500000000000002,
+  "response_sha256": "c36f838536ba331b20d91c88d6c1da60bb305e388971e8e37a6608ca875ba939",
+  "response": {
+    "id": "gen-1795628085-c6jiFrmQzCmGJoIt8N6N",
+    "object": "chat.completion",
+    "created": 1795628085,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.41,\n  \"local_pt\": 0.20,\n  \"long_distance_rail\": 0.12,\n  \"rationale\": \"Households with one car may use their car for airport access more than the average, but are less multimodal than car-free or multi-car households. Local and long-distance public transport use is slightly below average for this group.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 451,
+      "completion_tokens": 85,
+      "total_tokens": 536,
+      "cost": 0.001582,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001582,
+        "upstream_inference_prompt_cost": 0.000902,
+        "upstream_inference_completions_cost": 0.00068
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628085-c6jiFrmQzCmGJoIt8N6N",
+  "raw_prediction": {
+    "car": 0.41,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.12,
+    "rationale": "Households with one car may use their car for airport access more than the average, but are less multimodal than car-free or multi-car households. Local and long-distance public transport use is slightly below average for this group."
+  },
+  "prediction": {
+    "car": 0.41,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.12,
+    "rationale": "Households with one car may use their car for airport access more than the average, but are less multimodal than car-free or multi-car households. Local and long-distance public transport use is slightly below average for this group."
+  },
+  "normalization": {
+    "sum_before": 0.73,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:34:47.784224+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,120 @@
+{
+  "task_id": "p02__m04__a01__c007__r010",
+  "block_id": "p02__m04__a01",
+  "panel_id": "fmg_2025",
+  "panel_index": 1,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "no_persona",
+  "round": 10,
+  "modes": [
+    "car_dropoff",
+    "car_airport_parking",
+    "car_offairport_parking",
+    "car_other_parking",
+    "taxi_ridehail",
+    "rental_carsharing",
+    "bus_transfer",
+    "s_bahn",
+    "uefex",
+    "other"
+  ],
+  "mutually_exclusive": true,
+  "request_sha256": "af81f42eae18eb29eac8657052f7e934edc62b6fef3fe7c04bf39531b0e96fe9",
+  "started_utc": "2026-11-25T17:39:23.395741+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:39:25.376793+00:00",
+      "cost_usd": 0.00239,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00239,
+  "reservation_upper_bound_usd": 0.027707999999999997,
+  "response_sha256": "6947a658ccae435caabe9057eef2389736f4d8bcf4b1c2cb284bc562965c3a32",
+  "response": {
+    "id": "gen-1795628362-MWi19D6CM5qXjFt0ZvHS",
+    "object": "chat.completion",
+    "created": 1795628362,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car_dropoff\": 0.18,\n  \"car_airport_parking\": 0.17,\n  \"car_offairport_parking\": 0.10,\n  \"car_other_parking\": 0.03,\n  \"taxi_ridehail\": 0.08,\n  \"rental_carsharing\": 0.02,\n  \"bus_transfer\": 0.06,\n  \"s_bahn\": 0.30,\n  \"uefex\": 0.03,\n  \"other\": 0.03,\n  \"rationale\": \"S-Bahn is prominent due to Munich’s strong rail links. Private cars and parking are substantial. Taxi, bus, and other rail serve niches. Distribution reflects mixed urban-rural access and multiple travel preferences.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 535,
+      "completion_tokens": 165,
+      "total_tokens": 700,
+      "cost": 0.00239,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00239,
+        "upstream_inference_prompt_cost": 0.00107,
+        "upstream_inference_completions_cost": 0.00132
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628362-MWi19D6CM5qXjFt0ZvHS",
+  "raw_prediction": {
+    "car_dropoff": 0.18,
+    "car_airport_parking": 0.17,
+    "car_offairport_parking": 0.1,
+    "car_other_parking": 0.03,
+    "taxi_ridehail": 0.08,
+    "rental_carsharing": 0.02,
+    "bus_transfer": 0.06,
+    "s_bahn": 0.3,
+    "uefex": 0.03,
+    "other": 0.03,
+    "rationale": "S-Bahn is prominent due to Munich’s strong rail links. Private cars and parking are substantial. Taxi, bus, and other rail serve niches. Distribution reflects mixed urban-rural access and multiple travel preferences."
+  },
+  "prediction": {
+    "car_dropoff": 0.18,
+    "car_airport_parking": 0.17,
+    "car_offairport_parking": 0.1,
+    "car_other_parking": 0.03,
+    "taxi_ridehail": 0.08,
+    "rental_carsharing": 0.02,
+    "bus_transfer": 0.06,
+    "s_bahn": 0.3,
+    "uefex": 0.03,
+    "other": 0.03,
+    "rationale": "S-Bahn is prominent due to Munich’s strong rail links. Private cars and parking are substantial. Taxi, bus, and other rail serve niches. Distribution reflects mixed urban-rural access and multiple travel preferences."
+  },
+  "normalization": {
+    "sum_before": 1.0,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:39:25.377316+00:00",
+  "cost_exceeded_reservation": false
+}

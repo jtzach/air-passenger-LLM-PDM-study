@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c009__r008",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__RegioStaR7__7cdab1586e04",
+  "round": 8,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "a39fec2263da66820a72abdbb4b399eaa87c689535099c809268ac353b9b72f3",
+  "started_utc": "2026-11-25T17:36:00.682684+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:36:01.726722+00:00",
+      "cost_usd": 0.001534,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001534,
+  "reservation_upper_bound_usd": 0.025709999999999997,
+  "response_sha256": "ee579f3039b8ea68a76475eb9a6d9545cdfce89b315081db48870fcc956cd109",
+  "response": {
+    "id": "gen-1795628159-pNNFX19648oqqLkuf79s",
+    "object": "chat.completion",
+    "created": 1795628159,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.32,\n  \"local_pt\": 0.27,\n  \"long_distance_rail\": 0.16,\n  \"rationale\": \"Urban residents often have better access to public transport and may use cars less, but still use them. Local and long-distance rail are more accessible, increasing their rates relative to the overall population.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 455,
+      "completion_tokens": 78,
+      "total_tokens": 533,
+      "cost": 0.001534,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001534,
+        "upstream_inference_prompt_cost": 0.00091,
+        "upstream_inference_completions_cost": 0.000624
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628159-pNNFX19648oqqLkuf79s",
+  "raw_prediction": {
+    "car": 0.32,
+    "local_pt": 0.27,
+    "long_distance_rail": 0.16,
+    "rationale": "Urban residents often have better access to public transport and may use cars less, but still use them. Local and long-distance rail are more accessible, increasing their rates relative to the overall population."
+  },
+  "prediction": {
+    "car": 0.32,
+    "local_pt": 0.27,
+    "long_distance_rail": 0.16,
+    "rationale": "Urban residents often have better access to public transport and may use cars less, but still use them. Local and long-distance rail are more accessible, increasing their rates relative to the overall population."
+  },
+  "normalization": {
+    "sum_before": 0.75,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:36:01.726722+00:00",
+  "cost_exceeded_reservation": false
+}

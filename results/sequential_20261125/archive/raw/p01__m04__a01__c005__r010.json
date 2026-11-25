@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c005__r010",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzauto_gr1__faec8c191aa2",
+  "round": 10,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "5018afa312e2c16ec537359644fa5bb2b9a3b9f4ac9daa92c955b440162c2d12",
+  "started_utc": "2026-11-25T17:38:44.151025+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:38:45.343189+00:00",
+      "cost_usd": 0.001456,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001456,
+  "reservation_upper_bound_usd": 0.023861999999999998,
+  "response_sha256": "c1cf0352675a2b40bae7d7b3911a2e1437de164fb0e426cfee76bca1b87db0db",
+  "response": {
+    "id": "gen-1795628323-BnqGhqJYXeQ8X98Q5ezw",
+    "object": "chat.completion",
+    "created": 1795628323,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.80,\n  \"local_pt\": 0.25,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Two-car households likely have high car access and preference, making car the default airport access mode. Public and long-distance rail use is lower but plausible, especially if airports are distant or urban access is easier by public transport.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 392,
+      "completion_tokens": 84,
+      "total_tokens": 476,
+      "cost": 0.001456,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001456,
+        "upstream_inference_prompt_cost": 0.000784,
+        "upstream_inference_completions_cost": 0.000672
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628323-BnqGhqJYXeQ8X98Q5ezw",
+  "raw_prediction": {
+    "car": 0.8,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.1,
+    "rationale": "Two-car households likely have high car access and preference, making car the default airport access mode. Public and long-distance rail use is lower but plausible, especially if airports are distant or urban access is easier by public transport."
+  },
+  "prediction": {
+    "car": 0.8,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.1,
+    "rationale": "Two-car households likely have high car access and preference, making car the default airport access mode. Public and long-distance rail use is lower but plausible, especially if airports are distant or urban access is easier by public transport."
+  },
+  "normalization": {
+    "sum_before": 1.1500000000000001,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:38:45.343189+00:00",
+  "cost_exceeded_reservation": false
+}

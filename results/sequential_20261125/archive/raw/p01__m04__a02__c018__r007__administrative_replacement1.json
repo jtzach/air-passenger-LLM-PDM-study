@@ -1,0 +1,100 @@
+{
+  "task_id": "p01__m04__a02__c018__r007__administrative_replacement1",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__6bcea89383ae",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "supersedes_task_id": "p01__m04__a02__c018__r007",
+  "request_sha256": "872bab31a4675b7ef0b9dba9eb906178d436b1fae6680acb6d6180fb708aae2e",
+  "started_utc": "2026-11-25T17:35:01.251830+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:35:02.932803+00:00",
+      "cost_usd": 0.001576,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001576,
+  "reservation_upper_bound_usd": 0.025554,
+  "response_sha256": "b9668638b123d6892a6fa245b2e162f8df20430f287fd5b5cd335f2e707305a9",
+  "response": {
+    "id": "gen-1795628100-DT0lRODR8n4AVblgiAmJ",
+    "object": "chat.completion",
+    "created": 1795628100,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.41,\n  \"local_pt\": 0.23,\n  \"long_distance_rail\": 0.13,\n  \"rationale\": \"Two-night trips are often to nearby or regional destinations, increasing car use slightly. Shorter stays may also mean less luggage and more local public transport use, but not enough to majorly shift from the population-level pattern.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 452,
+      "completion_tokens": 84,
+      "total_tokens": 536,
+      "cost": 0.001576,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001576,
+        "upstream_inference_prompt_cost": 0.000904,
+        "upstream_inference_completions_cost": 0.000672
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628100-DT0lRODR8n4AVblgiAmJ",
+  "raw_prediction": {
+    "car": 0.41,
+    "local_pt": 0.23,
+    "long_distance_rail": 0.13,
+    "rationale": "Two-night trips are often to nearby or regional destinations, increasing car use slightly. Shorter stays may also mean less luggage and more local public transport use, but not enough to majorly shift from the population-level pattern."
+  },
+  "prediction": {
+    "car": 0.41,
+    "local_pt": 0.23,
+    "long_distance_rail": 0.13,
+    "rationale": "Two-night trips are often to nearby or regional destinations, increasing car use slightly. Shorter stays may also mean less luggage and more local public transport use, but not enough to majorly shift from the population-level pattern."
+  },
+  "normalization": {
+    "sum_before": 0.77,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:35:02.932803+00:00",
+  "cost_exceeded_reservation": false
+}

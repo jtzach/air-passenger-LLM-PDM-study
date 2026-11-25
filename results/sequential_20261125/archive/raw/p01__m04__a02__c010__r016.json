@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c010__r016",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__RegioStaR7__9f47524becab",
+  "round": 16,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "a9726d07400d483f8307319ecb158065dd429e03189ce47ceb17892e0790c732",
+  "started_utc": "2026-11-25T17:42:28.267596+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:42:30.443661+00:00",
+      "cost_usd": 0.00164,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00164,
+  "reservation_upper_bound_usd": 0.025733999999999996,
+  "response_sha256": "704e0385ace9fe4260f11b14f6ebc1f4218745f48642f0a1feda0673703d148c",
+  "response": {
+    "id": "gen-1795628547-HNZPFoiwo8n2DwwOFnFX",
+    "object": "chat.completion",
+    "created": 1795628547,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.33,\n  \"local_pt\": 0.28,\n  \"long_distance_rail\": 0.14,\n  \"rationale\": \"Medium-sized urban residents have better local public transport than rural areas, raising local_pt. Car use slightly drops, as alternatives exist, but some need remains. Long-distance rail rises modestly due to more intercity connections than rural but less than major cities.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 456,
+      "completion_tokens": 91,
+      "total_tokens": 547,
+      "cost": 0.00164,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00164,
+        "upstream_inference_prompt_cost": 0.000912,
+        "upstream_inference_completions_cost": 0.000728
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628547-HNZPFoiwo8n2DwwOFnFX",
+  "raw_prediction": {
+    "car": 0.33,
+    "local_pt": 0.28,
+    "long_distance_rail": 0.14,
+    "rationale": "Medium-sized urban residents have better local public transport than rural areas, raising local_pt. Car use slightly drops, as alternatives exist, but some need remains. Long-distance rail rises modestly due to more intercity connections than rural but less than major cities."
+  },
+  "prediction": {
+    "car": 0.33,
+    "local_pt": 0.28,
+    "long_distance_rail": 0.14,
+    "rationale": "Medium-sized urban residents have better local public transport than rural areas, raising local_pt. Car use slightly drops, as alternatives exist, but some need remains. Long-distance rail rises modestly due to more intercity connections than rural but less than major cities."
+  },
+  "normalization": {
+    "sum_before": 0.75,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:42:30.444696+00:00",
+  "cost_exceeded_reservation": false
+}

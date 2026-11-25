@@ -1,0 +1,120 @@
+{
+  "task_id": "p02__m02__a01__c003__r009",
+  "block_id": "p02__m02__a01",
+  "panel_id": "fmg_2025",
+  "panel_index": 1,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "unanchored",
+  "card_id": "fmg_business_continental",
+  "round": 9,
+  "modes": [
+    "car_dropoff",
+    "car_airport_parking",
+    "car_offairport_parking",
+    "car_other_parking",
+    "taxi_ridehail",
+    "rental_carsharing",
+    "bus_transfer",
+    "s_bahn",
+    "uefex",
+    "other"
+  ],
+  "mutually_exclusive": true,
+  "request_sha256": "329a13361619b95cfb46ee687213f5bd86ab84a81dbfb4690c3737dff2b0ede7",
+  "started_utc": "2026-11-25T17:37:34.943053+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:37:37.111462+00:00",
+      "cost_usd": 0.0004744,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0004744,
+  "reservation_upper_bound_usd": 0.0057684,
+  "response_sha256": "ee3799b2f84a3ea92119bb15cb2493a43c9da284c0b661e80889b03ec3ff43c7",
+  "response": {
+    "id": "gen-1795628254-QydjIMwK0IrvTPz5ny3b",
+    "object": "chat.completion",
+    "created": 1795628254,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car_dropoff\": 0.25,\n  \"car_airport_parking\": 0.20,\n  \"car_offairport_parking\": 0.10,\n  \"car_other_parking\": 0.05,\n  \"taxi_ridehail\": 0.10,\n  \"rental_carsharing\": 0.05,\n  \"bus_transfer\": 0.10,\n  \"s_bahn\": 0.12,\n  \"uefex\": 0.02,\n  \"other\": 0.01,\n  \"rationale\": \"Business travelers prioritize speed and convenience; many use car drop-off or parking, with rail options common in Munich’s network for efficient access to the airport.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 570,
+      "completion_tokens": 154,
+      "total_tokens": 724,
+      "cost": 0.0004744,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0004744,
+        "upstream_inference_prompt_cost": 0.000228,
+        "upstream_inference_completions_cost": 0.0002464
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795628254-QydjIMwK0IrvTPz5ny3b",
+  "raw_prediction": {
+    "car_dropoff": 0.25,
+    "car_airport_parking": 0.2,
+    "car_offairport_parking": 0.1,
+    "car_other_parking": 0.05,
+    "taxi_ridehail": 0.1,
+    "rental_carsharing": 0.05,
+    "bus_transfer": 0.1,
+    "s_bahn": 0.12,
+    "uefex": 0.02,
+    "other": 0.01,
+    "rationale": "Business travelers prioritize speed and convenience; many use car drop-off or parking, with rail options common in Munich’s network for efficient access to the airport."
+  },
+  "prediction": {
+    "car_dropoff": 0.25,
+    "car_airport_parking": 0.2,
+    "car_offairport_parking": 0.1,
+    "car_other_parking": 0.05,
+    "taxi_ridehail": 0.1,
+    "rental_carsharing": 0.05,
+    "bus_transfer": 0.1,
+    "s_bahn": 0.12,
+    "uefex": 0.02,
+    "other": 0.01,
+    "rationale": "Business travelers prioritize speed and convenience; many use car drop-off or parking, with rail options common in Munich’s network for efficient access to the airport."
+  },
+  "normalization": {
+    "sum_before": 1.0,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:37:37.111462+00:00",
+  "cost_exceeded_reservation": false
+}

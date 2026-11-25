@@ -1,0 +1,120 @@
+{
+  "task_id": "p02__m04__a01__c003__r005",
+  "block_id": "p02__m04__a01",
+  "panel_id": "fmg_2025",
+  "panel_index": 1,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "fmg_business_continental",
+  "round": 5,
+  "modes": [
+    "car_dropoff",
+    "car_airport_parking",
+    "car_offairport_parking",
+    "car_other_parking",
+    "taxi_ridehail",
+    "rental_carsharing",
+    "bus_transfer",
+    "s_bahn",
+    "uefex",
+    "other"
+  ],
+  "mutually_exclusive": true,
+  "request_sha256": "de5a9588e8d9ad9825fafe1b643a5d03417dc46b2079fa1f9f219b027fe2f592",
+  "started_utc": "2026-11-25T14:29:50.154415+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:29:52.811077+00:00",
+      "cost_usd": 0.002508,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.002508,
+  "reservation_upper_bound_usd": 0.028811999999999997,
+  "response_sha256": "4e9542d0087a6ee3bb79a9a729f7654e8ade2e6d3062a664da79aaf92c2cf5a4",
+  "response": {
+    "id": "gen-1795616990-hILLP3eiLg5P1lyy1NkW",
+    "object": "chat.completion",
+    "created": 1795616990,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car_dropoff\": 0.18,\n  \"car_airport_parking\": 0.22,\n  \"car_offairport_parking\": 0.07,\n  \"car_other_parking\": 0.01,\n  \"taxi_ridehail\": 0.15,\n  \"rental_carsharing\": 0.04,\n  \"bus_transfer\": 0.05,\n  \"s_bahn\": 0.23,\n  \"uefex\": 0.03,\n  \"other\": 0.02,\n  \"rationale\": \"Business passengers prioritize reliability and speed. S-Bahn and parking are popular, but drop-off, taxi/ride-hail, and off-airport parking remain significant. UEFEX and buses are less used due to limited coverage or convenience.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 570,
+      "completion_tokens": 171,
+      "total_tokens": 741,
+      "cost": 0.002508,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002508,
+        "upstream_inference_prompt_cost": 0.00114,
+        "upstream_inference_completions_cost": 0.001368
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616990-hILLP3eiLg5P1lyy1NkW",
+  "raw_prediction": {
+    "car_dropoff": 0.18,
+    "car_airport_parking": 0.22,
+    "car_offairport_parking": 0.07,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.15,
+    "rental_carsharing": 0.04,
+    "bus_transfer": 0.05,
+    "s_bahn": 0.23,
+    "uefex": 0.03,
+    "other": 0.02,
+    "rationale": "Business passengers prioritize reliability and speed. S-Bahn and parking are popular, but drop-off, taxi/ride-hail, and off-airport parking remain significant. UEFEX and buses are less used due to limited coverage or convenience."
+  },
+  "prediction": {
+    "car_dropoff": 0.18,
+    "car_airport_parking": 0.22,
+    "car_offairport_parking": 0.07,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.15,
+    "rental_carsharing": 0.04,
+    "bus_transfer": 0.05,
+    "s_bahn": 0.23,
+    "uefex": 0.03,
+    "other": 0.02,
+    "rationale": "Business passengers prioritize reliability and speed. S-Bahn and parking are popular, but drop-off, taxi/ride-hail, and off-airport parking remain significant. UEFEX and buses are less used due to limited coverage or convenience."
+  },
+  "normalization": {
+    "sum_before": 1.0,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:29:52.811077+00:00",
+  "cost_exceeded_reservation": false
+}

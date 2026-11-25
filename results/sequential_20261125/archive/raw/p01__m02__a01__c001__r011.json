@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m02__a01__c001__r011",
+  "block_id": "p01__m02__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "unanchored",
+  "card_id": "reise__anzauto_gr1__296e9849dc3d",
+  "round": 11,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "153cce74a3a7071467b56b2c3542d523196387cad6f5fe896c119053e22f62ba",
+  "started_utc": "2026-11-25T17:39:55.757092+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:39:57.074851+00:00",
+      "cost_usd": 0.0002812,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002812,
+  "reservation_upper_bound_usd": 0.0047783999999999995,
+  "response_sha256": "7007224a4f4e048cef12bcbc0db914b1a831b44d5319977992079ce9dcb684a4",
+  "response": {
+    "id": "gen-1795628395-CZik36mImnq4g9JJrkbo",
+    "object": "chat.completion",
+    "created": 1795628395,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.1,\n  \"local_pt\": 0.6,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"Without a household car, car use is low but possible as a passenger. Local public transport is common for airport access. Long-distance rail is less frequent but plausible for combined train-air trips.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 391,
+      "completion_tokens": 78,
+      "total_tokens": 469,
+      "cost": 0.0002812,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002812,
+        "upstream_inference_prompt_cost": 0.0001564,
+        "upstream_inference_completions_cost": 0.0001248
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795628395-CZik36mImnq4g9JJrkbo",
+  "raw_prediction": {
+    "car": 0.1,
+    "local_pt": 0.6,
+    "long_distance_rail": 0.15,
+    "rationale": "Without a household car, car use is low but possible as a passenger. Local public transport is common for airport access. Long-distance rail is less frequent but plausible for combined train-air trips."
+  },
+  "prediction": {
+    "car": 0.1,
+    "local_pt": 0.6,
+    "long_distance_rail": 0.15,
+    "rationale": "Without a household car, car use is low but possible as a passenger. Local public transport is common for airport access. Long-distance rail is less frequent but plausible for combined train-air trips."
+  },
+  "normalization": {
+    "sum_before": 0.85,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:39:57.074851+00:00",
+  "cost_exceeded_reservation": false
+}

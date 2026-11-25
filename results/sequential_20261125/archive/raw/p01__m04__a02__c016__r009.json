@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c016__r009",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzbegl_gr__b61cbc7c0dd2",
+  "round": 9,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "1f411b273e50ae91eda88a8111da87def3be1258c26056f7fd09af1b22ec6ba3",
+  "started_utc": "2026-11-25T17:37:03.994154+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:37:05.475935+00:00",
+      "cost_usd": 0.00155,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00155,
+  "reservation_upper_bound_usd": 0.025572,
+  "response_sha256": "8854864f73e91822c7586b0908e4e4a030f8851fef75a2fb35031fff1909d5f5",
+  "response": {
+    "id": "gen-1795628223-gxEPn8iBiCoeIObdFeMp",
+    "object": "chat.completion",
+    "created": 1795628223,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.41,\n  \"local_pt\": 0.22,\n  \"long_distance_rail\": 0.13,\n  \"rationale\": \"Two household members increase likelihood of car use for convenience and luggage, with minimal effect on public transport or rail; shared travel may slightly boost long-distance rail if both are flexible, but car remains most likely.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 451,
+      "completion_tokens": 81,
+      "total_tokens": 532,
+      "cost": 0.00155,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00155,
+        "upstream_inference_prompt_cost": 0.000902,
+        "upstream_inference_completions_cost": 0.000648
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628223-gxEPn8iBiCoeIObdFeMp",
+  "raw_prediction": {
+    "car": 0.41,
+    "local_pt": 0.22,
+    "long_distance_rail": 0.13,
+    "rationale": "Two household members increase likelihood of car use for convenience and luggage, with minimal effect on public transport or rail; shared travel may slightly boost long-distance rail if both are flexible, but car remains most likely."
+  },
+  "prediction": {
+    "car": 0.41,
+    "local_pt": 0.22,
+    "long_distance_rail": 0.13,
+    "rationale": "Two household members increase likelihood of car use for convenience and luggage, with minimal effect on public transport or rail; shared travel may slightly boost long-distance rail if both are flexible, but car remains most likely."
+  },
+  "normalization": {
+    "sum_before": 0.76,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:37:05.475935+00:00",
+  "cost_exceeded_reservation": false
+}

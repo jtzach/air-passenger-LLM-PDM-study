@@ -1,0 +1,147 @@
+{
+  "version": "2.0",
+  "study_date": "2026-11-25",
+  "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+  "models": [
+    {
+      "id": "google/gemma-3-4b-it",
+      "label": "Gemma 3 4B",
+      "tier": "compact",
+      "disclosed_parameters_billion": 4,
+      "provider_only": [
+        "parasail/bf16"
+      ]
+    },
+    {
+      "id": "openai/gpt-4.1-mini",
+      "label": "GPT-4.1 mini",
+      "tier": "compact",
+      "disclosed_parameters_billion": null,
+      "provider_only": [
+        "openai"
+      ]
+    },
+    {
+      "id": "qwen/qwen3-235b-a22b-2507",
+      "label": "Qwen3 235B A22B",
+      "tier": "larger",
+      "disclosed_parameters_billion": 235,
+      "provider_only": [
+        "deepinfra/fp8"
+      ]
+    },
+    {
+      "id": "openai/gpt-4.1",
+      "label": "GPT-4.1",
+      "tier": "larger",
+      "disclosed_parameters_billion": null,
+      "provider_only": [
+        "openai"
+      ]
+    }
+  ],
+  "temperature": 0.7,
+  "max_tokens": 450,
+  "seed_base": 25112026,
+  "shuffle_seed": 25112026,
+  "looks": [
+    16,
+    32,
+    64
+  ],
+  "endpoint_count": 12,
+  "primary_family_alpha": 0.04,
+  "secondary_alpha_per_endpoint": 0.0008333333333333334,
+  "precision_half_width_pp": 0.25,
+  "practical_margin_pp": 0.5,
+  "iid_assumption_acknowledged": true,
+  "max_cost_usd": 10.0,
+  "max_runtime_seconds": 7200,
+  "max_workers": 8,
+  "transport_attempts": 3,
+  "request_timeout_seconds": 100,
+  "failure_policy": "halt affected model/panel/arm block at first unresolved incomplete round; no skipped rounds",
+  "catalogue_path": "config/openrouter_catalogue_20261125.json",
+  "provider_policy": "pin a specific provider endpoint; no fallback; require parameters; record provider/model; halt and withhold inference on within-block identity drift",
+  "fmg_external_processing": "Only generic study questions. No FMG target, numerical baseline, volume, weight, raw row or workbook is sent.",
+  "fmg_publication": "User confirmed FMG permits publishing derived results only on 2026-11-25. Raw source and row extracts remain private.",
+  "fmg_target_caveat": "Co-author English summary; original question, boundary-country classification, parking/shuttle coding and interview sample sizes unverified.",
+  "public_access_context_sources": [
+    "https://www.munich-airport.com/transport-directions-260334",
+    "https://www.munich-airport.com/public-transport-260822",
+    "https://www.munich-airport.com/car-sharing-at-the-airport-799743",
+    "https://www.munich-airport.com/frequently-asked-questions-376207"
+  ],
+  "source_hashes": {
+    "private_fmg_derived_targets_sha256": "a4a254af275c33d8b00f7856e9e509eb8d5d2c54deb4bfcf250b82d0f229d9af",
+    "mid_personas_sha256": "79dffdf47d9c24f9158aef7e2f6a3837ab0786e52aaa1cb56af3b9fdcf6a9a25"
+  },
+  "panels": [
+    {
+      "panel_id": "mid_2023",
+      "modes": [
+        "car",
+        "local_pt",
+        "long_distance_rail"
+      ],
+      "arms": [
+        "unanchored",
+        "overall_rate_anchored"
+      ],
+      "mutually_exclusive": false,
+      "card_ids": [
+        "reise__anzauto_gr1__296e9849dc3d",
+        "reise__anzauto_gr1__79ed954bbe2c",
+        "reise__anzauto_gr1__bee31b0e88ae",
+        "reise__anzauto_gr1__d7ca944fcddc",
+        "reise__anzauto_gr1__faec8c191aa2",
+        "reise__RegioStaR7__5febbfe6f6bc",
+        "reise__RegioStaR7__72d39163efb4",
+        "reise__RegioStaR7__7b0e1c4f102a",
+        "reise__RegioStaR7__7cdab1586e04",
+        "reise__RegioStaR7__9f47524becab",
+        "reise__RegioStaR7__cae80c90607c",
+        "reise__RegioStaR7__d3321efbbd2e",
+        "reise__anzbegl_gr__07f355b725cf",
+        "reise__anzbegl_gr__154f6eb18583",
+        "reise__anzbegl_gr__18864b086b3b",
+        "reise__anzbegl_gr__b61cbc7c0dd2",
+        "reise__anzueb_gr__456ee228eb2a",
+        "reise__anzueb_gr__6bcea89383ae",
+        "reise__anzueb_gr__782410ef69d3",
+        "reise__anzueb_gr__9ee7f61bb0c0",
+        "reise__anzueb_gr__ef1ad3950de1",
+        "reise__anzueb_gr__f6e4375535d4",
+        "reise__anzueb_gr__fd46cf332878"
+      ]
+    },
+    {
+      "panel_id": "fmg_2025",
+      "modes": [
+        "car_dropoff",
+        "car_airport_parking",
+        "car_offairport_parking",
+        "car_other_parking",
+        "taxi_ridehail",
+        "rental_carsharing",
+        "bus_transfer",
+        "s_bahn",
+        "uefex",
+        "other"
+      ],
+      "arms": [
+        "unanchored"
+      ],
+      "mutually_exclusive": true,
+      "card_ids": [
+        "fmg_business_domestic",
+        "fmg_private_domestic",
+        "fmg_business_continental",
+        "fmg_private_continental",
+        "fmg_business_intercontinental",
+        "fmg_private_intercontinental"
+      ]
+    }
+  ],
+  "scoring_configuration_note": "Private scoring configuration is not distributed. Public prompt library and authorized derived evaluation cells reproduce released scores; source rows remain private."
+}

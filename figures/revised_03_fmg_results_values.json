@@ -1,0 +1,382 @@
+{
+  "figure": "revised_03_fmg_results",
+  "canvas_inches": [
+    7.4,
+    5.65
+  ],
+  "matplotlib_version": "3.11.2",
+  "png_dpi": 300,
+  "pdf_svg_vector": true,
+  "text_within_canvas": true,
+  "input_file": "results\\sequential_20261125\\figure_data.json",
+  "input_sha256": "0558a0e71bb5aa0a3dff6ccb2d1cc190cb534de581c8aa524591daf7611779b9",
+  "values": {
+    "model": "openai/gpt-4.1",
+    "complete_rounds": 16,
+    "rows": [
+      {
+        "group": "Business / Domestic",
+        "observed_native": {
+          "car_dropoff": 0.11290882144852094,
+          "car_airport_parking": 0.22211391096164462,
+          "car_offairport_parking": 0.012509815479281785,
+          "car_other_parking": 0.007293741142208332,
+          "taxi_ridehail": 0.19903629417711646,
+          "rental_carsharing": 0.11617076998031664,
+          "bus_transfer": 0.07153771288235285,
+          "s_bahn": 0.24847943501798053,
+          "uefex": 0.003347588489223625,
+          "other": 0.006601910421354264
+        },
+        "predicted_native": {
+          "car_dropoff": 0.17125,
+          "car_airport_parking": 0.20625000000000002,
+          "car_offairport_parking": 0.058125,
+          "car_other_parking": 0.010625,
+          "taxi_ridehail": 0.123125,
+          "rental_carsharing": 0.035,
+          "bus_transfer": 0.043750000000000004,
+          "s_bahn": 0.30125,
+          "uefex": 0.033125,
+          "other": 0.0175
+        },
+        "observed_visual": {
+          "private_car": 0.3548262890316557,
+          "taxi": 0.19903629417711646,
+          "rental": 0.11617076998031664,
+          "bus": 0.07153771288235285,
+          "rail": 0.25182702350720415,
+          "other": 0.006601910421354264
+        },
+        "predicted_visual": {
+          "private_car": 0.44625000000000004,
+          "taxi": 0.123125,
+          "rental": 0.035,
+          "bus": 0.043750000000000004,
+          "rail": 0.33437500000000003,
+          "other": 0.0175
+        },
+        "mean_absolute_error_native_pp": 4.014673760028612
+      },
+      {
+        "group": "Private / Domestic",
+        "observed_native": {
+          "car_dropoff": 0.29434849524442913,
+          "car_airport_parking": 0.08170427176393094,
+          "car_offairport_parking": 0.04048857917776017,
+          "car_other_parking": 0.008228878822278561,
+          "taxi_ridehail": 0.05953686657449073,
+          "rental_carsharing": 0.05970898894460615,
+          "bus_transfer": 0.0772742010394252,
+          "s_bahn": 0.35919092797387836,
+          "uefex": 0.012240002711743659,
+          "other": 0.007278787747457605
+        },
+        "predicted_native": {
+          "car_dropoff": 0.1975,
+          "car_airport_parking": 0.215,
+          "car_offairport_parking": 0.06625,
+          "car_other_parking": 0.015,
+          "taxi_ridehail": 0.074375,
+          "rental_carsharing": 0.031875,
+          "bus_transfer": 0.06625,
+          "s_bahn": 0.286875,
+          "uefex": 0.0275,
+          "other": 0.019375
+        },
+        "observed_visual": {
+          "private_car": 0.4247702250083988,
+          "taxi": 0.05953686657449073,
+          "rental": 0.05970898894460615,
+          "bus": 0.0772742010394252,
+          "rail": 0.371430930685622,
+          "other": 0.007278787747457605
+        },
+        "predicted_visual": {
+          "private_car": 0.49375,
+          "taxi": 0.074375,
+          "rental": 0.031875,
+          "bus": 0.06625,
+          "rail": 0.314375,
+          "other": 0.019375
+        },
+        "mean_absolute_error_native_pp": 4.160452264046771
+      },
+      {
+        "group": "Business / Continental",
+        "observed_native": {
+          "car_dropoff": 0.11470330644628887,
+          "car_airport_parking": 0.1588704347219814,
+          "car_offairport_parking": 0.012653548060918453,
+          "car_other_parking": 0.00546142694198766,
+          "taxi_ridehail": 0.1735413924653301,
+          "rental_carsharing": 0.10655117366860953,
+          "bus_transfer": 0.10682575719410664,
+          "s_bahn": 0.29708347982252914,
+          "uefex": 0.014358898164548453,
+          "other": 0.009950582513699884
+        },
+        "predicted_native": {
+          "car_dropoff": 0.165625,
+          "car_airport_parking": 0.17,
+          "car_offairport_parking": 0.050625,
+          "car_other_parking": 0.01,
+          "taxi_ridehail": 0.14125,
+          "rental_carsharing": 0.04,
+          "bus_transfer": 0.046875,
+          "s_bahn": 0.31375000000000003,
+          "uefex": 0.040625,
+          "other": 0.02125
+        },
+        "observed_visual": {
+          "private_car": 0.29168871617117637,
+          "taxi": 0.1735413924653301,
+          "rental": 0.10655117366860953,
+          "bus": 0.10682575719410664,
+          "rail": 0.3114423779870776,
+          "other": 0.009950582513699884
+        },
+        "predicted_visual": {
+          "private_car": 0.39625,
+          "taxi": 0.14125,
+          "rental": 0.04,
+          "bus": 0.046875,
+          "rail": 0.35437500000000005,
+          "other": 0.02125
+        },
+        "mean_absolute_error_native_pp": 3.175866466560924
+      },
+      {
+        "group": "Private / Continental",
+        "observed_native": {
+          "car_dropoff": 0.26468703739038796,
+          "car_airport_parking": 0.07245322093208274,
+          "car_offairport_parking": 0.08222437689832668,
+          "car_other_parking": 0.007912345796191891,
+          "taxi_ridehail": 0.05462416650804476,
+          "rental_carsharing": 0.03585040652461142,
+          "bus_transfer": 0.0751621156087607,
+          "s_bahn": 0.3767198865317443,
+          "uefex": 0.027098292421971888,
+          "other": 0.0032681513878777876
+        },
+        "predicted_native": {
+          "car_dropoff": 0.198125,
+          "car_airport_parking": 0.1875,
+          "car_offairport_parking": 0.06875,
+          "car_other_parking": 0.011875,
+          "taxi_ridehail": 0.08750000000000001,
+          "rental_carsharing": 0.03625,
+          "bus_transfer": 0.06375,
+          "s_bahn": 0.2925,
+          "uefex": 0.0325,
+          "other": 0.02125
+        },
+        "observed_visual": {
+          "private_car": 0.4272769810169893,
+          "taxi": 0.05462416650804476,
+          "rental": 0.03585040652461142,
+          "bus": 0.0751621156087607,
+          "rail": 0.4038181789537162,
+          "other": 0.0032681513878777876
+        },
+        "predicted_visual": {
+          "private_car": 0.46625,
+          "taxi": 0.08750000000000001,
+          "rental": 0.03625,
+          "bus": 0.06375,
+          "rail": 0.32499999999999996,
+          "other": 0.02125
+        },
+        "mean_absolute_error_native_pp": 3.5133683285843924
+      },
+      {
+        "group": "Business / Intercontinental",
+        "observed_native": {
+          "car_dropoff": 0.13365901547776274,
+          "car_airport_parking": 0.13789926486852686,
+          "car_offairport_parking": 0.0165229229902933,
+          "car_other_parking": 0.0,
+          "taxi_ridehail": 0.22082245856660668,
+          "rental_carsharing": 0.13563225110278104,
+          "bus_transfer": 0.09878659909860932,
+          "s_bahn": 0.23224904152673936,
+          "uefex": 0.008899812462285397,
+          "other": 0.0155286339063951
+        },
+        "predicted_native": {
+          "car_dropoff": 0.14625,
+          "car_airport_parking": 0.25625,
+          "car_offairport_parking": 0.060625,
+          "car_other_parking": 0.01,
+          "taxi_ridehail": 0.165625,
+          "rental_carsharing": 0.041875,
+          "bus_transfer": 0.031875,
+          "s_bahn": 0.224375,
+          "uefex": 0.03625,
+          "other": 0.026875
+        },
+        "observed_visual": {
+          "private_car": 0.2880812033365829,
+          "taxi": 0.22082245856660668,
+          "rental": 0.13563225110278104,
+          "bus": 0.09878659909860932,
+          "rail": 0.24114885398902475,
+          "other": 0.0155286339063951
+        },
+        "predicted_visual": {
+          "private_car": 0.47312499999999996,
+          "taxi": 0.165625,
+          "rental": 0.041875,
+          "bus": 0.031875,
+          "rail": 0.260625,
+          "other": 0.026875
+        },
+        "mean_absolute_error_native_pp": 4.47480700589473
+      },
+      {
+        "group": "Private / Intercontinental",
+        "observed_native": {
+          "car_dropoff": 0.28209987849906115,
+          "car_airport_parking": 0.05459196638956193,
+          "car_offairport_parking": 0.0787217739912474,
+          "car_other_parking": 0.011317659213764522,
+          "taxi_ridehail": 0.0746333998046379,
+          "rental_carsharing": 0.05750886609010293,
+          "bus_transfer": 0.09448290352831025,
+          "s_bahn": 0.3166186556657825,
+          "uefex": 0.023534541724861996,
+          "other": 0.0064903550926695645
+        },
+        "predicted_native": {
+          "car_dropoff": 0.195625,
+          "car_airport_parking": 0.2225,
+          "car_offairport_parking": 0.081875,
+          "car_other_parking": 0.01375,
+          "taxi_ridehail": 0.11812500000000001,
+          "rental_carsharing": 0.038125,
+          "bus_transfer": 0.049375,
+          "s_bahn": 0.226875,
+          "uefex": 0.03125,
+          "other": 0.0225
+        },
+        "observed_visual": {
+          "private_car": 0.426731278093635,
+          "taxi": 0.0746333998046379,
+          "rental": 0.05750886609010293,
+          "bus": 0.09448290352831025,
+          "rail": 0.34015319739064453,
+          "other": 0.0064903550926695645
+        },
+        "predicted_visual": {
+          "private_car": 0.51375,
+          "taxi": 0.11812500000000001,
+          "rental": 0.038125,
+          "bus": 0.049375,
+          "rail": 0.258125,
+          "other": 0.0225
+        },
+        "mean_absolute_error_native_pp": 4.814206075665135
+      }
+    ],
+    "visual_families": [
+      {
+        "family": "private_car",
+        "label": "Private car",
+        "source_modes": [
+          "car_dropoff",
+          "car_airport_parking",
+          "car_offairport_parking",
+          "car_other_parking"
+        ],
+        "color": "#99BDD2"
+      },
+      {
+        "family": "taxi",
+        "label": "Taxi / ride-hailing",
+        "source_modes": [
+          "taxi_ridehail"
+        ],
+        "color": "#F1BE67"
+      },
+      {
+        "family": "rental",
+        "label": "Rental / carsharing",
+        "source_modes": [
+          "rental_carsharing"
+        ],
+        "color": "#C4A8D1"
+      },
+      {
+        "family": "bus",
+        "label": "Bus / transfer",
+        "source_modes": [
+          "bus_transfer"
+        ],
+        "color": "#80C5B3"
+      },
+      {
+        "family": "rail",
+        "label": "Rail",
+        "source_modes": [
+          "s_bahn",
+          "uefex"
+        ],
+        "color": "#386F92"
+      },
+      {
+        "family": "other",
+        "label": "Other",
+        "source_modes": [
+          "other"
+        ],
+        "color": "#C9CFD4"
+      }
+    ],
+    "scoring_categories": [
+      "car_dropoff",
+      "car_airport_parking",
+      "car_offairport_parking",
+      "car_other_parking",
+      "taxi_ridehail",
+      "rental_carsharing",
+      "bus_transfer",
+      "s_bahn",
+      "uefex",
+      "other"
+    ],
+    "visual_aggregation_only": true,
+    "native_modes_renormalised": false,
+    "metadata": {
+      "mid_models": [
+        "openai/gpt-4.1",
+        "google/gemma-3-4b-it"
+      ],
+      "fmg_model": "openai/gpt-4.1",
+      "model_labels": {
+        "google/gemma-3-4b-it": "Gemma 3 4B",
+        "openai/gpt-4.1-mini": "GPT-4.1 mini",
+        "qwen/qwen3-235b-a22b-2507": "Qwen3 235B A22B",
+        "openai/gpt-4.1": "GPT-4.1"
+      },
+      "mid_condition": "overall_rate_anchored",
+      "fmg_condition": "unanchored",
+      "prediction_basis": "mean across each block's complete round prefix"
+    },
+    "interpretation": "Derived aggregate study comparison; no individual passenger records or causal effects."
+  },
+  "files": {
+    "pdf": {
+      "file": "revised_03_fmg_results.pdf",
+      "sha256": "155110fa3fda99378ce9c87995c1c4f2d59451efb7ad3470d7fc04f5f22975e4"
+    },
+    "svg": {
+      "file": "revised_03_fmg_results.svg",
+      "sha256": "b5c53fa9c54687d609c128149320eacfdefbab78dff658346af22d6ef70d1876"
+    },
+    "png": {
+      "file": "revised_03_fmg_results.png",
+      "sha256": "c09314198de27a62dd11a6578ed1609c576883f64457e2cd021850165cacce48"
+    }
+  }
+}

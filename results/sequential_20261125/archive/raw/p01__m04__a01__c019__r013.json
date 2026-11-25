@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c019__r013",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__782410ef69d3",
+  "round": 13,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "06c09e1d5712626ceb8a2e9e6d48617c6ec1d20ac3875ca28a07212ef57ea30c",
+  "started_utc": "2026-11-25T17:41:23.575535+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:41:25.138029+00:00",
+      "cost_usd": 0.001494,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001494,
+  "reservation_upper_bound_usd": 0.023928,
+  "response_sha256": "65d4341d292d1ba5200bc3011b7618c36332fe6a6f227e6a2b65d13870761eeb",
+  "response": {
+    "id": "gen-1795628483-ma1hugpAs5qUaRETwfwJ",
+    "object": "chat.completion",
+    "created": 1795628483,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.22,\n  \"rationale\": \"For 8-14 night trips, travellers likely have luggage and may live far from airports, favoring car use. Some use local PT for airport access; a minority use long-distance trains, especially for major airports but less than car.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 395,
+      "completion_tokens": 88,
+      "total_tokens": 483,
+      "cost": 0.001494,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001494,
+        "upstream_inference_prompt_cost": 0.00079,
+        "upstream_inference_completions_cost": 0.000704
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628483-ma1hugpAs5qUaRETwfwJ",
+  "raw_prediction": {
+    "car": 0.55,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.22,
+    "rationale": "For 8-14 night trips, travellers likely have luggage and may live far from airports, favoring car use. Some use local PT for airport access; a minority use long-distance trains, especially for major airports but less than car."
+  },
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.22,
+    "rationale": "For 8-14 night trips, travellers likely have luggage and may live far from airports, favoring car use. Some use local PT for airport access; a minority use long-distance trains, especially for major airports but less than car."
+  },
+  "normalization": {
+    "sum_before": 1.12,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:41:25.138029+00:00",
+  "cost_exceeded_reservation": false
+}

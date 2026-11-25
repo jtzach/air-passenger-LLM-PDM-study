@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c019__r009",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__782410ef69d3",
+  "round": 9,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "e230bfc0f1ca04c9cfb6965f8fb2a3722298d19f891d3bfa40cae4cdd2e53590",
+  "started_utc": "2026-11-25T17:38:24.907400+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:38:26.069113+00:00",
+      "cost_usd": 0.00151,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00151,
+  "reservation_upper_bound_usd": 0.023928,
+  "response_sha256": "390071336128edc4b44d1078ad8b8a1bdec9b775ef0d99c1c8da8ec5986446e1",
+  "response": {
+    "id": "gen-1795628304-nIZcGi43bgifnMvxDcuR",
+    "object": "chat.completion",
+    "created": 1795628304,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.40,\n  \"long_distance_rail\": 0.30,\n  \"rationale\": \"For longer trips (8-14 nights), travelers likely use cars for airport access, but some use public/local transport or long-distance rail, especially given Germany's rail network and urban connectivity. Mode combinations reflect varied access, convenience, and cost considerations.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 395,
+      "completion_tokens": 90,
+      "total_tokens": 485,
+      "cost": 0.00151,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00151,
+        "upstream_inference_prompt_cost": 0.00079,
+        "upstream_inference_completions_cost": 0.00072
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628304-nIZcGi43bgifnMvxDcuR",
+  "raw_prediction": {
+    "car": 0.55,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.3,
+    "rationale": "For longer trips (8-14 nights), travelers likely use cars for airport access, but some use public/local transport or long-distance rail, especially given Germany's rail network and urban connectivity. Mode combinations reflect varied access, convenience, and cost considerations."
+  },
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.3,
+    "rationale": "For longer trips (8-14 nights), travelers likely use cars for airport access, but some use public/local transport or long-distance rail, especially given Germany's rail network and urban connectivity. Mode combinations reflect varied access, convenience, and cost considerations."
+  },
+  "normalization": {
+    "sum_before": 1.25,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:38:26.069113+00:00",
+  "cost_exceeded_reservation": false
+}

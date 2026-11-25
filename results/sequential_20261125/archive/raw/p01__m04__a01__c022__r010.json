@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c022__r010",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__f6e4375535d4",
+  "round": 10,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "70ba8be6bfd4844890b1c3cac7182cff8e6b884dec2255a5bc3b086be7e1ba18",
+  "started_utc": "2026-11-25T17:39:22.251785+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:39:23.913814+00:00",
+      "cost_usd": 0.001486,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001486,
+  "reservation_upper_bound_usd": 0.023921999999999995,
+  "response_sha256": "b91343af21010e07d55e61f96e251e2d159fb798f615b46a8007d8371bc69ea4",
+  "response": {
+    "id": "gen-1795628361-irESe7IcAXlEbLo2Zh1Z",
+    "object": "chat.completion",
+    "created": 1795628361,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.42,\n  \"local_pt\": 0.33,\n  \"long_distance_rail\": 0.21,\n  \"rationale\": \"For 6-7 night air trips, many use cars for flexible airport access, some rely on local public transport, while long-distance rail is less common but feasible for intercity airport transfer, especially given Germany’s strong rail network.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 395,
+      "completion_tokens": 87,
+      "total_tokens": 482,
+      "cost": 0.001486,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001486,
+        "upstream_inference_prompt_cost": 0.00079,
+        "upstream_inference_completions_cost": 0.000696
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628361-irESe7IcAXlEbLo2Zh1Z",
+  "raw_prediction": {
+    "car": 0.42,
+    "local_pt": 0.33,
+    "long_distance_rail": 0.21,
+    "rationale": "For 6-7 night air trips, many use cars for flexible airport access, some rely on local public transport, while long-distance rail is less common but feasible for intercity airport transfer, especially given Germany’s strong rail network."
+  },
+  "prediction": {
+    "car": 0.42,
+    "local_pt": 0.33,
+    "long_distance_rail": 0.21,
+    "rationale": "For 6-7 night air trips, many use cars for flexible airport access, some rely on local public transport, while long-distance rail is less common but feasible for intercity airport transfer, especially given Germany’s strong rail network."
+  },
+  "normalization": {
+    "sum_before": 0.96,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:39:23.913814+00:00",
+  "cost_exceeded_reservation": false
+}

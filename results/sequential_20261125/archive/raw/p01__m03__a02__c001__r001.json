@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a02__c001__r001",
+  "block_id": "p01__m03__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzauto_gr1__296e9849dc3d",
+  "round": 1,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "3615f09e121da45d993f41cffc418aff8e578cfc75c4aedf0d7a88d6f4108240",
+  "started_utc": "2026-11-25T14:19:54.011684+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:20:05.237392+00:00",
+      "cost_usd": 0.00013467,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00013467,
+  "reservation_upper_bound_usd": 0.00211698,
+  "response_sha256": "128e36e276d5cd5f374352b76f7916b3e95796334104cd4f90f03f2c3961f9c7",
+  "response": {
+    "id": "gen-1795616394-QqxceSk1EvrFSH6CecxK",
+    "object": "chat.completion",
+    "created": 1795616394,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.25,\n  \"local_pt\": 0.3,\n  \"long_distance_rail\": 0.18,\n  \"rationale\": \"Households without a car may rely more on local public transport for airport access, while car use could involve rentals or rides. Long-distance rail may substitute for car-based access, increasing its likelihood relative to the general population.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 472,
+      "completion_tokens": 86,
+      "total_tokens": 558,
+      "cost": 0.00013467,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00013467,
+        "upstream_inference_prompt_cost": 6.372e-05,
+        "upstream_inference_completions_cost": 7.095e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795616394-QqxceSk1EvrFSH6CecxK",
+  "raw_prediction": {
+    "car": 0.25,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.18,
+    "rationale": "Households without a car may rely more on local public transport for airport access, while car use could involve rentals or rides. Long-distance rail may substitute for car-based access, increasing its likelihood relative to the general population."
+  },
+  "prediction": {
+    "car": 0.25,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.18,
+    "rationale": "Households without a car may rely more on local public transport for airport access, while car use could involve rentals or rides. Long-distance rail may substitute for car-based access, increasing its likelihood relative to the general population."
+  },
+  "normalization": {
+    "sum_before": 0.73,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:20:05.237392+00:00",
+  "cost_exceeded_reservation": false
+}

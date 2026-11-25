@@ -1,0 +1,120 @@
+{
+  "task_id": "p02__m04__a01__c005__r010",
+  "block_id": "p02__m04__a01",
+  "panel_id": "fmg_2025",
+  "panel_index": 1,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "fmg_business_intercontinental",
+  "round": 10,
+  "modes": [
+    "car_dropoff",
+    "car_airport_parking",
+    "car_offairport_parking",
+    "car_other_parking",
+    "taxi_ridehail",
+    "rental_carsharing",
+    "bus_transfer",
+    "s_bahn",
+    "uefex",
+    "other"
+  ],
+  "mutually_exclusive": true,
+  "request_sha256": "fd0759671eb87a8c5c8e8863699558b540b3401298e7be362e33e59a502cebc8",
+  "started_utc": "2026-11-25T17:39:26.992391+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:39:29.037998+00:00",
+      "cost_usd": 0.002492,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.002492,
+  "reservation_upper_bound_usd": 0.028763999999999998,
+  "response_sha256": "606a811bbfca43c5a40fad5c07dbf7b83a54d2f9ced02628143233b7639c343a",
+  "response": {
+    "id": "gen-1795628366-auOZX6GgBjvHpZ2Ep3GN",
+    "object": "chat.completion",
+    "created": 1795628366,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car_dropoff\": 0.13,\n  \"car_airport_parking\": 0.22,\n  \"car_offairport_parking\": 0.04,\n  \"car_other_parking\": 0.01,\n  \"taxi_ridehail\": 0.17,\n  \"rental_carsharing\": 0.02,\n  \"bus_transfer\": 0.03,\n  \"s_bahn\": 0.32,\n  \"uefex\": 0.04,\n  \"other\": 0.02,\n  \"rationale\": \"Business travelers on intercontinental flights value reliability and speed, leading to high shares for S-Bahn, airport parking, and taxi/ride-hail. Modal shares for buses and regional trains are lower due to convenience and schedule preferences.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 570,
+      "completion_tokens": 169,
+      "total_tokens": 739,
+      "cost": 0.002492,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002492,
+        "upstream_inference_prompt_cost": 0.00114,
+        "upstream_inference_completions_cost": 0.001352
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628366-auOZX6GgBjvHpZ2Ep3GN",
+  "raw_prediction": {
+    "car_dropoff": 0.13,
+    "car_airport_parking": 0.22,
+    "car_offairport_parking": 0.04,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.17,
+    "rental_carsharing": 0.02,
+    "bus_transfer": 0.03,
+    "s_bahn": 0.32,
+    "uefex": 0.04,
+    "other": 0.02,
+    "rationale": "Business travelers on intercontinental flights value reliability and speed, leading to high shares for S-Bahn, airport parking, and taxi/ride-hail. Modal shares for buses and regional trains are lower due to convenience and schedule preferences."
+  },
+  "prediction": {
+    "car_dropoff": 0.13,
+    "car_airport_parking": 0.22,
+    "car_offairport_parking": 0.04,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.17,
+    "rental_carsharing": 0.02,
+    "bus_transfer": 0.03,
+    "s_bahn": 0.32,
+    "uefex": 0.04,
+    "other": 0.02,
+    "rationale": "Business travelers on intercontinental flights value reliability and speed, leading to high shares for S-Bahn, airport parking, and taxi/ride-hail. Modal shares for buses and regional trains are lower due to convenience and schedule preferences."
+  },
+  "normalization": {
+    "sum_before": 1.0,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:39:29.038973+00:00",
+  "cost_exceeded_reservation": false
+}

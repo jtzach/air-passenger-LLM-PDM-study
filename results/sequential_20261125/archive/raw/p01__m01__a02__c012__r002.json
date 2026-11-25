@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m01__a02__c012__r002",
+  "block_id": "p01__m01__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__RegioStaR7__d3321efbbd2e",
+  "round": 2,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "1584c33feee95f58a1f121f30e7d299ab2d461bbf721922afd0932f91fb1a560",
+  "started_utc": "2026-11-25T14:23:50.582695+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:23:52.465373+00:00",
+      "cost_usd": 2.112e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.112e-05,
+  "reservation_upper_bound_usd": 0.00036570000000000005,
+  "response_sha256": "905e9c513f2ecbf6c40ba299177abc0612c1f6f69fd2f7fc466eb9c6af36e052",
+  "response": {
+    "id": "gen-1795616630-r2v4FtANquLwKl5JMrb7",
+    "object": "chat.completion",
+    "created": 1795616630,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.3,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.09,\n  \"rationale\": \"Rural to central city suggests a need to combine air travel with ground transport. Car use would likely be for onward travel from the destination, while local public transport might be used for shorter trips, and long-distance rail for longer journeys.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 488,
+      "completion_tokens": 96,
+      "total_tokens": 584,
+      "cost": 2.112e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.112e-05,
+        "upstream_inference_prompt_cost": 1.632e-05,
+        "upstream_inference_completions_cost": 4.8e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616630-r2v4FtANquLwKl5JMrb7",
+  "raw_prediction": {
+    "car": 0.3,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.09,
+    "rationale": "Rural to central city suggests a need to combine air travel with ground transport. Car use would likely be for onward travel from the destination, while local public transport might be used for shorter trips, and long-distance rail for longer journeys."
+  },
+  "prediction": {
+    "car": 0.3,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.09,
+    "rationale": "Rural to central city suggests a need to combine air travel with ground transport. Car use would likely be for onward travel from the destination, while local public transport might be used for shorter trips, and long-distance rail for longer journeys."
+  },
+  "normalization": {
+    "sum_before": 0.57,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:23:52.465373+00:00",
+  "cost_exceeded_reservation": false
+}

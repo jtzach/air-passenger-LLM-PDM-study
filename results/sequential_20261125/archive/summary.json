@@ -1,0 +1,1508 @@
+{
+  "completed_utc": "2026-11-25T17:42:44.843441+00:00",
+  "plan_sha256": "4052c4ac1c244888754ece35e16ad26bdaf57c46dab6c9e5e55052a897235c47",
+  "parent_plan_sha256": "09032d51b5ec0bbb0d5c7d0483f146af07e5296e5a49bfe6552cb52b48daa9d7",
+  "accounted_cost_usd": 1.9708011349999968,
+  "global_stop": null,
+  "active_execution_seconds": 1400.726526,
+  "administrative_amendment": {
+    "parent_plan_sha256": "09032d51b5ec0bbb0d5c7d0483f146af07e5296e5a49bfe6552cb52b48daa9d7",
+    "pause_utc": "2026-11-25T14:34:18.358501+00:00",
+    "prior_active_execution_seconds": 866.615342,
+    "accounted_prior_cost_usd": 0.879770375,
+    "unknown_outcome_reservations_usd": 0.04340556,
+    "unknown_outcome_tasks": [
+      "p01__m03__a01__c001__r007",
+      "p01__m03__a01__c003__r007",
+      "p01__m03__a01__c005__r007",
+      "p01__m03__a01__c006__r007",
+      "p01__m03__a01__c014__r007",
+      "p01__m03__a02__c024__r007",
+      "p01__m04__a02__c016__r007",
+      "p02__m02__a01__c003__r007"
+    ],
+    "original_record_count": 1094,
+    "interrupted_round": 7,
+    "replacement_seed_offset": 1000000,
+    "replacement_blocks": [
+      "p01__m02__a01",
+      "p01__m02__a02",
+      "p01__m03__a01",
+      "p01__m03__a02",
+      "p01__m04__a01",
+      "p01__m04__a02",
+      "p02__m02__a01",
+      "p02__m04__a01"
+    ],
+    "excluded_from_scoring_task_ids": [
+      "p01__m02__a01__c001__r007",
+      "p01__m02__a01__c002__r007",
+      "p01__m02__a01__c003__r007",
+      "p01__m02__a01__c004__r007",
+      "p01__m02__a01__c005__r007",
+      "p01__m02__a01__c006__r007",
+      "p01__m02__a01__c007__r007",
+      "p01__m02__a01__c008__r007",
+      "p01__m02__a01__c009__r007",
+      "p01__m02__a01__c010__r007",
+      "p01__m02__a01__c011__r007",
+      "p01__m02__a01__c012__r007",
+      "p01__m02__a01__c013__r007",
+      "p01__m02__a01__c014__r007",
+      "p01__m02__a01__c015__r007",
+      "p01__m02__a01__c016__r007",
+      "p01__m02__a01__c017__r007",
+      "p01__m02__a01__c018__r007",
+      "p01__m02__a01__c019__r007",
+      "p01__m02__a01__c020__r007",
+      "p01__m02__a01__c021__r007",
+      "p01__m02__a01__c022__r007",
+      "p01__m02__a01__c023__r007",
+      "p01__m02__a01__c024__r007",
+      "p01__m02__a02__c001__r007",
+      "p01__m02__a02__c002__r007",
+      "p01__m02__a02__c003__r007",
+      "p01__m02__a02__c004__r007",
+      "p01__m02__a02__c005__r007",
+      "p01__m02__a02__c006__r007",
+      "p01__m02__a02__c007__r007",
+      "p01__m02__a02__c008__r007",
+      "p01__m02__a02__c009__r007",
+      "p01__m02__a02__c010__r007",
+      "p01__m02__a02__c011__r007",
+      "p01__m02__a02__c012__r007",
+      "p01__m02__a02__c013__r007",
+      "p01__m02__a02__c014__r007",
+      "p01__m02__a02__c015__r007",
+      "p01__m02__a02__c016__r007",
+      "p01__m02__a02__c017__r007",
+      "p01__m02__a02__c018__r007",
+      "p01__m02__a02__c019__r007",
+      "p01__m02__a02__c020__r007",
+      "p01__m02__a02__c021__r007",
+      "p01__m02__a02__c022__r007",
+      "p01__m02__a02__c023__r007",
+      "p01__m02__a02__c024__r007",
+      "p01__m03__a01__c001__r007",
+      "p01__m03__a01__c002__r007",
+      "p01__m03__a01__c003__r007",
+      "p01__m03__a01__c004__r007",
+      "p01__m03__a01__c005__r007",
+      "p01__m03__a01__c006__r007",
+      "p01__m03__a01__c007__r007",
+      "p01__m03__a01__c008__r007",
+      "p01__m03__a01__c009__r007",
+      "p01__m03__a01__c010__r007",
+      "p01__m03__a01__c011__r007",
+      "p01__m03__a01__c012__r007",
+      "p01__m03__a01__c013__r007",
+      "p01__m03__a01__c014__r007",
+      "p01__m03__a01__c015__r007",
+      "p01__m03__a01__c016__r007",
+      "p01__m03__a01__c017__r007",
+      "p01__m03__a01__c018__r007",
+      "p01__m03__a01__c019__r007",
+      "p01__m03__a01__c020__r007",
+      "p01__m03__a01__c021__r007",
+      "p01__m03__a01__c022__r007",
+      "p01__m03__a01__c023__r007",
+      "p01__m03__a01__c024__r007",
+      "p01__m03__a02__c001__r007",
+      "p01__m03__a02__c002__r007",
+      "p01__m03__a02__c003__r007",
+      "p01__m03__a02__c004__r007",
+      "p01__m03__a02__c005__r007",
+      "p01__m03__a02__c006__r007",
+      "p01__m03__a02__c007__r007",
+      "p01__m03__a02__c008__r007",
+      "p01__m03__a02__c009__r007",
+      "p01__m03__a02__c010__r007",
+      "p01__m03__a02__c011__r007",
+      "p01__m03__a02__c012__r007",
+      "p01__m03__a02__c013__r007",
+      "p01__m03__a02__c014__r007",
+      "p01__m03__a02__c015__r007",
+      "p01__m03__a02__c016__r007",
+      "p01__m03__a02__c017__r007",
+      "p01__m03__a02__c018__r007",
+      "p01__m03__a02__c019__r007",
+      "p01__m03__a02__c020__r007",
+      "p01__m03__a02__c021__r007",
+      "p01__m03__a02__c022__r007",
+      "p01__m03__a02__c023__r007",
+      "p01__m03__a02__c024__r007",
+      "p01__m04__a01__c001__r007",
+      "p01__m04__a01__c002__r007",
+      "p01__m04__a01__c003__r007",
+      "p01__m04__a01__c004__r007",
+      "p01__m04__a01__c005__r007",
+      "p01__m04__a01__c006__r007",
+      "p01__m04__a01__c007__r007",
+      "p01__m04__a01__c008__r007",
+      "p01__m04__a01__c009__r007",
+      "p01__m04__a01__c010__r007",
+      "p01__m04__a01__c011__r007",
+      "p01__m04__a01__c012__r007",
+      "p01__m04__a01__c013__r007",
+      "p01__m04__a01__c014__r007",
+      "p01__m04__a01__c015__r007",
+      "p01__m04__a01__c016__r007",
+      "p01__m04__a01__c017__r007",
+      "p01__m04__a01__c018__r007",
+      "p01__m04__a01__c019__r007",
+      "p01__m04__a01__c020__r007",
+      "p01__m04__a01__c021__r007",
+      "p01__m04__a01__c022__r007",
+      "p01__m04__a01__c023__r007",
+      "p01__m04__a01__c024__r007",
+      "p01__m04__a02__c001__r007",
+      "p01__m04__a02__c002__r007",
+      "p01__m04__a02__c003__r007",
+      "p01__m04__a02__c004__r007",
+      "p01__m04__a02__c005__r007",
+      "p01__m04__a02__c006__r007",
+      "p01__m04__a02__c007__r007",
+      "p01__m04__a02__c008__r007",
+      "p01__m04__a02__c009__r007",
+      "p01__m04__a02__c010__r007",
+      "p01__m04__a02__c011__r007",
+      "p01__m04__a02__c012__r007",
+      "p01__m04__a02__c013__r007",
+      "p01__m04__a02__c014__r007",
+      "p01__m04__a02__c015__r007",
+      "p01__m04__a02__c016__r007",
+      "p01__m04__a02__c017__r007",
+      "p01__m04__a02__c018__r007",
+      "p01__m04__a02__c019__r007",
+      "p01__m04__a02__c020__r007",
+      "p01__m04__a02__c021__r007",
+      "p01__m04__a02__c022__r007",
+      "p01__m04__a02__c023__r007",
+      "p01__m04__a02__c024__r007",
+      "p02__m02__a01__c001__r007",
+      "p02__m02__a01__c002__r007",
+      "p02__m02__a01__c003__r007",
+      "p02__m02__a01__c004__r007",
+      "p02__m02__a01__c005__r007",
+      "p02__m02__a01__c006__r007",
+      "p02__m02__a01__c007__r007",
+      "p02__m04__a01__c001__r007",
+      "p02__m04__a01__c002__r007",
+      "p02__m04__a01__c003__r007",
+      "p02__m04__a01__c004__r007",
+      "p02__m04__a01__c005__r007",
+      "p02__m04__a01__c006__r007",
+      "p02__m04__a01__c007__r007"
+    ],
+    "dispositions": {
+      "p01__m01__a01": "retain_original_halt",
+      "p01__m01__a02": "retain_original_halt",
+      "p01__m02__a01": "replace_entire_administratively_interrupted_round",
+      "p01__m02__a02": "replace_entire_administratively_interrupted_round",
+      "p01__m03__a01": "replace_entire_administratively_interrupted_round",
+      "p01__m03__a02": "replace_entire_administratively_interrupted_round",
+      "p01__m04__a01": "replace_entire_administratively_interrupted_round",
+      "p01__m04__a02": "replace_entire_administratively_interrupted_round",
+      "p02__m01__a01": "retain_original_halt",
+      "p02__m02__a01": "replace_entire_administratively_interrupted_round",
+      "p02__m03__a01": "retain_original_halt",
+      "p02__m04__a01": "replace_entire_administratively_interrupted_round"
+    },
+    "policy": "Retain failures; replace whole administratively incomplete rounds regardless of values; retain all partial records and conservative unknown costs; exclude only documented pause from runtime."
+  },
+  "inference_scope": "model-repeat median/mean under stated assumptions; no survey-sampling uncertainty; user pause and administrative replacement disclosed",
+  "blocks": {
+    "p01__m01__a01": {
+      "block_id": "p01__m01__a01",
+      "panel_id": "mid_2023",
+      "model_id": "google/gemma-3-4b-it",
+      "arm": "unanchored",
+      "baseline_mae_pp": 4.162031865469822,
+      "score_support_upper_pp": 76.1568692017306,
+      "complete_rounds": 0,
+      "round_scores": [],
+      "looks": [],
+      "halt_reason": "incomplete_round_invalid_output",
+      "identity": [
+        "Parasail",
+        "google/gemma-3-4b-it"
+      ],
+      "diagnostics": [],
+      "inference_assumptions_ok": true,
+      "incomplete_round": 1
+    },
+    "p01__m01__a02": {
+      "block_id": "p01__m01__a02",
+      "panel_id": "mid_2023",
+      "model_id": "google/gemma-3-4b-it",
+      "arm": "overall_rate_anchored",
+      "baseline_mae_pp": 4.162031865469822,
+      "score_support_upper_pp": 76.1568692017306,
+      "complete_rounds": 2,
+      "round_scores": [
+        {
+          "round": 1,
+          "mae_pp": 5.853948706129935,
+          "no_card_mae_pp": 4.935225796810767,
+          "baseline_gain_pp": -1.691916840660113,
+          "no_card_gain_pp": -0.9187229093191682
+        },
+        {
+          "round": 2,
+          "mae_pp": 5.749220959720228,
+          "no_card_mae_pp": 4.935225796810767,
+          "baseline_gain_pp": -1.587189094250406,
+          "no_card_gain_pp": -0.8139951629094613
+        }
+      ],
+      "looks": [],
+      "halt_reason": "incomplete_round_invalid_output",
+      "identity": [
+        "Parasail",
+        "google/gemma-3-4b-it"
+      ],
+      "diagnostics": [],
+      "inference_assumptions_ok": true,
+      "incomplete_round": 3
+    },
+    "p01__m02__a01": {
+      "block_id": "p01__m02__a01",
+      "panel_id": "mid_2023",
+      "model_id": "openai/gpt-4.1-mini",
+      "arm": "unanchored",
+      "baseline_mae_pp": 4.162031865469822,
+      "score_support_upper_pp": 76.1568692017306,
+      "complete_rounds": 16,
+      "round_scores": [
+        {
+          "round": 1,
+          "mae_pp": 24.989092912100176,
+          "no_card_mae_pp": 25.967814749218594,
+          "baseline_gain_pp": -20.827061046630355,
+          "no_card_gain_pp": 0.9787218371184174
+        },
+        {
+          "round": 2,
+          "mae_pp": 26.038075907556678,
+          "no_card_mae_pp": 30.96781474921859,
+          "baseline_gain_pp": -21.876044042086857,
+          "no_card_gain_pp": 4.929738841661912
+        },
+        {
+          "round": 3,
+          "mae_pp": 26.00996551481406,
+          "no_card_mae_pp": 29.325715638622718,
+          "baseline_gain_pp": -21.847933649344238,
+          "no_card_gain_pp": 3.315750123808659
+        },
+        {
+          "round": 4,
+          "mae_pp": 24.303807428635412,
+          "no_card_mae_pp": 20.967814749218594,
+          "baseline_gain_pp": -20.14177556316559,
+          "no_card_gain_pp": -3.335992679416819
+        },
+        {
+          "round": 5,
+          "mae_pp": 25.93846892486021,
+          "no_card_mae_pp": 35.9678147492186,
+          "baseline_gain_pp": -21.77643705939039,
+          "no_card_gain_pp": 10.029345824358387
+        },
+        {
+          "round": 6,
+          "mae_pp": 25.91004930598307,
+          "no_card_mae_pp": 21.52738365354527,
+          "baseline_gain_pp": -21.748017440513248,
+          "no_card_gain_pp": -4.382665652437797
+        },
+        {
+          "round": 7,
+          "mae_pp": 24.558086451312082,
+          "no_card_mae_pp": 25.967814749218597,
+          "baseline_gain_pp": -20.39605458584226,
+          "no_card_gain_pp": 1.4097282979065149
+        },
+        {
+          "round": 8,
+          "mae_pp": 27.595465224791234,
+          "no_card_mae_pp": 21.00803939146915,
+          "baseline_gain_pp": -23.433433359321413,
+          "no_card_gain_pp": -6.587425833322083
+        },
+        {
+          "round": 9,
+          "mae_pp": 25.78016603247485,
+          "no_card_mae_pp": 24.30114808255193,
+          "baseline_gain_pp": -21.618134167005028,
+          "no_card_gain_pp": -1.4790179499229197
+        },
+        {
+          "round": 10,
+          "mae_pp": 25.674514834369905,
+          "no_card_mae_pp": 24.30114808255193,
+          "baseline_gain_pp": -21.512482968900084,
+          "no_card_gain_pp": -1.3733667518179757
+        },
+        {
+          "round": 11,
+          "mae_pp": 24.163995274551887,
+          "no_card_mae_pp": 24.341372724802483,
+          "baseline_gain_pp": -20.001963409082066,
+          "no_card_gain_pp": 0.17737745025059581
+        },
+        {
+          "round": 12,
+          "mae_pp": 23.29108130281229,
+          "no_card_mae_pp": 25.967814749218597,
+          "baseline_gain_pp": -19.12904943734247,
+          "no_card_gain_pp": 2.676733446406306
+        },
+        {
+          "round": 13,
+          "mae_pp": 25.086816562270624,
+          "no_card_mae_pp": 26.00803939146915,
+          "baseline_gain_pp": -20.924784696800803,
+          "no_card_gain_pp": 0.9212228291985269
+        },
+        {
+          "round": 14,
+          "mae_pp": 25.48194225317588,
+          "no_card_mae_pp": 24.30114808255193,
+          "baseline_gain_pp": -21.31991038770606,
+          "no_card_gain_pp": -1.180794170623951
+        },
+        {
+          "round": 15,
+          "mae_pp": 25.546964848192534,
+          "no_card_mae_pp": 24.30114808255193,
+          "baseline_gain_pp": -21.384932982722713,
+          "no_card_gain_pp": -1.2458167656406047
+        },
+        {
+          "round": 16,
+          "mae_pp": 25.440085085051063,
+          "no_card_mae_pp": 24.30114808255193,
+          "baseline_gain_pp": -21.278053219581242,
+          "no_card_gain_pp": -1.1389370024991337
+        }
+      ],
+      "looks": [
+        {
+          "round": 16,
+          "primary_median": {
+            "estimate": -21.352421685214388,
+            "lower": -21.876044042086857,
+            "upper": -20.001963409082066,
+            "n": 16,
+            "alpha": 0.0011111111111111111,
+            "estimand": "population median of the round-level quantity",
+            "method": "exact noninterpolated binomial order statistics",
+            "width": 1.874080633004791,
+            "family_alpha": 0.04,
+            "endpoint_count": 12,
+            "scheduled_looks": [
+              16,
+              32,
+              64
+            ],
+            "margin": 0.5,
+            "precision_half_width": 0.25,
+            "decision": "meaningful_degradation",
+            "p_improvement_adjusted": 1.0,
+            "p_degradation_adjusted": 0.0010986328125,
+            "n_strict_improvements": 0,
+            "n_strict_degradations": 16,
+            "n_threshold_ties": 0,
+            "iid_assumption_acknowledged": true,
+            "identical_observations": false
+          },
+          "secondary_mean": {
+            "estimate": -21.201004250964676,
+            "lower": -43.833028571765944,
+            "upper": -9.892875355378727,
+            "n": 16,
+            "alpha": 0.0008333333333333334,
+            "estimand": "constant conditional mean of the round-level quantity",
+            "method": "two-sided fixed-mixture betting confidence sequence",
+            "width": 33.940153216387216,
+            "assumptions_acknowledged": true
+          }
+        }
+      ],
+      "halt_reason": "meaningful_degradation",
+      "identity": [
+        "OpenAI",
+        "openai/gpt-4.1-mini"
+      ],
+      "diagnostics": [],
+      "inference_assumptions_ok": true
+    },
+    "p01__m02__a02": {
+      "block_id": "p01__m02__a02",
+      "panel_id": "mid_2023",
+      "model_id": "openai/gpt-4.1-mini",
+      "arm": "overall_rate_anchored",
+      "baseline_mae_pp": 4.162031865469822,
+      "score_support_upper_pp": 76.1568692017306,
+      "complete_rounds": 16,
+      "round_scores": [
+        {
+          "round": 1,
+          "mae_pp": 5.28721643733572,
+          "no_card_mae_pp": 4.721635213604256,
+          "baseline_gain_pp": -1.1251845718658986,
+          "no_card_gain_pp": -0.5655812237314644
+        },
+        {
+          "round": 2,
+          "mae_pp": 6.0446082813563855,
+          "no_card_mae_pp": 4.807259512575223,
+          "baseline_gain_pp": -1.8825764158865637,
+          "no_card_gain_pp": -1.2373487687811622
+        },
+        {
+          "round": 3,
+          "mae_pp": 5.812977719703082,
+          "no_card_mae_pp": 4.231515343981136,
+          "baseline_gain_pp": -1.6509458542332602,
+          "no_card_gain_pp": -1.5814623757219461
+        },
+        {
+          "round": 4,
+          "mae_pp": 5.7151935257027535,
+          "no_card_mae_pp": 5.008574094359842,
+          "baseline_gain_pp": -1.5531616602329317,
+          "no_card_gain_pp": -0.7066194313429115
+        },
+        {
+          "round": 5,
+          "mae_pp": 5.575532015247043,
+          "no_card_mae_pp": 4.6830373051373355,
+          "baseline_gain_pp": -1.4135001497772208,
+          "no_card_gain_pp": -0.8924947101097072
+        },
+        {
+          "round": 6,
+          "mae_pp": 5.928155839029177,
+          "no_card_mae_pp": 4.920109278198373,
+          "baseline_gain_pp": -1.7661239735593552,
+          "no_card_gain_pp": -1.0080465608308042
+        },
+        {
+          "round": 7,
+          "mae_pp": 6.091329640721984,
+          "no_card_mae_pp": 5.6113417363287335,
+          "baseline_gain_pp": -1.929297775252162,
+          "no_card_gain_pp": -0.47998790439325045
+        },
+        {
+          "round": 8,
+          "mae_pp": 5.41158637334433,
+          "no_card_mae_pp": 4.336797321229919,
+          "baseline_gain_pp": -1.2495545078745085,
+          "no_card_gain_pp": -1.0747890521144114
+        },
+        {
+          "round": 9,
+          "mae_pp": 5.6628378446182435,
+          "no_card_mae_pp": 5.739308020564278,
+          "baseline_gain_pp": -1.5008059791484216,
+          "no_card_gain_pp": 0.07647017594603422
+        },
+        {
+          "round": 10,
+          "mae_pp": 5.673219319975824,
+          "no_card_mae_pp": 5.739308020564278,
+          "baseline_gain_pp": -1.5111874545060022,
+          "no_card_gain_pp": 0.06608870058845362
+        },
+        {
+          "round": 11,
+          "mae_pp": 5.854448367385091,
+          "no_card_mae_pp": 5.6113417363287335,
+          "baseline_gain_pp": -1.692416501915269,
+          "no_card_gain_pp": -0.24310663105635744
+        },
+        {
+          "round": 12,
+          "mae_pp": 5.79796604032168,
+          "no_card_mae_pp": 5.6113417363287335,
+          "baseline_gain_pp": -1.635934174851858,
+          "no_card_gain_pp": -0.1866243039929465
+        },
+        {
+          "round": 13,
+          "mae_pp": 5.481942784740785,
+          "no_card_mae_pp": 4.103718787535161,
+          "baseline_gain_pp": -1.3199109192709635,
+          "no_card_gain_pp": -1.378223997205624
+        },
+        {
+          "round": 14,
+          "mae_pp": 5.7126885847516355,
+          "no_card_mae_pp": 5.6113417363287335,
+          "baseline_gain_pp": -1.5506567192818137,
+          "no_card_gain_pp": -0.10134684842290209
+        },
+        {
+          "round": 15,
+          "mae_pp": 5.875422145041768,
+          "no_card_mae_pp": 5.353657413318409,
+          "baseline_gain_pp": -1.7133902795719465,
+          "no_card_gain_pp": -0.5217647317233594
+        },
+        {
+          "round": 16,
+          "mae_pp": 6.676973984319165,
+          "no_card_mae_pp": 4.103718787535161,
+          "baseline_gain_pp": -2.5149421188493433,
+          "no_card_gain_pp": -2.573255196784004
+        }
+      ],
+      "looks": [
+        {
+          "round": 16,
+          "primary_median": {
+            "estimate": -1.5945479175423949,
+            "lower": -1.929297775252162,
+            "upper": -1.2495545078745085,
+            "n": 16,
+            "alpha": 0.0011111111111111111,
+            "estimand": "population median of the round-level quantity",
+            "method": "exact noninterpolated binomial order statistics",
+            "width": 0.6797432673776536,
+            "family_alpha": 0.04,
+            "endpoint_count": 12,
+            "scheduled_looks": [
+              16,
+              32,
+              64
+            ],
+            "margin": 0.5,
+            "precision_half_width": 0.25,
+            "decision": "meaningful_degradation",
+            "p_improvement_adjusted": 1.0,
+            "p_degradation_adjusted": 0.0010986328125,
+            "n_strict_improvements": 0,
+            "n_strict_degradations": 16,
+            "n_threshold_ties": 0,
+            "iid_assumption_acknowledged": true,
+            "identical_observations": false
+          },
+          "secondary_mean": {
+            "estimate": -1.625599316004845,
+            "lower": -32.973507938926694,
+            "upper": 0.9569650606290168,
+            "n": 16,
+            "alpha": 0.0008333333333333334,
+            "estimand": "constant conditional mean of the round-level quantity",
+            "method": "two-sided fixed-mixture betting confidence sequence",
+            "width": 33.93047299955571,
+            "assumptions_acknowledged": true
+          }
+        }
+      ],
+      "halt_reason": "meaningful_degradation",
+      "identity": [
+        "OpenAI",
+        "openai/gpt-4.1-mini"
+      ],
+      "diagnostics": [],
+      "inference_assumptions_ok": true
+    },
+    "p01__m03__a01": {
+      "block_id": "p01__m03__a01",
+      "panel_id": "mid_2023",
+      "model_id": "qwen/qwen3-235b-a22b-2507",
+      "arm": "unanchored",
+      "baseline_mae_pp": 4.162031865469822,
+      "score_support_upper_pp": 76.1568692017306,
+      "complete_rounds": 10,
+      "round_scores": [
+        {
+          "round": 1,
+          "mae_pp": 20.026865371850366,
+          "no_card_mae_pp": 21.112103033485095,
+          "baseline_gain_pp": -15.864833506380545,
+          "no_card_gain_pp": 1.0852376616347286
+        },
+        {
+          "round": 2,
+          "mae_pp": 20.172758427888446,
+          "no_card_mae_pp": 19.470003922889216,
+          "baseline_gain_pp": -16.010726562418625,
+          "no_card_gain_pp": -0.7027545049992305
+        },
+        {
+          "round": 3,
+          "mae_pp": 20.54301108808756,
+          "no_card_mae_pp": 21.112103033485095,
+          "baseline_gain_pp": -16.38097922261774,
+          "no_card_gain_pp": 0.5690919453975347
+        },
+        {
+          "round": 4,
+          "mae_pp": 19.88946564561873,
+          "no_card_mae_pp": 16.254713391113647,
+          "baseline_gain_pp": -15.72743378014891,
+          "no_card_gain_pp": -3.6347522545050843
+        },
+        {
+          "round": 5,
+          "mae_pp": 19.982109166200406,
+          "no_card_mae_pp": 13.190785364007146,
+          "baseline_gain_pp": -15.820077300730585,
+          "no_card_gain_pp": -6.79132380219326
+        },
+        {
+          "round": 6,
+          "mae_pp": 20.39958604228233,
+          "no_card_mae_pp": 19.470003922889216,
+          "baseline_gain_pp": -16.23755417681251,
+          "no_card_gain_pp": -0.929582119393114
+        },
+        {
+          "round": 7,
+          "mae_pp": 19.719875287053316,
+          "no_card_mae_pp": 19.30282600918988,
+          "baseline_gain_pp": -15.557843421583495,
+          "no_card_gain_pp": -0.4170492778634376
+        },
+        {
+          "round": 8,
+          "mae_pp": 19.505432447145235,
+          "no_card_mae_pp": 19.470003922889216,
+          "baseline_gain_pp": -15.343400581675414,
+          "no_card_gain_pp": -0.0354285242560195
+        },
+        {
+          "round": 9,
+          "mae_pp": 20.36865954981969,
+          "no_card_mae_pp": 19.470003922889216,
+          "baseline_gain_pp": -16.20662768434987,
+          "no_card_gain_pp": -0.8986556269304735
+        },
+        {
+          "round": 10,
+          "mae_pp": 20.447089682152217,
+          "no_card_mae_pp": 19.470003922889216,
+          "baseline_gain_pp": -16.285057816682396,
+          "no_card_gain_pp": -0.9770857592630016
+        }
+      ],
+      "looks": [],
+      "halt_reason": "incomplete_round_invalid_output",
+      "identity": [
+        "DeepInfra",
+        "qwen/qwen3-235b-a22b-2507"
+      ],
+      "diagnostics": [],
+      "inference_assumptions_ok": true,
+      "incomplete_round": 11
+    },
+    "p01__m03__a02": {
+      "block_id": "p01__m03__a02",
+      "panel_id": "mid_2023",
+      "model_id": "qwen/qwen3-235b-a22b-2507",
+      "arm": "overall_rate_anchored",
+      "baseline_mae_pp": 4.162031865469822,
+      "score_support_upper_pp": 76.1568692017306,
+      "complete_rounds": 8,
+      "round_scores": [
+        {
+          "round": 1,
+          "mae_pp": 8.027193589015607,
+          "no_card_mae_pp": 4.16202751600975,
+          "baseline_gain_pp": -3.8651617235457847,
+          "no_card_gain_pp": -3.865166073005857
+        },
+        {
+          "round": 2,
+          "mae_pp": 8.09528675662497,
+          "no_card_mae_pp": 4.16202751600975,
+          "baseline_gain_pp": -3.9332548911551486,
+          "no_card_gain_pp": -3.9332592406152207
+        },
+        {
+          "round": 3,
+          "mae_pp": 7.579616725508549,
+          "no_card_mae_pp": 4.16202751600975,
+          "baseline_gain_pp": -3.417584860038727,
+          "no_card_gain_pp": -3.417589209498799
+        },
+        {
+          "round": 4,
+          "mae_pp": 7.490317055566871,
+          "no_card_mae_pp": 4.16202751600975,
+          "baseline_gain_pp": -3.3282851900970494,
+          "no_card_gain_pp": -3.3282895395571215
+        },
+        {
+          "round": 5,
+          "mae_pp": 7.535091389494008,
+          "no_card_mae_pp": 4.16202751600975,
+          "baseline_gain_pp": -3.3730595240241863,
+          "no_card_gain_pp": -3.3730638734842584
+        },
+        {
+          "round": 6,
+          "mae_pp": 7.985233698648384,
+          "no_card_mae_pp": 4.16202751600975,
+          "baseline_gain_pp": -3.8232018331785618,
+          "no_card_gain_pp": -3.823206182638634
+        },
+        {
+          "round": 7,
+          "mae_pp": 7.993158633758054,
+          "no_card_mae_pp": 4.16202751600975,
+          "baseline_gain_pp": -3.8311267682882324,
+          "no_card_gain_pp": -3.8311311177483045
+        },
+        {
+          "round": 8,
+          "mae_pp": 7.760852485271492,
+          "no_card_mae_pp": 4.16202751600975,
+          "baseline_gain_pp": -3.5988206198016703,
+          "no_card_gain_pp": -3.5988249692617424
+        }
+      ],
+      "looks": [],
+      "halt_reason": "incomplete_round_failed",
+      "identity": [
+        "DeepInfra",
+        "qwen/qwen3-235b-a22b-2507"
+      ],
+      "diagnostics": [],
+      "inference_assumptions_ok": true,
+      "incomplete_round": 9
+    },
+    "p01__m04__a01": {
+      "block_id": "p01__m04__a01",
+      "panel_id": "mid_2023",
+      "model_id": "openai/gpt-4.1",
+      "arm": "unanchored",
+      "baseline_mae_pp": 4.162031865469822,
+      "score_support_upper_pp": 76.1568692017306,
+      "complete_rounds": 16,
+      "round_scores": [
+        {
+          "round": 1,
+          "mae_pp": 14.79604575869686,
+          "no_card_mae_pp": 15.01917846773837,
+          "baseline_gain_pp": -10.634013893227038,
+          "no_card_gain_pp": 0.2231327090415114
+        },
+        {
+          "round": 2,
+          "mae_pp": 14.770692682273062,
+          "no_card_mae_pp": 15.363629453899227,
+          "baseline_gain_pp": -10.60866081680324,
+          "no_card_gain_pp": 0.5929367716261655
+        },
+        {
+          "round": 3,
+          "mae_pp": 13.81999012554893,
+          "no_card_mae_pp": 12.843561898473107,
+          "baseline_gain_pp": -9.65795826007911,
+          "no_card_gain_pp": -0.9764282270758233
+        },
+        {
+          "round": 4,
+          "mae_pp": 13.657304445452692,
+          "no_card_mae_pp": 22.63448141588526,
+          "baseline_gain_pp": -9.49527257998287,
+          "no_card_gain_pp": 8.97717697043257
+        },
+        {
+          "round": 5,
+          "mae_pp": 13.256608470297913,
+          "no_card_mae_pp": 17.65904897195605,
+          "baseline_gain_pp": -9.094576604828092,
+          "no_card_gain_pp": 4.402440501658138
+        },
+        {
+          "round": 6,
+          "mae_pp": 13.714712124276035,
+          "no_card_mae_pp": 17.65904897195605,
+          "baseline_gain_pp": -9.552680258806213,
+          "no_card_gain_pp": 3.944336847680015
+        },
+        {
+          "round": 7,
+          "mae_pp": 13.590259955366474,
+          "no_card_mae_pp": 13.737187429483116,
+          "baseline_gain_pp": -9.428228089896653,
+          "no_card_gain_pp": 0.14692747411664264
+        },
+        {
+          "round": 8,
+          "mae_pp": 13.497146716063627,
+          "no_card_mae_pp": 17.67470605813582,
+          "baseline_gain_pp": -9.335114850593804,
+          "no_card_gain_pp": 4.1775593420721915
+        },
+        {
+          "round": 9,
+          "mae_pp": 13.899729184001085,
+          "no_card_mae_pp": 22.63448141588526,
+          "baseline_gain_pp": -9.737697318531264,
+          "no_card_gain_pp": 8.734752231884176
+        },
+        {
+          "round": 10,
+          "mae_pp": 13.831571311459435,
+          "no_card_mae_pp": 14.572231315416708,
+          "baseline_gain_pp": -9.669539445989614,
+          "no_card_gain_pp": 0.7406600039572737
+        },
+        {
+          "round": 11,
+          "mae_pp": 14.05136598262278,
+          "no_card_mae_pp": 19.977275898849864,
+          "baseline_gain_pp": -9.88933411715296,
+          "no_card_gain_pp": 5.925909916227084
+        },
+        {
+          "round": 12,
+          "mae_pp": 13.648866701541651,
+          "no_card_mae_pp": 24.30114808255193,
+          "baseline_gain_pp": -9.486834836071829,
+          "no_card_gain_pp": 10.652281381010278
+        },
+        {
+          "round": 13,
+          "mae_pp": 13.660879273983795,
+          "no_card_mae_pp": 14.367618207511224,
+          "baseline_gain_pp": -9.498847408513974,
+          "no_card_gain_pp": 0.7067389335274292
+        },
+        {
+          "round": 14,
+          "mae_pp": 14.504457616162119,
+          "no_card_mae_pp": 24.341372724802483,
+          "baseline_gain_pp": -10.342425750692296,
+          "no_card_gain_pp": 9.836915108640364
+        },
+        {
+          "round": 15,
+          "mae_pp": 15.31532538398744,
+          "no_card_mae_pp": 14.367618207511224,
+          "baseline_gain_pp": -11.153293518517618,
+          "no_card_gain_pp": -0.9477071764762162
+        },
+        {
+          "round": 16,
+          "mae_pp": 13.954091267686975,
+          "no_card_mae_pp": 16.0097173181071,
+          "baseline_gain_pp": -9.792059402217152,
+          "no_card_gain_pp": 2.055626050420125
+        }
+      ],
+      "looks": [
+        {
+          "round": 16,
+          "primary_median": {
+            "estimate": -9.663748853034361,
+            "lower": -10.634013893227038,
+            "upper": -9.335114850593804,
+            "n": 16,
+            "alpha": 0.0011111111111111111,
+            "estimand": "population median of the round-level quantity",
+            "method": "exact noninterpolated binomial order statistics",
+            "width": 1.2988990426332343,
+            "family_alpha": 0.04,
+            "endpoint_count": 12,
+            "scheduled_looks": [
+              16,
+              32,
+              64
+            ],
+            "margin": 0.5,
+            "precision_half_width": 0.25,
+            "decision": "meaningful_degradation",
+            "p_improvement_adjusted": 1.0,
+            "p_degradation_adjusted": 0.0010986328125,
+            "n_strict_improvements": 0,
+            "n_strict_degradations": 16,
+            "n_threshold_ties": 0,
+            "iid_assumption_acknowledged": true,
+            "identical_observations": false
+          },
+          "secondary_mean": {
+            "estimate": -9.836033571993983,
+            "lower": -37.52732336603683,
+            "upper": -3.5948081915821177,
+            "n": 16,
+            "alpha": 0.0008333333333333334,
+            "estimand": "constant conditional mean of the round-level quantity",
+            "method": "two-sided fixed-mixture betting confidence sequence",
+            "width": 33.932515174454714,
+            "assumptions_acknowledged": true
+          }
+        }
+      ],
+      "halt_reason": "meaningful_degradation",
+      "identity": [
+        "OpenAI",
+        "openai/gpt-4.1"
+      ],
+      "diagnostics": [],
+      "inference_assumptions_ok": true
+    },
+    "p01__m04__a02": {
+      "block_id": "p01__m04__a02",
+      "panel_id": "mid_2023",
+      "model_id": "openai/gpt-4.1",
+      "arm": "overall_rate_anchored",
+      "baseline_mae_pp": 4.162031865469822,
+      "score_support_upper_pp": 76.1568692017306,
+      "complete_rounds": 16,
+      "round_scores": [
+        {
+          "round": 1,
+          "mae_pp": 3.330821352315943,
+          "no_card_mae_pp": 4.209000764783944,
+          "baseline_gain_pp": 0.831210513153879,
+          "no_card_gain_pp": 0.8781794124680014
+        },
+        {
+          "round": 2,
+          "mae_pp": 3.1653068687182895,
+          "no_card_mae_pp": 4.103718787535161,
+          "baseline_gain_pp": 0.9967249967515324,
+          "no_card_gain_pp": 0.9384119188168718
+        },
+        {
+          "round": 3,
+          "mae_pp": 3.3433435282712067,
+          "no_card_mae_pp": 4.103718787535161,
+          "baseline_gain_pp": 0.8186883371986151,
+          "no_card_gain_pp": 0.7603752592639546
+        },
+        {
+          "round": 4,
+          "mae_pp": 3.347545536405739,
+          "no_card_mae_pp": 4.103718787535161,
+          "baseline_gain_pp": 0.8144863290640827,
+          "no_card_gain_pp": 0.7561732511294221
+        },
+        {
+          "round": 5,
+          "mae_pp": 3.1084512435307112,
+          "no_card_mae_pp": 4.103718787535161,
+          "baseline_gain_pp": 1.0535806219391106,
+          "no_card_gain_pp": 0.99526754400445
+        },
+        {
+          "round": 6,
+          "mae_pp": 3.048035509990902,
+          "no_card_mae_pp": 4.103718787535161,
+          "baseline_gain_pp": 1.1139963554789198,
+          "no_card_gain_pp": 1.0556832775442593
+        },
+        {
+          "round": 7,
+          "mae_pp": 3.0487404984170032,
+          "no_card_mae_pp": 4.103718787535161,
+          "baseline_gain_pp": 1.1132913670528186,
+          "no_card_gain_pp": 1.054978289118158
+        },
+        {
+          "round": 8,
+          "mae_pp": 3.3354482010326674,
+          "no_card_mae_pp": 4.103718787535161,
+          "baseline_gain_pp": 0.8265836644371545,
+          "no_card_gain_pp": 0.7682705865024939
+        },
+        {
+          "round": 9,
+          "mae_pp": 3.296315564938121,
+          "no_card_mae_pp": 4.103718787535161,
+          "baseline_gain_pp": 0.8657163005317008,
+          "no_card_gain_pp": 0.8074032225970402
+        },
+        {
+          "round": 10,
+          "mae_pp": 2.8964367733367586,
+          "no_card_mae_pp": 4.103718787535161,
+          "baseline_gain_pp": 1.2655950921330632,
+          "no_card_gain_pp": 1.2072820141984026
+        },
+        {
+          "round": 11,
+          "mae_pp": 3.3737455113504136,
+          "no_card_mae_pp": 4.103718787535161,
+          "baseline_gain_pp": 0.7882863541194083,
+          "no_card_gain_pp": 0.7299732761847477
+        },
+        {
+          "round": 12,
+          "mae_pp": 3.121463075179622,
+          "no_card_mae_pp": 4.103718787535161,
+          "baseline_gain_pp": 1.0405687902901999,
+          "no_card_gain_pp": 0.9822557123555393
+        },
+        {
+          "round": 13,
+          "mae_pp": 2.96855313038047,
+          "no_card_mae_pp": 4.103718787535161,
+          "baseline_gain_pp": 1.1934787350893519,
+          "no_card_gain_pp": 1.1351656571546913
+        },
+        {
+          "round": 14,
+          "mae_pp": 3.3390502300824645,
+          "no_card_mae_pp": 4.103718787535161,
+          "baseline_gain_pp": 0.8229816353873574,
+          "no_card_gain_pp": 0.7646685574526968
+        },
+        {
+          "round": 15,
+          "mae_pp": 3.105446968312082,
+          "no_card_mae_pp": 4.103718787535161,
+          "baseline_gain_pp": 1.05658489715774,
+          "no_card_gain_pp": 0.9982718192230795
+        },
+        {
+          "round": 16,
+          "mae_pp": 3.3690903659832268,
+          "no_card_mae_pp": 4.103718787535161,
+          "baseline_gain_pp": 0.7929414994865951,
+          "no_card_gain_pp": 0.7346284215519345
+        }
+      ],
+      "looks": [
+        {
+          "round": 16,
+          "primary_median": {
+            "estimate": 0.9312206486416166,
+            "lower": 0.7929414994865951,
+            "upper": 1.1934787350893519,
+            "n": 16,
+            "alpha": 0.0011111111111111111,
+            "estimand": "population median of the round-level quantity",
+            "method": "exact noninterpolated binomial order statistics",
+            "width": 0.4005372356027568,
+            "family_alpha": 0.04,
+            "endpoint_count": 12,
+            "scheduled_looks": [
+              16,
+              32,
+              64
+            ],
+            "margin": 0.5,
+            "precision_half_width": 0.25,
+            "decision": "meaningful_improvement",
+            "p_improvement_adjusted": 0.0010986328125,
+            "p_degradation_adjusted": 1.0,
+            "n_strict_improvements": 16,
+            "n_strict_degradations": 0,
+            "n_threshold_ties": 0,
+            "iid_assumption_acknowledged": true,
+            "identical_observations": false
+          },
+          "secondary_mean": {
+            "estimate": 0.9621697180794706,
+            "lower": -31.53823561072622,
+            "upper": 2.3896420073256905,
+            "n": 16,
+            "alpha": 0.0008333333333333334,
+            "estimand": "constant conditional mean of the round-level quantity",
+            "method": "two-sided fixed-mixture betting confidence sequence",
+            "width": 33.92787761805191,
+            "assumptions_acknowledged": true
+          }
+        }
+      ],
+      "halt_reason": "meaningful_improvement",
+      "identity": [
+        "OpenAI",
+        "openai/gpt-4.1"
+      ],
+      "diagnostics": [],
+      "inference_assumptions_ok": true
+    },
+    "p02__m01__a01": {
+      "block_id": "p02__m01__a01",
+      "panel_id": "fmg_2025",
+      "model_id": "google/gemma-3-4b-it",
+      "arm": "unanchored",
+      "baseline_mae_pp": 2.673616200412777,
+      "score_support_upper_pp": 19.915050342840196,
+      "complete_rounds": 0,
+      "round_scores": [],
+      "looks": [],
+      "halt_reason": "incomplete_round_invalid_output",
+      "identity": null,
+      "diagnostics": [],
+      "inference_assumptions_ok": true,
+      "incomplete_round": 1
+    },
+    "p02__m02__a01": {
+      "block_id": "p02__m02__a01",
+      "panel_id": "fmg_2025",
+      "model_id": "openai/gpt-4.1-mini",
+      "arm": "unanchored",
+      "baseline_mae_pp": 2.673616200412777,
+      "score_support_upper_pp": 19.915050342840196,
+      "complete_rounds": 16,
+      "round_scores": [
+        {
+          "round": 1,
+          "mae_pp": 5.859636839718441,
+          "no_card_mae_pp": 5.082114385996656,
+          "baseline_gain_pp": -3.1860206393056636,
+          "no_card_gain_pp": -0.7775224537217849
+        },
+        {
+          "round": 2,
+          "mae_pp": 5.054291861770066,
+          "no_card_mae_pp": 5.078978613063468,
+          "baseline_gain_pp": -2.380675661357289,
+          "no_card_gain_pp": 0.0246867512934017
+        },
+        {
+          "round": 3,
+          "mae_pp": 5.697027075911059,
+          "no_card_mae_pp": 5.661341584778209,
+          "baseline_gain_pp": -3.023410875498282,
+          "no_card_gain_pp": -0.03568549113284991
+        },
+        {
+          "round": 4,
+          "mae_pp": 5.336923345778356,
+          "no_card_mae_pp": 6.36503690137151,
+          "baseline_gain_pp": -2.6633071453655788,
+          "no_card_gain_pp": 1.028113555593154
+        },
+        {
+          "round": 5,
+          "mae_pp": 5.099426555905065,
+          "no_card_mae_pp": 4.817703550434516,
+          "baseline_gain_pp": -2.4258103554922883,
+          "no_card_gain_pp": -0.28172300547054974
+        },
+        {
+          "round": 6,
+          "mae_pp": 5.644600613909004,
+          "no_card_mae_pp": 5.661341584778209,
+          "baseline_gain_pp": -2.970984413496227,
+          "no_card_gain_pp": 0.016740970869205007
+        },
+        {
+          "round": 7,
+          "mae_pp": 5.539535401932142,
+          "no_card_mae_pp": 4.817703550434516,
+          "baseline_gain_pp": -2.8659192015193646,
+          "no_card_gain_pp": -0.7218318514976261
+        },
+        {
+          "round": 8,
+          "mae_pp": 6.274392063692831,
+          "no_card_mae_pp": 5.975641682475368,
+          "baseline_gain_pp": -3.600775863280054,
+          "no_card_gain_pp": -0.298750381217463
+        },
+        {
+          "round": 9,
+          "mae_pp": 5.658806632428068,
+          "no_card_mae_pp": 4.817703550434516,
+          "baseline_gain_pp": -2.9851904320152913,
+          "no_card_gain_pp": -0.8411030819935528
+        },
+        {
+          "round": 10,
+          "mae_pp": 5.696817828100195,
+          "no_card_mae_pp": 5.97250590954218,
+          "baseline_gain_pp": -3.023201627687418,
+          "no_card_gain_pp": 0.2756880814419853
+        },
+        {
+          "round": 11,
+          "mae_pp": 5.310986018384139,
+          "no_card_mae_pp": 5.082114385996656,
+          "baseline_gain_pp": -2.6373698179713623,
+          "no_card_gain_pp": -0.22887163238748354
+        },
+        {
+          "round": 12,
+          "mae_pp": 5.791524014860762,
+          "no_card_mae_pp": 6.613575889604031,
+          "baseline_gain_pp": -3.1179078144479853,
+          "no_card_gain_pp": 0.822051874743269
+        },
+        {
+          "round": 13,
+          "mae_pp": 5.635133121937181,
+          "no_card_mae_pp": 5.453091557217465,
+          "baseline_gain_pp": -2.961516921524404,
+          "no_card_gain_pp": -0.18204156471971622
+        },
+        {
+          "round": 14,
+          "mae_pp": 5.628058021664928,
+          "no_card_mae_pp": 5.97250590954218,
+          "baseline_gain_pp": -2.954441821252151,
+          "no_card_gain_pp": 0.34444788787725233
+        },
+        {
+          "round": 15,
+          "mae_pp": 5.711093412043302,
+          "no_card_mae_pp": 5.613575889604032,
+          "baseline_gain_pp": -3.0374772116305246,
+          "no_card_gain_pp": -0.09751752243926948
+        },
+        {
+          "round": 16,
+          "mae_pp": 5.5150657520028705,
+          "no_card_mae_pp": 5.078978613063468,
+          "baseline_gain_pp": -2.8414495515900935,
+          "no_card_gain_pp": -0.43608713893940276
+        }
+      ],
+      "looks": [
+        {
+          "round": 16,
+          "primary_median": {
+            "estimate": -2.9662506675103155,
+            "lower": -3.1860206393056636,
+            "upper": -2.4258103554922883,
+            "n": 16,
+            "alpha": 0.0011111111111111111,
+            "estimand": "population median of the round-level quantity",
+            "method": "exact noninterpolated binomial order statistics",
+            "width": 0.7602102838133753,
+            "family_alpha": 0.04,
+            "endpoint_count": 12,
+            "scheduled_looks": [
+              16,
+              32,
+              64
+            ],
+            "margin": 0.5,
+            "precision_half_width": 0.25,
+            "decision": "meaningful_degradation",
+            "p_improvement_adjusted": 1.0,
+            "p_degradation_adjusted": 0.0010986328125,
+            "n_strict_improvements": 0,
+            "n_strict_degradations": 16,
+            "n_threshold_ties": 0,
+            "iid_assumption_acknowledged": true,
+            "identical_observations": false
+          },
+          "secondary_mean": {
+            "estimate": -2.9172162095896237,
+            "lower": -9.299786780548978,
+            "upper": -0.42274339541593164,
+            "n": 16,
+            "alpha": 0.0008333333333333334,
+            "estimand": "constant conditional mean of the round-level quantity",
+            "method": "two-sided fixed-mixture betting confidence sequence",
+            "width": 8.877043385133046,
+            "assumptions_acknowledged": true
+          }
+        }
+      ],
+      "halt_reason": "meaningful_degradation",
+      "identity": [
+        "OpenAI",
+        "openai/gpt-4.1-mini"
+      ],
+      "diagnostics": [],
+      "inference_assumptions_ok": true
+    },
+    "p02__m03__a01": {
+      "block_id": "p02__m03__a01",
+      "panel_id": "fmg_2025",
+      "model_id": "qwen/qwen3-235b-a22b-2507",
+      "arm": "unanchored",
+      "baseline_mae_pp": 2.673616200412777,
+      "score_support_upper_pp": 19.915050342840196,
+      "complete_rounds": 0,
+      "round_scores": [],
+      "looks": [],
+      "halt_reason": "incomplete_round_invalid_output",
+      "identity": [
+        "DeepInfra",
+        "qwen/qwen3-235b-a22b-2507"
+      ],
+      "diagnostics": [],
+      "inference_assumptions_ok": true,
+      "incomplete_round": 1
+    },
+    "p02__m04__a01": {
+      "block_id": "p02__m04__a01",
+      "panel_id": "fmg_2025",
+      "model_id": "openai/gpt-4.1",
+      "arm": "unanchored",
+      "baseline_mae_pp": 2.673616200412777,
+      "score_support_upper_pp": 19.915050342840196,
+      "complete_rounds": 16,
+      "round_scores": [
+        {
+          "round": 1,
+          "mae_pp": 3.8846827718842984,
+          "no_card_mae_pp": 3.810806205040636,
+          "baseline_gain_pp": -1.2110665714715214,
+          "no_card_gain_pp": -0.0738765668436625
+        },
+        {
+          "round": 2,
+          "mae_pp": 4.4601630795214575,
+          "no_card_mae_pp": 3.797324626186337,
+          "baseline_gain_pp": -1.7865468791086805,
+          "no_card_gain_pp": -0.6628384533351204
+        },
+        {
+          "round": 3,
+          "mae_pp": 3.616459175199839,
+          "no_card_mae_pp": 3.708778709862782,
+          "baseline_gain_pp": -0.9428429747870619,
+          "no_card_gain_pp": 0.09231953466294307
+        },
+        {
+          "round": 4,
+          "mae_pp": 4.318795638351958,
+          "no_card_mae_pp": 3.973521931372496,
+          "baseline_gain_pp": -1.6451794379391806,
+          "no_card_gain_pp": -0.3452737069794618
+        },
+        {
+          "round": 5,
+          "mae_pp": 3.878031547375329,
+          "no_card_mae_pp": 4.072085473172584,
+          "baseline_gain_pp": -1.204415346962552,
+          "no_card_gain_pp": 0.1940539257972551
+        },
+        {
+          "round": 6,
+          "mae_pp": 4.576572829067187,
+          "no_card_mae_pp": 4.567121718735449,
+          "baseline_gain_pp": -1.90295662865441,
+          "no_card_gain_pp": -0.009451110331737844
+        },
+        {
+          "round": 7,
+          "mae_pp": 3.3132464809966233,
+          "no_card_mae_pp": 3.464209652658279,
+          "baseline_gain_pp": -0.6396302805838463,
+          "no_card_gain_pp": 0.15096317166165552
+        },
+        {
+          "round": 8,
+          "mae_pp": 3.7573440499613135,
+          "no_card_mae_pp": 3.684972518604929,
+          "baseline_gain_pp": -1.0837278495485365,
+          "no_card_gain_pp": -0.07237153135638463
+        },
+        {
+          "round": 9,
+          "mae_pp": 3.4392122942245127,
+          "no_card_mae_pp": 3.6590778243161806,
+          "baseline_gain_pp": -0.7655960938117357,
+          "no_card_gain_pp": 0.21986553009166787
+        },
+        {
+          "round": 10,
+          "mae_pp": 4.27699151773832,
+          "no_card_mae_pp": 4.188159949210709,
+          "baseline_gain_pp": -1.6033753173255434,
+          "no_card_gain_pp": -0.08883156852761154
+        },
+        {
+          "round": 11,
+          "mae_pp": 3.730248654656733,
+          "no_card_mae_pp": 4.467818581435285,
+          "baseline_gain_pp": -1.0566324542439558,
+          "no_card_gain_pp": 0.7375699267785523
+        },
+        {
+          "round": 12,
+          "mae_pp": 3.5940315606341673,
+          "no_card_mae_pp": 3.6136761503437955,
+          "baseline_gain_pp": -0.9204153602213903,
+          "no_card_gain_pp": 0.019644589709628235
+        },
+        {
+          "round": 13,
+          "mae_pp": 4.13982100047676,
+          "no_card_mae_pp": 3.960264761166912,
+          "baseline_gain_pp": -1.4662048000639833,
+          "no_card_gain_pp": -0.1795562393098482
+        },
+        {
+          "round": 14,
+          "mae_pp": 4.657561889507451,
+          "no_card_mae_pp": 3.5522391798816693,
+          "baseline_gain_pp": -1.983945689094674,
+          "no_card_gain_pp": -1.1053227096257818
+        },
+        {
+          "round": 15,
+          "mae_pp": 3.999700590606914,
+          "no_card_mae_pp": 3.9134192977110973,
+          "baseline_gain_pp": -1.3260843901941368,
+          "no_card_gain_pp": -0.08628129289581654
+        },
+        {
+          "round": 16,
+          "mae_pp": 3.8013974850610284,
+          "no_card_mae_pp": 3.7937338122519595,
+          "baseline_gain_pp": -1.1277812846482513,
+          "no_card_gain_pp": -0.007663672809068878
+        }
+      ],
+      "looks": [
+        {
+          "round": 16,
+          "primary_median": {
+            "estimate": -1.2077409592170367,
+            "lower": -1.90295662865441,
+            "upper": -0.7655960938117357,
+            "n": 16,
+            "alpha": 0.0011111111111111111,
+            "estimand": "population median of the round-level quantity",
+            "method": "exact noninterpolated binomial order statistics",
+            "width": 1.1373605348426743,
+            "family_alpha": 0.04,
+            "endpoint_count": 12,
+            "scheduled_looks": [
+              16,
+              32,
+              64
+            ],
+            "margin": 0.5,
+            "precision_half_width": 0.25,
+            "decision": "meaningful_degradation",
+            "p_improvement_adjusted": 1.0,
+            "p_degradation_adjusted": 0.0010986328125,
+            "n_strict_improvements": 0,
+            "n_strict_degradations": 16,
+            "n_threshold_ties": 0,
+            "iid_assumption_acknowledged": true,
+            "identical_observations": false
+          },
+          "secondary_mean": {
+            "estimate": -1.2916500849162162,
+            "lower": -8.399416439118005,
+            "upper": 0.4850277291251359,
+            "n": 16,
+            "alpha": 0.0008333333333333334,
+            "estimand": "constant conditional mean of the round-level quantity",
+            "method": "two-sided fixed-mixture betting confidence sequence",
+            "width": 8.88444416824314,
+            "assumptions_acknowledged": true
+          }
+        }
+      ],
+      "halt_reason": "meaningful_degradation",
+      "identity": [
+        "OpenAI",
+        "openai/gpt-4.1"
+      ],
+      "diagnostics": [],
+      "inference_assumptions_ok": true
+    }
+  }
+}

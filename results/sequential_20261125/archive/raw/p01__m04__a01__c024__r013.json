@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c024__r013",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "no_persona",
+  "round": 13,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "dfac5a39ac73e3cbee6db520019a31a64a6cb55aa49a6bc4af68587111f5d083",
+  "started_utc": "2026-11-25T17:41:26.862114+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:41:28.445875+00:00",
+      "cost_usd": 0.00139,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00139,
+  "reservation_upper_bound_usd": 0.022698,
+  "response_sha256": "9590146191a32455eb29d49d4144e94c444407855306a9d66ea5309938867df8",
+  "response": {
+    "id": "gen-1795628486-9XWiK1DMVsuvBiC6XKPo",
+    "object": "chat.completion",
+    "created": 1795628486,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.40,\n  \"long_distance_rail\": 0.20,\n  \"rationale\": \"Many German travelers use cars for airport access due to flexibility, but public transport and long-distance rail are also used, especially in urban areas or when airports are well-connected. Modal choices reflect convenience, cost, and airport accessibility.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 355,
+      "completion_tokens": 85,
+      "total_tokens": 440,
+      "cost": 0.00139,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00139,
+        "upstream_inference_prompt_cost": 0.00071,
+        "upstream_inference_completions_cost": 0.00068
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628486-9XWiK1DMVsuvBiC6XKPo",
+  "raw_prediction": {
+    "car": 0.55,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.2,
+    "rationale": "Many German travelers use cars for airport access due to flexibility, but public transport and long-distance rail are also used, especially in urban areas or when airports are well-connected. Modal choices reflect convenience, cost, and airport accessibility."
+  },
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.2,
+    "rationale": "Many German travelers use cars for airport access due to flexibility, but public transport and long-distance rail are also used, especially in urban areas or when airports are well-connected. Modal choices reflect convenience, cost, and airport accessibility."
+  },
+  "normalization": {
+    "sum_before": 1.1500000000000001,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:41:28.445875+00:00",
+  "cost_exceeded_reservation": false
+}

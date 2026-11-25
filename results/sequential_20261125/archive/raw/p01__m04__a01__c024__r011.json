@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c024__r011",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "no_persona",
+  "round": 11,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "d66f6a26343f074931d2f010c624bfa8019847cefc0118a29961c7775a435e07",
+  "started_utc": "2026-11-25T17:39:48.798383+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:39:50.272494+00:00",
+      "cost_usd": 0.001342,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001342,
+  "reservation_upper_bound_usd": 0.022698,
+  "response_sha256": "abf9ce1fc6ea8004d5d619a185e603d3815fe2501aba8454069e790dd5df0f87",
+  "response": {
+    "id": "gen-1795628388-uczsNO4MjZnfJH2jp3eF",
+    "object": "chat.completion",
+    "created": 1795628388,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.62,\n  \"local_pt\": 0.48,\n  \"long_distance_rail\": 0.22,\n  \"rationale\": \"Airport access is split: cars remain popular for convenience and flexibility; local PT serves many urban residents; long-distance rail is less frequent but used for longer domestic airport transfers, especially from larger cities.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 355,
+      "completion_tokens": 79,
+      "total_tokens": 434,
+      "cost": 0.001342,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001342,
+        "upstream_inference_prompt_cost": 0.00071,
+        "upstream_inference_completions_cost": 0.000632
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628388-uczsNO4MjZnfJH2jp3eF",
+  "raw_prediction": {
+    "car": 0.62,
+    "local_pt": 0.48,
+    "long_distance_rail": 0.22,
+    "rationale": "Airport access is split: cars remain popular for convenience and flexibility; local PT serves many urban residents; long-distance rail is less frequent but used for longer domestic airport transfers, especially from larger cities."
+  },
+  "prediction": {
+    "car": 0.62,
+    "local_pt": 0.48,
+    "long_distance_rail": 0.22,
+    "rationale": "Airport access is split: cars remain popular for convenience and flexibility; local PT serves many urban residents; long-distance rail is less frequent but used for longer domestic airport transfers, especially from larger cities."
+  },
+  "normalization": {
+    "sum_before": 1.32,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:39:50.272494+00:00",
+  "cost_exceeded_reservation": false
+}

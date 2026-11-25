@@ -1,0 +1,100 @@
+{
+  "task_id": "p01__m03__a01__c022__r007__administrative_replacement1",
+  "block_id": "p01__m03__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__f6e4375535d4",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "supersedes_task_id": "p01__m03__a01__c022__r007",
+  "request_sha256": "440a12752eecaf032887f79ca2afd7f5298f923947fc1354593ec01d2c15808b",
+  "started_utc": "2026-11-25T17:34:59.217323+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:35:07.880087+00:00",
+      "cost_usd": 0.0001248,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0001248,
+  "reservation_upper_bound_usd": 0.0020061,
+  "response_sha256": "275967b891064388643e6b34b94b92b6c49513f39f78d6bd5289932e83b527a5",
+  "response": {
+    "id": "gen-1795628098-aejkE8wo9MZIhxHAoZLS",
+    "object": "chat.completion",
+    "created": 1795628098,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.75,\n  \"local_pt\": 0.4,\n  \"long_distance_rail\": 0.2,\n  \"rationale\": \"Car use is likely for airport access and onward travel. Local public transport serves urban airports and city destinations. Long-distance rail competes less with flights for medium-haul trips, reducing its overlap in this overnight journey context.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 405,
+      "completion_tokens": 85,
+      "total_tokens": 490,
+      "cost": 0.0001248,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0001248,
+        "upstream_inference_prompt_cost": 5.4675e-05,
+        "upstream_inference_completions_cost": 7.0125e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795628098-aejkE8wo9MZIhxHAoZLS",
+  "raw_prediction": {
+    "car": 0.75,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.2,
+    "rationale": "Car use is likely for airport access and onward travel. Local public transport serves urban airports and city destinations. Long-distance rail competes less with flights for medium-haul trips, reducing its overlap in this overnight journey context."
+  },
+  "prediction": {
+    "car": 0.75,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.2,
+    "rationale": "Car use is likely for airport access and onward travel. Local public transport serves urban airports and city destinations. Long-distance rail competes less with flights for medium-haul trips, reducing its overlap in this overnight journey context."
+  },
+  "normalization": {
+    "sum_before": 1.35,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:35:07.880087+00:00",
+  "cost_exceeded_reservation": false
+}

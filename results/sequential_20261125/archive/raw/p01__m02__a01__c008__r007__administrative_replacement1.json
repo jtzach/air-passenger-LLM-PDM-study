@@ -1,0 +1,100 @@
+{
+  "task_id": "p01__m02__a01__c008__r007__administrative_replacement1",
+  "block_id": "p01__m02__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "unanchored",
+  "card_id": "reise__RegioStaR7__7b0e1c4f102a",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "supersedes_task_id": "p01__m02__a01__c008__r007",
+  "request_sha256": "9ddbcbfe8c8b874312c1854e516ead29edc4c9b7fdebb7566acfd74241b77984",
+  "started_utc": "2026-11-25T17:33:54.254642+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:33:56.800375+00:00",
+      "cost_usd": 0.0002816,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002816,
+  "reservation_upper_bound_usd": 0.004801199999999999,
+  "response_sha256": "cab3ad03d0de69ede39c042c3a4154365a21558f484ee37c02bf338322d01aac",
+  "response": {
+    "id": "gen-1795628033-8wxRSMcvSKimP4KP3FAj",
+    "object": "chat.completion",
+    "created": 1795628033,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.50,\n  \"local_pt\": 0.75,\n  \"long_distance_rail\": 0.20,\n  \"rationale\": \"Urban metropolis residents likely use local public transport to reach airports; car use is moderate due to urban parking and traffic. Long-distance rail less common but possible for multimodal trips to nearby airports.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 392,
+      "completion_tokens": 78,
+      "total_tokens": 470,
+      "cost": 0.0002816,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002816,
+        "upstream_inference_prompt_cost": 0.0001568,
+        "upstream_inference_completions_cost": 0.0001248
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795628033-8wxRSMcvSKimP4KP3FAj",
+  "raw_prediction": {
+    "car": 0.5,
+    "local_pt": 0.75,
+    "long_distance_rail": 0.2,
+    "rationale": "Urban metropolis residents likely use local public transport to reach airports; car use is moderate due to urban parking and traffic. Long-distance rail less common but possible for multimodal trips to nearby airports."
+  },
+  "prediction": {
+    "car": 0.5,
+    "local_pt": 0.75,
+    "long_distance_rail": 0.2,
+    "rationale": "Urban metropolis residents likely use local public transport to reach airports; car use is moderate due to urban parking and traffic. Long-distance rail less common but possible for multimodal trips to nearby airports."
+  },
+  "normalization": {
+    "sum_before": 1.45,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:33:56.800375+00:00",
+  "cost_exceeded_reservation": false
+}

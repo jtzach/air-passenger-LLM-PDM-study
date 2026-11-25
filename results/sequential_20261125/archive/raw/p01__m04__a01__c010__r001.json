@@ -1,0 +1,106 @@
+{
+  "task_id": "p01__m04__a01__c010__r001",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__RegioStaR7__9f47524becab",
+  "round": 1,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "cde084b84c4f73b23a41469d30b8986bf05649bd489fbeb4b1614627e4a774df",
+  "started_utc": "2026-11-25T14:20:42.654927+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "transport_error",
+      "detail": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>",
+      "utc": "2026-11-25T14:21:06.580254+00:00",
+      "cost_upper_bound_usd": 0.008029999999999999
+    },
+    {
+      "number": 2,
+      "status": "response",
+      "utc": "2026-11-25T14:21:10.049428+00:00",
+      "cost_usd": 0.00141,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.009439999999999999,
+  "reservation_upper_bound_usd": 0.024089999999999997,
+  "response_sha256": "ba8fa37c3c57e3534889155508c742b1d4c902e110e4467dcb5abd9cd5a4af78",
+  "response": {
+    "id": "gen-1795616468-jFOIcexUGq5GO6ZhqOzw",
+    "object": "chat.completion",
+    "created": 1795616468,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.48,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.22,\n  \"rationale\": \"Medium-sized town residents have moderate car access and use, but some urban PT options exist. Long-distance rail is less likely due to limited direct rail connections to airports from smaller urban areas.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 397,
+      "completion_tokens": 77,
+      "total_tokens": 474,
+      "cost": 0.00141,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00141,
+        "upstream_inference_prompt_cost": 0.000794,
+        "upstream_inference_completions_cost": 0.000616
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616468-jFOIcexUGq5GO6ZhqOzw",
+  "raw_prediction": {
+    "car": 0.48,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.22,
+    "rationale": "Medium-sized town residents have moderate car access and use, but some urban PT options exist. Long-distance rail is less likely due to limited direct rail connections to airports from smaller urban areas."
+  },
+  "prediction": {
+    "car": 0.48,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.22,
+    "rationale": "Medium-sized town residents have moderate car access and use, but some urban PT options exist. Long-distance rail is less likely due to limited direct rail connections to airports from smaller urban areas."
+  },
+  "normalization": {
+    "sum_before": 1.05,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:21:10.049428+00:00",
+  "cost_exceeded_reservation": false
+}

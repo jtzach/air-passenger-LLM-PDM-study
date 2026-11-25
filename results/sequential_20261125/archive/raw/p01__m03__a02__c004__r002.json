@@ -1,0 +1,106 @@
+{
+  "task_id": "p01__m03__a02__c004__r002",
+  "block_id": "p01__m03__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzauto_gr1__d7ca944fcddc",
+  "round": 2,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "04a2602ede5692bf15269b1e95a75e2c62fbf3530ac50bf06e9806faf5d5d1bc",
+  "started_utc": "2026-11-25T14:24:15.374573+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "transport_error",
+      "detail": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>",
+      "utc": "2026-11-25T14:24:39.128256+00:00",
+      "cost_upper_bound_usd": 0.0007055200000000001
+    },
+    {
+      "number": 2,
+      "status": "response",
+      "utc": "2026-11-25T14:24:48.671858+00:00",
+      "cost_usd": 0.000123255,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0008287750000000001,
+  "reservation_upper_bound_usd": 0.00211656,
+  "response_sha256": "1aa9290a65ccc39d5edc2395a25fa0ae01432a1e0291052e6707b5558494a227",
+  "response": {
+    "id": "gen-1795616681-2deLkMQpRgUTjOjWeyiI",
+    "object": "chat.completion",
+    "created": 1795616681,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.15,\n  \"long_distance_rail\": 0.08,\n  \"rationale\": \"Households with one car likely rely on it for airport access, reducing public transport use. Car availability increases car mode share despite no driver specification.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 473,
+      "completion_tokens": 72,
+      "total_tokens": 545,
+      "cost": 0.000123255,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000123255,
+        "upstream_inference_prompt_cost": 6.3855e-05,
+        "upstream_inference_completions_cost": 5.94e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795616681-2deLkMQpRgUTjOjWeyiI",
+  "raw_prediction": {
+    "car": 0.65,
+    "local_pt": 0.15,
+    "long_distance_rail": 0.08,
+    "rationale": "Households with one car likely rely on it for airport access, reducing public transport use. Car availability increases car mode share despite no driver specification."
+  },
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.15,
+    "long_distance_rail": 0.08,
+    "rationale": "Households with one car likely rely on it for airport access, reducing public transport use. Car availability increases car mode share despite no driver specification."
+  },
+  "normalization": {
+    "sum_before": 0.88,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:24:48.671858+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m01__a02__c004__r002",
+  "block_id": "p01__m01__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzauto_gr1__d7ca944fcddc",
+  "round": 2,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "901bd8904c28d45ee085e09c2c21999ebcfeffe1b5cff8a2b1778cefbf398a6f",
+  "started_utc": "2026-11-25T14:24:31.132636+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:24:32.682118+00:00",
+      "cost_usd": 2.043e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.043e-05,
+  "reservation_upper_bound_usd": 0.00036306,
+  "response_sha256": "2e72cc0ecc2b9a1f33e58c5e6d42fd207eac6b788bf1483997e42351239bb4d9",
+  "response": {
+    "id": "gen-1795616671-VKSVt5kNfFMZ6jmsWi87",
+    "object": "chat.completion",
+    "created": 1795616671,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.4, \"local_pt\": 0.25, \"long_distance_rail\": 0.15, \"rationale\": \"Given one car per household, and the aircraft journey, it's likely some car use occurred for accessing/departing the airport. Local public transport and rail are also plausible, reflecting common travel patterns alongside air travel.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 487,
+      "completion_tokens": 83,
+      "total_tokens": 570,
+      "cost": 2.043e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.043e-05,
+        "upstream_inference_prompt_cost": 1.628e-05,
+        "upstream_inference_completions_cost": 4.15e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616671-VKSVt5kNfFMZ6jmsWi87",
+  "raw_prediction": {
+    "car": 0.4,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "Given one car per household, and the aircraft journey, it's likely some car use occurred for accessing/departing the airport. Local public transport and rail are also plausible, reflecting common travel patterns alongside air travel."
+  },
+  "prediction": {
+    "car": 0.4,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "Given one car per household, and the aircraft journey, it's likely some car use occurred for accessing/departing the airport. Local public transport and rail are also plausible, reflecting common travel patterns alongside air travel."
+  },
+  "normalization": {
+    "sum_before": 0.8,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:24:32.682118+00:00",
+  "cost_exceeded_reservation": false
+}

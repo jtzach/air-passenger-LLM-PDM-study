@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a02__c017__r006",
+  "block_id": "p01__m03__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__456ee228eb2a",
+  "round": 6,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "3a74fc997b8feaa8b5b866a5b18eba645e82d6ceeaa0459f7d126c9f734470c9",
+  "started_utc": "2026-11-25T14:32:03.687811+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:32:11.799941+00:00",
+      "cost_usd": 0.00012696,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00012696,
+  "reservation_upper_bound_usd": 0.0021211800000000003,
+  "response_sha256": "877c28a2cabe8bbedf1f724afbe7225c5a04852b8bd618bc345a977ee3ed827a",
+  "response": {
+    "id": "gen-1795617123-sfA6ILDB36LZMefhEZfW",
+    "object": "chat.completion",
+    "created": 1795617123,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Longer stays may reduce immediate airport access urgency, favoring car use over local transit or train for flexibility; however, lack of specific origin or destination limits precision.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 476,
+      "completion_tokens": 76,
+      "total_tokens": 552,
+      "cost": 0.00012696,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00012696,
+        "upstream_inference_prompt_cost": 6.426e-05,
+        "upstream_inference_completions_cost": 6.27e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795617123-sfA6ILDB36LZMefhEZfW",
+  "raw_prediction": {
+    "car": 0.45,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Longer stays may reduce immediate airport access urgency, favoring car use over local transit or train for flexibility; however, lack of specific origin or destination limits precision."
+  },
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Longer stays may reduce immediate airport access urgency, favoring car use over local transit or train for flexibility; however, lack of specific origin or destination limits precision."
+  },
+  "normalization": {
+    "sum_before": 0.73,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:32:11.799941+00:00",
+  "cost_exceeded_reservation": false
+}

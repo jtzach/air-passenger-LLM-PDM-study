@@ -1,0 +1,106 @@
+{
+  "task_id": "p01__m02__a02__c020__r002",
+  "block_id": "p01__m02__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__9ee7f61bb0c0",
+  "round": 2,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "60f7adf237e7680dcd1654766797a4fb130331a04bf20f561e70c855863d6fa2",
+  "started_utc": "2026-11-25T14:23:22.667980+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "transport_error",
+      "detail": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>",
+      "utc": "2026-11-25T14:23:45.936270+00:00",
+      "cost_upper_bound_usd": 0.0017055999999999998
+    },
+    {
+      "number": 2,
+      "status": "response",
+      "utc": "2026-11-25T14:23:49.983976+00:00",
+      "cost_usd": 0.0003024,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.002008,
+  "reservation_upper_bound_usd": 0.0051167999999999995,
+  "response_sha256": "dfbaf6ca0a7a89e314e8f8410b011133529cc469ff577bd0ddab6235861a484d",
+  "response": {
+    "id": "gen-1795616628-6pA1RdIrbYsJ9iYKFZnF",
+    "object": "chat.completion",
+    "created": 1795616628,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.25,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Three-night trips likely involve airport access by car or local transit; longer stays may reduce long-distance rail use, slightly increasing car reliance and local public transport for access or urban mobility.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 452,
+      "completion_tokens": 76,
+      "total_tokens": 528,
+      "cost": 0.0003024,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003024,
+        "upstream_inference_prompt_cost": 0.0001808,
+        "upstream_inference_completions_cost": 0.0001216
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795616628-6pA1RdIrbYsJ9iYKFZnF",
+  "raw_prediction": {
+    "car": 0.45,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.1,
+    "rationale": "Three-night trips likely involve airport access by car or local transit; longer stays may reduce long-distance rail use, slightly increasing car reliance and local public transport for access or urban mobility."
+  },
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.1,
+    "rationale": "Three-night trips likely involve airport access by car or local transit; longer stays may reduce long-distance rail use, slightly increasing car reliance and local public transport for access or urban mobility."
+  },
+  "normalization": {
+    "sum_before": 0.8,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:23:49.983976+00:00",
+  "cost_exceeded_reservation": false
+}

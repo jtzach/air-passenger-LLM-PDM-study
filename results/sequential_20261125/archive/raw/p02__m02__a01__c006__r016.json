@@ -1,0 +1,120 @@
+{
+  "task_id": "p02__m02__a01__c006__r016",
+  "block_id": "p02__m02__a01",
+  "panel_id": "fmg_2025",
+  "panel_index": 1,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "unanchored",
+  "card_id": "fmg_private_intercontinental",
+  "round": 16,
+  "modes": [
+    "car_dropoff",
+    "car_airport_parking",
+    "car_offairport_parking",
+    "car_other_parking",
+    "taxi_ridehail",
+    "rental_carsharing",
+    "bus_transfer",
+    "s_bahn",
+    "uefex",
+    "other"
+  ],
+  "mutually_exclusive": true,
+  "request_sha256": "1886c813a971b672fe6d2343c0d9abb1c47d0d02494a1121e3ba8bc06ca8ee65",
+  "started_utc": "2026-11-25T17:42:36.211644+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:42:38.577551+00:00",
+      "cost_usd": 0.0004936,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0004936,
+  "reservation_upper_bound_usd": 0.0058379999999999994,
+  "response_sha256": "0501604a2d21479e07844db8db9b08fd5e448d05612f4ab3761acc591e674375",
+  "response": {
+    "id": "gen-1795628555-ILZWzIRpXBETNZoDFX8t",
+    "object": "chat.completion",
+    "created": 1795628555,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car_dropoff\": 0.25,\n  \"car_airport_parking\": 0.20,\n  \"car_offairport_parking\": 0.10,\n  \"car_other_parking\": 0.05,\n  \"taxi_ridehail\": 0.08,\n  \"rental_carsharing\": 0.02,\n  \"bus_transfer\": 0.10,\n  \"s_bahn\": 0.15,\n  \"uefex\": 0.04,\n  \"other\": 0.01,\n  \"rationale\": \"Intercontinental private travelers likely favor car drop-off and parking; rail (S-Bahn, UEFEX) and bus serve those without cars; taxi use moderate; rental less frequent for private trips.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 582,
+      "completion_tokens": 163,
+      "total_tokens": 745,
+      "cost": 0.0004936,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0004936,
+        "upstream_inference_prompt_cost": 0.0002328,
+        "upstream_inference_completions_cost": 0.0002608
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795628555-ILZWzIRpXBETNZoDFX8t",
+  "raw_prediction": {
+    "car_dropoff": 0.25,
+    "car_airport_parking": 0.2,
+    "car_offairport_parking": 0.1,
+    "car_other_parking": 0.05,
+    "taxi_ridehail": 0.08,
+    "rental_carsharing": 0.02,
+    "bus_transfer": 0.1,
+    "s_bahn": 0.15,
+    "uefex": 0.04,
+    "other": 0.01,
+    "rationale": "Intercontinental private travelers likely favor car drop-off and parking; rail (S-Bahn, UEFEX) and bus serve those without cars; taxi use moderate; rental less frequent for private trips."
+  },
+  "prediction": {
+    "car_dropoff": 0.25,
+    "car_airport_parking": 0.2,
+    "car_offairport_parking": 0.1,
+    "car_other_parking": 0.05,
+    "taxi_ridehail": 0.08,
+    "rental_carsharing": 0.02,
+    "bus_transfer": 0.1,
+    "s_bahn": 0.15,
+    "uefex": 0.04,
+    "other": 0.01,
+    "rationale": "Intercontinental private travelers likely favor car drop-off and parking; rail (S-Bahn, UEFEX) and bus serve those without cars; taxi use moderate; rental less frequent for private trips."
+  },
+  "normalization": {
+    "sum_before": 1.0,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:42:38.577551+00:00",
+  "cost_exceeded_reservation": false
+}

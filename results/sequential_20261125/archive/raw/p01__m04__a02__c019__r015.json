@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c019__r015",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__782410ef69d3",
+  "round": 15,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "b73b7672207a775a261a9367af40f90ff76b1f859bdd00954d64c9a5664a71ba",
+  "started_utc": "2026-11-25T17:42:05.570349+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:42:06.975888+00:00",
+      "cost_usd": 0.001572,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001572,
+  "reservation_upper_bound_usd": 0.025572,
+  "response_sha256": "76c57071d0ee34f6c977d14d195d800c2d4a83192d650473f757eb70269e6e02",
+  "response": {
+    "id": "gen-1795628525-tDEiwV5Ae5rAHEWuyXOH",
+    "object": "chat.completion",
+    "created": 1795628525,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.42,\n  \"local_pt\": 0.23,\n  \"long_distance_rail\": 0.16,\n  \"rationale\": \"Longer 8-14 night trips may involve more luggage and distant airports, increasing car and long-distance rail use slightly above average; local public transport rises only marginally due to heavier baggage and less urban focus.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 454,
+      "completion_tokens": 83,
+      "total_tokens": 537,
+      "cost": 0.001572,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001572,
+        "upstream_inference_prompt_cost": 0.000908,
+        "upstream_inference_completions_cost": 0.000664
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628525-tDEiwV5Ae5rAHEWuyXOH",
+  "raw_prediction": {
+    "car": 0.42,
+    "local_pt": 0.23,
+    "long_distance_rail": 0.16,
+    "rationale": "Longer 8-14 night trips may involve more luggage and distant airports, increasing car and long-distance rail use slightly above average; local public transport rises only marginally due to heavier baggage and less urban focus."
+  },
+  "prediction": {
+    "car": 0.42,
+    "local_pt": 0.23,
+    "long_distance_rail": 0.16,
+    "rationale": "Longer 8-14 night trips may involve more luggage and distant airports, increasing car and long-distance rail use slightly above average; local public transport rises only marginally due to heavier baggage and less urban focus."
+  },
+  "normalization": {
+    "sum_before": 0.81,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:42:06.975888+00:00",
+  "cost_exceeded_reservation": false
+}

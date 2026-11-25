@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a02__c024__r008",
+  "block_id": "p01__m03__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "overall_rate_anchored",
+  "card_id": "no_persona",
+  "round": 8,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "32d5b8266cbd5a89b062dd7eff1bc92775304dbbe18cb0003754866045ef6ff0",
+  "started_utc": "2026-11-25T17:36:06.639448+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:36:15.346917+00:00",
+      "cost_usd": 0.0001239,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0001239,
+  "reservation_upper_bound_usd": 0.0020355,
+  "response_sha256": "42831fd36c95dfa33b5db8dfd624e654a466a9aee40708d73d504d85582306a4",
+  "response": {
+    "id": "gen-1795628165-le1xqbvfQwioxxOzalxx",
+    "object": "chat.completion",
+    "created": 1795628165,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.376769,\n  \"local_pt\": 0.216230,\n  \"long_distance_rail\": 0.124088,\n  \"rationale\": \"No distinguishing attributes are provided for the cohort, so no deviation from the population-level probabilities is justified for any transport mode.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 435,
+      "completion_tokens": 79,
+      "total_tokens": 514,
+      "cost": 0.0001239,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0001239,
+        "upstream_inference_prompt_cost": 5.8725e-05,
+        "upstream_inference_completions_cost": 6.5175e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795628165-le1xqbvfQwioxxOzalxx",
+  "raw_prediction": {
+    "car": 0.376769,
+    "local_pt": 0.21623,
+    "long_distance_rail": 0.124088,
+    "rationale": "No distinguishing attributes are provided for the cohort, so no deviation from the population-level probabilities is justified for any transport mode."
+  },
+  "prediction": {
+    "car": 0.376769,
+    "local_pt": 0.21623,
+    "long_distance_rail": 0.124088,
+    "rationale": "No distinguishing attributes are provided for the cohort, so no deviation from the population-level probabilities is justified for any transport mode."
+  },
+  "normalization": {
+    "sum_before": 0.717087,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:36:15.346917+00:00",
+  "cost_exceeded_reservation": false
+}

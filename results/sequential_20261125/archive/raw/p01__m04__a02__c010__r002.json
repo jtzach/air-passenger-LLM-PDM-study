@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c010__r002",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__RegioStaR7__9f47524becab",
+  "round": 2,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "7de36a65a27dd2000ae1a8578791175da16e99c140a158cbf1d88e98c50c33f5",
+  "started_utc": "2026-11-25T14:24:16.384724+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:24:18.726209+00:00",
+      "cost_usd": 0.00152,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00152,
+  "reservation_upper_bound_usd": 0.025733999999999996,
+  "response_sha256": "b0a8aebe2e402a989ed57ba1f1368d30807811c7ca47ece39a00c0c43052e167",
+  "response": {
+    "id": "gen-1795616657-RonRkIts7Pk88J5pQ2gy",
+    "object": "chat.completion",
+    "created": 1795616657,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.40,\n  \"local_pt\": 0.25,\n  \"long_distance_rail\": 0.14,\n  \"rationale\": \"Medium-sized urban areas may have moderate airport access; car use slightly higher than national average, but public/local and long-distance rail use also somewhat elevated due to decent public transport links.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 456,
+      "completion_tokens": 76,
+      "total_tokens": 532,
+      "cost": 0.00152,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00152,
+        "upstream_inference_prompt_cost": 0.000912,
+        "upstream_inference_completions_cost": 0.000608
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616657-RonRkIts7Pk88J5pQ2gy",
+  "raw_prediction": {
+    "car": 0.4,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.14,
+    "rationale": "Medium-sized urban areas may have moderate airport access; car use slightly higher than national average, but public/local and long-distance rail use also somewhat elevated due to decent public transport links."
+  },
+  "prediction": {
+    "car": 0.4,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.14,
+    "rationale": "Medium-sized urban areas may have moderate airport access; car use slightly higher than national average, but public/local and long-distance rail use also somewhat elevated due to decent public transport links."
+  },
+  "normalization": {
+    "sum_before": 0.79,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:24:18.726209+00:00",
+  "cost_exceeded_reservation": false
+}

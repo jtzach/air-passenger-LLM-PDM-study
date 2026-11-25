@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a02__c008__r008",
+  "block_id": "p01__m03__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__RegioStaR7__7b0e1c4f102a",
+  "round": 8,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "4de2fcff3447c6491a853e2889489da08b27ee333b1d827d3f17af342d9cbff6",
+  "started_utc": "2026-11-25T17:36:25.368292+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:36:32.800290+00:00",
+      "cost_usd": 0.000122565,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000122565,
+  "reservation_upper_bound_usd": 0.0021249599999999995,
+  "response_sha256": "4b0e880ceb00a30e2a6703ffa5e36c628c4c80cd8779f0e0b58780f5602eb173",
+  "response": {
+    "id": "gen-1795628184-ljGaLKv3CrWtyP5d3ZlH",
+    "object": "chat.completion",
+    "created": 1795628184,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.09,\n  \"rationale\": \"Metropolitan residents may have higher car access and use for airport access, but lower reliance on long-distance rail due to proximity to major airports.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 474,
+      "completion_tokens": 71,
+      "total_tokens": 545,
+      "cost": 0.000122565,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000122565,
+        "upstream_inference_prompt_cost": 6.399e-05,
+        "upstream_inference_completions_cost": 5.8575e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795628184-ljGaLKv3CrWtyP5d3ZlH",
+  "raw_prediction": {
+    "car": 0.55,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.09,
+    "rationale": "Metropolitan residents may have higher car access and use for airport access, but lower reliance on long-distance rail due to proximity to major airports."
+  },
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.09,
+    "rationale": "Metropolitan residents may have higher car access and use for airport access, but lower reliance on long-distance rail due to proximity to major airports."
+  },
+  "normalization": {
+    "sum_before": 0.8200000000000001,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:36:32.800290+00:00",
+  "cost_exceeded_reservation": false
+}

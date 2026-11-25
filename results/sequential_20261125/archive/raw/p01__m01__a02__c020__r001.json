@@ -1,0 +1,106 @@
+{
+  "task_id": "p01__m01__a02__c020__r001",
+  "block_id": "p01__m01__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__9ee7f61bb0c0",
+  "round": 1,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "91b6fecbc35f2bb040fdd39750135b4aafc29a765791140daa725ca3975316de",
+  "started_utc": "2026-11-25T14:21:37.984841+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "transport_error",
+      "detail": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>",
+      "utc": "2026-11-25T14:22:01.385853+00:00",
+      "cost_upper_bound_usd": 0.00012138
+    },
+    {
+      "number": 2,
+      "status": "response",
+      "utc": "2026-11-25T14:22:05.007136+00:00",
+      "cost_usd": 1.965e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00014103,
+  "reservation_upper_bound_usd": 0.00036414,
+  "response_sha256": "7ea190dc1134d5bc9c6ef1dc3ff849267660cd54c3189c037a1a31918f61abbb",
+  "response": {
+    "id": "gen-1795616523-Eab4f8LDagtpCgp2DSFi",
+    "object": "chat.completion",
+    "created": 1795616523,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.3, \"local_pt\": 0.18, \"long_distance_rail\": 0.11, \"rationale\": \"The cohort undertook three overnight journeys, suggesting a higher likelihood of using other transport modes for connections or shorter trips. Ground transport usage mirrors the overall population, adjusted slightly downwards.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 488,
+      "completion_tokens": 73,
+      "total_tokens": 561,
+      "cost": 1.965e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 176,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.965e-05,
+        "upstream_inference_prompt_cost": 1.6e-05,
+        "upstream_inference_completions_cost": 3.65e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616523-Eab4f8LDagtpCgp2DSFi",
+  "raw_prediction": {
+    "car": 0.3,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.11,
+    "rationale": "The cohort undertook three overnight journeys, suggesting a higher likelihood of using other transport modes for connections or shorter trips. Ground transport usage mirrors the overall population, adjusted slightly downwards."
+  },
+  "prediction": {
+    "car": 0.3,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.11,
+    "rationale": "The cohort undertook three overnight journeys, suggesting a higher likelihood of using other transport modes for connections or shorter trips. Ground transport usage mirrors the overall population, adjusted slightly downwards."
+  },
+  "normalization": {
+    "sum_before": 0.59,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:22:05.007136+00:00",
+  "cost_exceeded_reservation": false
+}

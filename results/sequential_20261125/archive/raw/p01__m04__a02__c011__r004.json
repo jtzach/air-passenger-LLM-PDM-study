@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c011__r004",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__RegioStaR7__cae80c90607c",
+  "round": 4,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "f8fe10bd82dda51f50617c6d66e365c69578206182172b3b28964966dd3a2a50",
+  "started_utc": "2026-11-25T14:27:34.545398+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:27:36.028784+00:00",
+      "cost_usd": 0.001576,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001576,
+  "reservation_upper_bound_usd": 0.025733999999999996,
+  "response_sha256": "57e26d4261b569ef84167d24723a1435804bb7fc9711ff0a2866898a97cdbb35",
+  "response": {
+    "id": "gen-1795616854-tMSpMS0YOgMoatfS0YRz",
+    "object": "chat.completion",
+    "created": 1795616854,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.41,\n  \"local_pt\": 0.22,\n  \"long_distance_rail\": 0.14,\n  \"rationale\": \"Residents of rural and medium towns likely face limited direct rail/PT to airports, increasing car use. Urban area residents may use public/local transport or rail more, but cohort skews car use slightly higher than national average.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 456,
+      "completion_tokens": 83,
+      "total_tokens": 539,
+      "cost": 0.001576,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001576,
+        "upstream_inference_prompt_cost": 0.000912,
+        "upstream_inference_completions_cost": 0.000664
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616854-tMSpMS0YOgMoatfS0YRz",
+  "raw_prediction": {
+    "car": 0.41,
+    "local_pt": 0.22,
+    "long_distance_rail": 0.14,
+    "rationale": "Residents of rural and medium towns likely face limited direct rail/PT to airports, increasing car use. Urban area residents may use public/local transport or rail more, but cohort skews car use slightly higher than national average."
+  },
+  "prediction": {
+    "car": 0.41,
+    "local_pt": 0.22,
+    "long_distance_rail": 0.14,
+    "rationale": "Residents of rural and medium towns likely face limited direct rail/PT to airports, increasing car use. Urban area residents may use public/local transport or rail more, but cohort skews car use slightly higher than national average."
+  },
+  "normalization": {
+    "sum_before": 0.77,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:27:36.028784+00:00",
+  "cost_exceeded_reservation": false
+}

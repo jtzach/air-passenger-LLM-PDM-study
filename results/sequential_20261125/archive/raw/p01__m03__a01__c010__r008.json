@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a01__c010__r008",
+  "block_id": "p01__m03__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "unanchored",
+  "card_id": "reise__RegioStaR7__9f47524becab",
+  "round": 8,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "8e0316aa8dea40521efc9e9c44494c4170f3d2b967e33a4afe8ccfe72bf47344",
+  "started_utc": "2026-11-25T17:36:19.387742+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:36:27.903903+00:00",
+      "cost_usd": 0.00011352,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00011352,
+  "reservation_upper_bound_usd": 0.00201786,
+  "response_sha256": "8c00c3a0b29497627a9cacaf659c1464ee1c5e24d3fe47e02732ac9a02241fbf",
+  "response": {
+    "id": "gen-1795628178-LhZ5O4DS3oPW4U697RTh",
+    "object": "chat.completion",
+    "created": 1795628178,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.3,\n  \"long_distance_rail\": 0.2,\n  \"rationale\": \"Medium-sized urban residents may drive to nearby airports or use local transit. Car use is likely for flexibility; public transport less dominant than in major cities.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 407,
+      "completion_tokens": 71,
+      "total_tokens": 478,
+      "cost": 0.00011352,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00011352,
+        "upstream_inference_prompt_cost": 5.4945e-05,
+        "upstream_inference_completions_cost": 5.8575e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795628178-LhZ5O4DS3oPW4U697RTh",
+  "raw_prediction": {
+    "car": 0.65,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.2,
+    "rationale": "Medium-sized urban residents may drive to nearby airports or use local transit. Car use is likely for flexibility; public transport less dominant than in major cities."
+  },
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.2,
+    "rationale": "Medium-sized urban residents may drive to nearby airports or use local transit. Car use is likely for flexibility; public transport less dominant than in major cities."
+  },
+  "normalization": {
+    "sum_before": 1.15,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:36:27.903903+00:00",
+  "cost_exceeded_reservation": false
+}

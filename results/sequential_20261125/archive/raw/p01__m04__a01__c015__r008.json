@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c015__r008",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzbegl_gr__18864b086b3b",
+  "round": 8,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "7281453c56786a6b7dbe77a8c6ad78e2379319c0f163b349c184a7263c8b0640",
+  "started_utc": "2026-11-25T17:35:51.972959+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:35:53.161745+00:00",
+      "cost_usd": 0.00144,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00144,
+  "reservation_upper_bound_usd": 0.023933999999999997,
+  "response_sha256": "19c93bc4785619d84e0efa54fa6e2c482ffc2c035dcd02e78fdb6b66b111996e",
+  "response": {
+    "id": "gen-1795628151-xotzvsRDb9zaXRF3XmQ7",
+    "object": "chat.completion",
+    "created": 1795628151,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.18,\n  \"rationale\": \"With three household companions, group convenience and cost favor car use for airport access. Public/local transport is less flexible for groups, while long-distance rail is less common for families, especially with luggage and coordination needs.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 392,
+      "completion_tokens": 82,
+      "total_tokens": 474,
+      "cost": 0.00144,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00144,
+        "upstream_inference_prompt_cost": 0.000784,
+        "upstream_inference_completions_cost": 0.000656
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628151-xotzvsRDb9zaXRF3XmQ7",
+  "raw_prediction": {
+    "car": 0.65,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.18,
+    "rationale": "With three household companions, group convenience and cost favor car use for airport access. Public/local transport is less flexible for groups, while long-distance rail is less common for families, especially with luggage and coordination needs."
+  },
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.18,
+    "rationale": "With three household companions, group convenience and cost favor car use for airport access. Public/local transport is less flexible for groups, while long-distance rail is less common for families, especially with luggage and coordination needs."
+  },
+  "normalization": {
+    "sum_before": 1.18,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:35:53.162745+00:00",
+  "cost_exceeded_reservation": false
+}

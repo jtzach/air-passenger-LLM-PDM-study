@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c019__r001",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__782410ef69d3",
+  "round": 1,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "0abed6c469c57d9ea3e5d4322dbd7ff0f6ce795c8de189fbaf782065f9f6555a",
+  "started_utc": "2026-11-25T14:22:42.819230+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:22:44.520093+00:00",
+      "cost_usd": 0.00158,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00158,
+  "reservation_upper_bound_usd": 0.025572,
+  "response_sha256": "77272416da2ad81adb68865bb98f50a4d625fa0b3e31950a06fad9a263832c46",
+  "response": {
+    "id": "gen-1795616563-7ItXlyshH9YrKswYj51X",
+    "object": "chat.completion",
+    "created": 1795616563,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.43,\n  \"local_pt\": 0.24,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"Longer stays (8-14 nights) imply more luggage and greater flexibility needs, making car use more likely. Local public transport and long-distance rail may rise slightly but remain less common than car for such extended trips.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 454,
+      "completion_tokens": 84,
+      "total_tokens": 538,
+      "cost": 0.00158,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00158,
+        "upstream_inference_prompt_cost": 0.000908,
+        "upstream_inference_completions_cost": 0.000672
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616563-7ItXlyshH9YrKswYj51X",
+  "raw_prediction": {
+    "car": 0.43,
+    "local_pt": 0.24,
+    "long_distance_rail": 0.15,
+    "rationale": "Longer stays (8-14 nights) imply more luggage and greater flexibility needs, making car use more likely. Local public transport and long-distance rail may rise slightly but remain less common than car for such extended trips."
+  },
+  "prediction": {
+    "car": 0.43,
+    "local_pt": 0.24,
+    "long_distance_rail": 0.15,
+    "rationale": "Longer stays (8-14 nights) imply more luggage and greater flexibility needs, making car use more likely. Local public transport and long-distance rail may rise slightly but remain less common than car for such extended trips."
+  },
+  "normalization": {
+    "sum_before": 0.82,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:22:44.520093+00:00",
+  "cost_exceeded_reservation": false
+}

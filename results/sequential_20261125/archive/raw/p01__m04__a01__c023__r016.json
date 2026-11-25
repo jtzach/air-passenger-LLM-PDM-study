@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c023__r016",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__fd46cf332878",
+  "round": 16,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "9c77a4a32d3419bcb031ed5b4970a7e774dad970329c0003dca18b09c1c9f6ea",
+  "started_utc": "2026-11-25T17:42:38.284509+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:42:39.642114+00:00",
+      "cost_usd": 0.001454,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001454,
+  "reservation_upper_bound_usd": 0.023963999999999996,
+  "response_sha256": "1cf9f17a4b9f74ebfbeb764a4445a9b1e03a6a7622eedcdabe0e1f5dbe8982d5",
+  "response": {
+    "id": "gen-1795628557-dWlnXNdSs59xA5WmZHIK",
+    "object": "chat.completion",
+    "created": 1795628557,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.28,\n  \"rationale\": \"Extended trips often involve significant baggage and flexibility needs, making car use common. Still, some use public transport or trains, especially for long airport transfers, but car remains likeliest for lengthy, multi-night journeys.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 395,
+      "completion_tokens": 83,
+      "total_tokens": 478,
+      "cost": 0.001454,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001454,
+        "upstream_inference_prompt_cost": 0.00079,
+        "upstream_inference_completions_cost": 0.000664
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628557-dWlnXNdSs59xA5WmZHIK",
+  "raw_prediction": {
+    "car": 0.55,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.28,
+    "rationale": "Extended trips often involve significant baggage and flexibility needs, making car use common. Still, some use public transport or trains, especially for long airport transfers, but car remains likeliest for lengthy, multi-night journeys."
+  },
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.28,
+    "rationale": "Extended trips often involve significant baggage and flexibility needs, making car use common. Still, some use public transport or trains, especially for long airport transfers, but car remains likeliest for lengthy, multi-night journeys."
+  },
+  "normalization": {
+    "sum_before": 1.1800000000000002,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:42:39.642114+00:00",
+  "cost_exceeded_reservation": false
+}

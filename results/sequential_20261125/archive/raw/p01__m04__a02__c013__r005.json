@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c013__r005",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzbegl_gr__07f355b725cf",
+  "round": 5,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "a31fa0a61687c80cbc769913248c5422e30ab3e3aebfc17f3a354d1c63dfa276",
+  "started_utc": "2026-11-25T14:30:02.907667+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:30:04.714956+00:00",
+      "cost_usd": 0.001534,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001534,
+  "reservation_upper_bound_usd": 0.025577999999999997,
+  "response_sha256": "2ea6ba090b7eb6b4906b7fba19d8539f9d85973061970017d4081d2183a1fecd",
+  "response": {
+    "id": "gen-1795617003-LghWl4UWVniYb0B4ZiCT",
+    "object": "chat.completion",
+    "created": 1795617003,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.47,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"With two household companions, group convenience and luggage make car use more likely than average, while public transport, especially long-distance rail, becomes less attractive due to coordination and ticketing complexity for groups.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 451,
+      "completion_tokens": 79,
+      "total_tokens": 530,
+      "cost": 0.001534,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001534,
+        "upstream_inference_prompt_cost": 0.000902,
+        "upstream_inference_completions_cost": 0.000632
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795617003-LghWl4UWVniYb0B4ZiCT",
+  "raw_prediction": {
+    "car": 0.47,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "With two household companions, group convenience and luggage make car use more likely than average, while public transport, especially long-distance rail, becomes less attractive due to coordination and ticketing complexity for groups."
+  },
+  "prediction": {
+    "car": 0.47,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "With two household companions, group convenience and luggage make car use more likely than average, while public transport, especially long-distance rail, becomes less attractive due to coordination and ticketing complexity for groups."
+  },
+  "normalization": {
+    "sum_before": 0.75,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:30:04.714956+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,77 @@
+% Adapted from David Levinson's official Findings template (CC BY 4.0).
+% The unmodified source and retrieval hashes are in template_original/.
+\documentclass{article}
+\usepackage[english]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{amsmath,graphicx,booktabs,array}
+\usepackage[sort&compress,round,semicolon,authoryear]{natbib}
+\usepackage[figurename=Fig.,labelfont=bf,labelsep=period]{caption}
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+\usepackage[none]{hyphenat}
+\emergencystretch=4em
+\graphicspath{{../figures/}}
+\newcommand{\studyfigure}[2]{\IfFileExists{../figures/#1.pdf}{\includegraphics[width=\linewidth]{#1.pdf}}{\fbox{\parbox[c][4cm][c]{0.92\linewidth}{\centering Figure awaiting generated results: #2}}}}
+\title{Can AI Estimate Which Other Transport People Use When They Fly?}
+\author{}
+\date{November 24, 2026}
+\hypersetup{pdftitle={Can AI Estimate Which Other Transport People Use When They Fly?},pdfsubject={A group-level adaptation of LLM-PDM using MiD 2023},pdfkeywords={large language models,personas,air travel,national travel survey,ground transport}}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+We adapted LLM-PDM to test whether language models can estimate ground transport use on overnight air journeys. Public MiD 2023 tables supplied 23 group descriptions, each with one known characteristic. Models returned probabilities, which can be read as numbers out of 100 similar journeys. Giving overall survey rates improved all four complete models. Only GPT-4.1 with group details and this hint beat a simple benchmark that repeats overall rates: average error 2.93 versus 4.16 percentage points. These are estimates for groups, not simulated individuals or airport-access choices.
+\end{abstract}
+\textit{Keywords:} large language models; personas; air journeys; national travel survey; multimodality; benchmarking
+
+\section{Questions}
+Can a language model estimate how transport use differs between groups of air journeys? Does knowing the overall survey rates help? Earlier studies use LLM personas to generate survey answers or predict individual choices \citep{tzachristas2026,mo2026,liu2026}. However, matching an overall average does not guarantee correct differences between groups \citep{bisbee2024}. We test those differences using public tables, without collecting new responses from people (Figure~\ref{fig:framework}).
+
+\section{Methods}
+Each model received a \emph{group card}, technically a \emph{cohort persona}, giving one fact such as ``the household has no car.'' It estimated car, local bus/rail, and long-distance-train use alongside aircraft. Think: \emph{out of 100 similar journeys, how many also used each mode?} The API requested probabilities from 0 to 1; multiplying by 100 displays percentages. We did not generate fictional journeys or people. Answers can overlap and need not sum to 100.
+
+Public MiD 2023 tables supplied 9,475 overnight journeys with aircraft as the main mode \citep{mit2023}. Respondents lived in Germany, were at least 14, and reported up to three journeys from the preceding three months during 2023--2024 fieldwork \citep{midmethods2025,midhandbook2025}. One person could report several journeys. The transport question combines outward and return travel; it does not identify access to a particular airport.
+
+We used existing survey categories, not machine-learned clusters. Before predictions, we fixed rules for 14 candidate attributes. Retained groups needed at least 100 reported journeys; attributes needed at least two groups covering at least 80\% of weighted journeys. Missing-response categories were excluded. We ranked normalized information gain: how much knowing the group reduced uncertainty about the three answers. We deliberately selected two traveler and two journey attributes. Age ranked third overall, but household cars and residential area filled both traveler places; the journey attributes were household companions and nights away.
+
+Their categories give $5+7+4+7=23$ cards (Figure~\ref{fig:selection}). The same journey can appear in several attribute groups. Each card leaves other characteristics unspecified. Original LLM-PDM combines several attributes and asks the model to answer as those respondents \citep{tzachristas2026}. Our public tables cannot recover those joint profiles. We estimate group percentages directly, without creating fictional individuals.
+
+Five models received three repeated requests through OpenRouter. One condition gave no overall-rate hint; the other supplied car, local-public-transport, and long-distance-rail rates of 37.7\%, 21.6\%, and 12.4\%. Both withheld the group's survey answers. We also tested prompts without cards and a simple benchmark that gives every group the overall rates. No model was fine-tuned or corrected using its errors.
+
+Our score is the average gap between predicted and survey percentages: mean absolute error (MAE), in percentage points. We averaged the three predictions, weighted groups by frequency within each attribute, then averaged equally across attributes and modes. Smaller is better. The same survey answers selected attributes and checked predictions, so this measures agreement with known tables, not unseen passengers. Earlier age tables had been inspected; the selection rule was not externally preregistered.
+
+\begin{figure}[htbp]
+\centering
+\studyfigure{01_framework}{Study framework}
+\caption{From survey tables to group cards and predicted percentages. ``Out of 100'' explains probabilities; it does not create 100 synthetic travelers. Group-specific survey answers are kept out of prompts.}
+\label{fig:framework}
+\end{figure}
+
+\section{Findings}
+Household cars, residential area, household companions, and nights away supplied the 23 cards, covering 92.5--100\% of weighted journeys within each attribute. Survey groups differed: car use was 15.0\% in households without cars and 58.4\% in households with at least four; local-public-transport use was 40.1\% and 9.3\%, respectively.
+
+Gemma~3~4B, GPT-4.1~mini, Qwen3~235B~A22B, and GPT-4.1 each completed 144 calls. Gemma~3~12B produced only 11 valid outputs, with 98 rate-limited failures and 35 wrong-format responses. We excluded it before comparing accuracy and retained every failure record.
+
+The overall-rate hint improved all four complete models: average gaps were 9.44--25.08 percentage points without it and 2.93--6.80 with it (Figure~\ref{fig:results}). Only GPT-4.1 with the hint and group cards beat the simple benchmark: 2.93 versus 4.16 points. Without cards, its hinted score was 4.10. Cards worsened hinted predictions for the other three models. GPT-4.1's separate-run scores were 2.89--3.26 points. It still missed long-distance-rail use in urban-region small towns/villages: 8.3\% predicted versus 23.3\% observed.
+
+Useful group estimates depended on both the model and the hint. We cannot establish individual behavior, causes, Munich-specific results, or airport-access choices from these tables. Training-data exposure and survey uncertainty are unknown; repeat variation is not a population confidence interval. Model explanations are possible stories, not evidence of people's motives.
+
+\begin{figure}[htbp]
+\centering
+\studyfigure{02_persona_selection}{Selected cohort profiles}
+\caption{Four attributes supply 23 separate group cards. Groups share journeys. Survey percentages show real differences; no card combines all four attributes.}
+\label{fig:selection}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\studyfigure{03_model_results}{Model performance}
+\caption{Average gaps between predicted and survey percentages, with and without the overall-rate hint. Smaller is better. The simple benchmark repeats overall rates for every group. Gemma~3~12B could not complete the experiment.}
+\label{fig:results}
+\end{figure}
+
+\clearpage
+\section*{Acknowledgments and availability}
+OpenAI Codex assisted with code and manuscript preparation. The evaluated models and their research role are described above. Public source responses, prompts, outputs, and analysis code are provided in the \href{https://github.com/jtzach/air-passenger-LLM-PDM-study}{replication repository}.
+\bibliographystyle{chicago}
+\bibliography{refs}
+\end{document}

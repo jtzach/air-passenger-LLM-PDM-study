@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c020__r016",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__9ee7f61bb0c0",
+  "round": 16,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "ba765e8525bef8db3b18122c84b6837be1a2832cec32c1dea88dcc047c5b9cfa",
+  "started_utc": "2026-11-25T17:42:27.409109+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:42:28.782928+00:00",
+      "cost_usd": 0.001458,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001458,
+  "reservation_upper_bound_usd": 0.02391,
+  "response_sha256": "27c29d732353844f34c6707f311f9e952a0454bfd9f8945c9adfb868191663b2",
+  "response": {
+    "id": "gen-1795628546-m35l0eRijVSVY0DuuXyZ",
+    "object": "chat.completion",
+    "created": 1795628546,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.50,\n  \"local_pt\": 0.40,\n  \"long_distance_rail\": 0.20,\n  \"rationale\": \"For 3-night trips, air travelers often use cars for flexible airport access, some rely on local transport, and fewer use long-distance rail due to time, luggage, and coordination factors typical for such moderate-duration journeys.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 393,
+      "completion_tokens": 84,
+      "total_tokens": 477,
+      "cost": 0.001458,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001458,
+        "upstream_inference_prompt_cost": 0.000786,
+        "upstream_inference_completions_cost": 0.000672
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628546-m35l0eRijVSVY0DuuXyZ",
+  "raw_prediction": {
+    "car": 0.5,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.2,
+    "rationale": "For 3-night trips, air travelers often use cars for flexible airport access, some rely on local transport, and fewer use long-distance rail due to time, luggage, and coordination factors typical for such moderate-duration journeys."
+  },
+  "prediction": {
+    "car": 0.5,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.2,
+    "rationale": "For 3-night trips, air travelers often use cars for flexible airport access, some rely on local transport, and fewer use long-distance rail due to time, luggage, and coordination factors typical for such moderate-duration journeys."
+  },
+  "normalization": {
+    "sum_before": 1.1,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:42:28.782928+00:00",
+  "cost_exceeded_reservation": false
+}

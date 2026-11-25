@@ -1,0 +1,100 @@
+{
+  "task_id": "p01__m03__a02__c005__r007__administrative_replacement1",
+  "block_id": "p01__m03__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzauto_gr1__faec8c191aa2",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "supersedes_task_id": "p01__m03__a02__c005__r007",
+  "request_sha256": "2d6096525e459a1e4c312d5ad67234eb1c40fd4ea416279a24866cca4cc6b121",
+  "started_utc": "2026-11-25T17:34:43.689640+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:34:55.872910+00:00",
+      "cost_usd": 0.00013068,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00013068,
+  "reservation_upper_bound_usd": 0.00211698,
+  "response_sha256": "04b925e140093b7aa4f9cc70e0079c81152975a872c0c3704db4732fdc713b3b",
+  "response": {
+    "id": "gen-1795628082-oWzMlY4NhRzqHmjRia6K",
+    "object": "chat.completion",
+    "created": 1795628082,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Households with 2 cars likely rely more on private vehicles for airport access, reducing public transport use. Higher car availability may decrease dependency on trains and local transit compared to the general population.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 473,
+      "completion_tokens": 81,
+      "total_tokens": 554,
+      "cost": 0.00013068,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00013068,
+        "upstream_inference_prompt_cost": 6.3855e-05,
+        "upstream_inference_completions_cost": 6.6825e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795628082-oWzMlY4NhRzqHmjRia6K",
+  "raw_prediction": {
+    "car": 0.65,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Households with 2 cars likely rely more on private vehicles for airport access, reducing public transport use. Higher car availability may decrease dependency on trains and local transit compared to the general population."
+  },
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Households with 2 cars likely rely more on private vehicles for airport access, reducing public transport use. Higher car availability may decrease dependency on trains and local transit compared to the general population."
+  },
+  "normalization": {
+    "sum_before": 0.93,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:34:55.872910+00:00",
+  "cost_exceeded_reservation": false
+}

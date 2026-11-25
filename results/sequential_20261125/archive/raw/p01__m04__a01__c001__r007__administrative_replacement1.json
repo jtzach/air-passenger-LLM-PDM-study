@@ -1,0 +1,100 @@
+{
+  "task_id": "p01__m04__a01__c001__r007__administrative_replacement1",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzauto_gr1__296e9849dc3d",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "supersedes_task_id": "p01__m04__a01__c001__r007",
+  "request_sha256": "e3b519884eec69ad287e6c0469fe97eb499d8be112f912ab5cb9f18e83f98706",
+  "started_utc": "2026-11-25T17:34:55.981981+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:34:57.279294+00:00",
+      "cost_usd": 0.00143,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00143,
+  "reservation_upper_bound_usd": 0.023861999999999998,
+  "response_sha256": "d32d20c7e0d81382538eb8e9b28a55a9dc09fca68fb36ac88d96e0eeda24702c",
+  "response": {
+    "id": "gen-1795628095-6bY3VpIdaFlILuVQ4VcO",
+    "object": "chat.completion",
+    "created": 1795628095,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.18,\n  \"local_pt\": 0.75,\n  \"long_distance_rail\": 0.32,\n  \"rationale\": \"No household car reduces private car use but doesn't preclude lifts or carsharing. Public/local transport is often used for airport access. Long-distance rail is plausible for airport connections, especially without a household car.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 391,
+      "completion_tokens": 81,
+      "total_tokens": 472,
+      "cost": 0.00143,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00143,
+        "upstream_inference_prompt_cost": 0.000782,
+        "upstream_inference_completions_cost": 0.000648
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628095-6bY3VpIdaFlILuVQ4VcO",
+  "raw_prediction": {
+    "car": 0.18,
+    "local_pt": 0.75,
+    "long_distance_rail": 0.32,
+    "rationale": "No household car reduces private car use but doesn't preclude lifts or carsharing. Public/local transport is often used for airport access. Long-distance rail is plausible for airport connections, especially without a household car."
+  },
+  "prediction": {
+    "car": 0.18,
+    "local_pt": 0.75,
+    "long_distance_rail": 0.32,
+    "rationale": "No household car reduces private car use but doesn't preclude lifts or carsharing. Public/local transport is often used for airport access. Long-distance rail is plausible for airport connections, especially without a household car."
+  },
+  "normalization": {
+    "sum_before": 1.25,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:34:57.279294+00:00",
+  "cost_exceeded_reservation": false
+}

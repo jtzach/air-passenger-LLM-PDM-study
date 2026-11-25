@@ -1,0 +1,106 @@
+{
+  "task_id": "p01__m04__a01__c014__r002",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzbegl_gr__154f6eb18583",
+  "round": 2,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "701fc2f9f4165bdbed39b0b2ee9884c8aa57b5cfb6df669cc1338ab5d549ebe3",
+  "started_utc": "2026-11-25T14:24:15.254989+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "transport_error",
+      "detail": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>",
+      "utc": "2026-11-25T14:24:39.049133+00:00",
+      "cost_upper_bound_usd": 0.007977999999999999
+    },
+    {
+      "number": 2,
+      "status": "response",
+      "utc": "2026-11-25T14:24:42.868039+00:00",
+      "cost_usd": 0.001406,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.009383999999999998,
+  "reservation_upper_bound_usd": 0.023933999999999997,
+  "response_sha256": "bcaa1ca93878394010a2cffc6ad89ec3e92f224e30d88a751a4803b73f98d67c",
+  "response": {
+    "id": "gen-1795616681-a3emf3GztjrwsUql9nNG",
+    "object": "chat.completion",
+    "created": 1795616681,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"Travelling without household companions may encourage using public transport or solo car use; car remains common for airport access, but local and long-distance rail are plausible alternatives depending on distance and urban connectivity.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 391,
+      "completion_tokens": 78,
+      "total_tokens": 469,
+      "cost": 0.001406,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001406,
+        "upstream_inference_prompt_cost": 0.000782,
+        "upstream_inference_completions_cost": 0.000624
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616681-a3emf3GztjrwsUql9nNG",
+  "raw_prediction": {
+    "car": 0.45,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.25,
+    "rationale": "Travelling without household companions may encourage using public transport or solo car use; car remains common for airport access, but local and long-distance rail are plausible alternatives depending on distance and urban connectivity."
+  },
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.25,
+    "rationale": "Travelling without household companions may encourage using public transport or solo car use; car remains common for airport access, but local and long-distance rail are plausible alternatives depending on distance and urban connectivity."
+  },
+  "normalization": {
+    "sum_before": 1.05,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:24:42.868039+00:00",
+  "cost_exceeded_reservation": false
+}

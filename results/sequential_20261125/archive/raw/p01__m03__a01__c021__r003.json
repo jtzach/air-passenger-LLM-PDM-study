@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a01__c021__r003",
+  "block_id": "p01__m03__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__ef1ad3950de1",
+  "round": 3,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "ef07c037064e57bc302feb7da170fb3b3a120a996e28e8f9360e0439cf248089",
+  "started_utc": "2026-11-25T14:26:49.264840+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:26:58.007815+00:00",
+      "cost_usd": 0.00012123,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00012123,
+  "reservation_upper_bound_usd": 0.00200484,
+  "response_sha256": "c56c3b99a5b63c54e2a4712560cdd4e7ce6d3abf15c032871329a4521117d8eb",
+  "response": {
+    "id": "gen-1795616809-gxcWLyOj6YXbBduMa0JA",
+    "object": "chat.completion",
+    "created": 1795616809,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.75,\n  \"local_pt\": 0.45,\n  \"long_distance_rail\": 0.2,\n  \"rationale\": \"Short overnight trips by air likely involve car use for airport access. Urban public transport is common near airports and city centers. Long-distance rail is less likely due to time and proximity to flight hubs.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 403,
+      "completion_tokens": 81,
+      "total_tokens": 484,
+      "cost": 0.00012123,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00012123,
+        "upstream_inference_prompt_cost": 5.4405e-05,
+        "upstream_inference_completions_cost": 6.6825e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795616809-gxcWLyOj6YXbBduMa0JA",
+  "raw_prediction": {
+    "car": 0.75,
+    "local_pt": 0.45,
+    "long_distance_rail": 0.2,
+    "rationale": "Short overnight trips by air likely involve car use for airport access. Urban public transport is common near airports and city centers. Long-distance rail is less likely due to time and proximity to flight hubs."
+  },
+  "prediction": {
+    "car": 0.75,
+    "local_pt": 0.45,
+    "long_distance_rail": 0.2,
+    "rationale": "Short overnight trips by air likely involve car use for airport access. Urban public transport is common near airports and city centers. Long-distance rail is less likely due to time and proximity to flight hubs."
+  },
+  "normalization": {
+    "sum_before": 1.4,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:26:58.007815+00:00",
+  "cost_exceeded_reservation": false
+}

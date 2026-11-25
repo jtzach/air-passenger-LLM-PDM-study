@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c023__r003",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__fd46cf332878",
+  "round": 3,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "df3747c69eb3aa4a56b01ad0e6a835afa71932fdd71d4ef168edc99ae3bb7d82",
+  "started_utc": "2026-11-25T14:26:01.065247+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:26:02.766908+00:00",
+      "cost_usd": 0.00147,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00147,
+  "reservation_upper_bound_usd": 0.023963999999999996,
+  "response_sha256": "cdf58e94fd1a55d86da2d6c1f336b701781a7b915a877f594c9884e47b48c157",
+  "response": {
+    "id": "gen-1795616761-J3JfM10sayyNCQmUk6Ov",
+    "object": "chat.completion",
+    "created": 1795616761,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.35,\n  \"local_pt\": 0.45,\n  \"long_distance_rail\": 0.30,\n  \"rationale\": \"Long trips (15+ nights) often involve airports farther from home, increasing use of both private cars and public transport; long-distance rail is common but less so than local modes, reflecting Germany’s multimodal connectivity and habits.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 395,
+      "completion_tokens": 85,
+      "total_tokens": 480,
+      "cost": 0.00147,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00147,
+        "upstream_inference_prompt_cost": 0.00079,
+        "upstream_inference_completions_cost": 0.00068
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616761-J3JfM10sayyNCQmUk6Ov",
+  "raw_prediction": {
+    "car": 0.35,
+    "local_pt": 0.45,
+    "long_distance_rail": 0.3,
+    "rationale": "Long trips (15+ nights) often involve airports farther from home, increasing use of both private cars and public transport; long-distance rail is common but less so than local modes, reflecting Germany’s multimodal connectivity and habits."
+  },
+  "prediction": {
+    "car": 0.35,
+    "local_pt": 0.45,
+    "long_distance_rail": 0.3,
+    "rationale": "Long trips (15+ nights) often involve airports farther from home, increasing use of both private cars and public transport; long-distance rail is common but less so than local modes, reflecting Germany’s multimodal connectivity and habits."
+  },
+  "normalization": {
+    "sum_before": 1.1,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:26:02.768038+00:00",
+  "cost_exceeded_reservation": false
+}

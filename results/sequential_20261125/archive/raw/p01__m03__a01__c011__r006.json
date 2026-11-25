@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a01__c011__r006",
+  "block_id": "p01__m03__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "unanchored",
+  "card_id": "reise__RegioStaR7__cae80c90607c",
+  "round": 6,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "98070526578cd5caf4f00874c973c104a70916efd8fb96f02096578188755bb6",
+  "started_utc": "2026-11-25T14:31:34.354422+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:31:43.874421+00:00",
+      "cost_usd": 0.000122595,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000122595,
+  "reservation_upper_bound_usd": 0.00201786,
+  "response_sha256": "1657f300d001876a602f2052b98b7f65e6bb182281444340eb785f64005ac2ec",
+  "response": {
+    "id": "gen-1795617095-qU3GvI3bqpR6LriUlP93",
+    "object": "chat.completion",
+    "created": 1795617095,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.75,\n  \"local_pt\": 0.4,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"Car use is likely high due to limited public transport in rural and medium-sized areas. Local public transport remains a plausible access mode, while long-distance rail competes less frequently with air for such trips.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 407,
+      "completion_tokens": 82,
+      "total_tokens": 489,
+      "cost": 0.000122595,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000122595,
+        "upstream_inference_prompt_cost": 5.4945e-05,
+        "upstream_inference_completions_cost": 6.765e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795617095-qU3GvI3bqpR6LriUlP93",
+  "raw_prediction": {
+    "car": 0.75,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.25,
+    "rationale": "Car use is likely high due to limited public transport in rural and medium-sized areas. Local public transport remains a plausible access mode, while long-distance rail competes less frequently with air for such trips."
+  },
+  "prediction": {
+    "car": 0.75,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.25,
+    "rationale": "Car use is likely high due to limited public transport in rural and medium-sized areas. Local public transport remains a plausible access mode, while long-distance rail competes less frequently with air for such trips."
+  },
+  "normalization": {
+    "sum_before": 1.4,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:31:43.874421+00:00",
+  "cost_exceeded_reservation": false
+}

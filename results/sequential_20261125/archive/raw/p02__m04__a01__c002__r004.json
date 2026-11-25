@@ -1,0 +1,120 @@
+{
+  "task_id": "p02__m04__a01__c002__r004",
+  "block_id": "p02__m04__a01",
+  "panel_id": "fmg_2025",
+  "panel_index": 1,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "fmg_private_domestic",
+  "round": 4,
+  "modes": [
+    "car_dropoff",
+    "car_airport_parking",
+    "car_offairport_parking",
+    "car_other_parking",
+    "taxi_ridehail",
+    "rental_carsharing",
+    "bus_transfer",
+    "s_bahn",
+    "uefex",
+    "other"
+  ],
+  "mutually_exclusive": true,
+  "request_sha256": "0fa27ae521cd6d118a30a055687d3f1566b1a7c9a81f706decc530c870fae237",
+  "started_utc": "2026-11-25T14:28:13.708286+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:28:15.829465+00:00",
+      "cost_usd": 0.00253,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00253,
+  "reservation_upper_bound_usd": 0.029112000000000002,
+  "response_sha256": "31eedd5a1de5bf6ef8f2665b3ed8c1043c9b4a0ffe857bc63773493659246666",
+  "response": {
+    "id": "gen-1795616893-4SAjhQNe4UibdjOiYJnQ",
+    "object": "chat.completion",
+    "created": 1795616893,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car_dropoff\": 0.21,\n  \"car_airport_parking\": 0.25,\n  \"car_offairport_parking\": 0.10,\n  \"car_other_parking\": 0.02,\n  \"taxi_ridehail\": 0.06,\n  \"rental_carsharing\": 0.03,\n  \"bus_transfer\": 0.04,\n  \"s_bahn\": 0.24,\n  \"uefex\": 0.03,\n  \"other\": 0.02,\n  \"rationale\": \"Private domestic leisure travelers likely favor private car and S-Bahn, balancing convenience, cost, and luggage. Parking is common for longer trips, with S-Bahn strong for urban access. Taxis, bus, and other rail serve minor shares.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 581,
+      "completion_tokens": 171,
+      "total_tokens": 752,
+      "cost": 0.00253,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00253,
+        "upstream_inference_prompt_cost": 0.001162,
+        "upstream_inference_completions_cost": 0.001368
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616893-4SAjhQNe4UibdjOiYJnQ",
+  "raw_prediction": {
+    "car_dropoff": 0.21,
+    "car_airport_parking": 0.25,
+    "car_offairport_parking": 0.1,
+    "car_other_parking": 0.02,
+    "taxi_ridehail": 0.06,
+    "rental_carsharing": 0.03,
+    "bus_transfer": 0.04,
+    "s_bahn": 0.24,
+    "uefex": 0.03,
+    "other": 0.02,
+    "rationale": "Private domestic leisure travelers likely favor private car and S-Bahn, balancing convenience, cost, and luggage. Parking is common for longer trips, with S-Bahn strong for urban access. Taxis, bus, and other rail serve minor shares."
+  },
+  "prediction": {
+    "car_dropoff": 0.21,
+    "car_airport_parking": 0.25,
+    "car_offairport_parking": 0.1,
+    "car_other_parking": 0.02,
+    "taxi_ridehail": 0.06,
+    "rental_carsharing": 0.03,
+    "bus_transfer": 0.04,
+    "s_bahn": 0.24,
+    "uefex": 0.03,
+    "other": 0.02,
+    "rationale": "Private domestic leisure travelers likely favor private car and S-Bahn, balancing convenience, cost, and luggage. Parking is common for longer trips, with S-Bahn strong for urban access. Taxis, bus, and other rail serve minor shares."
+  },
+  "normalization": {
+    "sum_before": 1.0,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:28:15.829465+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,120 @@
+{
+  "task_id": "p02__m04__a01__c002__r001",
+  "block_id": "p02__m04__a01",
+  "panel_id": "fmg_2025",
+  "panel_index": 1,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "fmg_private_domestic",
+  "round": 1,
+  "modes": [
+    "car_dropoff",
+    "car_airport_parking",
+    "car_offairport_parking",
+    "car_other_parking",
+    "taxi_ridehail",
+    "rental_carsharing",
+    "bus_transfer",
+    "s_bahn",
+    "uefex",
+    "other"
+  ],
+  "mutually_exclusive": true,
+  "request_sha256": "6b54a06a21f9a0b5e2c9bbf8bd45a4c86a567d1cb23e71cc5890f60417f1993b",
+  "started_utc": "2026-11-25T14:22:22.512587+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:22:24.501828+00:00",
+      "cost_usd": 0.002506,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.002506,
+  "reservation_upper_bound_usd": 0.029112000000000002,
+  "response_sha256": "a24851e0f0b765ebcc27b83dc46deef8e1140fe7400bb6bd9d36fb4b4fba9fea",
+  "response": {
+    "id": "gen-1795616542-autmmtXruPRUW6huQ3Be",
+    "object": "chat.completion",
+    "created": 1795616542,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car_dropoff\": 0.20,\n  \"car_airport_parking\": 0.16,\n  \"car_offairport_parking\": 0.03,\n  \"car_other_parking\": 0.01,\n  \"taxi_ridehail\": 0.09,\n  \"rental_carsharing\": 0.03,\n  \"bus_transfer\": 0.06,\n  \"s_bahn\": 0.37,\n  \"uefex\": 0.03,\n  \"other\": 0.02,\n  \"rationale\": \"Private-purpose domestic flyers likely favor S-Bahn and private car, with some using taxis or buses. Longer-term airport parking is less common for typical leisure trips. UEFEX and alternatives have minor shares due to limited coverage.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 581,
+      "completion_tokens": 168,
+      "total_tokens": 749,
+      "cost": 0.002506,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002506,
+        "upstream_inference_prompt_cost": 0.001162,
+        "upstream_inference_completions_cost": 0.001344
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616542-autmmtXruPRUW6huQ3Be",
+  "raw_prediction": {
+    "car_dropoff": 0.2,
+    "car_airport_parking": 0.16,
+    "car_offairport_parking": 0.03,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.09,
+    "rental_carsharing": 0.03,
+    "bus_transfer": 0.06,
+    "s_bahn": 0.37,
+    "uefex": 0.03,
+    "other": 0.02,
+    "rationale": "Private-purpose domestic flyers likely favor S-Bahn and private car, with some using taxis or buses. Longer-term airport parking is less common for typical leisure trips. UEFEX and alternatives have minor shares due to limited coverage."
+  },
+  "prediction": {
+    "car_dropoff": 0.2,
+    "car_airport_parking": 0.16,
+    "car_offairport_parking": 0.03,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.09,
+    "rental_carsharing": 0.03,
+    "bus_transfer": 0.06,
+    "s_bahn": 0.37,
+    "uefex": 0.03,
+    "other": 0.02,
+    "rationale": "Private-purpose domestic flyers likely favor S-Bahn and private car, with some using taxis or buses. Longer-term airport parking is less common for typical leisure trips. UEFEX and alternatives have minor shares due to limited coverage."
+  },
+  "normalization": {
+    "sum_before": 1.0,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:22:24.501828+00:00",
+  "cost_exceeded_reservation": false
+}

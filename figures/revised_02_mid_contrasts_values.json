@@ -1,0 +1,116 @@
+{
+  "figure": "revised_02_mid_contrasts",
+  "canvas_inches": [
+    7.4,
+    4.9
+  ],
+  "matplotlib_version": "3.11.2",
+  "png_dpi": 300,
+  "pdf_svg_vector": true,
+  "text_within_canvas": true,
+  "input_file": "results\\sequential_20261125\\figure_data.json",
+  "input_sha256": "0558a0e71bb5aa0a3dff6ccb2d1cc190cb534de581c8aa524591daf7611779b9",
+  "values": {
+    "models": [
+      "openai/gpt-4.1",
+      "google/gemma-3-4b-it"
+    ],
+    "complete_rounds": {
+      "openai/gpt-4.1": 16,
+      "google/gemma-3-4b-it": 2
+    },
+    "rows": [
+      {
+        "group": "No car",
+        "mode": "car",
+        "observed": 0.14996851951330345,
+        "predictions": {
+          "openai/gpt-4.1": 0.146875,
+          "google/gemma-3-4b-it": 0.275
+        },
+        "display_unit": "percentage, probability × 100"
+      },
+      {
+        "group": "4 or more cars",
+        "mode": "car",
+        "observed": 0.5843417508416866,
+        "predictions": {
+          "openai/gpt-4.1": 0.584375,
+          "google/gemma-3-4b-it": 0.45
+        },
+        "display_unit": "percentage, probability × 100"
+      },
+      {
+        "group": "No car",
+        "mode": "local_pt",
+        "observed": 0.4005882905932819,
+        "predictions": {
+          "openai/gpt-4.1": 0.33875,
+          "google/gemma-3-4b-it": 0.16499999999999998
+        },
+        "display_unit": "percentage, probability × 100"
+      },
+      {
+        "group": "4 or more cars",
+        "mode": "local_pt",
+        "observed": 0.09328591790282008,
+        "predictions": {
+          "openai/gpt-4.1": 0.145,
+          "google/gemma-3-4b-it": 0.265
+        },
+        "display_unit": "percentage, probability × 100"
+      },
+      {
+        "group": "No car",
+        "mode": "long_distance_rail",
+        "observed": 0.16762432059419718,
+        "predictions": {
+          "openai/gpt-4.1": 0.19125,
+          "google/gemma-3-4b-it": 0.08
+        },
+        "display_unit": "percentage, probability × 100"
+      },
+      {
+        "group": "4 or more cars",
+        "mode": "long_distance_rail",
+        "observed": 0.12984195387277156,
+        "predictions": {
+          "openai/gpt-4.1": 0.074375,
+          "google/gemma-3-4b-it": 0.125
+        },
+        "display_unit": "percentage, probability × 100"
+      }
+    ],
+    "metadata": {
+      "mid_models": [
+        "openai/gpt-4.1",
+        "google/gemma-3-4b-it"
+      ],
+      "fmg_model": "openai/gpt-4.1",
+      "model_labels": {
+        "google/gemma-3-4b-it": "Gemma 3 4B",
+        "openai/gpt-4.1-mini": "GPT-4.1 mini",
+        "qwen/qwen3-235b-a22b-2507": "Qwen3 235B A22B",
+        "openai/gpt-4.1": "GPT-4.1"
+      },
+      "mid_condition": "overall_rate_anchored",
+      "fmg_condition": "unanchored",
+      "prediction_basis": "mean across each block's complete round prefix"
+    },
+    "interpretation": "Fixed illustrative two-group contrast; no causal estimate or sampling uncertainty."
+  },
+  "files": {
+    "pdf": {
+      "file": "revised_02_mid_contrasts.pdf",
+      "sha256": "5509db0cddf904985ecbf05897d5213c96cf18031311096507e891506e707340"
+    },
+    "svg": {
+      "file": "revised_02_mid_contrasts.svg",
+      "sha256": "8e14db8335ce01ca56d6639a7656153933c2e272b708ea5aacabe91b6f0eac81"
+    },
+    "png": {
+      "file": "revised_02_mid_contrasts.png",
+      "sha256": "1088f11650ec907b2c61e183ec317a79b8f7526bed2ba1ec5012ac1e354ea9c6"
+    }
+  }
+}

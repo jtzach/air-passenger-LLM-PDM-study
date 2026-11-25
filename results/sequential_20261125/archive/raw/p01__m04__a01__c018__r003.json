@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c018__r003",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__6bcea89383ae",
+  "round": 3,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "91761ced5fe38c850cab741fcc0f2fb128d2314ea879e5b83b9922137936d4bb",
+  "started_utc": "2026-11-25T14:26:47.701648+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:26:49.238828+00:00",
+      "cost_usd": 0.001418,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001418,
+  "reservation_upper_bound_usd": 0.02391,
+  "response_sha256": "9fa723ecbe33b8734679ab52e78d531d2e1d65bae0b9457ab62bbf675cbe0909",
+  "response": {
+    "id": "gen-1795616808-GDjD5aBteS67fVGyHdCK",
+    "object": "chat.completion",
+    "created": 1795616808,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.20,\n  \"rationale\": \"Two-night air trips often involve airports outside city centers. Many use cars for convenience, some use local transit, and fewer use long-distance trains, reflecting practical access choices for short-duration overnight journeys.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 393,
+      "completion_tokens": 79,
+      "total_tokens": 472,
+      "cost": 0.001418,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001418,
+        "upstream_inference_prompt_cost": 0.000786,
+        "upstream_inference_completions_cost": 0.000632
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616808-GDjD5aBteS67fVGyHdCK",
+  "raw_prediction": {
+    "car": 0.55,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.2,
+    "rationale": "Two-night air trips often involve airports outside city centers. Many use cars for convenience, some use local transit, and fewer use long-distance trains, reflecting practical access choices for short-duration overnight journeys."
+  },
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.2,
+    "rationale": "Two-night air trips often involve airports outside city centers. Many use cars for convenience, some use local transit, and fewer use long-distance trains, reflecting practical access choices for short-duration overnight journeys."
+  },
+  "normalization": {
+    "sum_before": 1.1,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:26:49.238828+00:00",
+  "cost_exceeded_reservation": false
+}

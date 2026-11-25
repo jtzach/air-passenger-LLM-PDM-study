@@ -1,0 +1,106 @@
+{
+  "task_id": "p01__m01__a01__c021__r001",
+  "block_id": "p01__m01__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__ef1ad3950de1",
+  "round": 1,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "6d5463589dcd85dbb8838b37fecf363f96d72e9079f82da96de246411b3990e7",
+  "started_utc": "2026-11-25T14:19:54.011684+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "transport_error",
+      "detail": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>",
+      "utc": "2026-11-25T14:20:21.015838+00:00",
+      "cost_upper_bound_usd": 0.00011038000000000001
+    },
+    {
+      "number": 2,
+      "status": "response",
+      "utc": "2026-11-25T14:20:25.342808+00:00",
+      "cost_usd": 1.731e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00012769000000000002,
+  "reservation_upper_bound_usd": 0.00033114000000000006,
+  "response_sha256": "1ec1efec23d4d67a605edb550bb81821e4082c0f04a21a511259093d57b4cfc4",
+  "response": {
+    "id": "gen-1795616423-MxfOSLzUojOB1xNcp9WC",
+    "object": "chat.completion",
+    "created": 1795616423,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.3, \"local_pt\": 0.2, \"long_distance_rail\": 0.1, \"rationale\": \"Given a single overnight flight, respondents likely used a car for part of their journey, perhaps for accessing the airport or onward travel. Local public transport and long-distance rail are plausible for connections or shorter legs.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 414,
+      "completion_tokens": 79,
+      "total_tokens": 493,
+      "cost": 1.731e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.731e-05,
+        "upstream_inference_prompt_cost": 1.336e-05,
+        "upstream_inference_completions_cost": 3.95e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616423-MxfOSLzUojOB1xNcp9WC",
+  "raw_prediction": {
+    "car": 0.3,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.1,
+    "rationale": "Given a single overnight flight, respondents likely used a car for part of their journey, perhaps for accessing the airport or onward travel. Local public transport and long-distance rail are plausible for connections or shorter legs."
+  },
+  "prediction": {
+    "car": 0.3,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.1,
+    "rationale": "Given a single overnight flight, respondents likely used a car for part of their journey, perhaps for accessing the airport or onward travel. Local public transport and long-distance rail are plausible for connections or shorter legs."
+  },
+  "normalization": {
+    "sum_before": 0.6,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:20:25.342808+00:00",
+  "cost_exceeded_reservation": false
+}

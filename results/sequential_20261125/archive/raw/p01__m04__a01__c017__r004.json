@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c017__r004",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__456ee228eb2a",
+  "round": 4,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "6cf78d3e65889b33f49c67b1516c8292571e238ba833ceff429f34c3c1f57ab6",
+  "started_utc": "2026-11-25T14:28:27.778371+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:28:29.703998+00:00",
+      "cost_usd": 0.001462,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001462,
+  "reservation_upper_bound_usd": 0.023921999999999995,
+  "response_sha256": "d3da69a6310f860979978eb6ae858421a7370fe5ad90dedb16e6fb50d783dbbe",
+  "response": {
+    "id": "gen-1795616908-qu1Xew4Ku3MAnrlb2RBJ",
+    "object": "chat.completion",
+    "created": 1795616908,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.52,\n  \"local_pt\": 0.38,\n  \"long_distance_rail\": 0.22,\n  \"rationale\": \"For 4-5 night trips, many access airports by car for flexibility, but public/local transport is also common, especially in cities. Long-distance rail is less frequent but plausible for city pairs or environmentally minded travellers.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 395,
+      "completion_tokens": 84,
+      "total_tokens": 479,
+      "cost": 0.001462,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001462,
+        "upstream_inference_prompt_cost": 0.00079,
+        "upstream_inference_completions_cost": 0.000672
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616908-qu1Xew4Ku3MAnrlb2RBJ",
+  "raw_prediction": {
+    "car": 0.52,
+    "local_pt": 0.38,
+    "long_distance_rail": 0.22,
+    "rationale": "For 4-5 night trips, many access airports by car for flexibility, but public/local transport is also common, especially in cities. Long-distance rail is less frequent but plausible for city pairs or environmentally minded travellers."
+  },
+  "prediction": {
+    "car": 0.52,
+    "local_pt": 0.38,
+    "long_distance_rail": 0.22,
+    "rationale": "For 4-5 night trips, many access airports by car for flexibility, but public/local transport is also common, especially in cities. Long-distance rail is less frequent but plausible for city pairs or environmentally minded travellers."
+  },
+  "normalization": {
+    "sum_before": 1.12,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:28:29.703998+00:00",
+  "cost_exceeded_reservation": false
+}

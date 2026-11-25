@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c019__r010",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__782410ef69d3",
+  "round": 10,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "9c7b38b3c8736de5e419521c12796ab158a22d769c0cb3d7d44d26db282354d0",
+  "started_utc": "2026-11-25T17:38:52.323612+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:38:53.590447+00:00",
+      "cost_usd": 0.001494,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001494,
+  "reservation_upper_bound_usd": 0.023928,
+  "response_sha256": "9ac2fb962e3be84a183db278781dc5d7ded26d35f9c4298f694cacc47462397b",
+  "response": {
+    "id": "gen-1795628331-3JbVjyWBt8ySeZm4fgqR",
+    "object": "chat.completion",
+    "created": 1795628331,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"Longer trips (8-14 nights) often involve luggage, favoring car for airport access, but public and rail options remain relevant due to Germany’s strong intercity rail and urban transit infrastructure, especially for those without easy car access.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 395,
+      "completion_tokens": 88,
+      "total_tokens": 483,
+      "cost": 0.001494,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001494,
+        "upstream_inference_prompt_cost": 0.00079,
+        "upstream_inference_completions_cost": 0.000704
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628331-3JbVjyWBt8ySeZm4fgqR",
+  "raw_prediction": {
+    "car": 0.55,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.25,
+    "rationale": "Longer trips (8-14 nights) often involve luggage, favoring car for airport access, but public and rail options remain relevant due to Germany’s strong intercity rail and urban transit infrastructure, especially for those without easy car access."
+  },
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.25,
+    "rationale": "Longer trips (8-14 nights) often involve luggage, favoring car for airport access, but public and rail options remain relevant due to Germany’s strong intercity rail and urban transit infrastructure, especially for those without easy car access."
+  },
+  "normalization": {
+    "sum_before": 1.15,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:38:53.591447+00:00",
+  "cost_exceeded_reservation": false
+}

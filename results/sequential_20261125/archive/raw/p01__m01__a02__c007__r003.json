@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m01__a02__c007__r003",
+  "block_id": "p01__m01__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__RegioStaR7__72d39163efb4",
+  "round": 3,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "438870ac845ebb37a3724b82815c58bf7d045865b953186f24b6c255cb6cd4f0",
+  "started_utc": "2026-11-25T14:25:42.460667+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:25:44.445091+00:00",
+      "cost_usd": 2.108e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.108e-05,
+  "reservation_upper_bound_usd": 0.0003675,
+  "response_sha256": "1fe890c5ebb93016dd2939b0e04888eb61f60a67834eb16b6e1903dcb9b21de1",
+  "response": {
+    "id": "gen-1795616742-mHtz4RoSygnQGg6vLo4O",
+    "object": "chat.completion",
+    "created": 1795616742,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.3,\n  \"local_pt\": 0.15,\n  \"long_distance_rail\": 0.08,\n  \"rationale\": \"Rural residents may combine flight with car for initial travel to the airport or for onward journeys from the destination. Local public transport use is likely lower than in urban areas, and long-distance rail use is also constrained.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 492,
+      "completion_tokens": 92,
+      "total_tokens": 584,
+      "cost": 2.108e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.108e-05,
+        "upstream_inference_prompt_cost": 1.648e-05,
+        "upstream_inference_completions_cost": 4.6e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616742-mHtz4RoSygnQGg6vLo4O",
+  "raw_prediction": {
+    "car": 0.3,
+    "local_pt": 0.15,
+    "long_distance_rail": 0.08,
+    "rationale": "Rural residents may combine flight with car for initial travel to the airport or for onward journeys from the destination. Local public transport use is likely lower than in urban areas, and long-distance rail use is also constrained."
+  },
+  "prediction": {
+    "car": 0.3,
+    "local_pt": 0.15,
+    "long_distance_rail": 0.08,
+    "rationale": "Rural residents may combine flight with car for initial travel to the airport or for onward journeys from the destination. Local public transport use is likely lower than in urban areas, and long-distance rail use is also constrained."
+  },
+  "normalization": {
+    "sum_before": 0.53,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:25:44.445091+00:00",
+  "cost_exceeded_reservation": false
+}

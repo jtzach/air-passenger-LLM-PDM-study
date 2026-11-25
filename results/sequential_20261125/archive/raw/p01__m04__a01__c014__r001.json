@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c014__r001",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzbegl_gr__154f6eb18583",
+  "round": 1,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "c5b20c6c76392638022a2b32934ccb77378775f97353ca4ca2b6f5a07898ac18",
+  "started_utc": "2026-11-25T14:19:51.756985+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:19:53.960709+00:00",
+      "cost_usd": 0.001454,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001454,
+  "reservation_upper_bound_usd": 0.023933999999999997,
+  "response_sha256": "ceaf4d47df01ab6c72a19e6d2ec2f633a1a6b46ae55c52b43732ad77df2e47ac",
+  "response": {
+    "id": "gen-1795616392-G9kHIRoOJxuQ0H6ZJHYd",
+    "object": "chat.completion",
+    "created": 1795616392,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.32,\n  \"local_pt\": 0.48,\n  \"long_distance_rail\": 0.22,\n  \"rationale\": \"Solo travelers may favor public transport for airport access, but car use (as passenger or driver) remains common. Long-distance rail is lower due to limited rail-airport connectivity and higher convenience of local modes for solo travelers.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 391,
+      "completion_tokens": 84,
+      "total_tokens": 475,
+      "cost": 0.001454,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001454,
+        "upstream_inference_prompt_cost": 0.000782,
+        "upstream_inference_completions_cost": 0.000672
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616392-G9kHIRoOJxuQ0H6ZJHYd",
+  "raw_prediction": {
+    "car": 0.32,
+    "local_pt": 0.48,
+    "long_distance_rail": 0.22,
+    "rationale": "Solo travelers may favor public transport for airport access, but car use (as passenger or driver) remains common. Long-distance rail is lower due to limited rail-airport connectivity and higher convenience of local modes for solo travelers."
+  },
+  "prediction": {
+    "car": 0.32,
+    "local_pt": 0.48,
+    "long_distance_rail": 0.22,
+    "rationale": "Solo travelers may favor public transport for airport access, but car use (as passenger or driver) remains common. Long-distance rail is lower due to limited rail-airport connectivity and higher convenience of local modes for solo travelers."
+  },
+  "normalization": {
+    "sum_before": 1.02,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:19:53.960709+00:00",
+  "cost_exceeded_reservation": false
+}

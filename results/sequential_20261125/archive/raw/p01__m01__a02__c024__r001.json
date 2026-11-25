@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m01__a02__c024__r001",
+  "block_id": "p01__m01__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "overall_rate_anchored",
+  "card_id": "no_persona",
+  "round": 1,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "23775d097ce11dc9524c701f5407abfc17e854ec5c83a699fbf9b8024ba10c81",
+  "started_utc": "2026-11-25T14:21:52.686598+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:21:54.318798+00:00",
+      "cost_usd": 2.197e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.197e-05,
+  "reservation_upper_bound_usd": 0.00033989999999999997,
+  "response_sha256": "218973024e7b14f71d121963c528beca0c9bd7ab82d9d00749f31808f6255b01",
+  "response": {
+    "id": "gen-1795616512-x38sNuEOiiBqPZkVoI4U",
+    "object": "chat.completion",
+    "created": 1795616512,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.4, \"local_pt\": 0.25, \"long_distance_rail\": 0.15, \"rationale\": \"The cohort likely includes individuals who combined air travel with other modes for convenience or cost-effectiveness, mirroring overall travel patterns but with a slightly higher probability of car use due to Germany's car-dependent culture.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 448,
+      "completion_tokens": 81,
+      "total_tokens": 529,
+      "cost": 2.197e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.197e-05,
+        "upstream_inference_prompt_cost": 1.792e-05,
+        "upstream_inference_completions_cost": 4.05e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616512-x38sNuEOiiBqPZkVoI4U",
+  "raw_prediction": {
+    "car": 0.4,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "The cohort likely includes individuals who combined air travel with other modes for convenience or cost-effectiveness, mirroring overall travel patterns but with a slightly higher probability of car use due to Germany's car-dependent culture."
+  },
+  "prediction": {
+    "car": 0.4,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "The cohort likely includes individuals who combined air travel with other modes for convenience or cost-effectiveness, mirroring overall travel patterns but with a slightly higher probability of car use due to Germany's car-dependent culture."
+  },
+  "normalization": {
+    "sum_before": 0.8,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:21:54.318798+00:00",
+  "cost_exceeded_reservation": false
+}

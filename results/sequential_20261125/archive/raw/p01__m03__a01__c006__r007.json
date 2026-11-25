@@ -1,0 +1,22 @@
+{
+  "task_id": "p01__m03__a01__c006__r007",
+  "block_id": "p01__m03__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "unanchored",
+  "card_id": "reise__RegioStaR7__5febbfe6f6bc",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "abadc5ca577c89a9ba28abaf0aed5541106399ede071a3692ea43a5e9ecd6a7d",
+  "started_utc": "2026-11-25T14:32:58.603814+00:00",
+  "attempts": [],
+  "status": "in_progress",
+  "accounted_cost_usd": 0.00201702,
+  "reservation_upper_bound_usd": 0.00201702
+}

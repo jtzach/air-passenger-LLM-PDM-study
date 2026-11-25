@@ -1,0 +1,120 @@
+{
+  "task_id": "p02__m02__a01__c002__r002",
+  "block_id": "p02__m02__a01",
+  "panel_id": "fmg_2025",
+  "panel_index": 1,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "unanchored",
+  "card_id": "fmg_private_domestic",
+  "round": 2,
+  "modes": [
+    "car_dropoff",
+    "car_airport_parking",
+    "car_offairport_parking",
+    "car_other_parking",
+    "taxi_ridehail",
+    "rental_carsharing",
+    "bus_transfer",
+    "s_bahn",
+    "uefex",
+    "other"
+  ],
+  "mutually_exclusive": true,
+  "request_sha256": "73416f6ba0e2fbb7f3e0ccf4c6fa2fbcbc44e35070b9075850972c2463f83fea",
+  "started_utc": "2026-11-25T14:23:19.889260+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:23:22.848158+00:00",
+      "cost_usd": 0.0004916,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0004916,
+  "reservation_upper_bound_usd": 0.0058284,
+  "response_sha256": "b483e1226e02c313c79b9b919f7fc2a0b0010bf2bf4141adb89a8b0f68e079d7",
+  "response": {
+    "id": "gen-1795616600-v2r6JJk3mwgj3I6Zy6FA",
+    "object": "chat.completion",
+    "created": 1795616600,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car_dropoff\": 0.25,\n  \"car_airport_parking\": 0.15,\n  \"car_offairport_parking\": 0.10,\n  \"car_other_parking\": 0.05,\n  \"taxi_ridehail\": 0.10,\n  \"rental_carsharing\": 0.05,\n  \"bus_transfer\": 0.10,\n  \"s_bahn\": 0.15,\n  \"uefex\": 0.04,\n  \"other\": 0.01,\n  \"rationale\": \"Private car use is common in Germany; S-Bahn is a major rail link. UEFEX is niche. Bus and taxi cover less frequent options. Rental and other parking reflect smaller shares.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 581,
+      "completion_tokens": 162,
+      "total_tokens": 743,
+      "cost": 0.0004916,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0004916,
+        "upstream_inference_prompt_cost": 0.0002324,
+        "upstream_inference_completions_cost": 0.0002592
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795616600-v2r6JJk3mwgj3I6Zy6FA",
+  "raw_prediction": {
+    "car_dropoff": 0.25,
+    "car_airport_parking": 0.15,
+    "car_offairport_parking": 0.1,
+    "car_other_parking": 0.05,
+    "taxi_ridehail": 0.1,
+    "rental_carsharing": 0.05,
+    "bus_transfer": 0.1,
+    "s_bahn": 0.15,
+    "uefex": 0.04,
+    "other": 0.01,
+    "rationale": "Private car use is common in Germany; S-Bahn is a major rail link. UEFEX is niche. Bus and taxi cover less frequent options. Rental and other parking reflect smaller shares."
+  },
+  "prediction": {
+    "car_dropoff": 0.25,
+    "car_airport_parking": 0.15,
+    "car_offairport_parking": 0.1,
+    "car_other_parking": 0.05,
+    "taxi_ridehail": 0.1,
+    "rental_carsharing": 0.05,
+    "bus_transfer": 0.1,
+    "s_bahn": 0.15,
+    "uefex": 0.04,
+    "other": 0.01,
+    "rationale": "Private car use is common in Germany; S-Bahn is a major rail link. UEFEX is niche. Bus and taxi cover less frequent options. Rental and other parking reflect smaller shares."
+  },
+  "normalization": {
+    "sum_before": 1.0,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:23:22.848158+00:00",
+  "cost_exceeded_reservation": false
+}

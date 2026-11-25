@@ -1,0 +1,13 @@
+block_id,panel_id,model_id,model_label,arm,complete_prefix_rounds,attempted_requests,valid_responses,unsuccessful_requests,retained_prefix_requests,valid_responses_outside_prefix,accounted_cost_usd,halt_reason,inference_assumptions_ok,provider,returned_model
+p01__m01__a01,mid_2023,google/gemma-3-4b-it,Gemma 3 4B,unanchored,0,24,23,1,0,23,0.00110002,incomplete_round_invalid_output,True,Parasail,google/gemma-3-4b-it
+p01__m01__a02,mid_2023,google/gemma-3-4b-it,Gemma 3 4B,overall_rate_anchored,2,58,57,1,48,9,0.00136387,incomplete_round_invalid_output,True,Parasail,google/gemma-3-4b-it
+p01__m02__a01,mid_2023,openai/gpt-4.1-mini,GPT-4.1 mini,unanchored,16,396,396,0,384,12,0.115234,meaningful_degradation,True,OpenAI,openai/gpt-4.1-mini
+p01__m02__a02,mid_2023,openai/gpt-4.1-mini,GPT-4.1 mini,overall_rate_anchored,16,394,394,0,384,10,0.1285008,meaningful_degradation,True,OpenAI,openai/gpt-4.1-mini
+p01__m03__a01,mid_2023,qwen/qwen3-235b-a22b-2507,Qwen3 235B A22B,unanchored,10,269,263,6,240,23,0.04811432,incomplete_round_invalid_output,True,DeepInfra,qwen/qwen3-235b-a22b-2507
+p01__m03__a02,mid_2023,qwen/qwen3-235b-a22b-2507,Qwen3 235B A22B,overall_rate_anchored,8,215,213,2,192,21,0.034492665,incomplete_round_failed,True,DeepInfra,qwen/qwen3-235b-a22b-2507
+p01__m04__a01,mid_2023,openai/gpt-4.1,GPT-4.1,unanchored,16,392,392,0,384,8,0.615372,meaningful_degradation,True,OpenAI,openai/gpt-4.1
+p01__m04__a02,mid_2023,openai/gpt-4.1,GPT-4.1,overall_rate_anchored,16,393,392,1,384,8,0.667158,meaningful_improvement,True,OpenAI,openai/gpt-4.1
+p02__m01__a01,fmg_2025,google/gemma-3-4b-it,Gemma 3 4B,unanchored,0,2,0,2,0,0,6.3e-05,incomplete_round_invalid_output,True,,
+p02__m02__a01,fmg_2025,openai/gpt-4.1-mini,GPT-4.1 mini,unanchored,16,115,114,1,112,2,0.0630644,meaningful_degradation,True,OpenAI,openai/gpt-4.1-mini
+p02__m03__a01,fmg_2025,qwen/qwen3-235b-a22b-2507,Qwen3 235B A22B,unanchored,0,2,1,1,0,1,0.00116006,incomplete_round_invalid_output,True,DeepInfra,qwen/qwen3-235b-a22b-2507
+p02__m04__a01,fmg_2025,openai/gpt-4.1,GPT-4.1,unanchored,16,115,115,0,112,3,0.295178,meaningful_degradation,True,OpenAI,openai/gpt-4.1

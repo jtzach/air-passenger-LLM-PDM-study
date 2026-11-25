@@ -1,0 +1,106 @@
+{
+  "task_id": "p01__m01__a01__c024__r001",
+  "block_id": "p01__m01__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "unanchored",
+  "card_id": "no_persona",
+  "round": 1,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "6d354c4e0cc8b42e9aca57b93011ce8b2b6b48fc43235c9db99b1b3e8365f47f",
+  "started_utc": "2026-11-25T14:20:16.851835+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "transport_error",
+      "detail": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>",
+      "utc": "2026-11-25T14:20:36.693177+00:00",
+      "cost_upper_bound_usd": 0.00010234
+    },
+    {
+      "number": 2,
+      "status": "response",
+      "utc": "2026-11-25T14:20:41.274049+00:00",
+      "cost_usd": 1.585e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00011819,
+  "reservation_upper_bound_usd": 0.00030701999999999997,
+  "response_sha256": "efa045cc27a43bdfd84692b17dd0b8236b5a4993922de611f6768b3cb2217a99",
+  "response": {
+    "id": "gen-1795616439-V4KC2C2va7yVmhIHlSia",
+    "object": "chat.completion",
+    "created": 1795616439,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.3, \"local_pt\": 0.2, \"long_distance_rail\": 0.1, \"rationale\": \"Given the overnight flight, respondents likely combined it with other modes for onward or return travel, primarily car and local public transport, reflecting common travel patterns in Germany.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 374,
+      "completion_tokens": 69,
+      "total_tokens": 443,
+      "cost": 1.585e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 128,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.585e-05,
+        "upstream_inference_prompt_cost": 1.24e-05,
+        "upstream_inference_completions_cost": 3.45e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616439-V4KC2C2va7yVmhIHlSia",
+  "raw_prediction": {
+    "car": 0.3,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.1,
+    "rationale": "Given the overnight flight, respondents likely combined it with other modes for onward or return travel, primarily car and local public transport, reflecting common travel patterns in Germany."
+  },
+  "prediction": {
+    "car": 0.3,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.1,
+    "rationale": "Given the overnight flight, respondents likely combined it with other modes for onward or return travel, primarily car and local public transport, reflecting common travel patterns in Germany."
+  },
+  "normalization": {
+    "sum_before": 0.6,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:20:41.274049+00:00",
+  "cost_exceeded_reservation": false
+}

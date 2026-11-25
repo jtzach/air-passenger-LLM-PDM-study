@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c016__r015",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzbegl_gr__b61cbc7c0dd2",
+  "round": 15,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "013beb3ebde7389baf97f04096c828d43cbc87562e70e008a34c32379e7e8547",
+  "started_utc": "2026-11-25T17:41:57.844162+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:41:59.290434+00:00",
+      "cost_usd": 0.001488,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001488,
+  "reservation_upper_bound_usd": 0.023928,
+  "response_sha256": "12dfa4a516c3c59c6d9427edd9cd163b8a66ef5e04626af8971130225df1605e",
+  "response": {
+    "id": "gen-1795628517-XzbprN2QWhRVFD9JAj4A",
+    "object": "chat.completion",
+    "created": 1795628517,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.52,\n  \"local_pt\": 0.38,\n  \"long_distance_rail\": 0.22,\n  \"rationale\": \"With one household companion, car use is attractive for flexibility and shared cost. Local public transport is commonly used for airport access, but less so with luggage or in small towns. Long-distance rail is less frequent but feasible for major airport connections.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 392,
+      "completion_tokens": 88,
+      "total_tokens": 480,
+      "cost": 0.001488,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001488,
+        "upstream_inference_prompt_cost": 0.000784,
+        "upstream_inference_completions_cost": 0.000704
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628517-XzbprN2QWhRVFD9JAj4A",
+  "raw_prediction": {
+    "car": 0.52,
+    "local_pt": 0.38,
+    "long_distance_rail": 0.22,
+    "rationale": "With one household companion, car use is attractive for flexibility and shared cost. Local public transport is commonly used for airport access, but less so with luggage or in small towns. Long-distance rail is less frequent but feasible for major airport connections."
+  },
+  "prediction": {
+    "car": 0.52,
+    "local_pt": 0.38,
+    "long_distance_rail": 0.22,
+    "rationale": "With one household companion, car use is attractive for flexibility and shared cost. Local public transport is commonly used for airport access, but less so with luggage or in small towns. Long-distance rail is less frequent but feasible for major airport connections."
+  },
+  "normalization": {
+    "sum_before": 1.12,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:41:59.290434+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,29 @@
+{
+  "task_id": "p02__m02__a01__c003__r007",
+  "block_id": "p02__m02__a01",
+  "panel_id": "fmg_2025",
+  "panel_index": 1,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "unanchored",
+  "card_id": "fmg_business_continental",
+  "round": 7,
+  "modes": [
+    "car_dropoff",
+    "car_airport_parking",
+    "car_offairport_parking",
+    "car_other_parking",
+    "taxi_ridehail",
+    "rental_carsharing",
+    "bus_transfer",
+    "s_bahn",
+    "uefex",
+    "other"
+  ],
+  "mutually_exclusive": true,
+  "request_sha256": "b7b22766d49c81c3cbc5f1196cf68a30450025b2dd110c6cef5f1230afc98ed1",
+  "started_utc": "2026-11-25T14:32:42.499017+00:00",
+  "attempts": [],
+  "status": "in_progress",
+  "accounted_cost_usd": 0.0057684,
+  "reservation_upper_bound_usd": 0.0057684
+}

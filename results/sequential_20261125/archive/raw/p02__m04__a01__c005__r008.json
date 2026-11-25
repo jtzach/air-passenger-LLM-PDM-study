@@ -1,0 +1,120 @@
+{
+  "task_id": "p02__m04__a01__c005__r008",
+  "block_id": "p02__m04__a01",
+  "panel_id": "fmg_2025",
+  "panel_index": 1,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "fmg_business_intercontinental",
+  "round": 8,
+  "modes": [
+    "car_dropoff",
+    "car_airport_parking",
+    "car_offairport_parking",
+    "car_other_parking",
+    "taxi_ridehail",
+    "rental_carsharing",
+    "bus_transfer",
+    "s_bahn",
+    "uefex",
+    "other"
+  ],
+  "mutually_exclusive": true,
+  "request_sha256": "b9f1074fcad40c06818a597a70d01b3fa03fd9816b1b83431970910e8869d117",
+  "started_utc": "2026-11-25T17:35:55.720008+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:35:57.156838+00:00",
+      "cost_usd": 0.002484,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.002484,
+  "reservation_upper_bound_usd": 0.028763999999999998,
+  "response_sha256": "00ded04a0c4884221d182cee0ed51ffffc6504f10a90ca04ae7c0f3199cda320",
+  "response": {
+    "id": "gen-1795628155-1CdssJGPLtEF5yAojs8v",
+    "object": "chat.completion",
+    "created": 1795628155,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car_dropoff\": 0.13,\n  \"car_airport_parking\": 0.26,\n  \"car_offairport_parking\": 0.07,\n  \"car_other_parking\": 0.01,\n  \"taxi_ridehail\": 0.13,\n  \"rental_carsharing\": 0.04,\n  \"bus_transfer\": 0.04,\n  \"s_bahn\": 0.23,\n  \"uefex\": 0.04,\n  \"other\": 0.05,\n  \"rationale\": \"Business travelers on long-haul flights prioritize reliability, convenience, and time savings, leading to higher shares for parking, taxis, and S-Bahn, with smaller shares for other modes due to luggage and schedule inflexibility.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 570,
+      "completion_tokens": 168,
+      "total_tokens": 738,
+      "cost": 0.002484,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002484,
+        "upstream_inference_prompt_cost": 0.00114,
+        "upstream_inference_completions_cost": 0.001344
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628155-1CdssJGPLtEF5yAojs8v",
+  "raw_prediction": {
+    "car_dropoff": 0.13,
+    "car_airport_parking": 0.26,
+    "car_offairport_parking": 0.07,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.13,
+    "rental_carsharing": 0.04,
+    "bus_transfer": 0.04,
+    "s_bahn": 0.23,
+    "uefex": 0.04,
+    "other": 0.05,
+    "rationale": "Business travelers on long-haul flights prioritize reliability, convenience, and time savings, leading to higher shares for parking, taxis, and S-Bahn, with smaller shares for other modes due to luggage and schedule inflexibility."
+  },
+  "prediction": {
+    "car_dropoff": 0.13,
+    "car_airport_parking": 0.26,
+    "car_offairport_parking": 0.07,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.13,
+    "rental_carsharing": 0.04,
+    "bus_transfer": 0.04,
+    "s_bahn": 0.23,
+    "uefex": 0.04,
+    "other": 0.05,
+    "rationale": "Business travelers on long-haul flights prioritize reliability, convenience, and time savings, leading to higher shares for parking, taxis, and S-Bahn, with smaller shares for other modes due to luggage and schedule inflexibility."
+  },
+  "normalization": {
+    "sum_before": 1.0,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:35:57.156838+00:00",
+  "cost_exceeded_reservation": false
+}

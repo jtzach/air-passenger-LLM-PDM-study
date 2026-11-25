@@ -1,0 +1,100 @@
+{
+  "task_id": "p01__m03__a01__c001__r007__administrative_replacement1",
+  "block_id": "p01__m03__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "unanchored",
+  "card_id": "reise__anzauto_gr1__296e9849dc3d",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "supersedes_task_id": "p01__m03__a01__c001__r007",
+  "request_sha256": "9504069e1395880210014e07ac1af38dfd0d9fef289f739b43a539c603be161c",
+  "started_utc": "2026-11-25T17:34:06.848082+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:34:22.798687+00:00",
+      "cost_usd": 0.00012756,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00012756,
+  "reservation_upper_bound_usd": 0.0020019,
+  "response_sha256": "3f016300853e03014846813c7e86bebe6d049f30f054231cf1f78cb864120db4",
+  "response": {
+    "id": "gen-1795628046-RNtzrknonv6wqAuIUcei",
+    "object": "chat.completion",
+    "created": 1795628046,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.3,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"Despite no household car, car use may occur via rental, ride-sharing, or family/friends. Public transport use is less likely due to airport locations. Long-distance rail competes with air, reducing its access/egress role.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 401,
+      "completion_tokens": 89,
+      "total_tokens": 490,
+      "cost": 0.00012756,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00012756,
+        "upstream_inference_prompt_cost": 5.4135e-05,
+        "upstream_inference_completions_cost": 7.3425e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795628046-RNtzrknonv6wqAuIUcei",
+  "raw_prediction": {
+    "car": 0.65,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.15,
+    "rationale": "Despite no household car, car use may occur via rental, ride-sharing, or family/friends. Public transport use is less likely due to airport locations. Long-distance rail competes with air, reducing its access/egress role."
+  },
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.15,
+    "rationale": "Despite no household car, car use may occur via rental, ride-sharing, or family/friends. Public transport use is less likely due to airport locations. Long-distance rail competes with air, reducing its access/egress role."
+  },
+  "normalization": {
+    "sum_before": 1.1,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:34:22.798687+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,22 @@
+{
+  "model": "openai/gpt-4.1-mini",
+  "messages": [
+    {
+      "role": "user",
+      "content": "You are participating in a travel-behaviour research benchmark. Estimate group-level airport-access choices. Do not browse or look up a survey table.\n\nPopulation: passengers who reach Munich Airport (MUC), Germany, by ground transport to start a departing flight in calendar year 2025. Exclude passengers who only change aircraft at Munich without a ground-access trip. Do not predict how arriving passengers leave the airport, and do not predict ground travel at the other end of the flight.\n\nGroup description: The passenger travels for a private purpose (for example a holiday or visiting friends or relatives). The flight departing Munich is a domestic flight within Germany. Age, income, household cars, residence, starting location, trip duration, luggage and travel party are unspecified. Do not invent a specific value for any of these characteristics.\n\nTask: out of similar passengers in this group, estimate the share in each of the following mutually exclusive access categories. The flight region describes the flight departing Munich, not necessarily the final destination of a connecting itinerary. Predict the reported airport-access category, not every vehicle used along the way. A rail journey followed by S-Bahn to the airport belongs to S-Bahn. For the specified parking options, a terminal shuttle included in parking is part of that parking category; do not count it again as bus.\n- car_dropoff: A private car brings the passenger and leaves; the driver may stop or park briefly.\n- car_airport_parking: A private car is left in airport parking for the passenger's trip.\n- car_offairport_parking: A private car is left at an off-airport parking provider with a transfer to the terminal.\n- car_other_parking: A private car is left at another parking location not covered by the two parking options above.\n- taxi_ridehail: Taxi or app-booked ride-hailing.\n- rental_carsharing: A rental car or car-sharing vehicle.\n- bus_transfer: Public bus, coach, airport transfer or hotel shuttle, excluding transfers already counted as part of a parking option.\n- s_bahn: Munich suburban rail (S-Bahn S1 or S8).\n- uefex: The direct regional airport train serving Landshut and Regensburg (UEFEX).\n- other: Any remaining access option.\n\nGive one complete distribution: the ten probabilities must add to 1. No observed airport percentages or passenger counts are supplied.\n\nReturn only one JSON object with exactly these keys: car_dropoff, car_airport_parking, car_offairport_parking, car_other_parking, taxi_ridehail, rental_carsharing, bus_transfer, s_bahn, uefex, other, rationale. The ten mode values must be numbers from 0 to 1 (not percentages). rationale must be at most 40 words and state a plausible hypothesis, not claim to know passengers' actual motives."
+    }
+  ],
+  "temperature": 0.7,
+  "max_tokens": 450,
+  "seed": 26112032,
+  "response_format": {
+    "type": "json_object"
+  },
+  "provider": {
+    "allow_fallbacks": false,
+    "require_parameters": true,
+    "only": [
+      "openai"
+    ]
+  }
+}

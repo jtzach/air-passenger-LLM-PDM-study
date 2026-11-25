@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c008__r012",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__RegioStaR7__7b0e1c4f102a",
+  "round": 12,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "4cd4e3271c5d090f3d6e05d4007502e07c5aa157349220043d23f7f8fda04920",
+  "started_utc": "2026-11-25T17:41:10.496130+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:41:11.568593+00:00",
+      "cost_usd": 0.001448,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001448,
+  "reservation_upper_bound_usd": 0.023975999999999997,
+  "response_sha256": "0f2d5c78ecd71d134bc3f3671de39b2e6ec7905eac987eae39abaea5b1a709c0",
+  "response": {
+    "id": "gen-1795628469-vifzJdfI9I8FalKcLhAb",
+    "object": "chat.completion",
+    "created": 1795628469,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.35,\n  \"local_pt\": 0.60,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"Urban/metropolitan residents often have good public transport and rail access, reducing reliance on cars. However, some still use cars for convenience or luggage. Local public transport is likely most common for airport access in such areas.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 392,
+      "completion_tokens": 83,
+      "total_tokens": 475,
+      "cost": 0.001448,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001448,
+        "upstream_inference_prompt_cost": 0.000784,
+        "upstream_inference_completions_cost": 0.000664
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628469-vifzJdfI9I8FalKcLhAb",
+  "raw_prediction": {
+    "car": 0.35,
+    "local_pt": 0.6,
+    "long_distance_rail": 0.25,
+    "rationale": "Urban/metropolitan residents often have good public transport and rail access, reducing reliance on cars. However, some still use cars for convenience or luggage. Local public transport is likely most common for airport access in such areas."
+  },
+  "prediction": {
+    "car": 0.35,
+    "local_pt": 0.6,
+    "long_distance_rail": 0.25,
+    "rationale": "Urban/metropolitan residents often have good public transport and rail access, reducing reliance on cars. However, some still use cars for convenience or luggage. Local public transport is likely most common for airport access in such areas."
+  },
+  "normalization": {
+    "sum_before": 1.2,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:41:11.568593+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a02__c021__r009",
+  "block_id": "p01__m03__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__ef1ad3950de1",
+  "round": 9,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "3f9c9a64ffc2cdc423cd16f2c48add877608851c4ffca4593ed9742a5d3ca918",
+  "started_utc": "2026-11-25T17:37:26.669269+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:38:22.674614+00:00",
+      "cost_usd": 0.000127515,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000127515,
+  "reservation_upper_bound_usd": 0.00211992,
+  "response_sha256": "0aa1c497a100cc0fc6676ca62cb421abe3483fa06513bcc5550bf057272e8546",
+  "response": {
+    "id": "gen-1795628246-TRyxvqc3Jh4x2e8eHTSN",
+    "object": "chat.completion",
+    "created": 1795628246,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.3,\n  \"local_pt\": 0.25,\n  \"long_distance_rail\": 0.08,\n  \"rationale\": \"Short trips may favor car access for flexibility, but single-night stays could reduce local transit use. Long-distance rail competes less for very short getaways, lowering its role.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 474,
+      "completion_tokens": 77,
+      "total_tokens": 551,
+      "cost": 0.000127515,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000127515,
+        "upstream_inference_prompt_cost": 6.399e-05,
+        "upstream_inference_completions_cost": 6.3525e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795628246-TRyxvqc3Jh4x2e8eHTSN",
+  "raw_prediction": {
+    "car": 0.3,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.08,
+    "rationale": "Short trips may favor car access for flexibility, but single-night stays could reduce local transit use. Long-distance rail competes less for very short getaways, lowering its role."
+  },
+  "prediction": {
+    "car": 0.3,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.08,
+    "rationale": "Short trips may favor car access for flexibility, but single-night stays could reduce local transit use. Long-distance rail competes less for very short getaways, lowering its role."
+  },
+  "normalization": {
+    "sum_before": 0.63,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:38:22.674614+00:00",
+  "cost_exceeded_reservation": false
+}

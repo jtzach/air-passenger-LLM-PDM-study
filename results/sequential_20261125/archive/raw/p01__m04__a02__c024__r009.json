@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c024__r009",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "no_persona",
+  "round": 9,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "633de3c0f94cc3123d410accdc75a1ff8e9d9eb821c8bb4f0e4d99845e06015e",
+  "started_utc": "2026-11-25T17:38:26.085670+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:38:27.268733+00:00",
+      "cost_usd": 0.001476,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001476,
+  "reservation_upper_bound_usd": 0.024342,
+  "response_sha256": "5b1e353b0b2dc404fae1e24f11e2cccaa607e64dd4c010fe659f62d2794e8900",
+  "response": {
+    "id": "gen-1795628305-0BKyT8oAylrMXi89Ovab",
+    "object": "chat.completion",
+    "created": 1795628305,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.38,\n  \"local_pt\": 0.22,\n  \"long_distance_rail\": 0.12,\n  \"rationale\": \"With no additional cohort attributes, mode usage likely aligns with the population-level rates. No evidence suggests this group differs in access or preferences for car, local public transport, or long-distance rail to/from airports.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 414,
+      "completion_tokens": 81,
+      "total_tokens": 495,
+      "cost": 0.001476,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001476,
+        "upstream_inference_prompt_cost": 0.000828,
+        "upstream_inference_completions_cost": 0.000648
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628305-0BKyT8oAylrMXi89Ovab",
+  "raw_prediction": {
+    "car": 0.38,
+    "local_pt": 0.22,
+    "long_distance_rail": 0.12,
+    "rationale": "With no additional cohort attributes, mode usage likely aligns with the population-level rates. No evidence suggests this group differs in access or preferences for car, local public transport, or long-distance rail to/from airports."
+  },
+  "prediction": {
+    "car": 0.38,
+    "local_pt": 0.22,
+    "long_distance_rail": 0.12,
+    "rationale": "With no additional cohort attributes, mode usage likely aligns with the population-level rates. No evidence suggests this group differs in access or preferences for car, local public transport, or long-distance rail to/from airports."
+  },
+  "normalization": {
+    "sum_before": 0.72,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:38:27.268733+00:00",
+  "cost_exceeded_reservation": false
+}

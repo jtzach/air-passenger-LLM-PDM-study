@@ -1,0 +1,120 @@
+{
+  "task_id": "p02__m04__a01__c005__r013",
+  "block_id": "p02__m04__a01",
+  "panel_id": "fmg_2025",
+  "panel_index": 1,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "fmg_business_intercontinental",
+  "round": 13,
+  "modes": [
+    "car_dropoff",
+    "car_airport_parking",
+    "car_offairport_parking",
+    "car_other_parking",
+    "taxi_ridehail",
+    "rental_carsharing",
+    "bus_transfer",
+    "s_bahn",
+    "uefex",
+    "other"
+  ],
+  "mutually_exclusive": true,
+  "request_sha256": "b5d2f62823d811cc3c0006341a37b14d8169121e5b29d4b3e2b6c1cc04b853e0",
+  "started_utc": "2026-11-25T17:41:30.564625+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:41:32.550028+00:00",
+      "cost_usd": 0.002508,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.002508,
+  "reservation_upper_bound_usd": 0.028763999999999998,
+  "response_sha256": "88e6056e9f3b4bcee5222db825861202f4ddbf068a022633675101eccf1fb752",
+  "response": {
+    "id": "gen-1795628490-aGwZOaxCiTvzzvieT1rO",
+    "object": "chat.completion",
+    "created": 1795628490,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car_dropoff\": 0.14,\n  \"car_airport_parking\": 0.22,\n  \"car_offairport_parking\": 0.05,\n  \"car_other_parking\": 0.01,\n  \"taxi_ridehail\": 0.17,\n  \"rental_carsharing\": 0.04,\n  \"bus_transfer\": 0.03,\n  \"s_bahn\": 0.27,\n  \"uefex\": 0.05,\n  \"other\": 0.02,\n  \"rationale\": \"Business intercontinental passengers likely value reliability, speed, and comfort, favoring S-Bahn, parking, and taxi/ridehail. Some choose drop-off for convenience; bus and minor modes are less attractive for this group’s travel profile.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 570,
+      "completion_tokens": 171,
+      "total_tokens": 741,
+      "cost": 0.002508,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002508,
+        "upstream_inference_prompt_cost": 0.00114,
+        "upstream_inference_completions_cost": 0.001368
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628490-aGwZOaxCiTvzzvieT1rO",
+  "raw_prediction": {
+    "car_dropoff": 0.14,
+    "car_airport_parking": 0.22,
+    "car_offairport_parking": 0.05,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.17,
+    "rental_carsharing": 0.04,
+    "bus_transfer": 0.03,
+    "s_bahn": 0.27,
+    "uefex": 0.05,
+    "other": 0.02,
+    "rationale": "Business intercontinental passengers likely value reliability, speed, and comfort, favoring S-Bahn, parking, and taxi/ridehail. Some choose drop-off for convenience; bus and minor modes are less attractive for this group’s travel profile."
+  },
+  "prediction": {
+    "car_dropoff": 0.14,
+    "car_airport_parking": 0.22,
+    "car_offairport_parking": 0.05,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.17,
+    "rental_carsharing": 0.04,
+    "bus_transfer": 0.03,
+    "s_bahn": 0.27,
+    "uefex": 0.05,
+    "other": 0.02,
+    "rationale": "Business intercontinental passengers likely value reliability, speed, and comfort, favoring S-Bahn, parking, and taxi/ridehail. Some choose drop-off for convenience; bus and minor modes are less attractive for this group’s travel profile."
+  },
+  "normalization": {
+    "sum_before": 1.0,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:41:32.551064+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c019__r015",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__782410ef69d3",
+  "round": 15,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "7d4c1139809a10df383654089499177f38fce69f186c8e15982fd8c51924d7a8",
+  "started_utc": "2026-11-25T17:41:57.848163+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:41:59.274224+00:00",
+      "cost_usd": 0.001494,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001494,
+  "reservation_upper_bound_usd": 0.023928,
+  "response_sha256": "28ea4a252e4c98f77198b9c036b83d29c11e90c4bee7a0f64ee703f364510130",
+  "response": {
+    "id": "gen-1795628517-OH6kKTv1Lv3cs2ysKTwa",
+    "object": "chat.completion",
+    "created": 1795628517,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.45,\n  \"long_distance_rail\": 0.30,\n  \"rationale\": \"For 8-14 night trips, airport access is often from beyond local catchments—car is common for flexibility, while urban/regional PT and long-distance rail are viable for longer trips, but less convenient with luggage or indirect routes.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 395,
+      "completion_tokens": 88,
+      "total_tokens": 483,
+      "cost": 0.001494,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001494,
+        "upstream_inference_prompt_cost": 0.00079,
+        "upstream_inference_completions_cost": 0.000704
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628517-OH6kKTv1Lv3cs2ysKTwa",
+  "raw_prediction": {
+    "car": 0.55,
+    "local_pt": 0.45,
+    "long_distance_rail": 0.3,
+    "rationale": "For 8-14 night trips, airport access is often from beyond local catchments—car is common for flexibility, while urban/regional PT and long-distance rail are viable for longer trips, but less convenient with luggage or indirect routes."
+  },
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.45,
+    "long_distance_rail": 0.3,
+    "rationale": "For 8-14 night trips, airport access is often from beyond local catchments—car is common for flexibility, while urban/regional PT and long-distance rail are viable for longer trips, but less convenient with luggage or indirect routes."
+  },
+  "normalization": {
+    "sum_before": 1.3,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:41:59.274224+00:00",
+  "cost_exceeded_reservation": false
+}

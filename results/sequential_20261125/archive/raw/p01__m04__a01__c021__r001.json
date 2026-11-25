@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c021__r001",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__ef1ad3950de1",
+  "round": 1,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "ce62a4f9f14234c0e5eecefe4c32d5b8b784677b497739a44b61eb1519c7a2b7",
+  "started_utc": "2026-11-25T14:21:35.072934+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:21:36.598920+00:00",
+      "cost_usd": 0.00145,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00145,
+  "reservation_upper_bound_usd": 0.023903999999999998,
+  "response_sha256": "9a365ce7ef3316c8801104d53853aaa94e389e9c0a30fe08025f6b0c217fe592",
+  "response": {
+    "id": "gen-1795616495-IuRDvfMTudr5LtJPDK3o",
+    "object": "chat.completion",
+    "created": 1795616495,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"Short overnight trips likely favor quick airport access, so private car (including drop-off) is common. Local public transport is used by urban residents. Long-distance rail is less frequent due to time constraints for brief trips.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 393,
+      "completion_tokens": 83,
+      "total_tokens": 476,
+      "cost": 0.00145,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00145,
+        "upstream_inference_prompt_cost": 0.000786,
+        "upstream_inference_completions_cost": 0.000664
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616495-IuRDvfMTudr5LtJPDK3o",
+  "raw_prediction": {
+    "car": 0.45,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.15,
+    "rationale": "Short overnight trips likely favor quick airport access, so private car (including drop-off) is common. Local public transport is used by urban residents. Long-distance rail is less frequent due to time constraints for brief trips."
+  },
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.15,
+    "rationale": "Short overnight trips likely favor quick airport access, so private car (including drop-off) is common. Local public transport is used by urban residents. Long-distance rail is less frequent due to time constraints for brief trips."
+  },
+  "normalization": {
+    "sum_before": 0.95,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:21:36.598920+00:00",
+  "cost_exceeded_reservation": false
+}

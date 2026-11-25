@@ -1,0 +1,42 @@
+block_id,panel_id,model_id,model_label,arm,mode,predicted_mean,predicted_sd,n_independent_rounds_assumed
+p01__m01__a02,mid_2023,google/gemma-3-4b-it,Gemma 3 4B,overall_rate_anchored,car,0.4,0.0,2
+p01__m01__a02,mid_2023,google/gemma-3-4b-it,Gemma 3 4B,overall_rate_anchored,local_pt,0.25,0.0,2
+p01__m01__a02,mid_2023,google/gemma-3-4b-it,Gemma 3 4B,overall_rate_anchored,long_distance_rail,0.15,0.0,2
+p01__m02__a01,mid_2023,openai/gpt-4.1-mini,GPT-4.1 mini,unanchored,car,0.625,0.06831300510639732,16
+p01__m02__a01,mid_2023,openai/gpt-4.1-mini,GPT-4.1 mini,unanchored,local_pt,0.58125,0.08920949127381757,16
+p01__m02__a01,mid_2023,openai/gpt-4.1-mini,GPT-4.1 mini,unanchored,long_distance_rail,0.28125,0.05123475382979799,16
+p01__m02__a02,mid_2023,openai/gpt-4.1-mini,GPT-4.1 mini,overall_rate_anchored,car,0.42312500000000003,0.027010800309012196,16
+p01__m02__a02,mid_2023,openai/gpt-4.1-mini,GPT-4.1 mini,overall_rate_anchored,local_pt,0.23,0.02309401076758503,16
+p01__m02__a02,mid_2023,openai/gpt-4.1-mini,GPT-4.1 mini,overall_rate_anchored,long_distance_rail,0.11375,0.017464249196572978,16
+p01__m03__a01,mid_2023,qwen/qwen3-235b-a22b-2507,Qwen3 235B A22B,unanchored,car,0.72,0.04830458915396479,10
+p01__m03__a01,mid_2023,qwen/qwen3-235b-a22b-2507,Qwen3 235B A22B,unanchored,local_pt,0.345,0.02838231060987734,10
+p01__m03__a01,mid_2023,qwen/qwen3-235b-a22b-2507,Qwen3 235B A22B,unanchored,long_distance_rail,0.215,0.03374742788552764,10
+p01__m03__a02,mid_2023,qwen/qwen3-235b-a22b-2507,Qwen3 235B A22B,overall_rate_anchored,car,0.376769,0.0,8
+p01__m03__a02,mid_2023,qwen/qwen3-235b-a22b-2507,Qwen3 235B A22B,overall_rate_anchored,local_pt,0.21623,0.0,8
+p01__m03__a02,mid_2023,qwen/qwen3-235b-a22b-2507,Qwen3 235B A22B,overall_rate_anchored,long_distance_rail,0.124088,0.0,8
+p01__m04__a01,mid_2023,openai/gpt-4.1,GPT-4.1,unanchored,car,0.5825,0.036968455021364706,16
+p01__m04__a01,mid_2023,openai/gpt-4.1,GPT-4.1,unanchored,local_pt,0.445625,0.06612803238163575,16
+p01__m04__a01,mid_2023,openai/gpt-4.1,GPT-4.1,unanchored,long_distance_rail,0.221875,0.041987101193898424,16
+p01__m04__a02,mid_2023,openai/gpt-4.1,GPT-4.1,overall_rate_anchored,car,0.38,0.0,16
+p01__m04__a02,mid_2023,openai/gpt-4.1,GPT-4.1,overall_rate_anchored,local_pt,0.22,0.0,16
+p01__m04__a02,mid_2023,openai/gpt-4.1,GPT-4.1,overall_rate_anchored,long_distance_rail,0.120625,0.0025000000000000022,16
+p02__m02__a01,fmg_2025,openai/gpt-4.1-mini,GPT-4.1 mini,unanchored,car_dropoff,0.23125,0.030956959368344514,16
+p02__m02__a01,fmg_2025,openai/gpt-4.1-mini,GPT-4.1 mini,unanchored,car_airport_parking,0.18125,0.030956959368344524,16
+p02__m02__a01,fmg_2025,openai/gpt-4.1-mini,GPT-4.1 mini,unanchored,car_offairport_parking,0.10312500000000001,0.012499999999999997,16
+p02__m02__a01,fmg_2025,openai/gpt-4.1-mini,GPT-4.1 mini,unanchored,car_other_parking,0.05,0.0,16
+p02__m02__a01,fmg_2025,openai/gpt-4.1-mini,GPT-4.1 mini,unanchored,taxi_ridehail,0.1,0.0,16
+p02__m02__a01,fmg_2025,openai/gpt-4.1-mini,GPT-4.1 mini,unanchored,rental_carsharing,0.05,0.0,16
+p02__m02__a01,fmg_2025,openai/gpt-4.1-mini,GPT-4.1 mini,unanchored,bus_transfer,0.1,0.0,16
+p02__m02__a01,fmg_2025,openai/gpt-4.1-mini,GPT-4.1 mini,unanchored,s_bahn,0.141875,0.040368097965266254,16
+p02__m02__a01,fmg_2025,openai/gpt-4.1-mini,GPT-4.1 mini,unanchored,uefex,0.028125,0.009810708435174292,16
+p02__m02__a01,fmg_2025,openai/gpt-4.1-mini,GPT-4.1 mini,unanchored,other,0.014375,0.0051234753829797995,16
+p02__m04__a01,fmg_2025,openai/gpt-4.1,GPT-4.1,unanchored,car_dropoff,0.198125,0.01833712082089225,16
+p02__m04__a01,fmg_2025,openai/gpt-4.1,GPT-4.1,unanchored,car_airport_parking,0.17500000000000002,0.017126976771553504,16
+p02__m04__a01,fmg_2025,openai/gpt-4.1,GPT-4.1,unanchored,car_offairport_parking,0.06875,0.019621416870348584,16
+p02__m04__a01,fmg_2025,openai/gpt-4.1,GPT-4.1,unanchored,car_other_parking,0.01625,0.00806225774829855,16
+p02__m04__a01,fmg_2025,openai/gpt-4.1,GPT-4.1,unanchored,taxi_ridehail,0.090625,0.014818344486930155,16
+p02__m04__a01,fmg_2025,openai/gpt-4.1,GPT-4.1,unanchored,rental_carsharing,0.034375,0.007274384280931733,16
+p02__m04__a01,fmg_2025,openai/gpt-4.1,GPT-4.1,unanchored,bus_transfer,0.060625,0.011814539065631523,16
+p02__m04__a01,fmg_2025,openai/gpt-4.1,GPT-4.1,unanchored,s_bahn,0.299375,0.03415040263305837,16
+p02__m04__a01,fmg_2025,openai/gpt-4.1,GPT-4.1,unanchored,uefex,0.03125,0.005,16
+p02__m04__a01,fmg_2025,openai/gpt-4.1,GPT-4.1,unanchored,other,0.025625,0.008139410298049854,16

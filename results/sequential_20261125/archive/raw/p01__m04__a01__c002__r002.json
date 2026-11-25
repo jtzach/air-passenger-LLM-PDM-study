@@ -1,0 +1,106 @@
+{
+  "task_id": "p01__m04__a01__c002__r002",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzauto_gr1__79ed954bbe2c",
+  "round": 2,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "722761490803dd14572b47354f17a43102914782a263f63998600fc7136d765a",
+  "started_utc": "2026-11-25T14:23:32.261130+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "transport_error",
+      "detail": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>",
+      "utc": "2026-11-25T14:23:53.624422+00:00",
+      "cost_upper_bound_usd": 0.00797
+    },
+    {
+      "number": 2,
+      "status": "response",
+      "utc": "2026-11-25T14:23:57.093067+00:00",
+      "cost_usd": 0.001444,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.009413999999999999,
+  "reservation_upper_bound_usd": 0.02391,
+  "response_sha256": "d752e49e22023efaeb125ac90f64543b1336b8b75a257b96e2233460f2b80e76",
+  "response": {
+    "id": "gen-1795616635-9q6iXlpQ1Lkb3UenV4zU",
+    "object": "chat.completion",
+    "created": 1795616635,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.85,\n  \"local_pt\": 0.20,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Households with 4+ cars are highly car-oriented, making car the dominant access mode. Public/local transport and long-distance rail are less likely due to preference for private vehicles and lower dependency on public options.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 394,
+      "completion_tokens": 82,
+      "total_tokens": 476,
+      "cost": 0.001444,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001444,
+        "upstream_inference_prompt_cost": 0.000788,
+        "upstream_inference_completions_cost": 0.000656
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616635-9q6iXlpQ1Lkb3UenV4zU",
+  "raw_prediction": {
+    "car": 0.85,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.1,
+    "rationale": "Households with 4+ cars are highly car-oriented, making car the dominant access mode. Public/local transport and long-distance rail are less likely due to preference for private vehicles and lower dependency on public options."
+  },
+  "prediction": {
+    "car": 0.85,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.1,
+    "rationale": "Households with 4+ cars are highly car-oriented, making car the dominant access mode. Public/local transport and long-distance rail are less likely due to preference for private vehicles and lower dependency on public options."
+  },
+  "normalization": {
+    "sum_before": 1.15,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:23:57.093067+00:00",
+  "cost_exceeded_reservation": false
+}

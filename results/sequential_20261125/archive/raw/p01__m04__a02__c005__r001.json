@@ -1,0 +1,106 @@
+{
+  "task_id": "p01__m04__a02__c005__r001",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzauto_gr1__faec8c191aa2",
+  "round": 1,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "6512ac8ca3955ecccd346c44ee861ecd4b805d5a041cc9d600ada6a104182629",
+  "started_utc": "2026-11-25T14:20:08.594496+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "transport_error",
+      "detail": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>",
+      "utc": "2026-11-25T14:20:32.728829+00:00",
+      "cost_upper_bound_usd": 0.008502
+    },
+    {
+      "number": 2,
+      "status": "response",
+      "utc": "2026-11-25T14:20:36.009098+00:00",
+      "cost_usd": 0.001518,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.01002,
+  "reservation_upper_bound_usd": 0.025505999999999997,
+  "response_sha256": "462ec2e84db6f54ad68272fc4c9b180e92870ca12c20389872df043c1a082232",
+  "response": {
+    "id": "gen-1795616434-NF2Eb7lXavJWngFWM5Ci",
+    "object": "chat.completion",
+    "created": 1795616434,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.48,\n  \"local_pt\": 0.19,\n  \"long_distance_rail\": 0.09,\n  \"rationale\": \"Households with 2 cars are more disposed to drive to/from airports, raising car use and slightly lowering public/local and long-distance rail use compared to the general aircraft-using population.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 451,
+      "completion_tokens": 77,
+      "total_tokens": 528,
+      "cost": 0.001518,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001518,
+        "upstream_inference_prompt_cost": 0.000902,
+        "upstream_inference_completions_cost": 0.000616
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616434-NF2Eb7lXavJWngFWM5Ci",
+  "raw_prediction": {
+    "car": 0.48,
+    "local_pt": 0.19,
+    "long_distance_rail": 0.09,
+    "rationale": "Households with 2 cars are more disposed to drive to/from airports, raising car use and slightly lowering public/local and long-distance rail use compared to the general aircraft-using population."
+  },
+  "prediction": {
+    "car": 0.48,
+    "local_pt": 0.19,
+    "long_distance_rail": 0.09,
+    "rationale": "Households with 2 cars are more disposed to drive to/from airports, raising car use and slightly lowering public/local and long-distance rail use compared to the general aircraft-using population."
+  },
+  "normalization": {
+    "sum_before": 0.76,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:20:36.009098+00:00",
+  "cost_exceeded_reservation": false
+}

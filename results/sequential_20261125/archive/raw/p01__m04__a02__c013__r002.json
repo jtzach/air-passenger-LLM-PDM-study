@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c013__r002",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzbegl_gr__07f355b725cf",
+  "round": 2,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "ce03d8123177c47000425fdd419a5744ad34812989716947f0489cd168127164",
+  "started_utc": "2026-11-25T14:23:22.451124+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:23:24.408311+00:00",
+      "cost_usd": 0.00151,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00151,
+  "reservation_upper_bound_usd": 0.025577999999999997,
+  "response_sha256": "e6eb1f84a7a0087da15969b669ea872310837af017d32d18e2b2293e90b50ecb",
+  "response": {
+    "id": "gen-1795616603-6jtZl8pML4g4YStyYQ0A",
+    "object": "chat.completion",
+    "created": 1795616603,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.47,\n  \"local_pt\": 0.19,\n  \"long_distance_rail\": 0.09,\n  \"rationale\": \"With two household companions, group convenience and luggage needs likely increase car use above baseline, while shared tickets may slightly reduce local and long-distance public transport use compared to the overall cohort.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 451,
+      "completion_tokens": 76,
+      "total_tokens": 527,
+      "cost": 0.00151,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00151,
+        "upstream_inference_prompt_cost": 0.000902,
+        "upstream_inference_completions_cost": 0.000608
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616603-6jtZl8pML4g4YStyYQ0A",
+  "raw_prediction": {
+    "car": 0.47,
+    "local_pt": 0.19,
+    "long_distance_rail": 0.09,
+    "rationale": "With two household companions, group convenience and luggage needs likely increase car use above baseline, while shared tickets may slightly reduce local and long-distance public transport use compared to the overall cohort."
+  },
+  "prediction": {
+    "car": 0.47,
+    "local_pt": 0.19,
+    "long_distance_rail": 0.09,
+    "rationale": "With two household companions, group convenience and luggage needs likely increase car use above baseline, while shared tickets may slightly reduce local and long-distance public transport use compared to the overall cohort."
+  },
+  "normalization": {
+    "sum_before": 0.75,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:23:24.408311+00:00",
+  "cost_exceeded_reservation": false
+}

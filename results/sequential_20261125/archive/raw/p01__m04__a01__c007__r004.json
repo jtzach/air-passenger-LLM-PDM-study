@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c007__r004",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__RegioStaR7__72d39163efb4",
+  "round": 4,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "5483cc276b4b4deceb9b76232a2462a5dbe11f123a9e8698e5286d95bb5e4226",
+  "started_utc": "2026-11-25T14:27:39.635546+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:27:41.252117+00:00",
+      "cost_usd": 0.001408,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001408,
+  "reservation_upper_bound_usd": 0.024077999999999995,
+  "response_sha256": "d022ace4115a39d72158d83a0a9fdd943c0b1d83112e797398361f77968fcc75",
+  "response": {
+    "id": "gen-1795616859-bDOIk9uVZcohk8PCMkOI",
+    "object": "chat.completion",
+    "created": 1795616859,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.75,\n  \"local_pt\": 0.25,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Rural travellers likely favor cars due to limited public transport. Some access airports via local PT, but long-distance rail is less feasible given rural origins and typical airport connectivity patterns in Germany.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 396,
+      "completion_tokens": 77,
+      "total_tokens": 473,
+      "cost": 0.001408,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001408,
+        "upstream_inference_prompt_cost": 0.000792,
+        "upstream_inference_completions_cost": 0.000616
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616859-bDOIk9uVZcohk8PCMkOI",
+  "raw_prediction": {
+    "car": 0.75,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.1,
+    "rationale": "Rural travellers likely favor cars due to limited public transport. Some access airports via local PT, but long-distance rail is less feasible given rural origins and typical airport connectivity patterns in Germany."
+  },
+  "prediction": {
+    "car": 0.75,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.1,
+    "rationale": "Rural travellers likely favor cars due to limited public transport. Some access airports via local PT, but long-distance rail is less feasible given rural origins and typical airport connectivity patterns in Germany."
+  },
+  "normalization": {
+    "sum_before": 1.1,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:27:41.252117+00:00",
+  "cost_exceeded_reservation": false
+}

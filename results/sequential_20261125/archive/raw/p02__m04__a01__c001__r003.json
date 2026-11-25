@@ -1,0 +1,120 @@
+{
+  "task_id": "p02__m04__a01__c001__r003",
+  "block_id": "p02__m04__a01",
+  "panel_id": "fmg_2025",
+  "panel_index": 1,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "fmg_business_domestic",
+  "round": 3,
+  "modes": [
+    "car_dropoff",
+    "car_airport_parking",
+    "car_offairport_parking",
+    "car_other_parking",
+    "taxi_ridehail",
+    "rental_carsharing",
+    "bus_transfer",
+    "s_bahn",
+    "uefex",
+    "other"
+  ],
+  "mutually_exclusive": true,
+  "request_sha256": "ac56f489a4c0d3a182b4ba77d25fd368cccb01980ba0b71e45d607a6d6cc9a53",
+  "started_utc": "2026-11-25T14:26:08.377517+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:26:11.656947+00:00",
+      "cost_usd": 0.002442,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.002442,
+  "reservation_upper_bound_usd": 0.028716000000000002,
+  "response_sha256": "09c68e6d5d62c79f274df1aaa7a3751fac708d64fc5f6a49a9ccfd0a17764e98",
+  "response": {
+    "id": "gen-1795616769-zohUutTNsr72RIH5MAZe",
+    "object": "chat.completion",
+    "created": 1795616769,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car_dropoff\": 0.18,\n  \"car_airport_parking\": 0.21,\n  \"car_offairport_parking\": 0.05,\n  \"car_other_parking\": 0.01,\n  \"taxi_ridehail\": 0.14,\n  \"rental_carsharing\": 0.03,\n  \"bus_transfer\": 0.06,\n  \"s_bahn\": 0.28,\n  \"uefex\": 0.03,\n  \"other\": 0.01,\n  \"rationale\": \"Business travelers on domestic flights value speed and reliability; S-Bahn and parking are common, but drop-off, taxi, and direct rail also serve for flexibility and convenience. Less frequent modes remain minor.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 569,
+      "completion_tokens": 163,
+      "total_tokens": 732,
+      "cost": 0.002442,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002442,
+        "upstream_inference_prompt_cost": 0.001138,
+        "upstream_inference_completions_cost": 0.001304
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616769-zohUutTNsr72RIH5MAZe",
+  "raw_prediction": {
+    "car_dropoff": 0.18,
+    "car_airport_parking": 0.21,
+    "car_offairport_parking": 0.05,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.14,
+    "rental_carsharing": 0.03,
+    "bus_transfer": 0.06,
+    "s_bahn": 0.28,
+    "uefex": 0.03,
+    "other": 0.01,
+    "rationale": "Business travelers on domestic flights value speed and reliability; S-Bahn and parking are common, but drop-off, taxi, and direct rail also serve for flexibility and convenience. Less frequent modes remain minor."
+  },
+  "prediction": {
+    "car_dropoff": 0.18,
+    "car_airport_parking": 0.21,
+    "car_offairport_parking": 0.05,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.14,
+    "rental_carsharing": 0.03,
+    "bus_transfer": 0.06,
+    "s_bahn": 0.28,
+    "uefex": 0.03,
+    "other": 0.01,
+    "rationale": "Business travelers on domestic flights value speed and reliability; S-Bahn and parking are common, but drop-off, taxi, and direct rail also serve for flexibility and convenience. Less frequent modes remain minor."
+  },
+  "normalization": {
+    "sum_before": 1.0,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:26:11.656947+00:00",
+  "cost_exceeded_reservation": false
+}

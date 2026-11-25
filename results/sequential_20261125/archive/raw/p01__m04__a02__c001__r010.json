@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c001__r010",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzauto_gr1__296e9849dc3d",
+  "round": 10,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "b1eb2a2b5de1cd2447209ab7fa816aafdccd5f143d7e306d1018047cf3922cc6",
+  "started_utc": "2026-11-25T17:39:14.368429+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:39:15.480222+00:00",
+      "cost_usd": 0.001508,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001508,
+  "reservation_upper_bound_usd": 0.025505999999999997,
+  "response_sha256": "b98487f462a1c897e97814ee3359967a482de3ecbb97559293db719694a277da",
+  "response": {
+    "id": "gen-1795628353-wiPaLzEYANoNUeCUZ1eZ",
+    "object": "chat.completion",
+    "created": 1795628353,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.12,\n  \"local_pt\": 0.32,\n  \"long_distance_rail\": 0.18,\n  \"rationale\": \"Households without cars are less likely to report car use, but may compensate with higher public/local transport and slightly more long-distance rail, compared to the overall aircraft-travel cohort.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 450,
+      "completion_tokens": 76,
+      "total_tokens": 526,
+      "cost": 0.001508,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001508,
+        "upstream_inference_prompt_cost": 0.0009,
+        "upstream_inference_completions_cost": 0.000608
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628353-wiPaLzEYANoNUeCUZ1eZ",
+  "raw_prediction": {
+    "car": 0.12,
+    "local_pt": 0.32,
+    "long_distance_rail": 0.18,
+    "rationale": "Households without cars are less likely to report car use, but may compensate with higher public/local transport and slightly more long-distance rail, compared to the overall aircraft-travel cohort."
+  },
+  "prediction": {
+    "car": 0.12,
+    "local_pt": 0.32,
+    "long_distance_rail": 0.18,
+    "rationale": "Households without cars are less likely to report car use, but may compensate with higher public/local transport and slightly more long-distance rail, compared to the overall aircraft-travel cohort."
+  },
+  "normalization": {
+    "sum_before": 0.62,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:39:15.480222+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,127 @@
+{
+  "task_id": "p02__m04__a01__c006__r006",
+  "block_id": "p02__m04__a01",
+  "panel_id": "fmg_2025",
+  "panel_index": 1,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "fmg_private_intercontinental",
+  "round": 6,
+  "modes": [
+    "car_dropoff",
+    "car_airport_parking",
+    "car_offairport_parking",
+    "car_other_parking",
+    "taxi_ridehail",
+    "rental_carsharing",
+    "bus_transfer",
+    "s_bahn",
+    "uefex",
+    "other"
+  ],
+  "mutually_exclusive": true,
+  "request_sha256": "e9d42384828d0dc8a738021329089279593d7dac0a69f035da5290d6f65213b3",
+  "started_utc": "2026-11-25T14:31:35.767037+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "transport_error",
+      "detail": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>",
+      "utc": "2026-11-25T14:31:59.650020+00:00",
+      "cost_upper_bound_usd": 0.00972
+    },
+    {
+      "number": 2,
+      "status": "response",
+      "utc": "2026-11-25T14:32:03.684811+00:00",
+      "cost_usd": 0.00254,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.01226,
+  "reservation_upper_bound_usd": 0.02916,
+  "response_sha256": "ac8ed6c993d02fbff576255a3f0dd074f16b2ce1ba0a4020edfd6ff82c900597",
+  "response": {
+    "id": "gen-1795617121-6XHxnBf4bpC9ZnIZkJ9v",
+    "object": "chat.completion",
+    "created": 1795617121,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car_dropoff\": 0.19,\n  \"car_airport_parking\": 0.22,\n  \"car_offairport_parking\": 0.10,\n  \"car_other_parking\": 0.01,\n  \"taxi_ridehail\": 0.12,\n  \"rental_carsharing\": 0.03,\n  \"bus_transfer\": 0.05,\n  \"s_bahn\": 0.22,\n  \"uefex\": 0.03,\n  \"other\": 0.03,\n  \"rationale\": \"Private-purpose intercontinental travelers likely value convenience and reliability, balancing car use, taxi/ridehail, and direct S-Bahn. Parking is important for longer trips. UEFEX, buses, and other modes serve only specific origins or preferences.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 582,
+      "completion_tokens": 172,
+      "total_tokens": 754,
+      "cost": 0.00254,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00254,
+        "upstream_inference_prompt_cost": 0.001164,
+        "upstream_inference_completions_cost": 0.001376
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795617121-6XHxnBf4bpC9ZnIZkJ9v",
+  "raw_prediction": {
+    "car_dropoff": 0.19,
+    "car_airport_parking": 0.22,
+    "car_offairport_parking": 0.1,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.12,
+    "rental_carsharing": 0.03,
+    "bus_transfer": 0.05,
+    "s_bahn": 0.22,
+    "uefex": 0.03,
+    "other": 0.03,
+    "rationale": "Private-purpose intercontinental travelers likely value convenience and reliability, balancing car use, taxi/ridehail, and direct S-Bahn. Parking is important for longer trips. UEFEX, buses, and other modes serve only specific origins or preferences."
+  },
+  "prediction": {
+    "car_dropoff": 0.19,
+    "car_airport_parking": 0.22,
+    "car_offairport_parking": 0.1,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.12,
+    "rental_carsharing": 0.03,
+    "bus_transfer": 0.05,
+    "s_bahn": 0.22,
+    "uefex": 0.03,
+    "other": 0.03,
+    "rationale": "Private-purpose intercontinental travelers likely value convenience and reliability, balancing car use, taxi/ridehail, and direct S-Bahn. Parking is important for longer trips. UEFEX, buses, and other modes serve only specific origins or preferences."
+  },
+  "normalization": {
+    "sum_before": 1.0,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:32:03.684811+00:00",
+  "cost_exceeded_reservation": false
+}

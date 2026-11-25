@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m02__a02__c024__r006",
+  "block_id": "p01__m02__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "overall_rate_anchored",
+  "card_id": "no_persona",
+  "round": 6,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "bd5bb2a5bd76755e4004eb5e31b23abc9e67468352e781f7cf706a484b68c1d8",
+  "started_utc": "2026-11-25T14:31:22.607651+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:31:24.280030+00:00",
+      "cost_usd": 0.0002856,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002856,
+  "reservation_upper_bound_usd": 0.0048744,
+  "response_sha256": "de16c7ff7525a00e40df34340d7169e269f06203e2e5b11717a7033a481203b3",
+  "response": {
+    "id": "gen-1795617082-emBYLFmnGDv7uzFELfEE",
+    "object": "chat.completion",
+    "created": 1795617082,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.42,\n  \"local_pt\": 0.20,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Aircraft users often drive to airports, slightly boosting car use; local public transport is common but less frequent; long-distance rail is less likely due to flight preference and schedule overlap.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 414,
+      "completion_tokens": 75,
+      "total_tokens": 489,
+      "cost": 0.0002856,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002856,
+        "upstream_inference_prompt_cost": 0.0001656,
+        "upstream_inference_completions_cost": 0.00012
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795617082-emBYLFmnGDv7uzFELfEE",
+  "raw_prediction": {
+    "car": 0.42,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.1,
+    "rationale": "Aircraft users often drive to airports, slightly boosting car use; local public transport is common but less frequent; long-distance rail is less likely due to flight preference and schedule overlap."
+  },
+  "prediction": {
+    "car": 0.42,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.1,
+    "rationale": "Aircraft users often drive to airports, slightly boosting car use; local public transport is common but less frequent; long-distance rail is less likely due to flight preference and schedule overlap."
+  },
+  "normalization": {
+    "sum_before": 0.72,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:31:24.280030+00:00",
+  "cost_exceeded_reservation": false
+}

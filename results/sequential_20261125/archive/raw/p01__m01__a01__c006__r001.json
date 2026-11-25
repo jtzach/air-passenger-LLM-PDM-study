@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m01__a01__c006__r001",
+  "block_id": "p01__m01__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "unanchored",
+  "card_id": "reise__RegioStaR7__5febbfe6f6bc",
+  "round": 1,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "942433375c22c9356d3b380661f730290380bb20e3cd95a942ddd7616c4c9d40",
+  "started_utc": "2026-11-25T14:22:22.640704+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:22:24.952368+00:00",
+      "cost_usd": 2.127e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.127e-05,
+  "reservation_upper_bound_usd": 0.00033462,
+  "response_sha256": "bf888ba77502e9d60f31557f3951a3e004b813903308632967790bf951b7baee",
+  "response": {
+    "id": "gen-1795616543-qDZZu7pgawH9UahUsJtm",
+    "object": "chat.completion",
+    "created": 1795616543,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.3, \"local_pt\": 0.2, \"long_distance_rail\": 0.1, \"rationale\": \"Given the cohort is from small-town/village areas and undertook an aircraft journey, it's likely some used a car for onward travel, and some for return. Local public transport use would be lower, and long-distance rail even less probable for this group.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 418,
+      "completion_tokens": 91,
+      "total_tokens": 509,
+      "cost": 2.127e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.127e-05,
+        "upstream_inference_prompt_cost": 1.672e-05,
+        "upstream_inference_completions_cost": 4.55e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616543-qDZZu7pgawH9UahUsJtm",
+  "raw_prediction": {
+    "car": 0.3,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.1,
+    "rationale": "Given the cohort is from small-town/village areas and undertook an aircraft journey, it's likely some used a car for onward travel, and some for return. Local public transport use would be lower, and long-distance rail even less probable for this group."
+  },
+  "prediction": {
+    "car": 0.3,
+    "local_pt": 0.2,
+    "long_distance_rail": 0.1,
+    "rationale": "Given the cohort is from small-town/village areas and undertook an aircraft journey, it's likely some used a car for onward travel, and some for return. Local public transport use would be lower, and long-distance rail even less probable for this group."
+  },
+  "normalization": {
+    "sum_before": 0.6,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:22:24.953412+00:00",
+  "cost_exceeded_reservation": false
+}

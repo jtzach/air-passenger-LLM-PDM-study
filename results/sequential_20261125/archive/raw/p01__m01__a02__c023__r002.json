@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m01__a02__c023__r002",
+  "block_id": "p01__m01__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__fd46cf332878",
+  "round": 2,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "8eaa01fcd99fb1930ba22383ae423b5e68e77455bbde253ab96968bcc12c7781",
+  "started_utc": "2026-11-25T14:23:42.935726+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:23:44.608354+00:00",
+      "cost_usd": 2.404e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.404e-05,
+  "reservation_upper_bound_usd": 0.00036522000000000003,
+  "response_sha256": "a630daa168884f0204cdb8113881b57b1e6c7e2303f9591d390a28806b1a4b41",
+  "response": {
+    "id": "gen-1795616623-to2rxiRkuOH1UamHppLT",
+    "object": "chat.completion",
+    "created": 1795616623,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.4, \"local_pt\": 0.25, \"long_distance_rail\": 0.18, \"rationale\": \"The cohort of 15+ night travelers likely experiences greater logistical complexity, suggesting a higher probability of using a car for parts of the journey, and potentially local public transport for airport transfers or local excursions. Train use is plausible for longer segments.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 491,
+      "completion_tokens": 88,
+      "total_tokens": 579,
+      "cost": 2.404e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.404e-05,
+        "upstream_inference_prompt_cost": 1.964e-05,
+        "upstream_inference_completions_cost": 4.4e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616623-to2rxiRkuOH1UamHppLT",
+  "raw_prediction": {
+    "car": 0.4,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.18,
+    "rationale": "The cohort of 15+ night travelers likely experiences greater logistical complexity, suggesting a higher probability of using a car for parts of the journey, and potentially local public transport for airport transfers or local excursions. Train use is plausible for longer segments."
+  },
+  "prediction": {
+    "car": 0.4,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.18,
+    "rationale": "The cohort of 15+ night travelers likely experiences greater logistical complexity, suggesting a higher probability of using a car for parts of the journey, and potentially local public transport for airport transfers or local excursions. Train use is plausible for longer segments."
+  },
+  "normalization": {
+    "sum_before": 0.8300000000000001,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:23:44.608354+00:00",
+  "cost_exceeded_reservation": false
+}

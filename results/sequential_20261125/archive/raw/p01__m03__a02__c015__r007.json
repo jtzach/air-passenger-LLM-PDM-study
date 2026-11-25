@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a02__c015__r007",
+  "block_id": "p01__m03__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzbegl_gr__18864b086b3b",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "7a43abee040784d43561f4911c4649e332c50cf211bbbed5c9d99dae168de124",
+  "started_utc": "2026-11-25T14:32:46.097298+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:32:57.153640+00:00",
+      "cost_usd": 0.00012408,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00012408,
+  "reservation_upper_bound_usd": 0.00212202,
+  "response_sha256": "1cee0e05309085e00efea8695de1b1ef1f6a6795558afdb3d4e3afbfa866fe8a",
+  "response": {
+    "id": "gen-1795617167-h6AXNolZna9bWfR5dFc5",
+    "object": "chat.completion",
+    "created": 1795617167,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Higher car use likely due to household travel; shared vehicles facilitate group access. Public transport use may decrease with more companions, especially for luggage and coordination.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 473,
+      "completion_tokens": 73,
+      "total_tokens": 546,
+      "cost": 0.00012408,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00012408,
+        "upstream_inference_prompt_cost": 6.3855e-05,
+        "upstream_inference_completions_cost": 6.0225e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795617167-h6AXNolZna9bWfR5dFc5",
+  "raw_prediction": {
+    "car": 0.65,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Higher car use likely due to household travel; shared vehicles facilitate group access. Public transport use may decrease with more companions, especially for luggage and coordination."
+  },
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Higher car use likely due to household travel; shared vehicles facilitate group access. Public transport use may decrease with more companions, especially for luggage and coordination."
+  },
+  "normalization": {
+    "sum_before": 0.93,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:32:57.153640+00:00",
+  "cost_exceeded_reservation": false
+}

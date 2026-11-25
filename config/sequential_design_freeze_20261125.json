@@ -1,0 +1,14 @@
+{
+  "recorded_utc": "2026-11-25T14:25:21.608154+00:00",
+  "phase": "execution started; no scientific results used to change protocol",
+  "run_plan_sha256": "09032d51b5ec0bbb0d5c7d0483f146af07e5296e5a49bfe6552cb52b48daa9d7",
+  "files": {
+    "src/run_sequential_experiment.py": "a38dd311dce4b5afa5004d3e22e06e71ba307e0172569b30ec1a02939c80ce02",
+    "src/sequential_inference.py": "a863507d6913e7862af1b9e19d0dd02cefef603de1c9059f074c0cf5c033a45b",
+    "src/prepare_sequential_study.py": "88373aea2c1f119498d94690450e285e7844ce7641081bc59cdcb754fe040933",
+    "src/prepare_fmg_benchmark.py": "c4a3671ae9b92fa9e59d3806752b4f320498f61158bb6f5a17666a38028e468e",
+    "config/sequential_prompt_library_20261125.json": "02dd415ee6145fee37eb7f1ffb4f8a0bf9b5286528d0959884d7c1b08c96ff45",
+    "config/sequential_design_20261125.json": "874cb1e88a423b9adbf2fab285953284a58f72fc0a9e9a838279a0131f7d522e",
+    "docs/SEQUENTIAL_PROTOCOL_20261125.md": "9dc57fa7d4fab046ff7aa8b8e530e3401c2c03ef8c54b6159cc7b43cdc8d73c6"
+  }
+}

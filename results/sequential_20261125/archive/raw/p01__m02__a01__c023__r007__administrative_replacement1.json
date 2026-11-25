@@ -1,0 +1,100 @@
+{
+  "task_id": "p01__m02__a01__c023__r007__administrative_replacement1",
+  "block_id": "p01__m02__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__fd46cf332878",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "supersedes_task_id": "p01__m02__a01__c023__r007",
+  "request_sha256": "640699bba5c70be7fbbcfc920c85626c4056575a0c4e7afda7737ffae39ae57d",
+  "started_utc": "2026-11-25T17:33:54.151203+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:33:55.701339+00:00",
+      "cost_usd": 0.000286,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000286,
+  "reservation_upper_bound_usd": 0.0047988,
+  "response_sha256": "82c85e7e53b01951ab4abc6ad17a34f1ecdf8b46a55bd54182329c0646dc691c",
+  "response": {
+    "id": "gen-1795628033-GiNiebjJ5lvwWucxQUue",
+    "object": "chat.completion",
+    "created": 1795628033,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.7,\n  \"local_pt\": 0.6,\n  \"long_distance_rail\": 0.3,\n  \"rationale\": \"Long trips with 15+ nights likely use cars for airport access and local travel; local public transport commonly connects to airports and urban areas; some use long-distance trains as alternative or feeder to flights.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 395,
+      "completion_tokens": 80,
+      "total_tokens": 475,
+      "cost": 0.000286,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000286,
+        "upstream_inference_prompt_cost": 0.000158,
+        "upstream_inference_completions_cost": 0.000128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795628033-GiNiebjJ5lvwWucxQUue",
+  "raw_prediction": {
+    "car": 0.7,
+    "local_pt": 0.6,
+    "long_distance_rail": 0.3,
+    "rationale": "Long trips with 15+ nights likely use cars for airport access and local travel; local public transport commonly connects to airports and urban areas; some use long-distance trains as alternative or feeder to flights."
+  },
+  "prediction": {
+    "car": 0.7,
+    "local_pt": 0.6,
+    "long_distance_rail": 0.3,
+    "rationale": "Long trips with 15+ nights likely use cars for airport access and local travel; local public transport commonly connects to airports and urban areas; some use long-distance trains as alternative or feeder to flights."
+  },
+  "normalization": {
+    "sum_before": 1.5999999999999999,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:33:55.702345+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a01__c008__r008",
+  "block_id": "p01__m03__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "unanchored",
+  "card_id": "reise__RegioStaR7__7b0e1c4f102a",
+  "round": 8,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "9ace8730bb83f353571be4f2becd70194b6b7491abf78569221fe8b9b6cc61d1",
+  "started_utc": "2026-11-25T17:36:10.915145+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:36:20.341697+00:00",
+      "cost_usd": 0.000125355,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000125355,
+  "reservation_upper_bound_usd": 0.0020098800000000003,
+  "response_sha256": "cbc744a74b3aa160ea6f818a8a33694da1ed99abfb2b84d30b43231256e08d57",
+  "response": {
+    "id": "gen-1795628170-KpeJSmFF5mEHLDMzW59R",
+    "object": "chat.completion",
+    "created": 1795628170,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.75,\n  \"local_pt\": 0.4,\n  \"long_distance_rail\": 0.2,\n  \"rationale\": \"Urban residents in metropolises often use cars for flexible airport access. Public transport is well-developed but less dominant for time-sensitive flights. Long-distance rail competes less when flights are already chosen, reducing its supplementary role.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 403,
+      "completion_tokens": 86,
+      "total_tokens": 489,
+      "cost": 0.000125355,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000125355,
+        "upstream_inference_prompt_cost": 5.4405e-05,
+        "upstream_inference_completions_cost": 7.095e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795628170-KpeJSmFF5mEHLDMzW59R",
+  "raw_prediction": {
+    "car": 0.75,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.2,
+    "rationale": "Urban residents in metropolises often use cars for flexible airport access. Public transport is well-developed but less dominant for time-sensitive flights. Long-distance rail competes less when flights are already chosen, reducing its supplementary role."
+  },
+  "prediction": {
+    "car": 0.75,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.2,
+    "rationale": "Urban residents in metropolises often use cars for flexible airport access. Public transport is well-developed but less dominant for time-sensitive flights. Long-distance rail competes less when flights are already chosen, reducing its supplementary role."
+  },
+  "normalization": {
+    "sum_before": 1.35,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:36:20.341697+00:00",
+  "cost_exceeded_reservation": false
+}

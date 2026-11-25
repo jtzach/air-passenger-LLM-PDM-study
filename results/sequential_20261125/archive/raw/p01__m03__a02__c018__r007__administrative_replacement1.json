@@ -1,0 +1,100 @@
+{
+  "task_id": "p01__m03__a02__c018__r007__administrative_replacement1",
+  "block_id": "p01__m03__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__6bcea89383ae",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "supersedes_task_id": "p01__m03__a02__c018__r007",
+  "request_sha256": "15eabc67b13b7f18b5c7133f610e1a2a812885fa9e9478ae4f0f215e22ada453",
+  "started_utc": "2026-11-25T17:35:10.466772+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:35:20.776305+00:00",
+      "cost_usd": 0.000127515,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000127515,
+  "reservation_upper_bound_usd": 0.00212034,
+  "response_sha256": "4823bcde2673be8d33ba522aac284297c49959a2f35de32d1b6b2d824e156c24",
+  "response": {
+    "id": "gen-1795628109-hTATmc8y4yNApV1LySMu",
+    "object": "chat.completion",
+    "created": 1795628109,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Shorter trips may favor car access for convenience, reducing reliance on local public and long-distance rail. Two-night stays suggest trip purpose may prioritize flexibility over public transport use.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 474,
+      "completion_tokens": 77,
+      "total_tokens": 551,
+      "cost": 0.000127515,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000127515,
+        "upstream_inference_prompt_cost": 6.399e-05,
+        "upstream_inference_completions_cost": 6.3525e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795628109-hTATmc8y4yNApV1LySMu",
+  "raw_prediction": {
+    "car": 0.45,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Shorter trips may favor car access for convenience, reducing reliance on local public and long-distance rail. Two-night stays suggest trip purpose may prioritize flexibility over public transport use."
+  },
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Shorter trips may favor car access for convenience, reducing reliance on local public and long-distance rail. Two-night stays suggest trip purpose may prioritize flexibility over public transport use."
+  },
+  "normalization": {
+    "sum_before": 0.73,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:35:20.776305+00:00",
+  "cost_exceeded_reservation": false
+}

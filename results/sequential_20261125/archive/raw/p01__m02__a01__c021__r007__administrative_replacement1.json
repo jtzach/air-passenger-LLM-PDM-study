@@ -1,0 +1,100 @@
+{
+  "task_id": "p01__m02__a01__c021__r007__administrative_replacement1",
+  "block_id": "p01__m02__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__ef1ad3950de1",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "supersedes_task_id": "p01__m02__a01__c021__r007",
+  "request_sha256": "ce01c07e7beb356903e8a3037b6251d228dbe786f0acf8fce4a5767b91e0b637",
+  "started_utc": "2026-11-25T17:33:50.884717+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:33:52.732911+00:00",
+      "cost_usd": 0.0002756,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002756,
+  "reservation_upper_bound_usd": 0.0047868,
+  "response_sha256": "bc770b4d2e1bac4d39b3d72b5cd03db53006180c216bf232bc3ba28d9df16a10",
+  "response": {
+    "id": "gen-1795628030-s3MDL6HfElfU0evorn0L",
+    "object": "chat.completion",
+    "created": 1795628030,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.6,\n  \"local_pt\": 0.5,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"Short overnight trips with flights often involve car access to airports; local public transit is common for urban connections; long-distance rail less likely but possible as alternative or feeder mode.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 393,
+      "completion_tokens": 74,
+      "total_tokens": 467,
+      "cost": 0.0002756,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002756,
+        "upstream_inference_prompt_cost": 0.0001572,
+        "upstream_inference_completions_cost": 0.0001184
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795628030-s3MDL6HfElfU0evorn0L",
+  "raw_prediction": {
+    "car": 0.6,
+    "local_pt": 0.5,
+    "long_distance_rail": 0.15,
+    "rationale": "Short overnight trips with flights often involve car access to airports; local public transit is common for urban connections; long-distance rail less likely but possible as alternative or feeder mode."
+  },
+  "prediction": {
+    "car": 0.6,
+    "local_pt": 0.5,
+    "long_distance_rail": 0.15,
+    "rationale": "Short overnight trips with flights often involve car access to airports; local public transit is common for urban connections; long-distance rail less likely but possible as alternative or feeder mode."
+  },
+  "normalization": {
+    "sum_before": 1.25,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:33:52.732911+00:00",
+  "cost_exceeded_reservation": false
+}

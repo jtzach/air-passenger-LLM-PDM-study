@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a01__c002__r009",
+  "block_id": "p01__m03__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "unanchored",
+  "card_id": "reise__anzauto_gr1__79ed954bbe2c",
+  "round": 9,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "8de2aee7386fdc4778dfd7918b694784e039f80a000990ae0e8b85f3e1b466b1",
+  "started_utc": "2026-11-25T17:38:25.734104+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:38:31.688484+00:00",
+      "cost_usd": 0.000116415,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000116415,
+  "reservation_upper_bound_usd": 0.00200526,
+  "response_sha256": "19edd0ff50406b343d173d534322a81d7bda0f4ae324593c745c2196c67286a2",
+  "response": {
+    "id": "gen-1795628305-L5yRbMxAE5xmECFRxCyC",
+    "object": "chat.completion",
+    "created": 1795628305,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.85,\n  \"local_pt\": 0.3,\n  \"long_distance_rail\": 0.2,\n  \"rationale\": \"High car availability increases car use likelihood for access or egress. Long-distance rail and local public transport are less likely due to preference for car convenience among multi-car households.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 404,
+      "completion_tokens": 75,
+      "total_tokens": 479,
+      "cost": 0.000116415,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000116415,
+        "upstream_inference_prompt_cost": 5.454e-05,
+        "upstream_inference_completions_cost": 6.1875e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795628305-L5yRbMxAE5xmECFRxCyC",
+  "raw_prediction": {
+    "car": 0.85,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.2,
+    "rationale": "High car availability increases car use likelihood for access or egress. Long-distance rail and local public transport are less likely due to preference for car convenience among multi-car households."
+  },
+  "prediction": {
+    "car": 0.85,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.2,
+    "rationale": "High car availability increases car use likelihood for access or egress. Long-distance rail and local public transport are less likely due to preference for car convenience among multi-car households."
+  },
+  "normalization": {
+    "sum_before": 1.35,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:38:31.688484+00:00",
+  "cost_exceeded_reservation": false
+}

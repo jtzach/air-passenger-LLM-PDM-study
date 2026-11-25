@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m01__a01__c020__r001",
+  "block_id": "p01__m01__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__9ee7f61bb0c0",
+  "round": 1,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "c674db52d3db299fcf552fe0afe807e0ec29c34ae8ba28241766e3652911c04c",
+  "started_utc": "2026-11-25T14:22:26.713743+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:22:28.393965+00:00",
+      "cost_usd": 1.736e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 1.736e-05,
+  "reservation_upper_bound_usd": 0.00033126,
+  "response_sha256": "54e7dd273549a4eb16a7d87e4c4964082c05e9324d631b6c24e9360dcbefc93a",
+  "response": {
+    "id": "gen-1795616546-Sc2OmEzOkrGh501NkVbV",
+    "object": "chat.completion",
+    "created": 1795616546,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.2, \"local_pt\": 0.3, \"long_distance_rail\": 0.1, \"rationale\": \"Given three overnight trips, some travelers likely combined air travel with ground transport for part of the journey. Car use is plausible for shorter distances, local public transport for connections, and long-distance rail for longer segments.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 414,
+      "completion_tokens": 80,
+      "total_tokens": 494,
+      "cost": 1.736e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.736e-05,
+        "upstream_inference_prompt_cost": 1.336e-05,
+        "upstream_inference_completions_cost": 4e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616546-Sc2OmEzOkrGh501NkVbV",
+  "raw_prediction": {
+    "car": 0.2,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "Given three overnight trips, some travelers likely combined air travel with ground transport for part of the journey. Car use is plausible for shorter distances, local public transport for connections, and long-distance rail for longer segments."
+  },
+  "prediction": {
+    "car": 0.2,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "Given three overnight trips, some travelers likely combined air travel with ground transport for part of the journey. Car use is plausible for shorter distances, local public transport for connections, and long-distance rail for longer segments."
+  },
+  "normalization": {
+    "sum_before": 0.6,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:22:28.393965+00:00",
+  "cost_exceeded_reservation": false
+}

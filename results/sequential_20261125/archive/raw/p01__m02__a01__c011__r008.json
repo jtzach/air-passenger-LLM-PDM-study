@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m02__a01__c011__r008",
+  "block_id": "p01__m02__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "unanchored",
+  "card_id": "reise__RegioStaR7__cae80c90607c",
+  "round": 8,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "4281c4eeee9ea1306c368e56918bdf35e7f334ff9de1e56302989cc8c6432dc1",
+  "started_utc": "2026-11-25T17:36:37.068482+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:36:38.423242+00:00",
+      "cost_usd": 0.0002804,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002804,
+  "reservation_upper_bound_usd": 0.004824,
+  "response_sha256": "e0b6338ab048fb98aa5cd6663ef660456087f92d36c361dfe3a2d354a9cec431",
+  "response": {
+    "id": "gen-1795628196-GkfhWeomwJZGbiUsR4jp",
+    "object": "chat.completion",
+    "created": 1795628196,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.7,\n  \"local_pt\": 0.6,\n  \"long_distance_rail\": 0.3,\n  \"rationale\": \"Medium towns often require car or local transit to airports; some use regional trains for access or return. Long-distance rail less common but relevant for multimodal trips involving rail-air connections.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 397,
+      "completion_tokens": 76,
+      "total_tokens": 473,
+      "cost": 0.0002804,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002804,
+        "upstream_inference_prompt_cost": 0.0001588,
+        "upstream_inference_completions_cost": 0.0001216
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795628196-GkfhWeomwJZGbiUsR4jp",
+  "raw_prediction": {
+    "car": 0.7,
+    "local_pt": 0.6,
+    "long_distance_rail": 0.3,
+    "rationale": "Medium towns often require car or local transit to airports; some use regional trains for access or return. Long-distance rail less common but relevant for multimodal trips involving rail-air connections."
+  },
+  "prediction": {
+    "car": 0.7,
+    "local_pt": 0.6,
+    "long_distance_rail": 0.3,
+    "rationale": "Medium towns often require car or local transit to airports; some use regional trains for access or return. Long-distance rail less common but relevant for multimodal trips involving rail-air connections."
+  },
+  "normalization": {
+    "sum_before": 1.5999999999999999,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:36:38.423242+00:00",
+  "cost_exceeded_reservation": false
+}

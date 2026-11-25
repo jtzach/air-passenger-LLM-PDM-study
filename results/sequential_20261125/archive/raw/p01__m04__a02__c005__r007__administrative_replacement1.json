@@ -1,0 +1,100 @@
+{
+  "task_id": "p01__m04__a02__c005__r007__administrative_replacement1",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzauto_gr1__faec8c191aa2",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "supersedes_task_id": "p01__m04__a02__c005__r007",
+  "request_sha256": "af3dc5b7fbb2e299db7aee78d7b8d4a9576edd286899eb287d794e4dbaac706e",
+  "started_utc": "2026-11-25T17:33:52.758351+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:33:54.278091+00:00",
+      "cost_usd": 0.001542,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001542,
+  "reservation_upper_bound_usd": 0.025505999999999997,
+  "response_sha256": "66b7b080e77a0aa39e5b435573718873f2bc7f97771ac9b49467e3acbde66b3f",
+  "response": {
+    "id": "gen-1795628032-rxCjeGHYBt7DeWikjk0O",
+    "object": "chat.completion",
+    "created": 1795628032,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.48,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.09,\n  \"rationale\": \"Households with 2 cars likely have higher car access and preference, raising car use above average. This may slightly reduce reliance on public/local and long-distance rail modes for airport access or egress.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 451,
+      "completion_tokens": 80,
+      "total_tokens": 531,
+      "cost": 0.001542,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001542,
+        "upstream_inference_prompt_cost": 0.000902,
+        "upstream_inference_completions_cost": 0.00064
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628032-rxCjeGHYBt7DeWikjk0O",
+  "raw_prediction": {
+    "car": 0.48,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.09,
+    "rationale": "Households with 2 cars likely have higher car access and preference, raising car use above average. This may slightly reduce reliance on public/local and long-distance rail modes for airport access or egress."
+  },
+  "prediction": {
+    "car": 0.48,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.09,
+    "rationale": "Households with 2 cars likely have higher car access and preference, raising car use above average. This may slightly reduce reliance on public/local and long-distance rail modes for airport access or egress."
+  },
+  "normalization": {
+    "sum_before": 0.75,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:33:54.278091+00:00",
+  "cost_exceeded_reservation": false
+}

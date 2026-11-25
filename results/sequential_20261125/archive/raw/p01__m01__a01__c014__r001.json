@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m01__a01__c014__r001",
+  "block_id": "p01__m01__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "unanchored",
+  "card_id": "reise__anzbegl_gr__154f6eb18583",
+  "round": 1,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "eb22d463d615a0f7c8f03db3ccc99a4102e672b83354ecea78fca804afd69948",
+  "started_utc": "2026-11-25T14:22:24.504727+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:22:26.078417+00:00",
+      "cost_usd": 1.708e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 1.708e-05,
+  "reservation_upper_bound_usd": 0.00033173999999999996,
+  "response_sha256": "42c7d69b600b32f1cd1692e04d4bb5c991b6db10c031abab39e9b4cfad0b6f51",
+  "response": {
+    "id": "gen-1795616544-hCXW3Vk498l3rS6iYBiU",
+    "object": "chat.completion",
+    "created": 1795616544,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.2, \"local_pt\": 0.3, \"long_distance_rail\": 0.1, \"rationale\": \"Given no companions and an overnight flight, individuals likely used a car for local travel before/after the flight, and public transport for shorter trips. Long-distance rail is less probable without companions.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 412,
+      "completion_tokens": 76,
+      "total_tokens": 488,
+      "cost": 1.708e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 160,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.708e-05,
+        "upstream_inference_prompt_cost": 1.328e-05,
+        "upstream_inference_completions_cost": 3.8e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616544-hCXW3Vk498l3rS6iYBiU",
+  "raw_prediction": {
+    "car": 0.2,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "Given no companions and an overnight flight, individuals likely used a car for local travel before/after the flight, and public transport for shorter trips. Long-distance rail is less probable without companions."
+  },
+  "prediction": {
+    "car": 0.2,
+    "local_pt": 0.3,
+    "long_distance_rail": 0.1,
+    "rationale": "Given no companions and an overnight flight, individuals likely used a car for local travel before/after the flight, and public transport for shorter trips. Long-distance rail is less probable without companions."
+  },
+  "normalization": {
+    "sum_before": 0.6,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:22:26.078417+00:00",
+  "cost_exceeded_reservation": false
+}

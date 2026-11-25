@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c024__r011",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "no_persona",
+  "round": 11,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "dc269f9f09816549ba7c50c7524f4e6b37c750bbd66a9fcf3c00bbf75376e78b",
+  "started_utc": "2026-11-25T17:40:00.105670+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:40:03.114042+00:00",
+      "cost_usd": 0.001516,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001516,
+  "reservation_upper_bound_usd": 0.024342,
+  "response_sha256": "dccf969289b9df81bf08a2db70cae6f110655a448894994db7e86b8cf2d1f84d",
+  "response": {
+    "id": "gen-1795628399-92UE4boW6fbfPCkoJdW5",
+    "object": "chat.completion",
+    "created": 1795628399,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.38,\n  \"local_pt\": 0.22,\n  \"long_distance_rail\": 0.12,\n  \"rationale\": \"With no cohort-specific details, population-level behaviour likely holds: diverse German residents flying overnight show mixed access/egress patterns. Each ground mode’s probability aligns closely with general rates, reflecting varied urban/rural origins and airport connections.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 414,
+      "completion_tokens": 86,
+      "total_tokens": 500,
+      "cost": 0.001516,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001516,
+        "upstream_inference_prompt_cost": 0.000828,
+        "upstream_inference_completions_cost": 0.000688
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628399-92UE4boW6fbfPCkoJdW5",
+  "raw_prediction": {
+    "car": 0.38,
+    "local_pt": 0.22,
+    "long_distance_rail": 0.12,
+    "rationale": "With no cohort-specific details, population-level behaviour likely holds: diverse German residents flying overnight show mixed access/egress patterns. Each ground mode’s probability aligns closely with general rates, reflecting varied urban/rural origins and airport connections."
+  },
+  "prediction": {
+    "car": 0.38,
+    "local_pt": 0.22,
+    "long_distance_rail": 0.12,
+    "rationale": "With no cohort-specific details, population-level behaviour likely holds: diverse German residents flying overnight show mixed access/egress patterns. Each ground mode’s probability aligns closely with general rates, reflecting varied urban/rural origins and airport connections."
+  },
+  "normalization": {
+    "sum_before": 0.72,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:40:03.114042+00:00",
+  "cost_exceeded_reservation": false
+}

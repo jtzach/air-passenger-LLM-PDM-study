@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c001__r014",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzauto_gr1__296e9849dc3d",
+  "round": 14,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "afdd7fc41ab4ebbc251fe1e0576a9141f76a5310667e7b5e928ed25fde2c71bc",
+  "started_utc": "2026-11-25T17:41:37.802496+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:41:38.938909+00:00",
+      "cost_usd": 0.001564,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001564,
+  "reservation_upper_bound_usd": 0.025505999999999997,
+  "response_sha256": "a0c7d367fd7b7c5a34d23d8098f38e069f5a718b4693d389e5c2bb6e702ccfa7",
+  "response": {
+    "id": "gen-1795628497-On1G47uzQcdPlZyOciWs",
+    "object": "chat.completion",
+    "created": 1795628497,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.15,\n  \"local_pt\": 0.32,\n  \"long_distance_rail\": 0.20,\n  \"rationale\": \"Without a household car, car use falls—mainly to lifts, taxis, or rentals. Reliance on public transport rises, so both local and long-distance rail rates are likely above the all-population average.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 450,
+      "completion_tokens": 83,
+      "total_tokens": 533,
+      "cost": 0.001564,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001564,
+        "upstream_inference_prompt_cost": 0.0009,
+        "upstream_inference_completions_cost": 0.000664
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628497-On1G47uzQcdPlZyOciWs",
+  "raw_prediction": {
+    "car": 0.15,
+    "local_pt": 0.32,
+    "long_distance_rail": 0.2,
+    "rationale": "Without a household car, car use falls—mainly to lifts, taxis, or rentals. Reliance on public transport rises, so both local and long-distance rail rates are likely above the all-population average."
+  },
+  "prediction": {
+    "car": 0.15,
+    "local_pt": 0.32,
+    "long_distance_rail": 0.2,
+    "rationale": "Without a household car, car use falls—mainly to lifts, taxis, or rentals. Reliance on public transport rises, so both local and long-distance rail rates are likely above the all-population average."
+  },
+  "normalization": {
+    "sum_before": 0.67,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:41:38.938909+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,584 @@
+{
+  "updated_utc": "2026-11-25T14:32:34.898324+00:00",
+  "round": 6,
+  "accounted_cost_usd": 0.7967033050000002,
+  "global_stop": null,
+  "blocks": {
+    "p01__m01__a01": {
+      "block_id": "p01__m01__a01",
+      "panel_id": "mid_2023",
+      "model_id": "google/gemma-3-4b-it",
+      "arm": "unanchored",
+      "baseline_mae_pp": 4.162031865469822,
+      "score_support_upper_pp": 76.1568692017306,
+      "complete_rounds": 0,
+      "round_scores": [],
+      "looks": [],
+      "halt_reason": "incomplete_round_invalid_output",
+      "identity": [
+        "Parasail",
+        "google/gemma-3-4b-it"
+      ],
+      "diagnostics": [],
+      "inference_assumptions_ok": true,
+      "incomplete_round": 1
+    },
+    "p01__m01__a02": {
+      "block_id": "p01__m01__a02",
+      "panel_id": "mid_2023",
+      "model_id": "google/gemma-3-4b-it",
+      "arm": "overall_rate_anchored",
+      "baseline_mae_pp": 4.162031865469822,
+      "score_support_upper_pp": 76.1568692017306,
+      "complete_rounds": 2,
+      "round_scores": [
+        {
+          "round": 1,
+          "mae_pp": 5.853948706129935,
+          "no_card_mae_pp": 4.935225796810767,
+          "baseline_gain_pp": -1.691916840660113,
+          "no_card_gain_pp": -0.9187229093191682
+        },
+        {
+          "round": 2,
+          "mae_pp": 5.749220959720228,
+          "no_card_mae_pp": 4.935225796810767,
+          "baseline_gain_pp": -1.587189094250406,
+          "no_card_gain_pp": -0.8139951629094613
+        }
+      ],
+      "looks": [],
+      "halt_reason": "incomplete_round_invalid_output",
+      "identity": [
+        "Parasail",
+        "google/gemma-3-4b-it"
+      ],
+      "diagnostics": [],
+      "inference_assumptions_ok": true,
+      "incomplete_round": 3
+    },
+    "p01__m02__a01": {
+      "block_id": "p01__m02__a01",
+      "panel_id": "mid_2023",
+      "model_id": "openai/gpt-4.1-mini",
+      "arm": "unanchored",
+      "baseline_mae_pp": 4.162031865469822,
+      "score_support_upper_pp": 76.1568692017306,
+      "complete_rounds": 6,
+      "round_scores": [
+        {
+          "round": 1,
+          "mae_pp": 24.989092912100176,
+          "no_card_mae_pp": 25.967814749218594,
+          "baseline_gain_pp": -20.827061046630355,
+          "no_card_gain_pp": 0.9787218371184174
+        },
+        {
+          "round": 2,
+          "mae_pp": 26.038075907556678,
+          "no_card_mae_pp": 30.96781474921859,
+          "baseline_gain_pp": -21.876044042086857,
+          "no_card_gain_pp": 4.929738841661912
+        },
+        {
+          "round": 3,
+          "mae_pp": 26.00996551481406,
+          "no_card_mae_pp": 29.325715638622718,
+          "baseline_gain_pp": -21.847933649344238,
+          "no_card_gain_pp": 3.315750123808659
+        },
+        {
+          "round": 4,
+          "mae_pp": 24.303807428635412,
+          "no_card_mae_pp": 20.967814749218594,
+          "baseline_gain_pp": -20.14177556316559,
+          "no_card_gain_pp": -3.335992679416819
+        },
+        {
+          "round": 5,
+          "mae_pp": 25.93846892486021,
+          "no_card_mae_pp": 35.9678147492186,
+          "baseline_gain_pp": -21.77643705939039,
+          "no_card_gain_pp": 10.029345824358387
+        },
+        {
+          "round": 6,
+          "mae_pp": 25.91004930598307,
+          "no_card_mae_pp": 21.52738365354527,
+          "baseline_gain_pp": -21.748017440513248,
+          "no_card_gain_pp": -4.382665652437797
+        }
+      ],
+      "looks": [],
+      "halt_reason": null,
+      "identity": [
+        "OpenAI",
+        "openai/gpt-4.1-mini"
+      ],
+      "diagnostics": [],
+      "inference_assumptions_ok": true
+    },
+    "p01__m02__a02": {
+      "block_id": "p01__m02__a02",
+      "panel_id": "mid_2023",
+      "model_id": "openai/gpt-4.1-mini",
+      "arm": "overall_rate_anchored",
+      "baseline_mae_pp": 4.162031865469822,
+      "score_support_upper_pp": 76.1568692017306,
+      "complete_rounds": 6,
+      "round_scores": [
+        {
+          "round": 1,
+          "mae_pp": 5.28721643733572,
+          "no_card_mae_pp": 4.721635213604256,
+          "baseline_gain_pp": -1.1251845718658986,
+          "no_card_gain_pp": -0.5655812237314644
+        },
+        {
+          "round": 2,
+          "mae_pp": 6.0446082813563855,
+          "no_card_mae_pp": 4.807259512575223,
+          "baseline_gain_pp": -1.8825764158865637,
+          "no_card_gain_pp": -1.2373487687811622
+        },
+        {
+          "round": 3,
+          "mae_pp": 5.812977719703082,
+          "no_card_mae_pp": 4.231515343981136,
+          "baseline_gain_pp": -1.6509458542332602,
+          "no_card_gain_pp": -1.5814623757219461
+        },
+        {
+          "round": 4,
+          "mae_pp": 5.7151935257027535,
+          "no_card_mae_pp": 5.008574094359842,
+          "baseline_gain_pp": -1.5531616602329317,
+          "no_card_gain_pp": -0.7066194313429115
+        },
+        {
+          "round": 5,
+          "mae_pp": 5.575532015247043,
+          "no_card_mae_pp": 4.6830373051373355,
+          "baseline_gain_pp": -1.4135001497772208,
+          "no_card_gain_pp": -0.8924947101097072
+        },
+        {
+          "round": 6,
+          "mae_pp": 5.928155839029177,
+          "no_card_mae_pp": 4.920109278198373,
+          "baseline_gain_pp": -1.7661239735593552,
+          "no_card_gain_pp": -1.0080465608308042
+        }
+      ],
+      "looks": [],
+      "halt_reason": null,
+      "identity": [
+        "OpenAI",
+        "openai/gpt-4.1-mini"
+      ],
+      "diagnostics": [],
+      "inference_assumptions_ok": true
+    },
+    "p01__m03__a01": {
+      "block_id": "p01__m03__a01",
+      "panel_id": "mid_2023",
+      "model_id": "qwen/qwen3-235b-a22b-2507",
+      "arm": "unanchored",
+      "baseline_mae_pp": 4.162031865469822,
+      "score_support_upper_pp": 76.1568692017306,
+      "complete_rounds": 6,
+      "round_scores": [
+        {
+          "round": 1,
+          "mae_pp": 20.026865371850366,
+          "no_card_mae_pp": 21.112103033485095,
+          "baseline_gain_pp": -15.864833506380545,
+          "no_card_gain_pp": 1.0852376616347286
+        },
+        {
+          "round": 2,
+          "mae_pp": 20.172758427888446,
+          "no_card_mae_pp": 19.470003922889216,
+          "baseline_gain_pp": -16.010726562418625,
+          "no_card_gain_pp": -0.7027545049992305
+        },
+        {
+          "round": 3,
+          "mae_pp": 20.54301108808756,
+          "no_card_mae_pp": 21.112103033485095,
+          "baseline_gain_pp": -16.38097922261774,
+          "no_card_gain_pp": 0.5690919453975347
+        },
+        {
+          "round": 4,
+          "mae_pp": 19.88946564561873,
+          "no_card_mae_pp": 16.254713391113647,
+          "baseline_gain_pp": -15.72743378014891,
+          "no_card_gain_pp": -3.6347522545050843
+        },
+        {
+          "round": 5,
+          "mae_pp": 19.982109166200406,
+          "no_card_mae_pp": 13.190785364007146,
+          "baseline_gain_pp": -15.820077300730585,
+          "no_card_gain_pp": -6.79132380219326
+        },
+        {
+          "round": 6,
+          "mae_pp": 20.39958604228233,
+          "no_card_mae_pp": 19.470003922889216,
+          "baseline_gain_pp": -16.23755417681251,
+          "no_card_gain_pp": -0.929582119393114
+        }
+      ],
+      "looks": [],
+      "halt_reason": null,
+      "identity": [
+        "DeepInfra",
+        "qwen/qwen3-235b-a22b-2507"
+      ],
+      "diagnostics": [],
+      "inference_assumptions_ok": true
+    },
+    "p01__m03__a02": {
+      "block_id": "p01__m03__a02",
+      "panel_id": "mid_2023",
+      "model_id": "qwen/qwen3-235b-a22b-2507",
+      "arm": "overall_rate_anchored",
+      "baseline_mae_pp": 4.162031865469822,
+      "score_support_upper_pp": 76.1568692017306,
+      "complete_rounds": 6,
+      "round_scores": [
+        {
+          "round": 1,
+          "mae_pp": 8.027193589015607,
+          "no_card_mae_pp": 4.16202751600975,
+          "baseline_gain_pp": -3.8651617235457847,
+          "no_card_gain_pp": -3.865166073005857
+        },
+        {
+          "round": 2,
+          "mae_pp": 8.09528675662497,
+          "no_card_mae_pp": 4.16202751600975,
+          "baseline_gain_pp": -3.9332548911551486,
+          "no_card_gain_pp": -3.9332592406152207
+        },
+        {
+          "round": 3,
+          "mae_pp": 7.579616725508549,
+          "no_card_mae_pp": 4.16202751600975,
+          "baseline_gain_pp": -3.417584860038727,
+          "no_card_gain_pp": -3.417589209498799
+        },
+        {
+          "round": 4,
+          "mae_pp": 7.490317055566871,
+          "no_card_mae_pp": 4.16202751600975,
+          "baseline_gain_pp": -3.3282851900970494,
+          "no_card_gain_pp": -3.3282895395571215
+        },
+        {
+          "round": 5,
+          "mae_pp": 7.535091389494008,
+          "no_card_mae_pp": 4.16202751600975,
+          "baseline_gain_pp": -3.3730595240241863,
+          "no_card_gain_pp": -3.3730638734842584
+        },
+        {
+          "round": 6,
+          "mae_pp": 7.985233698648384,
+          "no_card_mae_pp": 4.16202751600975,
+          "baseline_gain_pp": -3.8232018331785618,
+          "no_card_gain_pp": -3.823206182638634
+        }
+      ],
+      "looks": [],
+      "halt_reason": null,
+      "identity": [
+        "DeepInfra",
+        "qwen/qwen3-235b-a22b-2507"
+      ],
+      "diagnostics": [],
+      "inference_assumptions_ok": true
+    },
+    "p01__m04__a01": {
+      "block_id": "p01__m04__a01",
+      "panel_id": "mid_2023",
+      "model_id": "openai/gpt-4.1",
+      "arm": "unanchored",
+      "baseline_mae_pp": 4.162031865469822,
+      "score_support_upper_pp": 76.1568692017306,
+      "complete_rounds": 6,
+      "round_scores": [
+        {
+          "round": 1,
+          "mae_pp": 14.79604575869686,
+          "no_card_mae_pp": 15.01917846773837,
+          "baseline_gain_pp": -10.634013893227038,
+          "no_card_gain_pp": 0.2231327090415114
+        },
+        {
+          "round": 2,
+          "mae_pp": 14.770692682273062,
+          "no_card_mae_pp": 15.363629453899227,
+          "baseline_gain_pp": -10.60866081680324,
+          "no_card_gain_pp": 0.5929367716261655
+        },
+        {
+          "round": 3,
+          "mae_pp": 13.81999012554893,
+          "no_card_mae_pp": 12.843561898473107,
+          "baseline_gain_pp": -9.65795826007911,
+          "no_card_gain_pp": -0.9764282270758233
+        },
+        {
+          "round": 4,
+          "mae_pp": 13.657304445452692,
+          "no_card_mae_pp": 22.63448141588526,
+          "baseline_gain_pp": -9.49527257998287,
+          "no_card_gain_pp": 8.97717697043257
+        },
+        {
+          "round": 5,
+          "mae_pp": 13.256608470297913,
+          "no_card_mae_pp": 17.65904897195605,
+          "baseline_gain_pp": -9.094576604828092,
+          "no_card_gain_pp": 4.402440501658138
+        },
+        {
+          "round": 6,
+          "mae_pp": 13.714712124276035,
+          "no_card_mae_pp": 17.65904897195605,
+          "baseline_gain_pp": -9.552680258806213,
+          "no_card_gain_pp": 3.944336847680015
+        }
+      ],
+      "looks": [],
+      "halt_reason": null,
+      "identity": [
+        "OpenAI",
+        "openai/gpt-4.1"
+      ],
+      "diagnostics": [],
+      "inference_assumptions_ok": true
+    },
+    "p01__m04__a02": {
+      "block_id": "p01__m04__a02",
+      "panel_id": "mid_2023",
+      "model_id": "openai/gpt-4.1",
+      "arm": "overall_rate_anchored",
+      "baseline_mae_pp": 4.162031865469822,
+      "score_support_upper_pp": 76.1568692017306,
+      "complete_rounds": 6,
+      "round_scores": [
+        {
+          "round": 1,
+          "mae_pp": 3.330821352315943,
+          "no_card_mae_pp": 4.209000764783944,
+          "baseline_gain_pp": 0.831210513153879,
+          "no_card_gain_pp": 0.8781794124680014
+        },
+        {
+          "round": 2,
+          "mae_pp": 3.1653068687182895,
+          "no_card_mae_pp": 4.103718787535161,
+          "baseline_gain_pp": 0.9967249967515324,
+          "no_card_gain_pp": 0.9384119188168718
+        },
+        {
+          "round": 3,
+          "mae_pp": 3.3433435282712067,
+          "no_card_mae_pp": 4.103718787535161,
+          "baseline_gain_pp": 0.8186883371986151,
+          "no_card_gain_pp": 0.7603752592639546
+        },
+        {
+          "round": 4,
+          "mae_pp": 3.347545536405739,
+          "no_card_mae_pp": 4.103718787535161,
+          "baseline_gain_pp": 0.8144863290640827,
+          "no_card_gain_pp": 0.7561732511294221
+        },
+        {
+          "round": 5,
+          "mae_pp": 3.1084512435307112,
+          "no_card_mae_pp": 4.103718787535161,
+          "baseline_gain_pp": 1.0535806219391106,
+          "no_card_gain_pp": 0.99526754400445
+        },
+        {
+          "round": 6,
+          "mae_pp": 3.048035509990902,
+          "no_card_mae_pp": 4.103718787535161,
+          "baseline_gain_pp": 1.1139963554789198,
+          "no_card_gain_pp": 1.0556832775442593
+        }
+      ],
+      "looks": [],
+      "halt_reason": null,
+      "identity": [
+        "OpenAI",
+        "openai/gpt-4.1"
+      ],
+      "diagnostics": [],
+      "inference_assumptions_ok": true
+    },
+    "p02__m01__a01": {
+      "block_id": "p02__m01__a01",
+      "panel_id": "fmg_2025",
+      "model_id": "google/gemma-3-4b-it",
+      "arm": "unanchored",
+      "baseline_mae_pp": 2.673616200412777,
+      "score_support_upper_pp": 19.915050342840196,
+      "complete_rounds": 0,
+      "round_scores": [],
+      "looks": [],
+      "halt_reason": "incomplete_round_invalid_output",
+      "identity": null,
+      "diagnostics": [],
+      "inference_assumptions_ok": true,
+      "incomplete_round": 1
+    },
+    "p02__m02__a01": {
+      "block_id": "p02__m02__a01",
+      "panel_id": "fmg_2025",
+      "model_id": "openai/gpt-4.1-mini",
+      "arm": "unanchored",
+      "baseline_mae_pp": 2.673616200412777,
+      "score_support_upper_pp": 19.915050342840196,
+      "complete_rounds": 6,
+      "round_scores": [
+        {
+          "round": 1,
+          "mae_pp": 5.859636839718441,
+          "no_card_mae_pp": 5.082114385996656,
+          "baseline_gain_pp": -3.1860206393056636,
+          "no_card_gain_pp": -0.7775224537217849
+        },
+        {
+          "round": 2,
+          "mae_pp": 5.054291861770066,
+          "no_card_mae_pp": 5.078978613063468,
+          "baseline_gain_pp": -2.380675661357289,
+          "no_card_gain_pp": 0.0246867512934017
+        },
+        {
+          "round": 3,
+          "mae_pp": 5.697027075911059,
+          "no_card_mae_pp": 5.661341584778209,
+          "baseline_gain_pp": -3.023410875498282,
+          "no_card_gain_pp": -0.03568549113284991
+        },
+        {
+          "round": 4,
+          "mae_pp": 5.336923345778356,
+          "no_card_mae_pp": 6.36503690137151,
+          "baseline_gain_pp": -2.6633071453655788,
+          "no_card_gain_pp": 1.028113555593154
+        },
+        {
+          "round": 5,
+          "mae_pp": 5.099426555905065,
+          "no_card_mae_pp": 4.817703550434516,
+          "baseline_gain_pp": -2.4258103554922883,
+          "no_card_gain_pp": -0.28172300547054974
+        },
+        {
+          "round": 6,
+          "mae_pp": 5.644600613909004,
+          "no_card_mae_pp": 5.661341584778209,
+          "baseline_gain_pp": -2.970984413496227,
+          "no_card_gain_pp": 0.016740970869205007
+        }
+      ],
+      "looks": [],
+      "halt_reason": null,
+      "identity": [
+        "OpenAI",
+        "openai/gpt-4.1-mini"
+      ],
+      "diagnostics": [],
+      "inference_assumptions_ok": true
+    },
+    "p02__m03__a01": {
+      "block_id": "p02__m03__a01",
+      "panel_id": "fmg_2025",
+      "model_id": "qwen/qwen3-235b-a22b-2507",
+      "arm": "unanchored",
+      "baseline_mae_pp": 2.673616200412777,
+      "score_support_upper_pp": 19.915050342840196,
+      "complete_rounds": 0,
+      "round_scores": [],
+      "looks": [],
+      "halt_reason": "incomplete_round_invalid_output",
+      "identity": [
+        "DeepInfra",
+        "qwen/qwen3-235b-a22b-2507"
+      ],
+      "diagnostics": [],
+      "inference_assumptions_ok": true,
+      "incomplete_round": 1
+    },
+    "p02__m04__a01": {
+      "block_id": "p02__m04__a01",
+      "panel_id": "fmg_2025",
+      "model_id": "openai/gpt-4.1",
+      "arm": "unanchored",
+      "baseline_mae_pp": 2.673616200412777,
+      "score_support_upper_pp": 19.915050342840196,
+      "complete_rounds": 6,
+      "round_scores": [
+        {
+          "round": 1,
+          "mae_pp": 3.8846827718842984,
+          "no_card_mae_pp": 3.810806205040636,
+          "baseline_gain_pp": -1.2110665714715214,
+          "no_card_gain_pp": -0.0738765668436625
+        },
+        {
+          "round": 2,
+          "mae_pp": 4.4601630795214575,
+          "no_card_mae_pp": 3.797324626186337,
+          "baseline_gain_pp": -1.7865468791086805,
+          "no_card_gain_pp": -0.6628384533351204
+        },
+        {
+          "round": 3,
+          "mae_pp": 3.616459175199839,
+          "no_card_mae_pp": 3.708778709862782,
+          "baseline_gain_pp": -0.9428429747870619,
+          "no_card_gain_pp": 0.09231953466294307
+        },
+        {
+          "round": 4,
+          "mae_pp": 4.318795638351958,
+          "no_card_mae_pp": 3.973521931372496,
+          "baseline_gain_pp": -1.6451794379391806,
+          "no_card_gain_pp": -0.3452737069794618
+        },
+        {
+          "round": 5,
+          "mae_pp": 3.878031547375329,
+          "no_card_mae_pp": 4.072085473172584,
+          "baseline_gain_pp": -1.204415346962552,
+          "no_card_gain_pp": 0.1940539257972551
+        },
+        {
+          "round": 6,
+          "mae_pp": 4.576572829067187,
+          "no_card_mae_pp": 4.567121718735449,
+          "baseline_gain_pp": -1.90295662865441,
+          "no_card_gain_pp": -0.009451110331737844
+        }
+      ],
+      "looks": [],
+      "halt_reason": null,
+      "identity": [
+        "OpenAI",
+        "openai/gpt-4.1"
+      ],
+      "diagnostics": [],
+      "inference_assumptions_ok": true
+    }
+  }
+}

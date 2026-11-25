@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m02__a02__c002__r006",
+  "block_id": "p01__m02__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzauto_gr1__79ed954bbe2c",
+  "round": 6,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "252f1fd5361de841c0e0302034ec98ea18e35f5f3d879bfc37cc42f6f2ab3980",
+  "started_utc": "2026-11-25T14:30:52.505703+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:30:54.132538+00:00",
+      "cost_usd": 0.0002964,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0002964,
+  "reservation_upper_bound_usd": 0.0051167999999999995,
+  "response_sha256": "230ef59c1a7489bc701de2f45e5ac39c5b93aea0ca0506b7479ecc33897e5b5c",
+  "response": {
+    "id": "gen-1795617052-q8rXGxBP4HWYjVY8v55e",
+    "object": "chat.completion",
+    "created": 1795617052,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.65,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"More cars in the household likely increase car use for airport access; local PT use also rises for convenience; long-distance rail slightly above average as alternatives or connections.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 453,
+      "completion_tokens": 72,
+      "total_tokens": 525,
+      "cost": 0.0002964,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002964,
+        "upstream_inference_prompt_cost": 0.0001812,
+        "upstream_inference_completions_cost": 0.0001152
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795617052-q8rXGxBP4HWYjVY8v55e",
+  "raw_prediction": {
+    "car": 0.65,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.15,
+    "rationale": "More cars in the household likely increase car use for airport access; local PT use also rises for convenience; long-distance rail slightly above average as alternatives or connections."
+  },
+  "prediction": {
+    "car": 0.65,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.15,
+    "rationale": "More cars in the household likely increase car use for airport access; local PT use also rises for convenience; long-distance rail slightly above average as alternatives or connections."
+  },
+  "normalization": {
+    "sum_before": 1.15,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:30:54.132538+00:00",
+  "cost_exceeded_reservation": false
+}

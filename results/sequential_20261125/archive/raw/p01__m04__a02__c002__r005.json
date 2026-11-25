@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c002__r005",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzauto_gr1__79ed954bbe2c",
+  "round": 5,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "a2b6645ecdc7fcd1c73f7589936b3aaaca55340576bf36b8f54cefde6ae2ea09",
+  "started_utc": "2026-11-25T14:29:12.741786+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:29:15.344083+00:00",
+      "cost_usd": 0.001546,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001546,
+  "reservation_upper_bound_usd": 0.025554,
+  "response_sha256": "efa37b27bef9e1208b9e35048de03a62a1e5a90e0d74b5951ab3419807e0f2b4",
+  "response": {
+    "id": "gen-1795616953-8s3zxqUbvA7UgrmzELMH",
+    "object": "chat.completion",
+    "created": 1795616953,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.60,\n  \"local_pt\": 0.14,\n  \"long_distance_rail\": 0.06,\n  \"rationale\": \"Households with 4+ cars likely prefer driving for airport access over public transport, so car use rises. Public/local and long-distance rail fall since high car ownership suggests lower reliance on collective modes.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 453,
+      "completion_tokens": 80,
+      "total_tokens": 533,
+      "cost": 0.001546,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001546,
+        "upstream_inference_prompt_cost": 0.000906,
+        "upstream_inference_completions_cost": 0.00064
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616953-8s3zxqUbvA7UgrmzELMH",
+  "raw_prediction": {
+    "car": 0.6,
+    "local_pt": 0.14,
+    "long_distance_rail": 0.06,
+    "rationale": "Households with 4+ cars likely prefer driving for airport access over public transport, so car use rises. Public/local and long-distance rail fall since high car ownership suggests lower reliance on collective modes."
+  },
+  "prediction": {
+    "car": 0.6,
+    "local_pt": 0.14,
+    "long_distance_rail": 0.06,
+    "rationale": "Households with 4+ cars likely prefer driving for airport access over public transport, so car use rises. Public/local and long-distance rail fall since high car ownership suggests lower reliance on collective modes."
+  },
+  "normalization": {
+    "sum_before": 0.8,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:29:15.344083+00:00",
+  "cost_exceeded_reservation": false
+}

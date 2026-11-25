@@ -1,0 +1,120 @@
+{
+  "task_id": "p02__m04__a01__c005__r011",
+  "block_id": "p02__m04__a01",
+  "panel_id": "fmg_2025",
+  "panel_index": 1,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "fmg_business_intercontinental",
+  "round": 11,
+  "modes": [
+    "car_dropoff",
+    "car_airport_parking",
+    "car_offairport_parking",
+    "car_other_parking",
+    "taxi_ridehail",
+    "rental_carsharing",
+    "bus_transfer",
+    "s_bahn",
+    "uefex",
+    "other"
+  ],
+  "mutually_exclusive": true,
+  "request_sha256": "3c37b76f1893a22b3e00cd4f419c05c16c9fb1f50ade397d478aaedf0283ca5f",
+  "started_utc": "2026-11-25T17:39:57.443012+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:39:59.312613+00:00",
+      "cost_usd": 0.002532,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.002532,
+  "reservation_upper_bound_usd": 0.028763999999999998,
+  "response_sha256": "51a20ed529ac566f3423c84bce56d7a045e110021d9f9d587be23edd496d6526",
+  "response": {
+    "id": "gen-1795628396-DtYvWTTRa5Q8e6uUjP74",
+    "object": "chat.completion",
+    "created": 1795628396,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car_dropoff\": 0.10,\n  \"car_airport_parking\": 0.28,\n  \"car_offairport_parking\": 0.06,\n  \"car_other_parking\": 0.01,\n  \"taxi_ridehail\": 0.18,\n  \"rental_carsharing\": 0.04,\n  \"bus_transfer\": 0.03,\n  \"s_bahn\": 0.23,\n  \"uefex\": 0.03,\n  \"other\": 0.04,\n  \"rationale\": \"Business intercontinental fliers likely prefer fast, reliable options, favoring airport parking, S-Bahn, and taxi/ride-hail. Less use of buses, off-airport parking, and regional rail is expected due to time sensitivity and convenience priorities.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 570,
+      "completion_tokens": 174,
+      "total_tokens": 744,
+      "cost": 0.002532,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002532,
+        "upstream_inference_prompt_cost": 0.00114,
+        "upstream_inference_completions_cost": 0.001392
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628396-DtYvWTTRa5Q8e6uUjP74",
+  "raw_prediction": {
+    "car_dropoff": 0.1,
+    "car_airport_parking": 0.28,
+    "car_offairport_parking": 0.06,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.18,
+    "rental_carsharing": 0.04,
+    "bus_transfer": 0.03,
+    "s_bahn": 0.23,
+    "uefex": 0.03,
+    "other": 0.04,
+    "rationale": "Business intercontinental fliers likely prefer fast, reliable options, favoring airport parking, S-Bahn, and taxi/ride-hail. Less use of buses, off-airport parking, and regional rail is expected due to time sensitivity and convenience priorities."
+  },
+  "prediction": {
+    "car_dropoff": 0.1,
+    "car_airport_parking": 0.28,
+    "car_offairport_parking": 0.06,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.18,
+    "rental_carsharing": 0.04,
+    "bus_transfer": 0.03,
+    "s_bahn": 0.23,
+    "uefex": 0.03,
+    "other": 0.04,
+    "rationale": "Business intercontinental fliers likely prefer fast, reliable options, favoring airport parking, S-Bahn, and taxi/ride-hail. Less use of buses, off-airport parking, and regional rail is expected due to time sensitivity and convenience priorities."
+  },
+  "normalization": {
+    "sum_before": 1.0,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:39:59.312613+00:00",
+  "cost_exceeded_reservation": false
+}

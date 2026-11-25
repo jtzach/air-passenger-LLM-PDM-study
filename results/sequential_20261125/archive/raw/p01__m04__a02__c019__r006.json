@@ -1,0 +1,106 @@
+{
+  "task_id": "p01__m04__a02__c019__r006",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__782410ef69d3",
+  "round": 6,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "4d5bbed8fb6c32638418888f01eb9ffa930a87ff2d08c60d6378e0d31d47ba30",
+  "started_utc": "2026-11-25T14:31:27.997321+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "transport_error",
+      "detail": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>",
+      "utc": "2026-11-25T14:31:52.699412+00:00",
+      "cost_upper_bound_usd": 0.008524
+    },
+    {
+      "number": 2,
+      "status": "response",
+      "utc": "2026-11-25T14:31:57.368851+00:00",
+      "cost_usd": 0.001588,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.010112,
+  "reservation_upper_bound_usd": 0.025572,
+  "response_sha256": "824095eed0320c31a19a603566b10ca5f546a62b9fa609c90611cde2a30e9ccb",
+  "response": {
+    "id": "gen-1795617115-tsVyu3YNArbAMXL9ovBh",
+    "object": "chat.completion",
+    "created": 1795617115,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.40,\n  \"local_pt\": 0.21,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"Longer stays (8-14 nights) likely involve more luggage and intercity travel, so car and long-distance rail use may increase versus the average. Local public transport use probably remains about average due to diverse trip purposes.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 454,
+      "completion_tokens": 85,
+      "total_tokens": 539,
+      "cost": 0.001588,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001588,
+        "upstream_inference_prompt_cost": 0.000908,
+        "upstream_inference_completions_cost": 0.00068
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795617115-tsVyu3YNArbAMXL9ovBh",
+  "raw_prediction": {
+    "car": 0.4,
+    "local_pt": 0.21,
+    "long_distance_rail": 0.15,
+    "rationale": "Longer stays (8-14 nights) likely involve more luggage and intercity travel, so car and long-distance rail use may increase versus the average. Local public transport use probably remains about average due to diverse trip purposes."
+  },
+  "prediction": {
+    "car": 0.4,
+    "local_pt": 0.21,
+    "long_distance_rail": 0.15,
+    "rationale": "Longer stays (8-14 nights) likely involve more luggage and intercity travel, so car and long-distance rail use may increase versus the average. Local public transport use probably remains about average due to diverse trip purposes."
+  },
+  "normalization": {
+    "sum_before": 0.76,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:31:57.368851+00:00",
+  "cost_exceeded_reservation": false
+}

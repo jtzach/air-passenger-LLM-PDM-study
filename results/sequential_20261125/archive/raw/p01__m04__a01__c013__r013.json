@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c013__r013",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzbegl_gr__07f355b725cf",
+  "round": 13,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "ada9d72ebacefcd0d9caadde4367a2a1d294a4e94034a5aac527e90930531d61",
+  "started_utc": "2026-11-25T17:41:18.762168+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:41:20.111345+00:00",
+      "cost_usd": 0.001488,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001488,
+  "reservation_upper_bound_usd": 0.023933999999999997,
+  "response_sha256": "2d6e12d89c0b94c6e5e6ebd6636b5513a92513693970cb4ceb4f1cf655ff686b",
+  "response": {
+    "id": "gen-1795628478-CtJecKIa0IT0S5YvaVIp",
+    "object": "chat.completion",
+    "created": 1795628478,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"Three household members suggest a group likely to value convenience and cost-splitting, making car use probable. Local public transport is feasible, especially in urban areas; long-distance rail is less common for groups unless near major rail-airport hubs.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 392,
+      "completion_tokens": 88,
+      "total_tokens": 480,
+      "cost": 0.001488,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001488,
+        "upstream_inference_prompt_cost": 0.000784,
+        "upstream_inference_completions_cost": 0.000704
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628478-CtJecKIa0IT0S5YvaVIp",
+  "raw_prediction": {
+    "car": 0.55,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.15,
+    "rationale": "Three household members suggest a group likely to value convenience and cost-splitting, making car use probable. Local public transport is feasible, especially in urban areas; long-distance rail is less common for groups unless near major rail-airport hubs."
+  },
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.15,
+    "rationale": "Three household members suggest a group likely to value convenience and cost-splitting, making car use probable. Local public transport is feasible, especially in urban areas; long-distance rail is less common for groups unless near major rail-airport hubs."
+  },
+  "normalization": {
+    "sum_before": 1.05,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:41:20.111345+00:00",
+  "cost_exceeded_reservation": false
+}

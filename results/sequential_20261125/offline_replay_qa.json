@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "offline_only": true,
+  "private_source_workbook_required": false,
+  "public_archive_requests_verified": 2375,
+  "all_analysis_outputs_byte_identical": true,
+  "compared_analysis_files": [
+    {
+      "path": "analysis_qa.json",
+      "sha256": "2ff6762f5536b7196e92f35eda7c9d7772566f755745d97c8cfc40949b8b0b0a"
+    },
+    {
+      "path": "availability.csv",
+      "sha256": "df60f6bed0c4a49f135456aa06128bdc0a508b3672cfc48cbfecd1b971654cc7"
+    },
+    {
+      "path": "averaged_predictions.csv",
+      "sha256": "bff0fbfad7dc8d67000ba8172d74b9941b3a425c5b9f1c81aa67b049c03d0eb3"
+    },
+    {
+      "path": "block_details.json",
+      "sha256": "629b30cb4e893e98d346ac6eb9b702ba952a0854c7f11a969a8bae31acc66786"
+    },
+    {
+      "path": "block_metrics.csv",
+      "sha256": "42c4524514b178be8b6529a2212ca70ec623c960e330d1c3095da1e13b819cb2"
+    },
+    {
+      "path": "cost_and_status.json",
+      "sha256": "22585a67a6e91fdabd93fcbe1646f2ca47d46a84b1fa31bdac52ea911425ac97"
+    },
+    {
+      "path": "derived_fmg_targets.json",
+      "sha256": "a3ca922525f90d0c54a8e9efc393fc822420c9555560abaaa40a0b21a4030968"
+    },
+    {
+      "path": "figure_data.json",
+      "sha256": "0558a0e71bb5aa0a3dff6ccb2d1cc190cb534de581c8aa524591daf7611779b9"
+    },
+    {
+      "path": "findings.json",
+      "sha256": "b7c81001cf0a1e879702fa202f84d298cfc3a8ddced6e7f6be2fd0edd2833598"
+    },
+    {
+      "path": "mid_car_ownership_contrasts.csv",
+      "sha256": "6ae86c8ebb79da3c90bf57590afbc45124f924c0e37fade934d2b52ca5f2cac7"
+    },
+    {
+      "path": "mid_feature_metrics.csv",
+      "sha256": "0cec3ba6a5f84697de3bb7778ff96bfd0cb83a0412886384419a13cd385420fc"
+    },
+    {
+      "path": "mid_hint_contrasts.csv",
+      "sha256": "de18465ec34ef37ba5593dcb03ec107df043d5b0fb3f698aeebb8899fbc18710"
+    },
+    {
+      "path": "no_card_predictions.csv",
+      "sha256": "f392954e4330bd7cc8ff0a2fe0ac370ecd23fa0d661ccfb86a2612b2c12543ba"
+    },
+    {
+      "path": "round_scores.csv",
+      "sha256": "790a62b5c27bad73055aeafbd7513fdc54311f72273436cddc61247b36b8ebb1"
+    },
+    {
+      "path": "table_numbers.json",
+      "sha256": "eec8d73fd82fb2b01019949610764db33fbff75e06114b808a59a4cad99703bf"
+    }
+  ],
+  "evaluation_config_exact_bytes_preserved": true,
+  "evaluation_config_sha256": "f7ec73e411bc1359890b6a4dad80b697487f09623a574c92450bd05a6d6cf818",
+  "request_archive_sha256": "9a7b6802cf889fd185cee4663a0c577864d32f3fd31bee17219961312166d284",
+  "public_metadata_redaction_files": 3,
+  "scientific_predictions_and_scoring_fields_unchanged": true
+}

@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a02__c003__r004",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzauto_gr1__bee31b0e88ae",
+  "round": 4,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "f630449e98833c74ec140f41abea626a394fd1ba3940fe22941e747a0be7f156",
+  "started_utc": "2026-11-25T14:28:07.934536+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:28:09.650441+00:00",
+      "cost_usd": 0.00159,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00159,
+  "reservation_upper_bound_usd": 0.025505999999999997,
+  "response_sha256": "2ba3468ea40082181dc9d4857628ee53e5d570ba98d90d17e8fbb8a0d762bea4",
+  "response": {
+    "id": "gen-1795616888-7P5O3xYfXhtt8RObCgaO",
+    "object": "chat.completion",
+    "created": 1795616888,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.50,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.09,\n  \"rationale\": \"Households with 3 cars likely have high car access and preference, raising car use above average. Public transport and rail use are plausibly lower than average due to car convenience and flexibility, especially for airport access/egress.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 451,
+      "completion_tokens": 86,
+      "total_tokens": 537,
+      "cost": 0.00159,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00159,
+        "upstream_inference_prompt_cost": 0.000902,
+        "upstream_inference_completions_cost": 0.000688
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795616888-7P5O3xYfXhtt8RObCgaO",
+  "raw_prediction": {
+    "car": 0.5,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.09,
+    "rationale": "Households with 3 cars likely have high car access and preference, raising car use above average. Public transport and rail use are plausibly lower than average due to car convenience and flexibility, especially for airport access/egress."
+  },
+  "prediction": {
+    "car": 0.5,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.09,
+    "rationale": "Households with 3 cars likely have high car access and preference, raising car use above average. Public transport and rail use are plausibly lower than average due to car convenience and flexibility, especially for airport access/egress."
+  },
+  "normalization": {
+    "sum_before": 0.77,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:28:09.650441+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,100 @@
+{
+  "task_id": "p01__m03__a02__c009__r007__administrative_replacement1",
+  "block_id": "p01__m03__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__RegioStaR7__7cdab1586e04",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "supersedes_task_id": "p01__m03__a02__c009__r007",
+  "request_sha256": "b0a44d492d9aa996b7d62b7bb7978c5d8e666c9936d4a525f32960c8c48db011",
+  "started_utc": "2026-11-25T17:34:39.053723+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:34:52.000316+00:00",
+      "cost_usd": 0.000129015,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000129015,
+  "reservation_upper_bound_usd": 0.0021312600000000003,
+  "response_sha256": "de84823f6ee47f6edce1a3e2e0ae8e67e1537a0e886fd4e57541865dceb2ec93",
+  "response": {
+    "id": "gen-1795628078-0WWu07XfLuL7I7tWPOvg",
+    "object": "chat.completion",
+    "created": 1795628078,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.18,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Urban residents in large cities may rely more on private cars for airport access due to convenience and parking availability, reducing reliance on local public transport and long-distance rail for journey segments.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 479,
+      "completion_tokens": 78,
+      "total_tokens": 557,
+      "cost": 0.000129015,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000129015,
+        "upstream_inference_prompt_cost": 6.4665e-05,
+        "upstream_inference_completions_cost": 6.435e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795628078-0WWu07XfLuL7I7tWPOvg",
+  "raw_prediction": {
+    "car": 0.55,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Urban residents in large cities may rely more on private cars for airport access due to convenience and parking availability, reducing reliance on local public transport and long-distance rail for journey segments."
+  },
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.1,
+    "rationale": "Urban residents in large cities may rely more on private cars for airport access due to convenience and parking availability, reducing reliance on local public transport and long-distance rail for journey segments."
+  },
+  "normalization": {
+    "sum_before": 0.8300000000000001,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:34:52.000316+00:00",
+  "cost_exceeded_reservation": false
+}

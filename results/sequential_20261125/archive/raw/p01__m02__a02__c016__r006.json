@@ -1,0 +1,106 @@
+{
+  "task_id": "p01__m02__a02__c016__r006",
+  "block_id": "p01__m02__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1-mini",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzbegl_gr__b61cbc7c0dd2",
+  "round": 6,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "11ae6f9e4145d110b1832917b6ae0910e21299f92851a0153e1325828b98f73c",
+  "started_utc": "2026-11-25T14:31:56.832704+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "transport_error",
+      "detail": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>",
+      "utc": "2026-11-25T14:32:20.443960+00:00",
+      "cost_upper_bound_usd": 0.0017067999999999999
+    },
+    {
+      "number": 2,
+      "status": "response",
+      "utc": "2026-11-25T14:32:24.096764+00:00",
+      "cost_usd": 0.000294,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.0020007999999999996,
+  "reservation_upper_bound_usd": 0.0051204,
+  "response_sha256": "ce1c46bc0be7a4597e036dc23bb42fee3f6954eaac963c5a0dc284208146a1d7",
+  "response": {
+    "id": "gen-1795617142-bFWc2Vgi16Wi7ah9lwAJ",
+    "object": "chat.completion",
+    "created": 1795617142,
+    "model": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.45,\n  \"local_pt\": 0.25,\n  \"long_distance_rail\": 0.10,\n  \"rationale\": \"Small group travel with one companion likely increases car use for airport access; local public transport slightly more used; long-distance rail less common given aircraft main mode.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 451,
+      "completion_tokens": 71,
+      "total_tokens": 522,
+      "cost": 0.000294,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000294,
+        "upstream_inference_prompt_cost": 0.0001804,
+        "upstream_inference_completions_cost": 0.0001136
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1-mini",
+  "generation_id": "gen-1795617142-bFWc2Vgi16Wi7ah9lwAJ",
+  "raw_prediction": {
+    "car": 0.45,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.1,
+    "rationale": "Small group travel with one companion likely increases car use for airport access; local public transport slightly more used; long-distance rail less common given aircraft main mode."
+  },
+  "prediction": {
+    "car": 0.45,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.1,
+    "rationale": "Small group travel with one companion likely increases car use for airport access; local public transport slightly more used; long-distance rail less common given aircraft main mode."
+  },
+  "normalization": {
+    "sum_before": 0.8,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:32:24.096764+00:00",
+  "cost_exceeded_reservation": false
+}

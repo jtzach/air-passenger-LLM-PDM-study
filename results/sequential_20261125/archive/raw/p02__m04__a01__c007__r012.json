@@ -1,0 +1,120 @@
+{
+  "task_id": "p02__m04__a01__c007__r012",
+  "block_id": "p02__m04__a01",
+  "panel_id": "fmg_2025",
+  "panel_index": 1,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "no_persona",
+  "round": 12,
+  "modes": [
+    "car_dropoff",
+    "car_airport_parking",
+    "car_offairport_parking",
+    "car_other_parking",
+    "taxi_ridehail",
+    "rental_carsharing",
+    "bus_transfer",
+    "s_bahn",
+    "uefex",
+    "other"
+  ],
+  "mutually_exclusive": true,
+  "request_sha256": "4d916c3e2a7ffc05b51bcbb0bfb5db3b5a922e3add5e00c72f4c9c4ff7fab85c",
+  "started_utc": "2026-11-25T17:40:50.812184+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:40:52.531674+00:00",
+      "cost_usd": 0.00243,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00243,
+  "reservation_upper_bound_usd": 0.027707999999999997,
+  "response_sha256": "3d9f2f044277bc20591e8d0c706a99c6766ef2cd1ca8e04ab1591ecc9470704d",
+  "response": {
+    "id": "gen-1795628450-MOeQQ3G99W49NpGPFTOC",
+    "object": "chat.completion",
+    "created": 1795628450,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car_dropoff\": 0.22,\n  \"car_airport_parking\": 0.18,\n  \"car_offairport_parking\": 0.05,\n  \"car_other_parking\": 0.01,\n  \"taxi_ridehail\": 0.08,\n  \"rental_carsharing\": 0.03,\n  \"bus_transfer\": 0.07,\n  \"s_bahn\": 0.30,\n  \"uefex\": 0.03,\n  \"other\": 0.03,\n  \"rationale\": \"S-Bahn is frequent and well-known; private cars (drop-off or parking) remain significant. Taxis, buses, and other trains serve niche needs. Shares reflect a mix of convenience, cost, and catchment area accessibility.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 535,
+      "completion_tokens": 170,
+      "total_tokens": 705,
+      "cost": 0.00243,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00243,
+        "upstream_inference_prompt_cost": 0.00107,
+        "upstream_inference_completions_cost": 0.00136
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628450-MOeQQ3G99W49NpGPFTOC",
+  "raw_prediction": {
+    "car_dropoff": 0.22,
+    "car_airport_parking": 0.18,
+    "car_offairport_parking": 0.05,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.08,
+    "rental_carsharing": 0.03,
+    "bus_transfer": 0.07,
+    "s_bahn": 0.3,
+    "uefex": 0.03,
+    "other": 0.03,
+    "rationale": "S-Bahn is frequent and well-known; private cars (drop-off or parking) remain significant. Taxis, buses, and other trains serve niche needs. Shares reflect a mix of convenience, cost, and catchment area accessibility."
+  },
+  "prediction": {
+    "car_dropoff": 0.22,
+    "car_airport_parking": 0.18,
+    "car_offairport_parking": 0.05,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.08,
+    "rental_carsharing": 0.03,
+    "bus_transfer": 0.07,
+    "s_bahn": 0.3,
+    "uefex": 0.03,
+    "other": 0.03,
+    "rationale": "S-Bahn is frequent and well-known; private cars (drop-off or parking) remain significant. Taxis, buses, and other trains serve niche needs. Shares reflect a mix of convenience, cost, and catchment area accessibility."
+  },
+  "normalization": {
+    "sum_before": 1.0,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:40:52.531674+00:00",
+  "cost_exceeded_reservation": false
+}

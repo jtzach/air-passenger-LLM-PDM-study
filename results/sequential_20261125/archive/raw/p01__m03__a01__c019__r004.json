@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m03__a01__c019__r004",
+  "block_id": "p01__m03__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "qwen/qwen3-235b-a22b-2507",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__782410ef69d3",
+  "round": 4,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "22619b467af6bf1b0fb02be1c87fe6b23c6051e01c07fffd8a5ec85108fa1763",
+  "started_utc": "2026-11-25T14:27:56.511800+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:28:07.932536+00:00",
+      "cost_usd": 0.000116685,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.000116685,
+  "reservation_upper_bound_usd": 0.00200652,
+  "response_sha256": "9c043066ad4d1f4f6bd37e8d3e5686c1d25e2f007f6402c11a413f0e6d58861c",
+  "response": {
+    "id": "gen-1795616876-MeymEeru0tC6Y2QunTIf",
+    "object": "chat.completion",
+    "created": 1795616876,
+    "model": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "system_fingerprint": null,
+    "service_tier": "priority",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.75,\n  \"local_pt\": 0.4,\n  \"long_distance_rail\": 0.25,\n  \"rationale\": \"Longer stays suggest planned trips with mixed transport use; car access to airports or local travel is common, while public transport use depends on urban destination and airport connectivity.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 406,
+      "completion_tokens": 75,
+      "total_tokens": 481,
+      "cost": 0.000116685,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000116685,
+        "upstream_inference_prompt_cost": 5.481e-05,
+        "upstream_inference_completions_cost": 6.1875e-05
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "DeepInfra",
+  "returned_model": "qwen/qwen3-235b-a22b-2507",
+  "generation_id": "gen-1795616876-MeymEeru0tC6Y2QunTIf",
+  "raw_prediction": {
+    "car": 0.75,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.25,
+    "rationale": "Longer stays suggest planned trips with mixed transport use; car access to airports or local travel is common, while public transport use depends on urban destination and airport connectivity."
+  },
+  "prediction": {
+    "car": 0.75,
+    "local_pt": 0.4,
+    "long_distance_rail": 0.25,
+    "rationale": "Longer stays suggest planned trips with mixed transport use; car access to airports or local travel is common, while public transport use depends on urban destination and airport connectivity."
+  },
+  "normalization": {
+    "sum_before": 1.4,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:28:07.932536+00:00",
+  "cost_exceeded_reservation": false
+}

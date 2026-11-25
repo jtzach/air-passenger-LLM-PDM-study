@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c013__r005",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzbegl_gr__07f355b725cf",
+  "round": 5,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "0d05f67065eb908510cf75ef6bbb0b8d1ff07095c8a09977df95cf1b489bddb6",
+  "started_utc": "2026-11-25T14:30:35.115370+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:30:36.843637+00:00",
+      "cost_usd": 0.001472,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001472,
+  "reservation_upper_bound_usd": 0.023933999999999997,
+  "response_sha256": "f91a039fcf2c5c92144ea232c4a1945695bdf65caa6b5efb2f3733878da57309",
+  "response": {
+    "id": "gen-1795617035-GgW3hXePsR9UJ57CIBqE",
+    "object": "chat.completion",
+    "created": 1795617035,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.55,\n  \"local_pt\": 0.35,\n  \"long_distance_rail\": 0.18,\n  \"rationale\": \"With two household companions, car use is convenient and cost-effective, especially for airport access. Local PT is less attractive for groups but still plausible. Long-distance rail is less likely, as air is already chosen for the main trip.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 392,
+      "completion_tokens": 86,
+      "total_tokens": 478,
+      "cost": 0.001472,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001472,
+        "upstream_inference_prompt_cost": 0.000784,
+        "upstream_inference_completions_cost": 0.000688
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795617035-GgW3hXePsR9UJ57CIBqE",
+  "raw_prediction": {
+    "car": 0.55,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.18,
+    "rationale": "With two household companions, car use is convenient and cost-effective, especially for airport access. Local PT is less attractive for groups but still plausible. Long-distance rail is less likely, as air is already chosen for the main trip."
+  },
+  "prediction": {
+    "car": 0.55,
+    "local_pt": 0.35,
+    "long_distance_rail": 0.18,
+    "rationale": "With two household companions, car use is convenient and cost-effective, especially for airport access. Local PT is less attractive for groups but still plausible. Long-distance rail is less likely, as air is already chosen for the main trip."
+  },
+  "normalization": {
+    "sum_before": 1.08,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:30:36.843637+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,100 @@
+{
+  "task_id": "p01__m04__a02__c019__r007__administrative_replacement1",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__782410ef69d3",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "supersedes_task_id": "p01__m04__a02__c019__r007",
+  "request_sha256": "50f9123b34766c4a7c17e92a57e44b4fd37e1b1f7887f693712f6dd5442d2480",
+  "started_utc": "2026-11-25T17:35:03.286897+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:35:05.096029+00:00",
+      "cost_usd": 0.00158,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.00158,
+  "reservation_upper_bound_usd": 0.025572,
+  "response_sha256": "1764529278a732508b1d6b9c2fd7fdd45001ab11f5ef9b84e655a920c3d2ba66",
+  "response": {
+    "id": "gen-1795628103-kbIM6F0vz1RLyg91wXss",
+    "object": "chat.completion",
+    "created": 1795628103,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.41,\n  \"local_pt\": 0.24,\n  \"long_distance_rail\": 0.16,\n  \"rationale\": \"Longer stays (8-14 nights) suggest more distant or substantial trips, increasing likelihood of car (for flexibility) and long-distance rail (for major airports); local PT rises slightly due to more complex travel chains.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 454,
+      "completion_tokens": 84,
+      "total_tokens": 538,
+      "cost": 0.00158,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00158,
+        "upstream_inference_prompt_cost": 0.000908,
+        "upstream_inference_completions_cost": 0.000672
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628103-kbIM6F0vz1RLyg91wXss",
+  "raw_prediction": {
+    "car": 0.41,
+    "local_pt": 0.24,
+    "long_distance_rail": 0.16,
+    "rationale": "Longer stays (8-14 nights) suggest more distant or substantial trips, increasing likelihood of car (for flexibility) and long-distance rail (for major airports); local PT rises slightly due to more complex travel chains."
+  },
+  "prediction": {
+    "car": 0.41,
+    "local_pt": 0.24,
+    "long_distance_rail": 0.16,
+    "rationale": "Longer stays (8-14 nights) suggest more distant or substantial trips, increasing likelihood of car (for flexibility) and long-distance rail (for major airports); local PT rises slightly due to more complex travel chains."
+  },
+  "normalization": {
+    "sum_before": 0.8099999999999999,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:35:05.097024+00:00",
+  "cost_exceeded_reservation": false
+}

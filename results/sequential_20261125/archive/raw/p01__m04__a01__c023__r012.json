@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c023__r012",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzueb_gr__fd46cf332878",
+  "round": 12,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "c8e00425f526293fb80561c4ec3116ca2be1c8074b5f09130ee0093ff00b6914",
+  "started_utc": "2026-11-25T17:40:54.785548+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:40:55.982395+00:00",
+      "cost_usd": 0.001454,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001454,
+  "reservation_upper_bound_usd": 0.023963999999999996,
+  "response_sha256": "47f66f50877d2cb9caebe06b09fd7b18a5a61d43697b58c32aea3621adff0a1a",
+  "response": {
+    "id": "gen-1795628454-PBkcSMTPBaCGXvtEOkq0",
+    "object": "chat.completion",
+    "created": 1795628454,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.38,\n  \"local_pt\": 0.28,\n  \"long_distance_rail\": 0.22,\n  \"rationale\": \"Long trips suggest intercity or international flights; car and long-distance rail are plausible to/from airports, but extended absence reduces likelihood of car. Urban PT use is lower, as airports often have limited local PT access.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 395,
+      "completion_tokens": 83,
+      "total_tokens": 478,
+      "cost": 0.001454,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001454,
+        "upstream_inference_prompt_cost": 0.00079,
+        "upstream_inference_completions_cost": 0.000664
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628454-PBkcSMTPBaCGXvtEOkq0",
+  "raw_prediction": {
+    "car": 0.38,
+    "local_pt": 0.28,
+    "long_distance_rail": 0.22,
+    "rationale": "Long trips suggest intercity or international flights; car and long-distance rail are plausible to/from airports, but extended absence reduces likelihood of car. Urban PT use is lower, as airports often have limited local PT access."
+  },
+  "prediction": {
+    "car": 0.38,
+    "local_pt": 0.28,
+    "long_distance_rail": 0.22,
+    "rationale": "Long trips suggest intercity or international flights; car and long-distance rail are plausible to/from airports, but extended absence reduces likelihood of car. Urban PT use is lower, as airports often have limited local PT access."
+  },
+  "normalization": {
+    "sum_before": 0.88,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:40:55.982395+00:00",
+  "cost_exceeded_reservation": false
+}

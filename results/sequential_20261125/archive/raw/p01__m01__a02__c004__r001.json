@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m01__a02__c004__r001",
+  "block_id": "p01__m01__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzauto_gr1__d7ca944fcddc",
+  "round": 1,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "bd162d3dd7cfe5bfc7782c8df71b9bf494d63c7cc4768ed00377dea6c321a47d",
+  "started_utc": "2026-11-25T14:21:02.782604+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:21:04.472616+00:00",
+      "cost_usd": 1.996e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 1.996e-05,
+  "reservation_upper_bound_usd": 0.00036306,
+  "response_sha256": "5c76befea464f42911667f497cf2d59304793a12f6f56074bd0ca2b34246ce21",
+  "response": {
+    "id": "gen-1795616462-08DjQcLcEftdteKmVeCc",
+    "object": "chat.completion",
+    "created": 1795616462,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.4, \"local_pt\": 0.25, \"long_distance_rail\": 0.15, \"rationale\": \"A single-car household suggests a reliance on other modes for travel. Combining this with aircraft travel implies a willingness to combine different transport types for convenience, increasing the likelihood of bus/rail and train usage.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 487,
+      "completion_tokens": 80,
+      "total_tokens": 567,
+      "cost": 1.996e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 176,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 1.996e-05,
+        "upstream_inference_prompt_cost": 1.596e-05,
+        "upstream_inference_completions_cost": 4e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616462-08DjQcLcEftdteKmVeCc",
+  "raw_prediction": {
+    "car": 0.4,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "A single-car household suggests a reliance on other modes for travel. Combining this with aircraft travel implies a willingness to combine different transport types for convenience, increasing the likelihood of bus/rail and train usage."
+  },
+  "prediction": {
+    "car": 0.4,
+    "local_pt": 0.25,
+    "long_distance_rail": 0.15,
+    "rationale": "A single-car household suggests a reliance on other modes for travel. Combining this with aircraft travel implies a willingness to combine different transport types for convenience, increasing the likelihood of bus/rail and train usage."
+  },
+  "normalization": {
+    "sum_before": 0.8,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:21:04.472616+00:00",
+  "cost_exceeded_reservation": false
+}

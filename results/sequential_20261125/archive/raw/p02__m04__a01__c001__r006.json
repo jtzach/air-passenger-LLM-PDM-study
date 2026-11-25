@@ -1,0 +1,120 @@
+{
+  "task_id": "p02__m04__a01__c001__r006",
+  "block_id": "p02__m04__a01",
+  "panel_id": "fmg_2025",
+  "panel_index": 1,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "fmg_business_domestic",
+  "round": 6,
+  "modes": [
+    "car_dropoff",
+    "car_airport_parking",
+    "car_offairport_parking",
+    "car_other_parking",
+    "taxi_ridehail",
+    "rental_carsharing",
+    "bus_transfer",
+    "s_bahn",
+    "uefex",
+    "other"
+  ],
+  "mutually_exclusive": true,
+  "request_sha256": "d967fb8f03f0a19a813b6680706c07d07c9de1e6aa6744c547a1e4a8e24c7639",
+  "started_utc": "2026-11-25T14:30:54.139455+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:30:56.943674+00:00",
+      "cost_usd": 0.002498,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.002498,
+  "reservation_upper_bound_usd": 0.028716000000000002,
+  "response_sha256": "b2f23771c4c2ffff31c094635d874d5dab64da2678bf4b2ebafab4bc1f672aee",
+  "response": {
+    "id": "gen-1795617054-COh8inVcupx79IpnwRs5",
+    "object": "chat.completion",
+    "created": 1795617054,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car_dropoff\": 0.13,\n  \"car_airport_parking\": 0.22,\n  \"car_offairport_parking\": 0.04,\n  \"car_other_parking\": 0.01,\n  \"taxi_ridehail\": 0.08,\n  \"rental_carsharing\": 0.03,\n  \"bus_transfer\": 0.05,\n  \"s_bahn\": 0.39,\n  \"uefex\": 0.03,\n  \"other\": 0.02,\n  \"rationale\": \"Business travellers on domestic flights value speed and reliability; S-Bahn and airport parking are convenient, while off-airport and bus options are less attractive. Taxi and drop-off are used but less dominant due to cost and regional rail alternatives.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 569,
+      "completion_tokens": 170,
+      "total_tokens": 739,
+      "cost": 0.002498,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002498,
+        "upstream_inference_prompt_cost": 0.001138,
+        "upstream_inference_completions_cost": 0.00136
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795617054-COh8inVcupx79IpnwRs5",
+  "raw_prediction": {
+    "car_dropoff": 0.13,
+    "car_airport_parking": 0.22,
+    "car_offairport_parking": 0.04,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.08,
+    "rental_carsharing": 0.03,
+    "bus_transfer": 0.05,
+    "s_bahn": 0.39,
+    "uefex": 0.03,
+    "other": 0.02,
+    "rationale": "Business travellers on domestic flights value speed and reliability; S-Bahn and airport parking are convenient, while off-airport and bus options are less attractive. Taxi and drop-off are used but less dominant due to cost and regional rail alternatives."
+  },
+  "prediction": {
+    "car_dropoff": 0.13,
+    "car_airport_parking": 0.22,
+    "car_offairport_parking": 0.04,
+    "car_other_parking": 0.01,
+    "taxi_ridehail": 0.08,
+    "rental_carsharing": 0.03,
+    "bus_transfer": 0.05,
+    "s_bahn": 0.39,
+    "uefex": 0.03,
+    "other": 0.02,
+    "rationale": "Business travellers on domestic flights value speed and reliability; S-Bahn and airport parking are convenient, while off-airport and bus options are less attractive. Taxi and drop-off are used but less dominant due to cost and regional rail alternatives."
+  },
+  "normalization": {
+    "sum_before": 1.0,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:30:56.943674+00:00",
+  "cost_exceeded_reservation": false
+}

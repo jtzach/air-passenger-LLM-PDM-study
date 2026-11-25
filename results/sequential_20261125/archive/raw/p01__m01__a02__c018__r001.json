@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m01__a02__c018__r001",
+  "block_id": "p01__m01__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "google/gemma-3-4b-it",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__6bcea89383ae",
+  "round": 1,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "4c5adaacc8d50cec63d68271a2b16a00401f1227c3a1ed018b05ec44c538ea7e",
+  "started_utc": "2026-11-25T14:21:14.622007+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:21:16.257384+00:00",
+      "cost_usd": 2.327e-05,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 2.327e-05,
+  "reservation_upper_bound_usd": 0.00036414,
+  "response_sha256": "38c0e3546abffbb71970f3c500527f0bbb2c693398e894d060f36c4b3ea927e3",
+  "response": {
+    "id": "gen-1795616474-26SsMs20JIig5pzVkO5T",
+    "object": "chat.completion",
+    "created": 1795616474,
+    "model": "google/gemma-3-4b-it",
+    "provider": "Parasail",
+    "system_fingerprint": "vllm-0.23.0-c6c27004",
+    "service_tier": null,
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "stop",
+        "message": {
+          "role": "assistant",
+          "content": "{\"car\": 0.3, \"local_pt\": 0.18, \"long_distance_rail\": 0.11, \"rationale\": \"The cohort undertook two overnight journeys, suggesting a greater willingness to combine air travel with other modes compared to the general population. Ground transport likely supplemented the flight for onward travel or return.\"}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 488,
+      "completion_tokens": 75,
+      "total_tokens": 563,
+      "cost": 2.327e-05,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 2.327e-05,
+        "upstream_inference_prompt_cost": 1.952e-05,
+        "upstream_inference_completions_cost": 3.75e-06
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "Parasail",
+  "returned_model": "google/gemma-3-4b-it",
+  "generation_id": "gen-1795616474-26SsMs20JIig5pzVkO5T",
+  "raw_prediction": {
+    "car": 0.3,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.11,
+    "rationale": "The cohort undertook two overnight journeys, suggesting a greater willingness to combine air travel with other modes compared to the general population. Ground transport likely supplemented the flight for onward travel or return."
+  },
+  "prediction": {
+    "car": 0.3,
+    "local_pt": 0.18,
+    "long_distance_rail": 0.11,
+    "rationale": "The cohort undertook two overnight journeys, suggesting a greater willingness to combine air travel with other modes compared to the general population. Ground transport likely supplemented the flight for onward travel or return."
+  },
+  "normalization": {
+    "sum_before": 0.59,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:21:16.257384+00:00",
+  "cost_exceeded_reservation": false
+}

@@ -1,0 +1,99 @@
+{
+  "task_id": "p01__m04__a01__c014__r005",
+  "block_id": "p01__m04__a01",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "unanchored",
+  "card_id": "reise__anzbegl_gr__154f6eb18583",
+  "round": 5,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "request_sha256": "8fa17c9d4e028b4c62f98ad24729f08f117bf3a8c555a9b2d2092d34e61fe541",
+  "started_utc": "2026-11-25T14:29:59.385824+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T14:30:02.000012+00:00",
+      "cost_usd": 0.001494,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001494,
+  "reservation_upper_bound_usd": 0.023933999999999997,
+  "response_sha256": "93675935773a9478f910b60265a193789ba8caa44b9be3313edf3add03ad8656",
+  "response": {
+    "id": "gen-1795617000-sEsXetPY5NaHGFojFREP",
+    "object": "chat.completion",
+    "created": 1795617000,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.35,\n  \"local_pt\": 0.45,\n  \"long_distance_rail\": 0.15,\n  \"rationale\": \"Travelling without household companions suggests more flexible, possibly public transport use. Car remains common, but local public transport is attractive for solo, urban residents. Long-distance rail is less likely due to cost, time, and fragmented air-rail integration.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 391,
+      "completion_tokens": 89,
+      "total_tokens": 480,
+      "cost": 0.001494,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001494,
+        "upstream_inference_prompt_cost": 0.000782,
+        "upstream_inference_completions_cost": 0.000712
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795617000-sEsXetPY5NaHGFojFREP",
+  "raw_prediction": {
+    "car": 0.35,
+    "local_pt": 0.45,
+    "long_distance_rail": 0.15,
+    "rationale": "Travelling without household companions suggests more flexible, possibly public transport use. Car remains common, but local public transport is attractive for solo, urban residents. Long-distance rail is less likely due to cost, time, and fragmented air-rail integration."
+  },
+  "prediction": {
+    "car": 0.35,
+    "local_pt": 0.45,
+    "long_distance_rail": 0.15,
+    "rationale": "Travelling without household companions suggests more flexible, possibly public transport use. Car remains common, but local public transport is attractive for solo, urban residents. Long-distance rail is less likely due to cost, time, and fragmented air-rail integration."
+  },
+  "normalization": {
+    "sum_before": 0.95,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T14:30:02.001242+00:00",
+  "cost_exceeded_reservation": false
+}

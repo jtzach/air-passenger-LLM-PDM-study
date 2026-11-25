@@ -1,0 +1,100 @@
+{
+  "task_id": "p01__m04__a02__c017__r007__administrative_replacement1",
+  "block_id": "p01__m04__a02",
+  "panel_id": "mid_2023",
+  "panel_index": 0,
+  "model_id": "openai/gpt-4.1",
+  "arm": "overall_rate_anchored",
+  "card_id": "reise__anzueb_gr__456ee228eb2a",
+  "round": 7,
+  "modes": [
+    "car",
+    "local_pt",
+    "long_distance_rail"
+  ],
+  "mutually_exclusive": false,
+  "supersedes_task_id": "p01__m04__a02__c017__r007",
+  "request_sha256": "464464725d53c315012b9ffd93954cbe70203265f76aa4c673f15d4fc2c37c2b",
+  "started_utc": "2026-11-25T17:34:44.810070+00:00",
+  "attempts": [
+    {
+      "number": 1,
+      "status": "response",
+      "utc": "2026-11-25T17:34:46.193446+00:00",
+      "cost_usd": 0.001644,
+      "cost_basis": "OpenRouter usage.cost"
+    }
+  ],
+  "status": "valid",
+  "accounted_cost_usd": 0.001644,
+  "reservation_upper_bound_usd": 0.025566,
+  "response_sha256": "1e5a317c0bbfbc65c3c75da671b46eb829db5bbb81a45620e4965521b79ffca9",
+  "response": {
+    "id": "gen-1795628084-MeAp0FHqR0YFOEATtHV4",
+    "object": "chat.completion",
+    "created": 1795628084,
+    "model": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "system_fingerprint": null,
+    "service_tier": "default",
+    "choices": [
+      {
+        "index": 0,
+        "logprobs": null,
+        "finish_reason": "stop",
+        "native_finish_reason": "completed",
+        "message": {
+          "role": "assistant",
+          "content": "{\n  \"car\": 0.40,\n  \"local_pt\": 0.23,\n  \"long_distance_rail\": 0.14,\n  \"rationale\": \"Journeys with 4-5 nights away may skew towards longer distances and more complex travel, slightly raising the likelihood of integrating ground modes—especially long-distance rail—compared to all-aircraft journeys, but changes are moderate without further demographic or trip detail.\"\n}",
+          "refusal": null,
+          "reasoning": null
+        }
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 454,
+      "completion_tokens": 92,
+      "total_tokens": 546,
+      "cost": 0.001644,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001644,
+        "upstream_inference_prompt_cost": 0.000908,
+        "upstream_inference_completions_cost": 0.000736
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    }
+  },
+  "returned_provider": "OpenAI",
+  "returned_model": "openai/gpt-4.1",
+  "generation_id": "gen-1795628084-MeAp0FHqR0YFOEATtHV4",
+  "raw_prediction": {
+    "car": 0.4,
+    "local_pt": 0.23,
+    "long_distance_rail": 0.14,
+    "rationale": "Journeys with 4-5 nights away may skew towards longer distances and more complex travel, slightly raising the likelihood of integrating ground modes—especially long-distance rail—compared to all-aircraft journeys, but changes are moderate without further demographic or trip detail."
+  },
+  "prediction": {
+    "car": 0.4,
+    "local_pt": 0.23,
+    "long_distance_rail": 0.14,
+    "rationale": "Journeys with 4-5 nights away may skew towards longer distances and more complex travel, slightly raising the likelihood of integrating ground modes—especially long-distance rail—compared to all-aircraft journeys, but changes are moderate without further demographic or trip detail."
+  },
+  "normalization": {
+    "sum_before": 0.77,
+    "normalization_factor": 1.0,
+    "normalized": false
+  },
+  "finished_utc": "2026-11-25T17:34:46.194438+00:00",
+  "cost_exceeded_reservation": false
+}
